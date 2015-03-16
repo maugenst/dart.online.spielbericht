@@ -1,0 +1,132 @@
+{
+	"vereine" : [
+		{
+			"name" : "D.A.R.T. Plumbata e.V.",
+			"mitglieder" : [
+				"Hans Berninger",
+				"Fabian Mager",
+				"Ralf Klein",
+				"Fabio Alpino",
+				"Marius Augenstein",
+				"Josef Joudi",
+				"Melanie Klomann",
+				"Elias Bordolo",
+				"Hans Peter Muntz",
+				"Thomas Rohde",
+				"Rene Braun",
+				"Jan Hofmann",
+				"Joerg Hoeger",
+				"Kevin Koenig",
+				"Ivanka Mager",
+				"Peter Munz"
+			]
+		},
+		{
+			"name" : "Dart Train Rastatt",
+			"mitglieder" : [
+				"Dieter Philipp",
+				"Christian Burkart",
+				"Jens Handke",
+				"Dave Kilgour",
+				"Gerd Knobl",
+				"Martin Hellgoth",
+				"Klaus Redwanz"
+			]
+		},
+		{
+			"name" : "DC 81 Karlsruhe",
+			"mitglieder" : [
+				"Horst Ilchmann",
+				"Bodo Mueller",
+				"Juergen Daum",
+				"Ralf Goebel",
+				"Marco Muller",
+				"Matthias Gegenheimer",
+				"Silvio Reinicke",
+				"Cihan Araci"
+			]
+		},
+		{
+			"name" : "DC Blau-Weiss Karlsruhe",
+			"mitglieder" : [
+				"Tobias Goetzelmann",
+				"Bernt Jock",
+				"Udo De Bortoli",
+				"Wolfram Barnstedt",
+				"Ferghal Coogan",
+				"Horst Oheim"
+			]
+		},
+		{
+			"name" : "DC Hard Life",
+			"mitglieder" : [
+				"Norbert Schulte",
+				"Robin Korbmann",
+				"Daniel Noto",
+				"Andre Bock",
+				"Marcus Hanzl",
+				"Thomas Ilgert",
+				"Timo Groeschl",
+				"Jamal Schulte"
+			]
+		},
+		{
+			"name" : "DC Underground Fool`s",
+			"mitglieder" : [
+				"Urban Roth",
+				"Ralf Voggenreiter",
+				"Heiko Fruhner",
+				"Sven Fiedler",
+				"Giuseppe Cantanna",
+				"Kay Gottmann",
+				"Christian Besesek",
+				"Miguel Kammerer"
+			]
+		},
+		{
+			"name" : "Freygerber Fighters",
+			"mitglieder" : [
+				"Markus Renner",
+				"Hans Jaehrling",
+				"Bastian Mastafaoni",
+				"Christof Theobald",
+				"Lucas Busch",
+				"Karim Mastafaoni",
+				"Thomas Sauther",
+				"Sven Haltmayer"
+			]
+		},
+		{
+			"name" : "Gaggenauer Dartmoskitos",
+			"mitglieder" : [
+				"David Walz",
+				"John Bache",
+				"Michael Gleisle",
+				"Lukas Krzyzanowski",
+				"Mateusz Plutta",
+				"Thomas Kraft",
+				"Ryszard Plutta",
+				"Joachim Pflueger",
+				"Christian Schorpp",
+				"Lukas Nowak",
+				"Martin Nowak"
+			]
+		},
+		{
+			"name" : "Taraxacuma Tornados",
+			"mitglieder" : [
+				"Mike Hurst",
+				"Thorsten Billmann",
+				"Jose Cochon",
+				"Joerg Hecker",
+				"Oliver Werling",
+				"Dieter Richard",
+				"Joerg Kartach",
+				"Daniel Mueller",
+				"Armin Keilhauer"
+			]
+		}
+		
+	]
+}
+	

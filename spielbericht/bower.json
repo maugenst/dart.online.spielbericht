@@ -1,0 +1,12 @@
+{
+  "name": "spielbericht",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "requirejs": "~2.1.4",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1",
+    "typeahead.js": "~0.10.5"
+  },
+  "devDependencies": {}
+}
