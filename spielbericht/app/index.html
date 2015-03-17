@@ -22,8 +22,6 @@
 </head>
     <body>
 
-
-
     <!-- Page content of course! -->
     <!-- Custom styles for this template -->
 <style>
@@ -67,15 +65,19 @@
     <form action="index2.html" method="get"> 
       <div class="row">
         <div class="col col-xs-4">
-          Heim: <input id="heim" type="text" size="10" name="heim" placeholder="Heim" >
+          Heim: <select id="heim" name="heim" onclick="checkSelection();">
+            <option>...</option>
+          </select>
         </div>
         <div class="col col-xs-4">  
-          Gast: <input id="gast" type="text" size="10" name="gast" placeholder="Gast">
+          Gast: <select id="gast" name="gast" onclick="checkSelection();">
+            <option>...</option>
+          </select>
         </div>
       </div>
       <div class="row">
         <div class="col col-xs-4 span2">
-         <br> <input type="submit" value="Game On...">
+         <br> <input id="gameOnButton" type="submit" value="Game On..." disabled="disabled">
         </div>
       </div>
     </form>
@@ -94,25 +96,27 @@
 <script src="scripts/fullscreensnippet.js"></script>
 <script type="text/javascript">
   
-  var aVereine = [];
- 
+  var heimSelect = $('#heim');
+  var gastSelect = $('#gast');
+
   $.getJSON("data/vereine.json", function(oVereine) {
     for (var i = 0; i < oVereine.vereine.length; i++) {
-      aVereine.push(oVereine.vereine[i].name);
+      heimSelect.append($('<option></option>').html(oVereine.vereine[i].name));
+      gastSelect.append($('<option></option>').html(oVereine.vereine[i].name));
     };
-
-    new Autocomplete("heim", {
-      srcType : "array", 
-      srcData : aVereine
-    });
-
-    new Autocomplete("gast", {
-      srcType : "array", 
-      srcData : aVereine
-    });
-
   });
 
+  function checkSelection() {
+    var heim = document.getElementById("heim");
+    var gast = document.getElementById("gast");
+    if (heim.selectedIndex != 0 
+          && gast.selectedIndex != 0 
+          && heim.selectedIndex != gast.selectedIndex) {
+      document.getElementById("gameOnButton").disabled = false;
+    } else {
+      document.getElementById("gameOnButton").disabled = true;
+    }
+  };
 
 </script>
 
