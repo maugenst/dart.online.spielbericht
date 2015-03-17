@@ -62,15 +62,15 @@
   <h3>BDL Online Spielberichtsbogen</h3>
 
   <div id="form" class="body-content">
-    <form action="index2.html" method="get"> 
+    <form action="index2.html" method="get" onsubmit="escapeAll()"> 
       <div class="row">
         <div class="col col-xs-4">
-          Heim: <select id="heim" name="heim" onclick="checkSelection();">
+          Heim: <select id="heim" name="heim" onclick="checkSelection();" style="width:100px">
             <option>...</option>
           </select>
         </div>
         <div class="col col-xs-4">  
-          Gast: <select id="gast" name="gast" onclick="checkSelection();">
+          Gast: <select id="gast" name="gast" onclick="checkSelection();" style="width:100px">
             <option>...</option>
           </select>
         </div>
@@ -100,9 +100,15 @@
   var gastSelect = $('#gast');
 
   $.getJSON("data/vereine.json", function(oVereine) {
-    for (var i = 0; i < oVereine.vereine.length; i++) {
-      heimSelect.append($('<option></option>').html(oVereine.vereine[i].name));
-      gastSelect.append($('<option></option>').html(oVereine.vereine[i].name));
+    for (var verein in oVereine) {
+      heimSelect.append($('<option></option>', {
+          value: oVereine[verein].vereinsUID,
+          text: verein
+      }));
+      gastSelect.append($('<option></option>', {
+          value: oVereine[verein].vereinsUID,
+          text: verein
+      }));
     };
   });
 

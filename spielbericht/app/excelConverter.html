@@ -1,6 +1,6 @@
 <html>
 <head>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
         <script src="bower_components/jquery/jquery.js"></script>
 </head>
 <body>
@@ -12,6 +12,7 @@
 		$.get("data/bdlMitglieder.csv", function(oData) {
 		    oRawData = csvJSON(oData);
 		    convertToInternalFormat(oRawData);
+		    $("code").text(JSON.stringify(oResult, null, "\t"));
 		});
 
 		function convertToInternalFormat(oRawData){
@@ -19,7 +20,9 @@
 				var oLine = oRawData[i];
 				if (oLine.Verein && oLine.Name && oLine.Vorname && oLine.Passnummer) {
 					if (oResult[oLine.Verein] == undefined) {
+						var uid = generateUIDNotMoreThan1million();
 						oResult[oLine.Verein] = {
+							"vereinsUID" : uid,
 							"mitglieder" : []
 						};
 					}
@@ -32,6 +35,9 @@
 			};
 		};
 
+		function generateUIDNotMoreThan1million() {
+		    return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4)
+		}
 		//var csv is the CSV file with headers
 		function csvJSON(csv){
 		  var lines=csv.split("\r\n");
@@ -51,5 +57,9 @@
 		  return result;
 		}
 	</script>
+
+	  <pre>
+		<code id="code"></code>
+	  </pre>
 </body>
 </html>

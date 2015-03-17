@@ -1,130 +1,2182 @@
 {
-	"vereine" : [
-		{
-			"name" : "D.A.R.T. Plumbata e.V.",
-			"mitglieder" : [
-				"Hans Berninger",
-				"Fabian Mager",
-				"Ralf Klein",
-				"Fabio Alpino",
-				"Marius Augenstein",
-				"Josef Joudi",
-				"Melanie Klomann",
-				"Elias Bordolo",
-				"Hans Peter Muntz",
-				"Thomas Rohde",
-				"Rene Braun",
-				"Jan Hofmann",
-				"Joerg Hoeger",
-				"Kevin Koenig",
-				"Ivanka Mager",
-				"Peter Munz"
-			]
-		},
-		{
-			"name" : "Dart Train Rastatt",
-			"mitglieder" : [
-				"Dieter Philipp",
-				"Christian Burkart",
-				"Jens Handke",
-				"Dave Kilgour",
-				"Gerd Knobl",
-				"Martin Hellgoth",
-				"Klaus Redwanz"
-			]
-		},
-		{
-			"name" : "DC 81 Karlsruhe",
-			"mitglieder" : [
-				"Horst Ilchmann",
-				"Bodo Mueller",
-				"Juergen Daum",
-				"Ralf Goebel",
-				"Marco Muller",
-				"Matthias Gegenheimer",
-				"Silvio Reinicke",
-				"Cihan Araci"
-			]
-		},
-		{
-			"name" : "DC Blau-Weiss Karlsruhe",
-			"mitglieder" : [
-				"Tobias Goetzelmann",
-				"Bernt Jock",
-				"Udo De Bortoli",
-				"Wolfram Barnstedt",
-				"Ferghal Coogan",
-				"Horst Oheim"
-			]
-		},
-		{
-			"name" : "DC Hard Life",
-			"mitglieder" : [
-				"Norbert Schulte",
-				"Robin Korbmann",
-				"Daniel Noto",
-				"Andre Bock",
-				"Marcus Hanzl",
-				"Thomas Ilgert",
-				"Timo Groeschl",
-				"Jamal Schulte"
-			]
-		},
-		{
-			"name" : "DC Underground Fools",
-			"mitglieder" : [
-				"Urban Roth",
-				"Ralf Voggenreiter",
-				"Heiko Fruhner",
-				"Sven Fiedler",
-				"Giuseppe Cantanna",
-				"Kay Gottmann",
-				"Christian Besesek",
-				"Miguel Kammerer"
-			]
-		},
-		{
-			"name" : "Freygerber Fighters",
-			"mitglieder" : [
-				"Markus Renner",
-				"Hans Jaehrling",
-				"Bastian Mastafaoni",
-				"Christof Theobald",
-				"Lucas Busch",
-				"Karim Mastafaoni",
-				"Thomas Sauther",
-				"Sven Haltmayer"
-			]
-		},
-		{
-			"name" : "Gaggenauer Dartmoskitos",
-			"mitglieder" : [
-				"David Walz",
-				"John Bache",
-				"Michael Gleisle",
-				"Lukas Krzyzanowski",
-				"Mateusz Plutta",
-				"Thomas Kraft",
-				"Ryszard Plutta",
-				"Joachim Pflueger",
-				"Christian Schorpp",
-				"Lukas Nowak",
-				"Martin Nowak"
-			]
-		},
-		{
-			"name" : "Taraxacuma Tornados",
-			"mitglieder" : [
-				"Mike Hurst",
-				"Thorsten Billmann",
-				"Jose Cochon",
-				"Joerg Hecker",
-				"Oliver Werling",
-				"Dieter Richard",
-				"Joerg Kartach"
-			]
-		}
-		
-	]
+	"D. C. Taraxacuma Huttenheim e. V.": {
+		"vereinsUID": "hb1q",
+		"mitglieder": [
+			{
+				"name": "Albecker",
+				"vorname": "Jenny",
+				"passnummer": "12290"
+			},
+			{
+				"name": "Barth",
+				"vorname": "Holger",
+				"passnummer": "10035"
+			},
+			{
+				"name": "Becker",
+				"vorname": "Daniela",
+				"passnummer": "10049"
+			},
+			{
+				"name": "Becker",
+				"vorname": "Jochen",
+				"passnummer": "10050"
+			},
+			{
+				"name": "Becker",
+				"vorname": "Steffen",
+				"passnummer": "10052"
+			},
+			{
+				"name": "Bernhardt",
+				"vorname": "Christian",
+				"passnummer": "12593"
+			},
+			{
+				"name": "Billmann",
+				"vorname": "Thorsten",
+				"passnummer": "12367"
+			},
+			{
+				"name": "Cochon",
+				"vorname": "José",
+				"passnummer": "11393"
+			},
+			{
+				"name": "Damsons",
+				"vorname": "Diana",
+				"passnummer": "11779"
+			},
+			{
+				"name": "Ebner",
+				"vorname": "Michael",
+				"passnummer": "10169"
+			},
+			{
+				"name": "Flickinger",
+				"vorname": "Florian",
+				"passnummer": "11761"
+			},
+			{
+				"name": "Frei",
+				"vorname": "Andreas",
+				"passnummer": "12580"
+			},
+			{
+				"name": "Gottwald",
+				"vorname": "Manuela",
+				"passnummer": "11215"
+			},
+			{
+				"name": "Groß",
+				"vorname": "Christina",
+				"passnummer": "12581"
+			},
+			{
+				"name": "Gutting",
+				"vorname": "Michael",
+				"passnummer": "10274"
+			},
+			{
+				"name": "Gutting",
+				"vorname": "Ralf",
+				"passnummer": "10275"
+			},
+			{
+				"name": "Hahn",
+				"vorname": "Alf",
+				"passnummer": "11714"
+			},
+			{
+				"name": "Hahn",
+				"vorname": "Thomas",
+				"passnummer": "10290"
+			},
+			{
+				"name": "Hecker",
+				"vorname": "Jörg",
+				"passnummer": "12138"
+			},
+			{
+				"name": "Hodorff",
+				"vorname": "Tanja",
+				"passnummer": "12472"
+			},
+			{
+				"name": "Hoffmann",
+				"vorname": "Daniel",
+				"passnummer": "12113"
+			},
+			{
+				"name": "Hotel",
+				"vorname": "Johann",
+				"passnummer": "10347"
+			},
+			{
+				"name": "Hurst",
+				"vorname": "Mike",
+				"passnummer": "10355"
+			},
+			{
+				"name": "Janßen",
+				"vorname": "Holger",
+				"passnummer": "12496"
+			},
+			{
+				"name": "Jewell",
+				"vorname": "David",
+				"passnummer": "12575"
+			},
+			{
+				"name": "Kammerer",
+				"vorname": "Kay",
+				"passnummer": "10393"
+			},
+			{
+				"name": "Kartach",
+				"vorname": "Jörg",
+				"passnummer": "12176"
+			},
+			{
+				"name": "Keilhauer",
+				"vorname": "Armin",
+				"passnummer": "11703"
+			},
+			{
+				"name": "Knecht",
+				"vorname": "Dirk",
+				"passnummer": "11908"
+			},
+			{
+				"name": "Knobloch",
+				"vorname": "Andreas",
+				"passnummer": "12346"
+			},
+			{
+				"name": "Maul",
+				"vorname": "Michael",
+				"passnummer": "12541"
+			},
+			{
+				"name": "Mohr",
+				"vorname": "Jürgen",
+				"passnummer": "10566"
+			},
+			{
+				"name": "Richard",
+				"vorname": "Andrea",
+				"passnummer": "10678"
+			},
+			{
+				"name": "Richard",
+				"vorname": "Dieter",
+				"passnummer": "10679"
+			},
+			{
+				"name": "Richard",
+				"vorname": "Tim",
+				"passnummer": "10680"
+			},
+			{
+				"name": "Riedle",
+				"vorname": "Heinz",
+				"passnummer": "12506"
+			},
+			{
+				"name": "Scherer",
+				"vorname": "Andre",
+				"passnummer": "12519"
+			},
+			{
+				"name": "Schlicht",
+				"vorname": "Daniel",
+				"passnummer": "12438"
+			},
+			{
+				"name": "Schmidt",
+				"vorname": "Jochen",
+				"passnummer": "11118"
+			},
+			{
+				"name": "Schmidt",
+				"vorname": "Tobias",
+				"passnummer": "10735"
+			},
+			{
+				"name": "Schmitteckert",
+				"vorname": "Bernd",
+				"passnummer": "10738"
+			},
+			{
+				"name": "Schmitteckert",
+				"vorname": "Sascha",
+				"passnummer": "10739"
+			},
+			{
+				"name": "Schweizer",
+				"vorname": "Jürgen",
+				"passnummer": "11131"
+			},
+			{
+				"name": "Seibert",
+				"vorname": "Tobias",
+				"passnummer": "10782"
+			},
+			{
+				"name": "Selinga",
+				"vorname": "Sven",
+				"passnummer": "12281"
+			},
+			{
+				"name": "Specht",
+				"vorname": "Andreas",
+				"passnummer": "10800"
+			},
+			{
+				"name": "Stark",
+				"vorname": "Walter",
+				"passnummer": "11568"
+			},
+			{
+				"name": "Steffen",
+				"vorname": "Carsten",
+				"passnummer": "12277"
+			},
+			{
+				"name": "Stegmüller",
+				"vorname": "Ralf",
+				"passnummer": "11116"
+			},
+			{
+				"name": "Steinle",
+				"vorname": "Stefan",
+				"passnummer": "12137"
+			},
+			{
+				"name": "Sterzing",
+				"vorname": "Frank",
+				"passnummer": "11410"
+			},
+			{
+				"name": "Stöhr",
+				"vorname": "Christian",
+				"passnummer": "11042"
+			},
+			{
+				"name": "Vogler",
+				"vorname": "Markus",
+				"passnummer": "12473"
+			},
+			{
+				"name": "Waeldin",
+				"vorname": "Andreas",
+				"passnummer": "10888"
+			},
+			{
+				"name": "Waeldin",
+				"vorname": "Stephanie",
+				"passnummer": "12104"
+			},
+			{
+				"name": "Weick",
+				"vorname": "Andreas",
+				"passnummer": "11569"
+			},
+			{
+				"name": "Werling",
+				"vorname": "Oliver",
+				"passnummer": "11567"
+			},
+			{
+				"name": "Werner",
+				"vorname": "Armin",
+				"passnummer": "10922"
+			},
+			{
+				"name": "Werner",
+				"vorname": "Jutta",
+				"passnummer": "10562"
+			},
+			{
+				"name": "Wiegering",
+				"vorname": "Stefan",
+				"passnummer": "10939"
+			},
+			{
+				"name": "Wirth",
+				"vorname": "Alexander",
+				"passnummer": "11778"
+			}
+		]
+	},
+	"DC Undertaker reloaded": {
+		"vereinsUID": "uvgn",
+		"mitglieder": [
+			{
+				"name": "Albert",
+				"vorname": "Vanessa",
+				"passnummer": "12134"
+			},
+			{
+				"name": "Albrecht",
+				"vorname": "Robert",
+				"passnummer": "12127"
+			},
+			{
+				"name": "Boss",
+				"vorname": "Dominik",
+				"passnummer": "11537"
+			},
+			{
+				"name": "Boss",
+				"vorname": "Mike",
+				"passnummer": "11535"
+			},
+			{
+				"name": "Embach",
+				"vorname": "Martin",
+				"passnummer": "12332"
+			},
+			{
+				"name": "Greulich",
+				"vorname": "Kolja",
+				"passnummer": "11806"
+			},
+			{
+				"name": "Hagmann",
+				"vorname": "Kim",
+				"passnummer": "12391"
+			},
+			{
+				"name": "Knebel",
+				"vorname": "Matthias",
+				"passnummer": "11644"
+			},
+			{
+				"name": "Kost",
+				"vorname": "Patrick",
+				"passnummer": "12392"
+			},
+			{
+				"name": "Mecklenburg",
+				"vorname": "Uwe",
+				"passnummer": "11807"
+			},
+			{
+				"name": "Raptis",
+				"vorname": "Nikolaos",
+				"passnummer": "11808"
+			},
+			{
+				"name": "Steiner",
+				"vorname": "Thomas",
+				"passnummer": "12260"
+			},
+			{
+				"name": "Stelle",
+				"vorname": "Mike",
+				"passnummer": "12269"
+			},
+			{
+				"name": "Zang",
+				"vorname": "Lothar",
+				"passnummer": "12270"
+			}
+		]
+	},
+	"DC Studenten Bellheim e. V.": {
+		"vereinsUID": "r02p",
+		"mitglieder": [
+			{
+				"name": "Alexander",
+				"vorname": "Patrick",
+				"passnummer": "10006"
+			},
+			{
+				"name": "Bähr",
+				"vorname": "Christian",
+				"passnummer": "10118"
+			},
+			{
+				"name": "Gläßgen",
+				"vorname": "Alexander",
+				"passnummer": "11587"
+			},
+			{
+				"name": "Greif",
+				"vorname": "Yannik",
+				"passnummer": "12364"
+			},
+			{
+				"name": "Kauffmann",
+				"vorname": "Volker",
+				"passnummer": "12041"
+			},
+			{
+				"name": "Klein",
+				"vorname": "Marco",
+				"passnummer": "10417"
+			},
+			{
+				"name": "Krübel",
+				"vorname": "Mario",
+				"passnummer": "12577"
+			},
+			{
+				"name": "Köhnlein",
+				"vorname": "Thomas",
+				"passnummer": "10474"
+			},
+			{
+				"name": "Lehmann",
+				"vorname": "Peter",
+				"passnummer": "12145"
+			},
+			{
+				"name": "Malinovski",
+				"vorname": "Thorsten",
+				"passnummer": "10524"
+			},
+			{
+				"name": "Mathis",
+				"vorname": "Delbert",
+				"passnummer": "11780"
+			},
+			{
+				"name": "Müller",
+				"vorname": "Markus",
+				"passnummer": "10585"
+			},
+			{
+				"name": "Niederer",
+				"vorname": "Jochen",
+				"passnummer": "12363"
+			},
+			{
+				"name": "Pegelow",
+				"vorname": "Marco",
+				"passnummer": "10554"
+			},
+			{
+				"name": "Schmidt",
+				"vorname": "Hartmut",
+				"passnummer": "10734"
+			},
+			{
+				"name": "Stein",
+				"vorname": "Volker",
+				"passnummer": "10819"
+			},
+			{
+				"name": "Utting",
+				"vorname": "Michael",
+				"passnummer": "10870"
+			},
+			{
+				"name": "Walter",
+				"vorname": "Florian",
+				"passnummer": "11539"
+			},
+			{
+				"name": "Wegmann",
+				"vorname": "Stefan",
+				"passnummer": "11382"
+			},
+			{
+				"name": "Wingerter",
+				"vorname": "Tino",
+				"passnummer": "11383"
+			}
+		]
+	},
+	"D.A.R.T. Plumbata e. V.": {
+		"vereinsUID": "k7f5",
+		"mitglieder": [
+			{
+				"name": "Alpino",
+				"vorname": "Fabio",
+				"passnummer": "12374"
+			},
+			{
+				"name": "Augenstein",
+				"vorname": "Marius",
+				"passnummer": "12100"
+			},
+			{
+				"name": "Berninger",
+				"vorname": "Hans",
+				"passnummer": "12508"
+			},
+			{
+				"name": "Bordolo",
+				"vorname": "Elias",
+				"passnummer": "12353"
+			},
+			{
+				"name": "Braun",
+				"vorname": "René",
+				"passnummer": "11795"
+			},
+			{
+				"name": "Hofmann",
+				"vorname": "Jan",
+				"passnummer": "12552"
+			},
+			{
+				"name": "Höger",
+				"vorname": "Jörg",
+				"passnummer": "12349"
+			},
+			{
+				"name": "Joudi",
+				"vorname": "Josef",
+				"passnummer": "11143"
+			},
+			{
+				"name": "Klein",
+				"vorname": "Ralf",
+				"passnummer": "10418"
+			},
+			{
+				"name": "Klomann",
+				"vorname": "Melanie",
+				"passnummer": "12354"
+			},
+			{
+				"name": "König",
+				"vorname": "Kevin",
+				"passnummer": "12574"
+			},
+			{
+				"name": "Mager",
+				"vorname": "Fabian",
+				"passnummer": "11360"
+			},
+			{
+				"name": "Mager",
+				"vorname": "Ivanka",
+				"passnummer": "11727"
+			},
+			{
+				"name": "Muntz",
+				"vorname": "Hans Peter",
+				"passnummer": "10574"
+			},
+			{
+				"name": "Rohde",
+				"vorname": "Thomas",
+				"passnummer": "12329"
+			}
+		]
+	},
+	"DC 81 Karlsruhe": {
+		"vereinsUID": "2lf1",
+		"mitglieder": [
+			{
+				"name": "Andert",
+				"vorname": "Iris",
+				"passnummer": "11804"
+			},
+			{
+				"name": "Araci",
+				"vorname": "Cihan",
+				"passnummer": "11851"
+			},
+			{
+				"name": "Daum",
+				"vorname": "Jürgen",
+				"passnummer": "10144"
+			},
+			{
+				"name": "Gegenheimer",
+				"vorname": "Matthias",
+				"passnummer": "12258"
+			},
+			{
+				"name": "Gehrlein",
+				"vorname": "Angelo",
+				"passnummer": "11668"
+			},
+			{
+				"name": "Göbel",
+				"vorname": "Ralf",
+				"passnummer": "11805"
+			},
+			{
+				"name": "Ilchmann",
+				"vorname": "Horst",
+				"passnummer": "12259"
+			},
+			{
+				"name": "Müller",
+				"vorname": "Bodo",
+				"passnummer": "11559"
+			},
+			{
+				"name": "Müller",
+				"vorname": "Marco",
+				"passnummer": "10584"
+			},
+			{
+				"name": "Neuhaus",
+				"vorname": "Mario",
+				"passnummer": "12522"
+			},
+			{
+				"name": "Reinicke",
+				"vorname": "Silvio",
+				"passnummer": "12152"
+			}
+		]
+	},
+	"DC Flatliners e. V. Karlsruhe": {
+		"vereinsUID": "iz65",
+		"mitglieder": [
+			{
+				"name": "Ansel",
+				"vorname": "Jürgen",
+				"passnummer": "11169"
+			},
+			{
+				"name": "Baumann",
+				"vorname": "John",
+				"passnummer": "12591"
+			},
+			{
+				"name": "Bobrzik",
+				"vorname": "Benjamin",
+				"passnummer": "12316"
+			},
+			{
+				"name": "Fabry",
+				"vorname": "Stefan",
+				"passnummer": "10188"
+			},
+			{
+				"name": "Gast",
+				"vorname": "Armin",
+				"passnummer": "11367"
+			},
+			{
+				"name": "Gerike",
+				"vorname": "Igor",
+				"passnummer": "12283"
+			},
+			{
+				"name": "Heck",
+				"vorname": "Daniel",
+				"passnummer": "10309"
+			},
+			{
+				"name": "Hoffmann",
+				"vorname": "Markus",
+				"passnummer": "10332"
+			},
+			{
+				"name": "Hoffmann",
+				"vorname": "Mika",
+				"passnummer": "10333"
+			},
+			{
+				"name": "Hoffmann",
+				"vorname": "Milena",
+				"passnummer": "10334"
+			},
+			{
+				"name": "Häcker",
+				"vorname": "Nicole",
+				"passnummer": "11236"
+			},
+			{
+				"name": "Jost",
+				"vorname": "Thorsten",
+				"passnummer": "10378"
+			},
+			{
+				"name": "Jürgen",
+				"vorname": "Stefan",
+				"passnummer": "10383"
+			},
+			{
+				"name": "Kammerlander",
+				"vorname": "Tobias",
+				"passnummer": "12027"
+			},
+			{
+				"name": "Kellner",
+				"vorname": "Markus",
+				"passnummer": "12381"
+			},
+			{
+				"name": "Ketterer",
+				"vorname": "Matthias",
+				"passnummer": "10405"
+			},
+			{
+				"name": "Kirchenbauer",
+				"vorname": "Volker",
+				"passnummer": "10415"
+			},
+			{
+				"name": "Kovac",
+				"vorname": "Dujko",
+				"passnummer": "11715"
+			},
+			{
+				"name": "Krauss",
+				"vorname": "Peter",
+				"passnummer": "11906"
+			},
+			{
+				"name": "König",
+				"vorname": "Timo",
+				"passnummer": "11854"
+			},
+			{
+				"name": "Loy",
+				"vorname": "Marcel",
+				"passnummer": "11678"
+			},
+			{
+				"name": "Marijanovic",
+				"vorname": "Robert",
+				"passnummer": "10529"
+			},
+			{
+				"name": "Meyer",
+				"vorname": "Torsten",
+				"passnummer": "10556"
+			},
+			{
+				"name": "Moog",
+				"vorname": "Yves",
+				"passnummer": "12285"
+			},
+			{
+				"name": "Mußgnug",
+				"vorname": "Thorsten",
+				"passnummer": "10578"
+			},
+			{
+				"name": "Nees",
+				"vorname": "Thomas",
+				"passnummer": "10595"
+			},
+			{
+				"name": "Nüßle",
+				"vorname": "Michael",
+				"passnummer": "12437"
+			},
+			{
+				"name": "Pihi",
+				"vorname": "Deniel",
+				"passnummer": "11077"
+			},
+			{
+				"name": "Postler",
+				"vorname": "Kevin",
+				"passnummer": "12320"
+			},
+			{
+				"name": "Raum",
+				"vorname": "Ingo",
+				"passnummer": "12311"
+			},
+			{
+				"name": "Rodriquez",
+				"vorname": "Jose Luis",
+				"passnummer": "12284"
+			},
+			{
+				"name": "Roller",
+				"vorname": "Anja",
+				"passnummer": "10687"
+			},
+			{
+				"name": "Roller",
+				"vorname": "Freddy",
+				"passnummer": "10688"
+			},
+			{
+				"name": "Roller",
+				"vorname": "Jannis",
+				"passnummer": "10689"
+			},
+			{
+				"name": "Roller",
+				"vorname": "Pascal",
+				"passnummer": "10690"
+			},
+			{
+				"name": "Röhri",
+				"vorname": "Torsten",
+				"passnummer": "12322"
+			},
+			{
+				"name": "Rönning",
+				"vorname": "Simone",
+				"passnummer": "10704"
+			},
+			{
+				"name": "Rönning",
+				"vorname": "Thomas",
+				"passnummer": "10705"
+			},
+			{
+				"name": "Schober",
+				"vorname": "Timo",
+				"passnummer": "12315"
+			},
+			{
+				"name": "Schuh",
+				"vorname": "Frank",
+				"passnummer": "12436"
+			},
+			{
+				"name": "Spathelf",
+				"vorname": "Stefan",
+				"passnummer": "12314"
+			}
+		]
+	},
+	"Dartspub Walldorf e. V.": {
+		"vereinsUID": "6c4l",
+		"mitglieder": [
+			{
+				"name": "Ansel",
+				"vorname": "Vanessa",
+				"passnummer": "11047"
+			},
+			{
+				"name": "Antz",
+				"vorname": "Kevin",
+				"passnummer": "11876"
+			},
+			{
+				"name": "Ayllon",
+				"vorname": "John",
+				"passnummer": "10019"
+			},
+			{
+				"name": "Back",
+				"vorname": "Joschuah",
+				"passnummer": "10023"
+			},
+			{
+				"name": "Becker",
+				"vorname": "Jens-Dieter",
+				"passnummer": "12000"
+			},
+			{
+				"name": "Besrutsch",
+				"vorname": "Rainer",
+				"passnummer": "10068"
+			},
+			{
+				"name": "Bonn",
+				"vorname": "Dominik",
+				"passnummer": "11474"
+			},
+			{
+				"name": "Bopp",
+				"vorname": "Florian",
+				"passnummer": "10091"
+			},
+			{
+				"name": "Bub",
+				"vorname": "Leif-Eric",
+				"passnummer": "12106"
+			},
+			{
+				"name": "Caroli",
+				"vorname": "Matthias",
+				"passnummer": "12588"
+			},
+			{
+				"name": "Elbs",
+				"vorname": "Benjamin",
+				"passnummer": "10176"
+			},
+			{
+				"name": "Fegert",
+				"vorname": "Simone",
+				"passnummer": "12191"
+			},
+			{
+				"name": "Große-Stoltenberg",
+				"vorname": "Mika Adrian",
+				"passnummer": "12515"
+			},
+			{
+				"name": "Haacke",
+				"vorname": "Björn",
+				"passnummer": "12173"
+			},
+			{
+				"name": "Hocker",
+				"vorname": "Patrick",
+				"passnummer": "10327"
+			},
+			{
+				"name": "Hofman",
+				"vorname": "Dirk",
+				"passnummer": "10337"
+			},
+			{
+				"name": "Hüther",
+				"vorname": "Stefan",
+				"passnummer": "10361"
+			},
+			{
+				"name": "Häfner",
+				"vorname": "Johannes",
+				"passnummer": "12587"
+			},
+			{
+				"name": "Karacan",
+				"vorname": "Baris",
+				"passnummer": "11420"
+			},
+			{
+				"name": "Katic",
+				"vorname": "Nikola",
+				"passnummer": "12192"
+			},
+			{
+				"name": "Kieser",
+				"vorname": "Rita",
+				"passnummer": "10410"
+			},
+			{
+				"name": "Kraft",
+				"vorname": "Claudia",
+				"passnummer": "11660"
+			},
+			{
+				"name": "Köhler",
+				"vorname": "Sabine",
+				"passnummer": "10402"
+			},
+			{
+				"name": "Link",
+				"vorname": "Stefan",
+				"passnummer": "11046"
+			},
+			{
+				"name": "Lüttjohann",
+				"vorname": "Stephan",
+				"passnummer": "12567"
+			},
+			{
+				"name": "Maschek",
+				"vorname": "Uwe",
+				"passnummer": "10531"
+			},
+			{
+				"name": "Mast",
+				"vorname": "Frank",
+				"passnummer": "10533"
+			},
+			{
+				"name": "Mazur",
+				"vorname": "Michael",
+				"passnummer": "10541"
+			},
+			{
+				"name": "Mehrer",
+				"vorname": "Michael",
+				"passnummer": "10546"
+			},
+			{
+				"name": "Moh",
+				"vorname": "Benjamin",
+				"passnummer": "11026"
+			},
+			{
+				"name": "Pfaff",
+				"vorname": "Hans",
+				"passnummer": "10635"
+			},
+			{
+				"name": "Schnabel",
+				"vorname": "Martin",
+				"passnummer": "10740"
+			},
+			{
+				"name": "Schulte",
+				"vorname": "Marcus",
+				"passnummer": "10749"
+			},
+			{
+				"name": "Spörle",
+				"vorname": "Sabrina",
+				"passnummer": "10807"
+			},
+			{
+				"name": "Stangl",
+				"vorname": "Manuel",
+				"passnummer": "11168"
+			},
+			{
+				"name": "Stangl",
+				"vorname": "Thomas",
+				"passnummer": "10811"
+			},
+			{
+				"name": "Stein",
+				"vorname": "Sascha",
+				"passnummer": "10818"
+			},
+			{
+				"name": "Stolze",
+				"vorname": "Ralf",
+				"passnummer": "11076"
+			},
+			{
+				"name": "Stübs",
+				"vorname": "Michael",
+				"passnummer": "10835"
+			},
+			{
+				"name": "Suljovic",
+				"vorname": "Mensur",
+				"passnummer": "11160"
+			},
+			{
+				"name": "Wefers",
+				"vorname": "Thorsten",
+				"passnummer": "10907"
+			},
+			{
+				"name": "Werle",
+				"vorname": "Sebastian",
+				"passnummer": "11895"
+			},
+			{
+				"name": "Wittmann",
+				"vorname": "Berthold",
+				"passnummer": "10946"
+			},
+			{
+				"name": "Wusch",
+				"vorname": "Stefan",
+				"passnummer": "11276"
+			},
+			{
+				"name": "Zimmermann",
+				"vorname": "Jürgen",
+				"passnummer": "12504"
+			}
+		]
+	},
+	"Gegen die Drück": {
+		"vereinsUID": "lvl4",
+		"mitglieder": [
+			{
+				"name": "Anselmann",
+				"vorname": "Tim",
+				"passnummer": "12328"
+			},
+			{
+				"name": "Büger",
+				"vorname": "Zafer",
+				"passnummer": "10115"
+			},
+			{
+				"name": "Durchholz",
+				"vorname": "Bastian",
+				"passnummer": "11984"
+			},
+			{
+				"name": "Fackelmann",
+				"vorname": "Frank",
+				"passnummer": "12484"
+			},
+			{
+				"name": "Gawlik",
+				"vorname": "Ralf",
+				"passnummer": "11640"
+			},
+			{
+				"name": "Gund",
+				"vorname": "Thomas",
+				"passnummer": "11039"
+			},
+			{
+				"name": "Häusler",
+				"vorname": "Michael",
+				"passnummer": "10365"
+			},
+			{
+				"name": "Jany",
+				"vorname": "Christian",
+				"passnummer": "12531"
+			},
+			{
+				"name": "Mack",
+				"vorname": "Paul Curtiss",
+				"passnummer": "12248"
+			},
+			{
+				"name": "Margraf",
+				"vorname": "Matthias",
+				"passnummer": "10527"
+			},
+			{
+				"name": "Mohr",
+				"vorname": "Markus",
+				"passnummer": "12443"
+			},
+			{
+				"name": "Mohr",
+				"vorname": "Tobias",
+				"passnummer": "12383"
+			},
+			{
+				"name": "Muhn",
+				"vorname": "André",
+				"passnummer": "10572"
+			},
+			{
+				"name": "Muth",
+				"vorname": "Rüdiger",
+				"passnummer": "10576"
+			},
+			{
+				"name": "Oberacker",
+				"vorname": "Christian",
+				"passnummer": "11481"
+			},
+			{
+				"name": "Schied",
+				"vorname": "Andreas",
+				"passnummer": "11643"
+			},
+			{
+				"name": "Skrzypek",
+				"vorname": "Iwona",
+				"passnummer": "12516"
+			},
+			{
+				"name": "Stache",
+				"vorname": "Manuela",
+				"passnummer": "11311"
+			},
+			{
+				"name": "Treiber",
+				"vorname": "Jan",
+				"passnummer": "11983"
+			},
+			{
+				"name": "Walther",
+				"vorname": "Kay",
+				"passnummer": "11342"
+			},
+			{
+				"name": "Wittmann",
+				"vorname": "Steffen",
+				"passnummer": "12224"
+			}
+		]
+	},
+	"SG Stern Gaggenau": {
+		"vereinsUID": "teq4",
+		"mitglieder": [
+			{
+				"name": "Bache",
+				"vorname": "Joe",
+				"passnummer": "11731"
+			},
+			{
+				"name": "Bertsch",
+				"vorname": "Stephan",
+				"passnummer": "12125"
+			},
+			{
+				"name": "Fleig",
+				"vorname": "Werner",
+				"passnummer": "11734"
+			},
+			{
+				"name": "Gleisle",
+				"vorname": "Michael",
+				"passnummer": "11729"
+			},
+			{
+				"name": "Kohrt",
+				"vorname": "Florian",
+				"passnummer": "12542"
+			},
+			{
+				"name": "Kraft",
+				"vorname": "Thomas",
+				"passnummer": "12182"
+			},
+			{
+				"name": "Krzyzanowski",
+				"vorname": "Lukas",
+				"passnummer": "12395"
+			},
+			{
+				"name": "Nowak",
+				"vorname": "Lukas",
+				"passnummer": "12530"
+			},
+			{
+				"name": "Nowak",
+				"vorname": "Martin",
+				"passnummer": "12529"
+			},
+			{
+				"name": "Pflüger",
+				"vorname": "Joachim",
+				"passnummer": "11730"
+			},
+			{
+				"name": "Plutta",
+				"vorname": "Mateusz",
+				"passnummer": "12099"
+			},
+			{
+				"name": "Plutta",
+				"vorname": "Ryszard",
+				"passnummer": "12151"
+			},
+			{
+				"name": "Reckruhn",
+				"vorname": "Christian",
+				"passnummer": "12257"
+			},
+			{
+				"name": "Röckel",
+				"vorname": "Sven",
+				"passnummer": "12256"
+			},
+			{
+				"name": "Schorpp",
+				"vorname": "Christian",
+				"passnummer": "12524"
+			},
+			{
+				"name": "Walz",
+				"vorname": "David",
+				"passnummer": "12394"
+			}
+		]
+	},
+	"Team Wilder Mann": {
+		"vereinsUID": "1tpm",
+		"mitglieder": [
+			{
+				"name": "Bachert",
+				"vorname": "Steffen",
+				"passnummer": "11316"
+			},
+			{
+				"name": "Baust",
+				"vorname": "Christian",
+				"passnummer": "11814"
+			},
+			{
+				"name": "Bogumil",
+				"vorname": "Jörg",
+				"passnummer": "10085"
+			},
+			{
+				"name": "Buning",
+				"vorname": "Stephanie",
+				"passnummer": "11835"
+			},
+			{
+				"name": "Da Silvanovo",
+				"vorname": "Antonio",
+				"passnummer": "12334"
+			},
+			{
+				"name": "König-Brucker",
+				"vorname": "Jürgen",
+				"passnummer": "11812"
+			},
+			{
+				"name": "Lamoth",
+				"vorname": "Uwe",
+				"passnummer": "11461"
+			},
+			{
+				"name": "Mehlmer",
+				"vorname": "Bernd",
+				"passnummer": "12132"
+			},
+			{
+				"name": "Michl",
+				"vorname": "Rolf",
+				"passnummer": "10561"
+			},
+			{
+				"name": "Schell",
+				"vorname": "Thomas",
+				"passnummer": "10719"
+			},
+			{
+				"name": "Speiger",
+				"vorname": "Jan",
+				"passnummer": "12352"
+			},
+			{
+				"name": "Thoma",
+				"vorname": "Susanne",
+				"passnummer": "11317"
+			}
+		]
+	},
+	"Momo´s Bistro": {
+		"vereinsUID": "5rd3",
+		"mitglieder": [
+			{
+				"name": "Barabas",
+				"vorname": "Attila",
+				"passnummer": "12545"
+			},
+			{
+				"name": "Schilbach",
+				"vorname": "Domenic",
+				"passnummer": "11401"
+			},
+			{
+				"name": "Schilbach",
+				"vorname": "Stefan",
+				"passnummer": "11002"
+			}
+		]
+	},
+	"DC Blau Weiß Karlsruhe e. V.": {
+		"vereinsUID": "lrwe",
+		"mitglieder": [
+			{
+				"name": "Barnstedt",
+				"vorname": "Wolfram",
+				"passnummer": "10033"
+			},
+			{
+				"name": "Coogan",
+				"vorname": "Ferghal",
+				"passnummer": "12350"
+			},
+			{
+				"name": "De Bortoli",
+				"vorname": "Udo",
+				"passnummer": "10148"
+			},
+			{
+				"name": "Götzelmann",
+				"vorname": "Tobias",
+				"passnummer": "12369"
+			},
+			{
+				"name": "Holweck",
+				"vorname": "Jürgen",
+				"passnummer": "12596"
+			},
+			{
+				"name": "Jock",
+				"vorname": "Bernt",
+				"passnummer": "10377"
+			},
+			{
+				"name": "Oheim",
+				"vorname": "Horst W.",
+				"passnummer": "10613"
+			},
+			{
+				"name": "Pahlke",
+				"vorname": "Stefan",
+				"passnummer": "12308"
+			}
+		]
+	},
+	"DC Laola Weinheim": {
+		"vereinsUID": "n2nl",
+		"mitglieder": [
+			{
+				"name": "Baum",
+				"vorname": "Annika",
+				"passnummer": "12439"
+			},
+			{
+				"name": "Demirel",
+				"vorname": "Ali",
+				"passnummer": "12458"
+			},
+			{
+				"name": "Hauck",
+				"vorname": "Rainer",
+				"passnummer": "12440"
+			},
+			{
+				"name": "Howe",
+				"vorname": "Simone",
+				"passnummer": "11391"
+			},
+			{
+				"name": "Hundshammer",
+				"vorname": "Frank",
+				"passnummer": "12441"
+			},
+			{
+				"name": "Krieger",
+				"vorname": "Stefan",
+				"passnummer": "11340"
+			},
+			{
+				"name": "Rauscher",
+				"vorname": "Michael",
+				"passnummer": "11738"
+			},
+			{
+				"name": "Walther",
+				"vorname": "Daniel",
+				"passnummer": "11338"
+			}
+		]
+	},
+	"The Flying Dartsmen": {
+		"vereinsUID": "4y5s",
+		"mitglieder": [
+			{
+				"name": "Bayer",
+				"vorname": "Friedrich",
+				"passnummer": "12357"
+			},
+			{
+				"name": "Bayer",
+				"vorname": "Reinhold",
+				"passnummer": "12356"
+			},
+			{
+				"name": "Holzhauer",
+				"vorname": "Michael",
+				"passnummer": "12358"
+			}
+		]
+	},
+	"Dart Knights": {
+		"vereinsUID": "p24c",
+		"mitglieder": [
+			{
+				"name": "Bechtold",
+				"vorname": "Jennifer",
+				"passnummer": "12512"
+			},
+			{
+				"name": "Große",
+				"vorname": "Jan-Peter",
+				"passnummer": "12386"
+			},
+			{
+				"name": "Hodapp",
+				"vorname": "Sven",
+				"passnummer": "12511"
+			},
+			{
+				"name": "Kloos",
+				"vorname": "Christian",
+				"passnummer": "12275"
+			},
+			{
+				"name": "Meier",
+				"vorname": "Julian",
+				"passnummer": "12280"
+			},
+			{
+				"name": "Niedick",
+				"vorname": "Christian",
+				"passnummer": "12063"
+			},
+			{
+				"name": "Spengler",
+				"vorname": "Marius",
+				"passnummer": "11075"
+			},
+			{
+				"name": "Vandenhertz",
+				"vorname": "Jens",
+				"passnummer": "12276"
+			},
+			{
+				"name": "Wölk",
+				"vorname": "Mario",
+				"passnummer": "11665"
+			}
+		]
+	},
+	"DC Underground Fool´s e. V.": {
+		"vereinsUID": "a09z",
+		"mitglieder": [
+			{
+				"name": "Besesek",
+				"vorname": "Christian",
+				"passnummer": "12431"
+			},
+			{
+				"name": "Cantanna",
+				"vorname": "Guiseppe",
+				"passnummer": "12430"
+			},
+			{
+				"name": "Fiedler",
+				"vorname": "Sven",
+				"passnummer": "12300"
+			},
+			{
+				"name": "Fruhner",
+				"vorname": "Heiko",
+				"passnummer": "11963"
+			},
+			{
+				"name": "Gottmann",
+				"vorname": "Kay",
+				"passnummer": "12429"
+			},
+			{
+				"name": "Kammerer",
+				"vorname": "Miguel",
+				"passnummer": "12432"
+			},
+			{
+				"name": "Roth",
+				"vorname": "Urban",
+				"passnummer": "10695"
+			},
+			{
+				"name": "Voggenreiter",
+				"vorname": "Ralf",
+				"passnummer": "11870"
+			}
+		]
+	},
+	"DC Shamrock": {
+		"vereinsUID": "95fp",
+		"mitglieder": [
+			{
+				"name": "Bischoff",
+				"vorname": "Benjamin",
+				"passnummer": "11538"
+			},
+			{
+				"name": "During",
+				"vorname": "Andreas",
+				"passnummer": "12360"
+			},
+			{
+				"name": "Espig",
+				"vorname": "Toni",
+				"passnummer": "11766"
+			},
+			{
+				"name": "Hillenbrand",
+				"vorname": "Christian",
+				"passnummer": "11866"
+			},
+			{
+				"name": "Hoffmann",
+				"vorname": "Jasmin",
+				"passnummer": "11867"
+			},
+			{
+				"name": "Kuhn",
+				"vorname": "Alexander",
+				"passnummer": "11534"
+			},
+			{
+				"name": "Nuschny",
+				"vorname": "Eugen",
+				"passnummer": "12509"
+			},
+			{
+				"name": "Pujic",
+				"vorname": "Matthias",
+				"passnummer": "11582"
+			},
+			{
+				"name": "Schlicht",
+				"vorname": "Werner",
+				"passnummer": "12489"
+			},
+			{
+				"name": "Stansch",
+				"vorname": "Tobias",
+				"passnummer": "11896"
+			},
+			{
+				"name": "Wagner",
+				"vorname": "Michael",
+				"passnummer": "12272"
+			}
+		]
+	},
+	"DC Hard Life e. V.": {
+		"vereinsUID": "yhwr",
+		"mitglieder": [
+			{
+				"name": "Bock",
+				"vorname": "Andre",
+				"passnummer": "12378"
+			},
+			{
+				"name": "De Flaco",
+				"vorname": "Dario",
+				"passnummer": "12477"
+			},
+			{
+				"name": "Großmann",
+				"vorname": "Benjamin",
+				"passnummer": "12255"
+			},
+			{
+				"name": "Gröschl",
+				"vorname": "Timo",
+				"passnummer": "11869"
+			},
+			{
+				"name": "Hanzl",
+				"vorname": "Marcus",
+				"passnummer": "12476"
+			},
+			{
+				"name": "Ilgert",
+				"vorname": "Thomas",
+				"passnummer": "12474"
+			},
+			{
+				"name": "Keller",
+				"vorname": "Jennifer",
+				"passnummer": "12116"
+			},
+			{
+				"name": "Korbmann",
+				"vorname": "Robin",
+				"passnummer": "12510"
+			},
+			{
+				"name": "Koser",
+				"vorname": "Patrick",
+				"passnummer": "12309"
+			},
+			{
+				"name": "Maisch",
+				"vorname": "Michael",
+				"passnummer": "12475"
+			},
+			{
+				"name": "Noto",
+				"vorname": "Daniel",
+				"passnummer": "12377"
+			},
+			{
+				"name": "Prochaska",
+				"vorname": "Manfred",
+				"passnummer": "12140"
+			},
+			{
+				"name": "Schneider",
+				"vorname": "Sascha",
+				"passnummer": "12123"
+			},
+			{
+				"name": "Schulte",
+				"vorname": "Jamal",
+				"passnummer": "12499"
+			},
+			{
+				"name": "Schulte",
+				"vorname": "Norbert",
+				"passnummer": "11961"
+			},
+			{
+				"name": "Swinarski",
+				"vorname": "Olaf",
+				"passnummer": "11959"
+			}
+		]
+	},
+	"DC Letschebach": {
+		"vereinsUID": "cp0t",
+		"mitglieder": [
+			{
+				"name": "Brömser",
+				"vorname": "Uwe",
+				"passnummer": "11686"
+			},
+			{
+				"name": "Gebhardt",
+				"vorname": "Michael",
+				"passnummer": "11564"
+			},
+			{
+				"name": "Haack",
+				"vorname": "Günter",
+				"passnummer": "10283"
+			},
+			{
+				"name": "Haller",
+				"vorname": "Manuel",
+				"passnummer": "12560"
+			},
+			{
+				"name": "Heck",
+				"vorname": "Michael",
+				"passnummer": "11633"
+			},
+			{
+				"name": "Kunzenbacher",
+				"vorname": "Claus",
+				"passnummer": "11651"
+			},
+			{
+				"name": "Loock",
+				"vorname": "Richard",
+				"passnummer": "12559"
+			},
+			{
+				"name": "Meier",
+				"vorname": "Michael",
+				"passnummer": "11989"
+			},
+			{
+				"name": "Roa Weisenbeck",
+				"vorname": "Markus",
+				"passnummer": "11563"
+			},
+			{
+				"name": "Özcan",
+				"vorname": "Servet",
+				"passnummer": "11724"
+			}
+		]
+	},
+	"DartTrain Rastatt": {
+		"vereinsUID": "6yxj",
+		"mitglieder": [
+			{
+				"name": "Burkart",
+				"vorname": "Christian",
+				"passnummer": "10108"
+			},
+			{
+				"name": "Fritz",
+				"vorname": "Jenny",
+				"passnummer": "10214"
+			},
+			{
+				"name": "Handke",
+				"vorname": "Jens",
+				"passnummer": "11699"
+			},
+			{
+				"name": "Hellgoth",
+				"vorname": "Martin",
+				"passnummer": "10313"
+			},
+			{
+				"name": "Kilgour",
+				"vorname": "Dave",
+				"passnummer": "11368"
+			},
+			{
+				"name": "Knöbl",
+				"vorname": "Gerd",
+				"passnummer": "11073"
+			},
+			{
+				"name": "Philipp",
+				"vorname": "Dieter",
+				"passnummer": "10639"
+			},
+			{
+				"name": "Redwanz",
+				"vorname": "Klaus",
+				"passnummer": "10666"
+			}
+		]
+	},
+	"Freygerber Fighters": {
+		"vereinsUID": "1kem",
+		"mitglieder": [
+			{
+				"name": "Busch",
+				"vorname": "Lucas",
+				"passnummer": "12468"
+			},
+			{
+				"name": "Gaab",
+				"vorname": "Sascha",
+				"passnummer": "12470"
+			},
+			{
+				"name": "Haltmayer",
+				"vorname": "Sven",
+				"passnummer": "12471"
+			},
+			{
+				"name": "Jährling",
+				"vorname": "Hans",
+				"passnummer": "10385"
+			},
+			{
+				"name": "Kechler",
+				"vorname": "Robin",
+				"passnummer": "12469"
+			},
+			{
+				"name": "Mastafaoui",
+				"vorname": "Karim",
+				"passnummer": "12517"
+			},
+			{
+				"name": "Mustafaoui",
+				"vorname": "Bastian",
+				"passnummer": "12492"
+			},
+			{
+				"name": "Renner",
+				"vorname": "Markus",
+				"passnummer": "11586"
+			},
+			{
+				"name": "Sauther",
+				"vorname": "Thomas",
+				"passnummer": "11830"
+			},
+			{
+				"name": "Schleppi",
+				"vorname": "Klaus",
+				"passnummer": "12467"
+			},
+			{
+				"name": "Theobald",
+				"vorname": "Christof",
+				"passnummer": "12493"
+			},
+			{
+				"name": "Thies",
+				"vorname": "Basti",
+				"passnummer": "12466"
+			},
+			{
+				"name": "Thies",
+				"vorname": "Stefan",
+				"passnummer": "12521"
+			},
+			{
+				"name": "Wagner",
+				"vorname": "Patrick",
+				"passnummer": "12576"
+			}
+		]
+	},
+	"BDC Breakers": {
+		"vereinsUID": "omhb",
+		"mitglieder": [
+			{
+				"name": "Dauth",
+				"vorname": "Benjamin",
+				"passnummer": "11978"
+			},
+			{
+				"name": "Kiemes",
+				"vorname": "Kai",
+				"passnummer": "11975"
+			},
+			{
+				"name": "Lutz",
+				"vorname": "Harald",
+				"passnummer": "11977"
+			},
+			{
+				"name": "Sauter",
+				"vorname": "Axel",
+				"passnummer": "11973"
+			},
+			{
+				"name": "Stiess",
+				"vorname": "Steffen",
+				"passnummer": "11976"
+			}
+		]
+	},
+	"Black Knights Hördt": {
+		"vereinsUID": "mvi6",
+		"mitglieder": [
+			{
+				"name": "Deutsch",
+				"vorname": "Manuel",
+				"passnummer": "12245"
+			},
+			{
+				"name": "Fischer",
+				"vorname": "Thorsten",
+				"passnummer": "12234"
+			},
+			{
+				"name": "Kasikci",
+				"vorname": "Senol",
+				"passnummer": "12239"
+			},
+			{
+				"name": "Kießer",
+				"vorname": "Pascal",
+				"passnummer": "12554"
+			},
+			{
+				"name": "Kochendörfer",
+				"vorname": "Andreas",
+				"passnummer": "11920"
+			},
+			{
+				"name": "Kochendörfer",
+				"vorname": "Christian",
+				"passnummer": "11921"
+			},
+			{
+				"name": "Kost",
+				"vorname": "Michael",
+				"passnummer": "12240"
+			},
+			{
+				"name": "Magin",
+				"vorname": "Sascha",
+				"passnummer": "12243"
+			},
+			{
+				"name": "Meisel",
+				"vorname": "Andy",
+				"passnummer": "12244"
+			},
+			{
+				"name": "Muhl",
+				"vorname": "Jens",
+				"passnummer": "12233"
+			},
+			{
+				"name": "Mutic",
+				"vorname": "Christian",
+				"passnummer": "12235"
+			},
+			{
+				"name": "Pfirrmann",
+				"vorname": "Andre",
+				"passnummer": "12247"
+			},
+			{
+				"name": "Schanz",
+				"vorname": "Albert",
+				"passnummer": "11389"
+			},
+			{
+				"name": "Wetzel",
+				"vorname": "Uwe",
+				"passnummer": "12241"
+			},
+			{
+				"name": "Wolff",
+				"vorname": "Marcus",
+				"passnummer": "12246"
+			}
+		]
+	},
+	"DC Reiterstüble Eppingen": {
+		"vereinsUID": "kf6o",
+		"mitglieder": [
+			{
+				"name": "Dümer",
+				"vorname": "Oliver",
+				"passnummer": "12396"
+			},
+			{
+				"name": "Fischer",
+				"vorname": "Mario Martin",
+				"passnummer": "11833"
+			},
+			{
+				"name": "Fleischmann",
+				"vorname": "Norbert",
+				"passnummer": "10203"
+			},
+			{
+				"name": "Gärtner",
+				"vorname": "Marcel",
+				"passnummer": "11581"
+			},
+			{
+				"name": "Lehnerer",
+				"vorname": "Jörg",
+				"passnummer": "12400"
+			},
+			{
+				"name": "Lewetzky",
+				"vorname": "Lilly",
+				"passnummer": "12398"
+			},
+			{
+				"name": "Rhode",
+				"vorname": "Michael",
+				"passnummer": "12401"
+			},
+			{
+				"name": "Scheyhing",
+				"vorname": "Oliver",
+				"passnummer": "11480"
+			},
+			{
+				"name": "Scholz",
+				"vorname": "Dirk",
+				"passnummer": "12494"
+			},
+			{
+				"name": "Unterhuber",
+				"vorname": "Kevin",
+				"passnummer": "12399"
+			},
+			{
+				"name": "Wabbel",
+				"vorname": "Thomas",
+				"passnummer": "12397"
+			}
+		]
+	},
+	"1. DC Hockenheim Jokers e.V.": {
+		"vereinsUID": "vw93",
+		"mitglieder": [
+			{
+				"name": "Fütterer",
+				"vorname": "Dirk",
+				"passnummer": "10222"
+			},
+			{
+				"name": "Fütterer",
+				"vorname": "Markus",
+				"passnummer": "10223"
+			},
+			{
+				"name": "Hansky",
+				"vorname": "Christian",
+				"passnummer": "10296"
+			},
+			{
+				"name": "Huber",
+				"vorname": "Martin",
+				"passnummer": "10350"
+			},
+			{
+				"name": "Stetter",
+				"vorname": "Christian",
+				"passnummer": "11456"
+			},
+			{
+				"name": "Weimar",
+				"vorname": "Stefan",
+				"passnummer": "11560"
+			},
+			{
+				"name": "Werner",
+				"vorname": "Patrick",
+				"passnummer": "10924"
+			}
+		]
+	},
+	"DC El Diablo": {
+		"vereinsUID": "hmgw",
+		"mitglieder": [
+			{
+				"name": "Grebert",
+				"vorname": "Christian",
+				"passnummer": "12171"
+			},
+			{
+				"name": "Hauenstein",
+				"vorname": "Michael",
+				"passnummer": "12393"
+			},
+			{
+				"name": "Lagatie",
+				"vorname": "Marcel",
+				"passnummer": "12571"
+			},
+			{
+				"name": "Müller",
+				"vorname": "Lukas",
+				"passnummer": "12126"
+			},
+			{
+				"name": "Reeb",
+				"vorname": "Roman",
+				"passnummer": "12487"
+			},
+			{
+				"name": "Schaaf",
+				"vorname": "Sebastian",
+				"passnummer": "11777"
+			},
+			{
+				"name": "Schade",
+				"vorname": "Christian",
+				"passnummer": "11775"
+			},
+			{
+				"name": "Sülzle",
+				"vorname": "Jürgen",
+				"passnummer": "12181"
+			}
+		]
+	},
+	"Alla Häeeeehr Pforzheim": {
+		"vereinsUID": "sey0",
+		"mitglieder": [
+			{
+				"name": "Herz",
+				"vorname": "Vitali",
+				"passnummer": "12379"
+			},
+			{
+				"name": "Hoppe",
+				"vorname": "Harald",
+				"passnummer": "11347"
+			},
+			{
+				"name": "Hölzle",
+				"vorname": "Kai",
+				"passnummer": "12578"
+			},
+			{
+				"name": "Hölzle",
+				"vorname": "Maik",
+				"passnummer": "12579"
+			},
+			{
+				"name": "Kunze",
+				"vorname": "Sebastian",
+				"passnummer": "11348"
+			},
+			{
+				"name": "Lamitschka",
+				"vorname": "Michael",
+				"passnummer": "12500"
+			},
+			{
+				"name": "Sauer",
+				"vorname": "Leo",
+				"passnummer": "11397"
+			},
+			{
+				"name": "Schmidt",
+				"vorname": "Alexander",
+				"passnummer": "11349"
+			},
+			{
+				"name": "Staude",
+				"vorname": "Christoph",
+				"passnummer": "12325"
+			}
+		]
+	}
 }
-	
