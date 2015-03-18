@@ -18,26 +18,26 @@
 		function convertToInternalFormat(oRawData){
 			for (var i = 0; i < oRawData.length; i++) {
 				var oLine = oRawData[i];
+				var encVerein = atob(oLine.Verein);
+				var encName = atob(oLine.Name);
+				var encVorname = atob(oLine.Vorname);
+				var encPassnummer = atob(oLine.Passnummer.replace(/[^0-9]+/g, ''));
+				debugger;
 				if (oLine.Verein && oLine.Name && oLine.Vorname && oLine.Passnummer) {
 					if (oResult[oLine.Verein] == undefined) {
-						var uid = generateUIDNotMoreThan1million();
 						oResult[oLine.Verein] = {
-							"vereinsUID" : uid,
 							"mitglieder" : []
 						};
 					}
 					oResult[oLine.Verein].mitglieder.push({
 						"name" : oLine.Name,
 						"vorname" : oLine.Vorname,
-						"passnummer" : oLine.Passnummer.replace(/[^0-9]+/g, '')
+						"passnummer" : oLine.Passnummer
 					});
 				}
 			};
 		};
 
-		function generateUIDNotMoreThan1million() {
-		    return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4)
-		}
 		//var csv is the CSV file with headers
 		function csvJSON(csv){
 		  var lines=csv.split("\r\n");
