@@ -18,21 +18,20 @@
 		function convertToInternalFormat(oRawData){
 			for (var i = 0; i < oRawData.length; i++) {
 				var oLine = oRawData[i];
-				var encVerein = atob(oLine.Verein);
-				var encName = atob(oLine.Name);
-				var encVorname = atob(oLine.Vorname);
-				var encPassnummer = atob(oLine.Passnummer.replace(/[^0-9]+/g, ''));
-				debugger;
 				if (oLine.Verein && oLine.Name && oLine.Vorname && oLine.Passnummer) {
-					if (oResult[oLine.Verein] == undefined) {
-						oResult[oLine.Verein] = {
+					var encVerein = btoa(oLine.Verein);
+					var encName = btoa(oLine.Name);
+					var encVorname = btoa(oLine.Vorname);
+					var encPassnummer = btoa(oLine.Passnummer.replace(/[^0-9]+/g, ''));
+					if (oResult[encVerein] == undefined) {
+						oResult[encVerein] = {
 							"mitglieder" : []
 						};
 					}
-					oResult[oLine.Verein].mitglieder.push({
-						"name" : oLine.Name,
-						"vorname" : oLine.Vorname,
-						"passnummer" : oLine.Passnummer
+					oResult[encVerein].mitglieder.push({
+						"name" : encName,
+						"vorname" : encVorname,
+						"passnummer" : encPassnummer
 					});
 				}
 			};

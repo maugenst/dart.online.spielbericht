@@ -102,12 +102,12 @@
   $.getJSON("data/vereine.json", function(oVereine) {
     for (var verein in oVereine) {
       heimSelect.append($('<option></option>', {
-          value: oVereine[verein].vereinsUID,
-          text: verein
+          value: verein,
+          text: atob(verein)
       }));
       gastSelect.append($('<option></option>', {
-          value: oVereine[verein].vereinsUID,
-          text: verein
+          value: verein,
+          text: atob(verein)
       }));
     };
   });
