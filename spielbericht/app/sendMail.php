@@ -54,7 +54,8 @@ function mail_att($to,$subject,$message,$anhang)
 }
 
 
-$fileName = 'onlineSpielberichtBild.png';
+$fileNameBild = 'onlineSpielberichtBild.png';
+$fileNameErgebnisJOSON = 'ergebnis.json';
 
 include('SimpleImage.php');
 $image = new SimpleImage();
@@ -65,16 +66,42 @@ $image->save($fileName);
 $anhang = array(); 
 $anhang["name"] = basename($fileName); 
 $anhang["size"] = filesize($fileName); 
-$anhang["data"] = implode("",file($fileName)); 
+$anhang["data"] = implode("",file($fileName));
 
 if(function_exists("mime_content_type")) 
    $anhang["type"] = mime_content_type($fileName); 
 else 
    $anhang["type"] = "application/octet-stream"; 
 
+$ergebnisJSON = $_POST['ergebnisJSON'];
+
+
+$mailBody = ""
+
 $mailRcpt = "Marius.Augenstein@gmail.com";
-$ret = mail_att($mailRcpt,"Spielbericht","Im Anhang ist eine Datei",$anhang);
+$ret = mail_att($mailRcpt,"Spielbericht",$mailBody,$anhang);
 echo $ret ? "An email has been successfully been sent to: ".$mailRcpt : "not ok";
+
+
+$pfad = array(); 
+$pfad[] = "ordner/datei1.exe"; 
+$pfad[] = "ordner/datei2.zip"; 
+$pfad[] = "ordner/datei3.gif"; 
+
+$anhang = array(); 
+foreach($pfad AS $name) 
+   { 
+  
+   $name = basename($name); 
+   $size = filesize($name); 
+   $data = implode("",file($name)); 
+
+   if(function_exists("mime_content_type")) 
+      $type = mime_content_type($name); 
+   else 
+      $type = "application/octet-stream"; 
+    $anhang[] = array("name"=>$name, "size"=>$size, "type"=>$type, "data"=>$data); 
+    } 
 
 ?>	
 	

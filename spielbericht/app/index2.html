@@ -138,8 +138,10 @@
     </form>
 <br>
 <br>
-<form action="sendMail.php" method="post" enctype="multipart/form-data" >
-    Bild des Online Spielberichtes einfügen: <input type="file" name="onlineSpielberichtBild" capture="camera" accept="image/*" id="takePictureField">
+<form action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields();">
+    <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
+    Bild des Online Spielberichtes einf&uuml;gen:
+    <br><input type="file" name="onlineSpielberichtBild" capture="camera" accept="image/*" id="takePictureField">
     <br><br>
     <input type="submit" name="submit" value="Absenden">
 </form>
@@ -165,6 +167,10 @@
 <script src="scripts/fullscreensnippet.js"></script>
 <script type="text/javascript">
   
+  function fillHiddenFields() {
+    document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse);
+  };
+
   function getUrlParameter(sParam){
       var sReturn = "";
       var sPageURL = window.location.search.substring(1);
