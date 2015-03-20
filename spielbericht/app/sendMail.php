@@ -54,43 +54,36 @@ function mail_att($to,$subject,$message,$anhang)
 }
 
 
-$fileNameBild = 'onlineSpielberichtBild.png';
-$fileNameErgebnisJOSON = 'ergebnis.json';
+function randString($length) {
+    $char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    $char = str_shuffle($char);
+    for($i = 0, $rand = '', $l = strlen($char) - 1; $i < $length; $i ++) {
+        $rand .= $char{mt_rand(0, $l)};
+    }
+    return $rand;
+}
+
+$randomStringPart = randString(5);
+
+$fileNameBild = 'onlineSpielberichtBild_'.$randomStringPart.'.png';
+$fileNameErgebnisJSON = 'ergebnis_'.$randomStringPart.'.erg';
 
 include('SimpleImage.php');
 $image = new SimpleImage();
 $image->load($_FILES['onlineSpielberichtBild']['tmp_name']);
 $image->resizeToWidth(1000);
-$image->save($fileName);
+$image->save($fileNameBild);
 
-$anhang = array(); 
-$anhang["name"] = basename($fileName); 
-$anhang["size"] = filesize($fileName); 
-$anhang["data"] = implode("",file($fileName));
+$json = $_POST['ergebnisJSON'];
 
-if(function_exists("mime_content_type")) 
-   $anhang["type"] = mime_content_type($fileName); 
-else 
-   $anhang["type"] = "application/octet-stream"; 
-
-$ergebnisJSON = $_POST['ergebnisJSON'];
-
-
-$mailBody = ""
-
-$mailRcpt = "Marius.Augenstein@gmail.com";
-$ret = mail_att($mailRcpt,"Spielbericht",$mailBody,$anhang);
-echo $ret ? "An email has been successfully been sent to: ".$mailRcpt : "not ok";
-
+file_put_contents($fileNameErgebnisJSON, $json);
 
 $pfad = array(); 
-$pfad[] = "ordner/datei1.exe"; 
-$pfad[] = "ordner/datei2.zip"; 
-$pfad[] = "ordner/datei3.gif"; 
+$pfad[] = $fileNameBild; 
+$pfad[] = $fileNameErgebnisJSON; 
 
 $anhang = array(); 
-foreach($pfad AS $name) 
-   { 
+foreach($pfad AS $name) { 
   
    $name = basename($name); 
    $size = filesize($name); 
@@ -101,7 +94,15 @@ foreach($pfad AS $name)
    else 
       $type = "application/octet-stream"; 
     $anhang[] = array("name"=>$name, "size"=>$size, "type"=>$type, "data"=>$data); 
-    } 
+}
+
+$mailBody =  '<h1>Spielberichtsbogen der BDL<h1><br>\n';
+$mailBody .= 'Hier das Ergebnis ...';
+$mailBody .= '<pre><code>' . $json . '</code></pre>';
+
+$mailRcpt = "Marius.Augenstein@gmail.com";
+$ret = mail_att($mailRcpt,"Spielbericht",$mailBody,$anhang);
+echo $ret ? "An email has been successfully been sent to: ".$mailRcpt : "not ok";
 
 ?>	
 	
