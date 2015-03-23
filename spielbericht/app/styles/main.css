@@ -68,3 +68,57 @@ body {
           padding: 0;
     }
 }
+
+.ergebnistabelle th {
+    background-color: black;
+    color: white;
+    font-size: xx-small;
+}
+.ergebnistabelle .thRotated {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+.ergebnistabelle td {
+    font-size: xx-small;
+}
+.ergebnistabelle .slhf180block {
+    vertical-align: middle;
+    text-align: center;
+}
+.ergebnistabelle .ergebnisBlock {
+    vertical-align: middle;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    padding-right: 8px;
+}
+.ergebnistabelle .einzelblockEven {
+    background-color: rgb(221, 255, 235);
+    line-height: 25px;
+}
+.ergebnistabelle .einzelblockOdd {
+    background-color: rgb(205, 250, 214);
+    line-height: 25px;
+}
+.ergebnistabelle .doppelblockEven {
+    background-color: rgb(213, 224, 252);
+}
+.ergebnistabelle .doppelblockOdd {
+    background-color: rgb(195, 212, 255);
+}
+.ergebnistabelle .summaryBlock {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.ergebnistabelle .gegnerNamen {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: small;
+    line-height: 25px;
+}

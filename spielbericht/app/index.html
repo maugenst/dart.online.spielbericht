@@ -80,6 +80,7 @@
          <br> <input id="gameOnButton" type="submit" value="Game On..." disabled="disabled">
         </div>
       </div>
+      <input name="neuesSpiel" value="true" type="hidden">
     </form>
 
     <hr>
@@ -98,6 +99,8 @@
   
   var heimSelect = $('#heim');
   var gastSelect = $('#gast');
+
+  var vereinEmails = {};
 
   $.getJSON("data/vereine.json", function(oVereine) {
     for (var verein in oVereine) {

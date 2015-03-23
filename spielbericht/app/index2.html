@@ -17,7 +17,7 @@
 
 <div id="hiddenInputFieldContainer" style="visibility:hidden; position:absolute; width:0px; height:0px">
   <div id="inputsForSingleHome">
-    <select id="name1" name="name1" style="width:150px"></select>
+    <select id="name1" name="name1" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkmore1" onclick="switchMore('more1', $('#linkmore1').text().indexOf('More') != -1)" />More +</a>
     <div class="spacer"></div>
     <div id="more1" class="more">
@@ -28,7 +28,7 @@
   </div>
       
   <div id="inputsForSingleGuest">
-    <select id="name2" name="name2" style="width:150px"></select>
+    <select id="name2" name="name2" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkmore2" onclick="switchMore('more2', $('#linkmore2').text().indexOf('More') != -1)" />More +</a>
     <div id="more2" class="more">
       <input id="sl2" name="sl2" type="text" pattern="\d*" size="3" placeholder="SL">
@@ -38,7 +38,7 @@
   </div>
 
   <div id="inputsForDoubleHome">
-    <select id="heimname1" name="heimname1" style="width:150px"></select>
+    <select id="heimname1" name="heimname1" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkdmore1" onclick="switchMore('dmore1', $('#linkdmore1').text().indexOf('More') != -1)" />More +</a>
     <div id="dmore1" class="more">
       <input id="dsl1" name="dsl1" type="text" pattern="\d*" size="3" placeholder="SL">
@@ -46,7 +46,7 @@
       <input id="di180er1" name="di180er1" type="text" pattern="\d*" size="3" placeholder="180er">
     </div>
     <div class="spacer"></div>
-    <select id="heimname2" name="heimname2" style="width:150px"></select>
+    <select id="heimname2" name="heimname2" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkdmore2" onclick="switchMore('dmore2', $('#linkdmore2').text().indexOf('More') != -1)" />More +</a>
     <div id="dmore2" class="more">
       <input id="dhf2" name="dhf2" type="text" pattern="\d*" size="3" placeholder="HF">
@@ -56,7 +56,7 @@
   </div>  
 
   <div id="inputsForDoubleGuest">
-    <select id="gastname1" name="gastname1" style="width:150px"></select>
+    <select id="gastname1" name="gastname1" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkdmore3" onclick="switchMore('dmore3', $('#linkdmore3').text().indexOf('More') != -1)" />More +</a>
     <div id="dmore3" class="more">
       <input id="dsl2" name="dsl2" type="text" pattern="\d*" size="3" placeholder="SL">
@@ -64,7 +64,7 @@
       <input id="di180er3" name="di180er3" type="text" pattern="\d*" size="3" placeholder="180er">
     </div>
     <div class="spacer"></div>
-    <select id="gastname2" name="gastname2" style="width:150px"></select>
+    <select id="gastname2" name="gastname2" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkdmore4" onclick="switchMore('dmore4', $('#linkdmore4').text().indexOf('More') != -1)" />More +</a>
     <div id="dmore4" class="more">
       <input id="dhf4" name="dhf4" type="text" pattern="\d*" size="3" placeholder="HF">
@@ -80,61 +80,51 @@
   <h3>BDL Online Spielberichtsbogen</h3>
 
   <div id="partie"></div>
+
+  <table id="summaryTable" class="ergebnistabelle">
+     <tr class="gegnerNamen">
+       <td colspan=3>HEIM:</td>
+       <td id="heimFeldInTable">asdasda</td>
+       <td>GAST:</td>
+       <td colspan=4 id="gastFeldInTable">asdasd</td>
+     </tr>
+     <tr class="gegnerNamen">
+        <th><div class="thRotated">SL</div></th>
+        <th><div class="thRotated">HF</div></th>
+        <th><div class="thRotated">180er</div></th>
+        <th style="width:60%">Name</th>
+        <th>&nbsp;</th>
+        <th style="width:60%">Name</th>
+        <th><div class="thRotated">180er</div></th>
+        <th><div class="thRotated">HF</div></th>
+        <th><div class="thRotated">SL</div></th>
+     </tr>
+  </table>
+
   
     <form action="index2.html" method="get">
       <input id="heim" name="heim" type="hidden">
       <input id="gast" name="gast" type="hidden">
-        <table class="table table-stripped table-condensed">
-          <tr>
-            <td>
-              <div class="smaller">Einzel Block 1<br>
-                <input type="radio" name="spiel" value="e1b1" onclick="enableFormForSingles(true)"> Einzel 1<br>
-                <input type="radio" name="spiel" value="e2b1" onclick="enableFormForSingles(true)"> Einzel 2<br>
-                <input type="radio" name="spiel" value="e3b1" onclick="enableFormForSingles(true)"> Einzel 3<br>
-                <input type="radio" name="spiel" value="e4b1" onclick="enableFormForSingles(true)"> Einzel 4
-              </div>
-            </td>
-            <td>
-              <div class="smaller">Doppel Block 2</div>
-              <input type="radio" name="spiel" value="d1b2" onclick="enableFormForSingles(false)"> Doppel 1<br>
-              <input type="radio" name="spiel" value="d2b2" onclick="enableFormForSingles(false)"> Doppel 2<br>
-            </td>
-            <td>
-              <div class="smaller">Einzel Block 3</div>
-              <input type="radio" name="spiel" value="e1b3" onclick="enableFormForSingles(true)"> Einzel 1<br>
-              <input type="radio" name="spiel" value="e2b3" onclick="enableFormForSingles(true)"> Einzel 2<br>
-              <input type="radio" name="spiel" value="e3b3" onclick="enableFormForSingles(true)"> Einzel 3<br>
-              <input type="radio" name="spiel" value="e4b4" onclick="enableFormForSingles(true)"> Einzel 4<br>
-            </td>
-            <td>
-              <div class="smaller">Doppel Block 4</div>
-              <input type="radio" name="spiel" value="d1b4" onclick="enableFormForSingles(false)"> Doppel 1<br>
-              <input type="radio" name="spiel" value="d2b4" onclick="enableFormForSingles(false)"> Doppel 2<br>
-            </td>
-          </tr>
-        </table>
-
+      <input id="spiel" name="spiel" type="hidden">
           <hr>
           <div id="spielerHeim"></div>
           <div id="ergSelection" style="visibility:hidden">
-            <select id="erg1" name="erg1">  
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select> : <select id="erg2" name="erg2">  
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
+            Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
+            1 <input type="radio" name="erg1" value="1" onchange="checkSelection();">
+            2 <input type="radio" name="erg1" value="2" onchange="checkSelection();">
+            3 <input type="radio" name="erg1" value="3" onchange="checkSelection();">
+            <br>
+            Ergebnis Gast: 0 <input type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
+            1 <input type="radio" name="erg2" value="1" onchange="checkSelection();">
+            2 <input type="radio" name="erg2" value="2" onchange="checkSelection();">
+            3 <input type="radio" name="erg2" value="3" onchange="checkSelection();">
           </div>
           <div class="spacer"></div>
           <div id="spielerGast"></div>
           <div class="spacer"></div>
           
 
-          <input id="speichern" type="submit" name="speichern" value="Speichern"  >
+          <input id="speichern" type="submit" name="speichern" value="Ergebnis sichern..." disabled="disabled" style="display:none">
     </form>
 <br>
 <br>
@@ -146,18 +136,7 @@
     <input type="submit" name="submit" value="Absenden">
 </form>
 
-    <hr>
-
-<table id="summaryTable" class="table table-stripped table-condensed">
-   <tr>
-      <th>Name</th>
-      <th>Ergebnis</th>
-      <th>Name</th>
-   </tr>
-</table>
-
 <hr>
-
 
 <p>&copy; Badische Dart Liga - BDL - http://www.badischedartliga.de</p>
 
@@ -167,6 +146,36 @@
 <script src="scripts/fullscreensnippet.js"></script>
 <script type="text/javascript">
   
+  function checkSelection() {
+    var bEinzel = (document.getElementById("spiel").value[0] === 'e');
+    var erg1 = parseInt(document.querySelector('input[name="erg1"]:checked').value);
+    var erg2 = parseInt(document.querySelector('input[name="erg2"]:checked').value);
+    if (bEinzel) {
+      if (erg1===3 || erg2===3) {
+        document.getElementById("speichern").disabled = (erg1===3 && erg2===3);
+      } else {
+        document.getElementById("speichern").disabled = true;
+      }
+    } else {
+      if (erg1===3 || erg2===3) {
+        var bNamesOk = checkNames();
+        var bBothThree = (erg1===3 && erg2===3);
+        document.getElementById("speichern").disabled = !(!bBothThree && bNamesOk);
+      } else {
+        document.getElementById("speichern").disabled = true;
+      }
+    }
+  };
+
+  function checkNames() {
+    var sHeimName1 = document.getElementById("heimname1").value;
+    var sHeimName2 = document.getElementById("heimname2").value;
+    var sGastName1 = document.getElementById("gastname1").value;
+    var sGastName2 = document.getElementById("gastname2").value;
+
+    return (sHeimName1 != sHeimName2 && sGastName1 != sGastName2);
+  }
+
   function fillHiddenFields() {
     document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse);
   };
@@ -186,12 +195,11 @@
 
   var heim = unescape(getUrlParameter("heim"));
   var gast = unescape(getUrlParameter("gast"));
+  var newGame = unescape(getUrlParameter("neuesSpiel"));
   var spiel = getUrlParameter("spiel").replace(/\+/g,' ');
   var aVereine = [];
   
-  document.getElementById("speichern").disabled = true;
-
-  var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
+  var ergebnisse = (newGame==="true") ? undefined : JSON.parse(window.localStorage.getItem("ergebnisse"));
 
   if (ergebnisse) {
     readNewGameFromURL(ergebnisse, spiel);
@@ -250,41 +258,88 @@
     }
   });
 
+  //"  <div class=\"smaller\">SL: " + ergebnisse[erg].spieler1.shortlegs + " | HF: " + ergebnisse[erg].spieler1.highfinishes + " | 180er : " + ergebnisse[erg].spieler1.i180er + "</div>\n"+
+  //"  <div class=\"smaller\">SL: " + ergebnisse[erg].spieler2.shortlegs + " | HF: " + ergebnisse[erg].spieler2.highfinishes + " | 180er : " + ergebnisse[erg].spieler2.i180er + "</div>\n"+
   function printTable(ergebnisse) {
+    var team1Legs = 0;
+    var team1Sets = 0;
+    var team2Legs = 0;
+    var team2Sets = 0;
+    var lineCounter = 1;
     for (var erg in ergebnisse) {
       if (ergebnisse[erg].spieler1 && ergebnisse[erg].spieler2) {
-        var line = "<tr>"+
-                      "<td>" + ergebnisse[erg].spieler1.name + "<br>\n"+
-                      "  <div class=\"smaller\">SL: " + ergebnisse[erg].spieler1.shortlegs + " | HF: " + ergebnisse[erg].spieler1.highfinishes + " | 180er : " + ergebnisse[erg].spieler1.i180er + "</div>\n"+
-                      "</td>\n"+
-                      "<td>" + ergebnisse[erg].spieler1.legs + " : " + ergebnisse[erg].spieler2.legs + "</td>\n"+
-                      "<td>" + ergebnisse[erg].spieler2.name + "<br>\n"+
-                      "  <div class=\"smaller\">SL: " + ergebnisse[erg].spieler2.shortlegs + " | HF: " + ergebnisse[erg].spieler2.highfinishes + " | 180er : " + ergebnisse[erg].spieler2.i180er + "</div>\n"+
-                      "</td>\n"+
+        var classSpec = (lineCounter % 2 === 0) ? "einzelblockEven" : "einzelblockOdd";
+
+        var line = "<tr class='"+classSpec+"' onclick='enableFormForSingles(true, " + lineCounter + ")'>"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.shortlegs) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.highfinishes) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.i180er) + "</td>\n"+
+                      "<td>" + ergebnisse[erg].spieler1.name + "</td>\n"+
+                      "<td class='ergebnisBlock'>" + ergebnisse[erg].spieler1.legs + " : " + ergebnisse[erg].spieler2.legs + "</td>\n"+
+                      "<td>" + ergebnisse[erg].spieler2.name + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].spieler2.i180er) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].spieler2.highfinishes) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].spieler2.shortlegs) + "</td>\n"+
                    "</tr>";
         $('#summaryTable tr:last').after(line);
+        lineCounter++;
+        team1Legs += parseInt(ergebnisse[erg].spieler1.legs);
+        team2Legs += parseInt(ergebnisse[erg].spieler2.legs);
+        if (ergebnisse[erg].spieler1.legs>ergebnisse[erg].spieler2.legs) {
+          team1Sets++;
+        } else if (ergebnisse[erg].spieler1.legs<ergebnisse[erg].spieler2.legs) {
+          team2Sets++;
+        }
       } else if (ergebnisse[erg].paar1 && ergebnisse[erg].paar2) {
-        var line = 
-          "<tr>"
-              + "<td>" 
-                + ergebnisse[erg].paar1.spieler1.name + "<br>\n"
-                + "<div class=\"smaller\">HF: " + ergebnisse[erg].paar1.spieler1.highfinishes + " | 180er : " + ergebnisse[erg].paar1.spieler1.i180er + "</div>\n"
-                + ergebnisse[erg].paar1.spieler2.name + "<br>\n"
-                + "<div class=\"smaller\">HF: " + ergebnisse[erg].paar1.spieler2.highfinishes + " | 180er : " + ergebnisse[erg].paar1.spieler2.i180er + "</div>\n"
-                + "<div class=\"smaller\">TEAM SL: " + ergebnisse[erg].paar1.shortlegs + "</div>\n"
-              + "</td>\n"
-              + "<td>" + ergebnisse[erg].paar1.legs + " : " + ergebnisse[erg].paar2.legs + "</td>\n"
-              + "<td>"
-                + ergebnisse[erg].paar2.spieler1.name + "<br>\n"
-                + "<div class=\"smaller\">HF: " + ergebnisse[erg].paar2.spieler1.highfinishes + " | 180er : " + ergebnisse[erg].paar2.spieler1.i180er + "</div>\n"
-                + ergebnisse[erg].paar2.spieler2.name + "<br>\n"
-                + "<div class=\"smaller\">HF: " + ergebnisse[erg].paar2.spieler2.highfinishes + " | 180er : " + ergebnisse[erg].paar2.spieler2.i180er + "</div>\n"
-                + "<div class=\"smaller\">TEAM SL: " + ergebnisse[erg].paar2.shortlegs + "</div>\n"
-              + "</td>\n"
-           + "</tr>";
+        var classSpec = (lineCounter % 2 === 0) ? "doppelblockEven" : "doppelblockOdd";
+
+        var line = "<tr class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ")'>"+
+                      "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar1.shortlegs) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.highfinishes) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.i180er) + "</td>\n"+
+                      "<td>" + ergebnisse[erg].paar1.spieler1.name + "</td>\n"+
+                      "<td rowspan='2' class='ergebnisBlock'>" + ergebnisse[erg].paar1.legs + " : " + ergebnisse[erg].paar2.legs + "</td>\n"+
+                      "<td>" + ergebnisse[erg].paar2.spieler1.name + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.i180er) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.highfinishes) + "</td>\n"+
+                      "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar2.shortlegs) + "</td>\n"+
+                    "</tr>\n"+
+                    "<tr class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ")'>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.highfinishes) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.i180er) + "</td>\n"+
+                      "<td>" + ergebnisse[erg].paar1.spieler2.name + "</td>\n"+
+                      "<td>" + ergebnisse[erg].paar2.spieler2.name + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler2.i180er) + "</td>\n"+
+                      "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler2.highfinishes) + "</td>\n"+
+                    "</tr>";
         $('#summaryTable tr:last').after(line);
+        lineCounter++;
+        team1Legs += parseInt(ergebnisse[erg].paar1.legs);
+        team2Legs += parseInt(ergebnisse[erg].paar2.legs);
+        if (ergebnisse[erg].paar1.legs>ergebnisse[erg].paar2.legs) {
+          team1Sets++;
+        } else if (ergebnisse[erg].paar1.legs<ergebnisse[erg].paar2.legs) {
+          team2Sets++;
+        }
       }
     }
+    var line = "<tr class='summaryBlock'>"+
+                  "<td colspan=3 rowspan=2>&nbsp;</td>\n"+
+                  "<td rowspan=2>Ergebnis:</td>\n"+
+                  "<td>" + team1Legs + " : " + team2Legs + "</td>\n"+
+                  "<td>Legs</td>\n"+
+                  "<td colspan=3>&nbsp;</td>\n"+
+               "</tr>"+
+               "<tr class='summaryBlock'>"+
+                  "<td>" + team1Sets + " : " + team2Sets + "</td>\n"+
+                  "<td>Sets</td>\n"+
+                  "<td colspan=3>&nbsp;</td>\n"+
+               "</tr>";
+    $('#summaryTable tr:last').after(line);
+  };
+
+  function p(sErg) {
+    return (sErg == 0) ? "&nbsp;" : sErg;
   };
 
   function readNewGameFromURL(ergebnisse, spiel) {
@@ -347,8 +402,46 @@
     };
   };
 
-  function enableFormForSingles(bSingles) {
-    document.getElementById("speichern").disabled = false;
+  function enableFormForSingles(bSingles, lineCounter) {
+    switch (lineCounter) {
+        case 1:
+            document.getElementById('spiel').value = "e1b1";
+            break;
+        case 2:
+            document.getElementById('spiel').value = "e2b1";
+            break;
+        case 3:
+            document.getElementById('spiel').value = "e3b1";
+            break;
+        case 4:
+            document.getElementById('spiel').value = "e4b1";
+            break;
+        case 5:
+            document.getElementById('spiel').value = "d1b2";
+            break;
+        case 6:
+            document.getElementById('spiel').value = "d2b2";
+            break;
+        case 7:
+            document.getElementById('spiel').value = "e1b3";
+            break;
+        case 8:
+            document.getElementById('spiel').value = "e2b3";
+            break;
+        case 9:
+            document.getElementById('spiel').value = "e3b3";
+            break;
+        case 10:
+            document.getElementById('spiel').value = "e4b3";
+            break;
+        case 11:
+            document.getElementById('spiel').value = "d1b4";
+            break;
+        case 12:
+            document.getElementById('spiel').value = "d2b4";
+            break;
+    }
+    document.getElementById("speichern").style.display = "inherit";
     $("#ergSelection").css("visibility","visible"); 
     $("#spielerHeim > #inputsForSingleHome").appendTo("#hiddenInputFieldContainer");
     $("#spielerHeim > #inputsForDoubleHome").appendTo("#hiddenInputFieldContainer");
@@ -388,7 +481,8 @@
   switchMore("dmore2", false, 0);
   switchMore("dmore3", false, 0);
   switchMore("dmore4", false, 0);
-  $("#partie").text("Partie: " + atob(heim) + " vs. " + atob(gast));
+  document.getElementById("heimFeldInTable").innerHTML = atob(heim);
+  document.getElementById("gastFeldInTable").innerHTML = atob(gast);
   $("#heim").val(heim);
   $("#gast").val(gast);
   
