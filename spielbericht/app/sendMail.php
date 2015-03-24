@@ -47,6 +47,7 @@ $mailBody .= '<body>';
 $mailBody .= '  <h1>Spielberichtsbogen der BDL</h1><br>';
 $mailBody .= '  Hier das Ergebnis der Partie:';
 $mailBody .= $table;
+$mailBody .= '<p>&copy; <a href="mailto:marius.augenstein@gmail.com">Marius Augenstein</a> - Badische Dart Liga - BDL - http://www.badischedartliga.de</p>';
 $mailBody .= '</body>';
 $mailBody .= '</html>';
 
