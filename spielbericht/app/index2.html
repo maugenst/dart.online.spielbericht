@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ergebnistabelle.css">
     <link rel="stylesheet" href="styles/Autocomplete.css">
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -14,6 +15,8 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
+
+<div id="hiddenSummaryTableContainer" style="visibility:hidden; position:absolute; width:0px; height:0px"></div>
 
 <div id="hiddenInputFieldContainer" style="visibility:hidden; position:absolute; width:0px; height:0px">
   <div id="inputsForSingleHome">
@@ -81,25 +84,27 @@
 
   <div id="partie"></div>
 
-  <table id="summaryTable" class="ergebnistabelle">
-     <tr class="gegnerNamen">
-       <td colspan=3>HEIM:</td>
-       <td id="heimFeldInTable">asdasda</td>
-       <td>GAST:</td>
-       <td colspan=4 id="gastFeldInTable">asdasd</td>
-     </tr>
-     <tr class="gegnerNamen">
-        <th><div class="thRotated">SL</div></th>
-        <th><div class="thRotated">HF</div></th>
-        <th><div class="thRotated">180er</div></th>
-        <th style="width:60%">Name</th>
-        <th>&nbsp;</th>
-        <th style="width:60%">Name</th>
-        <th><div class="thRotated">180er</div></th>
-        <th><div class="thRotated">HF</div></th>
-        <th><div class="thRotated">SL</div></th>
-     </tr>
-  </table>
+  <div id="summaryTableContainer">
+    <table id="summaryTable" class="ergebnistabelle">
+       <tr class="gegnerNamen">
+         <td colspan=3>HEIM:</td>
+         <td id="heimFeldInTable">asdasda</td>
+         <td>GAST:</td>
+         <td colspan=4 id="gastFeldInTable">asdasd</td>
+       </tr>
+       <tr class="gegnerNamen">
+          <th><div class="thRotated">SL</div></th>
+          <th><div class="thRotated">HF</div></th>
+          <th><div class="thRotated">180er</div></th>
+          <th style="width:60%">Name</th>
+          <th>&nbsp;</th>
+          <th style="width:60%">Name</th>
+          <th><div class="thRotated">180er</div></th>
+          <th><div class="thRotated">HF</div></th>
+          <th><div class="thRotated">SL</div></th>
+       </tr>
+    </table>
+  </div>
 
   
     <form action="index2.html" method="get">
@@ -107,6 +112,7 @@
       <input id="gast" name="gast" type="hidden">
       <input id="spiel" name="spiel" type="hidden">
           <hr>
+          <div id="headlineInputfield"></div>
           <div id="spielerHeim"></div>
           <div id="ergSelection" style="visibility:hidden">
             Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
@@ -130,7 +136,9 @@
 <br>
 <form action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields();">
     <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
-    Bild des Online Spielberichtes einf&uuml;gen:
+    <textarea id="emailCSSStyles" name="emailCSSStyles" style="display:none"></textarea>
+    <textarea id="emailSummaryTable" name="emailSummaryTable" style="display:none"></textarea>
+    Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
     <br><input type="file" name="onlineSpielberichtBild" capture="camera" accept="image/*" id="takePictureField">
     <br><br>
     <input type="submit" name="submit" value="Absenden">
@@ -145,6 +153,45 @@
 <script src="scripts/async.localStorage.examples.js"></script>
 <script src="scripts/fullscreensnippet.js"></script>
 <script type="text/javascript">
+
+  function generateUID() {
+    return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4)
+  };
+
+  function fillHiddenFields() {
+    removeLineSelectedStyles();
+
+    cleanUpSummaryTable();
+    document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse, null, "\t");
+    document.getElementById("emailSummaryTable").value = $('#hiddenSummaryTableContainer').html();
+    $.get("styles/ergebnistabelle.css", function(tableCssStyles) {
+      document.getElementById("emailCSSStyles").value = tableCssStyles;
+    });
+  };
+
+  function cleanUpSummaryTable() {
+    $("#hiddenSummaryTableContainer").empty();
+    $("#summaryTable").clone().appendTo( "#hiddenSummaryTableContainer" );
+
+    var oTable = $('#hiddenSummaryTableContainer > table')[0];
+    walk(oTable, function(node){
+      if (node.hasAttribute) {
+        if (node.hasAttribute("onclick")) {
+          node.removeAttribute("onclick");
+        } 
+        if (node.hasAttribute("id")) {
+          node.removeAttribute("id");
+        }
+      }
+    });
+  }
+
+  function walk(node, fn) {
+    if (node) do {
+        fn(node);
+        if (node.nodeType === 1) walk(node.firstChild, fn);
+    } while (node = node.nextSibling);
+  }
   
   function checkSelection() {
     var bEinzel = (document.getElementById("spiel").value[0] === 'e');
@@ -175,10 +222,6 @@
 
     return (sHeimName1 != sHeimName2 && sGastName1 != sGastName2);
   }
-
-  function fillHiddenFields() {
-    document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse);
-  };
 
   function getUrlParameter(sParam){
       var sReturn = "";
@@ -258,8 +301,6 @@
     }
   });
 
-  //"  <div class=\"smaller\">SL: " + ergebnisse[erg].spieler1.shortlegs + " | HF: " + ergebnisse[erg].spieler1.highfinishes + " | 180er : " + ergebnisse[erg].spieler1.i180er + "</div>\n"+
-  //"  <div class=\"smaller\">SL: " + ergebnisse[erg].spieler2.shortlegs + " | HF: " + ergebnisse[erg].spieler2.highfinishes + " | 180er : " + ergebnisse[erg].spieler2.i180er + "</div>\n"+
   function printTable(ergebnisse) {
     var team1Legs = 0;
     var team1Sets = 0;
@@ -269,8 +310,8 @@
     for (var erg in ergebnisse) {
       if (ergebnisse[erg].spieler1 && ergebnisse[erg].spieler2) {
         var classSpec = (lineCounter % 2 === 0) ? "einzelblockEven" : "einzelblockOdd";
-
-        var line = "<tr class='"+classSpec+"' onclick='enableFormForSingles(true, " + lineCounter + ")'>"+
+        var uid = generateUID();
+        var line = "<tr id='"+uid+"' class='"+classSpec+"' onclick='enableFormForSingles(true, " + lineCounter + ", \""+uid+"\");'>"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.shortlegs) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.highfinishes) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.i180er) + "</td>\n"+
@@ -292,8 +333,8 @@
         }
       } else if (ergebnisse[erg].paar1 && ergebnisse[erg].paar2) {
         var classSpec = (lineCounter % 2 === 0) ? "doppelblockEven" : "doppelblockOdd";
-
-        var line = "<tr class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ")'>"+
+        var uid = generateUID();
+        var line = "<tr id='"+uid+"_1' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \""+uid+"_1\");'>"+
                       "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar1.shortlegs) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.highfinishes) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.i180er) + "</td>\n"+
@@ -304,7 +345,7 @@
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.highfinishes) + "</td>\n"+
                       "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar2.shortlegs) + "</td>\n"+
                     "</tr>\n"+
-                    "<tr class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ")'>\n"+
+                    "<tr id='"+uid+"_2' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \""+uid+"_2\");'>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.highfinishes) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.i180er) + "</td>\n"+
                       "<td>" + ergebnisse[erg].paar1.spieler2.name + "</td>\n"+
@@ -402,42 +443,72 @@
     };
   };
 
-  function enableFormForSingles(bSingles, lineCounter) {
+  function removeLineSelectedStyles() {
+    $('.singleRowSelected').removeClass('singleRowSelected');
+    $('.doubleRowSelectedTop').removeClass('doubleRowSelectedTop');
+    $('.doubleRowSelectedBottom').removeClass('doubleRowSelectedBottom');
+  };
+
+  function enableFormForSingles(bSingles, lineCounter, lineId) {
+    removeLineSelectedStyles();
+
+    if(lineId && lineId.length!=4) {
+      var id1 = lineId.substring(0,4)+"_1";
+      var id2 = lineId.substring(0,4)+"_2";
+
+      $('#'+id1).addClass('doubleRowSelectedTop');
+      $('#'+id2).addClass('doubleRowSelectedBottom');
+    } else if(lineId) {
+      $('#'+lineId).addClass('singleRowSelected');
+    }
+
     switch (lineCounter) {
         case 1:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "e1b1";
             break;
         case 2:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "e2b1";
             break;
         case 3:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 3</h4>";
             document.getElementById('spiel').value = "e3b1";
             break;
         case 4:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 4</h4>";
             document.getElementById('spiel').value = "e4b1";
             break;
         case 5:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 2 (Doppel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "d1b2";
             break;
         case 6:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 2 (Doppel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "d2b2";
             break;
         case 7:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "e1b3";
             break;
         case 8:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "e2b3";
             break;
         case 9:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 3</h4>";
             document.getElementById('spiel').value = "e3b3";
             break;
         case 10:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 4</h4>";
             document.getElementById('spiel').value = "e4b3";
             break;
         case 11:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 4 (Doppel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "d1b4";
             break;
         case 12:
+            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 4 (Doppel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "d2b4";
             break;
     }
@@ -485,7 +556,6 @@
   document.getElementById("gastFeldInTable").innerHTML = atob(gast);
   $("#heim").val(heim);
   $("#gast").val(gast);
-  
 
 </script>
 
