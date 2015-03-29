@@ -48,7 +48,7 @@ $mailBody .= '  <h1>Spielberichtsbogen der BDL</h1><br>';
 $mailBody .= '  Hier das Ergebnis der Partie:';
 $mailBody .= $table;
 $mailBody .= '<p>&copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>';
-$mailBody .= '<a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://www.badischedartliga.de">BDL Online Spielbericht</a>';
+$mailBody .= '<a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://www.badischedartliga.de">BDL Online Spielbericht</a></p>';
 $mailBody .= '</body>';
 $mailBody .= '</html>';
 
@@ -63,7 +63,7 @@ $okhtml .= '</head>';
 $okhtml .= '<body>';
 $okhtml .= '  <h1>Vielen Dank. Der Spielbericht wurde zur BDL zur Bearbeitung gesandt. Du wirst nun zur Startseite umgeleitet.</h1>';
 $okhtml .= '<p>&copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>';
-$okhtml .= '<a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://www.badischedartliga.de">BDL Online Spielbericht</a>';
+$okhtml .= '<a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://www.badischedartliga.de">BDL Online Spielbericht</a></p>';
 $okhtml .= '</body>';
 $okhtml .= '</html>';
 

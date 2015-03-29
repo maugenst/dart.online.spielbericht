@@ -112,7 +112,7 @@
       <input id="gast" name="gast" type="hidden">
       <input id="spiel" name="spiel" type="hidden">
           <hr>
-          <div id="headlineInputfield"></div>
+          <div id="spielHeadline"></div>
           <div id="spielerHeim"></div>
           <div id="ergSelection" style="visibility:hidden">
             Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
@@ -151,7 +151,7 @@
        <a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://www.badischedartliga.de">BDL Online Spielbericht</a>
       </p>
     </footer>
-    
+
 <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
 <script src="scripts/async.localStorage.js"></script>
 <script src="scripts/async.localStorage.examples.js"></script>
@@ -159,42 +159,7 @@
 <script type="text/javascript">
 
   function generateUID() {
-    return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4)
-  };
-
-  function fillHiddenFields() {
-    removeLineSelectedStyles();
-
-    cleanUpSummaryTable();
-    document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse, null, "\t");
-    document.getElementById("emailSummaryTable").value = $('#hiddenSummaryTableContainer').html();
-    $.get("styles/ergebnistabelle.css", function(tableCssStyles) {
-      document.getElementById("emailCSSStyles").value = tableCssStyles;
-    });
-  };
-
-  function cleanUpSummaryTable() {
-    $("#hiddenSummaryTableContainer").empty();
-    $("#summaryTable").clone().appendTo( "#hiddenSummaryTableContainer" );
-
-    var oTable = $('#hiddenSummaryTableContainer > table')[0];
-    walk(oTable, function(node){
-      if (node.hasAttribute) {
-        if (node.hasAttribute("onclick")) {
-          node.removeAttribute("onclick");
-        } 
-        if (node.hasAttribute("id")) {
-          node.removeAttribute("id");
-        }
-      }
-    });
-  }
-
-  function walk(node, fn) {
-    if (node) do {
-        fn(node);
-        if (node.nodeType === 1) walk(node.firstChild, fn);
-    } while (node = node.nextSibling);
+      return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4)
   }
   
   function checkSelection() {
@@ -226,6 +191,34 @@
 
     return (sHeimName1 != sHeimName2 && sGastName1 != sGastName2);
   }
+
+  function walkDOM(node, func) {
+    func(node);                     //What does this do?
+    node = node.firstChild;
+    while(node) {
+      walkDOM(node,func);
+      node = node.nextSibling;
+    }
+  };
+
+  function fillHiddenFields() {
+    removeBorders();
+    $("#hiddenSummaryTableContainer").empty();
+    $("#summaryTable").clone().appendTo("#hiddenSummaryTableContainer");
+    
+    walkDOM(document.getElementById("hiddenSummaryTableContainer"), function(oNode) {
+      if (oNode && oNode.hasAttribute && oNode.hasAttribute("onclick")){
+        oNode.removeAttribute("onclick");
+      }
+    });
+
+    document.getElementById("emailSummaryTable").value = $("#hiddenSummaryTableContainer").html();
+    document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse);
+
+    $.get("data/ergebnistabelle.css", function(oContent) {
+      document.getElementById("emailCSSStyles").value = oContent;
+    });
+  };
 
   function getUrlParameter(sParam){
       var sReturn = "";
@@ -315,7 +308,7 @@
       if (ergebnisse[erg].spieler1 && ergebnisse[erg].spieler2) {
         var classSpec = (lineCounter % 2 === 0) ? "einzelblockEven" : "einzelblockOdd";
         var uid = generateUID();
-        var line = "<tr id='"+uid+"' class='"+classSpec+"' onclick='enableFormForSingles(true, " + lineCounter + ", \""+uid+"\");'>"+
+        var line = "<tr id='" + uid + "' class='"+classSpec+"' onclick='enableFormForSingles(true, " + lineCounter + ", \"" + uid + "\")'>"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.shortlegs) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.highfinishes) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.i180er) + "</td>\n"+
@@ -338,7 +331,8 @@
       } else if (ergebnisse[erg].paar1 && ergebnisse[erg].paar2) {
         var classSpec = (lineCounter % 2 === 0) ? "doppelblockEven" : "doppelblockOdd";
         var uid = generateUID();
-        var line = "<tr id='"+uid+"_1' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \""+uid+"_1\");'>"+
+
+        var line = "<tr id='" + uid + "_1' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \"" + uid + "_1\")'>"+
                       "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar1.shortlegs) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.highfinishes) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.i180er) + "</td>\n"+
@@ -349,7 +343,7 @@
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.highfinishes) + "</td>\n"+
                       "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar2.shortlegs) + "</td>\n"+
                     "</tr>\n"+
-                    "<tr id='"+uid+"_2' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \""+uid+"_2\");'>\n"+
+                    "<tr id='" + uid + "_2' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \"" + uid + "_2\")'>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.highfinishes) + "</td>\n"+
                       "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.i180er) + "</td>\n"+
                       "<td>" + ergebnisse[erg].paar1.spieler2.name + "</td>\n"+
@@ -447,72 +441,70 @@
     };
   };
 
-  function removeLineSelectedStyles() {
-    $('.singleRowSelected').removeClass('singleRowSelected');
-    $('.doubleRowSelectedTop').removeClass('doubleRowSelectedTop');
-    $('.doubleRowSelectedBottom').removeClass('doubleRowSelectedBottom');
+  function removeBorders() {
+    $(".singleRowSelected").removeClass("singleRowSelected");
+    $(".doubleRowSelectedTop").removeClass("doubleRowSelectedTop");
+    $(".doubleRowSelectedBottom").removeClass("doubleRowSelectedBottom");
   };
 
-  function enableFormForSingles(bSingles, lineCounter, lineId) {
-    removeLineSelectedStyles();
+  function enableFormForSingles(bSingles, lineCounter, uid) {
+    removeBorders();
 
-    if(lineId && lineId.length!=4) {
-      var id1 = lineId.substring(0,4)+"_1";
-      var id2 = lineId.substring(0,4)+"_2";
-
-      $('#'+id1).addClass('doubleRowSelectedTop');
-      $('#'+id2).addClass('doubleRowSelectedBottom');
-    } else if(lineId) {
-      $('#'+lineId).addClass('singleRowSelected');
+    if (uid.length>4) {
+      var tmpId = uid.substring(0,4);
+      $("#" + tmpId + "_1").addClass("doubleRowSelectedTop");
+      $("#" + tmpId + "_2").addClass("doubleRowSelectedBottom");
+    } else {
+      $("#" + uid).addClass("singleRowSelected");
     }
 
     switch (lineCounter) {
         case 1:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 1</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 1 (Einzel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "e1b1";
             break;
         case 2:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 2</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 1 (Einzel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "e2b1";
             break;
         case 3:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 3</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 1 (Einzel) - Spiel 3</h4>";
             document.getElementById('spiel').value = "e3b1";
             break;
         case 4:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 1 (Einzel) - Spiel 4</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 1 (Einzel) - Spiel 4</h4>";
             document.getElementById('spiel').value = "e4b1";
             break;
         case 5:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 2 (Doppel) - Spiel 1</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 2 (Doppel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "d1b2";
             break;
         case 6:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 2 (Doppel) - Spiel 2</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 2 (Doppel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "d2b2";
             break;
         case 7:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 1</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 3 (Einzel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "e1b3";
             break;
         case 8:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 2</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 3 (Einzel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "e2b3";
             break;
         case 9:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 3</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 3 (Einzel) - Spiel 3</h4>";
             document.getElementById('spiel').value = "e3b3";
             break;
         case 10:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 3 (Einzel) - Spiel 4</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 3 (Einzel) - Spiel 4</h4>";
             document.getElementById('spiel').value = "e4b3";
             break;
         case 11:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 4 (Doppel) - Spiel 1</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 4 (Doppel) - Spiel 1</h4>";
             document.getElementById('spiel').value = "d1b4";
             break;
         case 12:
-            document.getElementById('headlineInputfield').innerHTML = "<h4>Block 4 (Doppel) - Spiel 2</h4>";
+            document.getElementById('spielHeadline').innerHTML = "<h4>Block 4 (Doppel) - Spiel 2</h4>";
             document.getElementById('spiel').value = "d2b4";
             break;
     }
