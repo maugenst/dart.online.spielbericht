@@ -436,29 +436,43 @@ function organizeSelectedOptionsForId(oStoredNames, sId, sSpiel, ergebnisse) {
 
 	var oOptions = document.getElementById(sId).options;
 	for (var i = 0; i<oOptions.length; i++) {
-	  if (oOptions.item(i).hasAttribute("style")) {
-	    oOptions.item(i).removeAttribute("style")
-	  }
-	}
-	for (var i = 0; i<oOptions.length; i++) {
-	  if (oStoredNames[oOptions.item(i).text]) {
-	    if(bSingle) {
-	      oOptions.item(i).style.display = (oOptions.item(i).text == ergebnisse[sSpiel].spieler1.name || oOptions.item(i).text == ergebnisse[sSpiel].spieler2.name) ? "inherit" : "none";
-	    } else {
-	      oOptions.item(i).style.display = (oOptions.item(i).text == ergebnisse[sSpiel].paar1.spieler1.name 
-	                                     || oOptions.item(i).text == ergebnisse[sSpiel].paar1.spieler2.name
-	                                     || oOptions.item(i).text == ergebnisse[sSpiel].paar2.spieler1.name
-	                                     || oOptions.item(i).text == ergebnisse[sSpiel].paar2.spieler2.name) ? "inherit" : "none";
-	    }
-	  }
-	}
+		if (oOptions.item(i).hasAttribute("style")) {
+			oOptions.item(i).removeAttribute("style");
+		}
+		if (oOptions.item(i).disabled === true) {
+			oOptions.item(i).disabled = false;
+		}
+	};
 
 	for (var i = 0; i<oOptions.length; i++) {
-	  if (oOptions.item(i).style.display !== "none") {
-	    oOptions.item(i).selected = true;
-	    break;
-	  }
-	}
+		if (oStoredNames[oOptions.item(i).text]) {
+			if(bSingle) {
+				if (oOptions.item(i).text == ergebnisse[sSpiel].spieler1.name || oOptions.item(i).text == ergebnisse[sSpiel].spieler2.name) {
+					oOptions.item(i).style.display = "inherit";
+				} else {
+					oOptions.item(i).style.display = "none";
+					oOptions.item(i).disabled = true;
+				}
+			} else {
+				if (oOptions.item(i).text == ergebnisse[sSpiel].paar1.spieler1.name 
+					|| oOptions.item(i).text == ergebnisse[sSpiel].paar1.spieler2.name
+					|| oOptions.item(i).text == ergebnisse[sSpiel].paar2.spieler1.name
+					|| oOptions.item(i).text == ergebnisse[sSpiel].paar2.spieler2.name) {
+					oOptions.item(i).style.display = "inherit";
+				} else {
+					oOptions.item(i).style.display = "none";
+					oOptions.item(i).disabled = true;
+				}
+			}
+		}
+	};
+
+	for (var i = 0; i<oOptions.length; i++) {
+		if (oOptions.item(i).style.display !== "none") {
+			oOptions.item(i).selected = true;
+			break;
+		}
+	};
 };
 
 function getStoredNames(blockNumber, ergebnisse) {
