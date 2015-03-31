@@ -68,3 +68,41 @@ body {
           padding: 0;
     }
 }
+
+.spinnerContainer {
+    visibility:hidden; 
+    position:absolute;
+    background-color: rgba(157, 155, 155, 0.51); 
+    width:100%; 
+    height:100%
+}
+.spinnerContainer > img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* half width of the spinner gif */
+    margin-top: -50px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 100px; /* width of the spinner gif */
+    height: 102px;
+}
+
+.uploadContainer {
+    visibility:hidden; 
+    position:absolute;
+    background-color: rgba(157, 155, 155, 0.51); 
+    width:100%; 
+    height:100%
+}
+.uploadContainer > img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px; /* half width of the spinner gif */
+    margin-top: -50px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+}

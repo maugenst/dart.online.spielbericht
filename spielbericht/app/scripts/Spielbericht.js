@@ -414,7 +414,7 @@ function enableFormForSingles(bSingles, lineCounter, uid) {
 		organizeSelectedOptionsForId(oStoredNames, "gastname2", sSpiel, ergebnisse);
 		switchSameSelectedOptionFor("gastname1", "gastname2");
 	}
-	document.getElementById("speichern").scrollIntoView(); 
+	document.getElementById("spielHeadline").scrollIntoView(); 
 };
 
 function switchSameSelectedOptionFor(sId1, sId2) {
