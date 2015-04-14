@@ -182,16 +182,20 @@
       heim : [],
       gast : []
     }
-    nachmeldungen.heim.push(btoa(document.getElementById("nachmeldung_fh1").value.trim()));
-    nachmeldungen.heim.push(btoa(document.getElementById("nachmeldung_fh2").value.trim()));
-    nachmeldungen.heim.push(btoa(document.getElementById("nachmeldung_fh3").value.trim()));
-    nachmeldungen.heim.push(btoa(document.getElementById("nachmeldung_fh4").value.trim()));
-    nachmeldungen.gast.push(btoa(document.getElementById("nachmeldung_fg1").value.trim()));
-    nachmeldungen.gast.push(btoa(document.getElementById("nachmeldung_fg2").value.trim()));
-    nachmeldungen.gast.push(btoa(document.getElementById("nachmeldung_fg3").value.trim()));
-    nachmeldungen.gast.push(btoa(document.getElementById("nachmeldung_fg4").value.trim()));
+    nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh1").value.trim())));
+    nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh2").value.trim())));
+    nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh3").value.trim())));
+    nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh4").value.trim())));
+    nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg1").value.trim())));
+    nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg2").value.trim())));
+    nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg3").value.trim())));
+    nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg4").value.trim())));
     window.localStorage.setItem("nachmeldungen", JSON.stringify(nachmeldungen));
     document.getElementById("form").submit();
+  };
+
+  function formatName(sName) {
+    return (sName && sName!="") ? sName + " (N)" : "";
   };
 
   function checkSelection() {
