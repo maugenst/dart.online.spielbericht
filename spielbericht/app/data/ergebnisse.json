@@ -1,7 +1,7 @@
 {
     "heim" : "",
     "gast" : "",
-    "e1b1" : {
+      "e1b1" : {
       "spieler1" : { "name" : "", "legs" : 0, "shortlegs" : 0, "highfinishes" : 0, "i180er" : 0 },
       "spieler2" : { "name" : "", "legs" : 0, "shortlegs" : 0, "highfinishes" : 0, "i180er" : 0 } 
     },

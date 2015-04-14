@@ -5,8 +5,11 @@
 
 var heim = unescape(getUrlParameter("heim"));
 var gast = unescape(getUrlParameter("gast"));
+var gast = unescape(getUrlParameter("gast"));
 var newGame = unescape(getUrlParameter("neuesSpiel"));
 var spiel = getUrlParameter("spiel").replace(/\+/g,' ');
+var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
+
 var aVereine = [];
 
 var ergebnisse = (newGame==="true") ? undefined : JSON.parse(window.localStorage.getItem("ergebnisse"));
@@ -33,39 +36,75 @@ $.getJSON("data/vereine.json", function(oVereine) {
 	var heimSelectD1 = $('#heimname1');
 	var heimSelectD2 = $('#heimname2');
 	for (var i = 0; i<oVereine[heim].mitglieder.length; i++) {
-	   var spieler = atob(oVereine[heim].mitglieder[i].vorname) + " " + atob(oVereine[heim].mitglieder[i].name);
-	   heimSelectS.append($('<option></option>', {
-	      value: btoa(spieler),
-	      text: spieler
-	   }));
-	   heimSelectD1.append($('<option></option>', {
-	      value: btoa(spieler),
-	      text: spieler
-	   }));
-	   heimSelectD2.append($('<option></option>', {
-	      value: btoa(spieler),
-	      text: spieler
-	   }));
-	}	
+		var spieler = atob(oVereine[heim].mitglieder[i].vorname) + " " + atob(oVereine[heim].mitglieder[i].name);
+		heimSelectS.append($('<option></option>', {
+		  value: btoa(spieler),
+		  text: spieler
+		}));
+		heimSelectD1.append($('<option></option>', {
+		  value: btoa(spieler),
+		  text: spieler
+		}));
+		heimSelectD2.append($('<option></option>', {
+		  value: btoa(spieler),
+		  text: spieler
+		}));
+	};
+
+	for (var i = 0; i<nachmeldungen.heim.length; i++) {
+		var spieler = unescape(atob(nachmeldungen.heim[i]));
+		if (spieler != "") {
+			heimSelectS.append($('<option></option>', {
+			  value: nachmeldungen.heim[i],
+			  text: spieler
+			}));
+			heimSelectD1.append($('<option></option>', {
+			  value: nachmeldungen.heim[i],
+			  text: spieler
+			}));
+			heimSelectD2.append($('<option></option>', {
+			  value: nachmeldungen.heim[i],
+			  text: spieler
+			}));
+		}
+	};
 
 	var gastSelectS = $('#name2');
 	var gastSelectD1 = $('#gastname1');
 	var gastSelectD2 = $('#gastname2');
 	for (var i = 0; i<oVereine[gast].mitglieder.length; i++) {
-	   var spieler = atob(oVereine[gast].mitglieder[i].vorname) + " " + atob(oVereine[gast].mitglieder[i].name);
-	   gastSelectS.append($('<option></option>', {
-	      value: btoa(spieler),
-	      text: spieler
-	   }));
-	   gastSelectD1.append($('<option></option>', {
-	      value: btoa(spieler),
-	      text: spieler
-	   }));
-	   gastSelectD2.append($('<option></option>', {
-	      value: btoa(spieler),
-	      text: spieler
-	   }));
-	}
+		var spieler = atob(oVereine[gast].mitglieder[i].vorname) + " " + atob(oVereine[gast].mitglieder[i].name);
+		gastSelectS.append($('<option></option>', {
+		  value: btoa(spieler),
+		  text: spieler
+		}));
+		gastSelectD1.append($('<option></option>', {
+		  value: btoa(spieler),
+		  text: spieler
+		}));
+		gastSelectD2.append($('<option></option>', {
+		  value: btoa(spieler),
+		  text: spieler
+		}));
+	};
+
+	for (var i = 0; i<nachmeldungen.gast.length; i++) {
+		var spieler = unescape(atob(nachmeldungen.gast[i]));
+		if (spieler != "") {
+			gastSelectS.append($('<option></option>', {
+			  value: nachmeldungen.gast[i],
+			  text: spieler
+			}));
+			gastSelectD1.append($('<option></option>', {
+			  value: nachmeldungen.gast[i],
+			  text: spieler
+			}));
+			gastSelectD2.append($('<option></option>', {
+			  value: nachmeldungen.gast[i],
+			  text: spieler
+			}));
+		}
+	};
 });
 
 switchMore("more1", false, 0);
@@ -256,7 +295,7 @@ function readNewGameFromURL(ergebnisse, spiel) {
 
 	if (ergebnisse[spiel].spieler1) {
 	  ergebnisse[spiel].spieler1 = { 
-	    "name" : atob(unescape(getUrlParameter("name1"))), 
+	    "name" : unescape(atob(unescape(getUrlParameter("name1")))), 
 	    "legs" : getUrlParameter("erg1") || 0, 
 	    "shortlegs" : getUrlParameter("sl1") || 0, 
 	    "highfinishes" : getUrlParameter("hf1") || 0, 
@@ -266,7 +305,7 @@ function readNewGameFromURL(ergebnisse, spiel) {
 
 	if (ergebnisse[spiel].spieler2) {
 	  ergebnisse[spiel].spieler2 = { 
-	    "name" : atob(unescape(getUrlParameter("name2"))), 
+	    "name" : unescape(atob(unescape(getUrlParameter("name2")))), 
 	    "legs" : getUrlParameter("erg2") || 0, 
 	    "shortlegs" : getUrlParameter("sl2") || 0, 
 	    "highfinishes" : getUrlParameter("hf2") || 0, 
@@ -279,12 +318,12 @@ function readNewGameFromURL(ergebnisse, spiel) {
 	    "legs" : getUrlParameter("erg1") || 0,
 	    "shortlegs" : getUrlParameter("dsl1") || 0,
 	    "spieler1" : {
-	      "name" : atob(unescape(getUrlParameter("heimname1"))), 
+	      "name" : unescape(atob(unescape(getUrlParameter("heimname1")))), 
 	      "highfinishes" : getUrlParameter("dhf1") || 0,
 	      "i180er" : getUrlParameter("di180er1") || 0
 	    },
 	    "spieler2" : {
-	      "name" : atob(unescape(getUrlParameter("heimname2"))), 
+	      "name" : unescape(atob(unescape(getUrlParameter("heimname2")))), 
 	      "highfinishes" : getUrlParameter("dhf2") || 0,
 	      "i180er" : getUrlParameter("di180er2") || 0
 	    }
@@ -296,12 +335,12 @@ function readNewGameFromURL(ergebnisse, spiel) {
 	    "legs" : getUrlParameter("erg2") || 0,
 	    "shortlegs" : getUrlParameter("dsl2") || 0,
 	    "spieler1" : {
-	      "name" : atob(unescape(getUrlParameter("gastname1"))), 
+	      "name" : unescape(atob(unescape(getUrlParameter("gastname1")))), 
 	      "highfinishes" : getUrlParameter("dhf3") || 0,
 	      "i180er" : getUrlParameter("di180er3") || 0
 	    },
 	    "spieler2" : {
-	      "name" : atob(unescape(getUrlParameter("gastname2"))), 
+	      "name" : unescape(atob(unescape(getUrlParameter("gastname2")))), 
 	      "highfinishes" : getUrlParameter("dhf4") || 0,
 	      "i180er" : getUrlParameter("di180er4") || 0
 	    }

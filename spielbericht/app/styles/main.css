@@ -106,3 +106,7 @@ body {
     z-index:1234;
     overflow: auto;
 }
+.nachmeldungenError{
+    border: solid 1px red;
+    background-color: rgb(255, 219, 219);
+}
