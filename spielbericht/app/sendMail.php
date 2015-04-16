@@ -70,17 +70,17 @@ $okhtml .= '</body>';
 $okhtml .= '</html>';
 
 try {
-  #$mail->AddAddress('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
-  #$mail->AddAddress('spielleiter@badischedartliga.de', 'Spielleiter BDL');
-  #$mail->AddAddress('bdl@bwdv.de','BDL@BWDV');
+  $mail->AddAddress('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
+  $mail->AddAddress('spielleiter@badischedartliga.de', 'Spielleiter BDL');
+  $mail->AddAddress('bdl@bwdv.de','BDL@BWDV');
   if ($emailHeim != "") {
     $mail->AddAddress($emailHeim,'Teamkapitän Heim');
   }
   if ($emailGast != "") {
     $mail->AddAddress($emailGast,'Teamkapitän Gast');
   }
-  #$mail->AddCC('odom3003@googlemail.com','Dominik Boss');
-  #$mail->AddCC('jb@jankovsky.de', 'Jochen Becker');
+  $mail->AddCC('odom3003@googlemail.com','Dominik Boss');
+  $mail->AddCC('jb@jankovsky.de', 'Jochen Becker');
   $mail->AddCC('Marius.Augenstein@gmail.com','Marius Augenstein');
   $mail->SetFrom('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
   $mail->AddReplyTo('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
