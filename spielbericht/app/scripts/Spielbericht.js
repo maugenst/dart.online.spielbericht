@@ -13,7 +13,7 @@ var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
 var aVereine = [];
 
 var ergebnisse = (newGame==="true") ? undefined : JSON.parse(window.localStorage.getItem("ergebnisse"));
-
+debugger;
 if (ergebnisse) {
 	readNewGameFromURL(ergebnisse, spiel);
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
@@ -281,6 +281,8 @@ function printTable(ergebnisse) {
 	              "<td> - Sets</td>\n"+
 	              "<td colspan=3>&nbsp;</td>\n"+
 	           "</tr>";
+	$('#summaryTable tr:last').after(line);
+	line = "<tr><td colspan=9><div class='bold'>Spielername (N) = Nachgemeldeter Spieler</div></td></tr>";
 	$('#summaryTable tr:last').after(line);
 };
 

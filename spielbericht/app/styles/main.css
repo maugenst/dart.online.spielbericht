@@ -48,6 +48,9 @@ body {
     font-size: 70%;
     font-weight: bold;
 }
+.bold {
+    font-weight: bold;
+}
 
 .spacer {
     padding: 5px;
@@ -106,7 +109,13 @@ body {
     z-index:1234;
     overflow: auto;
 }
-.nachmeldungenError{
+.nachmeldungenError {
     border: solid 1px red;
     background-color: rgb(255, 219, 219);
+}
+.mytable {
+    width: 100%;
+}
+.mytable td {
+    padding: 5px;
 }
