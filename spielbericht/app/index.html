@@ -49,6 +49,13 @@
       padding: 0;
     }
   }
+  .emailinput {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
 </style>
 <div id="hiddenInputFieldContainer" style="visibility:hidden; position:absolute; width:0px; height:0px">
   <div id="nachmeldungenRowContent" class="col col-xs-12">
@@ -107,9 +114,9 @@
           </tr>
           <tr>
             <td>Email:</td>  
-            <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de"></td>
+            <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de" class="emailinput"></td>
             <td>Email:</td>  
-            <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de"></td>
+            <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de" class="emailinput"></td>
           </tr>
           <tr>
             <td colspan="4">
@@ -161,8 +168,12 @@
 
   var aCookies = document.cookie.split(';')
   for (var i = aCookies.length - 1; i >= 0; i--) {
-    var aCookie = aCookies[i].split('=');
-    document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
+    if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
+      var aCookie = aCookies[i].trim().split('=');
+      if (aCookie[0].indexOf("email") === 0) {
+        document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
+      }
+    }
   };
 
   $.getJSON("data/vereine.json", function(oVereine) {

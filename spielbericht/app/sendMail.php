@@ -27,6 +27,8 @@ $image->load($_FILES['onlineSpielberichtBild']['tmp_name']);
 $image->resizeToWidth(2000);
 $image->save($fileNameBild);
 
+$emailHeim = $_POST['emailHeim'];
+$emailGast = $_POST['emailGast'];
 $json = $_POST['ergebnisJSON'];
 $css = $_POST['emailCSSStyles'];
 $table = $_POST['emailSummaryTable'];
@@ -68,11 +70,17 @@ $okhtml .= '</body>';
 $okhtml .= '</html>';
 
 try {
-  $mail->AddAddress('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
-  $mail->AddAddress('spielleiter@badischedartliga.de', 'Spielleiter BDL');
-  $mail->AddAddress('bdl@bwdv.de','BDL@BWDV');
-  $mail->AddCC('odom3003@googlemail.com ','Dominik Boss');
-  $mail->AddCC('jb@jankovsky.de', 'Jochen Becker');
+  #$mail->AddAddress('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
+  #$mail->AddAddress('spielleiter@badischedartliga.de', 'Spielleiter BDL');
+  #$mail->AddAddress('bdl@bwdv.de','BDL@BWDV');
+  if ($emailHeim != "") {
+    $mail->AddAddress($emailHeim,'Teamkapitän Heim');
+  }
+  if ($emailGast != "") {
+    $mail->AddAddress($emailGast,'Teamkapitän Gast');
+  }
+  #$mail->AddCC('odom3003@googlemail.com','Dominik Boss');
+  #$mail->AddCC('jb@jankovsky.de', 'Jochen Becker');
   $mail->AddCC('Marius.Augenstein@gmail.com','Marius Augenstein');
   $mail->SetFrom('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');
   $mail->AddReplyTo('bdlonlinespielplan@gmail.com', 'BDL Online Spielbericht');

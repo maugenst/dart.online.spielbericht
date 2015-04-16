@@ -113,9 +113,6 @@ body {
     border: solid 1px red;
     background-color: rgb(255, 219, 219);
 }
-.mytable {
-    width: 100%;
-}
 .mytable td {
     padding: 5px;
 }

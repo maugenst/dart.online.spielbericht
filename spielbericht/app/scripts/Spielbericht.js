@@ -13,7 +13,6 @@ var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
 var aVereine = [];
 
 var ergebnisse = (newGame==="true") ? undefined : JSON.parse(window.localStorage.getItem("ergebnisse"));
-debugger;
 if (ergebnisse) {
 	readNewGameFromURL(ergebnisse, spiel);
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
@@ -190,6 +189,15 @@ function fillHiddenFields() {
 	$.get("styles/ergebnistabelle.css", function(oContent) {
 	  document.getElementById("emailCSSStyles").value = oContent;
 	});
+	var aCookies = document.cookie.split(';')
+	for (var i = aCookies.length - 1; i >= 0; i--) {
+		if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
+			var aCookie = aCookies[i].trim().split('=');
+			if (aCookie[0].indexOf("email") === 0) {
+				document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
+			}
+		}
+	};
 };
 
 function getUrlParameter(sParam){
