@@ -89,21 +89,39 @@
 
   <div class="body-content">
     <form id="form" action="index2.html" method="get"> 
-      <div class="row">
-        <div class="col col-xs-4">
-          Heim: <select id="heim" name="heim" onchange="checkSelection();" style="width:100px">
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col col-xs-4">  
-          Gast: <select id="gast" name="gast" onchange="checkSelection();" style="width:100px">
-            <option>...</option>
-          </select>
-        </div>
-      </div>
+      <table class="mytable">
+        <tbody>
+          <tr>
+            <td>Heim:</td>  
+            <td>
+              <select id="heim" name="heim" onchange="checkSelection();" style="width:100px">
+                <option>...</option>
+              </select>
+            </td>
+            <td>Gast:</td>  
+            <td>
+              <select id="gast" name="gast" onchange="checkSelection();" style="width:100px">
+                <option>...</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>  
+            <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de"></td>
+            <td>Email:</td>  
+            <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de"></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <input id="nachmeldungenCheckbox" type="checkbox" value="nachmeldungen" onclick="showNachmeldungen();"> Gibt es Nachmeldungen in den einzelnen Mannschaften?
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
       <div class="row">
         <div class="col col-xs-12">
-         <br> <input id="nachmeldungenCheckbox" type="checkbox" value="nachmeldungen" onclick="showNachmeldungen();"> Gibt es Nachmeldungen in den einzelnen Mannschaften?
+         <br> 
         </div>
       </div>
       <div id="nachmeldungenRow" class="row" style="display:none">
@@ -141,6 +159,12 @@
   window.bdlOnlineSpielbericht = {};
   window.bdlOnlineSpielbericht.bError = false;
 
+  var aCookies = document.cookie.split(';')
+  for (var i = aCookies.length - 1; i >= 0; i--) {
+    var aCookie = aCookies[i].split('=');
+    document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
+  };
+
   $.getJSON("data/vereine.json", function(oVereine) {
     for (var verein in oVereine) {
       heimSelect.append($('<option></option>', {
@@ -177,6 +201,13 @@
   };
 
   function escapeAll() {
+    var dCookieDate = new Date;
+    dCookieDate.setFullYear(dCookieDate.getFullYear( ) + 1);
+    document.cookie = 'emailHeim=' + document.getElementById("emailHeim").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
+    dCookieDate = new Date;
+    dCookieDate.setHours(dCookieDate.getHours( ) + 24);
+    document.cookie = 'emailGast=' + document.getElementById("emailGast").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
+
     $("#nachmeldungenRowContent").appendTo("#hiddenInputFieldContainer");
     var nachmeldungen = {
       heim : [],
