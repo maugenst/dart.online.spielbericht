@@ -3,6 +3,7 @@
 <head>
 	<title>chart</title>
 	<script src="bower_components/jquery/jquery.js"></script>
+	<link rel="stylesheet" href="styles/main.css">
 	<style>
 		.scoreGold {
 			background-color: #FFD700;
@@ -15,7 +16,7 @@
 		}
 		
 		.score {
-			background-color: #F5F5F5;
+			background-color: rgb(205, 250, 214);
 		}
 		
 		.table {
@@ -53,18 +54,18 @@
 	});
 
 	function printTable(scores) {
-		var styleClass = "score";
 		var highestScore = findHighestScore(scores);
 		for(var i = 0; i<scores.length; i++) {
+			var styleClass = "score";
 			var currentScore = scores[i].score;
 			switch (i) {
-			    case 1:
+			    case 0:
 			        styleClass = "scoreGold";
 			        break;
-			    case 2:
+			    case 1:
 			        styleClass = "scoreSilver";
 			        break;
-			    case 3:
+			    case 2:
 			        styleClass = "scoreBronze";
 			        break;
 			}
