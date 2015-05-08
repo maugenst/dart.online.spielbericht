@@ -14,4 +14,3 @@ process.on('exit', function() {
 });
 
 app.listen(port, hostname);
-app.listen(port, "WDFN31650430A.emea.global.corp.sap");

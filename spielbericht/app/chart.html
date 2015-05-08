@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chart</title>
+	<script src="bower_components/jquery/jquery.js"></script>
+	<style>
+		.scoreGold {
+			background-color: #FFD700;
+		}
+		.scoreSilver {
+			background-color: #C0C0C0;
+		}
+		.scoreBronze {
+			background-color: #CD853F;
+		}
+		
+		.score {
+			background-color: #F5F5F5;
+		}
+		
+		.table {
+			width: 100%;
+		}
+		tr {
+			border: solid 1px;
+		}
+		.nameCell {
+			width: 1px;
+			white-space: nowrap;
+		}
+		.scoreCell {
+			width: 1px;
+			white-space: nowrap;
+		}
+	</style>
+</head>
+<body>
+<table id="scoresTable" class="table">
+	<tr>
+		<th style="width:1px; text">Name</th>
+		<th>&nbsp;</th>
+		<th style="width:1px">Score</th>
+	</tr>
+</table>
+</body>
+<script type="text/javascript">
+	
+	$.getJSON("data/statistic.json", function(scores) {
+		scores.sort(function(a,b){
+			return b.score - a.score;
+		});
+		printTable(scores);
+	});
+
+	function printTable(scores) {
+		var styleClass = "score";
+		var highestScore = findHighestScore(scores);
+		for(var i = 0; i<scores.length; i++) {
+			var currentScore = scores[i].score;
+			switch (i) {
+			    case 1:
+			        styleClass = "scoreGold";
+			        break;
+			    case 2:
+			        styleClass = "scoreSilver";
+			        break;
+			    case 3:
+			        styleClass = "scoreBronze";
+			        break;
+			}
+			var line = 
+				"<tr>"+
+		            "<td class='nameCell'>" + scores[i].name + "</td>\n"+
+		            "<td><div class='" + styleClass + "' style='width:" + calculateWidth(highestScore, currentScore) + "%'>&nbsp;</div></td>\n"+
+		            "<td class='scoreCell'>" + currentScore + "</td>\n"+
+	        	"</tr>";
+			$('#scoresTable tr:last').after(line);
+		};
+	};
+
+	function findHighestScore(scores) {
+		var iHighestScore = 0;
+		for (var i = scores.length - 1; i >= 0; i--) {
+			if (scores[i].score > iHighestScore) {
+				iHighestScore = scores[i].score;
+			}
+		};
+		return iHighestScore;
+	}
+	function calculateWidth(highestScore, currentScore) {
+		return currentScore * 100 / highestScore;
+	};
+
+</script>
+</html>
