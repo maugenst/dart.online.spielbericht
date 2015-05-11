@@ -46,12 +46,14 @@
 </body>
 <script type="text/javascript">
 	
-	$.getJSON("data/statistic.json", function(scores) {
-		scores.sort(function(a,b){
-			return b.score - a.score;
-		});
-		printTable(scores);
+	var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
+	
+	var scores = ergebnisse.statistik || [];
+
+	scores.sort(function(a,b){
+		return b.score - a.score;
 	});
+	printTable(scores);
 
 	function printTable(scores) {
 		var highestScore = findHighestScore(scores);
