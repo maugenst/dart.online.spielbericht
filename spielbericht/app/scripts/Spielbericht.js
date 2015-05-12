@@ -18,6 +18,7 @@ if (ergebnisse) {
 	printTable(ergebnisse);
 	prepareStatistic(ergebnisse);
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
+	addStatistic(ergebnisse);
 } else {
 	$.getJSON("data/ergebnisse.json", function(ergebnisse) {
 		ergebnisse.heim = heim;
@@ -124,6 +125,70 @@ $("#gast").val(gast);
  * [generateUID Generates a Random UID of 4 digits]
  * @return {[string]}
  */		
+
+function addStatistic(ergebnisse) {
+	line = "<tr><td colspan=9><br><h4>Statistik</h4></td></tr>";
+	$('#summaryTable tr:last').after(line);
+	line = "<tr>"+
+				"<td colspan=9>"+
+					"<table id='scoresTable' class='scoreTable'>"+
+						"<tr>"+
+							"<th style='width:1px; text'>Name</th>"+
+							"<th>&nbsp;</th>"+
+							"<th style='width:1px'>Score</th>"+
+						"</tr>"+
+					"</table>"+
+				"</td>"+
+			"</tr>";
+	$('#summaryTable tr:last').after(line);
+
+	var scores = ergebnisse.statistik || [];
+
+	scores.sort(function(a,b){
+		return b.score - a.score;
+	});
+	printScoresTable(scores);
+};
+
+function printScoresTable(scores) {
+	var highestScore = findHighestScore(scores);
+	for(var i = 0; i<scores.length; i++) {
+		var styleClass = "score";
+		var currentScore = scores[i].score;
+		switch (i) {
+		    case 0:
+		        styleClass = "scoreGold";
+		        break;
+		    case 1:
+		        styleClass = "scoreSilver";
+		        break;
+		    case 2:
+		        styleClass = "scoreBronze";
+		        break;
+		}
+		var line = 
+			"<tr>"+
+	            "<td class='nameCell'>" + scores[i].name + "</td>\n"+
+	            "<td><div class='" + styleClass + "' style='width:" + calculateWidth(highestScore, currentScore) + "%'>&nbsp;</div></td>\n"+
+	            "<td class='scoreCell'>" + currentScore + "</td>\n"+
+        	"</tr>";
+		$('#scoresTable tr:last').after(line);
+	};
+};
+
+function findHighestScore(scores) {
+	var iHighestScore = 0;
+	for (var i = scores.length - 1; i >= 0; i--) {
+		if (scores[i].score > iHighestScore) {
+			iHighestScore = scores[i].score;
+		}
+	};
+	return iHighestScore;
+};
+
+function calculateWidth(highestScore, currentScore) {
+	return currentScore * 100 / highestScore;
+};
 
 function prepareStatistic(ergebnisse) {
 	ergebnisse["statistik"] = [];

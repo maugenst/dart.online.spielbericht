@@ -66,3 +66,26 @@
     border-left: 1px solid red;
     border-right: 1px solid red;
 }
+.scoreTable {
+    width: 100%;
+}
+.scoreTable .scoreGold {
+    background-color: #FFD700;
+}
+.scoreTable .scoreSilver {
+    background-color: #C0C0C0;
+}
+.scoreTable .scoreBronze {
+    background-color: #CD853F;
+}
+.scoreTable .score {
+    background-color: rgb(205, 250, 214);
+}
+.scoreTable .nameCell {
+    width: 1px;
+    white-space: nowrap;
+}
+.scoreTable .scoreCell {
+    width: 1px;
+    white-space: nowrap;
+}
