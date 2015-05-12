@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/ergebnistabelle.css">
     <link rel="stylesheet" href="styles/Autocomplete.css">
+    <link rel="stylesheet" href="styles/sticky-footer.css">
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/autocomplete/Autocomplete.js"></script>
@@ -78,92 +79,127 @@
 
 </div>
 
-<div class="container">
-
-  <h3>BDL Online Spielberichtsbogen</h3>
-
-  <div id="partie"></div>
-
-  <div id="summaryTableContainer">
-    <table id="summaryTable" class="ergebnistabelle">
-       <tr class="gegnerNamen">
-         <td colspan=3>HEIM:</td>
-         <td id="heimFeldInTable">...</td>
-         <td>GAST:</td>
-         <td colspan=4 id="gastFeldInTable">...</td>
-       </tr>
-       <tr class="gegnerNamen">
-          <th><div class="thRotated">SL</div></th>
-          <th><div class="thRotated">HF</div></th>
-          <th><div class="thRotated">180er</div></th>
-          <th style="width:40%">Name</th>
-          <th>&nbsp;</th>
-          <th style="width:40%">Name</th>
-          <th><div class="thRotated">180er</div></th>
-          <th><div class="thRotated">HF</div></th>
-          <th><div class="thRotated">SL</div></th>
-       </tr>
-    </table>
-  </div>
-
-  <div id="inputFormDialog" class="modal fade">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <div id="spielHeadline"></div>
-        </div>
-        <div class="modal-body">
-          <form id="playerForm" action="index2.html" method="get" onSubmit="document.getElementById('summaryTableContainer').scrollIntoView()">
-            <input id="heim" name="heim" type="hidden">
-            <input id="gast" name="gast" type="hidden">
-            <input id="spiel" name="spiel" type="hidden">
-            <div id="spielerHeim"></div>
-            <div id="ergSelection" style="visibility:hidden">
-              Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
-              1 <input type="radio" name="erg1" value="1" onchange="checkSelection();">
-              2 <input type="radio" name="erg1" value="2" onchange="checkSelection();">
-              3 <input type="radio" name="erg1" value="3" onchange="checkSelection();">
-              <br>
-              Ergebnis Gast: 0 <input type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
-              1 <input type="radio" name="erg2" value="1" onchange="checkSelection();">
-              2 <input type="radio" name="erg2" value="2" onchange="checkSelection();">
-              3 <input type="radio" name="erg2" value="3" onchange="checkSelection();">
-            </div>
-            <div class="spacer"></div>
-            <div id="spielerGast"></div>
-            <div class="spacer"></div>
-            
-            <!--input id="speichern" type="submit" name="speichern" value="Ergebnis sichern..." disabled="disabled" style="display:none"-->
-          </form>
-        </div>
-        <div class="modal-footer">
+<div id="inputFormDialog" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        <div id="spielHeadline"></div>
+      </div>
+      <div class="modal-body">
+        <form id="playerForm" action="index2.html" method="get" onSubmit="document.getElementById('summaryTableContainer').scrollIntoView()">
+          <input id="heim" name="heim" type="hidden">
+          <input id="gast" name="gast" type="hidden">
+          <input id="spiel" name="spiel" type="hidden">
+          <div id="spielerHeim"></div>
+          <div id="ergSelection" style="visibility:hidden">
+            Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
+            1 <input type="radio" name="erg1" value="1" onchange="checkSelection();">
+            2 <input type="radio" name="erg1" value="2" onchange="checkSelection();">
+            3 <input type="radio" name="erg1" value="3" onchange="checkSelection();">
+            <br>
+            Ergebnis Gast: 0 <input type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
+            1 <input type="radio" name="erg2" value="1" onchange="checkSelection();">
+            2 <input type="radio" name="erg2" value="2" onchange="checkSelection();">
+            3 <input type="radio" name="erg2" value="3" onchange="checkSelection();">
+          </div>
+          <div class="spacer"></div>
+          <div id="spielerGast"></div>
+          <div class="spacer"></div>
           
-          <button id="speichern" type="button" disabled="disabled" class="btn btn-primary" onclick="document.getElementById('playerForm').submit()">Speichern</button>
+          <!--input id="speichern" type="submit" name="speichern" value="Ergebnis sichern..." disabled="disabled" style="display:none"-->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="speichern" type="button" disabled="disabled" class="btn btn-primary" onclick="document.getElementById('playerForm').submit()">Speichern</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img alt="Badische Dart Liga" src="images/bdl-headerIcon_bw.png" height="20px"> BDL Online Spielberichtsbogen</a>
+  </div>
+</nav>
+
+<div class="container">
+  
+  <div role="tabpanel">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#eingabe" aria-controls="eingabe" role="tab" data-toggle="tab">Eingabe</a></li>
+      <li role="presentation"><a href="#statistic" aria-controls="statistic" role="tab" data-toggle="tab">Statistik</a></li>
+      <li role="presentation"><a href="#absenden" aria-controls="absenden" role="tab" data-toggle="tab">Absenden</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="eingabe">
+        <div id="summaryTableContainer">
+          <br>
+          <table id="summaryTable" class="ergebnistabelle">
+             <tr class="gegnerNamen">
+               <td colspan=3>HEIM:</td>
+               <td id="heimFeldInTable" style="color:gold">...</td>
+               <td>GAST:</td>
+               <td colspan=4 id="gastFeldInTable" style="color:gold">...</td>
+             </tr>
+             <tr class="gegnerNamen">
+                <th><div class="thRotated">SL</div></th>
+                <th><div class="thRotated">HF</div></th>
+                <th><div class="thRotated">180er</div></th>
+                <th style="width:40%">Name</th>
+                <th>&nbsp;</th>
+                <th style="width:40%">Name</th>
+                <th><div class="thRotated">180er</div></th>
+                <th><div class="thRotated">HF</div></th>
+                <th><div class="thRotated">SL</div></th>
+             </tr>
+          </table>
         </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="statistic">
+        <br>
+        <table id="scoresTable" class="ergebnistabelle scoreTable">
+          <tr>
+            <th style='width:1px; text'>Name</th>
+            <th>&nbsp;</th>
+            <th style='width:1px'>Score</th>
+          </tr>
+        </table>
+      </div>
+      
+      <div role="tabpanel" class="tab-pane" id="absenden">
+        <br>
+        <form id="sendMail" action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()">
+            <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
+            <textarea id="emailCSSStyles" name="emailCSSStyles" style="display:none"></textarea>
+            <textarea id="emailSummaryTable" name="emailSummaryTable" style="display:none"></textarea>
+            <input type="text" id="emailHeim" name="emailHeim" style="display:none">
+            <input type="text" id="emailGast" name="emailGast" style="display:none">
+            Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
+            <br><input type="file" name="onlineSpielberichtBild" capture="camera" accept="image/*" id="takePictureField">
+            <br><br>
+            <input type="submit" name="submit" value="Absenden">
+        </form>
       </div>
     </div>
   </div>
 
-<br>
-<br>
-<form id="sendMail" action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()">
-    <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
-    <textarea id="emailCSSStyles" name="emailCSSStyles" style="display:none"></textarea>
-    <textarea id="emailSummaryTable" name="emailSummaryTable" style="display:none"></textarea>
-    <input type="text" id="emailHeim" name="emailHeim" style="display:none">
-    <input type="text" id="emailGast" name="emailGast" style="display:none">
-    Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
-    <br><input type="file" name="onlineSpielberichtBild" capture="camera" accept="image/*" id="takePictureField">
-    <br><br>
-    <input type="submit" name="submit" value="Absenden">
-</form>
+</div>
 
-    <footer>
-      <p>&copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>
-       <a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://bdl-online-spielplan.lima-city.de">BDL Online Spielbericht</a>
-      </p>
-    </footer>
+  
+
+
+<footer class="footer">
+  <div class="container">
+    &copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>
+    <a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://bdl-online-spielplan.lima-city.de">BDL Online Spielbericht</a>
+  </div>
+</footer>
 
 <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
 <script src="scripts/async.localStorage.js"></script>

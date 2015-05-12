@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/Autocomplete.css">
+        <link rel="stylesheet" href="styles/sticky-footer.css">
         <script src="bower_components/jquery/jquery.js"></script>
         <script src="bower_components/modernizr/modernizr.js"></script>
         <script src="bower_components/autocomplete/Autocomplete.js"></script>
@@ -92,8 +93,13 @@
 
 <div class="container">
 
-  <h3>BDL Online Spielberichtsbogen</h3>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img alt="Badische Dart Liga" src="images/bdl-headerIcon_bw.png" height="20px"> BDL Online Spielberichtsbogen</a>
+    </div>
+  </nav>
 
+  <br>
   <div class="body-content">
     <form id="form" action="index2.html" method="get"> 
       <table class="mytable">
@@ -141,17 +147,16 @@
       <input name="neuesSpiel" value="true" type="hidden">
       <input id="nachmeldungen" name="nachmeldungen" type="hidden">
     </form>
-
-    <hr>
-
-    <footer>
-      <p>&copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>
-       <a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://bdl-online-spielplan.lima-city.de">BDL Online Spielbericht</a>
-      </p>
-    </footer>
   </div>
-
 </div> 
+
+<footer class="footer">
+  <div class="container">
+    &copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>
+    <a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://bdl-online-spielplan.lima-city.de">BDL Online Spielbericht</a>
+  </div>
+</footer>
+
 <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
 <script src="scripts/async.localStorage.js"></script>
 <script src="scripts/async.localStorage.examples.js"></script>
