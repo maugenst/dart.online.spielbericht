@@ -106,31 +106,45 @@
     </table>
   </div>
 
-  
-    <form action="index2.html" method="get" onSubmit="document.getElementById('summaryTableContainer').scrollIntoView()">
-      <input id="heim" name="heim" type="hidden">
-      <input id="gast" name="gast" type="hidden">
-      <input id="spiel" name="spiel" type="hidden">
-      <hr>
-      <div id="spielHeadline"></div>
-      <div id="spielerHeim"></div>
-      <div id="ergSelection" style="visibility:hidden">
-        Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
-        1 <input type="radio" name="erg1" value="1" onchange="checkSelection();">
-        2 <input type="radio" name="erg1" value="2" onchange="checkSelection();">
-        3 <input type="radio" name="erg1" value="3" onchange="checkSelection();">
-        <br>
-        Ergebnis Gast: 0 <input type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
-        1 <input type="radio" name="erg2" value="1" onchange="checkSelection();">
-        2 <input type="radio" name="erg2" value="2" onchange="checkSelection();">
-        3 <input type="radio" name="erg2" value="3" onchange="checkSelection();">
+  <div id="inputFormDialog" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div id="spielHeadline"></div>
+        </div>
+        <div class="modal-body">
+          <form id="playerForm" action="index2.html" method="get" onSubmit="document.getElementById('summaryTableContainer').scrollIntoView()">
+            <input id="heim" name="heim" type="hidden">
+            <input id="gast" name="gast" type="hidden">
+            <input id="spiel" name="spiel" type="hidden">
+            <div id="spielerHeim"></div>
+            <div id="ergSelection" style="visibility:hidden">
+              Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
+              1 <input type="radio" name="erg1" value="1" onchange="checkSelection();">
+              2 <input type="radio" name="erg1" value="2" onchange="checkSelection();">
+              3 <input type="radio" name="erg1" value="3" onchange="checkSelection();">
+              <br>
+              Ergebnis Gast: 0 <input type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
+              1 <input type="radio" name="erg2" value="1" onchange="checkSelection();">
+              2 <input type="radio" name="erg2" value="2" onchange="checkSelection();">
+              3 <input type="radio" name="erg2" value="3" onchange="checkSelection();">
+            </div>
+            <div class="spacer"></div>
+            <div id="spielerGast"></div>
+            <div class="spacer"></div>
+            
+            <!--input id="speichern" type="submit" name="speichern" value="Ergebnis sichern..." disabled="disabled" style="display:none"-->
+          </form>
+        </div>
+        <div class="modal-footer">
+          
+          <button id="speichern" type="button" disabled="disabled" class="btn btn-primary" onclick="document.getElementById('playerForm').submit()">Speichern</button>
+        </div>
       </div>
-      <div class="spacer"></div>
-      <div id="spielerGast"></div>
-      <div class="spacer"></div>
-      
-      <input id="speichern" type="submit" name="speichern" value="Ergebnis sichern..." disabled="disabled" style="display:none">
-    </form>
+    </div>
+  </div>
+
 <br>
 <br>
 <form id="sendMail" action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()">

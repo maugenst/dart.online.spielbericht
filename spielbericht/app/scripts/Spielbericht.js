@@ -535,6 +535,8 @@ function removeBorders() {
 };
 
 function enableFormForSingles(bSingles, lineCounter, uid) {
+	$('#inputFormDialog').modal('show');
+
 	removeBorders();
 
 	if (uid.length>4) {
@@ -633,7 +635,7 @@ function enableFormForSingles(bSingles, lineCounter, uid) {
 		organizeSelectedOptionsForId(oStoredNames, "gastname2", sSpiel, ergebnisse);
 		switchSameSelectedOptionFor("gastname1", "gastname2");
 	}
-	document.getElementById("spielHeadline").scrollIntoView(); 
+	//document.getElementById("spielHeadline").scrollIntoView(); 
 };
 
 function switchSameSelectedOptionFor(sId1, sId2) {
