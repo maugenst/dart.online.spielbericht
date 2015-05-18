@@ -127,21 +127,6 @@ $("#gast").val(gast);
  */		
 
 function addStatistic(ergebnisse) {
-/*	line = "<tr><td colspan=3><br><h4>Statistik</h4></td></tr>";
-	$('#scoresTable tr:last').after(line);
-	line = "<tr>"+
-				"<td colspan=9>"+
-					"<table id='scoresTable' class='scoreTable'>"+
-						"<tr>"+
-							"<th style='width:1px; text'>Name</th>"+
-							"<th>&nbsp;</th>"+
-							"<th style='width:1px'>Score</th>"+
-						"</tr>"+
-					"</table>"+
-				"</td>"+
-			"</tr>";
-	$('#statisticTable tr:last').after(line);*/
-
 	var scores = ergebnisse.statistik || [];
 
 	scores.sort(function(a,b){
