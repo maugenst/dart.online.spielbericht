@@ -93,12 +93,12 @@
           <input id="spiel" name="spiel" type="hidden">
           <div id="spielerHeim"></div>
           <div id="ergSelection" style="visibility:hidden">
-            Ergebnis Heim: 0 <input type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
+            Ergebnis Heim: 0 <input id="erg1" type="radio" name="erg1" value="0" onchange="checkSelection();" checked="true">
             1 <input type="radio" name="erg1" value="1" onchange="checkSelection();">
             2 <input type="radio" name="erg1" value="2" onchange="checkSelection();">
             3 <input type="radio" name="erg1" value="3" onchange="checkSelection();">
             <br>
-            Ergebnis Gast: 0 <input type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
+            Ergebnis Gast: 0 <input id="erg2" type="radio" name="erg2" value="0" onchange="checkSelection();" checked="true">
             1 <input type="radio" name="erg2" value="1" onchange="checkSelection();">
             2 <input type="radio" name="erg2" value="2" onchange="checkSelection();">
             3 <input type="radio" name="erg2" value="3" onchange="checkSelection();">
@@ -111,7 +111,7 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button id="speichern" type="button" disabled="disabled" class="btn btn-primary" onclick="document.getElementById('playerForm').submit()">Speichern</button>
+        <button id="speichern" type="button" disabled="disabled"  data-dismiss="modal" class="btn btn-primary" onclick="internalStore()">Speichern</button>
       </div>
     </div>
   </div>

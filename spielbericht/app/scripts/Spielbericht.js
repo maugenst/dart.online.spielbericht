@@ -379,15 +379,19 @@ function printTable(ergebnisse) {
 	    var classSpec = (lineCounter % 2 === 0) ? "einzelblockEven" : "einzelblockOdd";
 	    var uid = generateUID();
 	    var line = "<tr id='" + uid + "' class='"+classSpec+"' onclick='enableFormForSingles(true, " + lineCounter + ", \"" + uid + "\")'>"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.shortlegs) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.highfinishes) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].spieler1.i180er) + "</td>\n"+
-	                  "<td>" + ergebnisse[erg].spieler1.name + "</td>\n"+
-	                  "<td class='ergebnisBlock'>" + ergebnisse[erg].spieler1.legs + " : " + ergebnisse[erg].spieler2.legs + "</td>\n"+
-	                  "<td>" + ergebnisse[erg].spieler2.name + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].spieler2.i180er) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].spieler2.highfinishes) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].spieler2.shortlegs) + "</td>\n"+
+	                  "<td id='" + erg + "_spieler1_shortlegs' class='slhf180block'>" + p(ergebnisse[erg].spieler1.shortlegs) + "</td>\n"+
+	                  "<td id='" + erg + "_spieler1_highfinishes' class='slhf180block'>" + p(ergebnisse[erg].spieler1.highfinishes) + "</td>\n"+
+	                  "<td id='" + erg + "_spieler1_i180er' class='slhf180block'>" + p(ergebnisse[erg].spieler1.i180er) + "</td>\n"+
+	                  "<td id='" + erg + "_spieler1_name'>" + ergebnisse[erg].spieler1.name + "</td>\n"+
+	                  "<td class='ergebnisBlock'>"+
+						"<font id='" + erg + "_spieler1_legs'>" + ergebnisse[erg].spieler1.legs + "</font>\n"+
+						" : \n"+
+						"<font id='" + erg + "_spieler2_legs'>" + ergebnisse[erg].spieler2.legs + "</font>\n"+
+	                  "</td>\n"+
+	                  "<td id='" + erg + "_spieler2_name'>" + ergebnisse[erg].spieler2.name + "</td>\n"+
+	                  "<td id='" + erg + "_spieler2_i180er' class='slhf180block'>" + p(ergebnisse[erg].spieler2.i180er) + "</td>\n"+
+	                  "<td id='" + erg + "_spieler2_highfinishes' class='slhf180block'>" + p(ergebnisse[erg].spieler2.highfinishes) + "</td>\n"+
+	                  "<td id='" + erg + "_spieler2_shortlegs' class='slhf180block'>" + p(ergebnisse[erg].spieler2.shortlegs) + "</td>\n"+
 	               "</tr>";
 	    $('#summaryTable tr:last').after(line);
 	    lineCounter++;
@@ -403,23 +407,27 @@ function printTable(ergebnisse) {
 	    var uid = generateUID();
 
 	    var line = "<tr id='" + uid + "_1' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \"" + uid + "_1\")'>"+
-	                  "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar1.shortlegs) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.highfinishes) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.i180er) + "</td>\n"+
-	                  "<td>" + ergebnisse[erg].paar1.spieler1.name + "</td>\n"+
-	                  "<td rowspan='2' class='ergebnisBlock'>" + ergebnisse[erg].paar1.legs + " : " + ergebnisse[erg].paar2.legs + "</td>\n"+
-	                  "<td>" + ergebnisse[erg].paar2.spieler1.name + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.i180er) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.highfinishes) + "</td>\n"+
-	                  "<td rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar2.shortlegs) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_shortlegs' rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar1.shortlegs) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_spieler1_highfinishes' class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.highfinishes) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_spieler1_i180er' class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler1.i180er) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_spieler1_name'>" + ergebnisse[erg].paar1.spieler1.name + "</td>\n"+
+	                  "<td rowspan='2' class='ergebnisBlock'>" +
+						"<font id='" + erg + "_paar1_legs'>" + ergebnisse[erg].paar1.legs + "</font>\n"+
+						" : \n"+
+						"<font id='" + erg + "_paar2_legs'>" + ergebnisse[erg].paar2.legs + "</font>\n"+
+	                  "</td>\n"+
+	                  "<td id='" + erg + "_paar2_spieler1_name'>" + ergebnisse[erg].paar2.spieler1.name + "</td>\n"+
+	                  "<td id='" + erg + "_paar2_spieler1_i180er' class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.i180er) + "</td>\n"+
+	                  "<td id='" + erg + "_paar2_spieler1_highfinishes' class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler1.highfinishes) + "</td>\n"+
+	                  "<td id='" + erg + "_paar2_shortlegs' rowspan='2' class='slhf180block'>" + p(ergebnisse[erg].paar2.shortlegs) + "</td>\n"+
 	                "</tr>\n"+
 	                "<tr id='" + uid + "_2' class='"+classSpec+"' onclick='enableFormForSingles(false, " + lineCounter + ", \"" + uid + "_2\")'>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.highfinishes) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.i180er) + "</td>\n"+
-	                  "<td>" + ergebnisse[erg].paar1.spieler2.name + "</td>\n"+
-	                  "<td>" + ergebnisse[erg].paar2.spieler2.name + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler2.i180er) + "</td>\n"+
-	                  "<td class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler2.highfinishes) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_spieler2_highfinishes' class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.highfinishes) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_spieler2_i180er' class='slhf180block'>" + p(ergebnisse[erg].paar1.spieler2.i180er) + "</td>\n"+
+	                  "<td id='" + erg + "_paar1_spieler2_name'>" + ergebnisse[erg].paar1.spieler2.name + "</td>\n"+
+	                  "<td id='" + erg + "_paar2_spieler2_name'>" + ergebnisse[erg].paar2.spieler2.name + "</td>\n"+
+	                  "<td id='" + erg + "_paar2_spieler2_i180er' class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler2.i180er) + "</td>\n"+
+	                  "<td id='" + erg + "_paar2_spieler2_highfinishes' class='slhf180block'>" + p(ergebnisse[erg].paar2.spieler2.highfinishes) + "</td>\n"+
 	                "</tr>";
 	    $('#summaryTable tr:last').after(line);
 	    lineCounter++;
@@ -451,6 +459,127 @@ function printTable(ergebnisse) {
 
 function p(sErg) {
 	return (sErg == 0) ? "&nbsp;" : sErg;
+};
+
+function internalStore() {
+	var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
+
+	var sSpiel = $("#spiel").val();
+	var erg1 = $("#playerForm input:radio[name='erg1']:checked").index(":radio[name='erg1']");
+	var erg2 = $("#playerForm input:radio[name='erg2']:checked").index(":radio[name='erg2']");
+
+	if (sSpiel.indexOf("e")==0) {
+		var sName1 = unescape(atob(unescape($("#name1").val())));
+		var sName2 = unescape(atob(unescape($("#name2").val())));
+		ergebnisse[sSpiel].spieler1 = { 
+			"name" : sName1, 
+			"legs" : 					erg1, 
+			"shortlegs" : 				$("#sl1").val() || 0, 
+			"highfinishes" : 			$("#hf1").val() || 0, 
+			"i180er" : 					$("#i180er1").val() || 0 
+		};
+		ergebnisse[sSpiel].spieler2 = { 
+			"name" : sName2, 
+			"legs" : 					erg2, 
+			"shortlegs" : 				$("#sl2").val() || 0, 
+			"highfinishes" : 			$("#hf2").val() || 0, 
+			"i180er" : 					$("#i180er2").val() || 0 
+		};
+
+		document.getElementById(sSpiel + "_spieler1_name").innerHTML 				= p(ergebnisse[sSpiel].spieler1.name);
+		document.getElementById(sSpiel + "_spieler1_legs").innerHTML 				= ergebnisse[sSpiel].spieler1.legs;
+		document.getElementById(sSpiel + "_spieler1_shortlegs").innerHTML 			= p(ergebnisse[sSpiel].spieler1.shortlegs);
+		document.getElementById(sSpiel + "_spieler1_highfinishes").innerHTML 		= p(ergebnisse[sSpiel].spieler1.highfinishes);
+		document.getElementById(sSpiel + "_spieler1_i180er").innerHTML 				= p(ergebnisse[sSpiel].spieler1.i180er);
+
+		document.getElementById(sSpiel + "_spieler2_name").innerHTML 				= p(ergebnisse[sSpiel].spieler2.name);
+		document.getElementById(sSpiel + "_spieler2_legs").innerHTML 				= ergebnisse[sSpiel].spieler2.legs;
+		document.getElementById(sSpiel + "_spieler2_shortlegs").innerHTML 			= p(ergebnisse[sSpiel].spieler2.shortlegs);
+		document.getElementById(sSpiel + "_spieler2_highfinishes").innerHTML 		= p(ergebnisse[sSpiel].spieler2.highfinishes);
+		document.getElementById(sSpiel + "_spieler2_i180er").innerHTML 				= p(ergebnisse[sSpiel].spieler2.i180er);
+
+	} else {
+		var sHeimName1 = unescape(atob(unescape($("#heimname1").val())));
+		var sHeimName2 = unescape(atob(unescape($("#heimname2").val())));
+		var sGastName1 = unescape(atob(unescape($("#gastname1").val())));
+		var sGastName2 = unescape(atob(unescape($("#gastname2").val())));
+
+		ergebnisse[sSpiel].paar1 = { 
+			"legs" : 					erg1,
+			"shortlegs" : 				$("#dsl1").val() || 0,
+			"spieler1" : {
+				"name" : sHeimName1, 
+				"highfinishes" : 		$("#dhf1").val() || 0,
+				"i180er" : 				$("#di180er1").val() || 0
+			},
+			"spieler2" : {
+				"name" : sHeimName2, 
+				"highfinishes" : 		$("#dhf2").val() || 0,
+				"i180er" : 				$("#di180er2").val() || 0
+			}
+		};
+		
+		ergebnisse[sSpiel].paar2 = { 
+			"legs" : 					erg2,
+			"shortlegs" : 				$("#dsl2").val() || 0,
+			"spieler1" : {
+				"name" : sGastName1, 
+				"highfinishes" : 		$("#dhf3").val() || 0,
+				"i180er" : 				$("#di180er3").val() || 0
+			},
+			"spieler2" : {
+				"name" : sGastName2, 
+				"highfinishes" : 		$("#dhf4").val() || 0,
+				"i180er" : 				$("#di180er4").val() || 0
+			}
+		};
+
+		document.getElementById(sSpiel + "_paar1_legs").innerHTML 					= ergebnisse[sSpiel].paar1.legs;
+		document.getElementById(sSpiel + "_paar1_shortlegs").innerHTML 				= p(ergebnisse[sSpiel].paar1.shortlegs);
+		document.getElementById(sSpiel + "_paar1_spieler1_name").innerHTML 			= p(ergebnisse[sSpiel].paar1.spieler1.name);
+		document.getElementById(sSpiel + "_paar1_spieler1_highfinishes").innerHTML 	= p(ergebnisse[sSpiel].paar1.spieler1.highfinishes);
+		document.getElementById(sSpiel + "_paar1_spieler1_i180er").innerHTML		= p(ergebnisse[sSpiel].paar1.spieler1.i180er);
+		document.getElementById(sSpiel + "_paar1_spieler2_name").innerHTML 			= p(ergebnisse[sSpiel].paar1.spieler2.name);
+		document.getElementById(sSpiel + "_paar1_spieler2_highfinishes").innerHTML 	= p(ergebnisse[sSpiel].paar1.spieler2.highfinishes);
+		document.getElementById(sSpiel + "_paar1_spieler2_i180er").innerHTML		= p(ergebnisse[sSpiel].paar1.spieler2.i180er);
+
+		document.getElementById(sSpiel + "_paar2_legs").innerHTML 					= ergebnisse[sSpiel].paar2.legs;
+		document.getElementById(sSpiel + "_paar2_shortlegs").innerHTML 				= p(ergebnisse[sSpiel].paar2.shortlegs);
+		document.getElementById(sSpiel + "_paar2_spieler1_name").innerHTML 			= p(ergebnisse[sSpiel].paar2.spieler1.name);
+		document.getElementById(sSpiel + "_paar2_spieler1_highfinishes").innerHTML 	= p(ergebnisse[sSpiel].paar2.spieler1.highfinishes);
+		document.getElementById(sSpiel + "_paar2_spieler1_i180er").innerHTML		= p(ergebnisse[sSpiel].paar2.spieler1.i180er);
+		document.getElementById(sSpiel + "_paar2_spieler2_name").innerHTML 			= p(ergebnisse[sSpiel].paar2.spieler2.name);
+		document.getElementById(sSpiel + "_paar2_spieler2_highfinishes").innerHTML 	= p(ergebnisse[sSpiel].paar2.spieler2.highfinishes);
+		document.getElementById(sSpiel + "_paar2_spieler2_i180er").innerHTML		= p(ergebnisse[sSpiel].paar2.spieler2.i180er);
+	}
+
+	var aSpiele = Object.keys(ergebnisse);
+	var team1Legs = 0;
+	var team2Legs = 0;
+	var team1Sets = 0;
+	var team2Sets = 0;
+	
+	for (var i = 0; i < aSpiele.length; i++) {
+		var sSpiel = aSpiele[i];
+		if (sSpiel.indexOf("e")==0) {
+			team1Legs += parseInt(ergebnisse[sSpiel].spieler1.legs);
+			team2Legs += parseInt(ergebnisse[sSpiel].spieler2.legs);
+			if (ergebnisse[sSpiel].spieler1.legs>ergebnisse[sSpiel].spieler2.legs) {
+				team1Sets++;
+			} else if (ergebnisse[sSpiel].spieler1.legs<ergebnisse[sSpiel].spieler2.legs) {
+				team2Sets++;
+			}
+		} else {
+			team1Legs += parseInt(ergebnisse[sSpiel].paar1.legs);
+			team2Legs += parseInt(ergebnisse[sSpiel].paar2.legs);
+			if (ergebnisse[sSpiel].paar1.legs>ergebnisse[sSpiel].paar2.legs) {
+				team1Sets++;
+			} else if (ergebnisse[sSpiel].paar1.legs<ergebnisse[sSpiel].paar2.legs) {
+				team2Sets++;
+			}
+		}
+	};
+	debugger;
 };
 
 function readNewGameFromURL(ergebnisse, spiel) {
