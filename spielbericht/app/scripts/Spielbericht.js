@@ -5,25 +5,24 @@
 
 var heim = unescape(getUrlParameter("heim"));
 var gast = unescape(getUrlParameter("gast"));
-var gast = unescape(getUrlParameter("gast"));
 var newGame = unescape(getUrlParameter("neuesSpiel"));
 var spiel = getUrlParameter("spiel").replace(/\+/g,' ');
 var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
 
 var aVereine = [];
 
-var ergebnisse = (newGame==="true") ? undefined : JSON.parse(window.localStorage.getItem("ergebnisse"));
+var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
+
+if (ergebnisse && (ergebnisse["heim"] != heim || ergebnisse["gast"] != gast)) {
+	ergebnisse = undefined;
+}
+
 if (ergebnisse) {
-	readNewGameFromURL(ergebnisse, spiel);
 	printTable(ergebnisse);
-	prepareStatistic(ergebnisse);
-	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
-	addStatistic(ergebnisse);
 } else {
 	$.getJSON("data/ergebnisse.json", function(ergebnisse) {
 		ergebnisse.heim = heim;
 		ergebnisse.gast = gast;
-		readNewGameFromURL(ergebnisse, spiel);
 		printTable(ergebnisse);
 		window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
 	});
@@ -126,7 +125,7 @@ $("#gast").val(gast);
  * @return {[string]}
  */		
 
-function addStatistic(ergebnisse) {
+function updateStatistic(ergebnisse) {
 	var scores = ergebnisse.statistik || [];
 
 	scores.sort(function(a,b){
@@ -137,6 +136,8 @@ function addStatistic(ergebnisse) {
 
 function printScoresTable(scores) {
 	var highestScore = findHighestScore(scores);
+	$("#scoresTable > tbody").html("");
+	$('#scoresTable > tbody').html("<tr><td colspan=3></td></tr>");
 	for(var i = 0; i<scores.length; i++) {
 		var styleClass = "score";
 		var currentScore = scores[i].score;
@@ -157,7 +158,7 @@ function printScoresTable(scores) {
 	            "<td><div class='" + styleClass + "' style='width:" + calculateWidth(highestScore, currentScore) + "%'>&nbsp;</div></td>\n"+
 	            "<td class='scoreCell'>" + currentScore + "</td>\n"+
         	"</tr>";
-		$('#scoresTable tr:last').after(line);
+		$('#scoresTable > tbody tr:last').after(line);
 	};
 };
 
@@ -369,10 +370,6 @@ function getUrlParameter(sParam){
 };
 
 function printTable(ergebnisse) {
-	var team1Legs = 0;
-	var team1Sets = 0;
-	var team2Legs = 0;
-	var team2Sets = 0;
 	var lineCounter = 1;
 	for (var erg in ergebnisse) {
 	  if (ergebnisse[erg].spieler1 && ergebnisse[erg].spieler2) {
@@ -395,13 +392,6 @@ function printTable(ergebnisse) {
 	               "</tr>";
 	    $('#summaryTable tr:last').after(line);
 	    lineCounter++;
-	    team1Legs += parseInt(ergebnisse[erg].spieler1.legs);
-	    team2Legs += parseInt(ergebnisse[erg].spieler2.legs);
-	    if (ergebnisse[erg].spieler1.legs>ergebnisse[erg].spieler2.legs) {
-	      team1Sets++;
-	    } else if (ergebnisse[erg].spieler1.legs<ergebnisse[erg].spieler2.legs) {
-	      team2Sets++;
-	    }
 	  } else if (ergebnisse[erg].paar1 && ergebnisse[erg].paar2) {
 	    var classSpec = (lineCounter % 2 === 0) ? "doppelblockEven" : "doppelblockOdd";
 	    var uid = generateUID();
@@ -431,24 +421,25 @@ function printTable(ergebnisse) {
 	                "</tr>";
 	    $('#summaryTable tr:last').after(line);
 	    lineCounter++;
-	    team1Legs += parseInt(ergebnisse[erg].paar1.legs);
-	    team2Legs += parseInt(ergebnisse[erg].paar2.legs);
-	    if (ergebnisse[erg].paar1.legs>ergebnisse[erg].paar2.legs) {
-	      team1Sets++;
-	    } else if (ergebnisse[erg].paar1.legs<ergebnisse[erg].paar2.legs) {
-	      team2Sets++;
-	    }
 	  }
 	}
 	var line = "<tr class='summaryBlock'>"+
 	              "<td colspan=3 rowspan=2>&nbsp;</td>\n"+
 	              "<td rowspan=2>Ergebnis:</td>\n"+
-	              "<td nowrap>" + team1Legs + " : " + team2Legs + "</td>\n"+
+	              "<td nowrap>" +
+					"<font id='team1Legs'>0</font>\n"+
+					" : \n"+
+					"<font id='team2Legs'>0</font>\n"+
+                  "</td>\n"+
 	              "<td> - Legs</td>\n"+
 	              "<td colspan=3>&nbsp;</td>\n"+
 	           "</tr>"+
 	           "<tr class='summaryBlock'>"+
-	              "<td>" + team1Sets + " : " + team2Sets + "</td>\n"+
+	              "<td nowrap>" +
+					"<font id='team1Sets'>0</font>\n"+
+					" : \n"+
+					"<font id='team2Sets'>0</font>\n"+
+                  "</td>\n"+
 	              "<td> - Sets</td>\n"+
 	              "<td colspan=3>&nbsp;</td>\n"+
 	           "</tr>";
@@ -569,7 +560,7 @@ function internalStore() {
 			} else if (ergebnisse[sSpiel].spieler1.legs<ergebnisse[sSpiel].spieler2.legs) {
 				team2Sets++;
 			}
-		} else {
+		} else if (sSpiel.indexOf("d")==0) {
 			team1Legs += parseInt(ergebnisse[sSpiel].paar1.legs);
 			team2Legs += parseInt(ergebnisse[sSpiel].paar2.legs);
 			if (ergebnisse[sSpiel].paar1.legs>ergebnisse[sSpiel].paar2.legs) {
@@ -579,67 +570,18 @@ function internalStore() {
 			}
 		}
 	};
-	debugger;
-};
 
-function readNewGameFromURL(ergebnisse, spiel) {
-	if (!spiel) {
-	  return;
-	}
+	document.getElementById("team1Legs").innerHTML = team1Legs;
+	document.getElementById("team2Legs").innerHTML = team2Legs;
+	document.getElementById("team1Sets").innerHTML = team1Sets;
+	document.getElementById("team2Sets").innerHTML = team2Sets;
 
-	if (ergebnisse[spiel].spieler1) {
-	  ergebnisse[spiel].spieler1 = { 
-	    "name" : unescape(atob(unescape(getUrlParameter("name1")))), 
-	    "legs" : getUrlParameter("erg1") || 0, 
-	    "shortlegs" : getUrlParameter("sl1") || 0, 
-	    "highfinishes" : getUrlParameter("hf1") || 0, 
-	    "i180er" : getUrlParameter("i180er1") || 0 
-	  };
-	};
-
-	if (ergebnisse[spiel].spieler2) {
-	  ergebnisse[spiel].spieler2 = { 
-	    "name" : unescape(atob(unescape(getUrlParameter("name2")))), 
-	    "legs" : getUrlParameter("erg2") || 0, 
-	    "shortlegs" : getUrlParameter("sl2") || 0, 
-	    "highfinishes" : getUrlParameter("hf2") || 0, 
-	    "i180er" : getUrlParameter("i180er2") || 0 
-	  };
-	};
-
-	if (ergebnisse[spiel].paar1) {
-	  ergebnisse[spiel].paar1 = { 
-	    "legs" : getUrlParameter("erg1") || 0,
-	    "shortlegs" : getUrlParameter("dsl1") || 0,
-	    "spieler1" : {
-	      "name" : unescape(atob(unescape(getUrlParameter("heimname1")))), 
-	      "highfinishes" : getUrlParameter("dhf1") || 0,
-	      "i180er" : getUrlParameter("di180er1") || 0
-	    },
-	    "spieler2" : {
-	      "name" : unescape(atob(unescape(getUrlParameter("heimname2")))), 
-	      "highfinishes" : getUrlParameter("dhf2") || 0,
-	      "i180er" : getUrlParameter("di180er2") || 0
-	    }
-	  };
-	};
-
-	if (ergebnisse[spiel].paar2) {
-	  ergebnisse[spiel].paar2 = { 
-	    "legs" : getUrlParameter("erg2") || 0,
-	    "shortlegs" : getUrlParameter("dsl2") || 0,
-	    "spieler1" : {
-	      "name" : unescape(atob(unescape(getUrlParameter("gastname1")))), 
-	      "highfinishes" : getUrlParameter("dhf3") || 0,
-	      "i180er" : getUrlParameter("di180er3") || 0
-	    },
-	    "spieler2" : {
-	      "name" : unescape(atob(unescape(getUrlParameter("gastname2")))), 
-	      "highfinishes" : getUrlParameter("dhf4") || 0,
-	      "i180er" : getUrlParameter("di180er4") || 0
-	    }
-	  };
-	};
+	prepareStatistic(ergebnisse);
+	updateStatistic(ergebnisse);
+	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
+	$("#playerForm")[0].reset();
+	document.getElementById("speichern").disabled = true;
+	$('#inputFormDialog').modal('hide');
 };
 
 function removeBorders() {
@@ -649,7 +591,6 @@ function removeBorders() {
 };
 
 function enableFormForSingles(bSingles, lineCounter, uid) {
-	$('#inputFormDialog').modal('show');
 
 	removeBorders();
 
@@ -749,7 +690,8 @@ function enableFormForSingles(bSingles, lineCounter, uid) {
 		organizeSelectedOptionsForId(oStoredNames, "gastname2", sSpiel, ergebnisse);
 		switchSameSelectedOptionFor("gastname1", "gastname2");
 	}
-	//document.getElementById("spielHeadline").scrollIntoView(); 
+
+	$('#inputFormDialog').modal('show');
 };
 
 function switchSameSelectedOptionFor(sId1, sId2) {
@@ -802,12 +744,38 @@ function organizeSelectedOptionsForId(oStoredNames, sId, sSpiel, ergebnisse) {
 		}
 	};
 
-	for (var i = 0; i<oOptions.length; i++) {
-		if (oOptions.item(i).style.display !== "none") {
-			oOptions.item(i).selected = true;
-			break;
-		}
-	};
+	var mNames = {};
+	if (bSingle) {
+		mNames[ergebnisse[sSpiel].spieler1.name] = {};
+		mNames[ergebnisse[sSpiel].spieler2.name] = {};
+		delete mNames[""];
+	} else {
+		mNames[ergebnisse[sSpiel].paar1.spieler1.name] = {};
+		mNames[ergebnisse[sSpiel].paar1.spieler2.name] = {};
+		mNames[ergebnisse[sSpiel].paar2.spieler1.name] = {};
+		mNames[ergebnisse[sSpiel].paar2.spieler2.name] = {};
+		delete mNames[""];
+	}
+
+
+	if (Object.keys(mNames).length != 0) {
+		// select the ones that played the match before
+		for (var i = 0; i<oOptions.length; i++) {
+			if (mNames[oOptions.item(i).text] && oOptions.item(i).style.display !== "none") {
+				oOptions.item(i).selected = true;
+				break;
+			}
+		};
+	} else {
+		// if noone was selected, select the next player in the line
+		for (var i = 0; i<oOptions.length; i++) {
+			if (oOptions.item(i).style.display !== "none") {
+				oOptions.item(i).selected = true;
+				break;
+			}
+		};
+	}
+
 };
 
 function getStoredNames(blockNumber, ergebnisse) {
