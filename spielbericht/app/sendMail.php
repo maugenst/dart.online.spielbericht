@@ -39,7 +39,7 @@ $anhang = array();
 $anhang[] = $fileNameBild; 
 $anhang[] = $fileNameErgebnisJSON; 
 
-$mailBody =  '<html>';
+#$mailBody =  '<html>';
 $mailBody .= '<head>';
 $mailBody .= '  <style>';
 $mailBody .= $css;
