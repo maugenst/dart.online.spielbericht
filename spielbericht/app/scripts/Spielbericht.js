@@ -8,8 +8,21 @@ var gast = unescape(getUrlParameter("gast"));
 var newGame = unescape(getUrlParameter("neuesSpiel"));
 var spiel = getUrlParameter("spiel").replace(/\+/g,' ');
 var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
+var heimSelect = $('#heim');
+var gastSelect = $('#gast');
 
-var aVereine = [];
+$.getJSON("data/vereine.json", function(oVereine) {
+	for (var verein in oVereine) {
+		heimSelect.append($('<option></option>', {
+			value: verein,
+			text: atob(verein)
+		}));
+		gastSelect.append($('<option></option>', {
+			value: verein,
+			text: atob(verein)
+		}));
+	};
+});
 
 var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
 
@@ -115,6 +128,15 @@ document.getElementById("heimFeldInTable").innerHTML = atob(heim);
 document.getElementById("gastFeldInTable").innerHTML = atob(gast);
 $("#heim").val(heim);
 $("#gast").val(gast);
+
+$('#nachmeldung_fh1').keyup(validateTextarea);
+$('#nachmeldung_fh2').keyup(validateTextarea);
+$('#nachmeldung_fh3').keyup(validateTextarea);
+$('#nachmeldung_fh4').keyup(validateTextarea);
+$('#nachmeldung_fg1').keyup(validateTextarea);
+$('#nachmeldung_fg2').keyup(validateTextarea);
+$('#nachmeldung_fg3').keyup(validateTextarea);
+$('#nachmeldung_fg4').keyup(validateTextarea);
 
 // ***************************************************************************
 // ** FUNCTION SECTION
@@ -843,3 +865,50 @@ function switchMore(sId, bShow, duration) {
 	}
 };
 
+function showNachmeldungen() {
+	bShowNachmeldungen = document.getElementById("nachmeldungenCheckbox").checked;  
+	$("#nachmeldungenRowContent").appendTo((bShowNachmeldungen) ? "#nachmeldungenRow" : "#hiddenInputFieldContainer"); 
+	document.getElementById("nachmeldungenRow").style.display = (bShowNachmeldungen) ? "block": "none" ;
+};
+
+function validateTextarea() {
+	var inputarea = this;
+	var errorTagId = inputarea.id.split("_")[1];  
+	var pattern = new RegExp('^' + $(inputarea).attr('pattern') + '$');
+	if (this.value === "" || this.value.match(pattern)) {
+		jQuery("#"+inputarea.id).removeClass("nachmeldungenError");
+		document.getElementById(errorTagId).style.display = "none";
+	} else {
+		jQuery("#"+inputarea.id).addClass("nachmeldungenError");
+		document.getElementById(errorTagId).style.display = "block";
+	}
+};
+
+function escapeAll() {
+	var dCookieDate = new Date;
+	dCookieDate.setFullYear(dCookieDate.getFullYear( ) + 1);
+	document.cookie = 'emailHeim=' + document.getElementById("emailHeim").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
+	dCookieDate = new Date;
+	dCookieDate.setHours(dCookieDate.getHours( ) + 24);
+	document.cookie = 'emailGast=' + document.getElementById("emailGast").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
+
+	$("#nachmeldungenRowContent").appendTo("#hiddenInputFieldContainer");
+	var nachmeldungen = {
+		heim : [],
+		gast : []
+	}
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh1").value.trim())));
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh2").value.trim())));
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh3").value.trim())));
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh4").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg1").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg2").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg3").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg4").value.trim())));
+	window.localStorage.setItem("nachmeldungen", JSON.stringify(nachmeldungen));
+	document.getElementById("form").submit();
+};
+
+function formatName(sName) {
+	return (sName && sName!="") ? sName + " (N)" : "";
+};

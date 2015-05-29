@@ -20,6 +20,37 @@
 <div id="hiddenSummaryTableContainer" style="visibility:hidden; position:absolute; width:0px; height:0px"></div>
 
 <div id="hiddenInputFieldContainer" style="visibility:hidden; position:absolute; width:0px; height:0px">
+  <div id="nachmeldungenRowContent" class="col col-xs-12">
+    <br>
+    <div style="font-weight: bold">Nachmeldungen Heim:</div>
+    <input type="text" id="nachmeldung_fh1" name="nachmeldungHeim1" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name1">
+    <div id="fh1" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fh2" name="nachmeldungHeim2" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name2">
+    <div id="fh2" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fh3" name="nachmeldungHeim3" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name3">
+    <div id="fh3" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fh4" name="nachmeldungHeim4" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name4">
+    <div id="fh4" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <br>  
+    <div style="font-weight: bold">Nachmeldungen Gast:</div>
+    <input type="text" id="nachmeldung_fg1" name="nachmeldungGast1" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name1">
+    <div id="fg1" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fg2" name="nachmeldungGast2" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name2">
+    <div id="fg2" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fg3" name="nachmeldungGast3" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name3">
+    <div id="fg3" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fg4" name="nachmeldungGast4" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name4">
+    <div id="fg4" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+  </div>
+
   <div id="inputsForSingleHome">
     <select id="name1" name="name1" style="width:150px" onchange="checkSelection();"></select>
     <a id="linkmore1" onclick="switchMore('more1', $('#linkmore1').text().indexOf('More') != -1)" />More +</a>
@@ -129,14 +160,68 @@
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#eingabe" aria-controls="eingabe" role="tab" data-toggle="tab">Eingabe</a></li>
+      <li role="presentation" class="active"><a href="#wahl" aria-controls="wahl" role="tab" data-toggle="tab">Partie</a></li>
+      <li role="presentation"><a href="#eingabe" aria-controls="eingabe" role="tab" data-toggle="tab">Eingabe</a></li>
       <li role="presentation"><a href="#statistic" aria-controls="statistic" role="tab" data-toggle="tab">Statistik</a></li>
       <li role="presentation"><a href="#absenden" aria-controls="absenden" role="tab" data-toggle="tab">Absenden</a></li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="eingabe">
+
+      <div role="tabpanel" class="tab-pane active" id="wahl">
+        <div class="body-content">
+            <table class="mytable">
+              <tbody>
+                <tr>
+                  <td>Heim:</td>  
+                  <td>
+                    <select id="heim" name="heim" onchange="checkSelection();" style="width:100px">
+                      <option>...</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email:</td>  
+                  <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de" class="emailinput"></td>
+                </tr>
+                <tr>
+                  <td>Gast:</td>  
+                  <td>
+                    <select id="gast" name="gast" onchange="checkSelection();" style="width:100px">
+                      <option>...</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email:</td>  
+                  <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de" class="emailinput"></td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <input id="nachmeldungenCheckbox" type="checkbox" value="nachmeldungen" onclick="showNachmeldungen();"> Gibt es Nachmeldungen in den einzelnen Mannschaften?
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="row">
+              <div class="col col-xs-12">
+               <br> 
+              </div>
+            </div>
+            <div id="nachmeldungenRow" class="row" style="display:none">
+            </div>
+            <div class="row">
+              <div class="col col-xs-12">
+               <br> <input id="gameOnButton" type="button" value="Game On..." disabled="disabled" onclick="escapeAll()">
+              </div>
+            </div>
+            <input id="nachmeldungen" name="nachmeldungen" type="hidden">
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="eingabe">
         <div id="summaryTableContainer">
           <br>
           <table id="summaryTable" class="ergebnistabelle">
