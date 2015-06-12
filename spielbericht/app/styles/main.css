@@ -116,3 +116,9 @@ body {
 .mytable td {
     padding: 5px;
 }
+.teamselect {
+    width: 100%
+}
+.emailinput {
+    width: 100%
+}

@@ -13,6 +13,8 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/autocomplete/Autocomplete.js"></script>
+    <script src="scripts/bootstrap-select.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap-select.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
@@ -159,7 +161,7 @@
   <div role="tabpanel">
 
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
+    <ul class="nav nav-tabs" role="tablist" id="myTabs">
       <li role="presentation" class="active"><a href="#wahl" aria-controls="wahl" role="tab" data-toggle="tab">Partie</a></li>
       <li role="presentation"><a href="#eingabe" aria-controls="eingabe" role="tab" data-toggle="tab">Eingabe</a></li>
       <li role="presentation"><a href="#statistic" aria-controls="statistic" role="tab" data-toggle="tab">Statistik</a></li>
@@ -176,26 +178,26 @@
                 <tr>
                   <td>Heim:</td>  
                   <td>
-                    <select id="heim" name="heim" onchange="checkSelection();" style="width:100px">
+                    <select id="teamheim" name="teamheim" onchange="checkOnTeamSelection();" class="selectpicker">
                       <option>...</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>Email:</td>  
-                  <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de" class="emailinput"></td>
+                  <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de" class="form-control"></td>
                 </tr>
                 <tr>
                   <td>Gast:</td>  
                   <td>
-                    <select id="gast" name="gast" onchange="checkSelection();" style="width:100px">
+                    <select id="teamgast" name="teamgast" onchange="checkOnTeamSelection();" class="selectpicker">
                       <option>...</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
                   <td>Email:</td>  
-                  <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de" class="emailinput"></td>
+                  <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de" class="form-control"></td>
                 </tr>
                 <tr>
                   <td colspan="4">
@@ -225,6 +227,7 @@
         <div id="summaryTableContainer">
           <br>
           <table id="summaryTable" class="ergebnistabelle">
+            <thead>
              <tr class="gegnerNamen">
                <td colspan=3>HEIM:</td>
                <td id="heimFeldInTable" style="color:gold">...</td>
@@ -242,6 +245,10 @@
                 <th><div class="thRotated">HF</div></th>
                 <th><div class="thRotated">SL</div></th>
              </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
           </table>
         </div>
       </div>
@@ -293,8 +300,6 @@
 </footer>
 
 <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-<script src="scripts/async.localStorage.js"></script>
-<script src="scripts/async.localStorage.examples.js"></script>
 <script src="scripts/fullscreensnippet.js"></script>
 <script src="scripts/Spielbericht.js"></script>
 <script>
