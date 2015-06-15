@@ -154,7 +154,7 @@ function setUpSelections() {
 function printScoresTable(scores) {
 	var highestScore = findHighestScore(scores);
 	emptyTable("scoresTable");
-	$('#scoresTable > tbody').html("<tr><td colspan=3></td></tr>");
+	
 	for(var i = 0; i<scores.length; i++) {
 		var styleClass = "score";
 		var currentScore = scores[i].score;
@@ -388,6 +388,7 @@ function getUrlParameter(sParam){
 
 function emptyTable(sTableName) {
 	$('#' + sTableName + ' > tbody').html("");
+	$('#' + sTableName + ' > tbody').html("<tr></tr>");
 };
 
 function printTable(ergebnisse) {
@@ -925,6 +926,7 @@ function escapeAll() {
 		window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
 
 		emptyTable("summaryTable");
+		emptyTable("scoresTable");
 		printTable(ergebnisseFromFile);
 
 		$('#myTabs li:eq(1) a').tab('show');
