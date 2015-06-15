@@ -7,16 +7,8 @@ var heim = unescape(window.localStorage.getItem("heim"));
 var gast = unescape(window.localStorage.getItem("gast"));
 var spiel = window.localStorage.getItem("spiel");
 var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
-var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
+var ergebnisse = undefined;
 var vereine = null;
-
-if (ergebnisse && (ergebnisse["heim"] != heim || ergebnisse["gast"] != gast)) {
-	ergebnisse = undefined;
-}
-
-if (ergebnisse) {
-	printTable(ergebnisse);
-} 
 
 $.getJSON("data/vereine.json", function(oVereine) {
 
@@ -27,6 +19,10 @@ $.getJSON("data/vereine.json", function(oVereine) {
 	};
 
 });
+
+$.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
+	window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
+});	
 
 switchMore("more1", false, 0);
 switchMore("more2", false, 0);
@@ -44,7 +40,6 @@ $('#nachmeldung_fg2').keyup(validateTextarea);
 $('#nachmeldung_fg3').keyup(validateTextarea);
 $('#nachmeldung_fg4').keyup(validateTextarea);
 
-
 // ***************************************************************************
 // ** FUNCTION SECTION
 // ***************************************************************************
@@ -61,16 +56,6 @@ function updateStatistic(ergebnisse) {
 		return b.score - a.score;
 	});
 	printScoresTable(scores);
-};
-
-function checkOnTeamSelection() {
-	var heim = document.getElementById("teamheim");
-	var gast = document.getElementById("teamgast");
-	if (heim.selectedIndex != 0 && gast.selectedIndex != 0 && heim.selectedIndex != gast.selectedIndex) {
-		document.getElementById("gameOnButton").disabled = false;
-	} else {
-		document.getElementById("gameOnButton").disabled = true;
-	}
 };
 
 function setUpSelections() {
@@ -884,56 +869,65 @@ function validateTextarea() {
 	}
 };
 
+function checkOnTeamSelection() {
+	var heim = document.getElementById("teamheim");
+	var gast = document.getElementById("teamgast");
+	if (heim.selectedIndex != 0 && gast.selectedIndex != 0 && heim.selectedIndex != gast.selectedIndex) {
+		document.getElementById("gameOnButton").disabled = false;
+	} else {
+		document.getElementById("gameOnButton").disabled = true;
+	}
+};
+
 function escapeAll() {
+	ergebnisseFromFile = JSON.parse(window.localStorage.getItem("ergebnisseLeer"));
+	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisseFromFile));
+	ergebnisse = ergebnisseFromFile;
 
-	$.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
-		window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisseFromFile));
-		ergebnisse = ergebnisseFromFile;
+	var dCookieDate = new Date;
+	dCookieDate.setFullYear(dCookieDate.getFullYear( ) + 1);
+	document.cookie = 'emailHeim=' + document.getElementById("emailHeim").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
+	dCookieDate = new Date;
+	dCookieDate.setHours(dCookieDate.getHours( ) + 24);
+	document.cookie = 'emailGast=' + document.getElementById("emailGast").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
 
-		var dCookieDate = new Date;
-		dCookieDate.setFullYear(dCookieDate.getFullYear( ) + 1);
-		document.cookie = 'emailHeim=' + document.getElementById("emailHeim").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
-		dCookieDate = new Date;
-		dCookieDate.setHours(dCookieDate.getHours( ) + 24);
-		document.cookie = 'emailGast=' + document.getElementById("emailGast").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
+	var heim = document.getElementById("teamheim").selectedOptions[0].value;
+	var gast = document.getElementById("teamgast").selectedOptions[0].value;
 
-		var heim = document.getElementById("teamheim").selectedOptions[0].value;
-		var gast = document.getElementById("teamgast").selectedOptions[0].value;
+	$("#nachmeldungenRowContent").appendTo("#hiddenInputFieldContainer");
+	var nachmeldungen = {
+		heim : [],
+		gast : []
+	}
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh1").value.trim())));
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh2").value.trim())));
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh3").value.trim())));
+	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh4").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg1").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg2").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg3").value.trim())));
+	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg4").value.trim())));
+	window.localStorage.setItem("nachmeldungen", JSON.stringify(nachmeldungen));
 
-		$("#nachmeldungenRowContent").appendTo("#hiddenInputFieldContainer");
-		var nachmeldungen = {
-			heim : [],
-			gast : []
-		}
-		nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh1").value.trim())));
-		nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh2").value.trim())));
-		nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh3").value.trim())));
-		nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh4").value.trim())));
-		nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg1").value.trim())));
-		nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg2").value.trim())));
-		nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg3").value.trim())));
-		nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg4").value.trim())));
-		window.localStorage.setItem("nachmeldungen", JSON.stringify(nachmeldungen));
+	document.getElementById("heimFeldInTable").innerHTML = atob(heim);
+	document.getElementById("gastFeldInTable").innerHTML = atob(gast);
 
-		document.getElementById("heimFeldInTable").innerHTML = atob(heim);
-		document.getElementById("gastFeldInTable").innerHTML = atob(gast);
+	ergebnisse.heim = heim;
+	ergebnisse.gast = gast;
+	
+	setUpSelections();
 
-		ergebnisse.heim = heim;
-		ergebnisse.gast = gast;
-		
-		setUpSelections();
+	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
 
-		window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
+	emptyTable("summaryTable");
+	emptyTable("scoresTable");
+	printTable(ergebnisseFromFile);
 
-		emptyTable("summaryTable");
-		emptyTable("scoresTable");
-		printTable(ergebnisseFromFile);
+	$('#myTabs li:eq(1) a').tab('show');
 
-		$('#myTabs li:eq(1) a').tab('show');
-
-	});
 };
 
 function formatName(sName) {
 	return (sName && sName!="") ? sName + " (N)" : "";
 };
+
