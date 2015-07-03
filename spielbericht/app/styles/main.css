@@ -122,3 +122,18 @@ body {
 .emailinput {
     width: 100%
 }
+
+.ergDisplay {
+    font-size: 30px;
+    font-weight: bold;
+}
+#ergSelection span {
+    display:inline-block; 
+    vertical-align:middle
+}
+#ergSliderId .slider-selection {
+    background: rgb(205, 250, 214);
+}
+#ergSliderId .slider-track-high {
+    background: rgb(195, 212, 255);
+}

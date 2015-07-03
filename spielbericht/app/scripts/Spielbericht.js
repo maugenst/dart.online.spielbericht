@@ -10,6 +10,8 @@ var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
 var ergebnisse = undefined;
 var vereine = null;
 
+
+
 $.getJSON("data/vereine.json", function(oVereine) {
 
 	vereine = oVereine;
@@ -40,6 +42,15 @@ $('#nachmeldung_fg2').keyup(validateTextarea);
 $('#nachmeldung_fg3').keyup(validateTextarea);
 $('#nachmeldung_fg4').keyup(validateTextarea);
 
+var mySlider = new Slider("#ergSlider", {
+	id: "ergSliderId",
+	min: 0,
+	max: 5,
+	value: 0,
+	tooltip: 'hide'
+});
+mySlider.on('slideStop', checkSelection);
+
 // ***************************************************************************
 // ** FUNCTION SECTION
 // ***************************************************************************
@@ -59,30 +70,23 @@ function updateStatistic(ergebnisse) {
 };
 
 function setUpSelections() {
-	var heimSelectS = $('#name1');
-	var heimSelectD1 = $('#heimname1');
-	var heimSelectD2 = $('#heimname2');
-	var gastSelectS = $('#name2');
-	var gastSelectD1 = $('#gastname1');
-	var gastSelectD2 = $('#gastname2');
+
+//	$('select[name=name1]').selectpicker();
+//	$('select[name=heimname1]').selectpicker();
+//	$('select[name=heimname2]').selectpicker();
+	
+//	$('select[name=name2]').selectpicker();
+//	$('select[name=gastname1]').selectpicker();
+//	$('select[name=gastname2]').selectpicker();
 
 	for (var i = 0; i<vereine[ergebnisse.heim].mitglieder.length; i++) {
 		var spieler = atob(vereine[ergebnisse.heim].mitglieder[i].vorname) + " " + atob(vereine[ergebnisse.heim].mitglieder[i].name);
-		heimSelectS.append($('<option></option>', {
-		  value: btoa(spieler),
-		  text: spieler
-		}));
-		heimSelectD1.append($('<option></option>', {
-		  value: btoa(spieler),
-		  text: spieler
-		}));
-		heimSelectD2.append($('<option></option>', {
-		  value: btoa(spieler),
-		  text: spieler
-		}));
+		$('#name1').append($("<option/>", {value: btoa(spieler), text: spieler}));
+		$('#heimname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
+		$('#heimname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
 	};
 
-	for (var i = 0; i<nachmeldungen.heim.length; i++) {
+	/*for (var i = 0; i<nachmeldungen.heim.length; i++) {
 		var spieler = unescape(atob(nachmeldungen.heim[i]));
 		if (spieler != "") {
 			heimSelectS.append($('<option></option>', {
@@ -98,25 +102,16 @@ function setUpSelections() {
 			  text: spieler
 			}));
 		}
-	};
+	};*/
 
 	for (var i = 0; i<vereine[ergebnisse.gast].mitglieder.length; i++) {
 		var spieler = atob(vereine[ergebnisse.gast].mitglieder[i].vorname) + " " + atob(vereine[ergebnisse.gast].mitglieder[i].name);
-		gastSelectS.append($('<option></option>', {
-		  value: btoa(spieler),
-		  text: spieler
-		}));
-		gastSelectD1.append($('<option></option>', {
-		  value: btoa(spieler),
-		  text: spieler
-		}));
-		gastSelectD2.append($('<option></option>', {
-		  value: btoa(spieler),
-		  text: spieler
-		}));
+		$('#name2').append($("<option/>", {value: btoa(spieler), text: spieler}));
+		$('#gastname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
+		$('#gastname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
 	};
 
-	for (var i = 0; i<nachmeldungen.gast.length; i++) {
+	/*for (var i = 0; i<nachmeldungen.gast.length; i++) {
 		var spieler = unescape(atob(nachmeldungen.gast[i]));
 		if (spieler != "") {
 			gastSelectS.append($('<option></option>', {
@@ -132,8 +127,8 @@ function setUpSelections() {
 			  text: spieler
 			}));
 		}
-	};
-
+	};*/
+	$('.selectpicker').selectpicker('refresh');
 };
 
 function printScoresTable(scores) {
@@ -287,29 +282,66 @@ function generateUID() {
   return ("0000" + (Math.random()*Math.pow(36,4) << 0).toString(36)).slice(-4)
 };
 
+function _getSliderValue() {
+	var oVal = mySlider.getValue();
+	var erg1 = 0;
+	var erg2 = 0;
+	switch (oVal) {
+		case 0:
+			erg1=3;
+			erg2=0;
+			break;
+		case 1:
+			erg1=3;
+			erg2=1;
+			break;
+		case 2:
+			erg1=3;
+			erg2=2;
+			break;
+		case 3:
+			erg1=2;
+			erg2=3;
+			break;
+		case 4:
+			erg1=1;
+			erg2=3;
+			break;
+		case 5:
+			erg1=0;
+			erg2=3;
+			break;
+	}
+	return {
+		erg1 : erg1,
+		erg2 : erg2
+	}
+};
+
 /**
  * [checkSelection description]
  * @return {[type]}
  */
 function checkSelection() {
 	var bEinzel = (document.getElementById("spiel").value[0] === 'e');
-	var erg1 = parseInt(document.querySelector('input[name="erg1"]:checked').value);
-	var erg2 = parseInt(document.querySelector('input[name="erg2"]:checked').value);
+	var oErgVals = _getSliderValue();
 	if (bEinzel) {
-	  if (erg1===3 || erg2===3) {
-	    document.getElementById("speichern").disabled = (erg1===3 && erg2===3);
+	  if (oErgVals.erg1===3 || oErgVals.erg2===3) {
+	    document.getElementById("speichern").disabled = (oErgVals.erg1===3 && oErgVals.erg2===3);
 	  } else {
 	    document.getElementById("speichern").disabled = true;
 	  }
 	} else {
-	  if (erg1===3 || erg2===3) {
+	  if (oErgVals.erg1===3 || oErgVals.erg2===3) {
 	    var bNamesOk = checkNames();
-	    var bBothThree = (erg1===3 && erg2===3);
+	    var bBothThree = (oErgVals.erg1===3 && oErgVals.erg2===3);
 	    document.getElementById("speichern").disabled = !(!bBothThree && bNamesOk);
 	  } else {
 	    document.getElementById("speichern").disabled = true;
 	  }
 	}
+
+	$("#ergDisplay").text(oErgVals.erg1 + ":" + oErgVals.erg2)
 };
 
 function checkNames() {
@@ -463,22 +495,21 @@ function internalStore() {
 	var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
 
 	var sSpiel = $("#spiel").val();
-	var erg1 = $("#playerForm input:radio[name='erg1']:checked").index(":radio[name='erg1']");
-	var erg2 = $("#playerForm input:radio[name='erg2']:checked").index(":radio[name='erg2']");
-
+	var oErgVals = _getSliderValue();
+	
 	if (sSpiel.indexOf("e")==0) {
 		var sName1 = unescape(atob(unescape($("#name1").val())));
 		var sName2 = unescape(atob(unescape($("#name2").val())));
 		ergebnisse[sSpiel].spieler1 = { 
 			"name" : sName1, 
-			"legs" : 					erg1, 
+			"legs" : 					oErgVals.erg1, 
 			"shortlegs" : 				$("#sl1").val() || 0, 
 			"highfinishes" : 			$("#hf1").val() || 0, 
 			"i180er" : 					$("#i180er1").val() || 0 
 		};
 		ergebnisse[sSpiel].spieler2 = { 
 			"name" : sName2, 
-			"legs" : 					erg2, 
+			"legs" : 					oErgVals.erg2, 
 			"shortlegs" : 				$("#sl2").val() || 0, 
 			"highfinishes" : 			$("#hf2").val() || 0, 
 			"i180er" : 					$("#i180er2").val() || 0 
@@ -503,7 +534,7 @@ function internalStore() {
 		var sGastName2 = unescape(atob(unescape($("#gastname2").val())));
 
 		ergebnisse[sSpiel].paar1 = { 
-			"legs" : 					erg1,
+			"legs" : 					oErgVals.erg1,
 			"shortlegs" : 				$("#dsl1").val() || 0,
 			"spieler1" : {
 				"name" : sHeimName1, 
@@ -518,7 +549,7 @@ function internalStore() {
 		};
 		
 		ergebnisse[sSpiel].paar2 = { 
-			"legs" : 					erg2,
+			"legs" : 					oErgVals.erg2,
 			"shortlegs" : 				$("#dsl2").val() || 0,
 			"spieler1" : {
 				"name" : sGastName1, 
@@ -588,6 +619,8 @@ function internalStore() {
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
 	$("#playerForm")[0].reset();
 	document.getElementById("speichern").disabled = true;
+	mySlider.setValue(0);
+	$("#ergDisplay").text("0:0");
 	$('#inputFormDialog').modal('hide');
 };
 
@@ -600,7 +633,7 @@ function removeBorders() {
 function enableFormForSingles(bSingles, lineCounter, uid) {
 
 	removeBorders();
-
+	
 	if (uid.length>4) {
 	  var tmpId = uid.substring(0,4);
 	  $("#" + tmpId + "_1").addClass("doubleRowSelectedTop");
@@ -697,6 +730,8 @@ function enableFormForSingles(bSingles, lineCounter, uid) {
 		organizeSelectedOptionsForId(oStoredNames, "gastname2", sSpiel, ergebnisse);
 		switchSameSelectedOptionFor("gastname1", "gastname2");
 	}
+
+	$('.selectpicker').selectpicker('render');
 
 	$('#inputFormDialog').modal('show');
 };
