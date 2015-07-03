@@ -49,7 +49,7 @@ var mySlider = new Slider("#ergSlider", {
 	value: 0,
 	tooltip: 'hide'
 });
-mySlider.on('slideStop', checkSelection);
+mySlider.on('slide', checkSelection);
 
 // ***************************************************************************
 // ** FUNCTION SECTION
@@ -325,20 +325,8 @@ function _getSliderValue() {
 function checkSelection() {
 	var bEinzel = (document.getElementById("spiel").value[0] === 'e');
 	var oErgVals = _getSliderValue();
-	if (bEinzel) {
-	  if (oErgVals.erg1===3 || oErgVals.erg2===3) {
-	    document.getElementById("speichern").disabled = (oErgVals.erg1===3 && oErgVals.erg2===3);
-	  } else {
-	    document.getElementById("speichern").disabled = true;
-	  }
-	} else {
-	  if (oErgVals.erg1===3 || oErgVals.erg2===3) {
-	    var bNamesOk = checkNames();
-	    var bBothThree = (oErgVals.erg1===3 && oErgVals.erg2===3);
-	    document.getElementById("speichern").disabled = !(!bBothThree && bNamesOk);
-	  } else {
-	    document.getElementById("speichern").disabled = true;
-	  }
+	if (!bEinzel) {
+	  document.getElementById("speichern").disabled = !checkNames();
 	}
 
 	$("#ergDisplay").text(oErgVals.erg1 + ":" + oErgVals.erg2)
@@ -618,9 +606,8 @@ function internalStore() {
 	updateStatistic(ergebnisse);
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
 	$("#playerForm")[0].reset();
-	document.getElementById("speichern").disabled = true;
 	mySlider.setValue(0);
-	$("#ergDisplay").text("0:0");
+	$("#ergDisplay").text("3:0");
 	$('#inputFormDialog').modal('hide');
 };
 

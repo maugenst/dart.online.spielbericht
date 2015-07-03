@@ -69,6 +69,11 @@
     border-left: 1px solid red;
     border-right: 1px solid red;
 }
+
+.scoreTable td {
+    padding: 2px;
+}
+
 .scoreTable {
     width: 100%;
 }
