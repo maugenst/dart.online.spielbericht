@@ -79,8 +79,19 @@ function setUpSelections() {
 //	$('select[name=gastname1]').selectpicker();
 //	$('select[name=gastname2]').selectpicker();
 
+	var aSpielerHeim = [];
+	var aSpielerGast = [];
+
 	for (var i = 0; i<vereine[ergebnisse.heim].mitglieder.length; i++) {
-		var spieler = atob(vereine[ergebnisse.heim].mitglieder[i].vorname) + " " + atob(vereine[ergebnisse.heim].mitglieder[i].name);
+		aSpielerHeim.push(atob(vereine[ergebnisse.heim].mitglieder[i].name) + ", " + atob(vereine[ergebnisse.heim].mitglieder[i].vorname));
+	};
+	aSpielerHeim.sort();
+	$('#name1').empty();
+	$('#heimname1').empty();
+	$('#heimname2').empty();
+
+	for (var i = 0; i<aSpielerHeim.length; i++) {
+		var spieler = aSpielerHeim[i];
 		$('#name1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#heimname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#heimname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
@@ -105,7 +116,15 @@ function setUpSelections() {
 	};*/
 
 	for (var i = 0; i<vereine[ergebnisse.gast].mitglieder.length; i++) {
-		var spieler = atob(vereine[ergebnisse.gast].mitglieder[i].vorname) + " " + atob(vereine[ergebnisse.gast].mitglieder[i].name);
+		aSpielerGast.push(atob(vereine[ergebnisse.gast].mitglieder[i].name) + ", " + atob(vereine[ergebnisse.gast].mitglieder[i].vorname));
+	};
+	aSpielerGast.sort();
+	$('#name2').empty();
+	$('#gastname1').empty();
+	$('#gastname2').empty();
+
+	for (var i = 0; i<aSpielerGast.length; i++) {
+		var spieler = aSpielerGast[i];
 		$('#name2').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#gastname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#gastname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
