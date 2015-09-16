@@ -27,8 +27,8 @@ $image->load($_FILES['onlineSpielberichtBild']['tmp_name']);
 $image->resizeToWidth(2000);
 $image->save($fileNameBild);
 
-$emailHeim = $_POST['emailHeim'];
-$emailGast = $_POST['emailGast'];
+$emailHeim = $_POST['tcHeim'];
+$emailGast = $_POST['tcGast'];
 $json = $_POST['ergebnisJSON'];
 $css = $_POST['emailCSSStyles'];
 $table = $_POST['emailSummaryTable'];

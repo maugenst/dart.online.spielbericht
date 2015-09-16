@@ -1,7 +1,7 @@
 <html>
 <head>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="scripts/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 	<script type="text/javascript">
@@ -9,7 +9,7 @@
 		var oRawData = {};
 		var oResult = {};
 
-		$.get("data/bdlMitglieder.csv", function(oData) {
+		$.get("data/Spielermeldungen15-16.csv", function(oData) {
 		    oRawData = csvJSON(oData);
 		    convertToInternalFormat(oRawData);
 		    $("code").text(JSON.stringify(oResult, null, "\t"));
@@ -18,11 +18,11 @@
 		function convertToInternalFormat(oRawData){
 			for (var i = 0; i < oRawData.length; i++) {
 				var oLine = oRawData[i];
-				if (oLine.Verein && oLine.Name && oLine.Vorname && oLine.Passnummer) {
+				if (oLine.Verein && oLine.Name && oLine.Vorname) {
 					var encVerein = btoa(oLine.Verein);
 					var encName = btoa(oLine.Name);
 					var encVorname = btoa(oLine.Vorname);
-					var encPassnummer = btoa(oLine.Passnummer.replace(/[^0-9]+/g, ''));
+					var encKlasse = btoa(oLine.Spielklasse);
 					if (oResult[encVerein] == undefined) {
 						oResult[encVerein] = {
 							"mitglieder" : []
@@ -31,7 +31,7 @@
 					oResult[encVerein].mitglieder.push({
 						"name" : encName,
 						"vorname" : encVorname,
-						"passnummer" : encPassnummer
+						"klasse" : encKlasse
 					});
 				}
 			};

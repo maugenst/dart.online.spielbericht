@@ -10,14 +10,19 @@ var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
 var ergebnisse = undefined;
 var vereine = null;
 
-
-
 $.getJSON("data/vereine.json", function(oVereine) {
 
+	var aVereine = [];
 	vereine = oVereine;
 	for (var verein in oVereine) {
-		$('#teamheim').append($("<option/>", {value: verein,text: atob(verein)}));
-		$('#teamgast').append($("<option/>", {value: verein,text: atob(verein)}));
+		aVereine.push(atob(verein));
+	};
+
+	aVereine.sort();
+
+	for (var i = 0; i<aVereine.length; i++) {
+		$('#teamheim').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
+		$('#teamgast').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
 	};
 
 });
@@ -50,6 +55,18 @@ var mySlider = new Slider("#ergSlider", {
 	tooltip: 'hide'
 });
 mySlider.on('slide', checkSelection);
+
+// Read out cookies for emails stored
+// bear in mind this works only in desktop systems
+var aCookies = document.cookie.split(';')
+for (var i = aCookies.length - 1; i >= 0; i--) {
+	if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
+		var aCookie = aCookies[i].trim().split('=');
+		if (aCookie[0].indexOf("email") === 0) {
+			document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
+		}
+	}
+};
 
 // ***************************************************************************
 // ** FUNCTION SECTION
@@ -382,6 +399,9 @@ function fillHiddenFields() {
 
 	document.getElementById("emailSummaryTable").value = $("#hiddenSummaryTableContainer").html();
 	document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse);
+
+	document.getElementById("tcHeim").value = document.getElementById("emailHeim").value;
+	document.getElementById("tcGast").value = document.getElementById("emailGast").value;
 
 	$.get("styles/ergebnistabelle.css", function(oContent) {
 	  document.getElementById("emailCSSStyles").value = oContent;
