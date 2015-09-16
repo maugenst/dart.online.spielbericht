@@ -30,6 +30,10 @@
 </head>
 <body onunload="askUserOnUnload()">
 
+<div id="busyindicator" class="uploadContainer">
+  <h1>Daten werden übertragen...</h1>
+</div>
+
 <div id="hiddenSummaryTableContainer" style="visibility:hidden; position:absolute; width:0px; height:0px"></div>
 
 <div id="hiddenInputFieldContainer" style="visibility:hidden; position:absolute; width:0px; height:0px">
@@ -281,7 +285,7 @@
       
       <div role="tabpanel" class="tab-pane" id="absenden">
         <br>
-        <form id="sendMail" action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()">
+        <form id="sendMail" action="sendMail.php" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()" onSubmit="displayBusyIndicator()">
             <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
             <textarea id="emailCSSStyles" name="emailCSSStyles" style="display:none"></textarea>
             <textarea id="emailSummaryTable" name="emailSummaryTable" style="display:none"></textarea>
@@ -291,7 +295,7 @@
             Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
             <br><input type="file" name="onlineSpielberichtBild" capture="camera" accept="image/*" id="takePictureField">
             <br><br>
-            <input type="submit" name="submit" value="Absenden">
+            <input type="submit" name="submit" value="Absenden" id="sendMailSubmit">
         </form>
       </div>
     </div>
@@ -300,7 +304,6 @@
 </div>
 <br>
 <hr>
-
 
 <footer class="footer">
   <div class="container">

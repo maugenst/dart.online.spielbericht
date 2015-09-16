@@ -25,6 +25,18 @@ $.getJSON("data/vereine.json", function(oVereine) {
 		$('#teamgast').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
 	};
 
+	// Read out cookies for emails stored
+	// bear in mind this works only in desktop systems
+	var aCookies = document.cookie.split(';')
+	for (var i = aCookies.length - 1; i >= 0; i--) {
+		if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
+			var aCookie = aCookies[i].trim().split('=');
+			if (aCookie[0].indexOf("email") === 0) {
+				document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
+			}
+		}
+	};
+	
 });
 
 $.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
@@ -56,17 +68,6 @@ var mySlider = new Slider("#ergSlider", {
 });
 mySlider.on('slide', checkSelection);
 
-// Read out cookies for emails stored
-// bear in mind this works only in desktop systems
-var aCookies = document.cookie.split(';')
-for (var i = aCookies.length - 1; i >= 0; i--) {
-	if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
-		var aCookie = aCookies[i].trim().split('=');
-		if (aCookie[0].indexOf("email") === 0) {
-			document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
-		}
-	}
-};
 
 // ***************************************************************************
 // ** FUNCTION SECTION
@@ -992,3 +993,6 @@ function formatName(sName) {
 	return (sName && sName!="") ? sName + " (N)" : "";
 };
 
+function displayBusyIndicator() {
+	$("#busyindicator").css("visibility","visible"); 
+};
