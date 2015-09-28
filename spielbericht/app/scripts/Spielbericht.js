@@ -2421,6 +2421,11 @@ initializeGameSelectionScreen(
 				"klasse": "QmV6aXJrc2xpZ2E="
 			},
 			{
+				"name": "RPxycg==",
+				"vorname": "VGFyZWs=",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
 				"name": "Vm9nZ2VucmVpdGVy",
 				"vorname": "UmFsZg==",
 				"klasse": "QmV6aXJrc2xpZ2E="
