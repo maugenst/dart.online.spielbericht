@@ -988,7 +988,7 @@ mySlider.on('slide', checkSelection);
 
 initializeGameSelectionScreen(
 
-{
+		{
 	"MS5EQyBKb2tlcnMgSG9ja2VuaGVpbQ==": {
 		"mitglieder": [
 			{
@@ -1741,6 +1741,11 @@ initializeGameSelectionScreen(
 	"R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMg==": {
 		"mitglieder": [
 			{
+				"name": "V2Vpcw==",
+				"vorname": "RnJhbms=",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
 				"name": "QmFjaGU=",
 				"vorname": "Sm9obg==",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
@@ -1777,6 +1782,26 @@ initializeGameSelectionScreen(
 			{
 				"name": "TWFnZXI=",
 				"vorname": "RmFiaWFuIChUQyk=",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "UmVlYg==",
+				"vorname": "TWFuZnJlZA==",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "UGlsZ3JpbQ==",
+				"vorname": "SmVycnk=",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "QmVpZXI=",
+				"vorname": "Tm9yYQ==",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "SGVudHNjaGVsIEhvZmZtYW5u",
+				"vorname": "SG9sZ2Vy",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
 			}
 		]
@@ -2331,6 +2356,11 @@ initializeGameSelectionScreen(
 				"name": "VGhpZXM=",
 				"vorname": "U3RlZmFu",
 				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "QmFyb24=",
+				"vorname": "TWljaGFlbA==",
+				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
 	},
@@ -2374,6 +2404,16 @@ initializeGameSelectionScreen(
 			{
 				"name": "V2FsdGhlcg==",
 				"vorname": "RGFuaWVs",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "SORtZXI=",
+				"vorname": "T2xpdmVy",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "V2FsdGhlcg==",
+				"vorname": "U3Zlbg==",
 				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
@@ -2889,5 +2929,5 @@ initializeGameSelectionScreen(
 		]
 	}
 }
-
+	  
 );
