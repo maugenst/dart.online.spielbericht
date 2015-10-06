@@ -1201,6 +1201,16 @@ initializeGameSelectionScreen(
 				"name": "U2NodWx6ZW5kb3Jm",
 				"vorname": "UmFsZg==",
 				"klasse": "S3JlaXNsaWdhIE5vcmQ="
+			},
+			{
+				"name": "V2ViZXI=",
+				"vorname": "Rmxvcmlhbg==",
+				"klasse": "S3JlaXNsaWdhIE5vcmQ="
+			},
+			{
+				"name": "WnViZXI=",
+				"vorname": "U3Zlbg==",
+				"klasse": "S3JlaXNsaWdhIE5vcmQ="
 			}
 		]
 	},
