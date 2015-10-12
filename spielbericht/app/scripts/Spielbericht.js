@@ -1211,6 +1211,11 @@ initializeGameSelectionScreen(
 				"name": "WnViZXI=",
 				"vorname": "U3Zlbg==",
 				"klasse": "S3JlaXNsaWdhIE5vcmQ="
+			},
+			{
+				"name": "R2VyZG9u",
+				"vorname": "TWFyY2Vs",
+				"klasse": "S3JlaXNsaWdhIE5vcmQ="
 			}
 		]
 	},
@@ -2125,6 +2130,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "V2V0emVs",
 				"vorname": "VXdl",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "UGhpbGxpcA==",
+				"vorname": "R3JlZ29y",
 				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
