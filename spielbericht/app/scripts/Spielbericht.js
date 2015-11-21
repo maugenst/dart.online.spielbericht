@@ -1540,11 +1540,6 @@ initializeGameSelectionScreen(
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
 			},
 			{
-				"name": "SG9sd2Vjaw==",
-				"vorname": "SvxyZ2Vu",
-				"klasse": "S3JlaXNsaWdhIFP8ZA=="
-			},
-			{
 				"name": "Sm9jaw==",
 				"vorname": "QmVybnQ=",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
@@ -1793,6 +1788,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "UmF1bQ==",
 				"vorname": "RG9taW5paw==",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "SGVpZGVja2U=",
+				"vorname": "U3RlZmZlbg==",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
 			}
 		]
@@ -2326,6 +2326,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "U2NobWlkdA==",
 				"vorname": "SGFydG11dA==",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "TGVpc2luZ2Vy",
+				"vorname": "QmVuZWRpa3Q=",
 				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
