@@ -987,7 +987,6 @@ var mySlider = new Slider("#ergSlider", {
 mySlider.on('slide', checkSelection);
 
 initializeGameSelectionScreen(
-
 		{
 	"MS5EQyBKb2tlcnMgSG9ja2VuaGVpbQ==": {
 		"mitglieder": [
@@ -2882,6 +2881,11 @@ initializeGameSelectionScreen(
 				"name": "V2l0dG1hbm4=",
 				"vorname": "QmVydGhvbGQ=",
 				"klasse": "T2JlcmxpZ2E="
+			},
+			{
+				"name": "RWhsZXJz",
+				"vorname": "TWF0dGhpYXM=",
+				"klasse": "T2JlcmxpZ2E="
 			}
 		]
 	},
@@ -2974,4 +2978,5 @@ initializeGameSelectionScreen(
 		]
 	}
 }
+	  
 );
