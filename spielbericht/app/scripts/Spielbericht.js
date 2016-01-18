@@ -1039,6 +1039,11 @@ initializeGameSelectionScreen(
 				"name": "V2VybmVy",
 				"vorname": "UGF0cmljaw==",
 				"klasse": "S3JlaXNsaWdhIE5vcmQ="
+			},
+			{
+				"name": "QmVja2Vy",
+				"vorname": "TWFyY2Vs",
+				"klasse": "S3JlaXNsaWdhIE5vcmQ="
 			}
 		]
 	},
@@ -1175,6 +1180,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "WmFuZw==",
 				"vorname": "TG90aGFy",
+				"klasse": "S3JlaXNsaWdhIE5vcmQ="
+			},
+			{
+				"name": "RnJhaWxl",
+				"vorname": "QW50b25pbw==",
 				"klasse": "S3JlaXNsaWdhIE5vcmQ="
 			}
 		]
@@ -1406,6 +1416,11 @@ initializeGameSelectionScreen(
 				"name": "U3RlaW5sZQ==",
 				"vorname": "U3RlZmFu",
 				"klasse": "S3JlaXNsaWdhIE5vcmQ="
+			},
+			{
+				"name": "UmVzY2g=",
+				"vorname": "S2ltbw==",
+				"klasse": "S3JlaXNsaWdhIE5vcmQ="
 			}
 		]
 	},
@@ -1610,6 +1625,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "QmVybmluZ2Vy",
 				"vorname": "SGFucw==",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "QmVybmluZ2Vy",
+				"vorname": "TWFydGlu",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
 			},
 			{
@@ -1837,6 +1857,36 @@ initializeGameSelectionScreen(
 				"name": "SGVudHNjaGVsIEhvZmZtYW5u",
 				"vorname": "SG9sZ2Vy",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "SG9mZm1hbm4=",
+				"vorname": "S2V2aW4=",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "R2FiZWw=",
+				"vorname": "U2ViYXN0aWFu",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "Um9tZXRzY2g=",
+				"vorname": "TWFyY28=",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "Um9tZXRzY2g=",
+				"vorname": "TWFudWVsYQ==",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "TfxsbGVy",
+				"vorname": "UGl0",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "TfxsbGVy",
+				"vorname": "TWF1cmljZQ==",
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
 			}
 		]
 	},
@@ -1963,12 +2013,22 @@ initializeGameSelectionScreen(
 			{
 				"name": "QmVja2Vy",
 				"vorname": "Q2hyaXN0aW5l",
-				"klasse": ""
+				"klasse": "S3JlaXNsaWdhIFP8ZA=="
 			},
 			{
 				"name": "S25vYmxvY2g=",
 				"vorname": "QW5kcmVhcw==",
 				"klasse": "S3JlaXNsaWdhIFP8ZA=="
+			},
+			{
+				"name": "RGVlZw==",
+				"vorname": "Q2FybG8=",
+				"klasse": "T2JlcmxpZ2E="
+			},
+			{
+				"name": "U2NobGljaHQ=",
+				"vorname": "RGFuaWVs",
+				"klasse": "T2JlcmxpZ2E="
 			}
 		]
 	},
@@ -1992,6 +2052,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "S29yYm1hbm4=",
 				"vorname": "Um9iaW4=",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "S29yYm1hbm4=",
+				"vorname": "UGFzY2Fs",
 				"klasse": "QmV6aXJrc2xpZ2E="
 			},
 			{
@@ -2351,6 +2416,26 @@ initializeGameSelectionScreen(
 				"name": "TGVpc2luZ2Vy",
 				"vorname": "QmVuZWRpa3Q=",
 				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "SGVlbA==",
+				"vorname": "R2VyaGFyZA==",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "S25vcGZpbmdlcg==",
+				"vorname": "SmFu",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "SGlsemVuZGVnZW4=",
+				"vorname": "U2luYQ==",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "VXR0aW5n",
+				"vorname": "Tmljbw==",
+				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
 	},
@@ -2409,6 +2494,11 @@ initializeGameSelectionScreen(
 			{
 				"name": "QmFyb24=",
 				"vorname": "TWljaGFlbA==",
+				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "S25lYmVs",
+				"vorname": "S2Fp",
 				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
@@ -2974,9 +3064,13 @@ initializeGameSelectionScreen(
 				"name": "V2Vpbm1hbm4=",
 				"vorname": "UGF0cmljaw==",
 				"klasse": "T2JlcmxpZ2E="
+			},
+			{
+				"name": "UmViZXI=",
+				"vorname": "VXdl",
+				"klasse": "T2JlcmxpZ2E="
 			}
 		]
 	}
 }
-	  
 );

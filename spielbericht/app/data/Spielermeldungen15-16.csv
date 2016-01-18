@@ -10,6 +10,7 @@ Stetter;Christian;1.DC Jokers Hockenheim;Kreisliga Nord
 Walter;Florian;1.DC Jokers Hockenheim;Kreisliga Nord
 Weimar;Stefan;1.DC Jokers Hockenheim;Kreisliga Nord
 Werner;Patrick;1.DC Jokers Hockenheim;Kreisliga Nord
+Becker;Marcel;1.DC Jokers Hockenheim;Kreisliga Nord
 Fischer;Mario;DC Reiterstüble Eppingen 2;Kreisliga Nord
 Gärtner;Gabi;DC Reiterstüble Eppingen 2;Kreisliga Nord
 Köster;Nadja;DC Reiterstüble Eppingen 2;Kreisliga Nord
@@ -35,6 +36,7 @@ Kost;Patrick;DC Undertaker reloaded 2;Kreisliga Nord
 Raptis;Nikolaos;DC Undertaker reloaded 2;Kreisliga Nord
 Stelle;Mike;DC Undertaker reloaded 2;Kreisliga Nord
 Zang;Lothar;DC Undertaker reloaded 2;Kreisliga Nord
+Fraile;Antonio;DC Undertaker reloaded 2;Kreisliga Nord
 Lochbaum;Lars;Iron Eagles;Kreisliga Nord
 Lucas;Jan;Iron Eagles;Kreisliga Nord
 Mohr;Markus;Iron Eagles;Kreisliga Nord
@@ -77,6 +79,7 @@ Schmitteckert;Bernd;Taraxacuma TNT;Kreisliga Nord
 Schmitteckert;Sascha;Taraxacuma TNT;Kreisliga Nord
 Stegmüller;Ralf (TC);Taraxacuma TNT;Kreisliga Nord
 Steinle;Stefan;Taraxacuma TNT;Kreisliga Nord
+Resch;Kimo;Taraxacuma TNT;Kreisliga Nord
 Bachert;Steffen;Team Ideal Wild Tigers;Kreisliga Nord
 Baust;Christian;Team Ideal Wild Tigers;Kreisliga Nord
 Brucker;Jürgen;Team Ideal Wild Tigers;Kreisliga Nord
@@ -114,6 +117,7 @@ Alpino;Fabio;D.A.R.T. Plumbata;Kreisliga Süd
 Augenstein;Marius;D.A.R.T. Plumbata;Kreisliga Süd
 Augenstein;Norbert;D.A.R.T. Plumbata;Kreisliga Süd
 Berninger;Hans;D.A.R.T. Plumbata;Kreisliga Süd
+Berninger;Martin;D.A.R.T. Plumbata;Kreisliga Süd
 Braun;Rene;D.A.R.T. Plumbata;Kreisliga Süd
 Hofmann;Jan;D.A.R.T. Plumbata;Kreisliga Süd
 Höger;Jörg;D.A.R.T. Plumbata;Kreisliga Süd
@@ -156,6 +160,12 @@ Reeb;Manfred;Karlsruher Dart-Freunde;Kreisliga Süd
 Pilgrim;Jerry;Karlsruher Dart-Freunde;Kreisliga Süd
 Beier;Nora;Karlsruher Dart-Freunde;Kreisliga Süd
 Hentschel Hoffmann;Holger;Karlsruher Dart-Freunde;Kreisliga Süd
+Hoffmann;Kevin;Karlsruher Dart-Freunde;Kreisliga Süd
+Gabel;Sebastian;Karlsruher Dart-Freunde;Kreisliga Süd
+Rometsch;Marco;Karlsruher Dart-Freunde;Kreisliga Süd
+Rometsch;Manuela;Karlsruher Dart-Freunde;Kreisliga Süd
+Müller;Pit;Karlsruher Dart-Freunde;Kreisliga Süd
+Müller;Maurice;Karlsruher Dart-Freunde;Kreisliga Süd
 Müller;Marco (TC);DC 81 Karlsruhe;Kreisliga Süd
 Andert;Iris;DC 81 Karlsruhe;Kreisliga Süd
 Araci;Cihan;DC 81 Karlsruhe;Kreisliga Süd
@@ -178,12 +188,15 @@ Damsons;Diana (TC);Taraxacuma Wölfe;Kreisliga Süd
 Gutting;Ralf;Taraxacuma Wölfe;Kreisliga Süd
 Kartach;Jörg;Taraxacuma Wölfe;Kreisliga Süd
 Keilhauer;Armin;Taraxacuma Wölfe;Kreisliga Süd
-Becker;Christine;Taraxacuma Wölfe;
+Becker;Christine;Taraxacuma Wölfe;Kreisliga Süd
 Knobloch;Andreas;Taraxacuma Wölfe;Kreisliga Süd
+Deeg;Carlo;Taraxacuma Wölfe;Oberliga
+Schlicht;Daniel;Taraxacuma Wölfe;Oberliga
 Hölzle;Kai;Alla Häeeeehr Pforzheim;Bezirksliga
 Hölzle;Maik;Alla Häeeeehr Pforzheim;Bezirksliga
 Hoppe;Harald;Alla Häeeeehr Pforzheim;Bezirksliga
 Korbmann;Robin;Alla Häeeeehr Pforzheim;Bezirksliga
+Korbmann;Pascal;Alla Häeeeehr Pforzheim;Bezirksliga
 Kunze;Sebastian;Alla Häeeeehr Pforzheim;Bezirksliga
 Sauer;Leo;Alla Häeeeehr Pforzheim;Bezirksliga
 Schmidt;Alexander (TC);Alla Häeeeehr Pforzheim;Bezirksliga
@@ -250,6 +263,10 @@ Müller;Markus;DC Studenten Bellheim;Bezirksliga
 Niederer;Jochen;DC Studenten Bellheim;Bezirksliga
 Schmidt;Hartmut;DC Studenten Bellheim;Bezirksliga
 Leisinger;Benedikt;DC Studenten Bellheim;Bezirksliga
+Heel;Gerhard;DC Studenten Bellheim;Bezirksliga
+Knopfinger;Jan;DC Studenten Bellheim;Bezirksliga
+Hilzendegen;Sina;DC Studenten Bellheim;Bezirksliga
+Utting;Nico;DC Studenten Bellheim;Bezirksliga
 Busch;Lucas;Freygerber Fighters;Bezirksliga
 Gaab;Sascha;Freygerber Fighters;Bezirksliga
 Groll;Markus;Freygerber Fighters;Bezirksliga
@@ -261,6 +278,7 @@ Schleppi;Klaus;Freygerber Fighters;Bezirksliga
 Thies;Basti (TC);Freygerber Fighters;Bezirksliga
 Thies;Stefan;Freygerber Fighters;Bezirksliga
 Baron;Michael;Freygerber Fighters;Bezirksliga
+Knebel;Kai;Freygerber Fighters;Bezirksliga
 Howe;Simone (TC);LaOla Weinheim;Bezirksliga
 Baum;Annika;LaOla Weinheim;Bezirksliga
 Demirel;Ali;LaOla Weinheim;Bezirksliga
@@ -365,3 +383,4 @@ Reeb;Roman;DC El Diabolo;Oberliga
 Schade;Christian;DC El Diabolo;Oberliga
 Sülzle;Jürgen;DC El Diabolo;Oberliga
 Weinmann;Patrick;DC El Diabolo;Oberliga
+Reber;Uwe;DC El Diabolo;Oberliga
