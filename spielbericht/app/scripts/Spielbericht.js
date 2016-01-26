@@ -2442,6 +2442,11 @@ initializeGameSelectionScreen(
 				"name": "VXR0aW5n",
 				"vorname": "Tmljbw==",
 				"klasse": "QmV6aXJrc2xpZ2E="
+			},
+			{
+				"name": "U2Nod2VpdHplcg==",
+				"vorname": "QW5kcmVhcw==",
+				"klasse": "QmV6aXJrc2xpZ2E="
 			}
 		]
 	},
@@ -3079,5 +3084,5 @@ initializeGameSelectionScreen(
 		]
 	}
 }
-
+	  
 );
