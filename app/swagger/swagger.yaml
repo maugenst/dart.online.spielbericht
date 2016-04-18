@@ -1,0 +1,42 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: BeDeLOS - BDL Online Spielberichtsbogen based on node.js
+
+# basePath prefixes all resource paths
+basePath: /bedelos
+
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+  - application/x-www-form-urlencoded
+# format of the responses to the client (Accepts)
+produces:
+  - text/plain
+  - text/html
+  - application/json
+paths:
+
+  /info:
+    x-swagger-router-controller: bedelos.Info
+    get:
+      description:
+        Displays some information on the BeDeLOS server status
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+
+###############################################################################
+# Schema definitions
+definitions:
+  HTML:
+    type: string
+#  JsonObject:
+#    type: object
+#  JsonArray:
+#    type: array
+#    items:
+#      type: object

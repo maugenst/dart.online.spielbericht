@@ -1,0 +1,58 @@
+# configuration file
+
+# server configuration section
+server:
+  # verbal description of the configuration
+  environment: default configuration (template)
+  http:
+    port: 1080
+  # leave value empty if no https serving desired
+  https:
+    #port: 443
+    #keyFile: /etc/apache2/ssl.key/sese-wdf-sap-corp.key
+    #certFile: /etc/apache2/ssl.crt/sese-wdf-sap-corp.crt
+
+# logging
+log:
+  dir: ./data/log
+
+# temporary data
+temp:
+  dir: ./data/temp
+
+# swagger configuration section
+# values in the swagger hash are system configuration for swagger-node
+swagger:
+
+  fittingsDirs: [ app/fittings ]
+  defaultPipe: null
+  swaggerControllerPipe: swagger_controllers  # defines the standard processing pipe for controllers
+
+  # values defined in the bagpipes key are the bagpipes pipes and fittings definitions
+  # (see https://github.com/apigee-127/bagpipes)
+  bagpipes:
+
+    _router:
+      name: swagger_router
+      mockMode: false
+      mockControllersDirs: [app/mocks]
+      controllersDirs:
+        - app/controllers/bedelos
+
+    _swagger_validate:
+      name: swagger_validator
+      validateResponse: true
+
+    # pipe for all swagger-node controllers
+    swagger_controllers:
+      - onError: json_error_handler
+      - cors
+      - swagger_security
+      - _swagger_validate
+      - express_compatibility
+      - _router
+
+    # pipe to serve swagger (endpoint is in swagger.yaml)
+    swagger_raw:
+      name: swagger_raw
+

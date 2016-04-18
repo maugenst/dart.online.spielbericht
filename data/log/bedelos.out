@@ -1,0 +1,23 @@
+[2016-04-18 21:00:00.878] [INFO] bedelos - Using configuration environment: 'default configuration (template)'
+[2016-04-18 21:00:00.881] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-18 21:00:00.995] [INFO] bedelos - HTTP server running and listening on port=1080
+[2016-04-18 21:00:00.996] [INFO] bedelos - Startup took 2117 milliseconds.
+[2016-04-18 21:03:28.785] [INFO] bedelos - Using configuration environment: 'default configuration (template)'
+[2016-04-18 21:03:28.787] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-18 21:03:28.789] [ERROR] bedelos - Severe bedelos error happened. [ReferenceError: middleware is not defined]
+ReferenceError: middleware is not defined
+    at Object.<anonymous> (c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\app.js:92:5)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+    at Module.load (module.js:343:32)
+    at Function.Module._load (module.js:300:12)
+    at Module.runMain [as _onTimeout] (module.js:441:10)
+    at Timer.listOnTimeout (timers.js:92:15)
+[2016-04-18 21:03:46.849] [INFO] bedelos - Using configuration environment: 'default configuration (template)'
+[2016-04-18 21:03:46.851] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-18 21:03:46.920] [INFO] bedelos - HTTP server running and listening on port=1080
+[2016-04-18 21:03:46.920] [INFO] bedelos - Startup took 2381 milliseconds.
+[2016-04-18 21:26:46.737] [INFO] bedelos - Using configuration environment: 'default configuration (template)'
+[2016-04-18 21:26:46.740] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-18 21:26:46.809] [INFO] bedelos - HTTP server running and listening on port=1080
+[2016-04-18 21:26:46.809] [INFO] bedelos - Startup took 2506 milliseconds.
