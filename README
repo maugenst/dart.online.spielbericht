@@ -1,4 +1,0 @@
-Commands:
-
-Uglify code:
-  uglifyjs --compress --mangle -o spielbericht/app/scripts/Spielbericht.min.js -- spielbericht/app/scripts/Spielbericht.js

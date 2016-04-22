@@ -1,0 +1,280 @@
+{
+  "heim": "Alla Häeeeehr Pforzheim",
+  "gast": "D.A.R.T. Plumbata",
+  "e1b1": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e2b1": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e3b1": {
+    "spieler1": {
+      "name": "Hoppe, Harald",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Alpino, Fabio",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e4b1": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "d1b2": {
+    "paar1": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "d2b2": {
+    "paar1": {
+      "legs": 3,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Hoppe, Harald",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Hölzle, Kai",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Alpino, Fabio",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Antal, Oliver (TC)",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "e1b3": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e2b3": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e3b3": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e4b3": {
+    "spieler1": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "d1b4": {
+    "paar1": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "d2b4": {
+    "paar1": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "statistik": [
+    {
+      "name": "Hoppe, Harald",
+      "score": 10
+    },
+    {
+      "name": "Hölzle, Kai",
+      "score": 5
+    },
+    {
+      "name": "Alpino, Fabio",
+      "score": 0
+    },
+    {
+      "name": "Antal, Oliver (TC)",
+      "score": 0
+    }
+  ],
+  "summary": {
+    "heim": {
+      "legs": 6,
+      "sets": 2
+    },
+    "gast": {
+      "legs": 0,
+      "sets": 0
+    }
+  }
+}

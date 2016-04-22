@@ -1,28 +1,24 @@
 {
   "name": "bedelos",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
+  "description": "BeDeLOS - BDL Online Spielberichtsbogen",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
   "dependencies": {
     "config": "1.19.0",
     "express": "4.12.3",
-    "request": "2.65.0",
-    "swagger-express-middleware": "1.0.0-alpha.12",
-    "swagger-express-mw": "0.6.0",
+    "swagger-express-mw": "0.1.0",
     "bluebird": "3.0.5",
-    "asyncawait": "1.0.1",
     "js-yaml": "3.5.2",
-    "cors": "2.7.1",
     "log4js": "0.6.27",
-    "dateformat": "1.0.12",
-    "string-format": "0.5.0",
-    "fs-extra": "^0.26.5",
-    "serialijse": "^0.0.17",
-    "nodemailer": "2.0.0",
+    "jade": "1.11.0",
     "lodash": "^4.5.1",
     "morgan": "1.7.0",
+    "cors": "2.7.1",
+    "nodemailer": "2.0.0",
     "mkdirp": "0.5.1"
   }
 }

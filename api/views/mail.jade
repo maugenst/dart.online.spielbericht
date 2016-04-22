@@ -1,0 +1,208 @@
+//
+   Created by d032233 on 21.04.2016.
+html
+    head
+        style
+            include ../static/spielbericht/app/styles/ergebnistabelle.css
+        title Service Enablement Request
+    body(style={"font-family": 'Calibri'})
+        h1 Spielberichtsbogen der BDL
+        p Hier das Ergebnis der Partie:
+        table.ergebnistabelle
+            thead
+                tr.gegnerNamen
+                    td(colspan=3) HEIM:
+                    td(style={color: 'gold'})= res.heim
+                    td GAST:
+                    td(colspan=4, style={color: 'gold'})= res.gast
+                tr.gegnerNamen
+                    th
+                        .thRotated SL
+                    th
+                        .thRotated HF
+                    th
+                        .thRotated 180er
+                    th(style={width: '40%'}) Name
+                    th &nbsp;
+                    th(style={width: '40%'}) Name
+                    th
+                        .thRotated 180er
+                    th
+                        .thRotated HF
+                    th
+                        .thRotated SL
+            tbody
+                tr
+                tr.einzelblockOdd
+                    td.slhf180block= res.e1b1.spieler1.shortlegs || ""
+                    td.slhf180block= res.e1b1.spieler1.highfinishes || ""
+                    td.slhf180block= res.e1b1.spieler1.i180er || ""
+                    td.slhf180block= res.e1b1.spieler1.name || ""
+                    td.ergebnisBlock #{res.e1b1.spieler1.legs} : #{res.e1b1.spieler2.legs}
+                    td.slhf180block= res.e1b1.spieler2.name || ""
+                    td.slhf180block= res.e1b1.spieler2.i180er || ""
+                    td.slhf180block= res.e1b1.spieler2.highfinishes || ""
+                    td.slhf180block= res.e1b1.spieler2.shortlegs || ""
+                tr.einzelblockEven
+                    td.slhf180block= res.e2b1.spieler1.shortlegs || ""
+                    td.slhf180block= res.e2b1.spieler1.highfinishes || ""
+                    td.slhf180block= res.e2b1.spieler1.i180er || ""
+                    td.slhf180block= res.e2b1.spieler1.name || ""
+                    td.ergebnisBlock #{res.e2b1.spieler1.legs} : #{res.e2b1.spieler2.legs}
+                    td.slhf180block= res.e2b1.spieler2.name || ""
+                    td.slhf180block= res.e2b1.spieler2.i180er || ""
+                    td.slhf180block= res.e2b1.spieler2.highfinishes || ""
+                    td.slhf180block= res.e2b1.spieler2.shortlegs || ""
+                tr.einzelblockOdd
+                    td.slhf180block= res.e3b1.spieler1.shortlegs || ""
+                    td.slhf180block= res.e3b1.spieler1.highfinishes || ""
+                    td.slhf180block= res.e3b1.spieler1.i180er || ""
+                    td.slhf180block= res.e3b1.spieler1.name || ""
+                    td.ergebnisBlock #{res.e3b1.spieler1.legs} : #{res.e3b1.spieler2.legs}
+                    td.slhf180block= res.e3b1.spieler2.name || ""
+                    td.slhf180block= res.e3b1.spieler2.i180er || ""
+                    td.slhf180block= res.e3b1.spieler2.highfinishes || ""
+                    td.slhf180block= res.e3b1.spieler2.shortlegs || ""
+                tr.einzelblockEven
+                    td.slhf180block= res.e4b1.spieler1.shortlegs || ""
+                    td.slhf180block= res.e4b1.spieler1.highfinishes || ""
+                    td.slhf180block= res.e4b1.spieler1.i180er || ""
+                    td.slhf180block= res.e4b1.spieler1.name || ""
+                    td.ergebnisBlock #{res.e4b1.spieler1.legs} : #{res.e4b1.spieler2.legs}
+                    td.slhf180block= res.e4b1.spieler2.name || ""
+                    td.slhf180block= res.e4b1.spieler2.i180er || ""
+                    td.slhf180block= res.e4b1.spieler2.highfinishes || ""
+                    td.slhf180block= res.e4b1.spieler2.shortlegs || ""
+                //Doppel 1
+                tr.doppelblockOdd
+                    td.slhf180block(rowspan='2')= res.d1b2.paar1.shortlegs || ""
+                    td.slhf180block= res.d1b2.paar1.spieler1.highfinishes || ""
+                    td.slhf180block= res.d1b2.paar1.spieler1.i180er || ""
+                    td.slhf180block= res.d1b2.paar1.spieler1.name || ""
+                    td.ergebnisBlock(rowspan='2') #{res.d1b2.paar1.legs} : #{res.d1b2.paar2.legs}
+                    td.slhf180block= res.d1b2.paar2.spieler1.name || ""
+                    td.slhf180block= res.d1b2.paar2.spieler1.i180er || ""
+                    td.slhf180block= res.d1b2.paar2.spieler1.highfinishes || ""
+                    td.slhf180block(rowspan='2')= res.d1b2.paar2.shortlegs || ""
+                tr.doppelblockOdd
+                    td.slhf180block= res.d1b2.paar1.spieler2.highfinishes || ""
+                    td.slhf180block= res.d1b2.paar1.spieler2.i180er || ""
+                    td.slhf180block= res.d1b2.paar1.spieler2.name || ""
+                    td.slhf180block= res.d1b2.paar2.spieler2.name || ""
+                    td.slhf180block= res.d1b2.paar2.spieler2.i180er || ""
+                    td.slhf180block= res.d1b2.paar2.spieler2.highfinishes || ""
+                tr.doppelblockEven
+                    td.slhf180block(rowspan='2')= res.d2b2.paar1.shortlegs || ""
+                    td.slhf180block= res.d2b2.paar1.spieler1.highfinishes || ""
+                    td.slhf180block= res.d2b2.paar1.spieler1.i180er || ""
+                    td.slhf180block= res.d2b2.paar1.spieler1.name || ""
+                    td.ergebnisBlock(rowspan='2') #{res.d2b2.paar1.legs} : #{res.d2b2.paar2.legs}
+                    td.slhf180block= res.d2b2.paar2.spieler1.name || ""
+                    td.slhf180block= res.d2b2.paar2.spieler1.i180er || ""
+                    td.slhf180block= res.d2b2.paar2.spieler1.highfinishes || ""
+                    td.slhf180block(rowspan='2')= res.d2b2.paar2.shortlegs || ""
+                tr.doppelblockEven
+                    td.slhf180block= res.d2b2.paar1.spieler2.highfinishes || ""
+                    td.slhf180block= res.d2b2.paar1.spieler2.i180er || ""
+                    td.slhf180block= res.d2b2.paar1.spieler2.name || ""
+                    td.slhf180block= res.d2b2.paar2.spieler2.name || ""
+                    td.slhf180block= res.d2b2.paar2.spieler2.i180er || ""
+                    td.slhf180block= res.d2b2.paar2.spieler2.highfinishes || ""
+                // Einzel Block 3
+                tr.einzelblockOdd
+                    td.slhf180block= res.e1b3.spieler1.shortlegs || ""
+                    td.slhf180block= res.e1b3.spieler1.highfinishes || ""
+                    td.slhf180block= res.e1b3.spieler1.i180er || ""
+                    td.slhf180block= res.e1b3.spieler1.name || ""
+                    td.ergebnisBlock #{res.e1b3.spieler1.legs} : #{res.e1b3.spieler2.legs}
+                    td.slhf180block= res.e1b3.spieler2.name || ""
+                    td.slhf180block= res.e1b3.spieler2.i180er || ""
+                    td.slhf180block= res.e1b3.spieler2.highfinishes || ""
+                    td.slhf180block= res.e1b3.spieler2.shortlegs || ""
+                tr.einzelblockEven
+                    td.slhf180block= res.e2b3.spieler1.shortlegs || ""
+                    td.slhf180block= res.e2b3.spieler1.highfinishes || ""
+                    td.slhf180block= res.e2b3.spieler1.i180er || ""
+                    td.slhf180block= res.e2b3.spieler1.name || ""
+                    td.ergebnisBlock #{res.e2b3.spieler1.legs} : #{res.e2b3.spieler2.legs}
+                    td.slhf180block= res.e2b3.spieler2.name || ""
+                    td.slhf180block= res.e2b3.spieler2.i180er || ""
+                    td.slhf180block= res.e2b3.spieler2.highfinishes || ""
+                    td.slhf180block= res.e2b3.spieler2.shortlegs || ""
+                tr.einzelblockOdd
+                    td.slhf180block= res.e3b3.spieler1.shortlegs || ""
+                    td.slhf180block= res.e3b3.spieler1.highfinishes || ""
+                    td.slhf180block= res.e3b3.spieler1.i180er || ""
+                    td.slhf180block= res.e3b3.spieler1.name || ""
+                    td.ergebnisBlock #{res.e3b3.spieler1.legs} : #{res.e3b3.spieler2.legs}
+                    td.slhf180block= res.e3b3.spieler2.name || ""
+                    td.slhf180block= res.e3b3.spieler2.i180er || ""
+                    td.slhf180block= res.e3b3.spieler2.highfinishes || ""
+                    td.slhf180block= res.e3b3.spieler2.shortlegs || ""
+                tr.einzelblockEven
+                    td.slhf180block= res.e4b3.spieler1.shortlegs || ""
+                    td.slhf180block= res.e4b3.spieler1.highfinishes || ""
+                    td.slhf180block= res.e4b3.spieler1.i180er || ""
+                    td.slhf180block= res.e4b3.spieler1.name || ""
+                    td.ergebnisBlock #{res.e4b3.spieler1.legs} : #{res.e4b3.spieler2.legs}
+                    td.slhf180block= res.e4b3.spieler2.name || ""
+                    td.slhf180block= res.e4b3.spieler2.i180er || ""
+                    td.slhf180block= res.e4b3.spieler2.highfinishes || ""
+                    td.slhf180block= res.e4b3.spieler2.shortlegs || ""
+                //Doppel Block 4
+                tr.doppelblockOdd
+                    td.slhf180block(rowspan='2')= res.d1b4.paar1.shortlegs || ""
+                    td.slhf180block= res.d1b4.paar1.spieler1.highfinishes || ""
+                    td.slhf180block= res.d1b4.paar1.spieler1.i180er || ""
+                    td.slhf180block= res.d1b4.paar1.spieler1.name || ""
+                    td.ergebnisBlock(rowspan='2') #{res.d1b4.paar1.legs} : #{res.d1b4.paar2.legs}
+                    td.slhf180block= res.d1b4.paar2.spieler1.name || ""
+                    td.slhf180block= res.d1b4.paar2.spieler1.i180er || ""
+                    td.slhf180block= res.d1b4.paar2.spieler1.highfinishes || ""
+                    td.slhf180block(rowspan='2')= res.d1b4.paar2.shortlegs || ""
+                tr.doppelblockOdd
+                    td.slhf180block= res.d1b4.paar1.spieler2.highfinishes || ""
+                    td.slhf180block= res.d1b4.paar1.spieler2.i180er || ""
+                    td.slhf180block= res.d1b4.paar1.spieler2.name || ""
+                    td.slhf180block= res.d1b4.paar2.spieler2.name || ""
+                    td.slhf180block= res.d1b4.paar2.spieler2.i180er || ""
+                    td.slhf180block= res.d1b4.paar2.spieler2.highfinishes || ""
+                tr.doppelblockEven
+                    td.slhf180block(rowspan='2')= res.d2b4.paar1.shortlegs || ""
+                    td.slhf180block= res.d2b4.paar1.spieler1.highfinishes || ""
+                    td.slhf180block= res.d2b4.paar1.spieler1.i180er || ""
+                    td.slhf180block= res.d2b4.paar1.spieler1.name || ""
+                    td.ergebnisBlock(rowspan='2') #{res.d2b4.paar1.legs} : #{res.d2b4.paar2.legs}
+                    td.slhf180block= res.d2b4.paar2.spieler1.name || ""
+                    td.slhf180block= res.d2b4.paar2.spieler1.i180er || ""
+                    td.slhf180block= res.d2b4.paar2.spieler1.highfinishes || ""
+                    td.slhf180block(rowspan='2')= res.d2b4.paar2.shortlegs || ""
+                tr.doppelblockEven
+                    td.slhf180block= res.d2b4.paar1.spieler2.highfinishes || ""
+                    td.slhf180block= res.d2b4.paar1.spieler2.i180er || ""
+                    td.slhf180block= res.d2b4.paar1.spieler2.name || ""
+                    td.slhf180block= res.d2b4.paar2.spieler2.name || ""
+                    td.slhf180block= res.d2b4.paar2.spieler2.i180er || ""
+                    td.slhf180block= res.d2b4.paar2.spieler2.highfinishes || ""
+                tr.summaryBlock
+                    td(colspan='3', rowspan='2') &nbsp;
+                    td(rowspan='2') Ergebnis:
+                    td(nowrap='') #{res.summary.heim.legs} : #{res.summary.gast.legs}
+                    td - Legs
+                    td(colspan='3') &nbsp;
+                tr.summaryBlock
+                    td(nowrap='') #{res.summary.heim.sets} : #{res.summary.gast.sets}
+                    td - Sets
+                    td(colspan='3') &nbsp;
+                tr
+                    td(colspan='9')
+                        .bold Spielername (N) = Nachgemeldeter Spieler
+        p &copy;
+            b
+                a(href='mailto:marius.augenstein@gmail.com') Marius Augenstein (2015,2016)
+            |(
+            a(href='http://bdl-online-spielplan.lima-city.de/impressum.html') Impressum
+            |)<br>
+            a(href='http://www.badischedartliga.de') Badische Dart Liga
+            | |
+            a(href='http://bdl-online-spielplan.lima-city.de') BDL Online Spielbericht

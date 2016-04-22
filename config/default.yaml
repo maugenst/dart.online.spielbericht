@@ -1,18 +1,13 @@
-# configuration file
+# BeDeLOS configuration file
 
-# server configuration section
 server:
-  # verbal description of the configuration
-  environment: default configuration (template)
   http:
-    port: 1080
+    port: 3000
   # leave value empty if no https serving desired
   https:
-    #port: 443
+    #port: 3443
     #keyFile: /etc/apache2/ssl.key/sese-wdf-sap-corp.key
     #certFile: /etc/apache2/ssl.crt/sese-wdf-sap-corp.crt
-
-# logging
 log:
   dir: ./data/log
 
@@ -20,11 +15,10 @@ log:
 temp:
   dir: ./data/temp
 
-# swagger configuration section
 # values in the swagger hash are system configuration for swagger-node
 swagger:
 
-  fittingsDirs: [ app/fittings ]
+  fittingsDirs: [ api/fittings ]
   defaultPipe: null
   swaggerControllerPipe: swagger_controllers  # defines the standard processing pipe for controllers
 
@@ -35,9 +29,8 @@ swagger:
     _router:
       name: swagger_router
       mockMode: false
-      mockControllersDirs: [app/mocks]
-      controllersDirs:
-        - app/controllers/bedelos
+      mockControllersDirs: [ api/mocks ]
+      controllersDirs: [ api/controllers ]
 
     _swagger_validate:
       name: swagger_validator
@@ -56,3 +49,4 @@ swagger:
     swagger_raw:
       name: swagger_raw
 
+# any other values in this file are just loaded into the config for application access...

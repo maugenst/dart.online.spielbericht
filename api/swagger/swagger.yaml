@@ -1,0 +1,71 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: BeDeLOS - BDL Online Spielberichtsbogen
+# basePath prefixes all resource paths
+basePath: /bedelos
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+  - application/x-www-form-urlencoded
+# format of the responses to the client (Accepts)
+produces:
+  - text/plain
+  - text/html
+  - application/json
+
+paths:
+
+  /info:
+    x-swagger-router-controller: bedelos.Info
+    get:
+      produces:
+        - text/html
+      description:
+        Displays some information on the BeDeLOS server status
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /result:
+    x-swagger-router-controller: bedelos.Result
+    post:
+      consumes:
+        - multipart/form-data
+      description:
+        Stores the game result and picture uploaded from an mobile device
+      parameters:
+        - name: tcHeim
+          type: string
+          description: Emailadress of home team captain
+          in: formData
+          required: true
+        - name: tcGast
+          type: string
+          description: Emailadress of guest team captain
+          in: formData
+          required: true
+        - name: picture
+          in: formData
+          description: The picture taken by the mobile device
+          required: true
+          type: file
+          minLength: 1
+          maxLength: 5000000  # ~5MB
+        - name: res
+          in: formData
+          description: Result object as JSON serialized string object
+          required: true
+          type: string
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+# complex objects have schema definitions
+definitions:
+  HTML:
+    type: string

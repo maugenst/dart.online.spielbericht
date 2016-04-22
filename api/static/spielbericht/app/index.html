@@ -1,0 +1,341 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BDL Online Spielbericht</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/ergebnistabelle.css">
+    <link rel="stylesheet" href="styles/sticky-footer.css">
+    <link rel="stylesheet" href="styles/bootstrap-select.css">
+    <link rel="stylesheet" href="styles/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!-- HOMESCREEN ICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon-144x144.png" />
+    <link rel="icon" sizes="192x192" href="images/icon-192x192.png">
+    <link rel="icon" sizes="144x144" href="images/icon-144x144.png">
+    <link rel="manifest" href="manifest.json">
+    <!-- HOMESCREEN ICONS -->
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/bootstrap-slider.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+</head>
+
+<body onunload="askUserOnUnload()">
+
+<div id="busyindicator" class="uploadContainer">
+  <h1>Daten werden übertragen...</h1>
+</div>
+
+<div id="hiddenSummaryTableContainer" style="visibility:hidden; position:absolute; width:0px; height:0px"></div>
+
+<div id="hiddenInputFieldContainer" style="visibility:hidden; position:absolute; width:0px; height:0px">
+  <div id="nachmeldungenRowContent" class="col col-xs-12">
+    <br>
+    <div style="font-weight: bold">Nachmeldungen Heim:</div>
+    <input type="text" id="nachmeldung_fh1" name="nachmeldungHeim1" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name1">
+    <div id="fh1" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fh2" name="nachmeldungHeim2" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name2">
+    <div id="fh2" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fh3" name="nachmeldungHeim3" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name3">
+    <div id="fh3" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fh4" name="nachmeldungHeim4" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name4">
+    <div id="fh4" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <br>
+    <div style="font-weight: bold">Nachmeldungen Gast:</div>
+    <input type="text" id="nachmeldung_fg1" name="nachmeldungGast1" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name1">
+    <div id="fg1" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fg2" name="nachmeldungGast2" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name2">
+    <div id="fg2" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fg3" name="nachmeldungGast3" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name3">
+    <div id="fg3" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+    <input type="text" id="nachmeldung_fg4" name="nachmeldungGast4" pattern="[a-zA-z\s\u00C0-\u024f\-]+" title="Bitte nur erlaubte Zeichen und Buchstaben." placeholder="Name4">
+    <div id="fg4" style="color: red; font-weight: bolder; display: none">ERROR: Eingabefehler</div>
+    <br>
+  </div>
+
+  <div id="inputsForSingleHome">
+    <select id="name1" name="name1" onchange="checkSelection();" class="selectpicker"></select>
+    <a id="linkmore1" onclick="switchMore('more1', $('#linkmore1').text().indexOf('More') != -1)" />More +</a>
+    <div class="spacer"></div>
+    <div id="more1" class="more">
+      <input id="sl1" name="sl1" type="text" size="3" placeholder="SL">
+      <input id="hf1" name="hf1" type="text" size="3" placeholder="HF">
+      <input id="i180er1" name="i180er1" type="text" pattern="\d*" size="3" placeholder="180er">
+    </div>
+  </div>
+
+  <div id="inputsForSingleGuest">
+    <select id="name2" name="name2" onchange="checkSelection();" class="selectpicker"></select>
+    <a id="linkmore2" onclick="switchMore('more2', $('#linkmore2').text().indexOf('More') != -1)" />More +</a>
+    <div id="more2" class="more">
+      <input id="sl2" name="sl2" type="text" size="3" placeholder="SL">
+      <input id="hf2" name="hf2" type="text" size="3" placeholder="HF">
+      <input id="i180er2" name="i180er2" type="text" pattern="\d*" size="3" placeholder="180er">
+    </div>
+  </div>
+
+  <div id="inputsForDoubleHome">
+    <select id="heimname1" name="heimname1" onchange="checkSelection();" class="selectpicker"></select>
+    <a id="linkdmore1" onclick="switchMore('dmore1', $('#linkdmore1').text().indexOf('More') != -1)" />More +</a>
+    <div id="dmore1" class="more">
+      <input id="dsl1" name="dsl1" type="text" size="3" placeholder="SL">
+      <input id="dhf1" name="dhf1" type="text" size="3" placeholder="HF">
+      <input id="di180er1" name="di180er1" type="text" pattern="\d*" size="3" placeholder="180er">
+    </div>
+    <div class="spacer"></div>
+    <select id="heimname2" name="heimname2" onchange="checkSelection();" class="selectpicker"></select>
+    <a id="linkdmore2" onclick="switchMore('dmore2', $('#linkdmore2').text().indexOf('More') != -1)" />More +</a>
+    <div id="dmore2" class="more">
+      <input id="dhf2" name="dhf2" type="text" size="3" placeholder="HF">
+      <input id="di180er2" name="di180er2" type="text" pattern="\d*" size="3" placeholder="180er">
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+  <div id="inputsForDoubleGuest">
+    <select id="gastname1" name="gastname1" onchange="checkSelection();" class="selectpicker"></select>
+    <a id="linkdmore3" onclick="switchMore('dmore3', $('#linkdmore3').text().indexOf('More') != -1)" />More +</a>
+    <div id="dmore3" class="more">
+      <input id="dsl2" name="dsl2" type="text" size="3" placeholder="SL">
+      <input id="dhf3" name="dhf3" type="text" size="3" placeholder="HF">
+      <input id="di180er3" name="di180er3" type="text" pattern="\d*" size="3" placeholder="180er">
+    </div>
+    <div class="spacer"></div>
+    <select id="gastname2" name="gastname2" onchange="checkSelection();" class="selectpicker"></select>
+    <a id="linkdmore4" onclick="switchMore('dmore4', $('#linkdmore4').text().indexOf('More') != -1)" />More +</a>
+    <div id="dmore4" class="more">
+      <input id="dhf4" name="dhf4" type="text" size="3" placeholder="HF">
+      <input id="di180er4" name="di180er4" type="text" pattern="\d*" size="3" placeholder="180er">
+    </div>
+    <div class="spacer"></div>
+  </div>
+
+</div>
+
+<div id="inputFormDialog" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+        <div id="spielHeadline"></div>
+      </div>
+      <div class="modal-body">
+        <form id="playerForm" action="index2.html" method="get" onSubmit="document.getElementById('summaryTableContainer').scrollIntoView()">
+          <input id="heim" name="heim" type="hidden">
+          <input id="gast" name="gast" type="hidden">
+          <input id="spiel" name="spiel" type="hidden">
+          <div id="spielerHeim"></div>
+          <div id="ergSelection" style="visibility:hidden">
+            <input id="ergSlider" /><span><font class="ergDisplay">&nbsp;&nbsp;</font><font id="ergDisplay" class="ergDisplay">3:0</font></span>
+          </div>
+          <div class="spacer"></div>
+          <div id="spielerGast"></div>
+          <div class="spacer"></div>
+
+          <!--input id="speichern" type="submit" name="speichern" value="Ergebnis sichern..." disabled="disabled" style="display:none"-->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="speichern" type="button" data-dismiss="modal" class="btn btn-primary" onclick="internalStore()">Speichern</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img alt="Badische Dart Liga" src="images/bdl-headerIcon_bw.png" height="20px"> BDL Online Spielbericht</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div role="tabpanel">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" id="myTabs">
+      <li role="presentation" class="active"><a href="#wahl" aria-controls="wahl" role="tab" data-toggle="tab">Partie</a></li>
+      <li role="presentation"><a href="#eingabe" aria-controls="eingabe" role="tab" data-toggle="tab">Eingabe</a></li>
+      <li role="presentation"><a href="#statistic" aria-controls="statistic" role="tab" data-toggle="tab">Statistik</a></li>
+      <li role="presentation"><a href="#absenden" aria-controls="absenden" role="tab" data-toggle="tab">Absenden</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+      <div role="tabpanel" class="tab-pane active" id="wahl">
+        <div class="body-content">
+            <table class="mytable">
+              <tbody>
+                <tr>
+                  <td>Heim:</td>
+                  <td>
+                    <select id="teamheim" name="teamheim" onchange="checkOnTeamSelection();" class="selectpicker">
+                      <option>...</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><input type="text" id="emailHeim" name="emailHeim" placeholder="teamkapitän@heim.de" class="form-control"></td>
+                </tr>
+                <tr>
+                  <td>Gast:</td>
+                  <td>
+                    <select id="teamgast" name="teamgast" onchange="checkOnTeamSelection();" class="selectpicker">
+                      <option>...</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><input type="text" id="emailGast" name="emailGast" placeholder="teamkapitän@gast.de" class="form-control"></td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <input id="nachmeldungenCheckbox" type="checkbox" value="nachmeldungen" onclick="showNachmeldungen();"> Gibt es Nachmeldungen?
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="row">
+              <div class="col col-xs-12">
+               <br>
+              </div>
+            </div>
+            <div id="nachmeldungenRow" class="row" style="display:none">
+            </div>
+            <div class="row">
+              <div class="col col-xs-12">
+               <input id="gameOnButton" type="button" value="Game On..." disabled="disabled" onclick="escapeAll()">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-xs-12">
+               <div class="smaller"><br>Nachträgliche Änderungen bezüglich der spielenden Mannschaften oder Nachmeldungen werden
+               nur durch erneutes Drücken des <u>Game On...</u>-Buttons übernommen.
+               <br>WICHTIG: Alle Einträge gehen dadurch verloren.</div>
+              </div>
+            </div>
+            <input id="nachmeldungen" name="nachmeldungen" type="hidden">
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="eingabe">
+        <div id="summaryTableContainer">
+          <br>
+          <table id="summaryTable" class="ergebnistabelle">
+            <thead>
+             <tr class="gegnerNamen">
+               <td colspan=3>HEIM:</td>
+               <td id="heimFeldInTable" style="color:gold">...</td>
+               <td>GAST:</td>
+               <td colspan=4 id="gastFeldInTable" style="color:gold">...</td>
+             </tr>
+             <tr class="gegnerNamen">
+                <th><div class="thRotated">SL</div></th>
+                <th><div class="thRotated">HF</div></th>
+                <th><div class="thRotated">180er</div></th>
+                <th style="width:40%">Name</th>
+                <th>&nbsp;</th>
+                <th style="width:40%">Name</th>
+                <th><div class="thRotated">180er</div></th>
+                <th><div class="thRotated">HF</div></th>
+                <th><div class="thRotated">SL</div></th>
+             </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="statistic">
+        <br>
+        <table id="scoresTable" class="ergebnistabelle scoreTable">
+          <thead>
+            <tr>
+              <th style='width:1px; text'>Name</th>
+              <th>&nbsp;</th>
+              <th style='width:1px'>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+
+        <div role="tabpanel" class="tab-pane" id="absenden">
+        <br>
+
+
+        <form id="sendMail" action="/bedelos/result" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()" onSubmit="displayBusyIndicator()">
+            <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
+            <textarea id="emailCSSStyles" name="emailCSSStyles" style="display:none"></textarea>
+            <textarea id="emailSummaryTable" name="emailSummaryTable" style="display:none"></textarea>
+            <input type="text" id="tcHeim" name="tcHeim" style="display:none">
+            <input type="text" id="tcGast" name="tcGast" style="display:none">
+            <input type="text" id="ergebnisRAW" name="res" style="display:none">
+            Um den Spielbericht an den Spielleiter der BDL abzuschicken musst Du online gehen.
+            Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
+            <br><input type="file" name="picture" capture="camera" accept="image/*" id="takePictureField">
+            <br><br>
+            <input type="submit" name="submit" value="Absenden" id="sendMailSubmit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br>
+<hr>
+
+<footer class="footer">
+  <div class="container">
+    &copy; <b><a href="mailto:marius.augenstein@gmail.com">Marius Augenstein (2015)</a></b> (<a href="http://bdl-online-spielplan.lima-city.de/impressum.html">Impressum</a>) <br>
+    <a href="http://www.badischedartliga.de">Badische Dart Liga</a> | <a href="http://bdl-online-spielplan.lima-city.de">BDL Online Spielbericht</a>
+  </div>
+</footer>
+
+<script src="scripts/bootstrap-select.min.js"></script>
+<script src="scripts/Spielbericht.js"></script>
+
+<script>
+    $.getJSON( "players.json", function(oResponse){
+        initializeGameSelectionScreen(oResponse);
+    });
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61225517-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
