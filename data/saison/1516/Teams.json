@@ -1,118 +1,534 @@
 {
   "bdl001": {
-    "name": "DC Black Knights Hördt 1"
+    "name": "DC Black Knights Hördt 1",
     "spiellokal": {
-      "name":     "Bistro 7",
-      "strasse":  "Schulzenstr. 24",
-      "ort":      "76771 Hördt"
+      "name": "Bistro 7",
+      "strasse": "Schulzenstr. 24",
+      "ort": "76771 Hördt"
     },
     "teamvertreter": {
       "name": "Sascha Magin",
-      "tel":  "0176 - 31294785",
-      "mail": "Kontakt",
+      "tel": "0176 - 31294785",
+      "mail": ""
     }
   },
   "bdl002": {
     "name": "DC El Diabolo",
     "spiellokal": {
-      "name":     "Bistro Diamonds Lounge",
-      "strasse":  "Lessingstrasse 2",
-      "ort":      "67346 Speyer"
+      "name": "Bistro Diamonds Lounge",
+      "strasse": "Lessingstrasse 2",
+      "ort": "67346 Speyer"
     },
     "teamvertreter": {
       "name": "Sebastian Schaaf",
-      "tel":  "0173 - 8285427",
-      "mail": "Kontakt"
+      "tel": "0173 - 8285427",
+      "mail": ""
     }
   },
   "bdl003": {
     "name": "DC Flatliners Karlsruhe 1",
     "spiellokal": {
-      "name":     "Vereinsheim DC Flatliners",
-      "strasse":  "Hardtstr. 37 (Bau II)",
-      "ort":      "76185 Karlsruhe"
+      "name": "Vereinsheim DC Flatliners",
+      "strasse": "Hardtstr. 37 (Bau II)",
+      "ort": "76185 Karlsruhe"
     },
     "teamvertreter": {
       "name": "Markus Kellner",
-      "tel":  "0172 - 1397366",
-      "mail": "Kontakt"
+      "tel": "0172 - 1397366",
+      "mail": ""
     }
   },
   "bdl004": {
     "name": "Dartspub Walldorf 2",
     "spiellokal": {
-      "name":     "Gaststätte Zur alten Rose"
-      "strasse":  "Häusserstr. 22",
-      "ort":      "68789 St. Leon"
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon"
     },
     "teamvertreter": {
       "name": "Köhler Sabine",
-      "tel":  "0160 - 1830520",
-      "mail": "Kontakt",
+      "tel": "0160 - 1830520",
+      "mail": ""
     }
   },
   "bdl005": {
     "name": "Gegen die Drück 1",
     "spiellokal": {
-      "name":     "Bistro J Dartkneipe",
-      "strasse":  "Rudolf-Diesel-Str. 2",
-      "ort":      "69207 Sandhausen"
+      "name": "Bistro J Dartkneipe",
+      "strasse": "Rudolf-Diesel-Str. 2",
+      "ort": "69207 Sandhausen"
     },
     "teamvertreter": {
       "name": "Michael Häussler",
-      "tel":  "0176 - 84883613",
-      "mail": "Kontakt"
+      "tel": "0176 - 84883613",
+      "mail": ""
     }
   },
   "bdl006": {
     "name": "Gegen die Drück 2",
     "spiellokal": {
-      "name":     "Bistro J Dartkneipe",
-      "strasse":  "Rudolf-Diesel-Str. 2",
-      "ort":      "69207 Sandhausen"
+      "name": "Bistro J Dartkneipe",
+      "strasse": "Rudolf-Diesel-Str. 2",
+      "ort": "69207 Sandhausen"
     },
     "teamvertreter": {
       "name": "Matthias Margraf",
-      "tel":  "06221 - 737040",
-      "mail": "Kontakt"
+      "tel": "06221 - 737040",
+      "mail": ""
     }
   },
   "bdl007": {
     "name": "Taraxacuma Bulls",
     "spiellokal": {
-      "name":     "Holzwurm",
-      "strasse":  "Rheinstr. 60",
-      "ort":      "76661 Philippsburg-Huttenheim"
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
     },
     "teamvertreter": {
       "name": "Michael Ebner",
-      "tel":  "0170 - 1867410",
-      "mail": "Kontakt"
+      "tel": "0170 - 1867410",
+      "mail": ""
     }
   },
   "bdl008": {
     "name": "Taraxacuma Eagles",
     "spiellokal": {
-      "name":     "Holzwurm",
-      "strasse":  "Rheinstr. 60",
-      "ort":      "76661 Philippsburg-Huttenheim"
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
     },
     "teamvertreter": {
       "name": "Tobias Seibert",
-      "tel":  "0176 - 67039309",
-      "mail": "Kontakt",
+      "tel": "0176 - 67039309",
+      "mail": ""
     }
   },
   "bdl009": {
     "name": "Taraxacuma Lions",
     "spiellokal": {
-      "name":     "Holzwurm",
-      "strasse":  "Rheinstr. 60",
-      "ort":      "76661 Philippsburg-Huttenheim"
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
     },
     "teamvertreter": {
       "name": "Daniel Hoffmann",
-      "tel":  "0178 - 1590128",
+      "tel": "0178 - 1590128",
+      "mail": ""
+    }
+  },
+  "bdl010": {
+    "name": "Alla Häeeeehr Pforzheim",
+    "spiellokal": {
+      "name": "Vereinsheim Alla Häeeeehr",
+      "strasse": "Blücherstr. 32",
+      "ort": "75177 Pforzheim"
+    },
+    "teamvertreter": {
+      "name": "Alexander Schmidt",
+      "tel": "0176 - 31492625",
+      "mail": ""
+    }
+  },
+  "bdl011": {
+    "name": "BDC Breakers",
+    "spiellokal": {
+      "name": "Cafe Ricks",
+      "strasse": "Melanchthonstr. 100",
+      "ort": "75015 Bretten"
+    },
+    "teamvertreter": {
+      "name": "Steffen Stiess",
+      "tel": "0176 - 80563652",
+      "mail": ""
+    }
+  },
+  "bdl012": {
+    "name": "Dartspub Walldorf 3",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon"
+    },
+    "teamvertreter": {
+      "name": "Dirk Hoffmann",
+      "tel": "0174 - 5287861",
+      "mail": " "
+    }
+  },
+  "bdl0013": {
+    "name": "DC Black Knights Hördt 2",
+    "spiellokal": {
+      "name": "Bistro 7",
+      "strasse": "Schulzenstr. 24",
+      "ort": "76771 Hördt"
+    },
+    "teamvertreter": {
+      "name": "Christian Kochendörfer",
+      "tel": "0176 - 80225468",
+      "mail": ""
+    }
+  },
+  "bdl0014": {
+    "name": "DC Flatliners Karlsruhe 2",
+    "spiellokal": {
+      "name": "Vereinsheim DC Flatliners",
+      "strasse": "Hardtstr. 37 (Bau II)",
+      "ort": "76185 Karlsruhe"
+    },
+    "teamvertreter": {
+      "name": "Peter Krauss",
+      "tel": "0176 - 47273727",
+      "mail": ""
+    }
+  },
+  "bdl0015": {
+    "name": "DC LaOla Weinheim",
+    "spiellokal": {
+      "name": "LaOla",
+      "strasse": "Ahornstr. 48",
+      "ort": "69469 Weinheim"
+    },
+    "teamvertreter": {
+      "name": "Simone Howe",
+      "tel": "0157 - 85605123",
+      "mail": " "
+    }
+  },
+  "bdl0016": {
+    "name": "DC Letschebach",
+    "spiellokal": {
+      "name": "Florisimo",
+      "strasse": "Raiherwiesenstr. 13",
+      "ort": "76227 Karlsruhe-Durlach"
+    },
+    "teamvertreter": {
+      "name": "Michael Meier",
+      "tel": "0173 - 7910197",
+      "mail": " "
+    }
+  },
+  "bdl017": {
+    "name": "DC Reiterstüble Eppingen 1",
+    "spiellokal": {
+      "name": "Reiterstüble",
+      "strasse": "Talstr. 25",
+      "ort": "75031 Eppingen"
+    },
+    "teamvertreter": {
+      "name": " Philipp Allgeier",
+      "tel": "0176 - 32524254",
+      "mail": ""
+    }
+  },
+  "bdl018": {
+    "name": "DC Studenten Bellheim",
+    "spiellokal": {
+      "name": "Tom`s Cafè Bistro",
+      "strasse": "Hauptstr. 106",
+      "ort": "76756 Bellheim"
+    },
+    "teamvertreter": {
+      "name": "Patrick Alexander",
+      "tel": "0160 - 96592470",
+      "mail": ""
+    }
+  },
+  "bdl019": {
+    "name": "DC Underground Fool`s",
+    "spiellokal": {
+      "name": "Vereinsheim Underground Fool`s",
+      "strasse": "Ispringer Str. 1-3",
+      "ort": "75177 Pforzheim"
+    },
+    "teamvertreter": {
+      "name": "Heiko Fruhner",
+      "tel": "0173 - 9983799",
+      "mail": ""
+    }
+  },
+  "bdl020": {
+    "name": "Freygerber Fighters",
+    "spiellokal": {
+      "name": "Freygerber 7",
+      "strasse": "Hauptstr. 117",
+      "ort": "76744 Wörth/Schaidt"
+    },
+    "teamvertreter": {
+      "name": "Bastie Thies",
+      "tel": "0157 - 74588193",
+      "mail": ""
+    }
+  },
+  "bdl021": {
+    "name": "1. DC Jokers Hockenheim",
+    "spiellokal": {
+      "name": "Fortuna Kegelcenter",
+      "strasse": "Untere Hauptstr. 8",
+      "ort": "68766 Hockenheim"
+    },
+    "teamvertreter": {
+      "name": "Martin Huber",
+      "tel": "06205 - 15187",
+      "mail": ""
+    }
+  },
+  "bdl022": {
+    "name": "DC Reiterstüble Eppingen 2",
+    "spiellokal": {
+      "name": "Reiterstüble",
+      "strasse": "Talstr. 25",
+      "ort": "75031 Eppingen"
+    },
+    "teamvertreter": {
+      "name": "Dirk Scholz",
+      "tel": "0172 - 9555312",
+      "mail": ""
+    }
+  },
+  "bdl023": {
+    "name": "DC Undertaker reloaded 1",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon"
+    },
+    "teamvertreter": {
+      "name": "Uwe Mecklenburg",
+      "tel": "0151 - 18707207",
+      "mail": ""
+    }
+  },
+  "bdl024": {
+    "name": "DC Undertaker reloaded 2",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon"
+    },
+    "teamvertreter": {
+      "name": "Dominik Boss",
+      "tel": "0157 - 85073806",
+      "mail": ""
+    }
+  },
+  "bdl025": {
+    "name": "Gegen die Drück 3",
+    "spiellokal": {
+      "name": "Bistro J Dartkneipe",
+      "strasse": "Rudolf-Diesel-Str. 2",
+      "ort": "69207 Sandhausen"
+    },
+    "teamvertreter": {
+      "name": "Bastian Durchholz",
+      "tel": "0176 - 70893048",
+      "mail": ""
+    }
+  },
+  "bdl026": {
+    "name": "Gegen die Drück 4",
+    "spiellokal": {
+      "name": "Bistro J Dartkneipe",
+      "strasse": "Rudolf-Diesel-Str. 2",
+      "ort": "69207 Sandhausen"
+    },
+    "teamvertreter": {
+      "name": "Yvonne Mocker",
+      "tel": "0152 - 01003354",
+      "mail": ""
+    }
+  },
+  "bdl027": {
+    "name": "Ideal Wild Tigers",
+    "spiellokal": {
+      "name": "Bistro Ideal",
+      "strasse": "Mannheimer Str. 44a",
+      "ort": "68723 Oftersheim"
+    },
+    "teamvertreter": {
+      "name": "Susanne Thoma",
+      "tel": "0170 - 4813373",
+      "mail": ""
+    }
+  },
+  "bdl028": {
+    "name": "Iron Eagles",
+    "spiellokal": {
+      "name": "Bistro Connect",
+      "strasse": "Langgasse 32",
+      "ort": "67459 Böhl-Iggelheim"
+    },
+    "teamvertreter": {
+      "name": "Tobias Mohr",
+      "tel": "0176 - 30454995",
+      "mail": ""
+    }
+  },
+  "bdl029": {
+    "name": "Taraxacuma 3",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
+    },
+    "teamvertreter": {
+      "name": "Andrea Richard",
+      "tel": "02756 - 944310 (ab 19 Uhr)",
+      "mail": ""
+    }
+  },
+  "bdl030": {
+    "name": "Taraxacuma TNT",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
+    },
+    "teamvertreter": {
+      "name": "Ralf Stegmüller",
+      "tel": "07254 - 985210",
+      "mail": ""
+    }
+  },
+  "bdl031": {
+    "name": "Team Wilder Mann",
+    "spiellokal": {
+      "name": "Bistro Ideal",
+      "strasse": "Mannheimer Str. 44a",
+      "ort": "68723 Oftersheim"
+    },
+    "teamvertreter": {
+      "name": "Jörg Bogumil",
+      "tel": "0173 - 6887503",
+      "mail": ""
+    }
+  },
+  "bdl032": {
+    "name": "Blau-Weiß Karlsruhe",
+    "spiellokal": {
+      "name": "Dart Schubbe",
+      "strasse": "Steinkreuzstr. 14",
+      "ort": "76228 Karlsruhe-Wolfartsweier"
+    },
+    "teamvertreter": {
+      "name": "Tobias Götzelmann",
+      "tel": "0178 - 4981045",
+      "mail": ""
+    }
+  },
+  "bdl033": {
+    "name": "D.A.R.T. Plumbata",
+    "spiellokal": {
+      "name": "Church Chill",
+      "strasse": "Karlstrasse 113",
+      "ort": "76137 Karlsruhe"
+    },
+    "teamvertreter": {
+      "name": "Melanie Klomann",
+      "tel": "0176 - 80665025",
+      "mail": ""
+    }
+  },
+  "bdl034": {
+    "name": "Dart Train Rastatt",
+    "spiellokal": {
+      "name": "Zur Fohlenweide",
+      "strasse": "Ötigheimer Weg 92",
+      "ort": "76437 Rastatt"
+    },
+    "teamvertreter": {
+      "name": "Dieter Philipp",
+      "tel": "0171 - 6011849",
+      "mail": ""
+    }
+  },
+  "bdl035": {
+    "name": "DC 81 Karlsruhe",
+    "spiellokal": {
+      "name": "Der Hexenkessel",
+      "strasse": "Hardtstr. 45a",
+      "ort": "76185 Karlsruhe"
+    },
+    "teamvertreter": {
+      "name": "Marco Müller",
+      "tel": "0160 - 7356535",
+      "mail": ""
+    }
+  },
+  "bdl036": {
+    "name": "DC Shamrock",
+    "spiellokal": {
+      "name": "Matzes Pub",
+      "strasse": "Heidelberger Str. 1",
+      "ort": "76669 Bad Schönborn"
+    },
+    "teamvertreter": {
+      "name": "Benjamin Bischoff",
+      "tel": "0170 - 5493211",
+      "mail": ""
+    }
+  },
+  "bdl0037": {
+    "name": "Gaggenauer Dartmoskitos 1",
+    "spiellokal": {
+      "name": "Am Traischbachstadion",
+      "strasse": "Waldstr. 38",
+      "ort": "76571 Gaggenau"
+    },
+    "teamvertreter": {
+      "name": "Christian Schorpp",
+      "tel": "01590 - 5059535",
+      "mail": ""
+    }
+  },
+  "bdl038": {
+    "name": "Gaggenauer Dartmoskitos 2",
+    "spiellokal": {
+      "name": "Am Traischbachstadion",
+      "strasse": "Waldstr. 38",
+      "ort": "76571 Gaggenau"
+    },
+    "teamvertreter": {
+      "name": "Joachim Pflüger",
+      "tel": "0170 - 6059950",
+      "mail": ""
+    }
+  },
+  "bdl039": {
+    "name": "Karlsruher Dart Freunde (KDF)",
+    "spiellokal": {
+      "name": "Dart-Trainingszentrum",
+      "strasse": "Hauptstrasse 87",
+      "ort": "76344 Eggenstein"
+    },
+    "teamvertreter": {
+      "name": "Fabian Mager",
+      "tel": "0179 - 9034821",
+      "mail": ""
+    }
+  },
+  "bdl040": {
+    "name": "Taraxacuma Tornados",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
+    },
+    "teamvertreter": {
+      "name": "Dieter Richard",
+      "tel": "07256 - 944310 (ab 19 Uhr)",
+      "mail": ""
+    }
+  },
+  "bdl041": {
+    "name": "Taraxacuma Wölfe",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim"
+    },
+    "teamvertreter": {
+      "name": "Diana Damsons",
+      "tel": "0176 - 57623854",
       "mail": ""
     }
   }
