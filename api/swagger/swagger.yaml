@@ -29,6 +29,30 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /spielplan:
+    x-swagger-router-controller: bedelos.Spielplan
+    get:
+      produces:
+        - text/html
+      description:
+        Displays the spielplan
+      parameters:
+        - name: liga
+          type: string
+          description: Liga ID
+          in: query
+          required: true
+        - name: runde
+          type: string
+          description: Vorrunde (vr) oder Rückrunde (rr)
+          in: query
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /result:
     x-swagger-router-controller: bedelos.Result
     post:

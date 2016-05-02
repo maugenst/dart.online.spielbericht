@@ -1,388 +1,389 @@
-Name;Vorname;Verein;Spielklasse
+Name;Vorname;Team;Teamid;Liga
 
-Fütterer;Dirk;1.DC Jokers Hockenheim;Kreisliga Nord
-Fütterer;Markus;1.DC Jokers Hockenheim;Kreisliga Nord
-Hansky;Christian;1.DC Jokers Hockenheim;Kreisliga Nord
-Havenstein;Dirk;1.DC Jokers Hockenheim;Kreisliga Nord
-Hocker;Patrick;1.DC Jokers Hockenheim;Kreisliga Nord
-Huber;Martin (TC);1.DC Jokers Hockenheim;Kreisliga Nord
-Stetter;Christian;1.DC Jokers Hockenheim;Kreisliga Nord
-Walter;Florian;1.DC Jokers Hockenheim;Kreisliga Nord
-Weimar;Stefan;1.DC Jokers Hockenheim;Kreisliga Nord
-Werner;Patrick;1.DC Jokers Hockenheim;Kreisliga Nord
-Becker;Marcel;1.DC Jokers Hockenheim;Kreisliga Nord
-Fischer;Mario;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Gärtner;Gabi;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Köster;Nadja;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Laukhuff;Manuel;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Niehage;Mike;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Rösinger;Ralf;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Scholz;Dirk (TC);DC Reiterstüble Eppingen 2;Kreisliga Nord
-Woldt;Dieter;DC Reiterstüble Eppingen 2;Kreisliga Nord
-Albert;Vanessa;DC Undertaker reloaded 1;Kreisliga Nord
-Albrecht;Robert;DC Undertaker reloaded 1;Kreisliga Nord
-Boss;Mike;DC Undertaker reloaded 1;Kreisliga Nord
-Freiseis;Heinz;DC Undertaker reloaded 1;Kreisliga Nord
-Greulich;Kolja;DC Undertaker reloaded 1;Kreisliga Nord
-Hagmann;Kim;DC Undertaker reloaded 1;Kreisliga Nord
-Knebel;Matthias;DC Undertaker reloaded 1;Kreisliga Nord
-Mecklenburg;Uwe (TC);DC Undertaker reloaded 1;Kreisliga Nord
-Steiner;Thomas;DC Undertaker reloaded 1;Kreisliga Nord
-Boss;Dominik (TC);DC Undertaker reloaded 2;Kreisliga Nord
-Embach;Martin;DC Undertaker reloaded 2;Kreisliga Nord
-Freiseis;Frank;DC Undertaker reloaded 2;Kreisliga Nord
-Fuchs;Karl-Heinz;DC Undertaker reloaded 2;Kreisliga Nord
-Kost;Patrick;DC Undertaker reloaded 2;Kreisliga Nord
-Raptis;Nikolaos;DC Undertaker reloaded 2;Kreisliga Nord
-Stelle;Mike;DC Undertaker reloaded 2;Kreisliga Nord
-Zang;Lothar;DC Undertaker reloaded 2;Kreisliga Nord
-Fraile;Antonio;DC Undertaker reloaded 2;Kreisliga Nord
-Lochbaum;Lars;Iron Eagles;Kreisliga Nord
-Lucas;Jan;Iron Eagles;Kreisliga Nord
-Mohr;Markus;Iron Eagles;Kreisliga Nord
-Mohr;Tobias (TC);Iron Eagles;Kreisliga Nord
-Schulzendorf;Ralf;Iron Eagles;Kreisliga Nord
-Weber;Florian;Iron Eagles;Kreisliga Nord
-Zuber;Sven;Iron Eagles;Kreisliga Nord
-Gerdon;Marcel;Iron Eagles;Kreisliga Nord
-Anselmann;Tim;Gegen die Drück 3;Kreisliga Nord
-Durchholz;Bastian (TC);Gegen die Drück 3;Kreisliga Nord
-Gawlik;Ralf;Gegen die Drück 3;Kreisliga Nord
-Jany;Christian;Gegen die Drück 3;Kreisliga Nord
-Schied;Andreas;Gegen die Drück 3;Kreisliga Nord
-Skrzypek;Iwana;Gegen die Drück 3;Kreisliga Nord
-Weber;Holger;Gegen die Drück 3;Kreisliga Nord
-Stache;Manuela;Gegen die Drück 4;Kreisliga Nord
-Gumsheimer;Tina;Gegen die Drück 4;Kreisliga Nord
-Mack;Renate;Gegen die Drück 4;Kreisliga Nord
-Winter;Anna;Gegen die Drück 4;Kreisliga Nord
-Margraf;Sandra;Gegen die Drück 4;Kreisliga Nord
-Mocker;Yvonne (TC);Gegen die Drück 4;Kreisliga Nord
-Dworaczek;Anetta;Gegen die Drück 4;Kreisliga Nord
-Hahn;Thomas;Taraxacuma Die Dritte;Kreisliga Nord
-Janin;Sabrina;Taraxacuma Die Dritte;Kreisliga Nord
-Jewell;David;Taraxacuma Die Dritte;Kreisliga Nord
-Kübler;Lukas;Taraxacuma Die Dritte;Kreisliga Nord
-Mohr;Jürgen;Taraxacuma Die Dritte;Kreisliga Nord
-Weick;Andreas;Taraxacuma Die Dritte;Kreisliga Nord
-Werner;Armin;Taraxacuma Die Dritte;Kreisliga Nord
-Werner;Jutta;Taraxacuma Die Dritte;Kreisliga Nord
-Ziege;Dennis;Taraxacuma Die Dritte;Kreisliga Nord
-Richard;Andrea (TC);Taraxacuma Die Dritte;Kreisliga Nord
-Hodorff;Tanja;Taraxacuma Die Dritte;Kreisliga Nord
-Barth;Holger;Taraxacuma TNT;Kreisliga Nord
-Groß;Christina;Taraxacuma TNT;Kreisliga Nord
-Riedle;Heinz;Taraxacuma TNT;Kreisliga Nord
-Schmidt;Jochen;Taraxacuma TNT;Kreisliga Nord
-Schmidt;Tobias;Taraxacuma TNT;Kreisliga Nord
-Schmitteckert;Bernd;Taraxacuma TNT;Kreisliga Nord
-Schmitteckert;Sascha;Taraxacuma TNT;Kreisliga Nord
-Stegmüller;Ralf (TC);Taraxacuma TNT;Kreisliga Nord
-Steinle;Stefan;Taraxacuma TNT;Kreisliga Nord
-Resch;Kimo;Taraxacuma TNT;Kreisliga Nord
-Bachert;Steffen;Team Ideal Wild Tigers;Kreisliga Nord
-Baust;Christian;Team Ideal Wild Tigers;Kreisliga Nord
-Brucker;Jürgen;Team Ideal Wild Tigers;Kreisliga Nord
-Buning;Stephanie;Team Ideal Wild Tigers;Kreisliga Nord
-Schweitzer;Ralf;Team Ideal Wild Tigers;Kreisliga Nord
-Mack;Paul Curtiss;Team Ideal Wild Tigers;Kreisliga Nord
-Thoma;Susanne (TC);Team Ideal Wild Tigers;Kreisliga Nord
-Bogumil;Jörg (TC);Team Wilder Mann;Kreisliga Nord
-Da Silvanovo;Antonio;Team Wilder Mann;Kreisliga Nord
-Lamoth;Uwe;Team Wilder Mann;Kreisliga Nord
-Mehlmer;Bernd;Team Wilder Mann;Kreisliga Nord
-Michl;Rolf;Team Wilder Mann;Kreisliga Nord
-Schell;Thomas;Team Wilder Mann;Kreisliga Nord
-Burkart;Christian;Dart Train Rastatt;Kreisliga Süd
-Fritz;Jenny;Dart Train Rastatt;Kreisliga Süd
-Handke;Jens;Dart Train Rastatt;Kreisliga Süd
-Havelka;Ralf;Dart Train Rastatt;Kreisliga Süd
-Hellgoth;Martin;Dart Train Rastatt;Kreisliga Süd
-Kilgour;Dave;Dart Train Rastatt;Kreisliga Süd
-Knöbl;Gerd;Dart Train Rastatt;Kreisliga Süd
-Philipp;Dieter (TC);Dart Train Rastatt;Kreisliga Süd
-Redwanz;Klaus;Dart Train Rastatt;Kreisliga Süd
-Barnstedt;Wolfram;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Coogan;Ferghal;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-De Bortoli;Udo;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Götzelmann;Tobias (TC);DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Jock;Bernt;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Oheim;Horst;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Pahlke;Stefan;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Hettich;Markus;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Ploth;Sebastian;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Biernatzki;Christian;DC Blau-Weiß Karlsruhe;Kreisliga Süd
-Antal;Oliver (TC);D.A.R.T. Plumbata;Kreisliga Süd
-Alpino;Fabio;D.A.R.T. Plumbata;Kreisliga Süd
-Augenstein;Marius;D.A.R.T. Plumbata;Kreisliga Süd
-Augenstein;Norbert;D.A.R.T. Plumbata;Kreisliga Süd
-Berninger;Hans;D.A.R.T. Plumbata;Kreisliga Süd
-Berninger;Martin;D.A.R.T. Plumbata;Kreisliga Süd
-Braun;Rene;D.A.R.T. Plumbata;Kreisliga Süd
-Hofmann;Jan;D.A.R.T. Plumbata;Kreisliga Süd
-Höger;Jörg;D.A.R.T. Plumbata;Kreisliga Süd
-Joudi;Josef;D.A.R.T. Plumbata;Kreisliga Süd
-Klein;Ralf;D.A.R.T. Plumbata;Kreisliga Süd
-Klomann;Melanie;D.A.R.T. Plumbata;Kreisliga Süd
-König;Kevin;D.A.R.T. Plumbata;Kreisliga Süd
-Muntz;Hans Peter;D.A.R.T. Plumbata;Kreisliga Süd
-Rohde;Thomas;D.A.R.T. Plumbata;Kreisliga Süd
-Weber;Alexander;D.A.R.T. Plumbata;Kreisliga Süd
-Maier;Mircea;D.A.R.T. Plumbata;Kreisliga Süd
-Bischoff;Benjamin (TC);DC Shamrock;Kreisliga Süd
-During;Andreas;DC Shamrock;Kreisliga Süd
-Espig;Toni;DC Shamrock;Kreisliga Süd
-Hoffmann;Yasmin;DC Shamrock;Kreisliga Süd
-Kimling;Jens;DC Shamrock;Kreisliga Süd
-Kuhn;Alexander;DC Shamrock;Kreisliga Süd
-Pujic;Matthias;DC Shamrock;Kreisliga Süd
-Schlicht;Werner;DC Shamrock;Kreisliga Süd
-Stansch;Tobias;DC Shamrock;Kreisliga Süd
-Wagner;Micha;DC Shamrock;Kreisliga Süd
-Kohrt;Florian;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Krzyzanowski;Lukas;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Nowak;Lukas;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Nowak;Martin;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Schorpp;Christian (TC);Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Schubert;Bastian;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Walz;David;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Schier;Mark;Gaggenauer Dartmoskitos 1;Kreisliga Süd
-Weis;Frank;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Bache;John;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Gleisle;Michael;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Kraft;Thomas;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Pflüger;Joachim (TC);Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Plutta;Mateusz;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Plutta;Ryszard;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Raum;Dominik;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Heidecke;Steffen;Gaggenauer Dartmoskitos 2;Kreisliga Süd
-Mager;Fabian (TC);Karlsruher Dart-Freunde;Kreisliga Süd
-Reeb;Manfred;Karlsruher Dart-Freunde;Kreisliga Süd
-Pilgrim;Jerry;Karlsruher Dart-Freunde;Kreisliga Süd
-Beier;Nora;Karlsruher Dart-Freunde;Kreisliga Süd
-Hentschel Hoffmann;Holger;Karlsruher Dart-Freunde;Kreisliga Süd
-Hoffmann;Kevin;Karlsruher Dart-Freunde;Kreisliga Süd
-Gabel;Sebastian;Karlsruher Dart-Freunde;Kreisliga Süd
-Rometsch;Marco;Karlsruher Dart-Freunde;Kreisliga Süd
-Rometsch;Manuela;Karlsruher Dart-Freunde;Kreisliga Süd
-Müller;Pit;Karlsruher Dart-Freunde;Kreisliga Süd
-Müller;Maurice;Karlsruher Dart-Freunde;Kreisliga Süd
-Müller;Marco (TC);DC 81 Karlsruhe;Kreisliga Süd
-Andert;Iris;DC 81 Karlsruhe;Kreisliga Süd
-Araci;Cihan;DC 81 Karlsruhe;Kreisliga Süd
-Daum;Jürgen;DC 81 Karlsruhe;Kreisliga Süd
-Gegenheimer;Matthias;DC 81 Karlsruhe;Kreisliga Süd
-Göbel;Ralf;DC 81 Karlsruhe;Kreisliga Süd
-Ilchmann;Horst;DC 81 Karlsruhe;Kreisliga Süd
-Müller;Bodo;DC 81 Karlsruhe;Kreisliga Süd
-Neuhaus;Mario;DC 81 Karlsruhe;Kreisliga Süd
-Billmann;Thorsten;Taraxacuma Tornados;Kreisliga Süd
-Cochon;Jose;Taraxacuma Tornados;Kreisliga Süd
-Hecker;Jörg;Taraxacuma Tornados;Kreisliga Süd
-Hurst;Mike;Taraxacuma Tornados;Kreisliga Süd
-Oberacker;Ronny;Taraxacuma Tornados;Kreisliga Süd
-Richard;Dieter (TC);Taraxacuma Tornados;Kreisliga Süd
-Scherer;Andre;Taraxacuma Tornados;Kreisliga Süd
-Vogler;Markus;Taraxacuma Tornados;Kreisliga Süd
-Becker;Steffen;Taraxacuma Wölfe;Kreisliga Süd
-Damsons;Diana (TC);Taraxacuma Wölfe;Kreisliga Süd
-Gutting;Ralf;Taraxacuma Wölfe;Kreisliga Süd
-Kartach;Jörg;Taraxacuma Wölfe;Kreisliga Süd
-Keilhauer;Armin;Taraxacuma Wölfe;Kreisliga Süd
-Becker;Christine;Taraxacuma Wölfe;Kreisliga Süd
-Knobloch;Andreas;Taraxacuma Wölfe;Kreisliga Süd
-Deeg;Carlo;Taraxacuma Wölfe;Oberliga
-Schlicht;Daniel;Taraxacuma Wölfe;Oberliga
-Hölzle;Kai;Alla Häeeeehr Pforzheim;Bezirksliga
-Hölzle;Maik;Alla Häeeeehr Pforzheim;Bezirksliga
-Hoppe;Harald;Alla Häeeeehr Pforzheim;Bezirksliga
-Korbmann;Robin;Alla Häeeeehr Pforzheim;Bezirksliga
-Korbmann;Pascal;Alla Häeeeehr Pforzheim;Bezirksliga
-Kunze;Sebastian;Alla Häeeeehr Pforzheim;Bezirksliga
-Sauer;Leo;Alla Häeeeehr Pforzheim;Bezirksliga
-Schmidt;Alexander (TC);Alla Häeeeehr Pforzheim;Bezirksliga
-Sauter;Axel;BDC Breakers;Bezirksliga
-Lutz;Harald;BDC Breakers;Bezirksliga
-Müller;Oliver;BDC Breakers;Bezirksliga
-Mergel;Michael;BDC Breakers;Bezirksliga
-Tretter;Markus;BDC Breakers;Bezirksliga
-Fröhlich;Sven;BDC Breakers;Bezirksliga
-Stiess;Steffen (TC);BDC Breakers;Bezirksliga
-Becker;Jens-Dieter;Dartspub Walldorf 3;Bezirksliga
-Besrutsch;Rainer;Dartspub Walldorf 3;Bezirksliga
-Bopp;Florian;Dartspub Walldorf 3;Bezirksliga
-Hoffmann;Dirk (TC);Dartspub Walldorf 3;Bezirksliga
-Hüther;Stefan;Dartspub Walldorf 3;Bezirksliga
-Kieser-Rot;Rita;Dartspub Walldorf 3;Bezirksliga
-Maschek;Uwe;Dartspub Walldorf 3;Bezirksliga
-Stolze;Ralf;Dartspub Walldorf 3;Bezirksliga
-Zimmermann;Jürgen;Dartspub Walldorf 3;Bezirksliga
-Fischer;Thorsten;DC Black Knights Hördt 2;Bezirksliga
-Kasikci;Senol;DC Black Knights Hördt 2;Bezirksliga
-Kieser;Pascal;DC Black Knights Hördt 2;Bezirksliga
-Kochendörfer;Andreas;DC Black Knights Hördt 2;Bezirksliga
-Kochendörfer;Christian (TC);DC Black Knights Hördt 2;Bezirksliga
-Muhl;Jens;DC Black Knights Hördt 2;Bezirksliga
-Mutic;Christian;DC Black Knights Hördt 2;Bezirksliga
-Schanz;Albert;DC Black Knights Hördt 2;Bezirksliga
-Wetzel;Uwe;DC Black Knights Hördt 2;Bezirksliga
-Phillip;Gregor;DC Black Knights Hördt 2;Bezirksliga
-Ansel;Jürgen;DC Flatliners Karlsruhe 2;Bezirksliga
-Heck;Daniel;DC Flatliners Karlsruhe 2;Bezirksliga
-Ihli;Nico;DC Flatliners Karlsruhe 2;Bezirksliga
-Kammerlander;Tobias;DC Flatliners Karlsruhe 2;Bezirksliga
-Karacan;Baris;DC Flatliners Karlsruhe 2;Bezirksliga
-Kirchenbauer;Volker;DC Flatliners Karlsruhe 2;Bezirksliga
-Kovac;Dujko;DC Flatliners Karlsruhe 2;Bezirksliga
-Krauss;Peter (TC);DC Flatliners Karlsruhe 2;Bezirksliga
-Krüger;Felix;DC Flatliners Karlsruhe 2;Bezirksliga
-Moog;Ives;DC Flatliners Karlsruhe 2;Bezirksliga
-Postler;Kevin;DC Flatliners Karlsruhe 2;Bezirksliga
-Weiss;Michael;DC Flatliners Karlsruhe 2;Bezirksliga
-Nüssle;Michael;DC Flatliners Karlsruhe 2;Bezirksliga
-Schätzle;Mirko;DC Flatliners Karlsruhe 2;Bezirksliga
-Schätzle;Timo;DC Flatliners Karlsruhe 2;Bezirksliga
-Brömser;Uwe;DC Letschebach;Bezirksliga
-Gebhard;Michael;DC Letschebach;Bezirksliga
-Haack;Günther;DC Letschebach;Bezirksliga
-Haller;Manuel;DC Letschebach;Bezirksliga
-Heck;Michael;DC Letschebach;Bezirksliga
-Kunzenbacher;Claus;DC Letschebach;Bezirksliga
-Loock;Richard;DC Letschebach;Bezirksliga
-Meier;Michael;DC Letschebach;Bezirksliga
-Özcan;Servet;DC Letschebach;Bezirksliga
-Roa;Markus;DC Letschebach;Bezirksliga
-Allgeier;Philipp;DC Reiterstüble Eppingen 1;Bezirksliga
-Gärtner;Marcel;DC Reiterstüble Eppingen 1;Bezirksliga
-Kaltenmeier;Siegfried;DC Reiterstüble Eppingen 1;Bezirksliga
-Scheyhing;Oliver;DC Reiterstüble Eppingen 1;Bezirksliga
-Unterhuber;Kevin;DC Reiterstüble Eppingen 1;Bezirksliga
-Wabbel;Thomas;DC Reiterstüble Eppingen 1;Bezirksliga
-Alexander;Patrick (TC);DC Studenten Bellheim;Bezirksliga
-Greif;Yannik;DC Studenten Bellheim;Bezirksliga
-Müller;Markus;DC Studenten Bellheim;Bezirksliga
-Niederer;Jochen;DC Studenten Bellheim;Bezirksliga
-Schmidt;Hartmut;DC Studenten Bellheim;Bezirksliga
-Leisinger;Benedikt;DC Studenten Bellheim;Bezirksliga
-Heel;Gerhard;DC Studenten Bellheim;Bezirksliga
-Knopfinger;Jan;DC Studenten Bellheim;Bezirksliga
-Hilzendegen;Sina;DC Studenten Bellheim;Bezirksliga
-Utting;Nico;DC Studenten Bellheim;Bezirksliga
-Schweitzer;Andreas;DC Studenten Bellheim;Bezirksliga
-Busch;Lucas;Freygerber Fighters;Bezirksliga
-Gaab;Sascha;Freygerber Fighters;Bezirksliga
-Groll;Markus;Freygerber Fighters;Bezirksliga
-Jährling;Hans;Freygerber Fighters;Bezirksliga
-Mastafaoni;Bastian;Freygerber Fighters;Bezirksliga
-Mastafaoni;Karim;Freygerber Fighters;Bezirksliga
-Renner;Markus;Freygerber Fighters;Bezirksliga
-Schleppi;Klaus;Freygerber Fighters;Bezirksliga
-Thies;Basti (TC);Freygerber Fighters;Bezirksliga
-Thies;Stefan;Freygerber Fighters;Bezirksliga
-Baron;Michael;Freygerber Fighters;Bezirksliga
-Knebel;Kai;Freygerber Fighters;Bezirksliga
-Howe;Simone (TC);LaOla Weinheim;Bezirksliga
-Baum;Annika;LaOla Weinheim;Bezirksliga
-Demirel;Ali;LaOla Weinheim;Bezirksliga
-Hauck;Rainer;LaOla Weinheim;Bezirksliga
-Hundshammer;Frank;LaOla Weinheim;Bezirksliga
-Krieger;Stefan;LaOla Weinheim;Bezirksliga
-Rauscher;Michael;LaOla Weinheim;Bezirksliga
-Walther;Daniel;LaOla Weinheim;Bezirksliga
-Hämer;Oliver;LaOla Weinheim;Bezirksliga
-Walther;Sven;LaOla Weinheim;Bezirksliga
-Fruhner;Heiko (TC);DC Underground Fool`s;Bezirksliga
-Besesek;Christian;DC Underground Fool`s;Bezirksliga
-Cantanna;Guiseppe;DC Underground Fool`s;Bezirksliga
-Fiedler;Sven;DC Underground Fool`s;Bezirksliga
-Gottmann;Kay;DC Underground Fool`s;Bezirksliga
-Herz;Vitali;DC Underground Fool`s;Bezirksliga
-Kammerer;Miguel;DC Underground Fool`s;Bezirksliga
-Roth;Urban;DC Underground Fool`s;Bezirksliga
-Dürr;Tarek;DC Underground Fool`s;Bezirksliga
-Voggenreiter;Ralf;DC Underground Fool`s;Bezirksliga
-Ayllon;John;Dartspub Walldorf 2;Oberliga
-Bonn;Dominik;Dartspub Walldorf 2;Oberliga
-Bub;Leif-Eric;Dartspub Walldorf 2;Oberliga
-Caroli;Matthias;Dartspub Walldorf 2;Oberliga
-Elbs;Benjamin;Dartspub Walldorf 2;Oberliga
-Große-Stoltenberg;Mika;Dartspub Walldorf 2;Oberliga
-Jäger;Jan;Dartspub Walldorf 2;Oberliga
-Katic;Nikola;Dartspub Walldorf 2;Oberliga
-Kraft;Claudia;Dartspub Walldorf 2;Oberliga
-Köhler;Sabine (TC);Dartspub Walldorf 2;Oberliga
-Moh;Benjamin;Dartspub Walldorf 2;Oberliga
-Pfaff;Hans;Dartspub Walldorf 2;Oberliga
-Spörle;Sabrina;Dartspub Walldorf 2;Oberliga
-Stangl;Thomas;Dartspub Walldorf 2;Oberliga
-Stein;Sascha;Dartspub Walldorf 2;Oberliga
-Wefers;Thorsten;Dartspub Walldorf 2;Oberliga
-Werle;Sebastian;Dartspub Walldorf 2;Oberliga
-Klein;Marco;DC Black Knights Hördt 1;Oberliga
-Krzyzanowski;Sven;DC Black Knights Hördt 1;Oberliga
-Magin;Sascha (TC);DC Black Knights Hördt 1;Oberliga
-Mathis;Delbert;DC Black Knights Hördt 1;Oberliga
-Meisel;Andy;DC Black Knights Hördt 1;Oberliga
-Pfirrmann;Andre;DC Black Knights Hördt 1;Oberliga
-Wolff;Marcus;DC Black Knights Hördt 1;Oberliga
-Baumann;John;DC Flatliners Karlsruhe 1;Oberliga
-Hoffmann;Markus;DC Flatliners Karlsruhe 1;Oberliga
-Hoffmann;Mika;DC Flatliners Karlsruhe 1;Oberliga
-Kellner;Markus (TC);DC Flatliners Karlsruhe 1;Oberliga
-Köhnlein;Thomas;DC Flatliners Karlsruhe 1;Oberliga
-Loy;Marcel;DC Flatliners Karlsruhe 1;Oberliga
-Meyer;Torsten;DC Flatliners Karlsruhe 1;Oberliga
-Mußgnug;Thorsten;DC Flatliners Karlsruhe 1;Oberliga
-Nees;Thomas;DC Flatliners Karlsruhe 1;Oberliga
-Roller;Freddy;DC Flatliners Karlsruhe 1;Oberliga
-Schober;Timo;DC Flatliners Karlsruhe 1;Oberliga
-Spathelf;Stefan;DC Flatliners Karlsruhe 1;Oberliga
-Stübs;Michael;DC Flatliners Karlsruhe 1;Oberliga
-Bürger;Zafer;Gegen die Drück 1;Oberliga
-Fackelmann;Frank;Gegen die Drück 1;Oberliga
-Gund;Thomas;Gegen die Drück 1;Oberliga
-Häusler;Michael (TC);Gegen die Drück 1;Oberliga
-Oberacker;Christian;Gegen die Drück 1;Oberliga
-Orlowski;Ralf;Gegen die Drück 1;Oberliga
-Walther;Kay;Gegen die Drück 1;Oberliga
-Kloh;Patrick;Gegen die Drück 2;Oberliga
-Margraf;Matthias (TC);Gegen die Drück 2;Oberliga
-Muhn;Andre;Gegen die Drück 2;Oberliga
-Muth;Rüdiger;Gegen die Drück 2;Oberliga
-Treiber;Jan;Gegen die Drück 2;Oberliga
-Wittmann;Steffen;Gegen die Drück 2;Oberliga
-Becker;Daniela;Taraxacuma Bulls;Oberliga
-Becker;Jochen;Taraxacuma Bulls;Oberliga
-Ebner;Michael;Taraxacuma Eagles;Oberliga
-Gottwald;Manuela;Taraxacuma Bulls;Oberliga
-Knecht;Dirk;Taraxacuma Bulls;Oberliga
-Schweizer;Jürgen;Taraxacuma Bulls;Oberliga
-Steffen;Cartsen;Taraxacuma Bulls;Oberliga
-Waeldin;Andreas;Taraxacuma Bulls;Oberliga
-Waeldin;Stephanie;Taraxacuma Bulls;Oberliga
-Wiegering;Stefan (TC);Taraxacuma Bulls;Oberliga
-Hotel;Johan;Taraxacuma Eagles;Oberliga
-Link;Stefan;Taraxacuma Eagles;Oberliga
-Maul;Michael;Taraxacuma Eagles;Oberliga
-Seibert;Tobias (TC);Taraxacuma Eagles;Oberliga
-Specht;Andreas;Taraxacuma Eagles;Oberliga
-Wirth;Alexander;Taraxacuma Eagles;Oberliga
-Wittmann;Berthold;Taraxacuma Eagles;Oberliga
-Ehlers;Matthias;Taraxacuma Eagles;Oberliga
-Bernhardt;Christian;Taraxacuma Lions;Oberliga
-Frei;Andreas;Taraxacuma Lions;Oberliga
-Hoffmann;Daniel (TC);Taraxacuma Lions;Oberliga
-Janßen;Holger;Taraxacuma Lions;Oberliga
-Kammerer;Kay;Taraxacuma Lions;Oberliga
-Lüttjohann;Stephan;Taraxacuma Lions;Oberliga
-Sterzing;Frank;Taraxacuma Lions;Oberliga
-Schaaf;Sebastian (TC);DC El Diabolo;Oberliga
-Grebert;Christian;DC El Diabolo;Oberliga
-Hauenstein;Michael;DC El Diabolo;Oberliga
-Lagatie;Marcel;DC El Diabolo;Oberliga
-Müller;Lukas;DC El Diabolo;Oberliga
-Reeb;Roman;DC El Diabolo;Oberliga
-Schade;Christian;DC El Diabolo;Oberliga
-Sülzle;Jürgen;DC El Diabolo;Oberliga
-Weinmann;Patrick;DC El Diabolo;Oberliga
-Reber;Uwe;DC El Diabolo;Oberliga
+Fütterer;Dirk;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Fütterer;Markus;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Hansky;Christian;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Havenstein;Dirk;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Hocker;Patrick;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Huber;Martin (TC);1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Stetter;Christian;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Walter;Florian;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Weimar;Stefan;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Werner;Patrick;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Becker;Marcel;1. DC Jokers Hockenheim;bdl021;Kreisliga Nord
+Fischer;Mario;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Gärtner;Gabi;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Köster;Nadja;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Laukhuff;Manuel;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Niehage;Mike;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Rösinger;Ralf;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Scholz;Dirk (TC);DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Woldt;Dieter;DC Reiterstüble Eppingen 2;bdl022;Kreisliga Nord
+Albert;Vanessa;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Albrecht;Robert;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Boss;Mike;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Freiseis;Heinz;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Greulich;Kolja;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Hagmann;Kim;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Knebel;Matthias;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Mecklenburg;Uwe (TC);DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Steiner;Thomas;DC Undertaker reloaded 1;bdl023;Kreisliga Nord
+Boss;Dominik (TC);DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Embach;Martin;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Freiseis;Frank;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Fuchs;Karl-Heinz;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Kost;Patrick;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Raptis;Nikolaos;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Stelle;Mike;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Zang;Lothar;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Fraile;Antonio;DC Undertaker reloaded 2;bdl024;Kreisliga Nord
+Lochbaum;Lars;Iron Eagles;bdl028;Kreisliga Nord
+Lucas;Jan;Iron Eagles;bdl028;Kreisliga Nord
+Mohr;Markus;Iron Eagles;bdl028;Kreisliga Nord
+Mohr;Tobias (TC);Iron Eagles;bdl028;Kreisliga Nord
+Schulzendorf;Ralf;Iron Eagles;bdl028;Kreisliga Nord
+Weber;Florian;Iron Eagles;bdl028;Kreisliga Nord
+Zuber;Sven;Iron Eagles;bdl028;Kreisliga Nord
+Gerdon;Marcel;Iron Eagles;bdl028;Kreisliga Nord
+Anselmann;Tim;Gegen die Drück 3;bdl025;Kreisliga Nord
+Durchholz;Bastian (TC);Gegen die Drück 3;bdl025;Kreisliga Nord
+Gawlik;Ralf;Gegen die Drück 3;bdl025;Kreisliga Nord
+Jany;Christian;Gegen die Drück 3;bdl025;Kreisliga Nord
+Schied;Andreas;Gegen die Drück 3;bdl025;Kreisliga Nord
+Skrzypek;Iwana;Gegen die Drück 3;bdl025;Kreisliga Nord
+Weber;Holger;Gegen die Drück 3;bdl025;Kreisliga Nord
+Stache;Manuela;Gegen die Drück 4;bdl026;Kreisliga Nord
+Gumsheimer;Tina;Gegen die Drück 4;bdl026;Kreisliga Nord
+Mack;Renate;Gegen die Drück 4;bdl026;Kreisliga Nord
+Winter;Anna;Gegen die Drück 4;bdl026;Kreisliga Nord
+Margraf;Sandra;Gegen die Drück 4;bdl026;Kreisliga Nord
+Mocker;Yvonne (TC);Gegen die Drück 4;bdl026;Kreisliga Nord
+Dworaczek;Anetta;Gegen die Drück 4;bdl026;Kreisliga Nord
+Hahn;Thomas;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Janin;Sabrina;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Jewell;David;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Kübler;Lukas;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Mohr;Jürgen;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Weick;Andreas;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Werner;Armin;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Werner;Jutta;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Ziege;Dennis;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Richard;Andrea (TC);Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Hodorff;Tanja;Taraxacuma Die Dritte;bdl029;Kreisliga Nord
+Barth;Holger;Taraxacuma TNT;bdl030;Kreisliga Nord
+Groß;Christina;Taraxacuma TNT;bdl030;Kreisliga Nord
+Riedle;Heinz;Taraxacuma TNT;bdl030;Kreisliga Nord
+Schmidt;Jochen;Taraxacuma TNT;bdl030;Kreisliga Nord
+Schmidt;Tobias;Taraxacuma TNT;bdl030;Kreisliga Nord
+Schmitteckert;Bernd;Taraxacuma TNT;bdl030;Kreisliga Nord
+Schmitteckert;Sascha;Taraxacuma TNT;bdl030;Kreisliga Nord
+Stegmüller;Ralf (TC);Taraxacuma TNT;bdl030;Kreisliga Nord
+Steinle;Stefan;Taraxacuma TNT;bdl030;Kreisliga Nord
+Resch;Kimo;Taraxacuma TNT;bdl030;Kreisliga Nord
+Bachert;Steffen;Ideal Wild Tigers;bdl027;Kreisliga Nord
+Baust;Christian;Ideal Wild Tigers;bdl027;Kreisliga Nord
+Brucker;Jürgen;Ideal Wild Tigers;bdl027;Kreisliga Nord
+Buning;Stephanie;Ideal Wild Tigers;bdl027;Kreisliga Nord
+Schweitzer;Ralf;Ideal Wild Tigers;bdl027;Kreisliga Nord
+Mack;Paul Curtiss;Ideal Wild Tigers;bdl027;Kreisliga Nord
+Thoma;Susanne (TC);Ideal Wild Tigers;bdl027;Kreisliga Nord
+Bogumil;Jörg (TC);Team Wilder Mann;bdl031;Kreisliga Nord
+Da Silvanovo;Antonio;Team Wilder Mann;bdl031;Kreisliga Nord
+Lamoth;Uwe;Team Wilder Mann;bdl031;Kreisliga Nord
+Mehlmer;Bernd;Team Wilder Mann;bdl031;Kreisliga Nord
+Michl;Rolf;Team Wilder Mann;bdl031;Kreisliga Nord
+Schell;Thomas;Team Wilder Mann;bdl031;Kreisliga Nord
+Burkart;Christian;Dart Train Rastatt;bdl034;Kreisliga Süd
+Fritz;Jenny;Dart Train Rastatt;bdl034;Kreisliga Süd
+Handke;Jens;Dart Train Rastatt;bdl034;Kreisliga Süd
+Havelka;Ralf;Dart Train Rastatt;bdl034;Kreisliga Süd
+Hellgoth;Martin;Dart Train Rastatt;bdl034;Kreisliga Süd
+Kilgour;Dave;Dart Train Rastatt;bdl034;Kreisliga Süd
+Knöbl;Gerd;Dart Train Rastatt;bdl034;Kreisliga Süd
+Philipp;Dieter (TC);Dart Train Rastatt;bdl034;Kreisliga Süd
+Redwanz;Klaus;Dart Train Rastatt;bdl034;Kreisliga Süd
+Barnstedt;Wolfram;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Coogan;Ferghal;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+De Bortoli;Udo;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Götzelmann;Tobias (TC);DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Jock;Bernt;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Oheim;Horst;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Pahlke;Stefan;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Hettich;Markus;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Ploth;Sebastian;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Biernatzki;Christian;DC Blau-Weiß Karlsruhe;bdl032;Kreisliga Süd
+Antal;Oliver (TC);D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Alpino;Fabio;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Augenstein;Marius;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Augenstein;Norbert;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Berninger;Hans;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Berninger;Martin;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Braun;Rene;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Hofmann;Jan;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Höger;Jörg;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Joudi;Josef;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Klein;Ralf;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Klomann;Melanie;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+König;Kevin;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Muntz;Hans Peter;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Rohde;Thomas;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Weber;Alexander;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Poppeck;Tobias;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Schulz;Toni;D.A.R.T. Plumbata;bdl033;Kreisliga Süd
+Bischoff;Benjamin (TC);DC Shamrock;bdl036;Kreisliga Süd
+During;Andreas;DC Shamrock;bdl036;Kreisliga Süd
+Espig;Toni;DC Shamrock;bdl036;Kreisliga Süd
+Hoffmann;Yasmin;DC Shamrock;bdl036;Kreisliga Süd
+Kimling;Jens;DC Shamrock;bdl036;Kreisliga Süd
+Kuhn;Alexander;DC Shamrock;bdl036;Kreisliga Süd
+Pujic;Matthias;DC Shamrock;bdl036;Kreisliga Süd
+Schlicht;Werner;DC Shamrock;bdl036;Kreisliga Süd
+Stansch;Tobias;DC Shamrock;bdl036;Kreisliga Süd
+Wagner;Micha;DC Shamrock;bdl036;Kreisliga Süd
+Kohrt;Florian;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Krzyzanowski;Lukas;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Nowak;Lukas;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Nowak;Martin;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Schorpp;Christian (TC);Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Schubert;Bastian;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Walz;David;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Schier;Mark;Gaggenauer Dartmoskitos 1;bdl037;Kreisliga Süd
+Weis;Frank;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Bache;John;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Gleisle;Michael;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Kraft;Thomas;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Pflüger;Joachim (TC);Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Plutta;Mateusz;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Plutta;Ryszard;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Raum;Dominik;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Heidecke;Steffen;Gaggenauer Dartmoskitos 2;bdl038;Kreisliga Süd
+Mager;Fabian (TC);Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Reeb;Manfred;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Pilgrim;Jerry;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Beier;Nora;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Hentschel Hoffmann;Holger;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Hoffmann;Kevin;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Gabel;Sebastian;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Rometsch;Marco;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Rometsch;Manuela;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Müller;Pit;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Müller;Maurice;Karlsruher Dart Freunde (KDF);bdl039;Kreisliga Süd
+Müller;Marco (TC);DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Andert;Iris;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Araci;Cihan;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Daum;Jürgen;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Gegenheimer;Matthias;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Göbel;Ralf;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Ilchmann;Horst;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Müller;Bodo;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Neuhaus;Mario;DC 81 Karlsruhe;bdl035;Kreisliga Süd
+Billmann;Thorsten;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Cochon;Jose;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Hecker;Jörg;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Hurst;Mike;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Oberacker;Ronny;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Richard;Dieter (TC);Taraxacuma Tornados;bdl040;Kreisliga Süd
+Scherer;Andre;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Vogler;Markus;Taraxacuma Tornados;bdl040;Kreisliga Süd
+Becker;Steffen;Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Damsons;Diana (TC);Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Gutting;Ralf;Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Kartach;Jörg;Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Keilhauer;Armin;Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Becker;Christine;Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Knobloch;Andreas;Taraxacuma Wölfe;bdl041;Kreisliga Süd
+Deeg;Carlo;Taraxacuma Wölfe;bdl041;Oberliga
+Schlicht;Daniel;Taraxacuma Wölfe;bdl041;Oberliga
+Hölzle;Kai;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Hölzle;Maik;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Hoppe;Harald;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Korbmann;Robin;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Korbmann;Pascal;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Kunze;Sebastian;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Sauer;Leo;Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Schmidt;Alexander (TC);Alla Häeeeehr Pforzheim;bdl010;Bezirksliga
+Sauter;Axel;BDC Breakers;bdl011;Bezirksliga
+Lutz;Harald;BDC Breakers;bdl011;Bezirksliga
+Müller;Oliver;BDC Breakers;bdl011;Bezirksliga
+Mergel;Michael;BDC Breakers;bdl011;Bezirksliga
+Tretter;Markus;BDC Breakers;bdl011;Bezirksliga
+Fröhlich;Sven;BDC Breakers;bdl011;Bezirksliga
+Stiess;Steffen (TC);BDC Breakers;bdl011;Bezirksliga
+Becker;Jens-Dieter;Dartspub Walldorf 3;bdl012;Bezirksliga
+Besrutsch;Rainer;Dartspub Walldorf 3;bdl012;Bezirksliga
+Bopp;Florian;Dartspub Walldorf 3;bdl012;Bezirksliga
+Hoffmann;Dirk (TC);Dartspub Walldorf 3;bdl012;Bezirksliga
+Hüther;Stefan;Dartspub Walldorf 3;bdl012;Bezirksliga
+Kieser-Rot;Rita;Dartspub Walldorf 3;bdl012;Bezirksliga
+Maschek;Uwe;Dartspub Walldorf 3;bdl012;Bezirksliga
+Stolze;Ralf;Dartspub Walldorf 3;bdl012;Bezirksliga
+Zimmermann;Jürgen;Dartspub Walldorf 3;bdl012;Bezirksliga
+Fischer;Thorsten;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Kasikci;Senol;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Kieser;Pascal;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Kochendörfer;Andreas;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Kochendörfer;Christian (TC);DC Black Knights Hördt 2;bdl013;Bezirksliga
+Muhl;Jens;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Mutic;Christian;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Schanz;Albert;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Wetzel;Uwe;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Phillip;Gregor;DC Black Knights Hördt 2;bdl013;Bezirksliga
+Ansel;Jürgen;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Heck;Daniel;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Ihli;Nico;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Kammerlander;Tobias;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Karacan;Baris;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Kirchenbauer;Volker;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Kovac;Dujko;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Krauss;Peter (TC);DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Krüger;Felix;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Moog;Ives;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Postler;Kevin;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Weiss;Michael;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Nüssle;Michael;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Schätzle;Mirko;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Schätzle;Timo;DC Flatliners Karlsruhe 2;bdl014;Bezirksliga
+Brömser;Uwe;DC Letschebach;bdl016;Bezirksliga
+Gebhard;Michael;DC Letschebach;bdl016;Bezirksliga
+Haack;Günther;DC Letschebach;bdl016;Bezirksliga
+Haller;Manuel;DC Letschebach;bdl016;Bezirksliga
+Heck;Michael;DC Letschebach;bdl016;Bezirksliga
+Kunzenbacher;Claus;DC Letschebach;bdl016;Bezirksliga
+Loock;Richard;DC Letschebach;bdl016;Bezirksliga
+Meier;Michael;DC Letschebach;bdl016;Bezirksliga
+Özcan;Servet;DC Letschebach;bdl016;Bezirksliga
+Roa;Markus;DC Letschebach;bdl016;Bezirksliga
+Allgeier;Philipp;DC Reiterstüble Eppingen 1;bdl017;Bezirksliga
+Gärtner;Marcel;DC Reiterstüble Eppingen 1;bdl017;Bezirksliga
+Kaltenmeier;Siegfried;DC Reiterstüble Eppingen 1;bdl017;Bezirksliga
+Scheyhing;Oliver;DC Reiterstüble Eppingen 1;bdl017;Bezirksliga
+Unterhuber;Kevin;DC Reiterstüble Eppingen 1;bdl017;Bezirksliga
+Wabbel;Thomas;DC Reiterstüble Eppingen 1;bdl017;Bezirksliga
+Alexander;Patrick (TC);DC Studenten Bellheim;bdl018;Bezirksliga
+Greif;Yannik;DC Studenten Bellheim;bdl018;Bezirksliga
+Müller;Markus;DC Studenten Bellheim;bdl018;Bezirksliga
+Niederer;Jochen;DC Studenten Bellheim;bdl018;Bezirksliga
+Schmidt;Hartmut;DC Studenten Bellheim;bdl018;Bezirksliga
+Leisinger;Benedikt;DC Studenten Bellheim;bdl018;Bezirksliga
+Heel;Gerhard;DC Studenten Bellheim;bdl018;Bezirksliga
+Knopfinger;Jan;DC Studenten Bellheim;bdl018;Bezirksliga
+Hilzendegen;Sina;DC Studenten Bellheim;bdl018;Bezirksliga
+Utting;Nico;DC Studenten Bellheim;bdl018;Bezirksliga
+Schweitzer;Andreas;DC Studenten Bellheim;bdl018;Bezirksliga
+Busch;Lucas;Freygerber Fighters;bdl020;Bezirksliga
+Gaab;Sascha;Freygerber Fighters;bdl020;Bezirksliga
+Groll;Markus;Freygerber Fighters;bdl020;Bezirksliga
+Jährling;Hans;Freygerber Fighters;bdl020;Bezirksliga
+Mastafaoni;Bastian;Freygerber Fighters;bdl020;Bezirksliga
+Mastafaoni;Karim;Freygerber Fighters;bdl020;Bezirksliga
+Renner;Markus;Freygerber Fighters;bdl020;Bezirksliga
+Schleppi;Klaus;Freygerber Fighters;bdl020;Bezirksliga
+Thies;Basti (TC);Freygerber Fighters;bdl020;Bezirksliga
+Thies;Stefan;Freygerber Fighters;bdl020;Bezirksliga
+Baron;Michael;Freygerber Fighters;bdl020;Bezirksliga
+Knebel;Kai;Freygerber Fighters;bdl020;Bezirksliga
+Howe;Simone (TC);DC LaOla Weinheim;bdl015;Bezirksliga
+Baum;Annika;DC LaOla Weinheim;bdl015;Bezirksliga
+Demirel;Ali;DC LaOla Weinheim;bdl015;Bezirksliga
+Hauck;Rainer;DC LaOla Weinheim;bdl015;Bezirksliga
+Hundshammer;Frank;DC LaOla Weinheim;bdl015;Bezirksliga
+Krieger;Stefan;DC LaOla Weinheim;bdl015;Bezirksliga
+Rauscher;Michael;DC LaOla Weinheim;bdl015;Bezirksliga
+Walther;Daniel;DC LaOla Weinheim;bdl015;Bezirksliga
+Hämer;Oliver;DC LaOla Weinheim;bdl015;Bezirksliga
+Walther;Sven;DC LaOla Weinheim;bdl015;Bezirksliga
+Fruhner;Heiko (TC);DC Underground Fool`s;bdl019;Bezirksliga
+Besesek;Christian;DC Underground Fool`s;bdl019;Bezirksliga
+Cantanna;Guiseppe;DC Underground Fool`s;bdl019;Bezirksliga
+Fiedler;Sven;DC Underground Fool`s;bdl019;Bezirksliga
+Gottmann;Kay;DC Underground Fool`s;bdl019;Bezirksliga
+Herz;Vitali;DC Underground Fool`s;bdl019;Bezirksliga
+Kammerer;Miguel;DC Underground Fool`s;bdl019;Bezirksliga
+Roth;Urban;DC Underground Fool`s;bdl019;Bezirksliga
+Dürr;Tarek;DC Underground Fool`s;bdl019;Bezirksliga
+Voggenreiter;Ralf;DC Underground Fool`s;bdl019;Bezirksliga
+Ayllon;John;Dartspub Walldorf 2;bdl004;Oberliga
+Bonn;Dominik;Dartspub Walldorf 2;bdl004;Oberliga
+Bub;Leif-Eric;Dartspub Walldorf 2;bdl004;Oberliga
+Caroli;Matthias;Dartspub Walldorf 2;bdl004;Oberliga
+Elbs;Benjamin;Dartspub Walldorf 2;bdl004;Oberliga
+Große-Stoltenberg;Mika;Dartspub Walldorf 2;bdl004;Oberliga
+Jäger;Jan;Dartspub Walldorf 2;bdl004;Oberliga
+Katic;Nikola;Dartspub Walldorf 2;bdl004;Oberliga
+Kraft;Claudia;Dartspub Walldorf 2;bdl004;Oberliga
+Köhler;Sabine (TC);Dartspub Walldorf 2;bdl004;Oberliga
+Moh;Benjamin;Dartspub Walldorf 2;bdl004;Oberliga
+Pfaff;Hans;Dartspub Walldorf 2;bdl004;Oberliga
+Spörle;Sabrina;Dartspub Walldorf 2;bdl004;Oberliga
+Stangl;Thomas;Dartspub Walldorf 2;bdl004;Oberliga
+Stein;Sascha;Dartspub Walldorf 2;bdl004;Oberliga
+Wefers;Thorsten;Dartspub Walldorf 2;bdl004;Oberliga
+Werle;Sebastian;Dartspub Walldorf 2;bdl004;Oberliga
+Klein;Marco;DC Black Knights Hördt 1;bdl001;Oberliga
+Krzyzanowski;Sven;DC Black Knights Hördt 1;bdl001;Oberliga
+Magin;Sascha (TC);DC Black Knights Hördt 1;bdl001;Oberliga
+Mathis;Delbert;DC Black Knights Hördt 1;bdl001;Oberliga
+Meisel;Andy;DC Black Knights Hördt 1;bdl001;Oberliga
+Pfirrmann;Andre;DC Black Knights Hördt 1;bdl001;Oberliga
+Wolff;Marcus;DC Black Knights Hördt 1;bdl001;Oberliga
+Baumann;John;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Hoffmann;Markus;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Hoffmann;Mika;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Kellner;Markus (TC);DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Köhnlein;Thomas;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Loy;Marcel;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Meyer;Torsten;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Mußgnug;Thorsten;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Nees;Thomas;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Roller;Freddy;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Schober;Timo;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Spathelf;Stefan;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Stübs;Michael;DC Flatliners Karlsruhe 1;bdl003;Oberliga
+Bürger;Zafer;Gegen die Drück 1;bdl005;Oberliga
+Fackelmann;Frank;Gegen die Drück 1;bdl005;Oberliga
+Gund;Thomas;Gegen die Drück 1;bdl005;Oberliga
+Häusler;Michael (TC);Gegen die Drück 1;bdl005;Oberliga
+Oberacker;Christian;Gegen die Drück 1;bdl005;Oberliga
+Orlowski;Ralf;Gegen die Drück 1;bdl005;Oberliga
+Walther;Kay;Gegen die Drück 1;bdl005;Oberliga
+Kloh;Patrick;Gegen die Drück 2;bdl006;Oberliga
+Margraf;Matthias (TC);Gegen die Drück 2;bdl006;Oberliga
+Muhn;Andre;Gegen die Drück 2;bdl006;Oberliga
+Muth;Rüdiger;Gegen die Drück 2;bdl006;Oberliga
+Treiber;Jan;Gegen die Drück 2;bdl006;Oberliga
+Wittmann;Steffen;Gegen die Drück 2;bdl006;Oberliga
+Becker;Daniela;Taraxacuma Bulls;bdl007;Oberliga
+Becker;Jochen;Taraxacuma Bulls;bdl007;Oberliga
+Ebner;Michael;Taraxacuma Bulls;bdl007;Oberliga
+Gottwald;Manuela;Taraxacuma Bulls;bdl007;Oberliga
+Knecht;Dirk;Taraxacuma Bulls;bdl007;Oberliga
+Schweizer;Jürgen;Taraxacuma Bulls;bdl007;Oberliga
+Steffen;Cartsen;Taraxacuma Bulls;bdl007;Oberliga
+Waeldin;Andreas;Taraxacuma Bulls;bdl007;Oberliga
+Waeldin;Stephanie;Taraxacuma Bulls;bdl007;Oberliga
+Wiegering;Stefan (TC);Taraxacuma Bulls;bdl007;Oberliga
+Hotel;Johan;Taraxacuma Eagles;bdl008;Oberliga
+Link;Stefan;Taraxacuma Eagles;bdl008;Oberliga
+Maul;Michael;Taraxacuma Eagles;bdl008;Oberliga
+Seibert;Tobias (TC);Taraxacuma Eagles;bdl008;Oberliga
+Specht;Andreas;Taraxacuma Eagles;bdl008;Oberliga
+Wirth;Alexander;Taraxacuma Eagles;bdl008;Oberliga
+Wittmann;Berthold;Taraxacuma Eagles;bdl008;Oberliga
+Ehlers;Matthias;Taraxacuma Eagles;bdl008;Oberliga
+Bernhardt;Christian;Taraxacuma Lions;bdl009;Oberliga
+Frei;Andreas;Taraxacuma Lions;bdl009;Oberliga
+Hoffmann;Daniel (TC);Taraxacuma Lions;bdl009;Oberliga
+Janßen;Holger;Taraxacuma Lions;bdl009;Oberliga
+Kammerer;Kay;Taraxacuma Lions;bdl009;Oberliga
+Lüttjohann;Stephan;Taraxacuma Lions;bdl009;Oberliga
+Sterzing;Frank;Taraxacuma Lions;bdl009;Oberliga
+Schaaf;Sebastian (TC);DC El Diabolo;bdl002;Oberliga
+Grebert;Christian;DC El Diabolo;bdl002;Oberliga
+Hauenstein;Michael;DC El Diabolo;bdl002;Oberliga
+Lagatie;Marcel;DC El Diabolo;bdl002;Oberliga
+Müller;Lukas;DC El Diabolo;bdl002;Oberliga
+Reeb;Roman;DC El Diabolo;bdl002;Oberliga
+Schade;Christian;DC El Diabolo;bdl002;Oberliga
+Sülzle;Jürgen;DC El Diabolo;bdl002;Oberliga
+Weinmann;Patrick;DC El Diabolo;bdl002;Oberliga
+Reber;Uwe;DC El Diabolo;bdl002;Oberliga

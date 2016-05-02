@@ -9,29 +9,34 @@
 		var oRawData = {};
 		var oResult = {};
 
-		$.get("data/Spielermeldungen15-16.csv", function(oData) {
-		    oRawData = csvJSON(oData);
-		    convertToInternalFormat(oRawData);
-		    $("code").text(JSON.stringify(oResult, null, "\t"));
-		});
+        $.getJSON("/saison/1516/Teams.json", function(oTeams) {
+            oResult = oTeams;
+
+            $.get("data/Spielermeldungen15-16.csv", function(oData) {
+                oRawData = csvJSON(oData);
+                convertToInternalFormat(oRawData);
+                $("code").text(JSON.stringify(oResult, null, "\t"));
+            });
+        });
 
 		function convertToInternalFormat(oRawData){
 			for (var i = 0; i < oRawData.length; i++) {
 				var oLine = oRawData[i];
-				if (oLine.Verein && oLine.Name && oLine.Vorname) {
-					var encVerein = btoa(oLine.Verein);
+				if (oLine.Team && oLine.Name && oLine.Vorname) {
+					var encTeam = btoa(oLine.Team);
+                    var encTeamid = oLine.Teamid;
 					var encName = btoa(oLine.Name);
 					var encVorname = btoa(oLine.Vorname);
-					var encKlasse = btoa(oLine.Spielklasse);
-					if (oResult[encVerein] == undefined) {
-						oResult[encVerein] = {
-							"mitglieder" : []
-						};
+                    var encLiga = btoa(oLine.Liga);
+                    if (oResult[oLine.Teamid].mitglieder == undefined) {
+						oResult[oLine.Teamid].mitglieder = [];
 					}
-					oResult[encVerein].mitglieder.push({
-						"name" : encName,
-						"vorname" : encVorname,
-						"klasse" : encKlasse
+                    oResult[oLine.Teamid].encTeam = encTeam;
+					oResult[oLine.Teamid].mitglieder.push({
+                        "name" : oLine.Name,
+                        "vorname" : oLine.Vorname,
+                        "encName" : encName,
+                        "encVorname" : encVorname
 					});
 				}
 			};
@@ -39,15 +44,15 @@
 
 		//var csv is the CSV file with headers
 		function csvJSON(csv){
-		  var lines=csv.split("\r\n");
+		  var lines=csv.split("\n");
 		  var result = [];
 		  var headers=lines[0].split(";");
-		 
+
 		  for(var i=1;i<lines.length;i++){
-		 
+
 			  var obj = {};
 			  var currentline=lines[i].split(";");
-		 
+
 			  for(var j=0;j<headers.length;j++){
 				  obj[headers[j]] = currentline[j];
 			  }

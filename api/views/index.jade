@@ -1,0 +1,28 @@
+extends _bootstrap
+append styles
+	// Custom styles for this template
+	link(href='css/navbar.css', rel='stylesheet')
+block body
+	.container
+		// Static navbar
+		ul.nav.nav-tabs(role='tablist')
+			li.active(role='presentation')
+				a(href='#home') Home
+			li(role='presentation')
+				a(href='#profile') Profile
+			li(role='presentation')
+				a(href='#messages') Messages
+
+		.tab-pane.active(role='tabpanel')
+			.body-content Home
+
+		.tab-pane(role='tabpanel')
+			.body-content Profile
+
+		.tab-pane(role='tabpanel')
+			.body-content Messages
+
+
+	footer.footer
+		.container
+			p.text-muted Place sticky footer content here.

@@ -1,0 +1,43 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title Service Enablement Request
+    body(style={"font-family": 'Calibri'})
+        each spiele, spieltag in runde
+            - var sSpieltag = spieltag.split('_')[1];
+            table(cellpadding='8')
+                thead
+                    tr
+                        th(colspan='5') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
+                    tr
+                        th Spiel
+                        th Datum
+                        th Heim
+                        th Ergebnis
+                        th Gast
+                tbody
+                    each spiel, i in spiele
+                        tr
+                            if (spiel.spielfrei)
+                                if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
+                                    td(colspan='5') Spielfrei: #{teams[spiel.spielfrei].name}
+                                else
+                                    td(colspan='5') Spielfrei: #{spiel.spielfrei}
+                            else
+                                td= spiel.id
+                                td= spiel.datum
+                                if (teams[spiel.heim] && teams[spiel.heim].name)
+                                    td= teams[spiel.heim].name
+                                else
+                                    td= spiel.heim
+                                if (results[spiel.id])
+                                    - var resultHeim = results[spiel.id].summary.heim.sets || 0;
+                                    - var resultGast = results[spiel.id].summary.gast.sets || 0;
+                                    td #{resultHeim} : #{resultGast}
+                                else
+                                    td - : -
+                                if (teams[spiel.gast] && teams[spiel.gast].name)
+                                    td= teams[spiel.gast].name
+                                else
+                                    td= spiel.gast

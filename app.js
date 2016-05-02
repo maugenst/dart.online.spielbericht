@@ -17,6 +17,7 @@ var http = require('http');
 var logger = require(__dirname + "/api/helpers/Logger");
 var morgan = require('morgan');
 var cors = require('cors');
+var jadeStatic = require('jade-static');
 module.exports = app; // for testing
 
 
@@ -45,9 +46,12 @@ try {
     logAll(util.format("Logdirectory: '%s'", logDirectory));
     logAll(util.format("Logfile: '%s'", logger.logFile));
 
+    app.set('views', 'api/views');
+    app.set('view engine', 'jade');
     app.use(cors());
     app.use(morgan('combined', {stream: fs.createWriteStream(logDirectory + '/access.log', {flags: 'a'})}));
     app.use('/', express.static('api/static/spielbericht/app'));
+    app.use('/saison', express.static('data/saison'));
 
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
 

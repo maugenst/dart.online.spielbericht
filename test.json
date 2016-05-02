@@ -1,280 +1,2792 @@
 {
-  "heim": "Alla Häeeeehr Pforzheim",
-  "gast": "D.A.R.T. Plumbata",
-  "e1b1": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+  "klnord": {
+    "name": "Kreisliga Nord",
+    "vr": {
+      "spieltag_1": [
+        {
+          "id": "kln001",
+          "datum": "Fr. 11.09.2015",
+          "heim": "bdl030",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln002",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl024",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln003",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl021",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln004",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl026",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln005",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl031",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln006",
+          "datum": "Fr. 18.09.2015",
+          "spielfrei": "bdl028"
+        }
+      ],
+      "spieltag_2": [
+        {
+          "id": "kln007",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl022",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln008",
+          "datum": "Fr. 09.10.2015",
+          "heim": "bdl027",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln009",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl028",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln010",
+          "datum": "Fr. 25.09.2015",
+          "spielfrei": "bdl025"
+        },
+        {
+          "id": "kln017",
+          "datum": "Fr. 09.10.2015",
+          "heim": "bdl029",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln018",
+          "datum": "Fr. 09.10.2015",
+          "heim": "bdl023",
+          "gast": "bdl021"
+        }
+      ],
+      "spieltag_3": [
+        {
+          "id": "kln011",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl024",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln012",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl025",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln013",
+          "datum": "Fr. 23.10.2015",
+          "heim": "bdl021",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln014",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl026",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln015",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl031",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln016",
+          "datum": "Fr. 02.10.2015",
+          "spielfrei": "bdl030"
+        }
+      ],
+      "spieltag_4": [
+        {
+          "id": "kln019",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl022",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln020",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl027",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln021",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl023",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln022",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl028",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln023",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl030",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln024",
+          "datum": "Fr. 16.10.2015",
+          "spielfrei": "bdl029"
+        }
+      ],
+      "spieltag_5": [
+        {
+          "id": "kln025",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl024",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln026",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl025",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln027",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl029",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln028",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl026",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln029",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl031",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln030",
+          "datum": "Fr. 30.10.2015",
+          "spielfrei": "bdl021"
+        }
+      ],
+      "spieltag_6": [
+        {
+          "id": "kln031",
+          "datum": "Fr. 06.11.2015",
+          "heim": "bdl030",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln032",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl027",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln033",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl023",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln034",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl028",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln035",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl021",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln036",
+          "datum": "Fr. 13.11.2015",
+          "spielfrei": "bdl022"
+        }
+      ],
+      "spieltag_7": [
+        {
+          "id": "kln037",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl024",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln038",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl025",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln039",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl029",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln040",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl031",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln041",
+          "datum": "Fr. 20.11.2015",
+          "spielfrei": "bdl026"
+        },
+        {
+          "id": "kln042",
+          "datum": "Fr. 27.11.2015",
+          "heim": "bdl022",
+          "gast": "bdl027"
+        }
+      ],
+      "spieltag_8": [
+        {
+          "id": "kln043",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl023",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln044",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl028",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln045",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl030",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln046",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl021",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln047",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl026",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln048",
+          "datum": "Fr. 04.12.2015",
+          "spielfrei": "bdl027"
+        }
+      ],
+      "spieltag_9": [
+        {
+          "id": "kln049",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl024",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln050",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl021",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln051",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl029",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln052",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl022",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln053",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl027",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln054",
+          "datum": "Fr. 08.01.2016",
+          "spielfrei": "bdl031"
+        }
+      ],
+      "spieltag_10": [
+        {
+          "id": "kln055",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl028",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln056",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl030",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln057",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl021",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln058",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl026",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln059",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl031",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln060",
+          "datum": "Fr. 22.01.2016",
+          "spielfrei": "bdl023"
+        }
+      ],
+      "spieltag_11": [
+        {
+          "id": "kln061",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl025",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln062",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl029",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln063",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl022",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln064",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl027",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln065",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl023",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln066",
+          "datum": "Fr. 12.02.2016",
+          "spielfrei": "bdl024"
+        }
+      ]
     },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+    "rr": {
+      "spieltag_12": [
+        {
+          "id": "kln067",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl025",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln068",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl023",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln069",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl027",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln070",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl022",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln071",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl029",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln072",
+          "datum": "Fr. 19.02.2016",
+          "spielfrei": "bdl028"
+        }
+      ],
+      "spieltag_13": [
+        {
+          "id": "kln073",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl024",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln074",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl031",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln075",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl026",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln076",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl021",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln077",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl030",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln078",
+          "datum": "Fr. 04.03.2016",
+          "spielfrei": "bdl025"
+        }
+      ],
+      "spieltag_14": [
+        {
+          "id": "kln079",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl022",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln080",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl028",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln081",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl023",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln082",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl027",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln083",
+          "datum": "Fr. 11.03.2016",
+          "spielfrei": "bdl030"
+        },
+        {
+          "id": "kln084",
+          "datum": "Do. 24.03.2016",
+          "heim": "bdl029",
+          "gast": "bdl025"
+        }
+      ],
+      "spieltag_15": [
+        {
+          "id": "kln085",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl025",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln086",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl024",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln087",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl031",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln088",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl026",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln089",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl021",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln090",
+          "datum": "Fr. 01.04.2016",
+          "spielfrei": "bdl029"
+        }
+      ],
+      "spieltag_16": [
+        {
+          "id": "kln091",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl023",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln092",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl027",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln093",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl022",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln094",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl030",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln095",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl028",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln096",
+          "datum": "Fr. 08.04.2016",
+          "spielfrei": "bdl021"
+        }
+      ],
+      "spieltag_17": [
+        {
+          "id": "kln097",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl029",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln098",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl025",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln099",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl024",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln100",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl031",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln101",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl026",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln102",
+          "datum": "Fr. 22.04.2016",
+          "spielfrei": "bdl022"
+        }
+      ],
+      "spieltag_18": [
+        {
+          "id": "kln103",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl030",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln104",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl028",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln105",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl023",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln106",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl027",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln107",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl021",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln108",
+          "datum": "Fr. 29.04.2016",
+          "spielfrei": "bdl026"
+        }
+      ],
+      "spieltag_19": [
+        {
+          "id": "kln109",
+          "datum": "Fr. 06.05.2016",
+          "heim": "bdl022",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln111",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl029",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln112",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl025",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln113",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl024",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln114",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl031",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln115",
+          "datum": "Fr. 13.05.2016",
+          "spielfrei": "bdl027"
+        }
+      ],
+      "spieltag_21": [
+        {
+          "id": "kln110",
+          "datum": "Fr. 06.05.2016",
+          "heim": "bdl025",
+          "gast": "bdl026"
+        },
+        {
+          "id": "kln122",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl027",
+          "gast": "bdl028"
+        },
+        {
+          "id": "kln123",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl022",
+          "gast": "bdl030"
+        },
+        {
+          "id": "kln124",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl029",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln125",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl024",
+          "gast": "bdl031"
+        },
+        {
+          "id": "kln126",
+          "datum": "Fr. 10.06.2016",
+          "spielfrei": "bdl023"
+        }
+      ],
+      "spieltag_20": [
+        {
+          "id": "kln116",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl026",
+          "gast": "bdl024"
+        },
+        {
+          "id": "kln117",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl025",
+          "gast": "bdl021"
+        },
+        {
+          "id": "kln118",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl030",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln119",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl028",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln120",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl023",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln121",
+          "datum": "Fr. 27.05.2016",
+          "spielfrei": "bdl031"
+        }
+      ],
+      "spieltag_22": [
+        {
+          "id": "kln127",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl031",
+          "gast": "bdl025"
+        },
+        {
+          "id": "kln128",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl026",
+          "gast": "bdl029"
+        },
+        {
+          "id": "kln129",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl021",
+          "gast": "bdl022"
+        },
+        {
+          "id": "kln130",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl030",
+          "gast": "bdl027"
+        },
+        {
+          "id": "kln131",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl028",
+          "gast": "bdl023"
+        },
+        {
+          "id": "kln132",
+          "datum": "Fr. 24.06.2016",
+          "spielfrei": "bdl024"
+        }
+      ]
     }
   },
-  "e2b1": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+  "klsued": {
+    "name": "Kreisliga Sued",
+    "vr": {
+      "spieltag_1": [
+        {
+          "id": "kls001",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl037",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls002",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl033",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls003",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl036",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls004",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl034",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls005",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl040",
+          "gast": "bdl038"
+        }
+      ],
+      "spieltag_2": [
+        {
+          "id": "kls006",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl041",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls007",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl032",
+          "gast": "bdl034"
+        },
+        {
+          "id": "kls008",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl035",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls009",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl038",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls010",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl039",
+          "gast": "bdl040"
+        }
+      ],
+      "spieltag_3": [
+        {
+          "id": "kls011",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl037",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls012",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl039",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls013",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl040",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls014",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl036",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls015",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl034",
+          "gast": "bdl035"
+        }
+      ],
+      "spieltag_4": [
+        {
+          "id": "kls016",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl041",
+          "gast": "bdl040"
+        },
+        {
+          "id": "kls017",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl032",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls018",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl035",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls019",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl038",
+          "gast": "bdl034"
+        },
+        {
+          "id": "kls020",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl033",
+          "gast": "bdl036"
+        }
+      ],
+      "spieltag_5": [
+        {
+          "id": "kls021",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl037",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls022",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl039",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls023",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl032",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls024",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl034",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls025",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl040",
+          "gast": "bdl036"
+        }
+      ],
+      "spieltag_6": [
+        {
+          "id": "kls026",
+          "datum": "Fr. 27.11.2015",
+          "heim": "bdl040",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls027",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl035",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls028",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl038",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls029",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl033",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls030",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl036",
+          "gast": "bdl034"
+        }
+      ],
+      "spieltag_7": [
+        {
+          "id": "kls031",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl037",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls032",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl039",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls033",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl041",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls034",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl032",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls035",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl034",
+          "gast": "bdl040"
+        }
+      ],
+      "spieltag_8": [
+        {
+          "id": "kls036",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl040",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls037",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl038",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls038",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl033",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls039",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl036",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls040",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl034",
+          "gast": "bdl037"
+        }
+      ],
+      "spieltag_9": [
+        {
+          "id": "kls041",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl037",
+          "gast": "bdl040"
+        },
+        {
+          "id": "kls042",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl039",
+          "gast": "bdl034"
+        },
+        {
+          "id": "kls043",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl041",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls044",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl032",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls045",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl035",
+          "gast": "bdl038"
+        }
+      ]
     },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+    "rr": {
+      "spieltag_10": [
+        {
+          "id": "kls046",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl039",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls047",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl035",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls048",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl032",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls049",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl041",
+          "gast": "bdl034"
+        },
+        {
+          "id": "kls050",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl038",
+          "gast": "bdl040"
+        }
+      ],
+      "spieltag_11": [
+        {
+          "id": "kls051",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl037",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls052",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl034",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls053",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl036",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls054",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl033",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls055",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl040",
+          "gast": "bdl039"
+        }
+      ],
+      "spieltag_12": [
+        {
+          "id": "kls056",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl032",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls057",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl041",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls058",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl033",
+          "gast": "bdl040"
+        },
+        {
+          "id": "kls059",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl038",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls060",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl035",
+          "gast": "bdl034"
+        }
+      ],
+      "spieltag_13": [
+        {
+          "id": "kls061",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl040",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls062",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl039",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls063",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl037",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls064",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl034",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls065",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl036",
+          "gast": "bdl033"
+        }
+      ],
+      "spieltag_14": [
+        {
+          "id": "kls066",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl038",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls067",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl035",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls068",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl041",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls069",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl033",
+          "gast": "bdl034"
+        },
+        {
+          "id": "kls070",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl036",
+          "gast": "bdl040"
+        }
+      ],
+      "spieltag_15": [
+        {
+          "id": "kls071",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl041",
+          "gast": "bdl035"
+        },
+        {
+          "id": "kls072",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl039",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls073",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl037",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls074",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl034",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls075",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl032",
+          "gast": "bdl040"
+        }
+      ],
+      "spieltag_16": [
+        {
+          "id": "kls076",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl036",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls077",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl033",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls078",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl038",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls079",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl035",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls080",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl040",
+          "gast": "bdl034"
+        }
+      ],
+      "spieltag_17": [
+        {
+          "id": "kls081",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl035",
+          "gast": "bdl040"
+        },
+        {
+          "id": "kls082",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl032",
+          "gast": "bdl038"
+        },
+        {
+          "id": "kls083",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl041",
+          "gast": "bdl033"
+        },
+        {
+          "id": "kls084",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl039",
+          "gast": "bdl036"
+        },
+        {
+          "id": "kls085",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl037",
+          "gast": "bdl034"
+        }
+      ],
+      "spieltag_18": [
+        {
+          "id": "kls086",
+          "datum": "Fr. 17.06.2016",
+          "heim": "bdl040",
+          "gast": "bdl037"
+        },
+        {
+          "id": "kls087",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl034",
+          "gast": "bdl039"
+        },
+        {
+          "id": "kls088",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl036",
+          "gast": "bdl041"
+        },
+        {
+          "id": "kls089",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl033",
+          "gast": "bdl032"
+        },
+        {
+          "id": "kls090",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl038",
+          "gast": "bdl035"
+        }
+      ]
     }
   },
-  "e3b1": {
-    "spieler1": {
-      "name": "Hoppe, Harald",
-      "legs": 3,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+  "bzLiga": {
+    "name": "Bezirksliga",
+    "vr": {
+      "spieltag_1": [
+        {
+          "id": "bzli001",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl010",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli002",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl020",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli003",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl015",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli004",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl019",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli005",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl017",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli006",
+          "datum": "Fr. 18.09.2015",
+          "spielfrei": "bdl012"
+        }
+      ],
+      "spieltag_2": [
+        {
+          "id": "bzli007",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl013",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli008",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl014",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli009",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl011",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli010",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl018",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli011",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl012",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli012",
+          "datum": "Fr. 25.09.2015",
+          "spielfrei": "bdl016"
+        }
+      ],
+      "spieltag_3": [
+        {
+          "id": "bzli013",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl010",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli014",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl016",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli015",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl015",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli016",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl019",
+          "gast": "bdl018?"
+        },
+        {
+          "id": "bzli017",
+          "datum": "Fr. 25.09.2015",
+          "heim": "bdl017",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli018",
+          "datum": "Fr. 25.09.2015",
+          "spielfrei": "bdl020"
+        }
+      ],
+      "spieltag_4": [
+        {
+          "id": "bzli019",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl014",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli020",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl011",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli021",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl018",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli022",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl012",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli023",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl020",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli024",
+          "datum": "Fr. 16.10.2015",
+          "spielfrei": "bdl013"
+        }
+      ],
+      "spieltag_5": [
+        {
+          "id": "bzli025",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl010",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli026",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl016",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli027",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl013",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli028",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl019",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli029",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl017",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli030",
+          "datum": "Fr. 30.10.2015",
+          "spielfrei": "bdl015"
+        }
+      ],
+      "spieltag_6": [
+        {
+          "id": "bzli031",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl011",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli032",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl018",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli033",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl012",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli034",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl020",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli035",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl015",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli036",
+          "datum": "Fr. 13.11.2015",
+          "spielfrei": "bdl014"
+        }
+      ],
+      "spieltag_7": [
+        {
+          "id": "bzli037",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl010",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli038",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl012",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli039",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl013",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli040",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl014",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli041",
+          "datum": "Fr. 20.11.2015",
+          "heim": "bdl017",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli042",
+          "datum": "Fr. 20.11.2015",
+          "spielfrei": "bdl019"
+        }
+      ],
+      "spieltag_8": [
+        {
+          "id": "bzli043",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl018?",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli044",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl013",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli045",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl020",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli046",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl015",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli047",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl019",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli048",
+          "datum": "Fr. 04.12.2015",
+          "spielfrei": "bdl011"
+        }
+      ],
+      "spieltag_9": [
+        {
+          "id": "bzli049",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl010",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli050",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl016",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli051",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl013",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli052",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl012",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli053",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl011",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli054",
+          "datum": "Fr. 08.01.2016",
+          "spielfrei": "bdl017"
+        }
+      ],
+      "spieltag_10": [
+        {
+          "id": "bzli055",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl011",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli056",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl014",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli057",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl015",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli058",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl019",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli059",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl017",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli060",
+          "datum": "Fr. 22.01.2016",
+          "spielfrei": "bdl018"
+        }
+      ],
+      "spieltag_11": [
+        {
+          "id": "bzli061",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl016",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli062",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl019",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli063",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl015",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli064",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl020",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli065",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl012",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli066",
+          "datum": "Fr. 12.02.2016",
+          "spielfrei": "bdl010"
+        }
+      ]
     },
-    "spieler2": {
-      "name": "Alpino, Fabio",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+    "rr": {
+      "spieltag_12": [
+        {
+          "id": "bzli067",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl016",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli068",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl018",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli069",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl011",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli070",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl014",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli071",
+          "datum": "Fr. 19.02.2016",
+          "heim": "bdl013",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli072",
+          "datum": "Fr. 19.02.2016",
+          "spielfrei": "bdl012"
+        }
+      ],
+      "spieltag_13": [
+        {
+          "id": "bzli073",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl010",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli074",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl017",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli075",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl019",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli076",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl015",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli077",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl020",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli078",
+          "datum": "Fr. 04.03.2016",
+          "spielfrei": "bdl016"
+        }
+      ],
+      "spieltag_14": [
+        {
+          "id": "bzli079",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl014",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli080",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl013",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli081",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl012",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli082",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl018",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli083",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl011",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli084",
+          "datum": "Fr. 11.03.2016",
+          "spielfrei": "bdl020"
+        }
+      ],
+      "spieltag_15": [
+        {
+          "id": "bzli085",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl016",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli086",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl010",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli087",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl017",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli088",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl019",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli089",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl015",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli090",
+          "datum": "Fr. 01.04.2016",
+          "spielfrei": "bdl013"
+        }
+      ],
+      "spieltag_16": [
+        {
+          "id": "bzli091",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl018",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli092",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl011",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli093",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl014",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli094",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl020",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli095",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl012",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli096",
+          "datum": "Fr. 08.04.2016",
+          "spielfrei": "bdl015"
+        }
+      ],
+      "spieltag_17": [
+        {
+          "id": "bzli097",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl013",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli098",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl016",
+          "gast": "bdl018"
+        },
+        {
+          "id": "bzli099",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl010",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli100",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl017",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli101",
+          "datum": "Fr. 22.04.2016",
+          "heim": "bdl019",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli102",
+          "datum": "Fr. 22.04.2016",
+          "spielfrei": "bdl014"
+        }
+      ],
+      "spieltag_18": [
+        {
+          "id": "bzli103",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl020",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli104",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl016",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli105",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl018",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli106",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl011",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli107",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl015",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli108",
+          "datum": "Fr. 29.04.2016",
+          "spielfrei": "bdl019"
+        }
+      ],
+      "spieltag_19": [
+        {
+          "id": "bzli109",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl014",
+          "gast": "bdl018?"
+        },
+        {
+          "id": "bzli110",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl012",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli111",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl016",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli112",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl010",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli113",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl017",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli114",
+          "datum": "Fr. 13.05.2016",
+          "spielfrei": "bdl011"
+        }
+      ],
+      "spieltag_20": [
+        {
+          "id": "bzli115",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl019",
+          "gast": "bdl010"
+        },
+        {
+          "id": "bzli116",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl015",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli117",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl020",
+          "gast": "bdl013"
+        },
+        {
+          "id": "bzli118",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl014",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli119",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl018",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli120",
+          "datum": "Fr. 27.05.2016",
+          "spielfrei": "bdl017"
+        }
+      ],
+      "spieltag_21": [
+        {
+          "id": "bzli121",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl012",
+          "gast": "bdl011"
+        },
+        {
+          "id": "bzli122",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl020",
+          "gast": "bdl014"
+        },
+        {
+          "id": "bzli123",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl013",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli124",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl016",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli125",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl010",
+          "gast": "bdl017"
+        },
+        {
+          "id": "bzli126",
+          "datum": "Fr. 10.06.2016",
+          "spielfrei": "bdl018"
+        }
+      ],
+      "spieltag_22": [
+        {
+          "id": "bzli127",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl017",
+          "gast": "bdl016"
+        },
+        {
+          "id": "bzli128",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl013",
+          "gast": "bdl019"
+        },
+        {
+          "id": "bzli129",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl014",
+          "gast": "bdl015"
+        },
+        {
+          "id": "bzli130",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl011",
+          "gast": "bdl020"
+        },
+        {
+          "id": "bzli131",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl018",
+          "gast": "bdl012"
+        },
+        {
+          "id": "bzli132",
+          "datum": "Fr. 24.06.2016",
+          "spielfrei": "bdl010"
+        }
+      ]
     }
   },
-  "e4b1": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
+  "oberliga": {
+    "name": "Oberliga",
+    "vr": {
+      "spieltag_1": [
+        {
+          "id": "ol001",
+          "datum": "Fr. 11.09.2015",
+          "heim": "bdl007",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol002",
+          "datum": "Fr. 11.09.2015",
+          "heim": "bdl009",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol003",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl005",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol004",
+          "datum": "Fr. 18.09.2015",
+          "heim": "bdl003",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol005",
+          "datum": "Fr. 18.09.2015",
+          "spielfrei": "bdl004"
+        }
+      ],
+      "spieltag_2": [
+        {
+          "id": "ol006",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl007",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol007",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl004",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol008",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl002",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol009",
+          "datum": "Fr. 02.10.2015",
+          "heim": "bdl001",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol010",
+          "datum": "Fr. 02.10.2015",
+          "spielfrei": "bdl003"
+        }
+      ],
+      "spieltag_3": [
+        {
+          "id": "ol011",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl005",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol012",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl006",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol013",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl001",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol014",
+          "datum": "Fr. 16.10.2015",
+          "heim": "bdl009",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol015",
+          "datum": "Fr. 16.10.2015",
+          "spielfrei": "bdl002"
+        }
+      ],
+      "spieltag_4": [
+        {
+          "id": "ol016",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl003",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol017",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl007",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol018",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl004",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol019",
+          "datum": "Fr. 30.10.2015",
+          "heim": "bdl002",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol020",
+          "datum": "Fr. 30.10.2015",
+          "spielfrei": "bdl008"
+        }
+      ],
+      "spieltag_5": [
+        {
+          "id": "ol021",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl005",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol022",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl006",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol023",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl008",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol024",
+          "datum": "Fr. 13.11.2015",
+          "heim": "bdl009",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol025",
+          "datum": "Fr. 13.11.2015",
+          "spielfrei": "bdl001"
+        }
+      ],
+      "spieltag_6": [
+        {
+          "id": "ol026",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl008",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol027",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl003",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol028",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl007",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol029",
+          "datum": "Fr. 04.12.2015",
+          "heim": "bdl004",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol030",
+          "datum": "Fr. 04.12.2015",
+          "spielfrei": "bdl006"
+        }
+      ],
+      "spieltag_7": [
+        {
+          "id": "ol031",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl005",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol032",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl006",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol033",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl008",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol034",
+          "datum": "Fr. 08.01.2016",
+          "heim": "bdl003",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol035",
+          "datum": "Fr. 08.01.2016",
+          "spielfrei": "bdl009"
+        }
+      ],
+      "spieltag_8": [
+        {
+          "id": "ol036",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl004",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol037",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl002",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol038",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl001",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol039",
+          "datum": "Fr. 22.01.2016",
+          "heim": "bdl009",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol040",
+          "datum": "Fr. 22.01.2016",
+          "spielfrei": "bdl007"
+        }
+      ],
+      "spieltag_9": [
+        {
+          "id": "ol041",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl006",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol042",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl001",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol043",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl003",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol044",
+          "datum": "Fr. 12.02.2016",
+          "heim": "bdl007",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol045",
+          "datum": "Fr. 12.02.2016",
+          "spielfrei": "bdl005"
+        }
+      ]
     },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    }
-  },
-  "d1b2": {
-    "paar1": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    },
-    "paar2": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    }
-  },
-  "d2b2": {
-    "paar1": {
-      "legs": 3,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "Hoppe, Harald",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "Hölzle, Kai",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    },
-    "paar2": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "Alpino, Fabio",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "Antal, Oliver (TC)",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    }
-  },
-  "e1b3": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    }
-  },
-  "e2b3": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    }
-  },
-  "e3b3": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    }
-  },
-  "e4b3": {
-    "spieler1": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    },
-    "spieler2": {
-      "name": "",
-      "legs": 0,
-      "shortlegs": 0,
-      "highfinishes": 0,
-      "i180er": 0
-    }
-  },
-  "d1b4": {
-    "paar1": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    },
-    "paar2": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    }
-  },
-  "d2b4": {
-    "paar1": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    },
-    "paar2": {
-      "legs": 0,
-      "shortlegs": 0,
-      "spieler1": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      },
-      "spieler2": {
-        "name": "",
-        "highfinishes": 0,
-        "i180er": 0
-      }
-    }
-  },
-  "statistik": [
-    {
-      "name": "Hoppe, Harald",
-      "score": 10
-    },
-    {
-      "name": "Hölzle, Kai",
-      "score": 5
-    },
-    {
-      "name": "Alpino, Fabio",
-      "score": 0
-    },
-    {
-      "name": "Antal, Oliver (TC)",
-      "score": 0
-    }
-  ],
-  "summary": {
-    "heim": {
-      "legs": 6,
-      "sets": 2
-    },
-    "gast": {
-      "legs": 0,
-      "sets": 0
+    "rr": {
+      "spieltag_10": [
+        {
+          "id": "ol046",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl006",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol047",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl002",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol048",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl001",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol049",
+          "datum": "Fr. 04.03.2016",
+          "heim": "bdl008",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol050",
+          "datum": "Fr. 04.03.2016",
+          "spielfrei": "bdl004"
+        }
+      ],
+      "spieltag_11": [
+        {
+          "id": "ol051",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl008",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol052",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl006",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol053",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl005",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol054",
+          "datum": "Fr. 11.03.2016",
+          "heim": "bdl009",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol055",
+          "datum": "Fr. 11.03.2016",
+          "spielfrei": "bdl003"
+        }
+      ],
+      "spieltag_12": [
+        {
+          "id": "ol056",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl003",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol057",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl008",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol058",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl004",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol059",
+          "datum": "Fr. 01.04.2016",
+          "heim": "bdl007",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol060",
+          "datum": "Fr. 01.04.2016",
+          "spielfrei": "bdl002"
+        }
+      ],
+      "spieltag_13": [
+        {
+          "id": "ol061",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl006",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol062",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl005",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol063",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl009",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol064",
+          "datum": "Fr. 08.04.2016",
+          "heim": "bdl001",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol065",
+          "datum": "Fr. 08.04.2016",
+          "spielfrei": "bdl008"
+        }
+      ],
+      "spieltag_14": [
+        {
+          "id": "ol066",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl004",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol067",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl007",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol068",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl003",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol069",
+          "datum": "Fr. 29.04.2016",
+          "heim": "bdl002",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol070",
+          "datum": "Fr. 29.04.2016",
+          "spielfrei": "bdl001"
+        }
+      ],
+      "spieltag_15": [
+        {
+          "id": "ol071",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl005",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol072",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl009",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol073",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl001",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol074",
+          "datum": "Fr. 13.05.2016",
+          "heim": "bdl002",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol075",
+          "datum": "Fr. 13.05.2016",
+          "spielfrei": "bdl006"
+        }
+      ],
+      "spieltag_16": [
+        {
+          "id": "ol076",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl001",
+          "gast": "bdl005"
+        },
+        {
+          "id": "ol077",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl002",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol078",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl004",
+          "gast": "bdl008"
+        },
+        {
+          "id": "ol079",
+          "datum": "Fr. 27.05.2016",
+          "heim": "bdl007",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol080",
+          "datum": "Fr. 27.05.2016",
+          "spielfrei": "bdl009"
+        }
+      ],
+      "spieltag_17": [
+        {
+          "id": "ol081",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl003",
+          "gast": "bdl004"
+        },
+        {
+          "id": "ol082",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl008",
+          "gast": "bdl002"
+        },
+        {
+          "id": "ol083",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl006",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol084",
+          "datum": "Fr. 10.06.2016",
+          "heim": "bdl005",
+          "gast": "bdl009"
+        },
+        {
+          "id": "ol085",
+          "datum": "Fr. 10.06.2016",
+          "spielfrei": "bdl007"
+        }
+      ],
+      "spieltag_18": [
+        {
+          "id": "ol086",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl009",
+          "gast": "bdl006"
+        },
+        {
+          "id": "ol087",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl008",
+          "gast": "bdl001"
+        },
+        {
+          "id": "ol088",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl002",
+          "gast": "bdl003"
+        },
+        {
+          "id": "ol089",
+          "datum": "Fr. 24.06.2016",
+          "heim": "bdl004",
+          "gast": "bdl007"
+        },
+        {
+          "id": "ol090",
+          "datum": "Fr. 24.06.2016",
+          "spielfrei": "bdl005"
+        }
+      ]
     }
   }
 }

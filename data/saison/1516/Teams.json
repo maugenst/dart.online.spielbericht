@@ -10,7 +10,52 @@
       "name": "Sascha Magin",
       "tel": "0176 - 31294785",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Klein",
+        "vorname": "Marco",
+        "encName": "S2xlaW4=",
+        "encVorname": "TWFyY28="
+      },
+      {
+        "name": "Krzyzanowski",
+        "vorname": "Sven",
+        "encName": "S3J6eXphbm93c2tp",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Magin",
+        "vorname": "Sascha (TC)",
+        "encName": "TWFnaW4=",
+        "encVorname": "U2FzY2hhIChUQyk="
+      },
+      {
+        "name": "Mathis",
+        "vorname": "Delbert",
+        "encName": "TWF0aGlz",
+        "encVorname": "RGVsYmVydA=="
+      },
+      {
+        "name": "Meisel",
+        "vorname": "Andy",
+        "encName": "TWVpc2Vs",
+        "encVorname": "QW5keQ=="
+      },
+      {
+        "name": "Pfirrmann",
+        "vorname": "Andre",
+        "encName": "UGZpcnJtYW5u",
+        "encVorname": "QW5kcmU="
+      },
+      {
+        "name": "Wolff",
+        "vorname": "Marcus",
+        "encName": "V29sZmY=",
+        "encVorname": "TWFyY3Vz"
+      }
+    ],
+    "encTeam": "REMgQmxhY2sgS25pZ2h0cyBI9nJkdCAx"
   },
   "bdl002": {
     "name": "DC El Diabolo",
@@ -23,7 +68,70 @@
       "name": "Sebastian Schaaf",
       "tel": "0173 - 8285427",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Schaaf",
+        "vorname": "Sebastian (TC)",
+        "encName": "U2NoYWFm",
+        "encVorname": "U2ViYXN0aWFuIChUQyk="
+      },
+      {
+        "name": "Grebert",
+        "vorname": "Christian",
+        "encName": "R3JlYmVydA==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Hauenstein",
+        "vorname": "Michael",
+        "encName": "SGF1ZW5zdGVpbg==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Lagatie",
+        "vorname": "Marcel",
+        "encName": "TGFnYXRpZQ==",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Lukas",
+        "encName": "TfxsbGVy",
+        "encVorname": "THVrYXM="
+      },
+      {
+        "name": "Reeb",
+        "vorname": "Roman",
+        "encName": "UmVlYg==",
+        "encVorname": "Um9tYW4="
+      },
+      {
+        "name": "Schade",
+        "vorname": "Christian",
+        "encName": "U2NoYWRl",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Sülzle",
+        "vorname": "Jürgen",
+        "encName": "U/xsemxl",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Weinmann",
+        "vorname": "Patrick",
+        "encName": "V2Vpbm1hbm4=",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Reber",
+        "vorname": "Uwe",
+        "encName": "UmViZXI=",
+        "encVorname": "VXdl"
+      }
+    ],
+    "encTeam": "REMgRWwgRGlhYm9sbw=="
   },
   "bdl003": {
     "name": "DC Flatliners Karlsruhe 1",
@@ -36,7 +144,88 @@
       "name": "Markus Kellner",
       "tel": "0172 - 1397366",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Baumann",
+        "vorname": "John",
+        "encName": "QmF1bWFubg==",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Markus",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Mika",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "TWlrYQ=="
+      },
+      {
+        "name": "Kellner",
+        "vorname": "Markus (TC)",
+        "encName": "S2VsbG5lcg==",
+        "encVorname": "TWFya3VzIChUQyk="
+      },
+      {
+        "name": "Köhnlein",
+        "vorname": "Thomas",
+        "encName": "S/ZobmxlaW4=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Loy",
+        "vorname": "Marcel",
+        "encName": "TG95",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Meyer",
+        "vorname": "Torsten",
+        "encName": "TWV5ZXI=",
+        "encVorname": "VG9yc3Rlbg=="
+      },
+      {
+        "name": "Mußgnug",
+        "vorname": "Thorsten",
+        "encName": "TXXfZ251Zw==",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Nees",
+        "vorname": "Thomas",
+        "encName": "TmVlcw==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Roller",
+        "vorname": "Freddy",
+        "encName": "Um9sbGVy",
+        "encVorname": "RnJlZGR5"
+      },
+      {
+        "name": "Schober",
+        "vorname": "Timo",
+        "encName": "U2Nob2Jlcg==",
+        "encVorname": "VGltbw=="
+      },
+      {
+        "name": "Spathelf",
+        "vorname": "Stefan",
+        "encName": "U3BhdGhlbGY=",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Stübs",
+        "vorname": "Michael",
+        "encName": "U3T8YnM=",
+        "encVorname": "TWljaGFlbA=="
+      }
+    ],
+    "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMQ=="
   },
   "bdl004": {
     "name": "Dartspub Walldorf 2",
@@ -49,7 +238,112 @@
       "name": "Köhler Sabine",
       "tel": "0160 - 1830520",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Ayllon",
+        "vorname": "John",
+        "encName": "QXlsbG9u",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Bonn",
+        "vorname": "Dominik",
+        "encName": "Qm9ubg==",
+        "encVorname": "RG9taW5paw=="
+      },
+      {
+        "name": "Bub",
+        "vorname": "Leif-Eric",
+        "encName": "QnVi",
+        "encVorname": "TGVpZi1Fcmlj"
+      },
+      {
+        "name": "Caroli",
+        "vorname": "Matthias",
+        "encName": "Q2Fyb2xp",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Elbs",
+        "vorname": "Benjamin",
+        "encName": "RWxicw==",
+        "encVorname": "QmVuamFtaW4="
+      },
+      {
+        "name": "Große-Stoltenberg",
+        "vorname": "Mika",
+        "encName": "R3Jv32UtU3RvbHRlbmJlcmc=",
+        "encVorname": "TWlrYQ=="
+      },
+      {
+        "name": "Jäger",
+        "vorname": "Jan",
+        "encName": "SuRnZXI=",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Katic",
+        "vorname": "Nikola",
+        "encName": "S2F0aWM=",
+        "encVorname": "Tmlrb2xh"
+      },
+      {
+        "name": "Kraft",
+        "vorname": "Claudia",
+        "encName": "S3JhZnQ=",
+        "encVorname": "Q2xhdWRpYQ=="
+      },
+      {
+        "name": "Köhler",
+        "vorname": "Sabine (TC)",
+        "encName": "S/ZobGVy",
+        "encVorname": "U2FiaW5lIChUQyk="
+      },
+      {
+        "name": "Moh",
+        "vorname": "Benjamin",
+        "encName": "TW9o",
+        "encVorname": "QmVuamFtaW4="
+      },
+      {
+        "name": "Pfaff",
+        "vorname": "Hans",
+        "encName": "UGZhZmY=",
+        "encVorname": "SGFucw=="
+      },
+      {
+        "name": "Spörle",
+        "vorname": "Sabrina",
+        "encName": "U3D2cmxl",
+        "encVorname": "U2FicmluYQ=="
+      },
+      {
+        "name": "Stangl",
+        "vorname": "Thomas",
+        "encName": "U3Rhbmds",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Stein",
+        "vorname": "Sascha",
+        "encName": "U3RlaW4=",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Wefers",
+        "vorname": "Thorsten",
+        "encName": "V2VmZXJz",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Werle",
+        "vorname": "Sebastian",
+        "encName": "V2VybGU=",
+        "encVorname": "U2ViYXN0aWFu"
+      }
+    ],
+    "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMg=="
   },
   "bdl005": {
     "name": "Gegen die Drück 1",
@@ -62,7 +356,52 @@
       "name": "Michael Häussler",
       "tel": "0176 - 84883613",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Bürger",
+        "vorname": "Zafer",
+        "encName": "QvxyZ2Vy",
+        "encVorname": "WmFmZXI="
+      },
+      {
+        "name": "Fackelmann",
+        "vorname": "Frank",
+        "encName": "RmFja2VsbWFubg==",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Gund",
+        "vorname": "Thomas",
+        "encName": "R3VuZA==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Häusler",
+        "vorname": "Michael (TC)",
+        "encName": "SOR1c2xlcg==",
+        "encVorname": "TWljaGFlbCAoVEMp"
+      },
+      {
+        "name": "Oberacker",
+        "vorname": "Christian",
+        "encName": "T2JlcmFja2Vy",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Orlowski",
+        "vorname": "Ralf",
+        "encName": "T3Jsb3dza2k=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Walther",
+        "vorname": "Kay",
+        "encName": "V2FsdGhlcg==",
+        "encVorname": "S2F5"
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERy/GNrIDE="
   },
   "bdl006": {
     "name": "Gegen die Drück 2",
@@ -75,7 +414,46 @@
       "name": "Matthias Margraf",
       "tel": "06221 - 737040",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Kloh",
+        "vorname": "Patrick",
+        "encName": "S2xvaA==",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Margraf",
+        "vorname": "Matthias (TC)",
+        "encName": "TWFyZ3JhZg==",
+        "encVorname": "TWF0dGhpYXMgKFRDKQ=="
+      },
+      {
+        "name": "Muhn",
+        "vorname": "Andre",
+        "encName": "TXVobg==",
+        "encVorname": "QW5kcmU="
+      },
+      {
+        "name": "Muth",
+        "vorname": "Rüdiger",
+        "encName": "TXV0aA==",
+        "encVorname": "UvxkaWdlcg=="
+      },
+      {
+        "name": "Treiber",
+        "vorname": "Jan",
+        "encName": "VHJlaWJlcg==",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Wittmann",
+        "vorname": "Steffen",
+        "encName": "V2l0dG1hbm4=",
+        "encVorname": "U3RlZmZlbg=="
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERy/GNrIDI="
   },
   "bdl007": {
     "name": "Taraxacuma Bulls",
@@ -88,7 +466,70 @@
       "name": "Michael Ebner",
       "tel": "0170 - 1867410",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Becker",
+        "vorname": "Daniela",
+        "encName": "QmVja2Vy",
+        "encVorname": "RGFuaWVsYQ=="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Jochen",
+        "encName": "QmVja2Vy",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "Ebner",
+        "vorname": "Michael",
+        "encName": "RWJuZXI=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Gottwald",
+        "vorname": "Manuela",
+        "encName": "R290dHdhbGQ=",
+        "encVorname": "TWFudWVsYQ=="
+      },
+      {
+        "name": "Knecht",
+        "vorname": "Dirk",
+        "encName": "S25lY2h0",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Schweizer",
+        "vorname": "Jürgen",
+        "encName": "U2Nod2VpemVy",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Steffen",
+        "vorname": "Cartsen",
+        "encName": "U3RlZmZlbg==",
+        "encVorname": "Q2FydHNlbg=="
+      },
+      {
+        "name": "Waeldin",
+        "vorname": "Andreas",
+        "encName": "V2FlbGRpbg==",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Waeldin",
+        "vorname": "Stephanie",
+        "encName": "V2FlbGRpbg==",
+        "encVorname": "U3RlcGhhbmll"
+      },
+      {
+        "name": "Wiegering",
+        "vorname": "Stefan (TC)",
+        "encName": "V2llZ2VyaW5n",
+        "encVorname": "U3RlZmFuIChUQyk="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBCdWxscw=="
   },
   "bdl008": {
     "name": "Taraxacuma Eagles",
@@ -101,7 +542,58 @@
       "name": "Tobias Seibert",
       "tel": "0176 - 67039309",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Hotel",
+        "vorname": "Johan",
+        "encName": "SG90ZWw=",
+        "encVorname": "Sm9oYW4="
+      },
+      {
+        "name": "Link",
+        "vorname": "Stefan",
+        "encName": "TGluaw==",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Maul",
+        "vorname": "Michael",
+        "encName": "TWF1bA==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Seibert",
+        "vorname": "Tobias (TC)",
+        "encName": "U2VpYmVydA==",
+        "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Specht",
+        "vorname": "Andreas",
+        "encName": "U3BlY2h0",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Wirth",
+        "vorname": "Alexander",
+        "encName": "V2lydGg=",
+        "encVorname": "QWxleGFuZGVy"
+      },
+      {
+        "name": "Wittmann",
+        "vorname": "Berthold",
+        "encName": "V2l0dG1hbm4=",
+        "encVorname": "QmVydGhvbGQ="
+      },
+      {
+        "name": "Ehlers",
+        "vorname": "Matthias",
+        "encName": "RWhsZXJz",
+        "encVorname": "TWF0dGhpYXM="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBFYWdsZXM="
   },
   "bdl009": {
     "name": "Taraxacuma Lions",
@@ -114,7 +606,52 @@
       "name": "Daniel Hoffmann",
       "tel": "0178 - 1590128",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Bernhardt",
+        "vorname": "Christian",
+        "encName": "QmVybmhhcmR0",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Frei",
+        "vorname": "Andreas",
+        "encName": "RnJlaQ==",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Daniel (TC)",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "RGFuaWVsIChUQyk="
+      },
+      {
+        "name": "Janßen",
+        "vorname": "Holger",
+        "encName": "SmFu32Vu",
+        "encVorname": "SG9sZ2Vy"
+      },
+      {
+        "name": "Kammerer",
+        "vorname": "Kay",
+        "encName": "S2FtbWVyZXI=",
+        "encVorname": "S2F5"
+      },
+      {
+        "name": "Lüttjohann",
+        "vorname": "Stephan",
+        "encName": "TPx0dGpvaGFubg==",
+        "encVorname": "U3RlcGhhbg=="
+      },
+      {
+        "name": "Sterzing",
+        "vorname": "Frank",
+        "encName": "U3Rlcnppbmc=",
+        "encVorname": "RnJhbms="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBMaW9ucw=="
   },
   "bdl010": {
     "name": "Alla Häeeeehr Pforzheim",
@@ -127,10 +664,61 @@
       "name": "Alexander Schmidt",
       "tel": "0176 - 31492625",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Hölzle",
+        "vorname": "Kai",
+        "encName": "SPZsemxl",
+        "encVorname": "S2Fp"
+      },
+      {
+        "name": "Hölzle",
+        "vorname": "Maik",
+        "encName": "SPZsemxl",
+        "encVorname": "TWFpaw=="
+      },
+      {
+        "name": "Hoppe",
+        "vorname": "Harald",
+        "encName": "SG9wcGU=",
+        "encVorname": "SGFyYWxk"
+      },
+      {
+        "name": "Korbmann",
+        "vorname": "Robin",
+        "encName": "S29yYm1hbm4=",
+        "encVorname": "Um9iaW4="
+      },
+      {
+        "name": "Korbmann",
+        "vorname": "Pascal",
+        "encName": "S29yYm1hbm4=",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Kunze",
+        "vorname": "Sebastian",
+        "encName": "S3VuemU=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Sauer",
+        "vorname": "Leo",
+        "encName": "U2F1ZXI=",
+        "encVorname": "TGVv"
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Alexander (TC)",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "QWxleGFuZGVyIChUQyk="
+      }
+    ],
+    "encTeam": "QWxsYSBI5GVlZWVociBQZm9yemhlaW0="
   },
   "bdl011": {
-    "name": "BDC Breakers",
+    "name": "BDC Breakers",
     "spiellokal": {
       "name": "Cafe Ricks",
       "strasse": "Melanchthonstr. 100",
@@ -140,7 +728,52 @@
       "name": "Steffen Stiess",
       "tel": "0176 - 80563652",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Sauter",
+        "vorname": "Axel",
+        "encName": "U2F1dGVy",
+        "encVorname": "QXhlbA=="
+      },
+      {
+        "name": "Lutz",
+        "vorname": "Harald",
+        "encName": "THV0eg==",
+        "encVorname": "SGFyYWxk"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Oliver",
+        "encName": "TfxsbGVy",
+        "encVorname": "T2xpdmVy"
+      },
+      {
+        "name": "Mergel",
+        "vorname": "Michael",
+        "encName": "TWVyZ2Vs",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Tretter",
+        "vorname": "Markus",
+        "encName": "VHJldHRlcg==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Fröhlich",
+        "vorname": "Sven",
+        "encName": "RnL2aGxpY2g=",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Stiess",
+        "vorname": "Steffen (TC)",
+        "encName": "U3RpZXNz",
+        "encVorname": "U3RlZmZlbiAoVEMp"
+      }
+    ],
+    "encTeam": "QkRDIEJyZWFrZXJz"
   },
   "bdl012": {
     "name": "Dartspub Walldorf 3",
@@ -152,11 +785,68 @@
     "teamvertreter": {
       "name": "Dirk Hoffmann",
       "tel": "0174 - 5287861",
-      "mail": " "
-    }
+      "mail": " "
+    },
+    "mitglieder": [
+      {
+        "name": "Becker",
+        "vorname": "Jens-Dieter",
+        "encName": "QmVja2Vy",
+        "encVorname": "SmVucy1EaWV0ZXI="
+      },
+      {
+        "name": "Besrutsch",
+        "vorname": "Rainer",
+        "encName": "QmVzcnV0c2No",
+        "encVorname": "UmFpbmVy"
+      },
+      {
+        "name": "Bopp",
+        "vorname": "Florian",
+        "encName": "Qm9wcA==",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Dirk (TC)",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "RGlyayAoVEMp"
+      },
+      {
+        "name": "Hüther",
+        "vorname": "Stefan",
+        "encName": "SPx0aGVy",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Kieser-Rot",
+        "vorname": "Rita",
+        "encName": "S2llc2VyLVJvdA==",
+        "encVorname": "Uml0YQ=="
+      },
+      {
+        "name": "Maschek",
+        "vorname": "Uwe",
+        "encName": "TWFzY2hlaw==",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Stolze",
+        "vorname": "Ralf",
+        "encName": "U3RvbHpl",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Zimmermann",
+        "vorname": "Jürgen",
+        "encName": "WmltbWVybWFubg==",
+        "encVorname": "SvxyZ2Vu"
+      }
+    ],
+    "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMw=="
   },
-  "bdl0013": {
-    "name": "DC Black Knights Hördt 2",
+  "bdl013": {
+    "name": "DC Black Knights Hördt 2",
     "spiellokal": {
       "name": "Bistro 7",
       "strasse": "Schulzenstr. 24",
@@ -166,10 +856,73 @@
       "name": "Christian Kochendörfer",
       "tel": "0176 - 80225468",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Fischer",
+        "vorname": "Thorsten",
+        "encName": "RmlzY2hlcg==",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Kasikci",
+        "vorname": "Senol",
+        "encName": "S2FzaWtjaQ==",
+        "encVorname": "U2Vub2w="
+      },
+      {
+        "name": "Kieser",
+        "vorname": "Pascal",
+        "encName": "S2llc2Vy",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Kochendörfer",
+        "vorname": "Andreas",
+        "encName": "S29jaGVuZPZyZmVy",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Kochendörfer",
+        "vorname": "Christian (TC)",
+        "encName": "S29jaGVuZPZyZmVy",
+        "encVorname": "Q2hyaXN0aWFuIChUQyk="
+      },
+      {
+        "name": "Muhl",
+        "vorname": "Jens",
+        "encName": "TXVobA==",
+        "encVorname": "SmVucw=="
+      },
+      {
+        "name": "Mutic",
+        "vorname": "Christian",
+        "encName": "TXV0aWM=",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Schanz",
+        "vorname": "Albert",
+        "encName": "U2NoYW56",
+        "encVorname": "QWxiZXJ0"
+      },
+      {
+        "name": "Wetzel",
+        "vorname": "Uwe",
+        "encName": "V2V0emVs",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Phillip",
+        "vorname": "Gregor",
+        "encName": "UGhpbGxpcA==",
+        "encVorname": "R3JlZ29y"
+      }
+    ],
+    "encTeam": "REMgQmxhY2sgS25pZ2h0cyBI9nJkdCAy"
   },
-  "bdl0014": {
-    "name": "DC Flatliners Karlsruhe 2",
+  "bdl014": {
+    "name": "DC Flatliners Karlsruhe 2",
     "spiellokal": {
       "name": "Vereinsheim DC Flatliners",
       "strasse": "Hardtstr. 37 (Bau II)",
@@ -179,10 +932,103 @@
       "name": "Peter Krauss",
       "tel": "0176 - 47273727",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Ansel",
+        "vorname": "Jürgen",
+        "encName": "QW5zZWw=",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Heck",
+        "vorname": "Daniel",
+        "encName": "SGVjaw==",
+        "encVorname": "RGFuaWVs"
+      },
+      {
+        "name": "Ihli",
+        "vorname": "Nico",
+        "encName": "SWhsaQ==",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Kammerlander",
+        "vorname": "Tobias",
+        "encName": "S2FtbWVybGFuZGVy",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Karacan",
+        "vorname": "Baris",
+        "encName": "S2FyYWNhbg==",
+        "encVorname": "QmFyaXM="
+      },
+      {
+        "name": "Kirchenbauer",
+        "vorname": "Volker",
+        "encName": "S2lyY2hlbmJhdWVy",
+        "encVorname": "Vm9sa2Vy"
+      },
+      {
+        "name": "Kovac",
+        "vorname": "Dujko",
+        "encName": "S292YWM=",
+        "encVorname": "RHVqa28="
+      },
+      {
+        "name": "Krauss",
+        "vorname": "Peter (TC)",
+        "encName": "S3JhdXNz",
+        "encVorname": "UGV0ZXIgKFRDKQ=="
+      },
+      {
+        "name": "Krüger",
+        "vorname": "Felix",
+        "encName": "S3L8Z2Vy",
+        "encVorname": "RmVsaXg="
+      },
+      {
+        "name": "Moog",
+        "vorname": "Ives",
+        "encName": "TW9vZw==",
+        "encVorname": "SXZlcw=="
+      },
+      {
+        "name": "Postler",
+        "vorname": "Kevin",
+        "encName": "UG9zdGxlcg==",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Weiss",
+        "vorname": "Michael",
+        "encName": "V2Vpc3M=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Nüssle",
+        "vorname": "Michael",
+        "encName": "Tvxzc2xl",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Schätzle",
+        "vorname": "Mirko",
+        "encName": "U2No5HR6bGU=",
+        "encVorname": "TWlya28="
+      },
+      {
+        "name": "Schätzle",
+        "vorname": "Timo",
+        "encName": "U2No5HR6bGU=",
+        "encVorname": "VGltbw=="
+      }
+    ],
+    "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMg=="
   },
-  "bdl0015": {
-    "name": "DC LaOla Weinheim",
+  "bdl015": {
+    "name": "DC LaOla Weinheim",
     "spiellokal": {
       "name": "LaOla",
       "strasse": "Ahornstr. 48",
@@ -191,11 +1037,74 @@
     "teamvertreter": {
       "name": "Simone Howe",
       "tel": "0157 - 85605123",
-      "mail": " "
-    }
+      "mail": " "
+    },
+    "mitglieder": [
+      {
+        "name": "Howe",
+        "vorname": "Simone (TC)",
+        "encName": "SG93ZQ==",
+        "encVorname": "U2ltb25lIChUQyk="
+      },
+      {
+        "name": "Baum",
+        "vorname": "Annika",
+        "encName": "QmF1bQ==",
+        "encVorname": "QW5uaWth"
+      },
+      {
+        "name": "Demirel",
+        "vorname": "Ali",
+        "encName": "RGVtaXJlbA==",
+        "encVorname": "QWxp"
+      },
+      {
+        "name": "Hauck",
+        "vorname": "Rainer",
+        "encName": "SGF1Y2s=",
+        "encVorname": "UmFpbmVy"
+      },
+      {
+        "name": "Hundshammer",
+        "vorname": "Frank",
+        "encName": "SHVuZHNoYW1tZXI=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Krieger",
+        "vorname": "Stefan",
+        "encName": "S3JpZWdlcg==",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Rauscher",
+        "vorname": "Michael",
+        "encName": "UmF1c2NoZXI=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Walther",
+        "vorname": "Daniel",
+        "encName": "V2FsdGhlcg==",
+        "encVorname": "RGFuaWVs"
+      },
+      {
+        "name": "Hämer",
+        "vorname": "Oliver",
+        "encName": "SORtZXI=",
+        "encVorname": "T2xpdmVy"
+      },
+      {
+        "name": "Walther",
+        "vorname": "Sven",
+        "encName": "V2FsdGhlcg==",
+        "encVorname": "U3Zlbg=="
+      }
+    ],
+    "encTeam": "REMgTGFPbGEgV2VpbmhlaW0="
   },
-  "bdl0016": {
-    "name": "DC Letschebach",
+  "bdl016": {
+    "name": "DC Letschebach",
     "spiellokal": {
       "name": "Florisimo",
       "strasse": "Raiherwiesenstr. 13",
@@ -204,24 +1113,126 @@
     "teamvertreter": {
       "name": "Michael Meier",
       "tel": "0173 - 7910197",
-      "mail": " "
-    }
+      "mail": " "
+    },
+    "mitglieder": [
+      {
+        "name": "Brömser",
+        "vorname": "Uwe",
+        "encName": "QnL2bXNlcg==",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Gebhard",
+        "vorname": "Michael",
+        "encName": "R2ViaGFyZA==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Haack",
+        "vorname": "Günther",
+        "encName": "SGFhY2s=",
+        "encVorname": "R/xudGhlcg=="
+      },
+      {
+        "name": "Haller",
+        "vorname": "Manuel",
+        "encName": "SGFsbGVy",
+        "encVorname": "TWFudWVs"
+      },
+      {
+        "name": "Heck",
+        "vorname": "Michael",
+        "encName": "SGVjaw==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Kunzenbacher",
+        "vorname": "Claus",
+        "encName": "S3VuemVuYmFjaGVy",
+        "encVorname": "Q2xhdXM="
+      },
+      {
+        "name": "Loock",
+        "vorname": "Richard",
+        "encName": "TG9vY2s=",
+        "encVorname": "UmljaGFyZA=="
+      },
+      {
+        "name": "Meier",
+        "vorname": "Michael",
+        "encName": "TWVpZXI=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Özcan",
+        "vorname": "Servet",
+        "encName": "1npjYW4=",
+        "encVorname": "U2VydmV0"
+      },
+      {
+        "name": "Roa",
+        "vorname": "Markus",
+        "encName": "Um9h",
+        "encVorname": "TWFya3Vz"
+      }
+    ],
+    "encTeam": "REMgTGV0c2NoZWJhY2g="
   },
   "bdl017": {
-    "name": "DC Reiterstüble Eppingen 1",
+    "name": "DC Reiterstüble Eppingen 1",
     "spiellokal": {
       "name": "Reiterstüble",
       "strasse": "Talstr. 25",
       "ort": "75031 Eppingen"
     },
     "teamvertreter": {
-      "name": " Philipp Allgeier",
+      "name": " Philipp Allgeier",
       "tel": "0176 - 32524254",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Allgeier",
+        "vorname": "Philipp",
+        "encName": "QWxsZ2VpZXI=",
+        "encVorname": "UGhpbGlwcA=="
+      },
+      {
+        "name": "Gärtner",
+        "vorname": "Marcel",
+        "encName": "R+RydG5lcg==",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Kaltenmeier",
+        "vorname": "Siegfried",
+        "encName": "S2FsdGVubWVpZXI=",
+        "encVorname": "U2llZ2ZyaWVk"
+      },
+      {
+        "name": "Scheyhing",
+        "vorname": "Oliver",
+        "encName": "U2NoZXloaW5n",
+        "encVorname": "T2xpdmVy"
+      },
+      {
+        "name": "Unterhuber",
+        "vorname": "Kevin",
+        "encName": "VW50ZXJodWJlcg==",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Wabbel",
+        "vorname": "Thomas",
+        "encName": "V2FiYmVs",
+        "encVorname": "VGhvbWFz"
+      }
+    ],
+    "encTeam": "REMgUmVpdGVyc3T8YmxlIEVwcGluZ2VuIDE="
   },
   "bdl018": {
-    "name": "DC Studenten Bellheim",
+    "name": "DC Studenten Bellheim",
     "spiellokal": {
       "name": "Tom`s Cafè Bistro",
       "strasse": "Hauptstr. 106",
@@ -231,10 +1242,79 @@
       "name": "Patrick Alexander",
       "tel": "0160 - 96592470",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Alexander",
+        "vorname": "Patrick (TC)",
+        "encName": "QWxleGFuZGVy",
+        "encVorname": "UGF0cmljayAoVEMp"
+      },
+      {
+        "name": "Greif",
+        "vorname": "Yannik",
+        "encName": "R3JlaWY=",
+        "encVorname": "WWFubmlr"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Markus",
+        "encName": "TfxsbGVy",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Niederer",
+        "vorname": "Jochen",
+        "encName": "TmllZGVyZXI=",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Hartmut",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "SGFydG11dA=="
+      },
+      {
+        "name": "Leisinger",
+        "vorname": "Benedikt",
+        "encName": "TGVpc2luZ2Vy",
+        "encVorname": "QmVuZWRpa3Q="
+      },
+      {
+        "name": "Heel",
+        "vorname": "Gerhard",
+        "encName": "SGVlbA==",
+        "encVorname": "R2VyaGFyZA=="
+      },
+      {
+        "name": "Knopfinger",
+        "vorname": "Jan",
+        "encName": "S25vcGZpbmdlcg==",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Hilzendegen",
+        "vorname": "Sina",
+        "encName": "SGlsemVuZGVnZW4=",
+        "encVorname": "U2luYQ=="
+      },
+      {
+        "name": "Utting",
+        "vorname": "Nico",
+        "encName": "VXR0aW5n",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Schweitzer",
+        "vorname": "Andreas",
+        "encName": "U2Nod2VpdHplcg==",
+        "encVorname": "QW5kcmVhcw=="
+      }
+    ],
+    "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWlt"
   },
   "bdl019": {
-    "name": "DC Underground Fool`s",
+    "name": "DC Underground Fool`s",
     "spiellokal": {
       "name": "Vereinsheim Underground Fool`s",
       "strasse": "Ispringer Str. 1-3",
@@ -244,7 +1324,70 @@
       "name": "Heiko Fruhner",
       "tel": "0173 - 9983799",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Fruhner",
+        "vorname": "Heiko (TC)",
+        "encName": "RnJ1aG5lcg==",
+        "encVorname": "SGVpa28gKFRDKQ=="
+      },
+      {
+        "name": "Besesek",
+        "vorname": "Christian",
+        "encName": "QmVzZXNlaw==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Cantanna",
+        "vorname": "Guiseppe",
+        "encName": "Q2FudGFubmE=",
+        "encVorname": "R3Vpc2VwcGU="
+      },
+      {
+        "name": "Fiedler",
+        "vorname": "Sven",
+        "encName": "RmllZGxlcg==",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Gottmann",
+        "vorname": "Kay",
+        "encName": "R290dG1hbm4=",
+        "encVorname": "S2F5"
+      },
+      {
+        "name": "Herz",
+        "vorname": "Vitali",
+        "encName": "SGVyeg==",
+        "encVorname": "Vml0YWxp"
+      },
+      {
+        "name": "Kammerer",
+        "vorname": "Miguel",
+        "encName": "S2FtbWVyZXI=",
+        "encVorname": "TWlndWVs"
+      },
+      {
+        "name": "Roth",
+        "vorname": "Urban",
+        "encName": "Um90aA==",
+        "encVorname": "VXJiYW4="
+      },
+      {
+        "name": "Dürr",
+        "vorname": "Tarek",
+        "encName": "RPxycg==",
+        "encVorname": "VGFyZWs="
+      },
+      {
+        "name": "Voggenreiter",
+        "vorname": "Ralf",
+        "encName": "Vm9nZ2VucmVpdGVy",
+        "encVorname": "UmFsZg=="
+      }
+    ],
+    "encTeam": "REMgVW5kZXJncm91bmQgRm9vbGBz"
   },
   "bdl020": {
     "name": "Freygerber Fighters",
@@ -257,10 +1400,85 @@
       "name": "Bastie Thies",
       "tel": "0157 - 74588193",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Busch",
+        "vorname": "Lucas",
+        "encName": "QnVzY2g=",
+        "encVorname": "THVjYXM="
+      },
+      {
+        "name": "Gaab",
+        "vorname": "Sascha",
+        "encName": "R2FhYg==",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Groll",
+        "vorname": "Markus",
+        "encName": "R3JvbGw=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Jährling",
+        "vorname": "Hans",
+        "encName": "SuRocmxpbmc=",
+        "encVorname": "SGFucw=="
+      },
+      {
+        "name": "Mastafaoni",
+        "vorname": "Bastian",
+        "encName": "TWFzdGFmYW9uaQ==",
+        "encVorname": "QmFzdGlhbg=="
+      },
+      {
+        "name": "Mastafaoni",
+        "vorname": "Karim",
+        "encName": "TWFzdGFmYW9uaQ==",
+        "encVorname": "S2FyaW0="
+      },
+      {
+        "name": "Renner",
+        "vorname": "Markus",
+        "encName": "UmVubmVy",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Schleppi",
+        "vorname": "Klaus",
+        "encName": "U2NobGVwcGk=",
+        "encVorname": "S2xhdXM="
+      },
+      {
+        "name": "Thies",
+        "vorname": "Basti (TC)",
+        "encName": "VGhpZXM=",
+        "encVorname": "QmFzdGkgKFRDKQ=="
+      },
+      {
+        "name": "Thies",
+        "vorname": "Stefan",
+        "encName": "VGhpZXM=",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Baron",
+        "vorname": "Michael",
+        "encName": "QmFyb24=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Knebel",
+        "vorname": "Kai",
+        "encName": "S25lYmVs",
+        "encVorname": "S2Fp"
+      }
+    ],
+    "encTeam": "RnJleWdlcmJlciBGaWdodGVycw=="
   },
   "bdl021": {
-    "name": "1. DC Jokers Hockenheim",
+    "name": "1. DC Jokers Hockenheim",
     "spiellokal": {
       "name": "Fortuna Kegelcenter",
       "strasse": "Untere Hauptstr. 8",
@@ -270,10 +1488,79 @@
       "name": "Martin Huber",
       "tel": "06205 - 15187",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Fütterer",
+        "vorname": "Dirk",
+        "encName": "Rvx0dGVyZXI=",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Fütterer",
+        "vorname": "Markus",
+        "encName": "Rvx0dGVyZXI=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Hansky",
+        "vorname": "Christian",
+        "encName": "SGFuc2t5",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Havenstein",
+        "vorname": "Dirk",
+        "encName": "SGF2ZW5zdGVpbg==",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Hocker",
+        "vorname": "Patrick",
+        "encName": "SG9ja2Vy",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Huber",
+        "vorname": "Martin (TC)",
+        "encName": "SHViZXI=",
+        "encVorname": "TWFydGluIChUQyk="
+      },
+      {
+        "name": "Stetter",
+        "vorname": "Christian",
+        "encName": "U3RldHRlcg==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Walter",
+        "vorname": "Florian",
+        "encName": "V2FsdGVy",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Weimar",
+        "vorname": "Stefan",
+        "encName": "V2VpbWFy",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Werner",
+        "vorname": "Patrick",
+        "encName": "V2VybmVy",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Marcel",
+        "encName": "QmVja2Vy",
+        "encVorname": "TWFyY2Vs"
+      }
+    ],
+    "encTeam": "MS4gREMgSm9rZXJzIEhvY2tlbmhlaW0="
   },
   "bdl022": {
-    "name": "DC Reiterstüble Eppingen 2",
+    "name": "DC Reiterstüble Eppingen 2",
     "spiellokal": {
       "name": "Reiterstüble",
       "strasse": "Talstr. 25",
@@ -283,10 +1570,61 @@
       "name": "Dirk Scholz",
       "tel": "0172 - 9555312",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Fischer",
+        "vorname": "Mario",
+        "encName": "RmlzY2hlcg==",
+        "encVorname": "TWFyaW8="
+      },
+      {
+        "name": "Gärtner",
+        "vorname": "Gabi",
+        "encName": "R+RydG5lcg==",
+        "encVorname": "R2FiaQ=="
+      },
+      {
+        "name": "Köster",
+        "vorname": "Nadja",
+        "encName": "S/ZzdGVy",
+        "encVorname": "TmFkamE="
+      },
+      {
+        "name": "Laukhuff",
+        "vorname": "Manuel",
+        "encName": "TGF1a2h1ZmY=",
+        "encVorname": "TWFudWVs"
+      },
+      {
+        "name": "Niehage",
+        "vorname": "Mike",
+        "encName": "TmllaGFnZQ==",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Rösinger",
+        "vorname": "Ralf",
+        "encName": "UvZzaW5nZXI=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Scholz",
+        "vorname": "Dirk (TC)",
+        "encName": "U2Nob2x6",
+        "encVorname": "RGlyayAoVEMp"
+      },
+      {
+        "name": "Woldt",
+        "vorname": "Dieter",
+        "encName": "V29sZHQ=",
+        "encVorname": "RGlldGVy"
+      }
+    ],
+    "encTeam": "REMgUmVpdGVyc3T8YmxlIEVwcGluZ2VuIDI="
   },
   "bdl023": {
-    "name": "DC Undertaker reloaded 1",
+    "name": "DC Undertaker reloaded 1",
     "spiellokal": {
       "name": "Gaststätte Zur alten Rose",
       "strasse": "Häusserstr. 22",
@@ -296,10 +1634,67 @@
       "name": "Uwe Mecklenburg",
       "tel": "0151 - 18707207",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Albert",
+        "vorname": "Vanessa",
+        "encName": "QWxiZXJ0",
+        "encVorname": "VmFuZXNzYQ=="
+      },
+      {
+        "name": "Albrecht",
+        "vorname": "Robert",
+        "encName": "QWxicmVjaHQ=",
+        "encVorname": "Um9iZXJ0"
+      },
+      {
+        "name": "Boss",
+        "vorname": "Mike",
+        "encName": "Qm9zcw==",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Freiseis",
+        "vorname": "Heinz",
+        "encName": "RnJlaXNlaXM=",
+        "encVorname": "SGVpbno="
+      },
+      {
+        "name": "Greulich",
+        "vorname": "Kolja",
+        "encName": "R3JldWxpY2g=",
+        "encVorname": "S29samE="
+      },
+      {
+        "name": "Hagmann",
+        "vorname": "Kim",
+        "encName": "SGFnbWFubg==",
+        "encVorname": "S2lt"
+      },
+      {
+        "name": "Knebel",
+        "vorname": "Matthias",
+        "encName": "S25lYmVs",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Mecklenburg",
+        "vorname": "Uwe (TC)",
+        "encName": "TWVja2xlbmJ1cmc=",
+        "encVorname": "VXdlIChUQyk="
+      },
+      {
+        "name": "Steiner",
+        "vorname": "Thomas",
+        "encName": "U3RlaW5lcg==",
+        "encVorname": "VGhvbWFz"
+      }
+    ],
+    "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAx"
   },
   "bdl024": {
-    "name": "DC Undertaker reloaded 2",
+    "name": "DC Undertaker reloaded 2",
     "spiellokal": {
       "name": "Gaststätte Zur alten Rose",
       "strasse": "Häusserstr. 22",
@@ -309,7 +1704,64 @@
       "name": "Dominik Boss",
       "tel": "0157 - 85073806",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Boss",
+        "vorname": "Dominik (TC)",
+        "encName": "Qm9zcw==",
+        "encVorname": "RG9taW5payAoVEMp"
+      },
+      {
+        "name": "Embach",
+        "vorname": "Martin",
+        "encName": "RW1iYWNo",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Freiseis",
+        "vorname": "Frank",
+        "encName": "RnJlaXNlaXM=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Fuchs",
+        "vorname": "Karl-Heinz",
+        "encName": "RnVjaHM=",
+        "encVorname": "S2FybC1IZWlueg=="
+      },
+      {
+        "name": "Kost",
+        "vorname": "Patrick",
+        "encName": "S29zdA==",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Raptis",
+        "vorname": "Nikolaos",
+        "encName": "UmFwdGlz",
+        "encVorname": "Tmlrb2xhb3M="
+      },
+      {
+        "name": "Stelle",
+        "vorname": "Mike",
+        "encName": "U3RlbGxl",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Zang",
+        "vorname": "Lothar",
+        "encName": "WmFuZw==",
+        "encVorname": "TG90aGFy"
+      },
+      {
+        "name": "Fraile",
+        "vorname": "Antonio",
+        "encName": "RnJhaWxl",
+        "encVorname": "QW50b25pbw=="
+      }
+    ],
+    "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAy"
   },
   "bdl025": {
     "name": "Gegen die Drück 3",
@@ -322,7 +1774,52 @@
       "name": "Bastian Durchholz",
       "tel": "0176 - 70893048",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Anselmann",
+        "vorname": "Tim",
+        "encName": "QW5zZWxtYW5u",
+        "encVorname": "VGlt"
+      },
+      {
+        "name": "Durchholz",
+        "vorname": "Bastian (TC)",
+        "encName": "RHVyY2hob2x6",
+        "encVorname": "QmFzdGlhbiAoVEMp"
+      },
+      {
+        "name": "Gawlik",
+        "vorname": "Ralf",
+        "encName": "R2F3bGlr",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Jany",
+        "vorname": "Christian",
+        "encName": "SmFueQ==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Schied",
+        "vorname": "Andreas",
+        "encName": "U2NoaWVk",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Skrzypek",
+        "vorname": "Iwana",
+        "encName": "U2tyenlwZWs=",
+        "encVorname": "SXdhbmE="
+      },
+      {
+        "name": "Weber",
+        "vorname": "Holger",
+        "encName": "V2ViZXI=",
+        "encVorname": "SG9sZ2Vy"
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERy/GNrIDM="
   },
   "bdl026": {
     "name": "Gegen die Drück 4",
@@ -335,7 +1832,52 @@
       "name": "Yvonne Mocker",
       "tel": "0152 - 01003354",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Stache",
+        "vorname": "Manuela",
+        "encName": "U3RhY2hl",
+        "encVorname": "TWFudWVsYQ=="
+      },
+      {
+        "name": "Gumsheimer",
+        "vorname": "Tina",
+        "encName": "R3Vtc2hlaW1lcg==",
+        "encVorname": "VGluYQ=="
+      },
+      {
+        "name": "Mack",
+        "vorname": "Renate",
+        "encName": "TWFjaw==",
+        "encVorname": "UmVuYXRl"
+      },
+      {
+        "name": "Winter",
+        "vorname": "Anna",
+        "encName": "V2ludGVy",
+        "encVorname": "QW5uYQ=="
+      },
+      {
+        "name": "Margraf",
+        "vorname": "Sandra",
+        "encName": "TWFyZ3JhZg==",
+        "encVorname": "U2FuZHJh"
+      },
+      {
+        "name": "Mocker",
+        "vorname": "Yvonne (TC)",
+        "encName": "TW9ja2Vy",
+        "encVorname": "WXZvbm5lIChUQyk="
+      },
+      {
+        "name": "Dworaczek",
+        "vorname": "Anetta",
+        "encName": "RHdvcmFjemVr",
+        "encVorname": "QW5ldHRh"
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERy/GNrIDQ="
   },
   "bdl027": {
     "name": "Ideal Wild Tigers",
@@ -348,7 +1890,52 @@
       "name": "Susanne Thoma",
       "tel": "0170 - 4813373",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Bachert",
+        "vorname": "Steffen",
+        "encName": "QmFjaGVydA==",
+        "encVorname": "U3RlZmZlbg=="
+      },
+      {
+        "name": "Baust",
+        "vorname": "Christian",
+        "encName": "QmF1c3Q=",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Brucker",
+        "vorname": "Jürgen",
+        "encName": "QnJ1Y2tlcg==",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Buning",
+        "vorname": "Stephanie",
+        "encName": "QnVuaW5n",
+        "encVorname": "U3RlcGhhbmll"
+      },
+      {
+        "name": "Schweitzer",
+        "vorname": "Ralf",
+        "encName": "U2Nod2VpdHplcg==",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Mack",
+        "vorname": "Paul Curtiss",
+        "encName": "TWFjaw==",
+        "encVorname": "UGF1bCBDdXJ0aXNz"
+      },
+      {
+        "name": "Thoma",
+        "vorname": "Susanne (TC)",
+        "encName": "VGhvbWE=",
+        "encVorname": "U3VzYW5uZSAoVEMp"
+      }
+    ],
+    "encTeam": "SWRlYWwgV2lsZCBUaWdlcnM="
   },
   "bdl028": {
     "name": "Iron Eagles",
@@ -361,10 +1948,61 @@
       "name": "Tobias Mohr",
       "tel": "0176 - 30454995",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Lochbaum",
+        "vorname": "Lars",
+        "encName": "TG9jaGJhdW0=",
+        "encVorname": "TGFycw=="
+      },
+      {
+        "name": "Lucas",
+        "vorname": "Jan",
+        "encName": "THVjYXM=",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Mohr",
+        "vorname": "Markus",
+        "encName": "TW9ocg==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Mohr",
+        "vorname": "Tobias (TC)",
+        "encName": "TW9ocg==",
+        "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Schulzendorf",
+        "vorname": "Ralf",
+        "encName": "U2NodWx6ZW5kb3Jm",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Weber",
+        "vorname": "Florian",
+        "encName": "V2ViZXI=",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Zuber",
+        "vorname": "Sven",
+        "encName": "WnViZXI=",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Gerdon",
+        "vorname": "Marcel",
+        "encName": "R2VyZG9u",
+        "encVorname": "TWFyY2Vs"
+      }
+    ],
+    "encTeam": "SXJvbiBFYWdsZXM="
   },
   "bdl029": {
-    "name": "Taraxacuma 3",
+    "name": "Taraxacuma Die Dritte",
     "spiellokal": {
       "name": "Holzwurm",
       "strasse": "Rheinstr. 60",
@@ -374,7 +2012,76 @@
       "name": "Andrea Richard",
       "tel": "02756 - 944310 (ab 19 Uhr)",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Hahn",
+        "vorname": "Thomas",
+        "encName": "SGFobg==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Janin",
+        "vorname": "Sabrina",
+        "encName": "SmFuaW4=",
+        "encVorname": "U2FicmluYQ=="
+      },
+      {
+        "name": "Jewell",
+        "vorname": "David",
+        "encName": "SmV3ZWxs",
+        "encVorname": "RGF2aWQ="
+      },
+      {
+        "name": "Kübler",
+        "vorname": "Lukas",
+        "encName": "S/xibGVy",
+        "encVorname": "THVrYXM="
+      },
+      {
+        "name": "Mohr",
+        "vorname": "Jürgen",
+        "encName": "TW9ocg==",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Weick",
+        "vorname": "Andreas",
+        "encName": "V2VpY2s=",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Werner",
+        "vorname": "Armin",
+        "encName": "V2VybmVy",
+        "encVorname": "QXJtaW4="
+      },
+      {
+        "name": "Werner",
+        "vorname": "Jutta",
+        "encName": "V2VybmVy",
+        "encVorname": "SnV0dGE="
+      },
+      {
+        "name": "Ziege",
+        "vorname": "Dennis",
+        "encName": "WmllZ2U=",
+        "encVorname": "RGVubmlz"
+      },
+      {
+        "name": "Richard",
+        "vorname": "Andrea (TC)",
+        "encName": "UmljaGFyZA==",
+        "encVorname": "QW5kcmVhIChUQyk="
+      },
+      {
+        "name": "Hodorff",
+        "vorname": "Tanja",
+        "encName": "SG9kb3JmZg==",
+        "encVorname": "VGFuamE="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBEaWUgRHJpdHRl"
   },
   "bdl030": {
     "name": "Taraxacuma TNT",
@@ -387,7 +2094,70 @@
       "name": "Ralf Stegmüller",
       "tel": "07254 - 985210",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Barth",
+        "vorname": "Holger",
+        "encName": "QmFydGg=",
+        "encVorname": "SG9sZ2Vy"
+      },
+      {
+        "name": "Groß",
+        "vorname": "Christina",
+        "encName": "R3Jv3w==",
+        "encVorname": "Q2hyaXN0aW5h"
+      },
+      {
+        "name": "Riedle",
+        "vorname": "Heinz",
+        "encName": "UmllZGxl",
+        "encVorname": "SGVpbno="
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Jochen",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Tobias",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Schmitteckert",
+        "vorname": "Bernd",
+        "encName": "U2NobWl0dGVja2VydA==",
+        "encVorname": "QmVybmQ="
+      },
+      {
+        "name": "Schmitteckert",
+        "vorname": "Sascha",
+        "encName": "U2NobWl0dGVja2VydA==",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Stegmüller",
+        "vorname": "Ralf (TC)",
+        "encName": "U3RlZ238bGxlcg==",
+        "encVorname": "UmFsZiAoVEMp"
+      },
+      {
+        "name": "Steinle",
+        "vorname": "Stefan",
+        "encName": "U3RlaW5sZQ==",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Resch",
+        "vorname": "Kimo",
+        "encName": "UmVzY2g=",
+        "encVorname": "S2ltbw=="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBUTlQ="
   },
   "bdl031": {
     "name": "Team Wilder Mann",
@@ -400,10 +2170,49 @@
       "name": "Jörg Bogumil",
       "tel": "0173 - 6887503",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Bogumil",
+        "vorname": "Jörg (TC)",
+        "encName": "Qm9ndW1pbA==",
+        "encVorname": "SvZyZyAoVEMp"
+      },
+      {
+        "name": "Da Silvanovo",
+        "vorname": "Antonio",
+        "encName": "RGEgU2lsdmFub3Zv",
+        "encVorname": "QW50b25pbw=="
+      },
+      {
+        "name": "Lamoth",
+        "vorname": "Uwe",
+        "encName": "TGFtb3Ro",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Mehlmer",
+        "vorname": "Bernd",
+        "encName": "TWVobG1lcg==",
+        "encVorname": "QmVybmQ="
+      },
+      {
+        "name": "Michl",
+        "vorname": "Rolf",
+        "encName": "TWljaGw=",
+        "encVorname": "Um9sZg=="
+      },
+      {
+        "name": "Schell",
+        "vorname": "Thomas",
+        "encName": "U2NoZWxs",
+        "encVorname": "VGhvbWFz"
+      }
+    ],
+    "encTeam": "VGVhbSBXaWxkZXIgTWFubg=="
   },
   "bdl032": {
-    "name": "Blau-Weiß Karlsruhe",
+    "name": "DC Blau-Weiß Karlsruhe",
     "spiellokal": {
       "name": "Dart Schubbe",
       "strasse": "Steinkreuzstr. 14",
@@ -413,7 +2222,70 @@
       "name": "Tobias Götzelmann",
       "tel": "0178 - 4981045",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Barnstedt",
+        "vorname": "Wolfram",
+        "encName": "QmFybnN0ZWR0",
+        "encVorname": "V29sZnJhbQ=="
+      },
+      {
+        "name": "Coogan",
+        "vorname": "Ferghal",
+        "encName": "Q29vZ2Fu",
+        "encVorname": "RmVyZ2hhbA=="
+      },
+      {
+        "name": "De Bortoli",
+        "vorname": "Udo",
+        "encName": "RGUgQm9ydG9saQ==",
+        "encVorname": "VWRv"
+      },
+      {
+        "name": "Götzelmann",
+        "vorname": "Tobias (TC)",
+        "encName": "R/Z0emVsbWFubg==",
+        "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Jock",
+        "vorname": "Bernt",
+        "encName": "Sm9jaw==",
+        "encVorname": "QmVybnQ="
+      },
+      {
+        "name": "Oheim",
+        "vorname": "Horst",
+        "encName": "T2hlaW0=",
+        "encVorname": "SG9yc3Q="
+      },
+      {
+        "name": "Pahlke",
+        "vorname": "Stefan",
+        "encName": "UGFobGtl",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Hettich",
+        "vorname": "Markus",
+        "encName": "SGV0dGljaA==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Ploth",
+        "vorname": "Sebastian",
+        "encName": "UGxvdGg=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Biernatzki",
+        "vorname": "Christian",
+        "encName": "Qmllcm5hdHpraQ==",
+        "encVorname": "Q2hyaXN0aWFu"
+      }
+    ],
+    "encTeam": "REMgQmxhdS1XZWnfIEthcmxzcnVoZQ=="
   },
   "bdl033": {
     "name": "D.A.R.T. Plumbata",
@@ -426,7 +2298,118 @@
       "name": "Melanie Klomann",
       "tel": "0176 - 80665025",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Antal",
+        "vorname": "Oliver (TC)",
+        "encName": "QW50YWw=",
+        "encVorname": "T2xpdmVyIChUQyk="
+      },
+      {
+        "name": "Alpino",
+        "vorname": "Fabio",
+        "encName": "QWxwaW5v",
+        "encVorname": "RmFiaW8="
+      },
+      {
+        "name": "Augenstein",
+        "vorname": "Marius",
+        "encName": "QXVnZW5zdGVpbg==",
+        "encVorname": "TWFyaXVz"
+      },
+      {
+        "name": "Augenstein",
+        "vorname": "Norbert",
+        "encName": "QXVnZW5zdGVpbg==",
+        "encVorname": "Tm9yYmVydA=="
+      },
+      {
+        "name": "Berninger",
+        "vorname": "Hans",
+        "encName": "QmVybmluZ2Vy",
+        "encVorname": "SGFucw=="
+      },
+      {
+        "name": "Berninger",
+        "vorname": "Martin",
+        "encName": "QmVybmluZ2Vy",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Braun",
+        "vorname": "Rene",
+        "encName": "QnJhdW4=",
+        "encVorname": "UmVuZQ=="
+      },
+      {
+        "name": "Hofmann",
+        "vorname": "Jan",
+        "encName": "SG9mbWFubg==",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Höger",
+        "vorname": "Jörg",
+        "encName": "SPZnZXI=",
+        "encVorname": "SvZyZw=="
+      },
+      {
+        "name": "Joudi",
+        "vorname": "Josef",
+        "encName": "Sm91ZGk=",
+        "encVorname": "Sm9zZWY="
+      },
+      {
+        "name": "Klein",
+        "vorname": "Ralf",
+        "encName": "S2xlaW4=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Klomann",
+        "vorname": "Melanie",
+        "encName": "S2xvbWFubg==",
+        "encVorname": "TWVsYW5pZQ=="
+      },
+      {
+        "name": "König",
+        "vorname": "Kevin",
+        "encName": "S/ZuaWc=",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Muntz",
+        "vorname": "Hans Peter",
+        "encName": "TXVudHo=",
+        "encVorname": "SGFucyBQZXRlcg=="
+      },
+      {
+        "name": "Rohde",
+        "vorname": "Thomas",
+        "encName": "Um9oZGU=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Weber",
+        "vorname": "Alexander",
+        "encName": "V2ViZXI=",
+        "encVorname": "QWxleGFuZGVy"
+      },
+      {
+        "name": "Poppeck",
+        "vorname": "Tobias",
+        "encName": "UG9wcGVjaw==",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Schulz",
+        "vorname": "Toni",
+        "encName": "U2NodWx6",
+        "encVorname": "VG9uaQ=="
+      }
+    ],
+    "encTeam": "RC5BLlIuVC4gUGx1bWJhdGE="
   },
   "bdl034": {
     "name": "Dart Train Rastatt",
@@ -439,10 +2422,67 @@
       "name": "Dieter Philipp",
       "tel": "0171 - 6011849",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Burkart",
+        "vorname": "Christian",
+        "encName": "QnVya2FydA==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Fritz",
+        "vorname": "Jenny",
+        "encName": "RnJpdHo=",
+        "encVorname": "SmVubnk="
+      },
+      {
+        "name": "Handke",
+        "vorname": "Jens",
+        "encName": "SGFuZGtl",
+        "encVorname": "SmVucw=="
+      },
+      {
+        "name": "Havelka",
+        "vorname": "Ralf",
+        "encName": "SGF2ZWxrYQ==",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Hellgoth",
+        "vorname": "Martin",
+        "encName": "SGVsbGdvdGg=",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Kilgour",
+        "vorname": "Dave",
+        "encName": "S2lsZ291cg==",
+        "encVorname": "RGF2ZQ=="
+      },
+      {
+        "name": "Knöbl",
+        "vorname": "Gerd",
+        "encName": "S272Ymw=",
+        "encVorname": "R2VyZA=="
+      },
+      {
+        "name": "Philipp",
+        "vorname": "Dieter (TC)",
+        "encName": "UGhpbGlwcA==",
+        "encVorname": "RGlldGVyIChUQyk="
+      },
+      {
+        "name": "Redwanz",
+        "vorname": "Klaus",
+        "encName": "UmVkd2Fueg==",
+        "encVorname": "S2xhdXM="
+      }
+    ],
+    "encTeam": "RGFydCBUcmFpbiBSYXN0YXR0"
   },
   "bdl035": {
-    "name": "DC 81 Karlsruhe",
+    "name": "DC 81 Karlsruhe",
     "spiellokal": {
       "name": "Der Hexenkessel",
       "strasse": "Hardtstr. 45a",
@@ -452,10 +2492,67 @@
       "name": "Marco Müller",
       "tel": "0160 - 7356535",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Müller",
+        "vorname": "Marco (TC)",
+        "encName": "TfxsbGVy",
+        "encVorname": "TWFyY28gKFRDKQ=="
+      },
+      {
+        "name": "Andert",
+        "vorname": "Iris",
+        "encName": "QW5kZXJ0",
+        "encVorname": "SXJpcw=="
+      },
+      {
+        "name": "Araci",
+        "vorname": "Cihan",
+        "encName": "QXJhY2k=",
+        "encVorname": "Q2loYW4="
+      },
+      {
+        "name": "Daum",
+        "vorname": "Jürgen",
+        "encName": "RGF1bQ==",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Gegenheimer",
+        "vorname": "Matthias",
+        "encName": "R2VnZW5oZWltZXI=",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Göbel",
+        "vorname": "Ralf",
+        "encName": "R/ZiZWw=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Ilchmann",
+        "vorname": "Horst",
+        "encName": "SWxjaG1hbm4=",
+        "encVorname": "SG9yc3Q="
+      },
+      {
+        "name": "Müller",
+        "vorname": "Bodo",
+        "encName": "TfxsbGVy",
+        "encVorname": "Qm9kbw=="
+      },
+      {
+        "name": "Neuhaus",
+        "vorname": "Mario",
+        "encName": "TmV1aGF1cw==",
+        "encVorname": "TWFyaW8="
+      }
+    ],
+    "encTeam": "REMgODEgS2FybHNydWhl"
   },
   "bdl036": {
-    "name": "DC Shamrock",
+    "name": "DC Shamrock",
     "spiellokal": {
       "name": "Matzes Pub",
       "strasse": "Heidelberger Str. 1",
@@ -465,9 +2562,72 @@
       "name": "Benjamin Bischoff",
       "tel": "0170 - 5493211",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Bischoff",
+        "vorname": "Benjamin (TC)",
+        "encName": "QmlzY2hvZmY=",
+        "encVorname": "QmVuamFtaW4gKFRDKQ=="
+      },
+      {
+        "name": "During",
+        "vorname": "Andreas",
+        "encName": "RHVyaW5n",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Espig",
+        "vorname": "Toni",
+        "encName": "RXNwaWc=",
+        "encVorname": "VG9uaQ=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Yasmin",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "WWFzbWlu"
+      },
+      {
+        "name": "Kimling",
+        "vorname": "Jens",
+        "encName": "S2ltbGluZw==",
+        "encVorname": "SmVucw=="
+      },
+      {
+        "name": "Kuhn",
+        "vorname": "Alexander",
+        "encName": "S3Vobg==",
+        "encVorname": "QWxleGFuZGVy"
+      },
+      {
+        "name": "Pujic",
+        "vorname": "Matthias",
+        "encName": "UHVqaWM=",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Schlicht",
+        "vorname": "Werner",
+        "encName": "U2NobGljaHQ=",
+        "encVorname": "V2VybmVy"
+      },
+      {
+        "name": "Stansch",
+        "vorname": "Tobias",
+        "encName": "U3RhbnNjaA==",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Wagner",
+        "vorname": "Micha",
+        "encName": "V2FnbmVy",
+        "encVorname": "TWljaGE="
+      }
+    ],
+    "encTeam": "REMgU2hhbXJvY2s="
   },
-  "bdl0037": {
+  "bdl037": {
     "name": "Gaggenauer Dartmoskitos 1",
     "spiellokal": {
       "name": "Am Traischbachstadion",
@@ -478,7 +2638,58 @@
       "name": "Christian Schorpp",
       "tel": "01590 - 5059535",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Kohrt",
+        "vorname": "Florian",
+        "encName": "S29ocnQ=",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Krzyzanowski",
+        "vorname": "Lukas",
+        "encName": "S3J6eXphbm93c2tp",
+        "encVorname": "THVrYXM="
+      },
+      {
+        "name": "Nowak",
+        "vorname": "Lukas",
+        "encName": "Tm93YWs=",
+        "encVorname": "THVrYXM="
+      },
+      {
+        "name": "Nowak",
+        "vorname": "Martin",
+        "encName": "Tm93YWs=",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Schorpp",
+        "vorname": "Christian (TC)",
+        "encName": "U2Nob3JwcA==",
+        "encVorname": "Q2hyaXN0aWFuIChUQyk="
+      },
+      {
+        "name": "Schubert",
+        "vorname": "Bastian",
+        "encName": "U2NodWJlcnQ=",
+        "encVorname": "QmFzdGlhbg=="
+      },
+      {
+        "name": "Walz",
+        "vorname": "David",
+        "encName": "V2Fseg==",
+        "encVorname": "RGF2aWQ="
+      },
+      {
+        "name": "Schier",
+        "vorname": "Mark",
+        "encName": "U2NoaWVy",
+        "encVorname": "TWFyaw=="
+      }
+    ],
+    "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMQ=="
   },
   "bdl038": {
     "name": "Gaggenauer Dartmoskitos 2",
@@ -491,7 +2702,64 @@
       "name": "Joachim Pflüger",
       "tel": "0170 - 6059950",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Weis",
+        "vorname": "Frank",
+        "encName": "V2Vpcw==",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Bache",
+        "vorname": "John",
+        "encName": "QmFjaGU=",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Gleisle",
+        "vorname": "Michael",
+        "encName": "R2xlaXNsZQ==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Kraft",
+        "vorname": "Thomas",
+        "encName": "S3JhZnQ=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Pflüger",
+        "vorname": "Joachim (TC)",
+        "encName": "UGZs/Gdlcg==",
+        "encVorname": "Sm9hY2hpbSAoVEMp"
+      },
+      {
+        "name": "Plutta",
+        "vorname": "Mateusz",
+        "encName": "UGx1dHRh",
+        "encVorname": "TWF0ZXVzeg=="
+      },
+      {
+        "name": "Plutta",
+        "vorname": "Ryszard",
+        "encName": "UGx1dHRh",
+        "encVorname": "UnlzemFyZA=="
+      },
+      {
+        "name": "Raum",
+        "vorname": "Dominik",
+        "encName": "UmF1bQ==",
+        "encVorname": "RG9taW5paw=="
+      },
+      {
+        "name": "Heidecke",
+        "vorname": "Steffen",
+        "encName": "SGVpZGVja2U=",
+        "encVorname": "U3RlZmZlbg=="
+      }
+    ],
+    "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMg=="
   },
   "bdl039": {
     "name": "Karlsruher Dart Freunde (KDF)",
@@ -504,7 +2772,76 @@
       "name": "Fabian Mager",
       "tel": "0179 - 9034821",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Mager",
+        "vorname": "Fabian (TC)",
+        "encName": "TWFnZXI=",
+        "encVorname": "RmFiaWFuIChUQyk="
+      },
+      {
+        "name": "Reeb",
+        "vorname": "Manfred",
+        "encName": "UmVlYg==",
+        "encVorname": "TWFuZnJlZA=="
+      },
+      {
+        "name": "Pilgrim",
+        "vorname": "Jerry",
+        "encName": "UGlsZ3JpbQ==",
+        "encVorname": "SmVycnk="
+      },
+      {
+        "name": "Beier",
+        "vorname": "Nora",
+        "encName": "QmVpZXI=",
+        "encVorname": "Tm9yYQ=="
+      },
+      {
+        "name": "Hentschel Hoffmann",
+        "vorname": "Holger",
+        "encName": "SGVudHNjaGVsIEhvZmZtYW5u",
+        "encVorname": "SG9sZ2Vy"
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Kevin",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Gabel",
+        "vorname": "Sebastian",
+        "encName": "R2FiZWw=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Rometsch",
+        "vorname": "Marco",
+        "encName": "Um9tZXRzY2g=",
+        "encVorname": "TWFyY28="
+      },
+      {
+        "name": "Rometsch",
+        "vorname": "Manuela",
+        "encName": "Um9tZXRzY2g=",
+        "encVorname": "TWFudWVsYQ=="
+      },
+      {
+        "name": "Müller",
+        "vorname": "Pit",
+        "encName": "TfxsbGVy",
+        "encVorname": "UGl0"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Maurice",
+        "encName": "TfxsbGVy",
+        "encVorname": "TWF1cmljZQ=="
+      }
+    ],
+    "encTeam": "S2FybHNydWhlciBEYXJ0IEZyZXVuZGUgKEtERik="
   },
   "bdl040": {
     "name": "Taraxacuma Tornados",
@@ -517,7 +2854,58 @@
       "name": "Dieter Richard",
       "tel": "07256 - 944310 (ab 19 Uhr)",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Billmann",
+        "vorname": "Thorsten",
+        "encName": "QmlsbG1hbm4=",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Cochon",
+        "vorname": "Jose",
+        "encName": "Q29jaG9u",
+        "encVorname": "Sm9zZQ=="
+      },
+      {
+        "name": "Hecker",
+        "vorname": "Jörg",
+        "encName": "SGVja2Vy",
+        "encVorname": "SvZyZw=="
+      },
+      {
+        "name": "Hurst",
+        "vorname": "Mike",
+        "encName": "SHVyc3Q=",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Oberacker",
+        "vorname": "Ronny",
+        "encName": "T2JlcmFja2Vy",
+        "encVorname": "Um9ubnk="
+      },
+      {
+        "name": "Richard",
+        "vorname": "Dieter (TC)",
+        "encName": "UmljaGFyZA==",
+        "encVorname": "RGlldGVyIChUQyk="
+      },
+      {
+        "name": "Scherer",
+        "vorname": "Andre",
+        "encName": "U2NoZXJlcg==",
+        "encVorname": "QW5kcmU="
+      },
+      {
+        "name": "Vogler",
+        "vorname": "Markus",
+        "encName": "Vm9nbGVy",
+        "encVorname": "TWFya3Vz"
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBUb3JuYWRvcw=="
   },
   "bdl041": {
     "name": "Taraxacuma Wölfe",
@@ -530,6 +2918,63 @@
       "name": "Diana Damsons",
       "tel": "0176 - 57623854",
       "mail": ""
-    }
+    },
+    "mitglieder": [
+      {
+        "name": "Becker",
+        "vorname": "Steffen",
+        "encName": "QmVja2Vy",
+        "encVorname": "U3RlZmZlbg=="
+      },
+      {
+        "name": "Damsons",
+        "vorname": "Diana (TC)",
+        "encName": "RGFtc29ucw==",
+        "encVorname": "RGlhbmEgKFRDKQ=="
+      },
+      {
+        "name": "Gutting",
+        "vorname": "Ralf",
+        "encName": "R3V0dGluZw==",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Kartach",
+        "vorname": "Jörg",
+        "encName": "S2FydGFjaA==",
+        "encVorname": "SvZyZw=="
+      },
+      {
+        "name": "Keilhauer",
+        "vorname": "Armin",
+        "encName": "S2VpbGhhdWVy",
+        "encVorname": "QXJtaW4="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Christine",
+        "encName": "QmVja2Vy",
+        "encVorname": "Q2hyaXN0aW5l"
+      },
+      {
+        "name": "Knobloch",
+        "vorname": "Andreas",
+        "encName": "S25vYmxvY2g=",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Deeg",
+        "vorname": "Carlo",
+        "encName": "RGVlZw==",
+        "encVorname": "Q2FybG8="
+      },
+      {
+        "name": "Schlicht",
+        "vorname": "Daniel",
+        "encName": "U2NobGljaHQ=",
+        "encVorname": "RGFuaWVs"
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBX9mxmZQ=="
   }
 }

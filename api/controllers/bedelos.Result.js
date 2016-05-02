@@ -7,14 +7,18 @@ var os = require('os');
 var fs = require('fs');
 var jade = require('jade');
 var nodemailer = require("nodemailer");
+var jsonfile = require('jsonfile');
 
 function uploadResults (req, res) {
     try {
+        var sPath = path.resolve(config.get("bedelos.datapath"));
+
         var tcHeim = req.swagger.params.tcHeim.originalValue;
         var tcGast = req.swagger.params.tcGast.originalValue;
         var sResult = req.swagger.params.res.originalValue;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
+        jsonfile.writeFileSync(sPath + "/ergebnisse/kln001.json", oResult, {spaces: 2});
 
         var picture = req.swagger.params.picture.originalValue;
         var sFilename = path.resolve(config.get("temp.dir") + "/" + picture.originalname);

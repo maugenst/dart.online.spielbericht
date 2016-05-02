@@ -943,7 +943,7 @@ function initializeGameSelectionScreen(oVereine) {
 	for (var verein in oVereine) {
 		aVereine.push(atob(verein));
 	};
-	//global Variable vereine is used averywhere else...
+	//global Variable vereine is used everywhere else...
 	vereine = oVereine;
 
 	aVereine.sort();
@@ -978,9 +978,19 @@ var spiel = window.localStorage.getItem("spiel");
 var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
 var ergebnisse = undefined;
 var vereine = null;
+var oSpielplan = null;
+var oTeams = null;
 
 $.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
 	window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
+});
+
+$.getJSON("/saison/1516/Spielplan.json", function(spielplan){
+    oSpielplan = spielplan;
+});
+
+$.getJSON("/saison/1516/Teams.json", function(teams){
+    oTeams = teams;
 });
 
 switchMore("more1", false, 0);

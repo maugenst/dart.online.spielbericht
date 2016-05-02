@@ -359,3 +359,383 @@ YAMLException: bad indentation of a sequence entry at line 41, column 15:
 [2016-04-22 17:03:29.734] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
 [2016-04-22 17:03:30.234] [INFO] bedelos - HTTP server running and listening on port=3000
 [2016-04-22 17:03:30.234] [INFO] bedelos - Startup took 1216 milliseconds.
+[2016-04-26 14:43:13.036] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-26 14:43:13.040] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-26 14:43:13.041] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-26 14:43:18.195] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-26 14:43:18.195] [INFO] bedelos - Startup took 14027 milliseconds.
+[2016-04-26 14:51:49.953] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-26 14:51:49.955] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-26 14:51:49.955] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-26 14:51:50.397] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-26 14:51:50.398] [INFO] bedelos - Startup took 1236 milliseconds.
+[2016-04-26 15:16:11.118] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-26 15:16:11.120] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-26 15:16:11.121] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-26 15:16:11.376] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-26 15:16:11.376] [INFO] bedelos - Startup took 1214 milliseconds.
+[2016-04-26 15:16:34.919] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-26 15:16:34.922] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-26 15:16:34.922] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-26 15:16:35.183] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-26 15:16:35.183] [INFO] bedelos - Startup took 1233 milliseconds.
+[2016-04-26 15:17:35.069] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-26 15:17:35.071] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-26 15:17:35.071] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-26 15:17:35.307] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-26 15:17:35.307] [INFO] bedelos - Startup took 1148 milliseconds.
+[2016-04-27 18:05:38.843] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:05:38.845] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:05:38.846] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:05:39.068] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:05:39.068] [INFO] bedelos - Startup took 1106 milliseconds.
+[2016-04-27 18:07:10.438] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:07:10.440] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:07:10.440] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:07:10.686] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:07:10.686] [INFO] bedelos - Startup took 1169 milliseconds.
+[2016-04-27 18:07:26.668] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:07:26.670] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:07:26.670] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:07:26.899] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:07:26.899] [INFO] bedelos - Startup took 1148 milliseconds.
+[2016-04-27 18:07:47.604] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:07:47.607] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:07:47.607] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:07:47.836] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:07:47.836] [INFO] bedelos - Startup took 1176 milliseconds.
+[2016-04-27 18:08:45.550] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:08:45.552] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:08:45.552] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:08:45.817] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:08:45.817] [INFO] bedelos - Startup took 1319 milliseconds.
+[2016-04-27 18:09:07.728] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:09:07.730] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:09:07.730] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:09:08.007] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:09:08.007] [INFO] bedelos - Startup took 1470 milliseconds.
+[2016-04-27 18:09:33.954] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:09:33.956] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:09:33.956] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:09:34.222] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:09:34.222] [INFO] bedelos - Startup took 1467 milliseconds.
+[2016-04-27 18:09:54.126] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:09:54.128] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:09:54.128] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:09:54.398] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:09:54.398] [INFO] bedelos - Startup took 1467 milliseconds.
+[2016-04-27 18:11:01.464] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:11:01.465] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:11:01.466] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:11:01.726] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:11:01.726] [INFO] bedelos - Startup took 1441 milliseconds.
+[2016-04-27 18:11:53.237] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:11:53.239] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:11:53.240] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:11:53.504] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:11:53.504] [INFO] bedelos - Startup took 1427 milliseconds.
+[2016-04-27 18:13:30.457] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:13:30.458] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:13:30.458] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:13:30.726] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:13:30.726] [INFO] bedelos - Startup took 1477 milliseconds.
+[2016-04-27 18:13:58.634] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:13:58.635] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:13:58.636] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:13:58.923] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:13:58.923] [INFO] bedelos - Startup took 1453 milliseconds.
+[2016-04-27 18:31:55.227] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:31:55.228] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:31:55.229] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:31:55.497] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:31:55.497] [INFO] bedelos - Startup took 1309 milliseconds.
+[2016-04-27 18:32:14.387] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:32:14.390] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:32:14.390] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:32:14.657] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:32:14.658] [INFO] bedelos - Startup took 1415 milliseconds.
+[2016-04-27 18:33:35.314] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:33:35.316] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:33:35.316] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:33:35.615] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:33:35.615] [INFO] bedelos - Startup took 1346 milliseconds.
+[2016-04-27 18:34:22.781] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:34:22.783] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:34:22.783] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:34:23.003] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:34:23.003] [INFO] bedelos - Startup took 1086 milliseconds.
+[2016-04-27 18:42:48.469] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:42:48.472] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:42:48.472] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:42:48.700] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:42:48.700] [INFO] bedelos - Startup took 1124 milliseconds.
+[2016-04-27 18:52:21.188] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-27 18:52:21.190] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-27 18:52:21.190] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-27 18:52:21.478] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-27 18:52:21.478] [INFO] bedelos - Startup took 1416 milliseconds.
+[2016-04-28 09:31:14.433] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:31:14.435] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:31:14.435] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:31:15.475] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:31:15.475] [INFO] bedelos - Startup took 5311 milliseconds.
+[2016-04-28 09:32:35.417] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:32:35.418] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:32:35.418] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:32:35.679] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:32:35.679] [INFO] bedelos - Startup took 1342 milliseconds.
+[2016-04-28 09:33:40.535] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:33:40.537] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:33:40.537] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:33:40.821] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:33:40.821] [INFO] bedelos - Startup took 1410 milliseconds.
+[2016-04-28 09:33:59.952] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:33:59.954] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:33:59.954] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:34:00.279] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:34:00.280] [INFO] bedelos - Startup took 1443 milliseconds.
+[2016-04-28 09:38:59.818] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:38:59.821] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:38:59.821] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:39:00.054] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:39:00.054] [INFO] bedelos - Startup took 1115 milliseconds.
+[2016-04-28 09:39:45.593] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:39:45.595] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:39:45.595] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:39:45.852] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:39:45.852] [INFO] bedelos - Startup took 1300 milliseconds.
+[2016-04-28 09:42:53.755] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:42:53.757] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:42:53.757] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:42:54.017] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:42:54.017] [INFO] bedelos - Startup took 1386 milliseconds.
+[2016-04-28 09:43:57.913] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:43:57.915] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:43:57.915] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:43:58.143] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:43:58.143] [INFO] bedelos - Startup took 1179 milliseconds.
+[2016-04-28 09:44:28.942] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 09:44:28.945] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 09:44:28.945] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 09:44:29.181] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 09:44:29.181] [INFO] bedelos - Startup took 1158 milliseconds.
+[2016-04-28 13:52:37.626] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 13:52:37.628] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 13:52:37.629] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 13:52:37.887] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 13:52:37.888] [INFO] bedelos - Startup took 1270 milliseconds.
+[2016-04-28 13:52:59.784] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 13:52:59.787] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 13:52:59.787] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 13:53:00.022] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 13:53:00.022] [INFO] bedelos - Startup took 1160 milliseconds.
+[2016-04-28 13:54:01.154] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 13:54:01.156] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 13:54:01.156] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 13:54:01.420] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 13:54:01.420] [INFO] bedelos - Startup took 1530 milliseconds.
+[2016-04-28 15:34:42.552] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 15:34:42.554] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 15:34:42.554] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 15:34:42.834] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 15:34:42.834] [INFO] bedelos - Startup took 1465 milliseconds.
+[2016-04-28 15:43:51.679] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 15:43:51.681] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 15:43:51.681] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 15:43:51.916] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 15:43:51.916] [INFO] bedelos - Startup took 1108 milliseconds.
+[2016-04-28 15:44:35.685] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 15:44:35.688] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 15:44:35.688] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 15:44:35.925] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 15:44:35.925] [INFO] bedelos - Startup took 1140 milliseconds.
+[2016-04-28 15:58:54.500] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 15:58:54.503] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 15:58:54.503] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 15:58:54.739] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 15:58:54.740] [INFO] bedelos - Startup took 1214 milliseconds.
+[2016-04-28 16:16:15.069] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:16:15.071] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:16:15.071] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:16:15.307] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:16:15.307] [INFO] bedelos - Startup took 1156 milliseconds.
+[2016-04-28 16:17:30.349] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:17:30.352] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:17:30.352] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:17:30.581] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:17:30.581] [INFO] bedelos - Startup took 1152 milliseconds.
+[2016-04-28 16:23:51.087] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:23:51.089] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:23:51.089] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:23:51.319] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:23:51.319] [INFO] bedelos - Startup took 1131 milliseconds.
+[2016-04-28 16:24:44.315] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:24:44.317] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:24:44.317] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:24:44.594] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:24:44.594] [INFO] bedelos - Startup took 1356 milliseconds.
+[2016-04-28 16:25:30.249] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:25:30.251] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:25:30.251] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:25:30.535] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:25:30.535] [INFO] bedelos - Startup took 1434 milliseconds.
+[2016-04-28 16:27:39.831] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:27:39.833] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:27:39.833] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:27:40.103] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:27:40.103] [INFO] bedelos - Startup took 1429 milliseconds.
+[2016-04-28 16:27:56.979] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:27:56.981] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:27:56.981] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:27:57.274] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:27:57.274] [INFO] bedelos - Startup took 1404 milliseconds.
+[2016-04-28 16:28:09.005] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:28:09.007] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:28:09.007] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:28:09.290] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:28:09.290] [INFO] bedelos - Startup took 1419 milliseconds.
+[2016-04-28 16:29:17.318] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:29:17.320] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:29:17.320] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:29:17.601] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:29:17.601] [INFO] bedelos - Startup took 1449 milliseconds.
+[2016-04-28 16:30:47.975] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:30:47.977] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:30:47.977] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:30:48.271] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:30:48.271] [INFO] bedelos - Startup took 1453 milliseconds.
+[2016-04-28 16:32:40.486] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 16:32:40.488] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 16:32:40.488] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 16:32:40.816] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 16:32:40.817] [INFO] bedelos - Startup took 1637 milliseconds.
+[2016-04-28 17:19:32.607] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 17:19:32.609] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 17:19:32.609] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 17:19:32.872] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 17:19:32.872] [INFO] bedelos - Startup took 1426 milliseconds.
+[2016-04-28 17:19:51.590] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 17:19:51.592] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 17:19:51.593] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 17:19:51.901] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 17:19:51.902] [INFO] bedelos - Startup took 1444 milliseconds.
+[2016-04-28 17:19:58.668] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 17:19:58.670] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 17:19:58.670] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 17:19:58.979] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 17:19:58.979] [INFO] bedelos - Startup took 1414 milliseconds.
+[2016-04-28 17:20:06.865] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 17:20:06.867] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 17:20:06.867] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 17:20:07.138] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 17:20:07.138] [INFO] bedelos - Startup took 1408 milliseconds.
+[2016-04-28 17:21:33.786] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 17:21:33.788] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 17:21:33.788] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 17:21:34.073] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 17:21:34.073] [INFO] bedelos - Startup took 1432 milliseconds.
+[2016-04-28 17:54:21.281] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 17:54:21.284] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 17:54:21.284] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 17:54:21.518] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 17:54:21.518] [INFO] bedelos - Startup took 1165 milliseconds.
+[2016-04-28 18:00:54.430] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-28 18:00:54.433] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-28 18:00:54.433] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-28 18:00:54.677] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-28 18:00:54.677] [INFO] bedelos - Startup took 1192 milliseconds.
+[2016-04-29 10:24:42.602] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:24:42.605] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:24:42.605] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:24:43.389] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:24:43.389] [INFO] bedelos - Startup took 4179 milliseconds.
+[2016-04-29 10:24:57.110] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:24:57.113] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:24:57.113] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:24:57.358] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:24:57.358] [INFO] bedelos - Startup took 1206 milliseconds.
+[2016-04-29 10:27:04.647] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:27:04.650] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:27:04.650] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:27:04.887] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:27:04.887] [INFO] bedelos - Startup took 1150 milliseconds.
+[2016-04-29 10:27:54.094] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:27:54.096] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:27:54.096] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:27:54.336] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:27:54.337] [INFO] bedelos - Startup took 1144 milliseconds.
+[2016-04-29 10:32:21.305] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:32:21.308] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:32:21.308] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:32:21.561] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:32:21.561] [INFO] bedelos - Startup took 1144 milliseconds.
+[2016-04-29 10:46:24.552] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:46:24.554] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:46:24.554] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:46:24.797] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:46:24.798] [INFO] bedelos - Startup took 1179 milliseconds.
+[2016-04-29 10:47:43.013] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:47:43.015] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:47:43.015] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:47:43.263] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:47:43.263] [INFO] bedelos - Startup took 1161 milliseconds.
+[2016-04-29 10:48:22.324] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:48:22.326] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:48:22.326] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:48:22.579] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:48:22.579] [INFO] bedelos - Startup took 1240 milliseconds.
+[2016-04-29 10:52:15.523] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:52:15.525] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:52:15.525] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:52:15.779] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:52:15.779] [INFO] bedelos - Startup took 1201 milliseconds.
+[2016-04-29 10:53:06.384] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:53:06.386] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:53:06.387] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:53:06.626] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:53:06.626] [INFO] bedelos - Startup took 1149 milliseconds.
+[2016-04-29 10:56:57.063] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 10:56:57.065] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 10:56:57.065] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 10:56:57.347] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 10:56:57.347] [INFO] bedelos - Startup took 1167 milliseconds.
+[2016-04-29 13:48:55.598] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 13:48:55.600] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 13:48:55.601] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 13:48:55.943] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 13:48:55.943] [INFO] bedelos - Startup took 1591 milliseconds.
+[2016-04-29 13:49:23.444] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 13:49:23.446] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 13:49:23.446] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 13:49:23.766] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 13:49:23.766] [INFO] bedelos - Startup took 1449 milliseconds.
+[2016-04-29 13:49:40.591] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 13:49:40.593] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 13:49:40.593] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 13:49:40.938] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 13:49:40.938] [INFO] bedelos - Startup took 1542 milliseconds.
+[2016-04-29 13:51:12.555] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 13:51:12.557] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 13:51:12.557] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 13:51:12.874] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 13:51:12.874] [INFO] bedelos - Startup took 1476 milliseconds.
+[2016-04-29 13:55:00.141] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-04-29 13:55:00.143] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-04-29 13:55:00.143] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-04-29 13:55:00.425] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-04-29 13:55:00.425] [INFO] bedelos - Startup took 1249 milliseconds.
+[2016-05-02 08:29:15.928] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-05-02 08:29:15.930] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-05-02 08:29:15.930] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-05-02 08:29:16.953] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-05-02 08:29:16.953] [INFO] bedelos - Startup took 4965 milliseconds.
+[2016-05-02 08:39:57.362] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-05-02 08:39:57.364] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-05-02 08:39:57.364] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-05-02 08:39:57.625] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-05-02 08:39:57.625] [INFO] bedelos - Startup took 1185 milliseconds.
+[2016-05-02 08:47:17.733] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-05-02 08:47:17.735] [INFO] bedelos - Logdirectory: 'c:\dev\github\dart.online.spielbericht\data\log'
+[2016-05-02 08:47:17.735] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
+[2016-05-02 08:47:18.098] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-05-02 08:47:18.099] [INFO] bedelos - Startup took 1405 milliseconds.
