@@ -739,3 +739,18 @@ YAMLException: bad indentation of a sequence entry at line 41, column 15:
 [2016-05-02 08:47:17.735] [INFO] bedelos - Logfile: 'c:\dev\github\dart.online.spielbericht\data\log\bedelos.out'
 [2016-05-02 08:47:18.098] [INFO] bedelos - HTTP server running and listening on port=3000
 [2016-05-02 08:47:18.099] [INFO] bedelos - Startup took 1405 milliseconds.
+[2016-05-02 17:03:45.426] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-05-02 17:03:45.429] [INFO] bedelos - Logdirectory: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log'
+[2016-05-02 17:03:45.429] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-05-02 17:03:45.642] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-05-02 17:03:45.642] [INFO] bedelos - Startup took 1718 milliseconds.
+[2016-05-06 16:43:58.012] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-05-06 16:43:58.015] [INFO] bedelos - Logdirectory: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log'
+[2016-05-06 16:43:58.015] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-05-06 16:43:58.199] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-05-06 16:43:58.199] [INFO] bedelos - Startup took 6843 milliseconds.
+[2016-05-06 16:57:19.180] [INFO] bedelos - BeDeLOS - BDL Online Spielberichtsbogen
+[2016-05-06 16:57:19.183] [INFO] bedelos - Logdirectory: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log'
+[2016-05-06 16:57:19.183] [INFO] bedelos - Logfile: 'c:\Users\d032233\Documents\GitHub\dart.online.spielbericht\data\log\bedelos.out'
+[2016-05-06 16:57:19.283] [INFO] bedelos - HTTP server running and listening on port=3000
+[2016-05-06 16:57:19.283] [INFO] bedelos - Startup took 1562 milliseconds.
