@@ -17,7 +17,6 @@ var http = require('http');
 var logger = require(__dirname + "/api/helpers/Logger");
 var morgan = require('morgan');
 var cors = require('cors');
-var jadeStatic = require('jade-static');
 module.exports = app; // for testing
 
 

@@ -16,7 +16,6 @@
     "log4js": "0.6.27",
     "jade": "1.11.0",
     "jade-bootstrap": "1.0.2",
-    "jade-static": "1.1.2",
     "lodash": "^4.5.1",
     "morgan": "1.7.0",
     "cors": "2.7.1",

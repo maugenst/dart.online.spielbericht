@@ -37,7 +37,7 @@ function setUpSelections() {
 	var aSpielerGast = [];
 
 	for (var i = 0; i<vereine[ergebnisse.heim].mitglieder.length; i++) {
-		aSpielerHeim.push(atob(vereine[ergebnisse.heim].mitglieder[i].name) + ", " + atob(vereine[ergebnisse.heim].mitglieder[i].vorname));
+		aSpielerHeim.push(vereine[ergebnisse.heim].mitglieder[i].name + ", " + vereine[ergebnisse.heim].mitglieder[i].vorname);
 	};
 	aSpielerHeim.sort();
 	$('#name1').empty();
@@ -61,7 +61,7 @@ function setUpSelections() {
 	};
 
 	for (var i = 0; i<vereine[ergebnisse.gast].mitglieder.length; i++) {
-		aSpielerGast.push(atob(vereine[ergebnisse.gast].mitglieder[i].name) + ", " + atob(vereine[ergebnisse.gast].mitglieder[i].vorname));
+		aSpielerGast.push(vereine[ergebnisse.gast].mitglieder[i].name + ", " + vereine[ergebnisse.gast].mitglieder[i].vorname);
 	};
 	aSpielerGast.sort();
 	$('#name2').empty();
@@ -1004,8 +1004,8 @@ function escapeAll() {
 	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg4").value.trim())));
 	window.localStorage.setItem("nachmeldungen", JSON.stringify(nachmeldungen));
 
-	document.getElementById("heimFeldInTable").innerHTML = atob(heim);
-	document.getElementById("gastFeldInTable").innerHTML = atob(gast);
+	document.getElementById("heimFeldInTable").innerHTML = vereine[heim].name;
+	document.getElementById("gastFeldInTable").innerHTML = vereine[gast].name;
 
 	ergebnisse.heim = heim;
 	ergebnisse.gast = gast;
@@ -1030,21 +1030,33 @@ function displayBusyIndicator() {
 	$("#busyindicator").css("visibility","visible");
 };
 
+function compare(a,b) {
+    if (a.name < b.name)
+        return -1;
+    else if (a.name > b.name)
+        return 1;
+    else
+        return 0;
+}
+
 function initializeGameSelectionScreen(oVereine) {
 
 	var aVereine = [];
-	for (var verein in oVereine) {
-		aVereine.push(atob(verein));
-	};
+    var i = 0;
+    for (var key in oVereine) {
+        aVereine.push(oVereine[key]);
+        aVereine[i].id = key;
+        i++;
+    }
+
 	//global Variable vereine is used everywhere else...
 	vereine = oVereine;
 
-
-	aVereine.sort();
+    aVereine.sort(compare);
 
 	for (var i = 0; i<aVereine.length; i++) {
-		$('#teamheim').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
-		$('#teamgast').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
+		$('#teamheim').append($("<option/>", {value: aVereine[i].id,text: aVereine[i].name}));
+		$('#teamgast').append($("<option/>", {value: aVereine[i].id,text: aVereine[i].name}));
 	};
 
     //document.getElementById("teamgast").disabled = true;
