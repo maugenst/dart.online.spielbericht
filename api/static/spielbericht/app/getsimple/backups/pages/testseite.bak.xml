@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 24 May 2016 16:11:50 +0200</pubDate><title><![CDATA[Testseite]]></title><url><![CDATA[testseite]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Testseite]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[index]]></parent><content><![CDATA[&lt;p&gt;(% script:example %)&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[bdladmin]]></author></item>

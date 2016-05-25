@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 25 May 2016 17:23:11 +0200</pubDate><title><![CDATA[Spielbetrieb]]></title><url><![CDATA[spielbetrieb]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Spielbetrieb]]></menu><menuOrder><![CDATA[5]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[index]]></parent><content><![CDATA[&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://localhost:1080/getsimple/index.php?id=oberliga&quot;&gt;Oberliga&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://localhost:1080/getsimple/index.php?id=bezirksliga&quot;&gt;Bezirksliga&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://localhost:1080/getsimple/index.php?id=kreisliganord&quot;&gt;Kreisliga Nord&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://localhost:1080/getsimple/index.php?id=kreisligasued&quot;&gt;Kreisliga Süd&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;BDL Pokal&lt;/li&gt;
+	&lt;li&gt;Archiv&lt;/li&gt;
+&lt;/ul&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[bdladmin]]></author></item>

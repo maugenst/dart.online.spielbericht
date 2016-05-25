@@ -50,7 +50,7 @@ try {
     app.set('view engine', 'jade');
     app.use(cors());
     app.use(morgan('combined', {stream: fs.createWriteStream(logDirectory + '/access.log', {flags: 'a'})}));
-    app.use('/', express.static('api/static/spielbericht/app'));
+    app.use('/bedelos', express.static('api/static/spielbericht/app'));
     app.use('/saison', express.static('data/saison'));
 
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';

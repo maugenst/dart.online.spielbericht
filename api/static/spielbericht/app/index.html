@@ -160,7 +160,7 @@
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#"><img alt="Badische Dart Liga" src="images/bdl-headerIcon_bw.png" height="20px"> BDL Online Spielbericht</a>
+    <a class="navbar-brand" href="#"><img alt="Badische Dart Liga" src="images/bdl-headerIcon.png" height="20px"> BDL Online Spielbericht</a>
   </div>
 </nav>
 
@@ -289,18 +289,16 @@
         <br>
 
 
-        <form id="sendMail" action="/bedelos/result" method="post" enctype="multipart/form-data" onclick="fillHiddenFields()" onSubmit="displayBusyIndicator()">
-            <textarea id="ergebnisJSON" name="ergebnisJSON" style="display:none"></textarea>
-            <textarea id="emailCSSStyles" name="emailCSSStyles" style="display:none"></textarea>
-            <textarea id="emailSummaryTable" name="emailSummaryTable" style="display:none"></textarea>
+        <form id="sendMail" action="/bedelos/ergebnis" method="post" enctype="multipart/form-data">
             <input type="text" id="tcHeim" name="tcHeim" style="display:none">
             <input type="text" id="tcGast" name="tcGast" style="display:none">
+            <input type="text" id="spielId" name="spielId" style="display:none">
             <input type="text" id="ergebnisRAW" name="res" style="display:none">
             Um den Spielbericht an den Spielleiter der BDL abzuschicken musst Du online gehen.
             Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
             <br><input type="file" name="picture" capture="camera" accept="image/*" id="takePictureField">
             <br><br>
-            <input type="submit" name="submit" value="Absenden" id="sendMailSubmit">
+            <input type="button" value="Absenden" id="sendMailSubmit" onclick="fillHiddenFieldsAndSubmit()">
         </form>
       </div>
     </div>

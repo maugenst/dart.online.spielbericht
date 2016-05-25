@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 25 May 2016 17:18:15 +0200</pubDate><title><![CDATA[Kreisliga Nord]]></title><url><![CDATA[kreisliganord]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Oberliga]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[spielbetrieb]]></parent><content><![CDATA[&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://localhost:1080/getsimple/index.php?id=kreisliganord-vorrunde&quot;&gt;Spielplan&lt;/a&gt; | Tabelle | Statistiken&lt;/p&gt;
+
+&lt;h2&gt;Teams:&lt;/h2&gt;
+
+&lt;p&gt;(% script:ResizeIframe %)&lt;/p&gt;
+
+&lt;p&gt;(% script:teamsKreisligaNord %)&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[bdladmin]]></author></item>

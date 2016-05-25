@@ -8,6 +8,7 @@ basePath: /bedelos
 consumes:
   - application/json
   - application/x-www-form-urlencoded
+  - multipart/form-data
 # format of the responses to the client (Accepts)
 produces:
   - text/plain
@@ -53,7 +54,26 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /result:
+  /teams:
+    x-swagger-router-controller: bedelos.Teams
+    get:
+      produces:
+        - text/html
+      description:
+        Displays a list of all teams
+      parameters:
+        - name: liga
+          type: string
+          description: Liga ID
+          in: query
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /ergebnis:
     x-swagger-router-controller: bedelos.Result
     post:
       consumes:
@@ -65,16 +85,21 @@ paths:
           type: string
           description: Emailadress of home team captain
           in: formData
-          required: true
+          required: false
         - name: tcGast
           type: string
           description: Emailadress of guest team captain
           in: formData
-          required: true
+          required: false
+        - name: spielId
+          type: string
+          description: ID of the Game
+          in: formData
+          required: false
         - name: picture
           in: formData
           description: The picture taken by the mobile device
-          required: true
+          required: false
           type: file
           minLength: 1
           maxLength: 5000000  # ~5MB

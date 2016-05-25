@@ -6,12 +6,12 @@ html
     body(style={"font-family": 'Calibri'})
         each spiele, spieltag in runde
             - var sSpieltag = spieltag.split('_')[1];
-            table(cellpadding='8')
+            table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
                 thead
                     tr
-                        th(colspan='5') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
-                    tr
-                        th Spiel
+                        th(colspan='4') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
+                    tr(style={"background-color": '#AFD3E0'})
+                        //th Spiel
                         th Datum
                         th Heim
                         th Ergebnis
@@ -21,11 +21,11 @@ html
                         tr
                             if (spiel.spielfrei)
                                 if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
-                                    td(colspan='5') Spielfrei: #{teams[spiel.spielfrei].name}
+                                    td(colspan='4') Spielfrei: #{teams[spiel.spielfrei].name}
                                 else
-                                    td(colspan='5') Spielfrei: #{spiel.spielfrei}
+                                    td(colspan='4') Spielfrei: #{spiel.spielfrei}
                             else
-                                td= spiel.id
+                                //td= spiel.id
                                 td= spiel.datum
                                 if (teams[spiel.heim] && teams[spiel.heim].name)
                                     td= teams[spiel.heim].name
@@ -41,3 +41,4 @@ html
                                     td= teams[spiel.gast].name
                                 else
                                     td= spiel.gast
+                br

@@ -25,6 +25,14 @@ body {
 
 
 /* Set widths on the navbar form inputs since otherwise they're 100% wide */
+.navbar {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6B94B4), color-stop(100%,#316594));
+    height: 80px;
+}
+
+.navbar-brand {
+    color: #FFFFFF !important;
+}
 .navbar-form input[type="text"],
 .navbar-form input[type="password"] {
     width: 180px;
@@ -73,10 +81,10 @@ body {
 }
 
 .spinnerContainer {
-    visibility:hidden; 
+    visibility:hidden;
     position:absolute;
-    background-color: rgba(157, 155, 155, 0.51); 
-    width:100%; 
+    background-color: rgba(157, 155, 155, 0.51);
+    width:100%;
     height:100%
 }
 .spinnerContainer > img {
@@ -93,10 +101,10 @@ body {
 }
 
 .uploadContainer {
-    visibility:hidden; 
+    visibility:hidden;
     position:absolute;
-    background-color: rgba(157, 155, 155, 0.51); 
-    width:100%; 
+    background-color: rgba(157, 155, 155, 0.51);
+    width:100%;
     height:100%;
     z-index: 90000;
     text-align: center;
@@ -125,7 +133,7 @@ body {
     font-weight: bold;
 }
 #ergSelection span {
-    display:inline-block; 
+    display:inline-block;
     vertical-align:middle
 }
 #ergSliderId .slider-selection {

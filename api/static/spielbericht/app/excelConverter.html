@@ -7,6 +7,7 @@
 	<script type="text/javascript">
 
 		var oRawData = {};
+        var oAlreadyAdded = {};
 		var oResult = {};
 
         $.getJSON("/saison/1516/Teams.json", function(oTeams) {
@@ -27,20 +28,43 @@
                     var encTeamid = oLine.Teamid;
 					var encName = btoa(oLine.Name);
 					var encVorname = btoa(oLine.Vorname);
+                    var sPlayerID = oLine.Teamid + "_" + oLine.Name + "_" + oLine.Vorname;
                     var encLiga = btoa(oLine.Liga);
                     if (oResult[oLine.Teamid].mitglieder == undefined) {
 						oResult[oLine.Teamid].mitglieder = [];
 					}
                     oResult[oLine.Teamid].encTeam = encTeam;
-					oResult[oLine.Teamid].mitglieder.push({
+                    insertOrUpdate(oResult[oLine.Teamid].mitglieder, {
                         "name" : oLine.Name,
                         "vorname" : oLine.Vorname,
                         "encName" : encName,
                         "encVorname" : encVorname
-					});
+                    });
+
+                    oResult[oLine.Teamid].mitglieder.sort(compare);
 				}
 			};
+            console.log(i, oResult);
 		};
+
+        function compare(a,b) {
+            if (a.name < b.name)
+                return -1;
+            else if (a.name > b.name)
+                return 1;
+            else
+                return 0;
+        }
+
+        function insertOrUpdate(aMembers, oMember) {
+            for (var i = aMembers.length-1; i>-1; i--) {
+                var oTmpMember = aMembers[i];
+                if (oTmpMember.name == oMember.name && oTmpMember.vorname == oMember.vorname) {
+                    aMembers.splice(i,1);
+                }
+            }
+            aMembers.push(oMember);
+        }
 
 		//var csv is the CSV file with headers
 		function csvJSON(csv){

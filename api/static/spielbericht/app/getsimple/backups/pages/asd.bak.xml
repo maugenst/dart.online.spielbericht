@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 24 May 2016 16:11:23 +0200</pubDate><title><![CDATA[asd]]></title><url><![CDATA[asd]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[asd]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent></parent><content><![CDATA[&lt;p&gt;asdasdasdasd&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;(% script:example %)&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[bdladmin]]></author></item>

@@ -1,0 +1,23 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title Service Enablement Request
+    body(style={"font-family": 'Calibri'})
+        each teamId, i in vereine
+            table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+                thead
+                    tr
+                        th(colspan='2')= teams[teamId].name
+                    tr(style={"background-color": '#AFD3E0'})
+                        th(width='50%') Spiellokal
+                        th(width='50%') Teamvertreter + Captain
+                tbody
+                    tr
+                        td #{teams[teamId].spiellokal.name}<br>
+                            | #{teams[teamId].spiellokal.strasse}<br>
+                            | #{teams[teamId].spiellokal.ort}
+                        td #{teams[teamId].teamvertreter.name}<br>
+                            | #{teams[teamId].teamvertreter.tel}<br>
+                            | <a href="mailto:#{teams[teamId].teamvertreter.mail}">Kontakt</a>
+            br

@@ -1,0 +1,25 @@
+@import url(fonts.css);
+body{margin:5% ;font-family:'simple',Arial, Helvetica, sans-serif;font-size:14px;overflow-y:scroll;color:#ffffff;background-color:#0099CC}
+.layout{width:100%;max-width:100%;}
+.header{text-transform:uppercase;padding-bottom:8px;font-size:175%}
+.menu{text-transform:uppercase;
+color:#333333;padding-top:4px;padding-bottom:4px;font-size:110%}
+.menu ul{padding:0px;margin:0px}
+.menu li{display:block;margin-bottom:5px;}
+.menu a:link,.menu a:visited{color:rgba(255,255,255, 0.75);text-decoration:none;}
+.menu a:hover{color:rgba(255,255,255, 1);text-decoration:none;}
+li.current a:link,li.current a:visited{color:rgba(255,255,255, 1);text-decoration:none;}
+.content{padding-top:8px;}
+.content p{margin-top:8px;margin-bottom:8px;}
+.content img{width:auto;max-width:100%;border:1px solid rgba(255,255,255, 1)}
+.content table{margin-top:8px;margin-bottom:8px;width:auto;max-width:100%}
+.content input, .content textarea{color:#0099CC;font-family:'simple',Arial, Helvetica, sans-serif;font-size:100%;width:auto;max-width:100%;border:rgba(255,255,255, 1);background-color:rgba(255,255,255, 1);margin-top:4px;margin-bottom:4px;resize:none}
+.content h1{text-transform:uppercase;margin-top:8px;margin-bottom:8px;font-size:130%;font-weight:normal}
+.content h2{text-transform:uppercase;margin-top:8px;margin-bottom:8px;font-size:115%;font-weight:normal}
+.content h3{text-transform:uppercase;margin-top:8px;margin-bottom:8px;font-size:100%;font-weight:normal}
+.content h4{text-transform:uppercase;margin-top:8px;margin-bottom:8px;font-size:85%;font-weight:normal}
+.content h5{text-transform:uppercase;margin-top:8px;margin-bottom:8px;font-size:70%;font-weight:normal}
+.content h6{text-transform:uppercase;margin-top:8px;margin-bottom:8px;font-size:55%;font-weight:normal}
+.content a:link,.content a:visited{color:rgba(255,255,255, 0.75);text-decoration:underline;}
+.content a:hover{color:rgba(255,255,255, 0.75);text-decoration:none;}
+.bottom{padding-top:8px;color:rgba(255,255,255, 0.75);font-size:80%}

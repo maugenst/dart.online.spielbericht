@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 25 May 2016 17:02:18 +0200</pubDate><title>Oberliga Vorrunde [Kopieren]</title><url>oberliga-vorrunde-2</url><meta></meta><metad></metad><menu>Oberliga Vorrunde</menu><menuOrder>0</menuOrder><menuStatus></menuStatus><template>template.php</template><parent>oberliga</parent><content>&amp;lt;p style=&amp;quot;text-align: center;&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://localhost:1080/getsimple/index.php?id=oberliga-vorrunde&amp;quot;&amp;gt;Vorrunde&amp;lt;/a&amp;gt; | &amp;lt;a href=&amp;quot;http://localhost:1080/getsimple/index.php?id=oberliga-rueckrunde&amp;quot;&amp;gt;Rückrunde&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;(% script:ResizeIframe %)&amp;lt;/p&amp;gt;
+
+&amp;lt;p&amp;gt;(% script:olvr %)&amp;lt;/p&amp;gt;
+</content><private></private><author>bdladmin</author></item>

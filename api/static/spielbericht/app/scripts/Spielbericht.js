@@ -137,7 +137,8 @@ function prepareStatistic(ergebnisse) {
 		if (ergebnisse[oSpiel].spieler1 && ergebnisse[oSpiel].spieler1.name!="" && ergebnisse[oSpiel].spieler2.name!="") {
 			// Einzel
 			var score = calcScoreForPlayer(true,
-				ergebnisse[oSpiel].spieler1.legs,
+                ergebnisse[oSpiel].spieler1.legs,
+                ergebnisse[oSpiel].spieler2.legs,
 				ergebnisse[oSpiel].spieler1.i180er,
 				ergebnisse[oSpiel].spieler1.shortlegs,
 				ergebnisse[oSpiel].spieler1.highfinishes);
@@ -145,7 +146,8 @@ function prepareStatistic(ergebnisse) {
 			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].spieler1.name, score);
 
 			var score = calcScoreForPlayer(true,
-				ergebnisse[oSpiel].spieler2.legs,
+                ergebnisse[oSpiel].spieler2.legs,
+				ergebnisse[oSpiel].spieler1.legs,
 				ergebnisse[oSpiel].spieler2.i180er,
 				ergebnisse[oSpiel].spieler2.shortlegs,
 				ergebnisse[oSpiel].spieler2.highfinishes);
@@ -155,8 +157,9 @@ function prepareStatistic(ergebnisse) {
 		if (ergebnisse[oSpiel].paar1 && ergebnisse[oSpiel].paar1.spieler1.name!="" && ergebnisse[oSpiel].paar1.spieler2.name!="") {
 			// Doppel 1
 			var score = calcScoreForPlayer(false,
-				ergebnisse[oSpiel].paar1.legs,
-				ergebnisse[oSpiel].paar1.spieler1.i180er,
+                ergebnisse[oSpiel].paar1.legs,
+                ergebnisse[oSpiel].paar2.legs,
+                ergebnisse[oSpiel].paar1.spieler1.i180er,
 				ergebnisse[oSpiel].paar1.shortlegs,
 				ergebnisse[oSpiel].paar1.spieler1.highfinishes);
 			console.log("DOPPEL", ergebnisse[oSpiel].paar1.spieler1.name, score);
@@ -164,6 +167,7 @@ function prepareStatistic(ergebnisse) {
 
 			var score = calcScoreForPlayer(false,
 				ergebnisse[oSpiel].paar1.legs,
+                ergebnisse[oSpiel].paar2.legs,
 				ergebnisse[oSpiel].paar1.spieler2.i180er,
 				ergebnisse[oSpiel].paar1.shortlegs,
 				ergebnisse[oSpiel].paar1.spieler2.highfinishes);
@@ -173,7 +177,8 @@ function prepareStatistic(ergebnisse) {
 		if (ergebnisse[oSpiel].paar2 && ergebnisse[oSpiel].paar2.spieler1.name!="" && ergebnisse[oSpiel].paar2.spieler2.name!="") {
 			// Doppel 2
 			var score = calcScoreForPlayer(false,
-				ergebnisse[oSpiel].paar2.legs,
+                ergebnisse[oSpiel].paar2.legs,
+				ergebnisse[oSpiel].paar1.legs,
 				ergebnisse[oSpiel].paar2.spieler1.i180er,
 				ergebnisse[oSpiel].paar2.shortlegs,
 				ergebnisse[oSpiel].paar2.spieler1.highfinishes);
@@ -181,7 +186,8 @@ function prepareStatistic(ergebnisse) {
 			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler1.name, score);
 
 			var score = calcScoreForPlayer(false,
-				ergebnisse[oSpiel].paar2.legs,
+                ergebnisse[oSpiel].paar2.legs,
+				ergebnisse[oSpiel].paar1.legs,
 				ergebnisse[oSpiel].paar2.spieler2.i180er,
 				ergebnisse[oSpiel].paar2.shortlegs,
 				ergebnisse[oSpiel].paar2.spieler2.highfinishes);
@@ -204,32 +210,52 @@ function addScoreForPlayer(ergebnisse, sName, dScore) {
 	});
 };
 
-function calcScoreForPlayer (cbSingle, clegs, c180er, cshortLegs, chighFinishes) {
+function calcScoreForPlayer (cbSingle, cOwnLegs, cOpponentLegs, c180er, cshortLegs, chighFinishes) {
 	var iScore = 0;
-	var iLegs = parseInt(clegs);
-	var i180er = parseInt(c180er);
-	var iShortlegs = parseInt(cshortLegs);
-	var iHighFinishes = parseInt(chighFinishes);
-	var dHfFactor = 0.3 / 69;
+    var iOwnLegs = parseInt(cOwnLegs);
+    var iOpponentLegs = parseInt(cOpponentLegs);
+    var i180er = parseInt(c180er);
 
-	if(cbSingle) {
-		iScore += (iShortlegs != 0) ? (iShortlegs * -0.16 + 3.44) : 0;
-											 // ein 9er Shortleg ergibt 2 Extra Punkte
-											 // ein 19er noch 0.4 Extra Punkte.
-											 // dazwischen errechnet sich der Wert linear über einen Faktor
-	} else {
-		iScore += (iShortlegs != 0) ? (iShortlegs * -0.16 + 3.44)*0.5 : 0;
-											 // ein 9er Shortleg ergibt 2 Extra Punkte
-											 // ein 19er noch 0.4 Extra Punkte.
-											 // dazwischen errechnet sich der Wert linear über einen Faktor
-											 // und wird danach noch halbiert, da da im doppel gespielt wurde
-	}
-	iScore += iLegs;  // jedes leg gibt einen punkt
-	iScore += (iLegs === 3) ? 2 : 0; // falls man das Spiel gewonnen hat gibt das nochmal zwei punkte extra
-	iScore += (i180er != 0) ? (i180er * 0.9) : 0; // 180er zählen 0.9 Punkte
-	iScore += (iHighFinishes != 0) ? (iHighFinishes * dHfFactor) : 0;
-										 // 170er High Finish gibt 0.8 Punkte und eine 101er HF noch 0.5 Punkte
-										 // dazwischen errechnet sich der Wert linear über einen Faktor
+    var sResult = cOwnLegs + ":" + cOpponentLegs;
+    switch (sResult) {
+        case "3:0" : iScore += 5; break;
+        case "3:1" : iScore += 4; break;
+        case "3:2" : iScore += 3; break;
+        case "2:3" : iScore += 2; break;
+        case "1:3" : iScore += 1; break;
+        case "0:3" : iScore += 0; break;
+        default: break;
+    }
+
+    var aHighs = [];
+    var aShortLegs = [];
+    var aHighFinishes = [];
+
+    if (c180er !== 0) {
+        var sRepl = ""+c180er;
+        sRepl = sRepl.replace(/\D/g, "_");
+        sRepl = sRepl.replace(/__+/g, "_");
+        aHighs = sRepl.split('_');
+    }
+
+    if (cshortLegs !== 0) {
+        var sRepl = ""+cshortLegs;
+        sRepl = sRepl.replace(/\D/g, "_");
+        sRepl = sRepl.replace(/__+/g, "_");
+        aShortLegs = sRepl.split('_');
+    }
+
+    if (chighFinishes !== 0) {
+        var sRepl = ""+chighFinishes;
+        sRepl = sRepl.replace(/\D/g, "_");
+        sRepl = sRepl.replace(/__+/g, "_");
+        aHighFinishes = sRepl.split('_');
+    }
+
+    iScore += aHighs.length;
+    iScore += aShortLegs.length;
+    iScore += aHighFinishes.length;
+
 	return iScore;
 };
 
@@ -305,20 +331,12 @@ function walkDOM(node, func) {
 	}
 };
 
-function fillHiddenFields() {
+function fillHiddenFieldsAndSubmit() {
 	removeBorders();
-	$("#hiddenSummaryTableContainer").empty();
-	$("#summaryTable").clone().appendTo("#hiddenSummaryTableContainer");
 
-	walkDOM(document.getElementById("hiddenSummaryTableContainer"), function(oNode) {
-	  if (oNode && oNode.hasAttribute && oNode.hasAttribute("onclick")){
-	    oNode.removeAttribute("onclick");
-	  }
-	});
+    var oTest = window.localStorage.getItem("ergebnisRAW");
 
-	document.getElementById("emailSummaryTable").value = $("#hiddenSummaryTableContainer").html();
-	document.getElementById("ergebnisJSON").value = JSON.stringify(ergebnisse);
-	document.getElementById("ergebnisRAW").value = window.localStorage.getItem("ergebnisRAW");
+	document.getElementById("ergebnisRAW").value = oTest;
 
 	document.getElementById("tcHeim").value = document.getElementById("emailHeim").value;
 	document.getElementById("tcGast").value = document.getElementById("emailGast").value;
@@ -335,6 +353,10 @@ function fillHiddenFields() {
 			}
 		}
 	};
+
+    displayBusyIndicator();
+
+    document.getElementById("sendMail").submit();
 };
 
 function getUrlParameter(sParam){
@@ -871,10 +893,81 @@ function validateTextarea() {
 	}
 };
 
+function getTeamId(encTeam) {
+    for (var teamId in oTeams) {
+        if (encTeam === oTeams[teamId].encTeam) {
+            return teamId;
+        }
+    }
+}
+
 function checkOnTeamSelection() {
+    //document.getElementById("teamgast").disabled = false;
 	var heim = document.getElementById("teamheim");
 	var gast = document.getElementById("teamgast");
-	if (heim.selectedIndex != 0 && gast.selectedIndex != 0 && heim.selectedIndex != gast.selectedIndex) {
+    var heimTeamId = getTeamId(heim.value);
+    var gastTeamId = getTeamId(gast.value);
+
+    var oVereine = {};
+
+    var sSpielID = "";
+
+    for(var liga in oSpielplan) {
+        for(var spieltag in oSpielplan[liga].vr) {
+            for (var i in oSpielplan[liga].vr[spieltag]) {
+                var spiel = oSpielplan[liga].vr[spieltag][i];
+                if (spiel.heim === heimTeamId) {
+                    oVereine[oTeams[spiel.gast].encTeam] = {
+                        teamId: spiel.gast,
+                        name: oTeams[spiel.gast].name
+                    };
+                    if (spiel.gast == gastTeamId) {
+                        sSpielID = spiel.id;
+                    }
+                }
+            }
+        }
+        for(var spieltag in oSpielplan[liga].rr) {
+            for (var i in oSpielplan[liga].rr[spieltag]) {
+                var spiel = oSpielplan[liga].rr[spieltag][i];
+                if (spiel.heim === heimTeamId) {
+                    oVereine[oTeams[spiel.gast].encTeam] = {
+                        teamId: spiel.gast,
+                        name: oTeams[spiel.gast].name
+                    };
+                    if (spiel.gast == gastTeamId) {
+                        sSpielID = spiel.id;
+                    }
+                }
+            }
+        }
+    }
+
+    if (sSpielID !== "") {
+        document.getElementById("spielId").value = sSpielID;
+    } else {
+        document.getElementById("spielId").value = "";
+    }
+
+    var oOptions = document.getElementById("teamgast").options;
+    for (var i = 0; i<oOptions.length; i++) {
+        var bDisabled = (!oVereine[oOptions.item(i).value]);
+        oOptions.item(i).disabled = bDisabled;
+        oOptions.item(i).style.display = (bDisabled) ? "none" : "inherit";
+    };
+
+    if (heimTeamId) {
+        document.getElementById("emailHeim").value = oTeams[heimTeamId].teamvertreter.mail;
+    }
+    if (gastTeamId) {
+        document.getElementById("emailGast").value = oTeams[gastTeamId].teamvertreter.mail;
+    }
+
+
+    $('.selectpicker').selectpicker('render');
+
+    if (heim.selectedIndex != 0 && gast.selectedIndex != 0 && heim.selectedIndex != gast.selectedIndex
+        && !document.getElementById("teamgast").item(gast.selectedIndex).disabled) {
 		document.getElementById("gameOnButton").disabled = false;
 	} else {
 		document.getElementById("gameOnButton").disabled = true;
@@ -946,12 +1039,15 @@ function initializeGameSelectionScreen(oVereine) {
 	//global Variable vereine is used everywhere else...
 	vereine = oVereine;
 
+
 	aVereine.sort();
 
 	for (var i = 0; i<aVereine.length; i++) {
 		$('#teamheim').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
 		$('#teamgast').append($("<option/>", {value: btoa(aVereine[i]),text: aVereine[i]}));
 	};
+
+    //document.getElementById("teamgast").disabled = true;
 
 	// Read out cookies for emails stored
 	// bear in mind this works only in desktop systems

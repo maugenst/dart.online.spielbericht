@@ -1,0 +1,296 @@
+{
+  "heim": "D.A.R.T. Plumbata",
+  "gast": "DC 81 Karlsruhe",
+  "e1b1": {
+    "spieler1": {
+      "name": "Alpino, Fabio",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Andert, Iris",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e2b1": {
+    "spieler1": {
+      "name": "Augenstein, Marius",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Daum, Jürgen",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e3b1": {
+    "spieler1": {
+      "name": "Antal, Oliver (TC)",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Araci, Cihan",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e4b1": {
+    "spieler1": {
+      "name": "Augenstein, Norbert",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Gegenheimer, Matthias",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "d1b2": {
+    "paar1": {
+      "legs": 3,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Alpino, Fabio",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Antal, Oliver (TC)",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Andert, Iris",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Araci, Cihan",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "d2b2": {
+    "paar1": {
+      "legs": 3,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Augenstein, Marius",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Augenstein, Norbert",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Daum, Jürgen",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Gegenheimer, Matthias",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "e1b3": {
+    "spieler1": {
+      "name": "Alpino, Fabio",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Andert, Iris",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e2b3": {
+    "spieler1": {
+      "name": "Antal, Oliver (TC)",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Araci, Cihan",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e3b3": {
+    "spieler1": {
+      "name": "Augenstein, Marius",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Daum, Jürgen",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "e4b3": {
+    "spieler1": {
+      "name": "Augenstein, Norbert",
+      "legs": 3,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    },
+    "spieler2": {
+      "name": "Gegenheimer, Matthias",
+      "legs": 0,
+      "shortlegs": 0,
+      "highfinishes": 0,
+      "i180er": 0
+    }
+  },
+  "d1b4": {
+    "paar1": {
+      "legs": 3,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Alpino, Fabio",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Antal, Oliver (TC)",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Andert, Iris",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Araci, Cihan",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "d2b4": {
+    "paar1": {
+      "legs": 3,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Augenstein, Marius",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Augenstein, Norbert",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    },
+    "paar2": {
+      "legs": 0,
+      "shortlegs": 0,
+      "spieler1": {
+        "name": "Daum, Jürgen",
+        "highfinishes": 0,
+        "i180er": 0
+      },
+      "spieler2": {
+        "name": "Gegenheimer, Matthias",
+        "highfinishes": 0,
+        "i180er": 0
+      }
+    }
+  },
+  "statistik": [
+    {
+      "name": "Alpino, Fabio",
+      "score": 20
+    },
+    {
+      "name": "Augenstein, Marius",
+      "score": 20
+    },
+    {
+      "name": "Antal, Oliver (TC)",
+      "score": 20
+    },
+    {
+      "name": "Augenstein, Norbert",
+      "score": 20
+    },
+    {
+      "name": "Andert, Iris",
+      "score": 0
+    },
+    {
+      "name": "Daum, Jürgen",
+      "score": 0
+    },
+    {
+      "name": "Araci, Cihan",
+      "score": 0
+    },
+    {
+      "name": "Gegenheimer, Matthias",
+      "score": 0
+    }
+  ],
+  "summary": {
+    "heim": {
+      "legs": 36,
+      "sets": 12
+    },
+    "gast": {
+      "legs": 0,
+      "sets": 0
+    }
+  }
+}

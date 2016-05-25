@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 25 May 2016 11:28:18 +0200</pubDate><title>Events</title><url>events</url><meta/><metad/><menu>Events</menu><menuStatus>Y</menuStatus><template>template.php</template><parent>index</parent><content>&amp;lt;table width=&amp;quot;600&amp;quot; border=&amp;quot;1&amp;quot; cellspacing=&amp;quot;1&amp;quot; cellpadding=&amp;quot;1&amp;quot; align=&amp;quot;center&amp;quot;&amp;gt;
+&amp;lt;tbody&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#ffcc33&amp;quot; width=&amp;quot;100&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Datum&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#ffcc33&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Ort&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#ffcc33&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Veranstalter&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;td bgcolor=&amp;quot;#ffcc33&amp;quot; width=&amp;quot;100&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;Flyer als PDF&amp;lt;br /&amp;gt; &amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td width=&amp;quot;100&amp;quot;&amp;gt;12.12.2015&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;G&amp;amp;ouml;ppingen&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;BWDV-Doppelmeisterschaft&amp;lt;/td&amp;gt;
+&amp;lt;td width=&amp;quot;100&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.homepage-baukasten-dateien.de/badendartliga/15-12-12%20G%C3%B6ppingen.pdf&amp;quot;&amp;gt;zum Flyer&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;tr&amp;gt;
+&amp;lt;td width=&amp;quot;100&amp;quot;&amp;gt;13.12.2015&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;G&amp;amp;ouml;ppingen&amp;lt;/td&amp;gt;
+&amp;lt;td&amp;gt;BWDV-Einzelmeisterschaft&amp;lt;/td&amp;gt;
+&amp;lt;td width=&amp;quot;100&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://www.homepage-baukasten-dateien.de/badendartliga/15-12-12%20G%C3%B6ppingen.pdf&amp;quot;&amp;gt;zum Flyer&amp;lt;/a&amp;gt;&amp;lt;/td&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;div style=&amp;quot;text-align: center;&amp;quot;&amp;gt;&amp;lt;br /&amp;gt; M&amp;amp;ouml;chten auch Sie ihren Veranstaltungsflyer auf unserer Homepage ver&amp;amp;ouml;ffentlichen, &amp;lt;br /&amp;gt; dann senden Sie uns einfach ein &amp;lt;a href=&amp;quot;mailto:webmaster@badischedartliga.de&amp;quot;&amp;gt;EMAIL&amp;lt;/a&amp;gt; mit ihrerm Flyer zu.&amp;lt;/div&amp;gt;</content><private/><author>bdladmin</author><menuOrder><![CDATA[2]]></menuOrder></item>

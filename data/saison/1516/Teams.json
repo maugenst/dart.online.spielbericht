@@ -9,7 +9,7 @@
     "teamvertreter": {
       "name": "Sascha Magin",
       "tel": "0176 - 31294785",
-      "mail": ""
+      "mail": "smagin3@gmail.com"
     },
     "mitglieder": [
       {
@@ -67,15 +67,9 @@
     "teamvertreter": {
       "name": "Sebastian Schaaf",
       "tel": "0173 - 8285427",
-      "mail": ""
+      "mail": "SSchaaf48@gmail.com"
     },
     "mitglieder": [
-      {
-        "name": "Schaaf",
-        "vorname": "Sebastian (TC)",
-        "encName": "U2NoYWFm",
-        "encVorname": "U2ViYXN0aWFuIChUQyk="
-      },
       {
         "name": "Grebert",
         "vorname": "Christian",
@@ -101,10 +95,22 @@
         "encVorname": "THVrYXM="
       },
       {
+        "name": "Reber",
+        "vorname": "Uwe",
+        "encName": "UmViZXI=",
+        "encVorname": "VXdl"
+      },
+      {
         "name": "Reeb",
         "vorname": "Roman",
         "encName": "UmVlYg==",
         "encVorname": "Um9tYW4="
+      },
+      {
+        "name": "Schaaf",
+        "vorname": "Sebastian (TC)",
+        "encName": "U2NoYWFm",
+        "encVorname": "U2ViYXN0aWFuIChUQyk="
       },
       {
         "name": "Schade",
@@ -123,12 +129,6 @@
         "vorname": "Patrick",
         "encName": "V2Vpbm1hbm4=",
         "encVorname": "UGF0cmljaw=="
-      },
-      {
-        "name": "Reber",
-        "vorname": "Uwe",
-        "encName": "UmViZXI=",
-        "encVorname": "VXdl"
       }
     ],
     "encTeam": "REMgRWwgRGlhYm9sbw=="
@@ -143,7 +143,7 @@
     "teamvertreter": {
       "name": "Markus Kellner",
       "tel": "0172 - 1397366",
-      "mail": ""
+      "mail": "mkellyboy@gmail.com"
     },
     "mitglieder": [
       {
@@ -154,15 +154,15 @@
       },
       {
         "name": "Hoffmann",
-        "vorname": "Markus",
-        "encName": "SG9mZm1hbm4=",
-        "encVorname": "TWFya3Vz"
-      },
-      {
-        "name": "Hoffmann",
         "vorname": "Mika",
         "encName": "SG9mZm1hbm4=",
         "encVorname": "TWlrYQ=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Markus",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "TWFya3Vz"
       },
       {
         "name": "Kellner",
@@ -237,7 +237,7 @@
     "teamvertreter": {
       "name": "Köhler Sabine",
       "tel": "0160 - 1830520",
-      "mail": ""
+      "mail": "sabinekoehler@arcor.de"
     },
     "mitglieder": [
       {
@@ -355,7 +355,7 @@
     "teamvertreter": {
       "name": "Michael Häussler",
       "tel": "0176 - 84883613",
-      "mail": ""
+      "mail": "501rasti@gmail.com"
     },
     "mitglieder": [
       {
@@ -413,7 +413,7 @@
     "teamvertreter": {
       "name": "Matthias Margraf",
       "tel": "06221 - 737040",
-      "mail": ""
+      "mail": "501rasti@gmail.com"
     },
     "mitglieder": [
       {
@@ -465,7 +465,7 @@
     "teamvertreter": {
       "name": "Michael Ebner",
       "tel": "0170 - 1867410",
-      "mail": ""
+      "mail": "m_ebner@freenet.de"
     },
     "mitglieder": [
       {
@@ -541,9 +541,15 @@
     "teamvertreter": {
       "name": "Tobias Seibert",
       "tel": "0176 - 67039309",
-      "mail": ""
+      "mail": "tobias.seibert@web.de"
     },
     "mitglieder": [
+      {
+        "name": "Ehlers",
+        "vorname": "Matthias",
+        "encName": "RWhsZXJz",
+        "encVorname": "TWF0dGhpYXM="
+      },
       {
         "name": "Hotel",
         "vorname": "Johan",
@@ -585,12 +591,6 @@
         "vorname": "Berthold",
         "encName": "V2l0dG1hbm4=",
         "encVorname": "QmVydGhvbGQ="
-      },
-      {
-        "name": "Ehlers",
-        "vorname": "Matthias",
-        "encName": "RWhsZXJz",
-        "encVorname": "TWF0dGhpYXM="
       }
     ],
     "encTeam": "VGFyYXhhY3VtYSBFYWdsZXM="
@@ -663,9 +663,15 @@
     "teamvertreter": {
       "name": "Alexander Schmidt",
       "tel": "0176 - 31492625",
-      "mail": ""
+      "mail": "wichtel3@hotmail.com"
     },
     "mitglieder": [
+      {
+        "name": "Hoppe",
+        "vorname": "Harald",
+        "encName": "SG9wcGU=",
+        "encVorname": "SGFyYWxk"
+      },
       {
         "name": "Hölzle",
         "vorname": "Kai",
@@ -677,12 +683,6 @@
         "vorname": "Maik",
         "encName": "SPZsemxl",
         "encVorname": "TWFpaw=="
-      },
-      {
-        "name": "Hoppe",
-        "vorname": "Harald",
-        "encName": "SG9wcGU=",
-        "encVorname": "SGFyYWxk"
       },
       {
         "name": "Korbmann",
@@ -727,14 +727,14 @@
     "teamvertreter": {
       "name": "Steffen Stiess",
       "tel": "0176 - 80563652",
-      "mail": ""
+      "mail": "steffenstiess@gmail.com"
     },
     "mitglieder": [
       {
-        "name": "Sauter",
-        "vorname": "Axel",
-        "encName": "U2F1dGVy",
-        "encVorname": "QXhlbA=="
+        "name": "Fröhlich",
+        "vorname": "Sven",
+        "encName": "RnL2aGxpY2g=",
+        "encVorname": "U3Zlbg=="
       },
       {
         "name": "Lutz",
@@ -743,34 +743,34 @@
         "encVorname": "SGFyYWxk"
       },
       {
-        "name": "Müller",
-        "vorname": "Oliver",
-        "encName": "TfxsbGVy",
-        "encVorname": "T2xpdmVy"
-      },
-      {
         "name": "Mergel",
         "vorname": "Michael",
         "encName": "TWVyZ2Vs",
         "encVorname": "TWljaGFlbA=="
       },
       {
-        "name": "Tretter",
-        "vorname": "Markus",
-        "encName": "VHJldHRlcg==",
-        "encVorname": "TWFya3Vz"
+        "name": "Müller",
+        "vorname": "Oliver",
+        "encName": "TfxsbGVy",
+        "encVorname": "T2xpdmVy"
       },
       {
-        "name": "Fröhlich",
-        "vorname": "Sven",
-        "encName": "RnL2aGxpY2g=",
-        "encVorname": "U3Zlbg=="
+        "name": "Sauter",
+        "vorname": "Axel",
+        "encName": "U2F1dGVy",
+        "encVorname": "QXhlbA=="
       },
       {
         "name": "Stiess",
         "vorname": "Steffen (TC)",
         "encName": "U3RpZXNz",
         "encVorname": "U3RlZmZlbiAoVEMp"
+      },
+      {
+        "name": "Tretter",
+        "vorname": "Markus",
+        "encName": "VHJldHRlcg==",
+        "encVorname": "TWFya3Vz"
       }
     ],
     "encTeam": "QkRDIEJyZWFrZXJz"
@@ -785,7 +785,7 @@
     "teamvertreter": {
       "name": "Dirk Hoffmann",
       "tel": "0174 - 5287861",
-      "mail": " "
+      "mail": "dirk.hoffmann65@web.de"
     },
     "mitglieder": [
       {
@@ -855,7 +855,7 @@
     "teamvertreter": {
       "name": "Christian Kochendörfer",
       "tel": "0176 - 80225468",
-      "mail": ""
+      "mail": "kocheone@web.de"
     },
     "mitglieder": [
       {
@@ -901,6 +901,12 @@
         "encVorname": "Q2hyaXN0aWFu"
       },
       {
+        "name": "Phillip",
+        "vorname": "Gregor",
+        "encName": "UGhpbGxpcA==",
+        "encVorname": "R3JlZ29y"
+      },
+      {
         "name": "Schanz",
         "vorname": "Albert",
         "encName": "U2NoYW56",
@@ -911,12 +917,6 @@
         "vorname": "Uwe",
         "encName": "V2V0emVs",
         "encVorname": "VXdl"
-      },
-      {
-        "name": "Phillip",
-        "vorname": "Gregor",
-        "encName": "UGhpbGxpcA==",
-        "encVorname": "R3JlZ29y"
       }
     ],
     "encTeam": "REMgQmxhY2sgS25pZ2h0cyBI9nJkdCAy"
@@ -931,7 +931,7 @@
     "teamvertreter": {
       "name": "Peter Krauss",
       "tel": "0176 - 47273727",
-      "mail": ""
+      "mail": "peter.krauss@gmx.de"
     },
     "mitglieder": [
       {
@@ -995,22 +995,16 @@
         "encVorname": "SXZlcw=="
       },
       {
-        "name": "Postler",
-        "vorname": "Kevin",
-        "encName": "UG9zdGxlcg==",
-        "encVorname": "S2V2aW4="
-      },
-      {
-        "name": "Weiss",
-        "vorname": "Michael",
-        "encName": "V2Vpc3M=",
-        "encVorname": "TWljaGFlbA=="
-      },
-      {
         "name": "Nüssle",
         "vorname": "Michael",
         "encName": "Tvxzc2xl",
         "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Postler",
+        "vorname": "Kevin",
+        "encName": "UG9zdGxlcg==",
+        "encVorname": "S2V2aW4="
       },
       {
         "name": "Schätzle",
@@ -1023,6 +1017,12 @@
         "vorname": "Timo",
         "encName": "U2No5HR6bGU=",
         "encVorname": "VGltbw=="
+      },
+      {
+        "name": "Weiss",
+        "vorname": "Michael",
+        "encName": "V2Vpc3M=",
+        "encVorname": "TWljaGFlbA=="
       }
     ],
     "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMg=="
@@ -1037,15 +1037,9 @@
     "teamvertreter": {
       "name": "Simone Howe",
       "tel": "0157 - 85605123",
-      "mail": " "
+      "mail": "laolaweinheim@gmail.com"
     },
     "mitglieder": [
-      {
-        "name": "Howe",
-        "vorname": "Simone (TC)",
-        "encName": "SG93ZQ==",
-        "encVorname": "U2ltb25lIChUQyk="
-      },
       {
         "name": "Baum",
         "vorname": "Annika",
@@ -1065,10 +1059,22 @@
         "encVorname": "UmFpbmVy"
       },
       {
+        "name": "Howe",
+        "vorname": "Simone (TC)",
+        "encName": "SG93ZQ==",
+        "encVorname": "U2ltb25lIChUQyk="
+      },
+      {
         "name": "Hundshammer",
         "vorname": "Frank",
         "encName": "SHVuZHNoYW1tZXI=",
         "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Hämer",
+        "vorname": "Oliver",
+        "encName": "SORtZXI=",
+        "encVorname": "T2xpdmVy"
       },
       {
         "name": "Krieger",
@@ -1089,12 +1095,6 @@
         "encVorname": "RGFuaWVs"
       },
       {
-        "name": "Hämer",
-        "vorname": "Oliver",
-        "encName": "SORtZXI=",
-        "encVorname": "T2xpdmVy"
-      },
-      {
         "name": "Walther",
         "vorname": "Sven",
         "encName": "V2FsdGhlcg==",
@@ -1113,7 +1113,7 @@
     "teamvertreter": {
       "name": "Michael Meier",
       "tel": "0173 - 7910197",
-      "mail": " "
+      "mail": "MimiU@gmx.de"
     },
     "mitglieder": [
       {
@@ -1165,16 +1165,16 @@
         "encVorname": "TWljaGFlbA=="
       },
       {
-        "name": "Özcan",
-        "vorname": "Servet",
-        "encName": "1npjYW4=",
-        "encVorname": "U2VydmV0"
-      },
-      {
         "name": "Roa",
         "vorname": "Markus",
         "encName": "Um9h",
         "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Özcan",
+        "vorname": "Servet",
+        "encName": "1npjYW4=",
+        "encVorname": "U2VydmV0"
       }
     ],
     "encTeam": "REMgTGV0c2NoZWJhY2g="
@@ -1199,6 +1199,12 @@
         "encVorname": "UGhpbGlwcA=="
       },
       {
+        "name": "Fleischmann",
+        "vorname": "Norbert",
+        "encName": "RmxlaXNjaG1hbm4=",
+        "encVorname": "Tm9yYmVydA=="
+      },
+      {
         "name": "Gärtner",
         "vorname": "Marcel",
         "encName": "R+RydG5lcg==",
@@ -1215,6 +1221,12 @@
         "vorname": "Oliver",
         "encName": "U2NoZXloaW5n",
         "encVorname": "T2xpdmVy"
+      },
+      {
+        "name": "Stross",
+        "vorname": "Sven",
+        "encName": "U3Ryb3Nz",
+        "encVorname": "U3Zlbg=="
       },
       {
         "name": "Unterhuber",
@@ -1257,6 +1269,30 @@
         "encVorname": "WWFubmlr"
       },
       {
+        "name": "Heel",
+        "vorname": "Gerhard",
+        "encName": "SGVlbA==",
+        "encVorname": "R2VyaGFyZA=="
+      },
+      {
+        "name": "Hilzendegen",
+        "vorname": "Sina",
+        "encName": "SGlsemVuZGVnZW4=",
+        "encVorname": "U2luYQ=="
+      },
+      {
+        "name": "Knopfinger",
+        "vorname": "Jan",
+        "encName": "S25vcGZpbmdlcg==",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Leisinger",
+        "vorname": "Benedikt",
+        "encName": "TGVpc2luZ2Vy",
+        "encVorname": "QmVuZWRpa3Q="
+      },
+      {
         "name": "Müller",
         "vorname": "Markus",
         "encName": "TfxsbGVy",
@@ -1275,40 +1311,16 @@
         "encVorname": "SGFydG11dA=="
       },
       {
-        "name": "Leisinger",
-        "vorname": "Benedikt",
-        "encName": "TGVpc2luZ2Vy",
-        "encVorname": "QmVuZWRpa3Q="
-      },
-      {
-        "name": "Heel",
-        "vorname": "Gerhard",
-        "encName": "SGVlbA==",
-        "encVorname": "R2VyaGFyZA=="
-      },
-      {
-        "name": "Knopfinger",
-        "vorname": "Jan",
-        "encName": "S25vcGZpbmdlcg==",
-        "encVorname": "SmFu"
-      },
-      {
-        "name": "Hilzendegen",
-        "vorname": "Sina",
-        "encName": "SGlsemVuZGVnZW4=",
-        "encVorname": "U2luYQ=="
+        "name": "Schweitzer",
+        "vorname": "Andreas",
+        "encName": "U2Nod2VpdHplcg==",
+        "encVorname": "QW5kcmVhcw=="
       },
       {
         "name": "Utting",
         "vorname": "Nico",
         "encName": "VXR0aW5n",
         "encVorname": "Tmljbw=="
-      },
-      {
-        "name": "Schweitzer",
-        "vorname": "Andreas",
-        "encName": "U2Nod2VpdHplcg==",
-        "encVorname": "QW5kcmVhcw=="
       }
     ],
     "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWlt"
@@ -1323,15 +1335,9 @@
     "teamvertreter": {
       "name": "Heiko Fruhner",
       "tel": "0173 - 9983799",
-      "mail": ""
+      "mail": "undergroundfools@yahoo.de"
     },
     "mitglieder": [
-      {
-        "name": "Fruhner",
-        "vorname": "Heiko (TC)",
-        "encName": "RnJ1aG5lcg==",
-        "encVorname": "SGVpa28gKFRDKQ=="
-      },
       {
         "name": "Besesek",
         "vorname": "Christian",
@@ -1345,10 +1351,22 @@
         "encVorname": "R3Vpc2VwcGU="
       },
       {
+        "name": "Dürr",
+        "vorname": "Tarek",
+        "encName": "RPxycg==",
+        "encVorname": "VGFyZWs="
+      },
+      {
         "name": "Fiedler",
         "vorname": "Sven",
         "encName": "RmllZGxlcg==",
         "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Fruhner",
+        "vorname": "Heiko (TC)",
+        "encName": "RnJ1aG5lcg==",
+        "encVorname": "SGVpa28gKFRDKQ=="
       },
       {
         "name": "Gottmann",
@@ -1375,12 +1393,6 @@
         "encVorname": "VXJiYW4="
       },
       {
-        "name": "Dürr",
-        "vorname": "Tarek",
-        "encName": "RPxycg==",
-        "encVorname": "VGFyZWs="
-      },
-      {
         "name": "Voggenreiter",
         "vorname": "Ralf",
         "encName": "Vm9nZ2VucmVpdGVy",
@@ -1399,9 +1411,15 @@
     "teamvertreter": {
       "name": "Bastie Thies",
       "tel": "0157 - 74588193",
-      "mail": ""
+      "mail": "info@freygerber7.de"
     },
     "mitglieder": [
+      {
+        "name": "Baron",
+        "vorname": "Michael",
+        "encName": "QmFyb24=",
+        "encVorname": "TWljaGFlbA=="
+      },
       {
         "name": "Busch",
         "vorname": "Lucas",
@@ -1425,6 +1443,12 @@
         "vorname": "Hans",
         "encName": "SuRocmxpbmc=",
         "encVorname": "SGFucw=="
+      },
+      {
+        "name": "Knebel",
+        "vorname": "Kai",
+        "encName": "S25lYmVs",
+        "encVorname": "S2Fp"
       },
       {
         "name": "Mastafaoni",
@@ -1461,18 +1485,6 @@
         "vorname": "Stefan",
         "encName": "VGhpZXM=",
         "encVorname": "U3RlZmFu"
-      },
-      {
-        "name": "Baron",
-        "vorname": "Michael",
-        "encName": "QmFyb24=",
-        "encVorname": "TWljaGFlbA=="
-      },
-      {
-        "name": "Knebel",
-        "vorname": "Kai",
-        "encName": "S25lYmVs",
-        "encVorname": "S2Fp"
       }
     ],
     "encTeam": "RnJleWdlcmJlciBGaWdodGVycw=="
@@ -1487,9 +1499,15 @@
     "teamvertreter": {
       "name": "Martin Huber",
       "tel": "06205 - 15187",
-      "mail": ""
+      "mail": "huber1970@arcor.de"
     },
     "mitglieder": [
+      {
+        "name": "Becker",
+        "vorname": "Marcel",
+        "encName": "QmVja2Vy",
+        "encVorname": "TWFyY2Vs"
+      },
       {
         "name": "Fütterer",
         "vorname": "Dirk",
@@ -1549,12 +1567,6 @@
         "vorname": "Patrick",
         "encName": "V2VybmVy",
         "encVorname": "UGF0cmljaw=="
-      },
-      {
-        "name": "Becker",
-        "vorname": "Marcel",
-        "encName": "QmVja2Vy",
-        "encVorname": "TWFyY2Vs"
       }
     ],
     "encTeam": "MS4gREMgSm9rZXJzIEhvY2tlbmhlaW0="
@@ -1569,7 +1581,7 @@
     "teamvertreter": {
       "name": "Dirk Scholz",
       "tel": "0172 - 9555312",
-      "mail": ""
+      "mail": "reiterstueble-eppingen@web.de"
     },
     "mitglieder": [
       {
@@ -1633,7 +1645,7 @@
     "teamvertreter": {
       "name": "Uwe Mecklenburg",
       "tel": "0151 - 18707207",
-      "mail": ""
+      "mail": "uwemecklenburg@t-online.de"
     },
     "mitglieder": [
       {
@@ -1703,7 +1715,7 @@
     "teamvertreter": {
       "name": "Dominik Boss",
       "tel": "0157 - 85073806",
-      "mail": ""
+      "mail": "webmaster@badischedartliga.de"
     },
     "mitglieder": [
       {
@@ -1717,6 +1729,12 @@
         "vorname": "Martin",
         "encName": "RW1iYWNo",
         "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Fraile",
+        "vorname": "Antonio",
+        "encName": "RnJhaWxl",
+        "encVorname": "QW50b25pbw=="
       },
       {
         "name": "Freiseis",
@@ -1753,12 +1771,6 @@
         "vorname": "Lothar",
         "encName": "WmFuZw==",
         "encVorname": "TG90aGFy"
-      },
-      {
-        "name": "Fraile",
-        "vorname": "Antonio",
-        "encName": "RnJhaWxl",
-        "encVorname": "QW50b25pbw=="
       }
     ],
     "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAy"
@@ -1773,7 +1785,7 @@
     "teamvertreter": {
       "name": "Bastian Durchholz",
       "tel": "0176 - 70893048",
-      "mail": ""
+      "mail": "bastian.durchholz@gmail.com"
     },
     "mitglieder": [
       {
@@ -1831,14 +1843,14 @@
     "teamvertreter": {
       "name": "Yvonne Mocker",
       "tel": "0152 - 01003354",
-      "mail": ""
+      "mail": "501rasti@gmail.com"
     },
     "mitglieder": [
       {
-        "name": "Stache",
-        "vorname": "Manuela",
-        "encName": "U3RhY2hl",
-        "encVorname": "TWFudWVsYQ=="
+        "name": "Dworaczek",
+        "vorname": "Anetta",
+        "encName": "RHdvcmFjemVr",
+        "encVorname": "QW5ldHRh"
       },
       {
         "name": "Gumsheimer",
@@ -1853,12 +1865,6 @@
         "encVorname": "UmVuYXRl"
       },
       {
-        "name": "Winter",
-        "vorname": "Anna",
-        "encName": "V2ludGVy",
-        "encVorname": "QW5uYQ=="
-      },
-      {
         "name": "Margraf",
         "vorname": "Sandra",
         "encName": "TWFyZ3JhZg==",
@@ -1871,10 +1877,16 @@
         "encVorname": "WXZvbm5lIChUQyk="
       },
       {
-        "name": "Dworaczek",
-        "vorname": "Anetta",
-        "encName": "RHdvcmFjemVr",
-        "encVorname": "QW5ldHRh"
+        "name": "Stache",
+        "vorname": "Manuela",
+        "encName": "U3RhY2hl",
+        "encVorname": "TWFudWVsYQ=="
+      },
+      {
+        "name": "Winter",
+        "vorname": "Anna",
+        "encName": "V2ludGVy",
+        "encVorname": "QW5uYQ=="
       }
     ],
     "encTeam": "R2VnZW4gZGllIERy/GNrIDQ="
@@ -1889,7 +1901,7 @@
     "teamvertreter": {
       "name": "Susanne Thoma",
       "tel": "0170 - 4813373",
-      "mail": ""
+      "mail": "Sanne821@gmx.de"
     },
     "mitglieder": [
       {
@@ -1917,16 +1929,16 @@
         "encVorname": "U3RlcGhhbmll"
       },
       {
-        "name": "Schweitzer",
-        "vorname": "Ralf",
-        "encName": "U2Nod2VpdHplcg==",
-        "encVorname": "UmFsZg=="
-      },
-      {
         "name": "Mack",
         "vorname": "Paul Curtiss",
         "encName": "TWFjaw==",
         "encVorname": "UGF1bCBDdXJ0aXNz"
+      },
+      {
+        "name": "Schweitzer",
+        "vorname": "Ralf",
+        "encName": "U2Nod2VpdHplcg==",
+        "encVorname": "UmFsZg=="
       },
       {
         "name": "Thoma",
@@ -1947,9 +1959,15 @@
     "teamvertreter": {
       "name": "Tobias Mohr",
       "tel": "0176 - 30454995",
-      "mail": ""
+      "mail": "Tm1986@freenet.de"
     },
     "mitglieder": [
+      {
+        "name": "Gerdon",
+        "vorname": "Marcel",
+        "encName": "R2VyZG9u",
+        "encVorname": "TWFyY2Vs"
+      },
       {
         "name": "Lochbaum",
         "vorname": "Lars",
@@ -1991,12 +2009,6 @@
         "vorname": "Sven",
         "encName": "WnViZXI=",
         "encVorname": "U3Zlbg=="
-      },
-      {
-        "name": "Gerdon",
-        "vorname": "Marcel",
-        "encName": "R2VyZG9u",
-        "encVorname": "TWFyY2Vs"
       }
     ],
     "encTeam": "SXJvbiBFYWdsZXM="
@@ -2011,7 +2023,7 @@
     "teamvertreter": {
       "name": "Andrea Richard",
       "tel": "02756 - 944310 (ab 19 Uhr)",
-      "mail": ""
+      "mail": "taraxacuma@aol.de"
     },
     "mitglieder": [
       {
@@ -2019,6 +2031,12 @@
         "vorname": "Thomas",
         "encName": "SGFobg==",
         "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Hodorff",
+        "vorname": "Tanja",
+        "encName": "SG9kb3JmZg==",
+        "encVorname": "VGFuamE="
       },
       {
         "name": "Janin",
@@ -2045,6 +2063,12 @@
         "encVorname": "SvxyZ2Vu"
       },
       {
+        "name": "Richard",
+        "vorname": "Andrea (TC)",
+        "encName": "UmljaGFyZA==",
+        "encVorname": "QW5kcmVhIChUQyk="
+      },
+      {
         "name": "Weick",
         "vorname": "Andreas",
         "encName": "V2VpY2s=",
@@ -2067,18 +2091,6 @@
         "vorname": "Dennis",
         "encName": "WmllZ2U=",
         "encVorname": "RGVubmlz"
-      },
-      {
-        "name": "Richard",
-        "vorname": "Andrea (TC)",
-        "encName": "UmljaGFyZA==",
-        "encVorname": "QW5kcmVhIChUQyk="
-      },
-      {
-        "name": "Hodorff",
-        "vorname": "Tanja",
-        "encName": "SG9kb3JmZg==",
-        "encVorname": "VGFuamE="
       }
     ],
     "encTeam": "VGFyYXhhY3VtYSBEaWUgRHJpdHRl"
@@ -2093,7 +2105,7 @@
     "teamvertreter": {
       "name": "Ralf Stegmüller",
       "tel": "07254 - 985210",
-      "mail": ""
+      "mail": "tonko@web.de"
     },
     "mitglieder": [
       {
@@ -2107,6 +2119,12 @@
         "vorname": "Christina",
         "encName": "R3Jv3w==",
         "encVorname": "Q2hyaXN0aW5h"
+      },
+      {
+        "name": "Resch",
+        "vorname": "Kimo",
+        "encName": "UmVzY2g=",
+        "encVorname": "S2ltbw=="
       },
       {
         "name": "Riedle",
@@ -2149,12 +2167,6 @@
         "vorname": "Stefan",
         "encName": "U3RlaW5sZQ==",
         "encVorname": "U3RlZmFu"
-      },
-      {
-        "name": "Resch",
-        "vorname": "Kimo",
-        "encName": "UmVzY2g=",
-        "encVorname": "S2ltbw=="
       }
     ],
     "encTeam": "VGFyYXhhY3VtYSBUTlQ="
@@ -2169,7 +2181,7 @@
     "teamvertreter": {
       "name": "Jörg Bogumil",
       "tel": "0173 - 6887503",
-      "mail": ""
+      "mail": "bernd.mehlmer@web.de"
     },
     "mitglieder": [
       {
@@ -2231,6 +2243,12 @@
         "encVorname": "V29sZnJhbQ=="
       },
       {
+        "name": "Biernatzki",
+        "vorname": "Christian",
+        "encName": "Qmllcm5hdHpraQ==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
         "name": "Coogan",
         "vorname": "Ferghal",
         "encName": "Q29vZ2Fu",
@@ -2247,6 +2265,12 @@
         "vorname": "Tobias (TC)",
         "encName": "R/Z0emVsbWFubg==",
         "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Hettich",
+        "vorname": "Markus",
+        "encName": "SGV0dGljaA==",
+        "encVorname": "TWFya3Vz"
       },
       {
         "name": "Jock",
@@ -2267,22 +2291,10 @@
         "encVorname": "U3RlZmFu"
       },
       {
-        "name": "Hettich",
-        "vorname": "Markus",
-        "encName": "SGV0dGljaA==",
-        "encVorname": "TWFya3Vz"
-      },
-      {
         "name": "Ploth",
         "vorname": "Sebastian",
         "encName": "UGxvdGg=",
         "encVorname": "U2ViYXN0aWFu"
-      },
-      {
-        "name": "Biernatzki",
-        "vorname": "Christian",
-        "encName": "Qmllcm5hdHpraQ==",
-        "encVorname": "Q2hyaXN0aWFu"
       }
     ],
     "encTeam": "REMgQmxhdS1XZWnfIEthcmxzcnVoZQ=="
@@ -2297,15 +2309,9 @@
     "teamvertreter": {
       "name": "Melanie Klomann",
       "tel": "0176 - 80665025",
-      "mail": ""
+      "mail": "LuckyMelKA@web.de"
     },
     "mitglieder": [
-      {
-        "name": "Antal",
-        "vorname": "Oliver (TC)",
-        "encName": "QW50YWw=",
-        "encVorname": "T2xpdmVyIChUQyk="
-      },
       {
         "name": "Alpino",
         "vorname": "Fabio",
@@ -2314,27 +2320,27 @@
       },
       {
         "name": "Augenstein",
-        "vorname": "Marius",
-        "encName": "QXVnZW5zdGVpbg==",
-        "encVorname": "TWFyaXVz"
-      },
-      {
-        "name": "Augenstein",
         "vorname": "Norbert",
         "encName": "QXVnZW5zdGVpbg==",
         "encVorname": "Tm9yYmVydA=="
       },
       {
-        "name": "Berninger",
-        "vorname": "Hans",
-        "encName": "QmVybmluZ2Vy",
-        "encVorname": "SGFucw=="
+        "name": "Augenstein",
+        "vorname": "Marius",
+        "encName": "QXVnZW5zdGVpbg==",
+        "encVorname": "TWFyaXVz"
       },
       {
         "name": "Berninger",
         "vorname": "Martin",
         "encName": "QmVybmluZ2Vy",
         "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Berninger",
+        "vorname": "Hans",
+        "encName": "QmVybmluZ2Vy",
+        "encVorname": "SGFucw=="
       },
       {
         "name": "Braun",
@@ -2355,6 +2361,12 @@
         "encVorname": "SvZyZw=="
       },
       {
+        "name": "Hüllein",
+        "vorname": "Swen",
+        "encName": "SPxsbGVpbg==",
+        "encVorname": "U3dlbg=="
+      },
+      {
         "name": "Joudi",
         "vorname": "Josef",
         "encName": "Sm91ZGk=",
@@ -2368,9 +2380,9 @@
       },
       {
         "name": "Klomann",
-        "vorname": "Melanie",
+        "vorname": "Melanie (TC)",
         "encName": "S2xvbWFubg==",
-        "encVorname": "TWVsYW5pZQ=="
+        "encVorname": "TWVsYW5pZSAoVEMp"
       },
       {
         "name": "König",
@@ -2385,28 +2397,28 @@
         "encVorname": "SGFucyBQZXRlcg=="
       },
       {
-        "name": "Rohde",
-        "vorname": "Thomas",
-        "encName": "Um9oZGU=",
-        "encVorname": "VGhvbWFz"
-      },
-      {
-        "name": "Weber",
-        "vorname": "Alexander",
-        "encName": "V2ViZXI=",
-        "encVorname": "QWxleGFuZGVy"
-      },
-      {
         "name": "Poppeck",
         "vorname": "Tobias",
         "encName": "UG9wcGVjaw==",
         "encVorname": "VG9iaWFz"
       },
       {
+        "name": "Rohde",
+        "vorname": "Thomas",
+        "encName": "Um9oZGU=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
         "name": "Schulz",
         "vorname": "Toni",
         "encName": "U2NodWx6",
         "encVorname": "VG9uaQ=="
+      },
+      {
+        "name": "Weber",
+        "vorname": "Alexander",
+        "encName": "V2ViZXI=",
+        "encVorname": "QWxleGFuZGVy"
       }
     ],
     "encTeam": "RC5BLlIuVC4gUGx1bWJhdGE="
@@ -2421,7 +2433,7 @@
     "teamvertreter": {
       "name": "Dieter Philipp",
       "tel": "0171 - 6011849",
-      "mail": ""
+      "mail": "katie.redwanz@t-online.de"
     },
     "mitglieder": [
       {
@@ -2491,15 +2503,9 @@
     "teamvertreter": {
       "name": "Marco Müller",
       "tel": "0160 - 7356535",
-      "mail": ""
+      "mail": "marco-m-55@web.de"
     },
     "mitglieder": [
-      {
-        "name": "Müller",
-        "vorname": "Marco (TC)",
-        "encName": "TfxsbGVy",
-        "encVorname": "TWFyY28gKFRDKQ=="
-      },
       {
         "name": "Andert",
         "vorname": "Iris",
@@ -2538,6 +2544,12 @@
       },
       {
         "name": "Müller",
+        "vorname": "Marco (TC)",
+        "encName": "TfxsbGVy",
+        "encVorname": "TWFyY28gKFRDKQ=="
+      },
+      {
+        "name": "Müller",
         "vorname": "Bodo",
         "encName": "TfxsbGVy",
         "encVorname": "Qm9kbw=="
@@ -2561,7 +2573,7 @@
     "teamvertreter": {
       "name": "Benjamin Bischoff",
       "tel": "0170 - 5493211",
-      "mail": ""
+      "mail": "bbenny2212@aol.com"
     },
     "mitglieder": [
       {
@@ -2637,7 +2649,7 @@
     "teamvertreter": {
       "name": "Christian Schorpp",
       "tel": "01590 - 5059535",
-      "mail": ""
+      "mail": "christian-schorpp@t-online.de"
     },
     "mitglieder": [
       {
@@ -2665,6 +2677,12 @@
         "encVorname": "TWFydGlu"
       },
       {
+        "name": "Schier",
+        "vorname": "Mark",
+        "encName": "U2NoaWVy",
+        "encVorname": "TWFyaw=="
+      },
+      {
         "name": "Schorpp",
         "vorname": "Christian (TC)",
         "encName": "U2Nob3JwcA==",
@@ -2681,12 +2699,6 @@
         "vorname": "David",
         "encName": "V2Fseg==",
         "encVorname": "RGF2aWQ="
-      },
-      {
-        "name": "Schier",
-        "vorname": "Mark",
-        "encName": "U2NoaWVy",
-        "encVorname": "TWFyaw=="
       }
     ],
     "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMQ=="
@@ -2701,15 +2713,9 @@
     "teamvertreter": {
       "name": "Joachim Pflüger",
       "tel": "0170 - 6059950",
-      "mail": ""
+      "mail": "joachim.pflueger@daimler.com"
     },
     "mitglieder": [
-      {
-        "name": "Weis",
-        "vorname": "Frank",
-        "encName": "V2Vpcw==",
-        "encVorname": "RnJhbms="
-      },
       {
         "name": "Bache",
         "vorname": "John",
@@ -2721,6 +2727,12 @@
         "vorname": "Michael",
         "encName": "R2xlaXNsZQ==",
         "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Heidecke",
+        "vorname": "Steffen",
+        "encName": "SGVpZGVja2U=",
+        "encVorname": "U3RlZmZlbg=="
       },
       {
         "name": "Kraft",
@@ -2753,10 +2765,10 @@
         "encVorname": "RG9taW5paw=="
       },
       {
-        "name": "Heidecke",
-        "vorname": "Steffen",
-        "encName": "SGVpZGVja2U=",
-        "encVorname": "U3RlZmZlbg=="
+        "name": "Weis",
+        "vorname": "Frank",
+        "encName": "V2Vpcw==",
+        "encVorname": "RnJhbms="
       }
     ],
     "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMg=="
@@ -2771,32 +2783,20 @@
     "teamvertreter": {
       "name": "Fabian Mager",
       "tel": "0179 - 9034821",
-      "mail": ""
+      "mail": "fabian.mager@gmx.de"
     },
     "mitglieder": [
-      {
-        "name": "Mager",
-        "vorname": "Fabian (TC)",
-        "encName": "TWFnZXI=",
-        "encVorname": "RmFiaWFuIChUQyk="
-      },
-      {
-        "name": "Reeb",
-        "vorname": "Manfred",
-        "encName": "UmVlYg==",
-        "encVorname": "TWFuZnJlZA=="
-      },
-      {
-        "name": "Pilgrim",
-        "vorname": "Jerry",
-        "encName": "UGlsZ3JpbQ==",
-        "encVorname": "SmVycnk="
-      },
       {
         "name": "Beier",
         "vorname": "Nora",
         "encName": "QmVpZXI=",
         "encVorname": "Tm9yYQ=="
+      },
+      {
+        "name": "Gabel",
+        "vorname": "Sebastian",
+        "encName": "R2FiZWw=",
+        "encVorname": "U2ViYXN0aWFu"
       },
       {
         "name": "Hentschel Hoffmann",
@@ -2811,10 +2811,34 @@
         "encVorname": "S2V2aW4="
       },
       {
-        "name": "Gabel",
-        "vorname": "Sebastian",
-        "encName": "R2FiZWw=",
-        "encVorname": "U2ViYXN0aWFu"
+        "name": "Mager",
+        "vorname": "Fabian (TC)",
+        "encName": "TWFnZXI=",
+        "encVorname": "RmFiaWFuIChUQyk="
+      },
+      {
+        "name": "Müller",
+        "vorname": "Maurice",
+        "encName": "TfxsbGVy",
+        "encVorname": "TWF1cmljZQ=="
+      },
+      {
+        "name": "Müller",
+        "vorname": "Pit",
+        "encName": "TfxsbGVy",
+        "encVorname": "UGl0"
+      },
+      {
+        "name": "Pilgrim",
+        "vorname": "Jerry",
+        "encName": "UGlsZ3JpbQ==",
+        "encVorname": "SmVycnk="
+      },
+      {
+        "name": "Reeb",
+        "vorname": "Manfred",
+        "encName": "UmVlYg==",
+        "encVorname": "TWFuZnJlZA=="
       },
       {
         "name": "Rometsch",
@@ -2827,18 +2851,6 @@
         "vorname": "Manuela",
         "encName": "Um9tZXRzY2g=",
         "encVorname": "TWFudWVsYQ=="
-      },
-      {
-        "name": "Müller",
-        "vorname": "Pit",
-        "encName": "TfxsbGVy",
-        "encVorname": "UGl0"
-      },
-      {
-        "name": "Müller",
-        "vorname": "Maurice",
-        "encName": "TfxsbGVy",
-        "encVorname": "TWF1cmljZQ=="
       }
     ],
     "encTeam": "S2FybHNydWhlciBEYXJ0IEZyZXVuZGUgKEtERik="
@@ -2853,7 +2865,7 @@
     "teamvertreter": {
       "name": "Dieter Richard",
       "tel": "07256 - 944310 (ab 19 Uhr)",
-      "mail": ""
+      "mail": "taraxacuma@aol.de"
     },
     "mitglieder": [
       {
@@ -2917,7 +2929,7 @@
     "teamvertreter": {
       "name": "Diana Damsons",
       "tel": "0176 - 57623854",
-      "mail": ""
+      "mail": "taraxacuma@aol.de"
     },
     "mitglieder": [
       {
@@ -2927,10 +2939,22 @@
         "encVorname": "U3RlZmZlbg=="
       },
       {
+        "name": "Becker",
+        "vorname": "Christine",
+        "encName": "QmVja2Vy",
+        "encVorname": "Q2hyaXN0aW5l"
+      },
+      {
         "name": "Damsons",
         "vorname": "Diana (TC)",
         "encName": "RGFtc29ucw==",
         "encVorname": "RGlhbmEgKFRDKQ=="
+      },
+      {
+        "name": "Deeg",
+        "vorname": "Carlo",
+        "encName": "RGVlZw==",
+        "encVorname": "Q2FybG8="
       },
       {
         "name": "Gutting",
@@ -2951,22 +2975,10 @@
         "encVorname": "QXJtaW4="
       },
       {
-        "name": "Becker",
-        "vorname": "Christine",
-        "encName": "QmVja2Vy",
-        "encVorname": "Q2hyaXN0aW5l"
-      },
-      {
         "name": "Knobloch",
         "vorname": "Andreas",
         "encName": "S25vYmxvY2g=",
         "encVorname": "QW5kcmVhcw=="
-      },
-      {
-        "name": "Deeg",
-        "vorname": "Carlo",
-        "encName": "RGVlZw==",
-        "encVorname": "Q2FybG8="
       },
       {
         "name": "Schlicht",

@@ -15,10 +15,11 @@ function uploadResults (req, res) {
 
         var tcHeim = req.swagger.params.tcHeim.originalValue;
         var tcGast = req.swagger.params.tcGast.originalValue;
+        var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
         var sResult = req.swagger.params.res.originalValue;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
-        jsonfile.writeFileSync(sPath + "/ergebnisse/kln001.json", oResult, {spaces: 2});
+        jsonfile.writeFileSync(sPath + "/ergebnisse/" + sSpielId + ".json", oResult, {spaces: 2});
 
         var picture = req.swagger.params.picture.originalValue;
         var sFilename = path.resolve(config.get("temp.dir") + "/" + picture.originalname);
@@ -29,51 +30,55 @@ function uploadResults (req, res) {
             res: oResult
         });
 
-        var transporter = nodemailer.createTransport({
-            host: 'mail.sap-ag.de',
-            secureConnection: false,
-            port: "25"
-        });
+        if (false) {
+            var transporter = nodemailer.createTransport({
+                host: 'mail.sap-ag.de',
+                secureConnection: false,
+                port: "25"
+            });
 
-        var aMailTo = [];
-        /*aMailTo.push('BDL Online Spielbericht <bdlonlinespielplan@gmail.com>');
-        aMailTo.push('Spielleiter BDL <spielleiter@badischedartliga.de>');
-        aMailTo.push('BDL@BWDV <bdl@bwdv.de>');
-        if (tcHeim!="") {
-            aMailTo.push('Teamkapitän Heim <' + tcHeim + '>');
-        }
-        if (tcGast!="") {
-            aMailTo.push('Teamkapitän Gast <' + tcGast + '>');
-        }
-        
-        aMailCC.push('Dominik Boss <odom3003@googlemail.com>');
-        aMailCC.push('Jochen Becker <jb@jankovsky.de>');*/
-        var aMailCC = [];
-        aMailCC.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
-
-        var mailOptions = {
-            //from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
-            from: 'Marius Augenstein <Marius.Augenstein@sap.com>',
-            to: aMailTo.join(', '),
-            cc: aMailCC.join(', '),
-
-            subject: 'BDL Online Spielberichtsbogen',
-            html: html,
-            attachments:[
-                {   // stream as an attachment
-                    filename: 'Spielberichtsfoto.png',
-                    content: fs.createReadStream(sFilename)
-                }
-            ]
-        };
-
-        transporter.sendMail(mailOptions, function(error, info){
-            if(error){
-                throw new Error('Failed to send email: '  + error.stack);
+            var aMailTo = [];
+            aMailTo.push('BDL Online Spielbericht <bdlonlinespielplan@gmail.com>');
+            aMailTo.push('Spielleiter BDL <spielleiter@badischedartliga.de>');
+            aMailTo.push('BDL@BWDV <bdl@bwdv.de>');
+            if (tcHeim!="") {
+                aMailTo.push('Teamkapitän Heim <' + tcHeim + '>');
+            }
+            if (tcGast!="") {
+                aMailTo.push('Teamkapitän Gast <' + tcGast + '>');
             }
 
+            aMailCC.push('Dominik Boss <odom3003@googlemail.com>');
+            aMailCC.push('Jochen Becker <jb@jankovsky.de>');
+            var aMailCC = [];
+            aMailCC.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
+
+            var mailOptions = {
+                //from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
+                from: 'Marius Augenstein <Marius.Augenstein@sap.com>',
+                to: aMailTo.join(', '),
+                cc: aMailCC.join(', '),
+
+                subject: 'BDL Online Spielberichtsbogen',
+                html: html,
+                attachments:[
+                    {   // stream as an attachment
+                        filename: 'Spielberichtsfoto.png',
+                        content: fs.createReadStream(sFilename)
+                    }
+                ]
+            };
+
+            transporter.sendMail(mailOptions, function(error, info){
+                if(error){
+                    throw new Error('Failed to send email: '  + error.stack);
+                }
+
+                res.status(200).send(html);
+            });
+        } else {
             res.status(200).send(html);
-        });
+        }
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
