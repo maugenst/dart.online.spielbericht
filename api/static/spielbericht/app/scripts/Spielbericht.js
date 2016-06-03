@@ -905,8 +905,8 @@ function checkOnTeamSelection() {
     //document.getElementById("teamgast").disabled = false;
 	var heim = document.getElementById("teamheim");
 	var gast = document.getElementById("teamgast");
-    var heimTeamId = getTeamId(heim.value);
-    var gastTeamId = getTeamId(gast.value);
+    var heimTeamId = (heim.selectedIndex) ? heim.selectedOptions[0].value : undefined;
+    var gastTeamId = (gast.selectedIndex) ? gast.selectedOptions[0].value : undefined;
 
     var oVereine = {};
 
@@ -916,12 +916,12 @@ function checkOnTeamSelection() {
         for(var spieltag in oSpielplan[liga].vr) {
             for (var i in oSpielplan[liga].vr[spieltag]) {
                 var spiel = oSpielplan[liga].vr[spieltag][i];
-                if (spiel.heim === heimTeamId) {
-                    oVereine[oTeams[spiel.gast].encTeam] = {
+                if (spiel.heim && spiel.heim === heimTeamId) {
+                    oVereine[spiel.gast] = {
                         teamId: spiel.gast,
                         name: oTeams[spiel.gast].name
                     };
-                    if (spiel.gast == gastTeamId) {
+                    if (spiel.gast && spiel.gast == gastTeamId) {
                         sSpielID = spiel.id;
                     }
                 }
@@ -930,12 +930,12 @@ function checkOnTeamSelection() {
         for(var spieltag in oSpielplan[liga].rr) {
             for (var i in oSpielplan[liga].rr[spieltag]) {
                 var spiel = oSpielplan[liga].rr[spieltag][i];
-                if (spiel.heim === heimTeamId) {
-                    oVereine[oTeams[spiel.gast].encTeam] = {
+                if (spiel.heim && spiel.heim === heimTeamId) {
+                    oVereine[spiel.gast] = {
                         teamId: spiel.gast,
                         name: oTeams[spiel.gast].name
                     };
-                    if (spiel.gast == gastTeamId) {
+                    if (spiel.gast && spiel.gast == gastTeamId) {
                         sSpielID = spiel.id;
                     }
                 }
