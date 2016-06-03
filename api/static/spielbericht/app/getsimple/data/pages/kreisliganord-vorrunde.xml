@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Wed, 25 May 2016 17:57:45 +0200</pubDate><title><![CDATA[Kreisliga Nord Vorrunde]]></title><url><![CDATA[kreisliganord-vorrunde]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Oberliga Vorrunde]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[kreisliganord]]></parent><content><![CDATA[&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://localhost:1080/index.php?id=kreisliganord-vorrunde&quot;&gt;Vorrunde&lt;/a&gt; | &lt;a href=&quot;http://localhost:1080/index.php?id=kreisliganord-rueckrunde&quot;&gt;Rückrunde&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;(% script:ResizeIframe %)&lt;/p&gt;
-
-&lt;p&gt;(% script:knvr %)&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[bdladmin]]></author></item>

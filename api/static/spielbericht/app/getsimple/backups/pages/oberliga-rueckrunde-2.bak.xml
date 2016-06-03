@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Wed, 25 May 2016 17:08:26 +0200</pubDate><title><![CDATA[Kreisliga Süd Rückrunde]]></title><url><![CDATA[oberliga-rueckrunde-2]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Oberliga Vorrunde]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[oberliga]]></parent><content><![CDATA[&lt;p style=&quot;text-align: center;&quot;&gt;Vorrunde | Rückrunde&lt;/p&gt;
-
-&lt;p&gt;(% script:ResizeIframe %)&lt;/p&gt;
-
-&lt;p&gt;(% script:ksrr %)&lt;/p&gt;
-]]></content><private><![CDATA[]]></private><author><![CDATA[bdladmin]]></author></item>

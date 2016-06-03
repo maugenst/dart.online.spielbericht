@@ -30,12 +30,8 @@ function uploadResults (req, res) {
             res: oResult
         });
 
-        if (false) {
-            var transporter = nodemailer.createTransport({
-                host: 'mail.sap-ag.de',
-                secureConnection: false,
-                port: "25"
-            });
+        if (os.type() === 'Linux') {
+            var transporter = nodemailer.createTransport();
 
             var aMailTo = [];
             aMailTo.push('BDL Online Spielbericht <bdlonlinespielplan@gmail.com>');
