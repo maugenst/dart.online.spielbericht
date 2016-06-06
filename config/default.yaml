@@ -17,6 +17,7 @@ temp:
 
 #
 bedelos:
+  saison: 1516
   datapath: ./data/saison/1516
 
 # values in the swagger hash are system configuration for swagger-node

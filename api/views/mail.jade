@@ -14,9 +14,9 @@ html
             thead
                 tr.gegnerNamen
                     td(colspan=3) HEIM:
-                    td(style={color: 'gold'})= res.heim
+                    td(style={color: 'gold'})= teams[res.heim].name
                     td GAST:
-                    td(colspan=4, style={color: 'gold'})= res.gast
+                    td(colspan=4, style={color: 'gold'})= teams[res.gast].name
                 tr.gegnerNamen
                     th
                         .thRotated SL
@@ -199,6 +199,7 @@ html
                 tr
                     td(colspan='9')
                         .bold Spielername (N) = Nachgemeldeter Spieler
+        img(src='#{res.picturePath}')
         p &copy;
             b
                 a(href='mailto:marius.augenstein@gmail.com') Marius Augenstein (2015,2016)

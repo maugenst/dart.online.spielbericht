@@ -334,9 +334,12 @@ function walkDOM(node, func) {
 function fillHiddenFieldsAndSubmit() {
 	removeBorders();
 
-    var oTest = window.localStorage.getItem("ergebnisRAW");
+    var oTest = JSON.parse(window.localStorage.getItem("ergebnisRAW"));
 
-	document.getElementById("ergebnisRAW").value = oTest;
+    oTest.heim = ergebnisse.heim;
+    oTest.gast = ergebnisse.gast;
+
+	document.getElementById("ergebnisRAW").value = JSON.stringify(oTest);
 
 	document.getElementById("tcHeim").value = document.getElementById("emailHeim").value;
 	document.getElementById("tcGast").value = document.getElementById("emailGast").value;

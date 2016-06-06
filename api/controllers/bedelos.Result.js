@@ -8,50 +8,58 @@ var fs = require('fs');
 var jade = require('jade');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
+var uid = require('../helpers/UID');
 
 function uploadResults (req, res) {
     try {
-        var sPath = path.resolve(config.get("bedelos.datapath"));
+        var oTeams = require(path.resolve(config.get("bedelos.datapath") + '/Teams.json'));
+        var sPath = path.resolve(config.get("bedelos.datapath") + "/inbox/" + uid.generate() + "_");
+        var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
+        var picture = req.swagger.params.picture.originalValue;
+        var sFilename = path.resolve(sPath + sSpielId + "_" + picture.originalname);
 
+        fs.writeFileSync(sFilename, picture.buffer);
         var tcHeim = req.swagger.params.tcHeim.originalValue;
         var tcGast = req.swagger.params.tcGast.originalValue;
-        var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
         var sResult = req.swagger.params.res.originalValue;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
-        jsonfile.writeFileSync(sPath + "/ergebnisse/" + sSpielId + ".json", oResult, {spaces: 2});
-
-        var picture = req.swagger.params.picture.originalValue;
-        var sFilename = path.resolve(config.get("temp.dir") + "/" + picture.originalname);
-        fs.writeFileSync(sFilename, picture.buffer);
+        sFilename = sFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/');
+        oResult['picturePath'] = sFilename;
+        jsonfile.writeFileSync(sPath + sSpielId + ".json", oResult, {spaces: 2});
 
         var html = jade.renderFile("api/views/mail.jade", {
             pretty: true,
+            teams: oTeams,
             res: oResult
         });
 
         if (os.type() === 'Linux') {
             var transporter = nodemailer.createTransport();
-
             var aMailTo = [];
-            aMailTo.push('BDL Online Spielbericht <bdlonlinespielplan@gmail.com>');
-            aMailTo.push('Spielleiter BDL <spielleiter@badischedartliga.de>');
-            aMailTo.push('BDL@BWDV <bdl@bwdv.de>');
-            if (tcHeim!="") {
-                aMailTo.push('Teamkapitän Heim <' + tcHeim + '>');
-            }
-            if (tcGast!="") {
-                aMailTo.push('Teamkapitän Gast <' + tcGast + '>');
-            }
-
-            aMailCC.push('Dominik Boss <odom3003@googlemail.com>');
-            aMailCC.push('Jochen Becker <jb@jankovsky.de>');
             var aMailCC = [];
-            aMailCC.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
+
+            if (req.swagger.params.test.originalValue) {
+                aMailTo.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
+                aMailTo.push('Marius Augenstein <Marius.Augenstein@sap.com>');
+            } else {
+                aMailTo.push('BDL Online Spielbericht <bdlonlinespielplan@gmail.com>');
+                aMailTo.push('Spielleiter BDL <spielleiter@badischedartliga.de>');
+                aMailTo.push('BDL@BWDV <bdl@bwdv.de>');
+                if (tcHeim!="") {
+                    aMailTo.push('Teamkapitän Heim <' + tcHeim + '>');
+                }
+                if (tcGast!="") {
+                    aMailTo.push('Teamkapitän Gast <' + tcGast + '>');
+                }
+
+                aMailCC.push('Dominik Boss <odom3003@googlemail.com>');
+                aMailCC.push('Jochen Becker <jb@jankovsky.de>');
+                aMailCC.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
+            }
 
             var mailOptions = {
-                //from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
-                from: 'Marius Augenstein <Marius.Augenstein@sap.com>',
+                from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
                 to: aMailTo.join(', '),
                 cc: aMailCC.join(', '),
 

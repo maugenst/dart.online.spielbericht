@@ -1,0 +1,22 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title BDL Online Spielplan - Inbox Management
+    body(style={"font-family": 'Calibri'})
+        table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            thead
+                tr(style={"background-color": '#AFD3E0'})
+                    th Heim
+                    th Ergebnis
+                    th Gast
+                    th Details
+            tbody
+                each result, i in results
+                    - var spielId = i.split('_')[1];
+                    tr(align='center')
+                        td= teams[results[i].heim].name
+                        td #{results[i].summary.heim.sets} : #{results[i].summary.gast.sets}
+                        td= teams[results[i].gast].name
+                        td
+                            a(href='/bedelos/inbox/#{i}') Details

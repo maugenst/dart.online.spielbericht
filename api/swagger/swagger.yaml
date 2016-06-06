@@ -96,6 +96,11 @@ paths:
           description: ID of the Game
           in: formData
           required: false
+        - name: test
+          type: boolean
+          description: inidcates testmode
+          in: query
+          required: false
         - name: picture
           in: formData
           description: The picture taken by the mobile device
@@ -113,6 +118,40 @@ paths:
           description: Successful response
           schema:
             $ref: "#/definitions/HTML"
+
+  /inbox:
+    x-swagger-router-controller: bedelos.Inbox
+    get:
+      produces:
+        - text/html
+      description:
+        Displays the Inbox
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /inbox/{gameId}:
+    x-swagger-router-controller: bedelos.InboxDetails
+    get:
+      produces:
+        - text/html
+      description:
+        Displays the Inbox
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+
 
 # complex objects have schema definitions
 definitions:
