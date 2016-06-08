@@ -26,17 +26,23 @@ function logAll(message) {
 }
 
 function _init(){
-    logDirectory = path.resolve(__dirname + "/" + config.get("log.dir"));
-    // ensure log directory exists
-    if (!fs.existsSync(logDirectory)) {
-        mkdirp.sync(logDirectory);
-    }
+    var aPathsToResolve = [
+        path.resolve(__dirname + "/" + config.get("log.dir")),
+        path.resolve(__dirname + "/" + config.get("temp.dir")),
+        path.resolve(__dirname + "/data"),
+        path.resolve(__dirname + "/data/saison"),
+        path.resolve(__dirname + "/data/saison" + config.get("bedelos.saison")),
+        path.resolve(__dirname + "/data/saison" + config.get("bedelos.saison") + "/ergebnisse"),
+        path.resolve(__dirname + "/data/saison" + config.get("bedelos.saison") + "/inbox")
+    ];
 
-    var tempDirectory = path.resolve(__dirname + "/" + config.get("temp.dir"));
-    // ensure temp directory exists
-    if (!fs.existsSync(tempDirectory)) {
-        mkdirp.sync(tempDirectory);
+    for(var i = 0; i<aPathsToResolve.length; i++) {
+        // ensure that this directory exists
+        if (!fs.existsSync(aPathsToResolve[i])) {
+            mkdirp.sync(aPathsToResolve[i]);
+        }
     }
+    logDirectory = aPathsToResolve[0];
 }
 
 try {
