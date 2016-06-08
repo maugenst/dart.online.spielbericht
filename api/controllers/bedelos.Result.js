@@ -25,7 +25,7 @@ function uploadResults (req, res) {
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
         sFilename = sFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/');
-        oResult['picturePath'] = sFilename;
+        oResult['picture'] = "./" + picture.originalname;
         jsonfile.writeFileSync(sPath + sSpielId + ".json", oResult, {spaces: 2});
 
         var html = jade.renderFile("api/views/mail.jade", {

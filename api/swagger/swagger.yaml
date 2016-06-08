@@ -151,6 +151,44 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /inbox/{gameId}/release:
+    x-swagger-router-controller: bedelos.InboxRelease
+    get:
+      produces:
+        - text/html
+      description:
+        Releases a Game in the Inbox
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /inbox/{gameId}/delete:
+    x-swagger-router-controller: bedelos.InboxDelete
+    get:
+      produces:
+        - text/html
+      description:
+        Delete a Game in the Inbox
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
 
 
 # complex objects have schema definitions

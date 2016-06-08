@@ -10,7 +10,7 @@ html
                     th Heim
                     th Ergebnis
                     th Gast
-                    th Details
+                    th Aktionen
             tbody
                 each result, i in results
                     - var spielId = i.split('_')[1];
@@ -20,3 +20,8 @@ html
                         td= teams[results[i].gast].name
                         td
                             a(href='/bedelos/inbox/#{i}') Details
+                            nbsp |
+                            a(href='/bedelos/inbox/#{i}/release') Freigeben
+                            nbsp |
+                            a(href='/bedelos/inbox/#{i}/delete') Löschen
+
