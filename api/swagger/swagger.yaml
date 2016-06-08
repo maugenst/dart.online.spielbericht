@@ -97,9 +97,9 @@ paths:
           in: formData
           required: false
         - name: test
-          type: boolean
+          type: string
           description: inidcates testmode
-          in: query
+          in: formData
           required: false
         - name: picture
           in: formData

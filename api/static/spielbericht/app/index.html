@@ -296,7 +296,9 @@
             <input type="text" id="ergebnisRAW" name="res" style="display:none">
             Um den Spielbericht an den Spielleiter der BDL abzuschicken musst Du online gehen.
             Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
-            <br><input type="file" name="picture" capture="camera" accept="image/*" id="takePictureField">
+            
+            <input type="checkbox" name="test"> Test?
+            <input type="file" name="picture" capture="camera" accept="image/*" id="takePictureField">
             <br><br>
             <input type="button" value="Absenden" id="sendMailSubmit" onclick="fillHiddenFieldsAndSubmit()">
         </form>

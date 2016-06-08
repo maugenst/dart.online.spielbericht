@@ -39,7 +39,7 @@ function uploadResults (req, res) {
             var aMailTo = [];
             var aMailCC = [];
 
-            if (req.swagger.params.test.originalValue) {
+            if (req.swagger.params.test.originalValue === "on") {
                 aMailTo.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
                 aMailTo.push('Marius Augenstein <Marius.Augenstein@sap.com>');
             } else {
