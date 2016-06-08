@@ -34,5 +34,3 @@ node_modules
 config/runtime.yaml
 
 data
-
-data/log/access.log
