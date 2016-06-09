@@ -9,23 +9,26 @@ var jade = require('jade');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 var uid = require('../helpers/UID');
+var url =  require('url');
 
 function uploadResults (req, res) {
     try {
         var oTeams = require(path.resolve(config.get("bedelos.datapath") + '/Teams.json'));
-        var sPath = path.resolve(config.get("bedelos.datapath") + "/inbox/" + uid.generate() + "_");
+        var uniqueGameId = uid.generate();
+        var sPath = path.resolve(config.get("bedelos.datapath") + "/inbox/" + uniqueGameId + "_");
+        var sPicturePath = path.resolve(config.get("bedelos.datapath") + "/pictures/" + uniqueGameId + "_");
         var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
         var picture = req.swagger.params.picture.originalValue;
-        var sFilename = path.resolve(sPath + sSpielId + "_" + picture.originalname);
-
+        var sFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
         fs.writeFileSync(sFilename, picture.buffer);
+
         var tcHeim = req.swagger.params.tcHeim.originalValue;
         var tcGast = req.swagger.params.tcGast.originalValue;
         var sResult = req.swagger.params.res.originalValue;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
         sFilename = sFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/');
-        oResult['picture'] = "./" + picture.originalname;
+        oResult['picture'] = url.resolve(req.headers.origin, sFilename);
         jsonfile.writeFileSync(sPath + sSpielId + ".json", oResult, {spaces: 2});
 
         var html = jade.renderFile("api/views/mail.jade", {

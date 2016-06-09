@@ -31,9 +31,10 @@ function _init(){
         path.resolve(__dirname + "/" + config.get("temp.dir")),
         path.resolve(__dirname + "/data"),
         path.resolve(__dirname + "/data/saison"),
-        path.resolve(__dirname + "/data/saison" + config.get("bedelos.saison")),
-        path.resolve(__dirname + "/data/saison" + config.get("bedelos.saison") + "/ergebnisse"),
-        path.resolve(__dirname + "/data/saison" + config.get("bedelos.saison") + "/inbox")
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison")),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/ergebnisse"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/pictures"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/inbox")
     ];
 
     for(var i = 0; i<aPathsToResolve.length; i++) {
