@@ -75,8 +75,8 @@ function uploadResults (req, res) {
 
             var mailOptions = {
                 from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
-                to: aMailTo.join(', '),
-                cc: aMailCC.join(', '),
+                to: '\'' + aMailTo.join(', ') + '\'',
+                cc: '\'' + aMailCC.join(', ') + '\'',
 
                 subject: 'BDL Online Spielberichtsbogen',
                 html: html,
