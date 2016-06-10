@@ -8,9 +8,8 @@ var fs = require('fs');
 var jade = require('jade');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var walker = require('walker');
-var _ = require('lodash');
 
+var logger = require("../helpers/Logger");
 
 function details (req, res) {
     try {
@@ -18,7 +17,12 @@ function details (req, res) {
         var oTeams = require(sPath + '/Teams.json');
 
         var oResults = {};
-        var oResult = require(path.resolve(sPath + "/"+req.swagger.params.storage.originalValue+"/" + req.swagger.params.gameId.originalValue + ".json"));
+        logger.log.debug("Displaying details on: " + req.swagger.params.gameId.originalValue);
+        var sResultFile = path.resolve(sPath + "/"+req.swagger.params.storage.originalValue + "/" + req.swagger.params.gameId.originalValue + ".json");
+
+        logger.log.debug(" ResultFile: " + sResultFile);
+        var oResult = require(sResultFile);
+        logger.log.debug(oResult);
         var html = jade.renderFile("api/views/mail.jade", {
             pretty: true,
             teams: oTeams,
