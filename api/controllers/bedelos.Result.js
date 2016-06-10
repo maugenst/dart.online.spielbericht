@@ -10,7 +10,7 @@ var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 var uid = require('../helpers/UID');
 var url =  require('url');
-var logger = require(__dirname + "/api/helpers/Logger");
+var logger = require("../helpers/Logger");
 
 function uploadResults (req, res) {
     try {
