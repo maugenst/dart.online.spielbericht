@@ -10,6 +10,7 @@ var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 var uid = require('../helpers/UID');
 var url =  require('url');
+var logger = require(__dirname + "/api/helpers/Logger");
 
 function uploadResults (req, res) {
     try {
@@ -19,17 +20,17 @@ function uploadResults (req, res) {
         var sPicturePath = path.resolve(config.get("bedelos.datapath") + "/pictures/" + uniqueGameId + "_");
         var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
         var picture = req.swagger.params.picture.originalValue;
-        var sFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
-        fs.writeFileSync(sFilename, picture.buffer);
-
+        var sPictureFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
+        fs.writeFileSync(sPictureFilename, picture.buffer);
         var tcHeim = req.swagger.params.tcHeim.originalValue;
+
         var tcGast = req.swagger.params.tcGast.originalValue;
         var sResult = req.swagger.params.res.originalValue;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
-        sFilename = sFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/');
-        oResult['picture'] = url.resolve(req.headers.origin, sFilename);
-        jsonfile.writeFileSync(sPath + sSpielId + ".json", oResult, {spaces: 2});
+        oResult['picture'] = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
+        var sJsonFilename = path.resolve(sPath + sSpielId + ".json");
+        jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 2});
 
         var html = jade.renderFile("api/views/mail.jade", {
             pretty: true,
@@ -37,14 +38,22 @@ function uploadResults (req, res) {
             res: oResult
         });
 
+        logger.log.info("Spielbericht erhalten für Partie: " + oResult.heim + " vs. " + oResult.gast);
+        logger.log.info("   --> Game Id: " + sSpielId);
+        logger.log.info("   --> Spielbericht Daten: " + sJsonFilename);
+        logger.log.info("   --> Spielbericht Foto: " + sPictureFilename);
         if (os.type() === 'Linux') {
+            logger.log.info("   --> Running on Linux. Trying to send Email.");
+            logger.log.info("   --> Email test mode is: " + req.swagger.params.test.originalValue);
+
             var transporter = nodemailer.createTransport();
+            logger.log.debug("Transporter created.")
             var aMailTo = [];
             var aMailCC = [];
 
             if (req.swagger.params.test.originalValue === "on") {
                 aMailTo.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
-                aMailTo.push('Marius Augenstein <Marius.Augenstein@sap.com>');
+                aMailCC.push('Marius Augenstein <Marius.Augenstein@sap.com>');
             } else {
                 aMailTo.push('BDL Online Spielbericht <bdlonlinespielplan@gmail.com>');
                 aMailTo.push('Spielleiter BDL <spielleiter@badischedartliga.de>');
@@ -55,11 +64,14 @@ function uploadResults (req, res) {
                 if (tcGast!="") {
                     aMailTo.push('Teamkapitän Gast <' + tcGast + '>');
                 }
-
                 aMailCC.push('Dominik Boss <odom3003@googlemail.com>');
+
                 aMailCC.push('Jochen Becker <jb@jankovsky.de>');
                 aMailCC.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
             }
+            logger.log.debug("Sending to: " + aMailTo);
+            logger.log.debug("Sending cc: " + aMailCC);
+
 
             var mailOptions = {
                 from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
@@ -71,7 +83,7 @@ function uploadResults (req, res) {
                 attachments:[
                     {   // stream as an attachment
                         filename: 'Spielberichtsfoto.png',
-                        content: fs.createReadStream(sFilename)
+                        content: fs.createReadStream(sPictureFilename)
                     }
                 ]
             };
