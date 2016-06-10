@@ -1,6 +1,6 @@
 {
-  "heim": "D.A.R.T. Plumbata",
-  "gast": "DC 81 Karlsruhe",
+  "heim": "bdl033",
+  "gast": "bdl035",
   "e1b1": {
     "spieler1": {
       "name": "Alpino, Fabio",
@@ -19,14 +19,14 @@
   },
   "e2b1": {
     "spieler1": {
-      "name": "Augenstein, Marius",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Daum, Jürgen",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -35,14 +35,14 @@
   },
   "e3b1": {
     "spieler1": {
-      "name": "Antal, Oliver (TC)",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Araci, Cihan",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -51,14 +51,14 @@
   },
   "e4b1": {
     "spieler1": {
-      "name": "Augenstein, Norbert",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Gegenheimer, Matthias",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -67,15 +67,15 @@
   },
   "d1b2": {
     "paar1": {
-      "legs": 3,
+      "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Alpino, Fabio",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Antal, Oliver (TC)",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -84,12 +84,12 @@
       "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Andert, Iris",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Araci, Cihan",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -97,15 +97,15 @@
   },
   "d2b2": {
     "paar1": {
-      "legs": 3,
+      "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Augenstein, Marius",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Augenstein, Norbert",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -114,12 +114,12 @@
       "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Daum, Jürgen",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Gegenheimer, Matthias",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -127,14 +127,14 @@
   },
   "e1b3": {
     "spieler1": {
-      "name": "Alpino, Fabio",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Andert, Iris",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -143,14 +143,14 @@
   },
   "e2b3": {
     "spieler1": {
-      "name": "Antal, Oliver (TC)",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Araci, Cihan",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -159,14 +159,14 @@
   },
   "e3b3": {
     "spieler1": {
-      "name": "Augenstein, Marius",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Daum, Jürgen",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -175,14 +175,14 @@
   },
   "e4b3": {
     "spieler1": {
-      "name": "Augenstein, Norbert",
-      "legs": 3,
+      "name": "",
+      "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
       "i180er": 0
     },
     "spieler2": {
-      "name": "Gegenheimer, Matthias",
+      "name": "",
       "legs": 0,
       "shortlegs": 0,
       "highfinishes": 0,
@@ -191,15 +191,15 @@
   },
   "d1b4": {
     "paar1": {
-      "legs": 3,
+      "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Alpino, Fabio",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Antal, Oliver (TC)",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -208,12 +208,12 @@
       "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Andert, Iris",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Araci, Cihan",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -221,15 +221,15 @@
   },
   "d2b4": {
     "paar1": {
-      "legs": 3,
+      "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Augenstein, Marius",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Augenstein, Norbert",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -238,12 +238,12 @@
       "legs": 0,
       "shortlegs": 0,
       "spieler1": {
-        "name": "Daum, Jürgen",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       },
       "spieler2": {
-        "name": "Gegenheimer, Matthias",
+        "name": "",
         "highfinishes": 0,
         "i180er": 0
       }
@@ -252,45 +252,22 @@
   "statistik": [
     {
       "name": "Alpino, Fabio",
-      "score": 20
-    },
-    {
-      "name": "Augenstein, Marius",
-      "score": 20
-    },
-    {
-      "name": "Antal, Oliver (TC)",
-      "score": 20
-    },
-    {
-      "name": "Augenstein, Norbert",
-      "score": 20
+      "score": 5
     },
     {
       "name": "Andert, Iris",
-      "score": 0
-    },
-    {
-      "name": "Daum, Jürgen",
-      "score": 0
-    },
-    {
-      "name": "Araci, Cihan",
-      "score": 0
-    },
-    {
-      "name": "Gegenheimer, Matthias",
       "score": 0
     }
   ],
   "summary": {
     "heim": {
-      "legs": 36,
-      "sets": 12
+      "legs": 3,
+      "sets": 1
     },
     "gast": {
       "legs": 0,
       "sets": 0
     }
-  }
+  },
+  "picture": "http://localhost:3000/saison/1516/pictures/M29GaI_kls002_onlineSpielberichtBild_n60T8.png"
 }

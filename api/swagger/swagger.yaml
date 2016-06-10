@@ -132,17 +132,22 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /inbox/{gameId}:
-    x-swagger-router-controller: bedelos.InboxDetails
+  /{storage}/{gameId}:
+    x-swagger-router-controller: bedelos.Details
     get:
       produces:
         - text/html
       description:
-        Displays the Inbox
+        Displays the the details of a game
       parameters:
         - name: gameId
           type: string
           description: Inbox Game Id
+          in: path
+          required: true
+        - name: storage
+          type: string
+          description: can either be inbox or ergebnisse
           in: path
           required: true
       responses:
