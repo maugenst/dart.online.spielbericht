@@ -73,6 +73,25 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /tabelle:
+    x-swagger-router-controller: bedelos.Tables
+    get:
+      produces:
+        - text/html
+      description:
+        Displays a list of all teams
+      parameters:
+        - name: liga
+          type: string
+          description: Liga ID
+          in: query
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /ergebnis:
     x-swagger-router-controller: bedelos.Result
     post:

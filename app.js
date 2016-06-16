@@ -7,8 +7,9 @@ var fs = require('fs');
 var config = require('config');
 var util = require('util');
 var logDirectory = "";
-_init();
+var jsonfile = require('jsonfile');
 
+_init();
 var SwaggerExpress = require('swagger-express-mw');
 var express = require('express');
 var app = new express();
@@ -26,24 +27,40 @@ function logAll(message) {
 }
 
 function _init(){
-    var aPathsToResolve = [
+    var aItemsToResolve = [
         path.resolve(__dirname + "/" + config.get("log.dir")),
         path.resolve(__dirname + "/" + config.get("temp.dir")),
         path.resolve(__dirname + "/data"),
         path.resolve(__dirname + "/data/saison"),
         path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison")),
         path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/ergebnisse"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/oberliga.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/bzLiga.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/klnord.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/klsued.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/oberliga.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/bzLiga.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/klnord.json"),
+        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/klsued.json"),
         path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/pictures"),
         path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/inbox")
     ];
 
-    for(var i = 0; i<aPathsToResolve.length; i++) {
+    for(var i = 0; i<aItemsToResolve.length; i++) {
         // ensure that this directory exists
-        if (!fs.existsSync(aPathsToResolve[i])) {
-            mkdirp.sync(aPathsToResolve[i]);
+        if (path.extname(aItemsToResolve[i]) === '.json') {
+            if (!fs.existsSync(aItemsToResolve[i])) {
+                jsonfile.writeFileSync(aItemsToResolve[i], {});
+            }
+        } else {
+            if (!fs.existsSync(aItemsToResolve[i])) {
+                mkdirp.sync(aItemsToResolve[i]);
+            }
         }
     }
-    logDirectory = aPathsToResolve[0];
+    logDirectory = aItemsToResolve[0];
 }
 
 try {

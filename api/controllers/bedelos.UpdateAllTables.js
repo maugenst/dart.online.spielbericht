@@ -28,27 +28,7 @@ function calcLigaFromFilename(file) {
     }
 }
 
-function updateStatistics(oParameters){
-    // Updating statistics...
-
-    var sStatisticsPath = oParameters.pathToStatisticsFiles;
-    var liga = oParameters.liga;
-    var oCurrentResult = oParameters.currentResults;
-
-    var sStatsFile = path.resolve(sStatisticsPath + '/' + liga + '.json');
-    var oStatistik = {};
-    oStatistik = jsonfile.readFileSync(sStatsFile);
-    for(var player in oCurrentResult.playerStats) {
-        if (!oStatistik[player]) {
-            oStatistik[player] = oCurrentResult.playerStats[player];
-        } else {
-            oStatistik[player] = _.mergeWith(oStatistik[player], oCurrentResult.playerStats[player], customizer);
-        }
-    }
-    jsonfile.writeFileSync(sStatsFile, oStatistik);
-}
-
-function updateTable(oParameters){
+function rescanAllTables (oParameters){
     // Updating table...
     var sTablesPath = oParameters.pathToTablesFiles;
 
@@ -103,34 +83,25 @@ function updateTable(oParameters){
     jsonfile.writeFileSync(sTableFile, oTabelle);
 }
 
-function inboxRelease (req, res) {
+function updateTable (req, res) {
     try {
         var sPath = path.resolve(config.get("bedelos.datapath"));
-        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
+        var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
-        var oTeams = require(sPath + '/Teams.json');
 
-        var sGameId = req.swagger.params.gameId.originalValue;
+        // Reset Tables and Scan all results
+        jsonfile.writeFileSync(path.resolve(sTablesPath + '/bzLiga.json'), {});
+        jsonfile.writeFileSync(path.resolve(sTablesPath + '/klnord.json'), {});
+        jsonfile.writeFileSync(path.resolve(sTablesPath + '/klsued.json'), {});
+        jsonfile.writeFileSync(path.resolve(sTablesPath + '/oberliga.json'), {});
 
-        walker(sPath + '/inbox').on('file', function(file, stat) {
-            if (path.basename(file).indexOf(sGameId) === 0) {
-                var oCurrentResult = require(file);
-                var liga = calcLigaFromFilename(file);
-
-                updateStatistics({
-                    currentResults: oCurrentResult,
-                    liga: liga,
-                    pathToStatisticsFiles: sStatisticsPath
-                });
+        walker(sResultsPath).on('file', function(file, stat) {
+            if (path.extname(file) === '.json') {
                 updateTable({
-                    currentResults: oCurrentResult,
-                    liga: liga,
+                    currentResults: require(file),
+                    liga: calcLigaFromFilename(file),
                     pathToTablesFiles: sTablesPath
                 });
-
-                // So if everything is fine ... rename / move the file to results folder
-                var newName = path.resolve(sPath + '/ergebnisse/' + path.basename(file).substring(7));
-                fs.renameSync(file, newName);
             }
         }).on('end', function() {
             res.redirect('/bedelos/inbox');
@@ -142,5 +113,5 @@ function inboxRelease (req, res) {
 }
 
 module.exports = {
-    get: inboxRelease
+    get: rescanAllTables
 };

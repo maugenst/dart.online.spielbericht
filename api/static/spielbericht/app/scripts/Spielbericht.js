@@ -129,76 +129,106 @@ function calculateWidth(highestScore, currentScore) {
 };
 
 function prepareStatistic(ergebnisse) {
-	ergebnisse["statistik"] = [];
+	ergebnisse['statistik'] = [];
+    ergebnisse['playerStats'] = {};
 
 	var aSpiele = Object.keys(ergebnisse);
 	for (var i = 0; i < aSpiele.length; i++) {
 		var oSpiel = aSpiele[i];
 		if (ergebnisse[oSpiel].spieler1 && ergebnisse[oSpiel].spieler1.name!="" && ergebnisse[oSpiel].spieler2.name!="") {
 			// Einzel
-			var score = calcScoreForPlayer(true,
-                ergebnisse[oSpiel].spieler1.legs,
-                ergebnisse[oSpiel].spieler2.legs,
-				ergebnisse[oSpiel].spieler1.i180er,
-				ergebnisse[oSpiel].spieler1.shortlegs,
-				ergebnisse[oSpiel].spieler1.highfinishes);
+            var oGameResult = {
+                cOwnLegs:       ergebnisse[oSpiel].spieler1.legs,
+                cOpponentLegs:  ergebnisse[oSpiel].spieler2.legs,
+                c180er:         ergebnisse[oSpiel].spieler1.i180er,
+                cshortLegs:     ergebnisse[oSpiel].spieler1.shortlegs,
+                chighFinishes:  ergebnisse[oSpiel].spieler1.highfinishes
+            }
+			var score = calcScoreForPlayer(oGameResult);
 			console.log("EINZEL", ergebnisse[oSpiel].spieler1.name, score);
-			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].spieler1.name, score);
+			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].spieler1.name, score, oGameResult);
+            var oGameResult = {
+                cOwnLegs:       ergebnisse[oSpiel].spieler2.legs,
+                cOpponentLegs:  ergebnisse[oSpiel].spieler1.legs,
+                c180er:         ergebnisse[oSpiel].spieler2.i180er,
+                cshortLegs:     ergebnisse[oSpiel].spieler2.shortlegs,
+                chighFinishes:  ergebnisse[oSpiel].spieler2.highfinishes
+            }
 
-			var score = calcScoreForPlayer(true,
-                ergebnisse[oSpiel].spieler2.legs,
-				ergebnisse[oSpiel].spieler1.legs,
-				ergebnisse[oSpiel].spieler2.i180er,
-				ergebnisse[oSpiel].spieler2.shortlegs,
-				ergebnisse[oSpiel].spieler2.highfinishes);
+			var score = calcScoreForPlayer(oGameResult);
 			console.log("EINZEL", ergebnisse[oSpiel].spieler2.name, score);
-			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].spieler2.name, score);
+			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].spieler2.name, score, oGameResult);
 		}
 		if (ergebnisse[oSpiel].paar1 && ergebnisse[oSpiel].paar1.spieler1.name!="" && ergebnisse[oSpiel].paar1.spieler2.name!="") {
 			// Doppel 1
-			var score = calcScoreForPlayer(false,
-                ergebnisse[oSpiel].paar1.legs,
-                ergebnisse[oSpiel].paar2.legs,
-                ergebnisse[oSpiel].paar1.spieler1.i180er,
-				ergebnisse[oSpiel].paar1.shortlegs,
-				ergebnisse[oSpiel].paar1.spieler1.highfinishes);
-			console.log("DOPPEL", ergebnisse[oSpiel].paar1.spieler1.name, score);
-			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar1.spieler1.name, score);
+            var oGameResult = {
+                cOwnLegs:       ergebnisse[oSpiel].paar1.legs,
+                cOpponentLegs:  ergebnisse[oSpiel].paar2.legs,
+                c180er:         ergebnisse[oSpiel].paar1.spieler1.i180er,
+                cshortLegs:     ergebnisse[oSpiel].paar1.shortlegs,
+                chighFinishes:  ergebnisse[oSpiel].paar1.spieler1.highfinishes
+            };
 
-			var score = calcScoreForPlayer(false,
-				ergebnisse[oSpiel].paar1.legs,
-                ergebnisse[oSpiel].paar2.legs,
-				ergebnisse[oSpiel].paar1.spieler2.i180er,
-				ergebnisse[oSpiel].paar1.shortlegs,
-				ergebnisse[oSpiel].paar1.spieler2.highfinishes);
+            var score = calcScoreForPlayer(oGameResult);
+			console.log("DOPPEL", ergebnisse[oSpiel].paar1.spieler1.name, score);
+			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar1.spieler1.name, score, oGameResult);
+            var oGameResult = {
+                cOwnLegs:       ergebnisse[oSpiel].paar1.legs,
+                cOpponentLegs:  ergebnisse[oSpiel].paar2.legs,
+                c180er:         ergebnisse[oSpiel].paar1.spieler2.i180er,
+                cshortLegs:     ergebnisse[oSpiel].paar1.shortlegs,
+                chighFinishes:  ergebnisse[oSpiel].paar1.spieler2.highfinishes
+            };
+			var score = calcScoreForPlayer(oGameResult);
 			console.log("DOPPEL", ergebnisse[oSpiel].paar1.spieler2.name, score);
-			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar1.spieler2.name, score);
+			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar1.spieler2.name, score, oGameResult);
 		}
 		if (ergebnisse[oSpiel].paar2 && ergebnisse[oSpiel].paar2.spieler1.name!="" && ergebnisse[oSpiel].paar2.spieler2.name!="") {
 			// Doppel 2
-			var score = calcScoreForPlayer(false,
-                ergebnisse[oSpiel].paar2.legs,
-				ergebnisse[oSpiel].paar1.legs,
-				ergebnisse[oSpiel].paar2.spieler1.i180er,
-				ergebnisse[oSpiel].paar2.shortlegs,
-				ergebnisse[oSpiel].paar2.spieler1.highfinishes);
+            var oGameResult = {
+                cOwnLegs:       ergebnisse[oSpiel].paar2.legs,
+                cOpponentLegs:  ergebnisse[oSpiel].paar1.legs,
+                c180er:         ergebnisse[oSpiel].paar2.spieler1.i180er,
+                cshortLegs:     ergebnisse[oSpiel].paar2.shortlegs,
+                chighFinishes:  ergebnisse[oSpiel].paar2.spieler1.highfinishes
+            };
+			var score = calcScoreForPlayer(oGameResult);
 			console.log("DOPPEL", ergebnisse[oSpiel].paar2.spieler1.name, score);
-			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler1.name, score);
-
-			var score = calcScoreForPlayer(false,
-                ergebnisse[oSpiel].paar2.legs,
-				ergebnisse[oSpiel].paar1.legs,
-				ergebnisse[oSpiel].paar2.spieler2.i180er,
-				ergebnisse[oSpiel].paar2.shortlegs,
-				ergebnisse[oSpiel].paar2.spieler2.highfinishes);
+			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler1.name, score, oGameResult);
+            var oGameResult = {
+                cOwnLegs:       ergebnisse[oSpiel].paar2.legs,
+                cOpponentLegs:  ergebnisse[oSpiel].paar1.legs,
+                c180er:         ergebnisse[oSpiel].paar2.spieler2.i180er,
+                cshortLegs:     ergebnisse[oSpiel].paar2.shortlegs,
+                chighFinishes:  ergebnisse[oSpiel].paar2.spieler2.highfinishes
+            };
+			var score = calcScoreForPlayer(oGameResult);
 			console.log("DOPPEL", ergebnisse[oSpiel].paar2.spieler2.name, score);
-			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler2.name, score);
+			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler2.name, score, oGameResult);
 		}
 	};
 };
 
-function addScoreForPlayer(ergebnisse, sName, dScore) {
-	for (var i = 0; i < ergebnisse.statistik.length; i++) {
+function addScoreForPlayer(ergebnisse, sName, dScore, oDetails) {
+    if (!ergebnisse.playerStats[sName]) {
+        ergebnisse.playerStats[sName] = {
+            '3:0' : 0,
+            '3:1' : 0,
+            '3:2' : 0,
+            '2:3' : 0,
+            '1:3' : 0,
+            '0:3' : 0,
+            hf : 0,
+            sl : 0,
+            max: 0
+        };
+    }
+    ergebnisse.playerStats[sName][oDetails.cOwnLegs + ':' + oDetails.cOpponentLegs]++;
+    ergebnisse.playerStats[sName].hf += calcSpecials(oDetails.chighFinishes);
+    ergebnisse.playerStats[sName].sl += calcSpecials(oDetails.cshortLegs);
+    ergebnisse.playerStats[sName].max += calcSpecials(oDetails.c180er);
+
+    for (var i = 0; i < ergebnisse.statistik.length; i++) {
 		if (ergebnisse.statistik[i].name == sName) {
 			ergebnisse.statistik[i].score += dScore;
 			return;
@@ -210,13 +240,9 @@ function addScoreForPlayer(ergebnisse, sName, dScore) {
 	});
 };
 
-function calcScoreForPlayer (cbSingle, cOwnLegs, cOpponentLegs, c180er, cshortLegs, chighFinishes) {
-	var iScore = 0;
-    var iOwnLegs = parseInt(cOwnLegs);
-    var iOpponentLegs = parseInt(cOpponentLegs);
-    var i180er = parseInt(c180er);
-
+function gameValue (cOwnLegs, cOpponentLegs) {
     var sResult = cOwnLegs + ":" + cOpponentLegs;
+    var iScore = 0;
     switch (sResult) {
         case "3:0" : iScore += 5; break;
         case "3:1" : iScore += 4; break;
@@ -226,35 +252,36 @@ function calcScoreForPlayer (cbSingle, cOwnLegs, cOpponentLegs, c180er, cshortLe
         case "0:3" : iScore += 0; break;
         default: break;
     }
+    return iScore;
+};
 
-    var aHighs = [];
-    var aShortLegs = [];
-    var aHighFinishes = [];
-
-    if (c180er !== 0) {
-        var sRepl = ""+c180er;
+function calcSpecials(cValue) {
+    var aRet = [];
+    if (cValue !== 0) {
+        var sRepl = ""+cValue;
         sRepl = sRepl.replace(/\D/g, "_");
         sRepl = sRepl.replace(/__+/g, "_");
-        aHighs = sRepl.split('_');
+        aRet = sRepl.split('_');
     }
+    return aRet.length;
+};
 
-    if (cshortLegs !== 0) {
-        var sRepl = ""+cshortLegs;
-        sRepl = sRepl.replace(/\D/g, "_");
-        sRepl = sRepl.replace(/__+/g, "_");
-        aShortLegs = sRepl.split('_');
-    }
+function calcScoreForPlayer (oGameResult) {
+    var cOwnLegs = oGameResult.cOwnLegs;
+    var cOpponentLegs = oGameResult.cOpponentLegs;
+    var c180er = oGameResult.c180er;
+    var cshortLegs = oGameResult.cshortLegs;
+    var chighFinishes = oGameResult.chighFinishes;
+	var iScore = 0;
+    var iOwnLegs = parseInt(cOwnLegs);
+    var iOpponentLegs = parseInt(cOpponentLegs);
+    var i180er = parseInt(c180er);
 
-    if (chighFinishes !== 0) {
-        var sRepl = ""+chighFinishes;
-        sRepl = sRepl.replace(/\D/g, "_");
-        sRepl = sRepl.replace(/__+/g, "_");
-        aHighFinishes = sRepl.split('_');
-    }
+    iScore += gameValue(cOwnLegs, cOpponentLegs);
 
-    iScore += aHighs.length;
-    iScore += aShortLegs.length;
-    iScore += aHighFinishes.length;
+    iScore += calcSpecials(c180er);
+    iScore += calcSpecials(cshortLegs);
+    iScore += calcSpecials(chighFinishes);
 
 	return iScore;
 };
