@@ -73,6 +73,25 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /team/{teamId}/spieler:
+    x-swagger-router-controller: bedelos.Players
+    get:
+      produces:
+        - text/html
+      description:
+        Displays a list of all team members
+      parameters:
+        - name: teamId
+          type: string
+          description: Verein ID
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /tabelle/liga/{liga}:
     x-swagger-router-controller: bedelos.Tables
     get:
