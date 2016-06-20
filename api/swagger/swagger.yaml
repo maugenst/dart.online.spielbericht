@@ -73,7 +73,7 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /tabelle:
+  /tabelle/liga/{liga}:
     x-swagger-router-controller: bedelos.Tables
     get:
       produces:
@@ -84,7 +84,28 @@ paths:
         - name: liga
           type: string
           description: Liga ID
-          in: query
+          in: path
+          enum: ["oberliga", "bzLiga", "klnord", "klsued"]
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /statistik/liga/{liga}:
+    x-swagger-router-controller: bedelos.Statistics
+    get:
+      produces:
+        - text/html
+      description:
+        Displays a list of statistics on all players
+      parameters:
+        - name: liga
+          type: string
+          description: Liga ID
+          in: path
+          enum: ["oberliga", "bzLiga", "klnord", "klsued"]
           required: true
       responses:
         'default':

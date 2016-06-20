@@ -1,0 +1,21 @@
+{
+    "node": true,
+    "mocha": true,
+    "esnext": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "sub": true,
+    "strict": "global",
+    "nonstandard": true,
+    "globals": {
+        "module": false,
+        "require": false,
+        "describe": false,
+        "it": false,
+        "before": false,
+        "beforeEach": false,
+        "after": false,
+        "afterEach": false
+    }
+}

@@ -1,0 +1,29 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title BDL Online Spielplan - Tables
+    body(style={"font-family": 'Calibri'})
+        table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            thead
+                tr(style={"background-color": '#AFD3E0'})
+                    th(align='left') Platz
+                    th(align='left', width='80%') Team
+                    th(align='center') Spiele
+                    th(align='center') G
+                    th(align='center') U
+                    th(align='center') V
+                    th(align='center') Sets
+                    th(align='center') Punkte
+            tbody
+                each team, i in ranking
+                    - var place = i + 1;
+                    tr
+                        td(align='left') #{place}.
+                        td(align='left')= teams[team.name].name
+                        td(align='center')= team.spiele
+                        td(align='center')= team.gewonnen
+                        td(align='center')= team.unentschieden
+                        td(align='center')= team.verloren
+                        td(align='center') #{team.sets.own}:#{team.sets.other}
+                        td(align='center') #{team.punkte.own}:#{team.punkte.other}

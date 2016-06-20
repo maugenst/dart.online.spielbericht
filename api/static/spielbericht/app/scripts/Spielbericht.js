@@ -19,7 +19,7 @@ function updateStatistic(ergebnisse) {
 		return b.score - a.score;
 	});
 	printScoresTable(scores);
-};
+}
 
 function setUpSelections() {
 
@@ -38,7 +38,7 @@ function setUpSelections() {
 
 	for (var i = 0; i<vereine[ergebnisse.heim].mitglieder.length; i++) {
 		aSpielerHeim.push(vereine[ergebnisse.heim].mitglieder[i].name + ", " + vereine[ergebnisse.heim].mitglieder[i].vorname);
-	};
+	}
 	aSpielerHeim.sort();
 	$('#name1').empty();
 	$('#heimname1').empty();
@@ -49,7 +49,7 @@ function setUpSelections() {
 		$('#name1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#heimname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#heimname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
-	};
+	}
 
 	for (var i = 0; i<nachmeldungen.heim.length; i++) {
 		var spieler = unescape(atob(nachmeldungen.heim[i]));
@@ -62,7 +62,7 @@ function setUpSelections() {
 
 	for (var i = 0; i<vereine[ergebnisse.gast].mitglieder.length; i++) {
 		aSpielerGast.push(vereine[ergebnisse.gast].mitglieder[i].name + ", " + vereine[ergebnisse.gast].mitglieder[i].vorname);
-	};
+	}
 	aSpielerGast.sort();
 	$('#name2').empty();
 	$('#gastname1').empty();
@@ -73,7 +73,7 @@ function setUpSelections() {
 		$('#name2').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#gastname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		$('#gastname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
-	};
+	}
 
 	for (var i = 0; i<nachmeldungen.gast.length; i++) {
 		var spieler = unescape(atob(nachmeldungen.gast[i]));
@@ -82,9 +82,9 @@ function setUpSelections() {
 			$('#gastname1').append($("<option/>", {value: btoa(spieler), text: spieler}));
 			$('#gastname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		}
-	};
+	}
 	$('.selectpicker').selectpicker('refresh');
-};
+}
 
 function printScoresTable(scores) {
 	var highestScore = findHighestScore(scores);
@@ -111,8 +111,8 @@ function printScoresTable(scores) {
 	            "<td class='scoreCell'>" + currentScore + "</td>\n"+
         	"</tr>";
 		$('#scoresTable > tbody tr:last').after(line);
-	};
-};
+	}
+}
 
 function findHighestScore(scores) {
 	var iHighestScore = 0;
@@ -120,13 +120,13 @@ function findHighestScore(scores) {
 		if (scores[i].score > iHighestScore) {
 			iHighestScore = scores[i].score;
 		}
-	};
+	}
 	return iHighestScore;
-};
+}
 
 function calculateWidth(highestScore, currentScore) {
 	return currentScore * 100 / highestScore;
-};
+}
 
 function prepareStatistic(ergebnisse) {
 	ergebnisse['statistik'] = [];
@@ -138,6 +138,7 @@ function prepareStatistic(ergebnisse) {
 		if (ergebnisse[oSpiel].spieler1 && ergebnisse[oSpiel].spieler1.name!="" && ergebnisse[oSpiel].spieler2.name!="") {
 			// Einzel
             var oGameResult = {
+                team:           ergebnisse.heim,
                 cOwnLegs:       ergebnisse[oSpiel].spieler1.legs,
                 cOpponentLegs:  ergebnisse[oSpiel].spieler2.legs,
                 c180er:         ergebnisse[oSpiel].spieler1.i180er,
@@ -148,6 +149,7 @@ function prepareStatistic(ergebnisse) {
 			console.log("EINZEL", ergebnisse[oSpiel].spieler1.name, score);
 			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].spieler1.name, score, oGameResult);
             var oGameResult = {
+                team:           ergebnisse.gast,
                 cOwnLegs:       ergebnisse[oSpiel].spieler2.legs,
                 cOpponentLegs:  ergebnisse[oSpiel].spieler1.legs,
                 c180er:         ergebnisse[oSpiel].spieler2.i180er,
@@ -162,6 +164,7 @@ function prepareStatistic(ergebnisse) {
 		if (ergebnisse[oSpiel].paar1 && ergebnisse[oSpiel].paar1.spieler1.name!="" && ergebnisse[oSpiel].paar1.spieler2.name!="") {
 			// Doppel 1
             var oGameResult = {
+                team:           ergebnisse.heim,
                 cOwnLegs:       ergebnisse[oSpiel].paar1.legs,
                 cOpponentLegs:  ergebnisse[oSpiel].paar2.legs,
                 c180er:         ergebnisse[oSpiel].paar1.spieler1.i180er,
@@ -173,6 +176,7 @@ function prepareStatistic(ergebnisse) {
 			console.log("DOPPEL", ergebnisse[oSpiel].paar1.spieler1.name, score);
 			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar1.spieler1.name, score, oGameResult);
             var oGameResult = {
+                team:           ergebnisse.heim,
                 cOwnLegs:       ergebnisse[oSpiel].paar1.legs,
                 cOpponentLegs:  ergebnisse[oSpiel].paar2.legs,
                 c180er:         ergebnisse[oSpiel].paar1.spieler2.i180er,
@@ -186,6 +190,7 @@ function prepareStatistic(ergebnisse) {
 		if (ergebnisse[oSpiel].paar2 && ergebnisse[oSpiel].paar2.spieler1.name!="" && ergebnisse[oSpiel].paar2.spieler2.name!="") {
 			// Doppel 2
             var oGameResult = {
+                team:           ergebnisse.gast,
                 cOwnLegs:       ergebnisse[oSpiel].paar2.legs,
                 cOpponentLegs:  ergebnisse[oSpiel].paar1.legs,
                 c180er:         ergebnisse[oSpiel].paar2.spieler1.i180er,
@@ -196,6 +201,7 @@ function prepareStatistic(ergebnisse) {
 			console.log("DOPPEL", ergebnisse[oSpiel].paar2.spieler1.name, score);
 			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler1.name, score, oGameResult);
             var oGameResult = {
+                team:           ergebnisse.gast,
                 cOwnLegs:       ergebnisse[oSpiel].paar2.legs,
                 cOpponentLegs:  ergebnisse[oSpiel].paar1.legs,
                 c180er:         ergebnisse[oSpiel].paar2.spieler2.i180er,
@@ -206,8 +212,8 @@ function prepareStatistic(ergebnisse) {
 			console.log("DOPPEL", ergebnisse[oSpiel].paar2.spieler2.name, score);
 			addScoreForPlayer(ergebnisse, ergebnisse[oSpiel].paar2.spieler2.name, score, oGameResult);
 		}
-	};
-};
+	}
+}
 
 function addScoreForPlayer(ergebnisse, sName, dScore, oDetails) {
     if (!ergebnisse.playerStats[sName]) {
@@ -220,7 +226,8 @@ function addScoreForPlayer(ergebnisse, sName, dScore, oDetails) {
             '0:3' : 0,
             hf : 0,
             sl : 0,
-            max: 0
+            max: 0,
+            team: oDetails.team
         };
     }
     ergebnisse.playerStats[sName][oDetails.cOwnLegs + ':' + oDetails.cOpponentLegs]++;
@@ -323,8 +330,8 @@ function _getSliderValue() {
 	return {
 		erg1 : erg1,
 		erg2 : erg2
-	}
-};
+	};
+}
 
 /**
  * [checkSelection description]
@@ -338,7 +345,7 @@ function checkSelection() {
 	}
 
 	$("#ergDisplay").text(oErgVals.erg1 + ":" + oErgVals.erg2)
-};
+}
 
 function checkNames() {
 	var sHeimName1 = document.getElementById("heimname1").value;
@@ -346,8 +353,8 @@ function checkNames() {
 	var sGastName1 = document.getElementById("gastname1").value;
 	var sGastName2 = document.getElementById("gastname2").value;
 
-	return (sHeimName1 != sHeimName2 && sGastName1 != sGastName2);
-};
+	return (sHeimName1 !== sHeimName2 && sGastName1 !== sGastName2);
+}
 
 function walkDOM(node, func) {
 	func(node);
@@ -356,7 +363,7 @@ function walkDOM(node, func) {
 	  walkDOM(node,func);
 	  node = node.nextSibling;
 	}
-};
+}
 
 function fillHiddenFieldsAndSubmit() {
 	removeBorders();
@@ -376,18 +383,18 @@ function fillHiddenFieldsAndSubmit() {
 	});
 	var aCookies = document.cookie.split(';')
 	for (var i = aCookies.length - 1; i >= 0; i--) {
-		if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
+		if(aCookies[i] && aCookies[i] !== "" && aCookies[i].indexOf("=") !== -1) {
 			var aCookie = aCookies[i].trim().split('=');
 			if (aCookie[0].indexOf("email") === 0) {
 				document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
 			}
 		}
-	};
+	}
 
     displayBusyIndicator();
 
     document.getElementById("sendMail").submit();
-};
+}
 
 function getUrlParameter(sParam){
   var sReturn = "";
@@ -395,12 +402,12 @@ function getUrlParameter(sParam){
   var sURLVariables = sPageURL.split('&');
   for (var i = 0; i < sURLVariables.length; i++) {
       var sParameterName = sURLVariables[i].split('=');
-      if (sParameterName[0] == sParam) {
+      if (sParameterName[0] === sParam) {
         sReturn = sParameterName[1];
       }
   }
   return sReturn;
-};
+}
 
 function emptyTable(sTableName) {
 	$('#' + sTableName + ' > tbody').html("");
@@ -484,11 +491,11 @@ function printTable(ergebnisse) {
 	$('#summaryTable > tbody tr:last').after(line);
 	line = "<tr><td colspan=9><div class='bold'>Spielername (N) = Nachgemeldeter Spieler</div></td></tr>";
 	$('#summaryTable > tbody tr:last').after(line);
-};
+}
 
 function p(sErg) {
 	return (sErg == 0) ? "&nbsp;" : sErg;
-};
+}
 
 function internalStore() {
 	var ergebnisse = JSON.parse(window.localStorage.getItem("ergebnisse"));
@@ -617,12 +624,7 @@ function internalStore() {
 	updateStatistic(ergebnisse);
 
     var ergRAW = ergebnisse;
-    try{
-        ergRAW['heim'] = unescape(atob(unescape(ergebnisse['heim'])));
-    } catch (error){}
-    try{
-        ergRAW['gast'] = unescape(atob(unescape(ergebnisse['gast'])));
-    } catch (error){}
+    
     ergRAW['summary'] = {
         heim: {
             legs: team1Legs,

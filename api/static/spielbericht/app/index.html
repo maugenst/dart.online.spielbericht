@@ -298,9 +298,9 @@
             Foto des handschriftlichen Spielberichtes mit Unterschriften einf&uuml;gen:
 
             <input type="checkbox" name="test"> Test?
-            <input type="file" name="picture" capture="camera" accept="image/*" id="takePictureField">
+            <input type="file" name="picture" capture="camera" accept="image/*" id="takePictureField" onclick="document.getElementById('sendMailSubmit').style.visibility = 'visible'">
             <br><br>
-            <input type="button" value="Absenden" id="sendMailSubmit" onclick="fillHiddenFieldsAndSubmit()">
+            <input type="button" value="Absenden" id="sendMailSubmit" onclick="fillHiddenFieldsAndSubmit()" style="visibility:hidden">
         </form>
       </div>
     </div>

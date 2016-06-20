@@ -34,10 +34,6 @@ function getTeams (req, res) {
 
         var aVereine = Object.keys(oVereine);
         aVereine.sort();
-        for (var i = 0; i<aVereine.length; i++) {
-            console.log(aVereine[i]);
-            console.log(oTeams[aVereine[i]].name);
-        }
         var html = jade.renderFile("api/views/teams.jade", {
             pretty: true,
             vereine: aVereine,
