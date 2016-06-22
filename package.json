@@ -22,7 +22,10 @@
     "nodemailer": "2.0.0",
     "mkdirp": "0.5.1",
     "jsonfile": "2.3.1",
-    "walker": "1.0.7"
+    "walker": "1.0.7",
+    "asyncawait": "1.0.3",
+    "bluebird": "3.4.1",
+    "request": "2.72.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -92,6 +92,45 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /map:
+    x-swagger-router-controller: bedelos.Map
+    get:
+      produces:
+        - text/html
+      description:
+        Displays a map of where to find the teams and their location
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /map/update:
+    x-swagger-router-controller: bedelos.MapUpdate
+    get:
+      produces:
+        - text/html
+      description:
+        Updates the map data for all teams
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /map/locations:
+    x-swagger-router-controller: bedelos.MapLocations
+    get:
+      produces:
+        - application/json
+      description:
+        Get locations array for the Google Map
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/ARRAY"
+
   /tabelle/liga/{liga}:
     x-swagger-router-controller: bedelos.Tables
     get:
@@ -259,3 +298,9 @@ paths:
 definitions:
   HTML:
     type: string
+  OBJECT:
+    type: object
+  ARRAY:
+    type: array
+    items:
+      type: array

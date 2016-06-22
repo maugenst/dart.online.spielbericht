@@ -1,0 +1,22 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title BDL Spiellokal Details
+    body(style={"font-family": 'Calibri'})
+        table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            thead
+                tr(style={"background-color": '#AFD3E0'})
+                    th Verein
+                    th Adresse
+                    th Maps Koordinaten
+            tbody
+                each teamId, i in teams
+                    tr(align='center')
+                        td= teams[i].name
+                        td #{teams[i].spiellokal.name}<br>
+                            | #{teams[i].spiellokal.strasse}<br>
+                            | #{teams[i].spiellokal.ort}
+                        td Breitengrad: #{teams[i].spiellokal.position.lat}<br>
+                            | Längengrad #{teams[i].spiellokal.position.lng}
+

@@ -17,6 +17,8 @@ html
                         td #{teams[teamId].spiellokal.name}<br>
                             | #{teams[teamId].spiellokal.strasse}<br>
                             | #{teams[teamId].spiellokal.ort}
+                            div(style={'font-size': 'smaller'})
+                                | <a href="http://www.google.com/maps/place/#{teams[teamId].spiellokal.position.lat},#{teams[teamId].spiellokal.position.lng}">Google Maps</a>
                         td #{teams[teamId].teamvertreter.name}<br>
                             | #{teams[teamId].teamvertreter.tel}<br>
                             | <a href="mailto:#{teams[teamId].teamvertreter.mail}">Kontakt</a>
