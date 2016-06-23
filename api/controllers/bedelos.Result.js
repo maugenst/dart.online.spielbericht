@@ -11,7 +11,6 @@ var jsonfile = require('jsonfile');
 var uid = require('../helpers/UID');
 var url =  require('url');
 var logger = require("../helpers/Logger");
-var mail = require("../helpers/Mail");
 
 function uploadResults (req, res) {
     try {
