@@ -12,10 +12,12 @@ var walker = require('walker');
 var _ = require('lodash');
 
 function checkValue(a, b) {
-    if ( a < b )
+    if ( a < b ) {
         return -1;
-    if ( a > b )
+    }
+    if ( a > b ) {
         return 1;
+    }
     return 0;
 }
 
@@ -31,7 +33,7 @@ function listPlayers (req, res) {
     try {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = require(sPath + '/Teams.json');
-        var teamId = req.swagger.params.teamId.originalValue;
+        var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
         var aMitglieder = oTeams[teamId].mitglieder;
 
         aMitglieder.sort(sortNames);

@@ -12,7 +12,11 @@ var walker = require('walker');
 var _ = require('lodash');
 
 function customizer(objValue, srcValue) {
-    return srcValue + objValue;
+    if (typeof srcValue === 'string') {
+        return srcValue;
+    } else {
+        return srcValue + objValue;
+    }
 }
 
 function calcLigaFromFilename(file) {

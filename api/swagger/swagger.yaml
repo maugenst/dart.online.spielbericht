@@ -73,19 +73,13 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /team/{teamId}/spieler:
+  /usermanagement:
     x-swagger-router-controller: bedelos.Players
     get:
       produces:
         - text/html
       description:
         Displays a list of all team members
-      parameters:
-        - name: teamId
-          type: string
-          description: Verein ID
-          in: path
-          required: true
       responses:
         'default':
           description: Successful response
@@ -256,6 +250,25 @@ paths:
 
   /inbox/{gameId}/release:
     x-swagger-router-controller: bedelos.InboxRelease
+    get:
+      produces:
+        - text/html
+      description:
+        Releases a Game in the Inbox
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /inbox/{gameId}/reject:
+    x-swagger-router-controller: bedelos.InboxReject
     get:
       produces:
         - text/html

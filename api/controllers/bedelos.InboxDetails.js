@@ -17,7 +17,6 @@ function inboxDetails (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = require(sPath + '/Teams.json');
 
-        var oResults = {};
         var oResult = require(path.resolve(sPath + "/inbox/" + req.swagger.params.gameId.originalValue + ".json"));
         var html = jade.renderFile("api/views/mail.jade", {
             pretty: true,

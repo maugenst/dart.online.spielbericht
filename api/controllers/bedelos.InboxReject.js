@@ -5,49 +5,38 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var uid = require('../helpers/UID');
-var url =  require('url');
+var jade = require('jade');
+jsonfile.spaces = 4;
 var logger = require("../helpers/Logger");
-var mail = require("../helpers/Mail");
+var walker = require('walker');
+var _ = require('lodash');
 
-function uploadResults (req, res) {
+function inboxReject (req, res) {
     try {
-        var oTeams = require(path.resolve(config.get("bedelos.datapath") + '/Teams.json'));
-        var uniqueGameId = uid.generate();
-        var sPath = path.resolve(config.get("bedelos.datapath") + "/inbox/" + uniqueGameId + "_");
-        var sPicturePath = path.resolve(config.get("bedelos.datapath") + "/pictures/" + uniqueGameId + "_");
-        var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
-        var picture = req.swagger.params.picture.originalValue;
-        var sPictureFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
-        fs.writeFileSync(sPictureFilename, picture.buffer);
-        var tcHeim = req.swagger.params.tcHeim.originalValue;
+        var sPath = path.resolve(config.get("bedelos.datapath"));
+        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
+        var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
+        var oTeams = require(sPath + '/Teams.json');
 
-        var tcGast = req.swagger.params.tcGast.originalValue;
-        var sResult = req.swagger.params.res.originalValue;
-        sResult = decodeURI(sResult);
-        var oResult = JSON.parse(sResult);
-        oResult.picture = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
-        var sJsonFilename = path.resolve(sPath + sSpielId + ".json");
-        jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 2});
+        var sGameId = req.swagger.params.gameId.originalValue;
 
+        var file = path.resolve(sPath + "/inbox/" + req.swagger.params.gameId.originalValue + ".json");
+        var oResult = require(file);
         var html = jade.renderFile("api/views/mail.jade", {
             pretty: true,
-            message: "Der Spielberichtsbogen wurde an die BDL gesendet.",
             teams: oTeams,
+            message: "<b>FEHLER: Der unten angehängte Spielberichtsbogen wurde vom Spielleiter der BDL " +
+                "abgelehnt und gelöscht, weil Fehler gefunden wurden. " +
+                "Bitte Spielbericht überprüfen und neu erfassen.</b>",
             res: oResult
         });
 
-        logger.log.info("Spielbericht erhalten für Partie: " + oResult.heim + " vs. " + oResult.gast);
-        logger.log.info("   --> Game Id: " + sSpielId);
-        logger.log.info("   --> Spielbericht Daten: " + sJsonFilename);
-        logger.log.info("   --> Spielbericht Foto: " + sPictureFilename);
-        if (os.type() === 'Linux') {
-            logger.log.info("   --> Running on Linux. Trying to send Email.");
-            logger.log.info("   --> Email test mode is: " + req.swagger.params.test.originalValue);
+        var tcHeim = oTeams[oResult.heim].teamvertreter.mail;
+        var tcGast = oTeams[oResult.gast].teamvertreter.mail;
 
+        if (os.type() === 'Linux') {
             var transporter = nodemailer.createTransport();
             logger.log.debug("Transporter created.");
             var aMailTo = [];
@@ -79,12 +68,12 @@ function uploadResults (req, res) {
                 to: '\'' + aMailTo.join(', ') + '\'',
                 cc: '\'' + aMailCC.join(', ') + '\'',
 
-                subject: 'BDL Online Spielberichtsbogen',
+                subject: 'BDL Online Spielberichtsbogen abgelehnt - Bitte überprüfen und neu erfassen',
                 html: html,
                 attachments:[
                     {   // stream as an attachment
                         filename: 'Spielberichtsfoto.png',
-                        content: fs.createReadStream(sPictureFilename)
+                        content: fs.createReadStream(oResult.picture)
                     }
                 ]
             };
@@ -96,9 +85,11 @@ function uploadResults (req, res) {
 
                 res.status(200).send(html);
             });
-        } else {
-            res.status(200).send(html);
         }
+
+        fs.unlinkSync(file);
+
+        res.redirect('/bedelos/inbox');
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
@@ -106,6 +97,5 @@ function uploadResults (req, res) {
 }
 
 module.exports = {
-    post: uploadResults
+    get: inboxReject
 };
-
