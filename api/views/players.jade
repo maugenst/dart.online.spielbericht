@@ -20,20 +20,20 @@ html
                         td(align='left')= player.name
                         td(align='left')= player.vorname
                         td
-                            a(href='/bedelos/team/#{teamId}/delete?name=#{player.encName}&vorname=#{player.encVorname}') Löschen
+                            a(href='/bedelos/usermanagement/delete?encname=#{player.encName}&encvorname=#{player.encVorname}') Löschen
                 tr
                     td(colspan='4') <br>Spieler hinzufügen:
-                form
+                form(name="addPlayer", action="/bedelos/usermanagement/add", method="get")
                     tr
                         td &nbsp;
                         td
                             label Name
                         td(colspan='2')
-                            input(type='text')
+                            input(type='text', name="name")
                     tr
                         td &nbsp;
                         td
                             label Vorname
                         td(colspan='2')
-                            input(type='text')
+                            input(type='text', name="vorname")
                             input(type='submit')
