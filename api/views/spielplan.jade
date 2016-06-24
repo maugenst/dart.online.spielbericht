@@ -2,6 +2,11 @@
    Created by d032233 on 27.04.2016.
 html
     head
+        link(href='/bedelos/styles/bootstrap-editable.css', rel='stylesheet')
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/bootstrap-editable.min.js')
         title BDL Online Spielplan - Spielplan Anzeige
     body(style={"font-family": 'Calibri'})
         each spiele, spieltag in runde
@@ -16,7 +21,7 @@ html
                         th Heim
                         th Ergebnis
                         th Gast
-                        th Aktion
+                        th Aktionen
                 tbody
                     each spiel, i in spiele
                         tr
@@ -35,16 +40,36 @@ html
                                 if (results[spiel.id])
                                     - var resultHeim = results[spiel.id].summary.heim.sets || 0;
                                     - var resultGast = results[spiel.id].summary.gast.sets || 0;
-                                    td #{resultHeim} : #{resultGast}
+                                    td(align='center') #{resultHeim} : #{resultGast}
                                 else
-                                    td - : -
+                                    td(align='center') - : -
                                 if (teams[spiel.gast] && teams[spiel.gast].name)
                                     td= teams[spiel.gast].name
                                 else
                                     td= spiel.gast
                                 if (results[spiel.id])
-                                    td
+                                    td(align='center')
                                         a(href='/bedelos/ergebnisse/#{spiel.id}') Details
+                                        if (username === 'bdladmin')
+                                            nbsp |
+                                            a(href='#', id="wertung_#{spiel.id}", data-type="select",
+                                            data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel #{spiel.id}") Werten
                                 else
-                                    td -
+                                    td(align='center') Details
+                                        if (username === 'bdladmin')
+                                            nbsp |
+                                            a(href='#', id="wertung_#{spiel.id}", data-type="select",
+                                                data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel #{spiel.id}") Werten
+
                 br
+    script(type='text/javascript').
+        $.fn.editable.defaults.mode = 'inline';
+        $(document).ready(function () {
+            $('[id^="wertung_"]').editable({
+                value: 2,
+                source: [
+                    {value: 1, text: '0:12'},
+                    {value: 2, text: '12:0'}
+                ]
+            });
+        });

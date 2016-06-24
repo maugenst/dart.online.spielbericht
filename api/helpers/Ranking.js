@@ -53,7 +53,7 @@ function sortStatisticByScores(oStatistic, oTeams) {
     var aRanking = [];
     for (var player in oStatistic) {
         var oTmp = oStatistic[player];
-        oTmp.name = player;
+        oTmp.name = oStatistic[player].name;
         oTmp.punkte = calcPlayerScore(oTmp);
         aRanking.push(oTmp);
     }

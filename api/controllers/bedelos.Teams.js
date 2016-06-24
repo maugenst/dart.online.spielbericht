@@ -15,7 +15,7 @@ function getTeams (req, res) {
     try {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oSpielplan = require(sPath + '/Spielplan.json');
-        var oTeams = require(sPath + '/Teams.json');
+        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
         var liga = req.swagger.params.liga.originalValue;
 
         var oResults = {};

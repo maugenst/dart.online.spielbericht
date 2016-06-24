@@ -4,50 +4,26 @@ var util = require('util');
 var path = require('path');
 var config = require('config');
 var os = require('os');
-var fs = require('fs');
-var jade = require('jade');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var logger = require('../helpers/Logger');
-
-function checkValue(a, b) {
-    if ( a < b ) {
-        return -1;
-    }
-    if ( a > b ) {
-        return 1;
-    }
-    return 0;
-}
-
-function sortNames(a, b) {
-    var ret = checkValue(a.name, b.name);
-    if (ret === 0) {
-        ret = checkValue(a.vorname, b.vorname);
-    }
-    return ret;
-}
+jsonfile.spaces = 4;
 
 function listPlayers (req, res) {
     try {
-        var sPath = path.resolve(config.get("bedelos.datapath"));
-        var oTeams = require(sPath + '/Teams.json');
+        var sTeamsFile = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
+        var oTeams = jsonfile.readFileSync(sTeamsFile);
         var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-        var aMitglieder = oTeams[teamId].mitglieder;
 
-        logger.log.info(req.swagger.params.encname.originalValue);
-        logger.log.info(req.swagger.params.encvorname.originalValue);
+        for (var i = 0; i<oTeams[teamId].mitglieder.length; i++) {
+            if (oTeams[teamId].mitglieder[i].encName === req.swagger.params.encname.originalValue &&
+                oTeams[teamId].mitglieder[i].encVorname === req.swagger.params.encvorname.originalValue) {
+                oTeams[teamId].mitglieder.splice(i, 1);
+                break;
+            }
+        }
 
-        aMitglieder.sort(sortNames);
-        
-        var html = jade.renderFile("api/views/players.jade", {
-            pretty: true,
-            players: aMitglieder,
-            team: oTeams[teamId].name,
-            teamId: teamId
-        });
+        jsonfile.writeFileSync(sTeamsFile, oTeams);
 
-        res.status(200).send(html);
+        res.redirect('/bedelos/teammanagement');
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));

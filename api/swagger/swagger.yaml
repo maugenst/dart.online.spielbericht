@@ -73,20 +73,45 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /usermanagement:
-    x-swagger-router-controller: bedelos.Players
-    get:
+  /wertung/{gameId}:
+    x-swagger-router-controller: bedelos.Wertung
+    post:
       produces:
         - text/html
       description:
-        Displays a list of all team members
+        Releases a Game in the Inbox
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+        - name: wertung
+          in: body
+          description: Wertung
+          required: true
+          schema:
+            $ref: "#/definitions/TeamPayload"
       responses:
         'default':
           description: Successful response
           schema:
             $ref: "#/definitions/HTML"
 
-  /usermanagement/add:
+  /teammanagement:
+    x-swagger-router-controller: bedelos.Teammanagement
+    get:
+      produces:
+        - text/html
+      description:
+        Handles a teammanagement page
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /teammanagement/add:
     x-swagger-router-controller: bedelos.PlayersAdd
     get:
       produces:
@@ -110,7 +135,7 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /usermanagement/delete:
+  /teammanagement/delete:
     x-swagger-router-controller: bedelos.PlayersDelete
     get:
       produces:
@@ -134,6 +159,27 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /teammanagement/update:
+    x-swagger-router-controller: bedelos.TeamUpdate
+    post:
+      consumes:
+        - application/json
+      produces:
+        - text/html
+      description:
+        Updates team relevant information
+      parameters:
+      - name: team
+        in: body
+        description: Teaminformation
+        required: true
+        schema:
+          $ref: "#/definitions/TeamPayload"
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
 
   /map:
     x-swagger-router-controller: bedelos.Map
@@ -366,3 +412,6 @@ definitions:
     type: array
     items:
       type: array
+  TeamPayload:
+    type: object
+    description: Parameters for updating team relevant information

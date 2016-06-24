@@ -32,16 +32,16 @@ function sortNames(a, b) {
 function listPlayers (req, res) {
     try {
         var sPath = path.resolve(config.get("bedelos.datapath"));
-        var oTeams = require(sPath + '/Teams.json');
+        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
         var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
         var aMitglieder = oTeams[teamId].mitglieder;
 
         aMitglieder.sort(sortNames);
         
-        var html = jade.renderFile("api/views/players.jade", {
+        var html = jade.renderFile("api/views/teammanagement.jade", {
             pretty: true,
             players: aMitglieder,
-            team: oTeams[teamId].name,
+            teams: oTeams,
             teamId: teamId
         });
 

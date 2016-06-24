@@ -216,8 +216,9 @@ function prepareStatistic(ergebnisse) {
 }
 
 function addScoreForPlayer(ergebnisse, sName, dScore, oDetails) {
-    if (!ergebnisse.playerStats[sName]) {
-        ergebnisse.playerStats[sName] = {
+    var statName = sName + " (" + oDetails.team + ")";
+    if (!ergebnisse.playerStats[statName]) {
+        ergebnisse.playerStats[statName] = {
             '3:0' : 0,
             '3:1' : 0,
             '3:2' : 0,
@@ -227,16 +228,17 @@ function addScoreForPlayer(ergebnisse, sName, dScore, oDetails) {
             hf : 0,
             sl : 0,
             max: 0,
+            name: sName,
             team: oDetails.team
         };
     }
-    ergebnisse.playerStats[sName][oDetails.cOwnLegs + ':' + oDetails.cOpponentLegs]++;
-    ergebnisse.playerStats[sName].hf += calcSpecials(oDetails.chighFinishes);
-    ergebnisse.playerStats[sName].sl += calcSpecials(oDetails.cshortLegs);
-    ergebnisse.playerStats[sName].max += calcSpecials(oDetails.c180er);
+    ergebnisse.playerStats[statName][oDetails.cOwnLegs + ':' + oDetails.cOpponentLegs]++;
+    ergebnisse.playerStats[statName].hf += calcSpecials(oDetails.chighFinishes);
+    ergebnisse.playerStats[statName].sl += calcSpecials(oDetails.cshortLegs);
+    ergebnisse.playerStats[statName].max += calcSpecials(oDetails.c180er);
 
     for (var i = 0; i < ergebnisse.statistik.length; i++) {
-		if (ergebnisse.statistik[i].name == sName) {
+		if (ergebnisse.statistik[i].name === sName) {
 			ergebnisse.statistik[i].score += dScore;
 			return;
 		}
@@ -624,7 +626,7 @@ function internalStore() {
 	updateStatistic(ergebnisse);
 
     var ergRAW = ergebnisse;
-    
+
     ergRAW['summary'] = {
         heim: {
             legs: team1Legs,

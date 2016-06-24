@@ -14,6 +14,10 @@ var _ = require('lodash');
 
 function getSpielplan (req, res) {
     try {
+        var username;
+        if (req.headers && req.headers.authorization) {
+            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+        }
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oSpielplan = require(sPath + '/Spielplan.json');
         var oTeams = require(sPath + '/Teams.json');
@@ -35,6 +39,7 @@ function getSpielplan (req, res) {
                 pretty: true,
                 runde: oSelection,
                 teams: oTeams,
+                username: username,
                 results: oResults
             });
 

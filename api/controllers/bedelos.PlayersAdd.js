@@ -1,52 +1,26 @@
 'use strict';
 
-var util = require('util');
 var path = require('path');
 var config = require('config');
-var os = require('os');
-var fs = require('fs');
-var jade = require('jade');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var logger = require('../helpers/Logger');
+jsonfile.spaces = 4;
 
-function checkValue(a, b) {
-    if ( a < b ) {
-        return -1;
-    }
-    if ( a > b ) {
-        return 1;
-    }
-    return 0;
-}
-
-function sortNames(a, b) {
-    var ret = checkValue(a.name, b.name);
-    if (ret === 0) {
-        ret = checkValue(a.vorname, b.vorname);
-    }
-    return ret;
-}
-
-function listPlayers (req, res) {
+function addToPlayers (req, res) {
     try {
-        var sPath = path.resolve(config.get("bedelos.datapath"));
-        var oTeams = require(sPath + '/Teams.json');
+        var sTeamsFile = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
+        var oTeams = jsonfile.readFileSync(sTeamsFile);
         var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-        var aMitglieder = oTeams[teamId].mitglieder;
-        logger.log.info(req.swagger.params.name.originalValue);
-        logger.log.info(req.swagger.params.vorname.originalValue);
 
-        aMitglieder.sort(sortNames);
-        
-        var html = jade.renderFile("api/views/players.jade", {
-            pretty: true,
-            players: aMitglieder,
-            team: oTeams[teamId].name,
-            teamId: teamId
+        oTeams[teamId].mitglieder.push({
+            name: req.swagger.params.name.originalValue,
+            vorname: req.swagger.params.vorname.originalValue,
+            encName: new Buffer(req.swagger.params.name.originalValue).toString('base64'),
+            encVorname: new Buffer(req.swagger.params.vorname.originalValue).toString('base64')
         });
 
-        res.status(200).send(html);
+        jsonfile.writeFileSync(sTeamsFile, oTeams);
+
+        res.redirect('/bedelos/teammanagement');
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
@@ -54,5 +28,5 @@ function listPlayers (req, res) {
 }
 
 module.exports = {
-    get: listPlayers
+    get: addToPlayers
 };

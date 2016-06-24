@@ -1,0 +1,133 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        link(href='/bedelos/styles/bootstrap-editable.css', rel='stylesheet')
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/bootstrap-editable.min.js')
+        title BDL Online Spielplan - Spieler
+        script(type='text/javascript').
+            function saveTeamChanges() {
+                var oData = {
+                    'teamName': document.getElementById('teamName').innerText,
+                    'teamSpiellokalName': document.getElementById('teamSpiellokalName').innerText,
+                    'teamSpiellokalStrasse': document.getElementById('teamSpiellokalStrasse').innerText,
+                    'teamSpiellokalOrt': document.getElementById('teamSpiellokalOrt').innerText,
+                    'teamSpiellokalPositionLat': document.getElementById('teamSpiellokalPositionLat').innerText,
+                    'teamSpiellokalPositionLng': document.getElementById('teamSpiellokalPositionLng').innerText,
+                    'teamTeamvertreterName': document.getElementById('teamTeamvertreterName').innerText,
+                    'teamTeamvertreterTelefonnummer': document.getElementById('teamTeamvertreterTelefonnummer').innerText,
+                    'teamTeamvertreterEmail': document.getElementById('teamTeamvertreterEmail').innerText
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: "/bedelos/teammanagement/update",
+                    data: oData,
+                    dataType: 'json'
+                });
+            }
+    body(style={"font-family": 'Calibri'})
+        h3 Team: "#{teams[teamId].name}"
+        table(cellpadding='8px', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            thead
+                th(colspan='2', align='left', style={"background-color": '#AFD3E0'}) Details
+            tbody
+                tr(style={'border-bottom' : 'solid 1px'})
+                    td(align='left', width='20%') Name:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamName", data-type="text", data-pk="1", data-title="Team Name")= teams[teamId].name
+                tr(style={'border-bottom' : 'solid 1px', 'background-color': '#AFD3E0'})
+                    td(colspan='2') Spiellokal
+                tr
+                    td(align='left') Name:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamSpiellokalName", data-type="text", data-pk="1", data-title="Spiellokal Name")= teams[teamId].spiellokal.name
+                tr
+                    td(align='left') Strasse:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamSpiellokalStrasse", data-type="text", data-pk="1", data-title="Spiellokal Strasse")= teams[teamId].spiellokal.strasse
+                tr(style={'border-bottom' : 'solid 1px'})
+                    td(align='left') Ort:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamSpiellokalOrt", data-type="text", data-pk="1", data-title="Spiellokal PLZ Ort")= teams[teamId].spiellokal.ort
+                tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
+                    td(colspan='2') Google Maps Position der Spielstätte
+                tr
+                    td(align='left') Breitengrad:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamSpiellokalPositionLat", data-type="text", data-pk="1", data-title="Position Breitengrad")= teams[teamId].spiellokal.position.lat || '...'
+                tr(style={'border-bottom' : 'solid 1px'})
+                    td(align='left') Längengrad:&nbsp;
+                    td(align='left', style={"font-size": 'smaller','border-bottom' : 'solid 1px'})
+                        a(href='#', id="teamSpiellokalPositionLng", data-type="text", data-pk="1", data-title="Position Längengrad")= teams[teamId].spiellokal.position.lng || '...'
+                tr(style={'border-bottom' : 'solid 1px', 'background-color': '#AFD3E0'})
+                    td(colspan='2') Teamvertreter
+                tr
+                    td(align='left') Name:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamTeamvertreterName", data-type="text", data-pk="1", data-title="Teamvertreter PLZ Ort")= teams[teamId].teamvertreter.name
+                tr
+                    td(align='left') Telefonnummer:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamTeamvertreterTelefonnummer", data-type="text", data-pk="1", data-title="Teamvertreter PLZ Ort")= teams[teamId].teamvertreter.tel || '...'
+                tr
+                    td(align='left') E-Mail:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamTeamvertreterEmail", data-type="text", data-pk="1", data-title="Teamvertreter PLZ Ort")= teams[teamId].teamvertreter.mail || '...'
+                tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
+                    td(colspan='2')
+                        input(type='button', onclick='saveTeamChanges()', value='Speichern')
+
+        br
+
+        table(cellpadding='3', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            thead
+                tr(style={"background-color": '#AFD3E0'})
+                    th(align='left', width='2%') #
+                    th(align='left', width='10%') Name
+                    th(align='left') Vorname
+                    th(align='left') Aktionen
+            tbody
+                each player, i in players
+                    - var count = i + 1;
+                    tr
+                        td(align='left') #{count}.&nbsp;
+                        td(align='left') #{player.name}&nbsp;
+                        td(align='left') #{player.vorname}&nbsp;
+                        td
+                            a(href='/bedelos/teammanagement/delete?encname=#{player.encName}&encvorname=#{player.encVorname}',
+                                onclick='return window.confirm(\'Spieler #{player.vorname} #{player.name} wirklich löschen?\');') Löschen
+                tr
+                    td(colspan='4') <br>Spieler hinzufügen:
+                form(name="addPlayer", action="/bedelos/teammanagement/add", method="get")
+                    tr
+                        td &nbsp;
+                        td
+                            label Vorname
+                        td(colspan='2')
+                            input(type='text', name="vorname")
+                    tr
+                        td &nbsp;
+                        td
+                            label Name
+                        td(colspan='2')
+                            input(type='text', name="name")
+                            input(type='submit')
+
+    b(style={'color': 'red'}) Achtung! Das Ändern (Löschen/Neu anlegen) des Namens eines Spielers hat zur Folge, das alle Statistiken für diesen Spieler verlohren gehen!
+
+    script(type='text/javascript').
+        $.fn.editable.defaults.mode = 'inline';
+        $(document).ready(function () {
+            $('#teamName').editable();
+            $('#teamSpiellokalName').editable();
+            $('#teamSpiellokalStrasse').editable();
+            $('#teamSpiellokalOrt').editable();
+            $('#teamSpiellokalPositionLat').editable();
+            $('#teamSpiellokalPositionLng').editable();
+            $('#teamTeamvertreterName').editable();
+            $('#teamTeamvertreterTelefonnummer').editable();
+            $('#teamTeamvertreterEmail').editable();
+        });
