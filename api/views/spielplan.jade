@@ -4,9 +4,10 @@ html
     head
         link(href='/bedelos/styles/bootstrap-editable.css', rel='stylesheet')
         link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
         script(src='/bedelos/scripts/jquery-2.1.4.min.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
-        script(src='/bedelos/scripts/bootstrap-editable.min.js')
+        script(src='/bedelos/scripts/bootstrap-editable.js')
         title BDL Online Spielplan - Spielplan Anzeige
     body(style={"font-family": 'Calibri'})
         each spiele, spieltag in runde
@@ -14,8 +15,8 @@ html
             table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
                 thead
                     tr
-                        th(colspan='5') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
-                    tr(style={"background-color": '#AFD3E0'})
+                        th(colspan='5', align='center') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
+                    tr.highlightedLeft
                         //th Spiel
                         th Datum
                         th Heim
@@ -53,23 +54,36 @@ html
                                         if (username === 'bdladmin')
                                             nbsp |
                                             a(href='#', id="wertung_#{spiel.id}", data-type="select",
-                                            data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel #{spiel.id}") Werten
+                                                data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel werten:") Werten
                                 else
                                     td(align='center') Details
                                         if (username === 'bdladmin')
                                             nbsp |
                                             a(href='#', id="wertung_#{spiel.id}", data-type="select",
-                                                data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel #{spiel.id}") Werten
+                                                data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel werten:") Werten
 
                 br
     script(type='text/javascript').
-        $.fn.editable.defaults.mode = 'inline';
+        $.fn.editable.defaults.mode = 'popup';
         $(document).ready(function () {
             $('[id^="wertung_"]').editable({
-                value: 2,
+                savenochange: true,
+                value: 0,
                 source: [
-                    {value: 1, text: '0:12'},
-                    {value: 2, text: '12:0'}
+                    {value: 0 ,  text: '0:0'  },
+                    {value: 1 ,  text: '0:12' },
+                    {value: 2 ,  text: '1:11' },
+                    {value: 3 ,  text: '2:10' },
+                    {value: 4 ,  text: '3:9'  },
+                    {value: 5 ,  text: '4:8'  },
+                    {value: 6 ,  text: '5:7'  },
+                    {value: 7 ,  text: '6:6'  },
+                    {value: 8 ,  text: '7:5'  },
+                    {value: 9 ,  text: '8:4'  },
+                    {value: 10,  text: '9:3'  },
+                    {value: 11,  text: '10:2' },
+                    {value: 12,  text: '11:1' },
+                    {value: 13,  text: '12:0' }
                 ]
             });
         });

@@ -199,7 +199,10 @@ html
                 tr
                     td(colspan='9')
                         .bold Spielername (N) = Nachgemeldeter Spieler
-        img(src='#{res.picture}', width='100%')
+        if (res.picture !== "")
+            img(src='#{res.picture}', width='100%')
+        else
+            div Kein Bild eines Spielbogens vorhanden.
         p &copy;
             b
                 a(href='mailto:marius.augenstein@gmail.com') Marius Augenstein (2015,2016)

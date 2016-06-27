@@ -15,9 +15,9 @@ html
                 each result, i in results
                     - var spielId = i.split('_')[1];
                     tr(align='center')
-                        td= teams[results[i].heim].name
+                        td= (results[i].heim) ? teams[results[i].heim].name : ""
                         td #{results[i].summary.heim.sets} : #{results[i].summary.gast.sets}
-                        td= teams[results[i].gast].name
+                        td= (results[i].gast) ? teams[results[i].gast].name : ""
                         td
                             a(href='/bedelos/inbox/#{i}') Details
                             nbsp |

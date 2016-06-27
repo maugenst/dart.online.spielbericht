@@ -2428,19 +2428,19 @@
         "encTeam": "REMgQmxhdS1XZWnfIEthcmxzcnVoZQ=="
     },
     "bdl033": {
-        "name": "D.A.R.T. Plumbata",
+        "name": "D.A.R.T. Plumbata e.V.",
         "spiellokal": {
-            "name": "Church Chill",
+            "name": "Church Chill Sportsbar",
             "strasse": "Karlstrasse 115",
             "ort": "76137 Karlsruhe",
             "position": {
-                "lat": 48.9967137,
-                "lng": 8.3938916
+                "lat": "48.9967137",
+                "lng": "8.3938916"
             }
         },
         "teamvertreter": {
             "name": "Melanie Klomann",
-            "tel": "0176 - 80665025",
+            "tel": "+49 176 - 80665025",
             "mail": "LuckyMelKA@web.de"
         },
         "mitglieder": [
