@@ -13,6 +13,14 @@ var tabelle = require('../helpers/Tabelle');
 
 function rescanAllTables (req, res) {
     try {
+        var username;
+        if (req.headers && req.headers.authorization) {
+            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+            if (username !== 'bdladmin') {
+                throw new Error("You are not allowed to call this function.");
+            }
+        }
+
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');

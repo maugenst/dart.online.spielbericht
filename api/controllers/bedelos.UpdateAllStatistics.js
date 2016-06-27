@@ -12,6 +12,14 @@ var ligaHelper = require('../helpers/Liga');
 
 function rescanAllStatistics (req, res) {
     try {
+        var username;
+        if (req.headers && req.headers.authorization) {
+            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+            if (username !== 'bdladmin') {
+                throw new Error("You are not allowed to call this function.");
+            }
+        }
+
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
         var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');

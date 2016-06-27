@@ -5,16 +5,24 @@ table {
     border: solid 1px
 }
 
-th {
+.center {
     text-align: center;
     padding: 8px;
 }
 
-.highlightedLeft {
+.left {
     text-align: left;
+    padding: 8px;
+}
+
+.highlighted {
     background-color: #AFD3E0;
 }
 
 td {
     padding: 8px;
+}
+
+.borderedTopBottom {
+    border: solid 1px black;
 }

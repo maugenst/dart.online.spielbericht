@@ -9,10 +9,16 @@ var jade = require('jade');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 var _ = require('lodash');
-var ranking = require('../helpers/Ranking.js');
+var ranking = require('../helpers/Ranking');
+var ligaHelper = require('../helpers/Liga');
 
 function getTable (req, res) {
     try {
+        var username;
+        if (req.headers && req.headers.authorization) {
+            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+        }
+
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
         var oTeams = require(sPath + '/Teams.json');
@@ -25,7 +31,9 @@ function getTable (req, res) {
         var html = jade.renderFile("api/views/tables.jade", {
             pretty: true,
             ranking: aRanking,
-            teams: oTeams
+            teams: oTeams,
+            username: username,
+            liga: ligaHelper.getFullLigaName(liga)
         });
 
         res.status(200).send(html);

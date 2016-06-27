@@ -3,18 +3,31 @@
 html
     head
         title BDL Online Spielplan - Tables
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
     body(style={"font-family": 'Calibri'})
-        table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+        table
             thead
-                tr(style={"background-color": '#AFD3E0'})
-                    th(align='left') Platz
-                    th(align='left', width='80%') Team
-                    th(align='center') Spiele
-                    th(align='center') G
-                    th(align='center') U
-                    th(align='center') V
-                    th(align='center') Sets
-                    th(align='center') Punkte
+                tr
+                    th.center(colspan=7) Tabelle "#{liga}"
+                    th.center
+                        if (username === 'bdladmin')
+                            a(href='/bedelos/admin/tables/update/all',
+                                onclick='return window.confirm("Alle Tabellen neu einlesen? ACHTUNG: Erzeugt hohe Serverlast!!!");')
+                                span.glyphicon.glyphicon-refresh(title='Alle Tabellen neu einlesen?\nACHTUNG: Erzeugt hohe Serverlast!!!')
+                        else
+                            nbsp
+                tr.borderedTopBottom.highlighted
+                    th.left Platz
+                    th.left(width='80%') Team
+                    th.center Spiele
+                    th.center G
+                    th.center U
+                    th.center V
+                    th.center Sets
+                    th.center Punkte
             tbody
                 each team, i in ranking
                     - var place = i + 1;
