@@ -10,96 +10,10 @@ var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var walker = require('walker');
 var uid = require('../helpers/UID');
+var ligaHelper = require('../helpers/Liga');
+var tabelle = require('../helpers/Tabelle');
 var _ = require('lodash');
 var url = require('url');
-
-
-function calcLigaFromGameId(gameId) {
-    if (gameId.startsWith('kls')) {
-        return 'klsued';
-    } else if (gameId.startsWith('kln')) {
-        return 'klnord';
-    } else if (gameId.startsWith('bzli')) {
-        return 'bzLiga';
-    } else if (gameId.startsWith('ol')) {
-        return 'oberliga';
-    }
-}
-
-function updateStatistics(oParameters){
-    // Updating statistics...
-
-    var sStatisticsPath = oParameters.pathToStatisticsFiles;
-    var liga = oParameters.liga;
-    var oCurrentResult = oParameters.currentResults;
-
-    var sStatsFile = path.resolve(sStatisticsPath + '/' + liga + '.json');
-    var oStatistik = {};
-    oStatistik = jsonfile.readFileSync(sStatsFile);
-    for(var player in oCurrentResult.playerStats) {
-        if (!oStatistik[player]) {
-            oStatistik[player] = oCurrentResult.playerStats[player];
-        } else {
-            oStatistik[player] = _.mergeWith(oStatistik[player], oCurrentResult.playerStats[player], customizer);
-        }
-    }
-    jsonfile.writeFileSync(sStatsFile, oStatistik);
-}
-
-function updateTable(oParameters){
-    // Updating table...
-    var sTablesPath = oParameters.pathToTablesFiles;
-
-    var liga = oParameters.liga;
-    var oCurrentResult = oParameters.currentResults;
-
-    var sTableFile = path.resolve(sTablesPath + '/' + liga + '.json');
-    var oTabelle = {};
-    oTabelle = jsonfile.readFileSync(sTableFile);
-
-    if(!oTabelle[oCurrentResult.heim]) {
-        oTabelle[oCurrentResult.heim] = {
-            'spiele': 0, 'gewonnen': 0, 'unentschieden': 0, 'verloren': 0,
-            'sets': { 'own': 0, 'other': 0 },
-            'punkte': { 'own': 0, 'other': 0 }
-        };
-    }
-    if(!oTabelle[oCurrentResult.gast]) {
-        oTabelle[oCurrentResult.gast] = {
-            'spiele': 0, 'gewonnen': 0, 'unentschieden': 0, 'verloren': 0,
-            'sets': { 'own': 0, 'other': 0 },
-            'punkte': { 'own': 0, 'other': 0 }
-        };
-    }
-
-    oTabelle[oCurrentResult.heim].spiele++;
-    oTabelle[oCurrentResult.gast].spiele++;
-
-    if (oCurrentResult.summary.heim.sets > oCurrentResult.summary.gast.sets) {
-        oTabelle[oCurrentResult.heim].gewonnen++;
-        oTabelle[oCurrentResult.gast].verloren++;
-        oTabelle[oCurrentResult.heim].punkte.own += 2;
-        oTabelle[oCurrentResult.gast].punkte.other += 2;
-    } else if (oCurrentResult.summary.heim.sets = oCurrentResult.summary.gast.sets) {
-        oTabelle[oCurrentResult.heim].unentschieden++;
-        oTabelle[oCurrentResult.gast].unentschieden++;
-        oTabelle[oCurrentResult.heim].punkte.own++;
-        oTabelle[oCurrentResult.heim].punkte.other++;
-        oTabelle[oCurrentResult.gast].punkte.own++;
-        oTabelle[oCurrentResult.gast].punkte.other++;
-    } else if (oCurrentResult.summary.heim.sets < oCurrentResult.summary.gast.sets) {
-        oTabelle[oCurrentResult.heim].verloren++;
-        oTabelle[oCurrentResult.gast].gewonnen++;
-        oTabelle[oCurrentResult.heim].punkte.other += 2;
-        oTabelle[oCurrentResult.gast].punkte.own += 2;
-    }
-    oTabelle[oCurrentResult.heim].sets.own += oCurrentResult.summary.heim.sets;
-    oTabelle[oCurrentResult.heim].sets.other += oCurrentResult.summary.gast.sets;
-    oTabelle[oCurrentResult.gast].sets.own += oCurrentResult.summary.gast.sets;
-
-    oTabelle[oCurrentResult.gast].sets.other += oCurrentResult.summary.heim.sets;
-    jsonfile.writeFileSync(sTableFile, oTabelle);
-}
 
 function gameDetails(gameId, oSpielplan, liga){
     for (var spieltag in oSpielplan[liga].vr) {
@@ -132,12 +46,11 @@ function wertung (req, res) {
         var oSpielplan = require(sPath + '/Spielplan.json');
         var sGameId = req.swagger.params.gameId.originalValue;
         var oCurrentResult = jsonfile.readFileSync(sPath + '/Wertung.json');
-        var liga = calcLigaFromGameId(sGameId);
+        var liga = ligaHelper.calcLigaFromString(sGameId);
 
         var oGameDetails = gameDetails(sGameId, oSpielplan, liga);
         oCurrentResult.heim = oGameDetails.heim;
         oCurrentResult.gast = oGameDetails.gast;
-
 
         switch(req.swagger.params.wertung.originalValue.value) {
             case '0': setResult(oCurrentResult, 0, 0);
@@ -172,7 +85,7 @@ function wertung (req, res) {
 
         var newName = path.resolve(sPath + '/inbox/' + uniqueGameId + "_" + sGameId + ".json");
         jsonfile.writeFileSync(newName, oCurrentResult);
-        updateTable({
+        tabelle.update({
             currentResults: oCurrentResult,
             liga: liga,
             pathToTablesFiles: sTablesPath

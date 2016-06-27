@@ -30,7 +30,7 @@ function getSpielplan (req, res) {
             if (path.extname(file) === '.json') {
                 var sFilename = path.basename(file);
                 var sKey = _.replace(sFilename, path.extname(file), '');
-                oResults[sKey] = require(file);
+                oResults[sKey] = jsonfile.readFileSync(file);
             }
         }).on('end', function(){
             var oSelection = oSpielplan[liga][runde];

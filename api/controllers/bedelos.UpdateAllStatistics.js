@@ -3,56 +3,18 @@
 var util = require('util');
 var path = require('path');
 var config = require('config');
-var os = require('os');
-var fs = require('fs');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var walker = require('walker');
-var _ = require('lodash');
-
-function customizer(objValue, srcValue) {
-    return srcValue + objValue;
-}
-
-function calcLigaFromFilename(file) {
-    var sRealFilename = path.basename(file).substring(7);
-    if (sRealFilename.startsWith('kls')) {
-        return 'klsued';
-    } else if (sRealFilename.startsWith('kln')) {
-        return 'klnord';
-    } else if (sRealFilename.startsWith('bzli')) {
-        return 'bzLiga';
-    } else if (sRealFilename.startsWith('ol')) {
-        return 'oberliga';
-    }
-}
-
-function updateStatistics(oParameters){
-    // Updating statistics...
-
-    var sStatisticsPath = oParameters.pathToStatisticsFiles;
-    var liga = oParameters.liga;
-    var oCurrentResult = oParameters.currentResults;
-
-    var sStatsFile = path.resolve(sStatisticsPath + '/' + liga + '.json');
-    var oStatistik = {};
-    oStatistik = jsonfile.readFileSync(sStatsFile);
-    for(var player in oCurrentResult.playerStats) {
-        if (!oStatistik[player]) {
-            oStatistik[player] = oCurrentResult.playerStats[player];
-        } else {
-            oStatistik[player] = _.mergeWith(oStatistik[player], oCurrentResult.playerStats[player], customizer);
-        }
-    }
-    jsonfile.writeFileSync(sStatsFile, oStatistik);
-}
+var jade = require('jade');
+var statistics = require('../helpers/Statistik');
+var ligaHelper = require('../helpers/Liga');
 
 function rescanAllStatistics (req, res) {
     try {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
-        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
+        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
 
         // Reset Tables and Scan all results
         jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/bzLiga.json'), {});
@@ -60,16 +22,25 @@ function rescanAllStatistics (req, res) {
         jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/klsued.json'), {});
         jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/oberliga.json'), {});
 
+        var aProcessedFiles = [];
+
         walker(sResultsPath).on('file', function(file, stat) {
             if (path.extname(file) === '.json') {
-                updateStatistics({
-                    currentResults: require(file),
-                    liga: calcLigaFromFilename(file),
+                var oCurrentResults = jsonfile.readFileSync(file);
+                var liga = ligaHelper.calcLigaFromFilename(file);
+                statistics.update({
+                    currentResults: oCurrentResults,
+                    liga: liga,
                     pathToStatisticsFiles: sStatisticsPath
                 });
+                aProcessedFiles.push(file);
             }
         }).on('end', function() {
-            res.redirect('/bedelos/inbox');
+            var html = jade.renderFile("api/views/updates.jade", {
+                processedFiles: aProcessedFiles
+            });
+
+            res.status(200).send(html);
         });
 
     } catch (error) {

@@ -11,7 +11,6 @@
     "config": "1.19.0",
     "express": "4.12.3",
     "swagger-express-mw": "0.1.0",
-    "bluebird": "3.0.5",
     "js-yaml": "3.5.2",
     "log4js": "0.6.27",
     "jade": "1.11.0",
@@ -23,7 +22,7 @@
     "mkdirp": "0.5.1",
     "jsonfile": "2.3.1",
     "walker": "1.0.7",
-    "asyncawait": "1.0.3",
+    "asyncawait": "1.0.1",
     "bluebird": "3.4.1",
     "request": "2.72.0"
   },

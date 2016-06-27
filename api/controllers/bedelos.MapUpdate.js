@@ -1,7 +1,7 @@
 'use strict';
 var bbPromise = require('bluebird');
-var async = require('asyncawait/async');
-var await = require('asyncawait/await');
+var async = require('asyncawait').async;
+var await = require('asyncawait').await;
 var util = require('util');
 var path = require('path');
 var config = require('config');
