@@ -9,7 +9,7 @@ var jsonfile = require('jsonfile');
 var walker = require('walker');
 var _ = require('lodash');
 var logger = require('../helpers/Logger');
-
+var url =  require('url');
 
 function listInbox (req, res) {
     try {
@@ -17,7 +17,8 @@ function listInbox (req, res) {
         if (req.headers && req.headers.authorization) {
             username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
             if (username !== config.get("bedelos.adminuser")) {
-                throw new Error("User not authenticated.");
+                res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+                return;
             }
 
         }
