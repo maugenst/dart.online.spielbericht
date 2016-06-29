@@ -3,19 +3,24 @@
 var util = require('util');
 var path = require('path');
 var config = require('config');
-var os = require('os');
 var fs = require('fs');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var walker = require('walker');
-var _ = require('lodash');
 var ligaHelper = require('../helpers/Liga');
 var tabelle = require('../helpers/Tabelle');
 var statistics = require('../helpers/Statistik');
+var logger = require('../helpers/Logger');
 
 function inboxRelease (req, res) {
     try {
+        var username;
+        if (req.headers && req.headers.authorization) {
+            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+            if (username !== config.get("bedelos.adminuser")) {
+                throw new Error("User not authenticated.");
+            }
+        }
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
@@ -49,6 +54,8 @@ function inboxRelease (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

@@ -2,6 +2,7 @@
 
 var util = require('util');
 var os = require('os');
+var logger = require('../helpers/Logger');
 
 function listInfo (req, res) {
     try {
@@ -26,6 +27,8 @@ function listInfo (req, res) {
         res.status(200).send(sHtmlInfo);
     } catch (error) {
         res.send(500, "Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

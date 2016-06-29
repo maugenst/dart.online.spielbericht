@@ -6,6 +6,14 @@
 
 var path = require('path');
 
+function isUpdateNeeded(file, liga) {
+    if (liga === 'all') {
+        return (path.extname(file) === '.json');
+    } else {
+        return (path.basename(file).indexOf(liga) === 0 && path.extname(file) === '.json');
+    }
+}
+
 function calcLigaFromString(sLigaString) {
     if (sLigaString.startsWith('kls')) {
         return 'klsued';
@@ -49,5 +57,6 @@ function getFullLigaName(liga) {
 module.exports = {
     calcLigaFromFilename: calcLigaFromFilename,
     calcLigaFromString: calcLigaFromString,
-    getFullLigaName: getFullLigaName
+    getFullLigaName: getFullLigaName,
+    isUpdateNeeded: isUpdateNeeded
 };

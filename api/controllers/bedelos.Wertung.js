@@ -12,6 +12,7 @@ var walker = require('walker');
 var uid = require('../helpers/UID');
 var ligaHelper = require('../helpers/Liga');
 var tabelle = require('../helpers/Tabelle');
+var logger = require('../helpers/Logger');
 var _ = require('lodash');
 var url = require('url');
 
@@ -96,6 +97,7 @@ function wertung (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+        logger.log.debug(error.stack);
     }
 }
 

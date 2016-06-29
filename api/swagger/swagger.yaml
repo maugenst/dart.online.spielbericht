@@ -260,26 +260,40 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
-  /admin/tables/update/all:
-    x-swagger-router-controller: bedelos.UpdateAllTables
+  /admin/tables/update/{liga}:
+    x-swagger-router-controller: bedelos.UpdateTables
     get:
       produces:
         - text/html
       description:
         Runs a scan on all game results and recalculates the table
+      parameters:
+        - name: liga
+          type: string
+          description: Liga ID
+          in: path
+          enum: ["all", "oberliga", "bzLiga", "klnord", "klsued"]
+          required: true
       responses:
         'default':
           description: Successful response
           schema:
             $ref: "#/definitions/HTML"
 
-  /admin/statistik/update/all:
-    x-swagger-router-controller: bedelos.UpdateAllStatistics
+  /admin/statistik/update/{liga}:
+    x-swagger-router-controller: bedelos.UpdateStatistics
     get:
       produces:
         - text/html
       description:
         Runs a scan on all game results and recalculates the statistics
+      parameters:
+        - name: liga
+          type: string
+          description: Liga ID
+          in: path
+          enum: ["all", "oberliga", "bzLiga", "klnord", "klsued"]
+          required: true
       responses:
         'default':
           description: Successful response

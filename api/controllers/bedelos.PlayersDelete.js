@@ -6,6 +6,7 @@ var config = require('config');
 var os = require('os');
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
+var logger = require('../helpers/Logger');
 
 function listPlayers (req, res) {
     try {
@@ -27,6 +28,8 @@ function listPlayers (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

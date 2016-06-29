@@ -3,12 +3,8 @@
 var util = require('util');
 var path = require('path');
 var config = require('config');
-var os = require('os');
-var fs = require('fs');
 var jade = require('jade');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-
 var logger = require("../helpers/Logger");
 
 function details (req, res) {
@@ -33,6 +29,8 @@ function details (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

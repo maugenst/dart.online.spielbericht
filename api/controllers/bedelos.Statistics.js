@@ -6,11 +6,10 @@ var config = require('config');
 var os = require('os');
 var fs = require('fs');
 var jade = require('jade');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var _ = require('lodash');
 var ranking = require('../helpers/Ranking.js');
 var ligaHelper = require('../helpers/Liga');
+var logger = require('../helpers/Logger');
 
 function getTable (req, res) {
     try {
@@ -38,6 +37,8 @@ function getTable (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

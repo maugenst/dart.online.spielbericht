@@ -4,6 +4,7 @@ var path = require('path');
 var config = require('config');
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
+var logger = require('../helpers/Logger');
 
 function addToPlayers (req, res) {
     try {
@@ -24,6 +25,8 @@ function addToPlayers (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

@@ -6,10 +6,8 @@ var config = require('config');
 var os = require('os');
 var fs = require('fs');
 var jade = require('jade');
-var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var walker = require('walker');
-var _ = require('lodash');
+var logger = require('../helpers/Logger');
 
 function checkValue(a, b) {
     if ( a < b ) {
@@ -49,6 +47,8 @@ function listPlayers (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

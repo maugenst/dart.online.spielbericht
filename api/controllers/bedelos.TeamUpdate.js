@@ -5,11 +5,10 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
-var _ = require('lodash');
+var logger = require('../helpers/Logger');
 
 function updateTeam (req, res) {
     try {
@@ -34,6 +33,8 @@ function updateTeam (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 

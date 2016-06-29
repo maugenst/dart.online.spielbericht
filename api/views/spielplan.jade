@@ -12,17 +12,17 @@ html
     body(style={"font-family": 'Calibri'})
         each spiele, spieltag in runde
             - var sSpieltag = spieltag.split('_')[1];
-            table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px', 'font-size': 'smaller'})
                 thead
                     tr
-                        th(colspan='5', align='center') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
-                    tr.highlightedLeft
+                        th.center(colspan='5') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
+                    tr.borderedTopBottom.highlighted
                         //th Spiel
-                        th Datum
-                        th Heim
-                        th Ergebnis
-                        th Gast
-                        th Aktionen
+                        th.left Datum
+                        th.left Heim
+                        th.center Ergebnis
+                        th.left Gast
+                        th.center Aktionen
                 tbody
                     each spiel, i in spiele
                         tr
