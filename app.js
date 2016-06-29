@@ -47,6 +47,8 @@ function _init(){
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klsued.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/bzLiga.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/oberliga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Spielplan.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Teams.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Wertung.json" }
 
     ];
