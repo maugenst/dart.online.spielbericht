@@ -29,6 +29,15 @@ function sortNames(a, b) {
 
 function listPlayers (req, res) {
     try {
+        var username;
+        if (req.headers && req.headers.authorization) {
+            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+            if (username === config.get("bedelos.adminuser")) {
+                res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+                return;
+            }
+        }
+
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
         var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
