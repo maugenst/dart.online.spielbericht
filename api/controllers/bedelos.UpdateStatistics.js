@@ -7,11 +7,11 @@ var jade = require('jade');
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var walker = require('walker');
-var _ = require('lodash');
+var statistics = require('../helpers/Statistik');
 var ligaHelper = require('../helpers/Liga');
-var tabelle = require('../helpers/Tabelle');
+var logger = require('../helpers/Logger');
 
-function rescanAllTables (req, res) {
+function rescanAllStatistics (req, res) {
     try {
         var username;
         if (req.headers && req.headers.authorization) {
@@ -23,24 +23,27 @@ function rescanAllTables (req, res) {
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
-        var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
+        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
+        var liga = req.swagger.params.liga.originalValue;
 
-        // Reset Tables and Scan all results
-        jsonfile.writeFileSync(path.resolve(sTablesPath + '/bzLiga.json'), {});
-        jsonfile.writeFileSync(path.resolve(sTablesPath + '/klnord.json'), {});
-        jsonfile.writeFileSync(path.resolve(sTablesPath + '/klsued.json'), {});
-        jsonfile.writeFileSync(path.resolve(sTablesPath + '/oberliga.json'), {});
+        // Reset Table(s) and Scan all necessary results
+        if (liga === 'all') {
+            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/bzLiga.json'), {});
+            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/klnord.json'), {});
+            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/klsued.json'), {});
+            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/oberliga.json'), {});
+        } else {
+            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/' + liga + '.json'), {});
+        }
 
         var aProcessedFiles = [];
 
         walker(sResultsPath).on('file', function(file, stat) {
-            if (path.extname(file) === '.json') {
-                var oCurrentResults = jsonfile.readFileSync(file);
-                var liga = ligaHelper.calcLigaFromFilename(file);
-                tabelle.update({
-                    currentResults: oCurrentResults,
-                    liga: liga,
-                    pathToTablesFiles: sTablesPath
+            if (ligaHelper.isUpdateNeeded(file, req.swagger.params.liga.originalValue)) {
+                statistics.update({
+                    currentResults: jsonfile.readFileSync(file),
+                    liga: ligaHelper.calcLigaFromFilename(file),
+                    pathToStatisticsFiles: sStatisticsPath
                 });
                 aProcessedFiles.push(file);
             }
@@ -54,9 +57,11 @@ function rescanAllTables (req, res) {
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
     }
 }
 
 module.exports = {
-    get: rescanAllTables
+    get: rescanAllStatistics
 };
