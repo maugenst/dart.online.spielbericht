@@ -3,6 +3,7 @@
 html
     head
         title BDL Online Spielplan - Teams
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
     body(style={"font-family": 'Calibri'})
         each teamId, i in vereine
             table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
@@ -10,8 +11,8 @@ html
                     tr
                         th(colspan='2')= teams[teamId].name
                     tr(style={"background-color": '#AFD3E0'})
-                        th(width='50%') Spiellokal
-                        th(width='50%') Teamvertreter + Captain
+                        th.left(width='50%') Spiellokal
+                        th.left(width='50%') Teamvertreter + Captain
                 tbody
                     tr
                         td #{teams[teamId].spiellokal.name}<br>

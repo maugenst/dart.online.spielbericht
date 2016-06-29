@@ -3,7 +3,7 @@
 var start = (new Date()).getTime();
 var mkdirp = require('mkdirp');
 var path = require('path');
-var fs = require('fs');
+var fs = require('fs-extra');
 var config = require('config');
 var util = require('util');
 var logDirectory = "";
@@ -28,39 +28,46 @@ function logAll(message) {
 
 function _init(){
     var aItemsToResolve = [
-        path.resolve(__dirname + "/" + config.get("log.dir")),
-        path.resolve(__dirname + "/" + config.get("temp.dir")),
-        path.resolve(__dirname + "/data"),
-        path.resolve(__dirname + "/data/saison"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison")),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/ergebnisse"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/oberliga.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/bzLiga.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/klnord.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken/klsued.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/oberliga.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/bzLiga.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/klnord.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen/klsued.json"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/pictures"),
-        path.resolve(__dirname + "/data/saison/" + config.get("bedelos.saison") + "/inbox")
+        { bFile: false, target: __dirname + "/" + config.get("log.dir") },
+        { bFile: false, target: __dirname + "/" + config.get("temp.dir") },
+        { bFile: false, target: __dirname + "/data" },
+        { bFile: false, target: __dirname + "/data/saison/" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/ergebnisse" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/pictures" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/inbox" },
+
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/klnord.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/klsued.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/bzLiga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/oberliga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klnord.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klsued.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/bzLiga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/oberliga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Wertung.json" }
+
     ];
 
+    var defaultPath = path.resolve(__dirname + "/config/default/saison/xxyy");
+
     for(var i = 0; i<aItemsToResolve.length; i++) {
-        // ensure that this directory exists
-        if (path.extname(aItemsToResolve[i]) === '.json') {
-            if (!fs.existsSync(aItemsToResolve[i])) {
-                jsonfile.writeFileSync(aItemsToResolve[i], {});
+        if (aItemsToResolve[i].bFile) {
+            var sTargetFile = path.resolve(aItemsToResolve[i].target + aItemsToResolve[i].file);
+            if (!fs.existsSync(sTargetFile)) {
+                var sSourceFile = path.resolve(defaultPath + aItemsToResolve[i].file);
+                fs.copySync(sSourceFile, sTargetFile);
             }
         } else {
-            if (!fs.existsSync(aItemsToResolve[i])) {
-                mkdirp.sync(aItemsToResolve[i]);
+            var sTargetDir = path.resolve(aItemsToResolve[i].target);
+            if (!fs.existsSync(sTargetDir)) {
+                mkdirp.sync(sTargetDir);
             }
         }
     }
-    logDirectory = aItemsToResolve[0];
+    logDirectory = path.resolve(aItemsToResolve[0].target);
 }
 
 try {
