@@ -37,16 +37,16 @@ html
                 each player, i in ranking
                     - var place = i + 1;
                     tr
-                        td(align='left') #{place}.
-                        td(align='left')= player.name
-                        td(align='left')= teams[player.team].name
-                        td(align='center')= player['3:0']
-                        td(align='center')= player['3:1']
-                        td(align='center')= player['3:2']
-                        td(align='center')= player['2:3']
-                        td(align='center')= player['1:3']
-                        td(align='center')= player['0:3']
-                        td(align='center')= player.hf
-                        td(align='center')= player.sl
-                        td(align='center')= player.max
-                        td(align='center')= player.punkte
+                        td.left.smaller #{place}.
+                        td.left.xsmall.bold= player.name
+                        td.left.xsmall.bold= teams[player.team].name
+                        td.center.smaller= player['3:0']
+                        td.center.smaller= player['3:1']
+                        td.center.smaller= player['3:2']
+                        td.center.smaller= player['2:3']
+                        td.center.smaller= player['1:3']
+                        td.center.smaller= player['0:3']
+                        td.center.smaller= player.hf
+                        td.center.smaller= player.sl
+                        td.center.smaller= player.max
+                        td.center.smaller= player.punkte

@@ -15,6 +15,18 @@ table {
     padding: 8px;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.smaller{
+    font-size: smaller;
+}
+
+.xsmall {
+    font-size: x-small;
+}
+
 .highlighted {
     background-color: #AFD3E0;
 }
