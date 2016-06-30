@@ -1,0 +1,46 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title BDL - Login
+        link(href='/bedelos/styles/bootstrap-editable.css', rel='stylesheet')
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/bootstrap-editable.min.js')
+        title BDL Online Spielplan - Spieler
+        script(type='text/javascript').
+            function submit() {
+                var oData = {
+                    'username': document.getElementById('username').value,
+                    'password': document.getElementById('password').value
+                };
+                $.ajax({
+                    type: 'POST',
+                    url: "/bedelos/login",
+                    data: oData,
+                    dataType: 'json'
+                });
+            }
+    body(style={"font-family": 'Calibri'})
+        table(cellpadding='8px', cellspacing='0', width='100%', style={'border': 'solid 1px'})
+            form(id='', name="login", action="/bedelos/login", method="post")
+            tr
+                th.center(colspan=2) Loginform
+            tr
+                th.borderedTopBottom.highlighted(colspan=2) Einloggen mit username / passwort (bdl000)
+            tr
+                td(width='10%')
+                    label Benutzer:
+                td
+                    input(id='username', type='text', name="username")
+            tr
+                td
+                    label Passwort:
+                td
+                    input(id='password', type='password', name="password")
+            tr
+                td &nbsp;
+                td
+                    input(type='button', onclick='submit()', value='Login')

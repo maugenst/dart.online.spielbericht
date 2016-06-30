@@ -181,6 +181,52 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /login:
+    x-swagger-router-controller: bedelos.Authentication
+    get:
+      consumes:
+        - application/json
+      produces:
+        - text/html
+      description:
+        Shows the login form
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    post:
+      consumes:
+        - application/json
+      produces:
+        - text/html
+      description:
+        Updates team relevant information
+      parameters:
+      - name: credentials
+        in: body
+        description: Login Credentials
+        required: true
+        schema:
+          $ref: "#/definitions/OBJECT"
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    delete:
+      consumes:
+        - application/json
+      produces:
+        - text/html
+      description:
+        Updates team relevant information
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /map:
     x-swagger-router-controller: bedelos.Map
     get:
