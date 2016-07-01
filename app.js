@@ -1,5 +1,7 @@
 'use strict';
 
+var uid = require(__dirname + "/api/helpers/UID");
+var crypt = require(__dirname + "/api/helpers/Crypt");
 var start = (new Date()).getTime();
 var mkdirp = require('mkdirp');
 var path = require('path');
@@ -8,6 +10,7 @@ var config = require('config');
 var util = require('util');
 var logDirectory = "";
 var jsonfile = require('jsonfile');
+jsonfile.spaces = 4;
 
 _init();
 var SwaggerExpress = require('swagger-express-mw');
@@ -26,11 +29,26 @@ function logAll(message) {
     logger.log.info(message);
 }
 
+function FNCheckSecret() {
+    var configFile = path.resolve(this.target + this.file);
+    var oConfig = (fs.existsSync(configFile)) ? jsonfile.readFileSync(configFile) : {};
+    if (!oConfig.secret) {
+        oConfig.secret = uid.generate(true);
+        jsonfile.writeFileSync(configFile, oConfig);
+    }
+
+    crypt.setSecret(oConfig.secret);
+}
+
 function _init(){
     var aItemsToResolve = [
         { bFile: false, target: __dirname + "/" + config.get("log.dir") },
         { bFile: false, target: __dirname + "/" + config.get("temp.dir") },
         { bFile: false, target: __dirname + "/data" },
+
+        { bFile: false, target: __dirname + "/data/config/" },
+        { bFile: true,  target: __dirname + "/data/config", file: "/config.json", after: FNCheckSecret },
+
         { bFile: false, target: __dirname + "/data/saison/" },
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") },
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/ergebnisse" },
@@ -50,7 +68,6 @@ function _init(){
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Spielplan.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Teams.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Wertung.json" }
-
     ];
 
     var defaultPath = path.resolve(__dirname + "/config/default/saison/xxyy");
@@ -60,7 +77,7 @@ function _init(){
             var sTargetFile = path.resolve(aItemsToResolve[i].target + aItemsToResolve[i].file);
             if (!fs.existsSync(sTargetFile)) {
                 var sSourceFile = path.resolve(defaultPath + aItemsToResolve[i].file);
-                fs.copySync(sSourceFile, sTargetFile);
+                try { fs.copySync(sSourceFile, sTargetFile); } catch (err) {}
             }
         } else {
             var sTargetDir = path.resolve(aItemsToResolve[i].target);
@@ -68,7 +85,11 @@ function _init(){
                 mkdirp.sync(sTargetDir);
             }
         }
+        if (aItemsToResolve[i].after && typeof aItemsToResolve[i].after === 'function') {
+            aItemsToResolve[i].after();
+        }
     }
+
     logDirectory = path.resolve(aItemsToResolve[0].target);
 }
 
@@ -85,7 +106,7 @@ try {
     app.use('/bedelos', express.static('api/static/spielbericht/app'));
     app.use('/saison', express.static('data/saison'));
 
-    process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
     SwaggerExpress.create({
         appRoot: __dirname,

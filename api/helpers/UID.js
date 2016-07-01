@@ -4,8 +4,8 @@ var UID = {
 
     _usedUIDs: {},
 
-    generate: function () {
-        var uid = this._newUID();
+    generate: function (bLongUID) {
+        var uid = this._newUID(bLongUID);
         while (this._usedUIDs[uid]) {
             uid = this._newUID();
         }
@@ -13,8 +13,17 @@ var UID = {
         return uid;
     },
 
-    _newUID: function () {
-        return this._uppercaseSome(("000000" + (Math.random() * Math.pow(36, 6) << 0).toString(36)).slice(-6));
+    _newUID: function (long) {
+        var sUID = "";
+        if (long) {
+            sUID = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+                return v.toString(16);
+            });
+        } else {
+            sUID = this._uppercaseSome(("000000" + (Math.random() * Math.pow(36, 6) << 0).toString(36)).slice(-6));
+        }
+        return sUID;
     },
 
     _uppercaseSome: function (uid) {
