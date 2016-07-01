@@ -10,14 +10,12 @@ var jsonfile = require('jsonfile');
 var ranking = require('../helpers/Ranking.js');
 var ligaHelper = require('../helpers/Liga');
 var logger = require('../helpers/Logger');
+var session = require('../helpers/Session');
 
 function getTable (req, res) {
     try {
-        var username;
-        if (req.headers && req.headers.authorization) {
-            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-        }
-
+        var username = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
+        
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
         var oTeams = require(sPath + '/Teams.json');

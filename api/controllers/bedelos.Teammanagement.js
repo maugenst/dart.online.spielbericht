@@ -8,6 +8,7 @@ var fs = require('fs');
 var jade = require('jade');
 var jsonfile = require('jsonfile');
 var logger = require('../helpers/Logger');
+var session = require('../helpers/Session');
 
 function checkValue(a, b) {
     if ( a < b ) {
@@ -29,18 +30,21 @@ function sortNames(a, b) {
 
 function listPlayers (req, res) {
     try {
-        var username;
-        if (req.headers && req.headers.authorization) {
-            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-            if (username === config.get("bedelos.adminuser")) {
-                res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
-                return;
-            }
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+        if (!oSessionData) {
+            res.redirect("/bedelos/login");
+            return;
+        }
+
+        if (oSessionData.username === config.get("bedelos.adminuser")) {
+            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            return;
         }
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
-        var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+        var teamId = oSessionData.username;
         var aMitglieder = oTeams[teamId].mitglieder;
 
         aMitglieder.sort(sortNames);

@@ -19,13 +19,17 @@ html
                     'teamSpiellokalPositionLng': document.getElementById('teamSpiellokalPositionLng').innerText,
                     'teamTeamvertreterName': document.getElementById('teamTeamvertreterName').innerText,
                     'teamTeamvertreterTelefonnummer': document.getElementById('teamTeamvertreterTelefonnummer').innerText,
-                    'teamTeamvertreterEmail': document.getElementById('teamTeamvertreterEmail').innerText
+                    'teamTeamvertreterEmail': document.getElementById('teamTeamvertreterEmail').innerText,
+                    'teamPassword': document.getElementById('teamPassword').innerText
                 };
                 $.ajax({
                     type: 'POST',
                     url: "/bedelos/teammanagement/update",
                     data: oData,
-                    dataType: 'json'
+                    dataType: 'json',
+                    success: function(){
+                        location.href = "/bedelos/teammanagement"
+                    }
                 });
             }
     body(style={"font-family": 'Calibri'})
@@ -77,6 +81,12 @@ html
                     td(align='left', style={"font-size": 'smaller'})
                         a(href='#', id="teamTeamvertreterEmail", data-type="text", data-pk="1", data-title="Teamvertreter PLZ Ort")= teams[teamId].teamvertreter.mail || '...'
                 tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
+                    td(colspan='2') Administration
+                tr
+                    td(align='left') Passwort:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        a(href='#', id="teamPassword", data-type="text", data-pk="1", data-title="Team Passwort")= teams[teamId].password || '...'
+                tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
                     td(colspan='2')
                         input(type='button', onclick='saveTeamChanges()', value='Speichern')
 
@@ -119,7 +129,7 @@ html
     b(style={'color': 'red'}) Achtung! Das Ändern (Löschen/Neu anlegen) des Namens eines Spielers hat zur Folge, das alle Statistiken für diesen Spieler verloren gehen!
 
     script(type='text/javascript').
-        $.fn.editable.defaults.mode = 'inline';
+        $.fn.editable.defaults.mode = 'popup';
         $(document).ready(function () {
             $('#teamName').editable();
             $('#teamSpiellokalName').editable();
@@ -130,4 +140,5 @@ html
             $('#teamTeamvertreterName').editable();
             $('#teamTeamvertreterTelefonnummer').editable();
             $('#teamTeamvertreterEmail').editable();
+            $('#teamPassword').editable();
         });

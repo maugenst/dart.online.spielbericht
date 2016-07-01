@@ -21,7 +21,9 @@ var http = require('http');
 var logger = require(__dirname + "/api/helpers/Logger");
 var morgan = require('morgan');
 var cors = require('cors');
+var cookieParser = require('cookie-parser');
 module.exports = app; // for testing
+
 
 
 function logAll(message) {
@@ -29,12 +31,17 @@ function logAll(message) {
     logger.log.info(message);
 }
 
-function FNCheckSecret() {
+function FNCheckConfig() {
     var configFile = path.resolve(this.target + this.file);
     var oConfig = (fs.existsSync(configFile)) ? jsonfile.readFileSync(configFile) : {};
     if (!oConfig.secret) {
         oConfig.secret = uid.generate(true);
         jsonfile.writeFileSync(configFile, oConfig);
+    }
+
+    if (!oConfig[config.get("bedelos.adminuser")]) {
+        var adminuser = config.get("bedelos.adminuser");
+        throw new Error("No password for " + adminuser + " found in data/config/config.json. Call 'node adminSecret.js' to set it.");
     }
 
     crypt.setSecret(oConfig.secret);
@@ -47,7 +54,7 @@ function _init(){
         { bFile: false, target: __dirname + "/data" },
 
         { bFile: false, target: __dirname + "/data/config/" },
-        { bFile: true,  target: __dirname + "/data/config", file: "/config.json", after: FNCheckSecret },
+        { bFile: true,  target: __dirname + "/data/config", file: "/config.json", after: FNCheckConfig },
 
         { bFile: false, target: __dirname + "/data/saison/" },
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") },
@@ -102,6 +109,7 @@ try {
     app.set('views', 'api/views');
     app.set('view engine', 'jade');
     app.use(cors());
+    app.use(cookieParser());
     app.use(morgan('combined', {stream: fs.createWriteStream(logDirectory + '/access.log', {flags: 'a'})}));
     app.use('/bedelos', express.static('api/static/spielbericht/app'));
     app.use('/saison', express.static('data/saison'));

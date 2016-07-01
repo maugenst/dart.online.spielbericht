@@ -9,18 +9,22 @@ var jsonfile = require('jsonfile');
 var walker = require('walker');
 var _ = require('lodash');
 var logger = require('../helpers/Logger');
+var session = require('../helpers/Session');
 var url =  require('url');
 
 function listInbox (req, res) {
     try {
-        var username;
-        if (req.headers && req.headers.authorization) {
-            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-            if (username !== config.get("bedelos.adminuser")) {
-                res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
-                return;
-            }
 
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+        if (!oSessionData) {
+            res.redirect("/bedelos/login");
+            return;
+        }
+
+        if (oSessionData.username !== config.get("bedelos.adminuser")) {
+            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            return;
         }
 
         var sPath = path.resolve(config.get("bedelos.datapath"));

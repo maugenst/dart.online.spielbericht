@@ -10,17 +10,23 @@ var jsonfile = require('jsonfile');
 var jade = require('jade');
 jsonfile.spaces = 4;
 var logger = require("../helpers/Logger");
+var session = require("../helpers/Session");
 var walker = require('walker');
 
 function inboxReject (req, res) {
     try {
-        var username;
-        if (req.headers && req.headers.authorization) {
-            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-            if (username !== config.get("bedelos.adminuser")) {
-                throw new Error("User not authenticated.");
-            }
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+        if (!oSessionData) {
+            res.redirect("/bedelos/login");
+            return;
         }
+
+        if (oSessionData.username !== config.get("bedelos.adminuser")) {
+            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            return;
+        }
+
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');

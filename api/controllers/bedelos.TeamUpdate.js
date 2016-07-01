@@ -9,12 +9,14 @@ var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var logger = require('../helpers/Logger');
+var crypt = require('../helpers/Crypt');
+var session = require('../helpers/Session');
 
 function updateTeam (req, res) {
     try {
         var sTeamsFile = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
         var oTeams = jsonfile.readFileSync(sTeamsFile);
-        var teamId = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
+        var teamId = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
         var oChangedTeam = req.swagger.params.team.originalValue;
 
         oTeams[teamId].name = oChangedTeam.teamName;
@@ -26,13 +28,14 @@ function updateTeam (req, res) {
         oTeams[teamId].teamvertreter.name = oChangedTeam.teamTeamvertreterName;
         oTeams[teamId].teamvertreter.mail = oChangedTeam.teamTeamvertreterEmail;
         oTeams[teamId].teamvertreter.tel = oChangedTeam.teamTeamvertreterTelefonnummer;
+        oTeams[teamId].password = crypt.encrypt(crypt.decrypt(oChangedTeam.teamPassword));
 
         jsonfile.writeFileSync(sTeamsFile, oTeams);
 
-        res.redirect('/bedelos/teammanagement');
+        res.json("OK");
 
     } catch (error) {
-        res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+        res.status(500).json("Error: " + error.stack.replace('/\n/g', '<br>'));
 
         logger.log.debug(error.stack);
     }

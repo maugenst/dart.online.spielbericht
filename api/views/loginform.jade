@@ -11,36 +11,91 @@ html
         script(src='/bedelos/scripts/bootstrap-editable.min.js')
         title BDL Online Spielplan - Spieler
         script(type='text/javascript').
+            function logout() {
+                $.ajax({
+                    url: '/bedelos/login',
+                    type: 'DELETE',
+                    success: function(result) {
+                        location.href = "/bedelos/login";
+                    }
+                }).fail(function () {
+                    $('.form-group').removeClass('has-success').addClass('has-error');
+                    $('#helpBlock').text("ERROR: Logout war nicht erfolgreich.");
+                    $('#helpBlock').css('visibility', 'visible');
+                });
+            }
             function submit() {
                 var oData = {
                     'username': document.getElementById('username').value,
                     'password': document.getElementById('password').value
                 };
-                $.ajax({
-                    type: 'POST',
-                    url: "/bedelos/login",
-                    data: oData,
-                    dataType: 'json'
+                $.post("/bedelos/login",oData, function() {
+                    $('.form-group').removeClass('has-error').addClass('has-success');
+                    $('#helpBlock').text("INFO: Login war erfolgreich.");
+                    $('#helpBlock').css('visibility', 'visible');
+                }, 'json').fail(function() {
+                    $('.form-group').removeClass('has-success').addClass('has-error');
+                    $('#helpBlock').text("ERROR: Login war nicht erfolgreich.");
+                    $('#helpBlock').css('visibility', 'visible');
                 });
             }
     body(style={"font-family": 'Calibri'})
         table(cellpadding='8px', cellspacing='0', width='100%', style={'border': 'solid 1px'})
-            form(id='', name="login", action="/bedelos/login", method="post")
+            form(id='loginform', name="login", action="/bedelos/login", method="post")
             tr
-                th.center(colspan=2) Loginform
+                th.center(colspan='2') Loginform
             tr
-                th.borderedTopBottom.highlighted(colspan=2) Einloggen mit username / passwort (bdl000)
+                th.borderedTopBottom.highlighted(colspan='2')
+                    if (session && session.username)
+                        div Eingeloggt mit Benutzer '#{session.username}'
+                    else
+                        div Einloggen mit Benutzer / Passwort
             tr
                 td(width='10%')
-                    label Benutzer:
+                    .form-group
+                        label.control-label(for='username') Benutzer:
                 td
-                    input(id='username', type='text', name="username")
+                    .form-group
+                        if (session && session.username)
+                            label= session.username
+                        else
+                            input.form-control(type='text', id='username' aria-describedby='username', placeholder='bdl000')
             tr
                 td
-                    label Passwort:
+                    .form-group
+                        label.control-label(for='password') Passwort
                 td
-                    input(id='password', type='password', name="password")
+                    .form-group
+                        if (session && session.username)
+                            label ...
+                        else
+                            input.form-control(type='password', id='password' aria-describedby='username', placeholder='Passwort')
             tr
-                td &nbsp;
                 td
-                    input(type='button', onclick='submit()', value='Login')
+                    nbsp
+                td
+                    .form-group
+                        if (session && session.username)
+                            input(type='button', onclick='logout()', value='Logout')
+                        else
+                            input(type='button', onclick='submit()', value='Login')
+            tr
+                td
+                    nbsp
+                td
+                    .form-group
+                        span.help-block(id='helpBlock', style={'font-weight':'bold', 'visibility': 'hidden'}) Login war nicht erfolgreich.
+if (session && session.username)
+    script(type='text/javascript').
+        $(document).keypress(function (e) {
+            if (e.which == 13) {
+                logout();
+            }
+        });
+else
+    script(type='text/javascript').
+        $(document).keypress(function (e) {
+            if (e.which == 13) {
+                submit();
+            }
+        });

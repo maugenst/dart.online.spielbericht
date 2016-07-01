@@ -19,6 +19,7 @@ temp:
 bedelos:
   adminuser: bdladmin
   saison: 1516
+  configpath: ./data/config
   datapath: ./data/saison/1516
 
 # values in the swagger hash are system configuration for swagger-node
