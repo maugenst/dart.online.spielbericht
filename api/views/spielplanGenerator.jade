@@ -1,0 +1,117 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/moment.min.js')
+        script(src='/bedelos/scripts/transition.js')
+        script(src='/bedelos/scripts/collapse.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/bootstrap-datetimepicker.js')
+        script(src='/bedelos/scripts/bootstrap-typeahead.js')
+        link(href='/bedelos/styles/bootstrap-datetimepicker.css', rel='stylesheet')
+        title BDL Online Spielplan Generator
+
+    body(style={"font-family": 'Calibri'})
+        h3 Spielplan Generator
+
+        .container
+            .row
+                .col-sm-2
+                    label(for='liga') Liga
+                .col-sm-2
+                    .form-group
+                        select.form-control(id='liga')
+                            option(value='oberliga') Oberliga
+                            option(value='bzLiga') Bezirksliga
+                            option(value='klnord') Kreisliga Nord
+                            option(value='klsued') Kreisliga Süd
+            .row
+                .col-sm-2
+                    label(for='datetimepicker1') Spieltag
+                .col-sm-2
+                    .form-group
+                        select.form-control(id='spieltag')
+                            option 1
+                            option 2
+                            option 3
+                            option 4
+                            option 5
+                            option 6
+                            option 7
+                            option 8
+                            option 9
+                            option 10
+                            option 11
+                            option 12
+                            option 13
+                            option 14
+                            option 15
+                            option 16
+                            option 17
+                            option 18
+                            option 19
+                            option 20
+                            option 21
+                            option 22
+                            option 23
+                            option 24
+                            option 25
+                            option 26
+                            option 27
+                            option 28
+            .row
+                .col-sm-2
+                    label(for='datetimepicker1') Datum
+                .col-sm-2
+                    .form-group
+                        .input-group.date(id='datetimepicker1')
+                            input.form-control(type='text')
+                            span.input-group-addon
+                            span.glyphicon.glyphicon-calendar
+            .row
+                .col-sm-2
+                    label(for='heim') Heim
+                .col-sm-6
+                    .form-group
+                        input.typeahead(id='heim', type='text', data-provide='typeahead')
+            .row
+                .col-sm-2
+                    label(for='heim') Gast
+                .col-sm-2
+                    .form-group
+                        input.typeahead(id='gast', type='text', data-provide='typeahead')
+                .col-sm-2
+                    .form-group
+                        input(id='save', type='button', value='Speichern')
+
+    script(type='text/javascript').
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+                format: 'DD.MM.YYYY'
+            });
+        });
+
+    script(type='text/javascript').
+        var $input = $('.typeahead');
+        var aTeams = JSON.parse("#{sTeams}".replace(/&quot;/g,'"'));
+        $input.typeahead({
+            source: aTeams,
+            autoSelect: true
+        });
+        $input.change(function () {
+            var current = $input.typeahead("getActive");
+            if (current) {
+                // Some item from your model is active!
+                if (current.name == $input.val()) {
+                    // This means the exact match is found. Use toLowerCase() if you want case insensitive match.
+                } else {
+                    // This means it is only a partial match, you can either add a new item
+                    // or take the active if you don't want new items
+                }
+            } else {
+                // Nothing is active so it is a new value (or maybe empty value)
+            }
+        });

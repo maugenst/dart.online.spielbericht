@@ -54,6 +54,37 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /spielplan/generator:
+    x-swagger-router-controller: bedelos.SpielplanGenerator
+    get:
+      produces:
+        - text/html
+      description:
+        Displays an Input Form to enter new Games to a new Spielplan
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    post:
+      produces:
+        - text/html
+      description:
+        Displays the spielplan
+      parameters:
+        - name: wertung
+          in: body
+          description: Wertung
+          required: true
+          schema:
+            $ref: "#/definitions/GameObject"
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+
   /teams:
     x-swagger-router-controller: bedelos.Teams
     get:
@@ -501,3 +532,24 @@ definitions:
   TeamPayload:
     type: object
     description: Parameters for updating team relevant information
+  GameObject:
+    type: object
+    properties:
+      liga:
+        type: string
+        enum: ["oberliga", "bzLiga", "klnord", "klsued"]
+        description: Liga
+        example: oberliga
+      spieltag:
+        type: integer
+        description: Spieltag
+        example: 1
+      runde:
+        type: string
+        enum: ["vr", "rr"]
+        description: vr or rr (Vorrunde oder Rückrunde)
+        example: vr
+      datum:
+        type: string
+        description: Datum des Spieles
+        example: 2013-02-04T22:44:30.652Z
