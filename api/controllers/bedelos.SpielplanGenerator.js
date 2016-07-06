@@ -11,6 +11,7 @@ var walker = require('walker');
 var _ = require('lodash');
 var logger = require('../helpers/Logger');
 var ligaHelper = require('../helpers/Liga');
+var session = require('../helpers/Session');
 
 function addToSpielplan (req, res) {
     try {
@@ -64,6 +65,19 @@ function addToSpielplan (req, res) {
 
 function getSpielplan (req, res) {
     try {
+
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+        if (!oSessionData) {
+            res.redirect("/bedelos/login");
+            return;
+        }
+
+        if (oSessionData.username !== config.get("bedelos.adminuser")) {
+            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            return;
+        }
+
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
 
