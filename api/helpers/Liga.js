@@ -19,12 +19,36 @@ function calcLigaFromString(sLigaString) {
         return 'klsued';
     } else if (sLigaString.startsWith('kln')) {
         return 'klnord';
-    } else if (sLigaString.startsWith('bzli')) {
+    } else if (sLigaString.startsWith('bzLi')) {
         return 'bzLiga';
     } else if (sLigaString.startsWith('ol')) {
         return 'oberliga';
     }
     return sLigaString;
+}
+
+function getShort(sLiga) {
+    var ret = "";
+    switch(sLiga) {
+        case 'klsued': ret = "kls";
+            break;
+        case 'klnord': ret = "kln";
+            break;
+        case 'bzLiga': ret = "bzli";
+            break;
+        case 'oberliga': ret = "ol";
+            break;
+    }
+    return ret;
+}
+
+function pad(num, size) {
+    var s = "000" + num;
+    return s.substr(s.length-size);
+}
+
+function getGameIndex(liga, iIdx) {
+    return getShort(liga) + pad(iIdx, 3);
 }
 
 function calcLigaFromFilename(file) {
@@ -58,5 +82,6 @@ module.exports = {
     calcLigaFromFilename: calcLigaFromFilename,
     calcLigaFromString: calcLigaFromString,
     getFullLigaName: getFullLigaName,
-    isUpdateNeeded: isUpdateNeeded
+    isUpdateNeeded: isUpdateNeeded,
+    getGameIndex: getGameIndex
 };

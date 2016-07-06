@@ -67,14 +67,16 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
     post:
+      consumes:
+        - application/json
       produces:
         - text/html
       description:
-        Displays the spielplan
+        Adds a new game to Spielplan
       parameters:
-        - name: wertung
+        - name: spiel
           in: body
-          description: Wertung
+          description: Spiel-Details
           required: true
           schema:
             $ref: "#/definitions/GameObject"
@@ -534,22 +536,4 @@ definitions:
     description: Parameters for updating team relevant information
   GameObject:
     type: object
-    properties:
-      liga:
-        type: string
-        enum: ["oberliga", "bzLiga", "klnord", "klsued"]
-        description: Liga
-        example: oberliga
-      spieltag:
-        type: integer
-        description: Spieltag
-        example: 1
-      runde:
-        type: string
-        enum: ["vr", "rr"]
-        description: vr or rr (Vorrunde oder Rückrunde)
-        example: vr
-      datum:
-        type: string
-        description: Datum des Spieles
-        example: 2013-02-04T22:44:30.652Z
+    description: Parameters for adding game to spielplan

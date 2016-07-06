@@ -8,91 +8,210 @@ html
         script(src='/bedelos/scripts/moment.min.js')
         script(src='/bedelos/scripts/transition.js')
         script(src='/bedelos/scripts/collapse.js')
+        script(src='/bedelos/scripts/js.cookie.js')
+        script(src='/bedelos/scripts/jstree.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
         script(src='/bedelos/scripts/bootstrap-datetimepicker.js')
         script(src='/bedelos/scripts/bootstrap-typeahead.js')
         link(href='/bedelos/styles/bootstrap-datetimepicker.css', rel='stylesheet')
+        link(href='/bedelos/styles/jstree.style.css', rel='stylesheet')
         title BDL Online Spielplan Generator
 
     body(style={"font-family": 'Calibri'})
         h3 Spielplan Generator
+        input(id='nextGameIndexoberliga', type='hidden', value='#{spielplan.oberliga.nextGameIndex}')
+        input(id='nextGameIndexbzLiga', type='hidden', value='#{spielplan.bzLiga.nextGameIndex}')
+        input(id='nextGameIndexklnord', type='hidden', value='#{spielplan.klnord.nextGameIndex}')
+        input(id='nextGameIndexklsued', type='hidden', value='#{spielplan.klsued.nextGameIndex}')
 
         .container
             .row
                 .col-sm-2
                     label(for='liga') Liga
-                .col-sm-2
+                .col-sm-4
                     .form-group
-                        select.form-control(id='liga')
+                        select.form-control(id='liga', onchange='updateGameIndex()')
                             option(value='oberliga') Oberliga
                             option(value='bzLiga') Bezirksliga
                             option(value='klnord') Kreisliga Nord
                             option(value='klsued') Kreisliga Süd
             .row
                 .col-sm-2
-                    label(for='datetimepicker1') Spieltag
+                    label(for='liga') Spiel-Index
+                .col-sm-6
+                    input(id='gameIndex', type='text', disabled)
+            .row
+                .col-sm-2
+                    label Runde
+                .col-sm-6
+                    .form-group
+                        label(for='vr')
+                            input(type='radio', name='runde', id='vr')
+                            |  Vorrunde
+                        label(for='rr')
+                            input(type='radio', name='runde', id='rr')
+                            |  Rückrunde
+            .row
+                .col-sm-2
+                    label(for='spieltag') Spieltag
                 .col-sm-2
                     .form-group
                         select.form-control(id='spieltag')
-                            option 1
-                            option 2
-                            option 3
-                            option 4
-                            option 5
-                            option 6
-                            option 7
-                            option 8
-                            option 9
-                            option 10
-                            option 11
-                            option 12
-                            option 13
-                            option 14
-                            option 15
-                            option 16
-                            option 17
-                            option 18
-                            option 19
-                            option 20
-                            option 21
-                            option 22
-                            option 23
-                            option 24
-                            option 25
-                            option 26
-                            option 27
-                            option 28
+                            option(value=1) 1
+                            option(value=2) 2
+                            option(value=3) 3
+                            option(value=4) 4
+                            option(value=5) 5
+                            option(value=6) 6
+                            option(value=7) 7
+                            option(value=8) 8
+                            option(value=9) 9
+                            option(value=10) 10
+                            option(value=11) 11
+                            option(value=12) 12
+                            option(value=13) 13
+                            option(value=14) 14
+                            option(value=15) 15
+                            option(value=16) 16
+                            option(value=17) 17
+                            option(value=18) 18
+                            option(value=19) 19
+                            option(value=20) 20
+                            option(value=21) 21
+                            option(value=22) 22
+                            option(value=23) 23
+                            option(value=24) 24
+                            option(value=25) 25
+                            option(value=26) 26
+                            option(value=27) 27
+                            option(value=28) 28
             .row
                 .col-sm-2
                     label(for='datetimepicker1') Datum
-                .col-sm-2
+                .col-sm-3
                     .form-group
                         .input-group.date(id='datetimepicker1')
                             input.form-control(type='text')
                             span.input-group-addon
-                            span.glyphicon.glyphicon-calendar
+                                span.glyphicon.glyphicon-calendar
             .row
                 .col-sm-2
                     label(for='heim') Heim
-                .col-sm-6
+                .col-sm-3
                     .form-group
                         input.typeahead(id='heim', type='text', data-provide='typeahead')
+                .col-sm-2
+                    .form-group
+                        label(for='spielfrei')
+                            input(id='spielfrei', type='checkbox', onclick='removeGuestField()')
+                            |  Spielfrei?
             .row
                 .col-sm-2
                     label(for='heim') Gast
-                .col-sm-2
+                .col-sm-3
                     .form-group
                         input.typeahead(id='gast', type='text', data-provide='typeahead')
+            .row
+                .col-sm-2
+                    nbsp
                 .col-sm-2
                     .form-group
-                        input(id='save', type='button', value='Speichern')
+                        input(id='save', type='button', value='Speichern', onclick='submit()')
+
+    .container
+        .row
+            .col-sm-12
+                div
+                    b Spielplan
+                div(id='jstree_demo_div')
+                    ul
+                        each liga, i in spielplan
+                            li(data-jstree='{"icon":"glyphicon glyphicon-globe"}')= liga.name
+                                ul
+                                    li(data-jstree='{"icon":"glyphicon glyphicon-arrow-right"}') Vorrunde
+                                        ul
+                                            each spieltag, i in liga.vr
+                                                li(data-jstree='{"icon":"glyphicon glyphicon-calendar"}')= i
+                                                    ul
+                                                        each spiel, i in spieltag
+                                                            if (spiel.spielfrei)
+                                                                if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                        | Spielfrei: #{teams[spiel.spielfrei].name}
+                                                                else
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                        | Spielfrei: #{spiel.spielfrei}
+                                                            else
+                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameId='#{spiel.id}')
+                                                                    | #{spiel.datum}:
+                                                                    | <b>#{teams[spiel.heim].name}</b>
+                                                                    | vs.
+                                                                    | <b>#{teams[spiel.gast].name}</b>
+                                                                    | &nbsp;&nbsp;(#{spiel.id})
+                                    li(data-jstree='{"icon":"glyphicon glyphicon-arrow-left"}') Rückrunde
+                                        ul
+                                            each spieltag, i in liga.rr
+                                                li(data-jstree='{"icon":"glyphicon glyphicon-calendar"}')= i
+                                                    ul
+                                                        each spiel, i in spieltag
+                                                            if (spiel.spielfrei)
+                                                                if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                        | Spielfrei: #{teams[spiel.spielfrei].name}
+                                                                else
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                        | Spielfrei: #{spiel.spielfrei}
+                                                            else
+                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameId='#{spiel.id}')
+                                                                    | #{spiel.datum}:
+                                                                    | <b>#{teams[spiel.heim].name}</b>
+                                                                    | vs.
+                                                                    | <b>#{teams[spiel.gast].name}</b>
+                                                                    | &nbsp;&nbsp;(#{spiel.id})
 
     script(type='text/javascript').
-        $(function () {
-            $('#datetimepicker1').datetimepicker({
-                format: 'DD.MM.YYYY'
+        function submit() {
+            var bVorrunde = $('#vr').prop('checked');
+            var oData = {
+                'liga': $('#liga').val(),
+                'spieltag': $('#spieltag').val(),
+                'runde': (bVorrunde ? "vr" : "rr"),
+                'datum': $('#datetimepicker1').data().date,
+                'spielIndex': $('#gameIndex').val()
+            };
+            if($('#spielfrei').prop('checked')) {
+                var heim = $('#heim').typeahead('getActive');
+                if (heim) {
+                    oData.spielfrei = heim.id;
+                }
+            } else {
+                var heim = $('#heim').typeahead('getActive');
+                var gast = $('#gast').typeahead('getActive');
+                oData.heim = heim.id;
+                oData.gast = gast.id;
+            }
+            Cookies.set('bedelos.spielplan.generator', oData);
+
+            console.log(oData);
+
+            $.ajax({
+                type: 'POST',
+                url: "/bedelos/spielplan/generator",
+                data: oData,
+                dataType: 'json',
+                success: function () {
+                    location.href = "/bedelos/spielplan/generator"
+                }
             });
-        });
+        };
+        function removeGuestField() {
+            $('#gast').val("");
+            $('#gast').prop('disabled', $('#spielfrei').prop('checked'))
+        };
+        function updateGameIndex() {
+            var sLiga = $('#liga option:selected').val();
+            $('#gameIndex').val($('#nextGameIndex'+sLiga).val());
+        };
 
     script(type='text/javascript').
         var $input = $('.typeahead');
@@ -101,17 +220,31 @@ html
             source: aTeams,
             autoSelect: true
         });
-        $input.change(function () {
-            var current = $input.typeahead("getActive");
-            if (current) {
-                // Some item from your model is active!
-                if (current.name == $input.val()) {
-                    // This means the exact match is found. Use toLowerCase() if you want case insensitive match.
-                } else {
-                    // This means it is only a partial match, you can either add a new item
-                    // or take the active if you don't want new items
-                }
-            } else {
-                // Nothing is active so it is a new value (or maybe empty value)
-            }
+
+        var sCookie = Cookies.get("bedelos.spielplan.generator");
+        var oData = (sCookie) ? JSON.parse(sCookie) : {
+            liga: "oberliga",
+            runde: "vr",
+            datum: moment().format('dd. DD.MM.YYYY')
+        };
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+                format: 'dd. DD.MM.YYYY',
+                defaultDate: moment(oData.datum, 'dd. DD.MM.YYYY').toDate()
+            });
         });
+        $(document).ready(function () {
+            $('#liga option[value=' + oData.liga + ']').prop('selected', true);
+            $('#spieltag option[value=' + oData.spieltag + ']').prop('selected', true);
+            $('#vr').prop('checked', (oData.runde === "vr"));
+            $('#rr').prop('checked', (oData.runde === "rr"));
+            //$('#datetimepicker1').datetimepicker("setValue", oData.datum);
+            $('#heim').focus();
+            updateGameIndex();
+        });
+
+        $(function () {
+            $('#jstree_demo_div').jstree();
+            $('#jstree_demo_div').jstree("open_all")
+        });
+
