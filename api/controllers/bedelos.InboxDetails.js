@@ -18,6 +18,7 @@ function inboxDetails (req, res) {
         var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
 
         if (!oSessionData) {
+            res.cookie('BDL_SESSION_REDIRECT', req.url);
             res.redirect("/bedelos/login");
             return;
         }

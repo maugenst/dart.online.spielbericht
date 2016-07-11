@@ -9,7 +9,8 @@ html
             table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px'})
                 thead
                     tr
-                        th(colspan='2')= teams[teamId].name
+                        th(align='right') #{teams[teamId].name}
+                        th(align='left', style={'font-size': 'smaller'}) TeamID: #{teamId}
                     tr(style={"background-color": '#AFD3E0'})
                         th.left(width='50%') Spiellokal
                         th.left(width='50%') Teamvertreter + Captain
