@@ -54,6 +54,41 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /spielplan/generator/spiel/{spielindex}:
+    x-swagger-router-controller: bedelos.SpielplanGenerator
+    get:
+      produces:
+        - text/html
+      description:
+        Displays an Input Form to enter new Games to a new Spielplan
+      parameters:
+        - name: spielindex
+          type: string
+          description: Index of game
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    delete:
+      produces:
+        - text/html
+      description:
+        Deletes a Game from the new Spielplan
+      parameters:
+        - name: spielindex
+          type: string
+          description: Index of game
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /spielplan/generator:
     x-swagger-router-controller: bedelos.SpielplanGenerator
     get:

@@ -8,6 +8,7 @@ html
         link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
         script(src='/bedelos/scripts/jquery-2.1.4.min.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/js.cookie.js')
         script(src='/bedelos/scripts/bootstrap-editable.min.js')
         title BDL Online Spielplan - Spieler
         script(type='text/javascript').
@@ -16,7 +17,9 @@ html
                     url: '/bedelos/login',
                     type: 'DELETE',
                     success: function(result) {
-                        location.href = "/bedelos/login";
+                        var sURL = Cookies.get("BDL_SESSION_REDIRECT");
+                        Cookies.remove("BDL_SESSION_REDIRECT");
+                        location.href = (sURL) ? sURL : "/bedelos/login";
                     }
                 }).fail(function () {
                     $('.form-group').removeClass('has-success').addClass('has-error');
@@ -33,6 +36,9 @@ html
                     $('.form-group').removeClass('has-error').addClass('has-success');
                     $('#helpBlock').text("INFO: Login war erfolgreich.");
                     $('#helpBlock').css('visibility', 'visible');
+                    var sURL = Cookies.get("BDL_SESSION_REDIRECT");
+                    Cookies.remove("BDL_SESSION_REDIRECT");
+                    location.href = (sURL) ? sURL : "/bedelos/login";
                 }, 'json').fail(function() {
                     $('.form-group').removeClass('has-success').addClass('has-error');
                     $('#helpBlock').text("ERROR: Login war nicht erfolgreich.");
@@ -59,7 +65,7 @@ html
                         if (session && session.username)
                             label= session.username
                         else
-                            input.form-control(type='text', id='username' aria-describedby='username', placeholder='bdl000')
+                            input.form-control(type='text', id='username' aria-describedby='username', placeholder='bdl000', autofocus)
             tr
                 td
                     .form-group

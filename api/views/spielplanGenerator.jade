@@ -5,20 +5,19 @@ html
 
         link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
         script(src='/bedelos/scripts/jquery-2.1.4.min.js')
-        script(src='/bedelos/scripts/moment.min.js')
+        script(src='/bedelos/scripts/moment-with-locales.js')
         script(src='/bedelos/scripts/transition.js')
         script(src='/bedelos/scripts/collapse.js')
         script(src='/bedelos/scripts/js.cookie.js')
         script(src='/bedelos/scripts/jstree.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
-        script(src='/bedelos/scripts/bootstrap-datetimepicker.js')
+        script(src='/bedelos/scripts/bootstrap-datepicker.js')
+        script(src='/bedelos/locales/bootstrap-datepicker.de.min.js')
         script(src='/bedelos/scripts/bootstrap-typeahead.js')
-        link(href='/bedelos/styles/bootstrap-datetimepicker.css', rel='stylesheet')
         link(href='/bedelos/styles/jstree.style.css', rel='stylesheet')
         title BDL Online Spielplan Generator
 
     body(style={"font-family": 'Calibri'})
-        h3 Spielplan Generator
         input(id='nextGameIndexoberliga', type='hidden', value='#{spielplan.oberliga.nextGameIndex}')
         input(id='nextGameIndexbzLiga', type='hidden', value='#{spielplan.bzLiga.nextGameIndex}')
         input(id='nextGameIndexklnord', type='hidden', value='#{spielplan.klnord.nextGameIndex}')
@@ -26,9 +25,9 @@ html
 
         .container
             .row
-                .col-sm-2
+                .col-xs-2
                     label(for='liga') Liga
-                .col-sm-4
+                .col-xs-4
                     .form-group
                         select.form-control(id='liga', onchange='updateGameIndex()')
                             option(value='oberliga') Oberliga
@@ -36,14 +35,14 @@ html
                             option(value='klnord') Kreisliga Nord
                             option(value='klsued') Kreisliga Süd
             .row
-                .col-sm-2
+                .col-xs-2
                     label(for='liga') Spiel-Index
-                .col-sm-6
+                .col-xs-6
                     input(id='gameIndex', type='text', disabled)
             .row
-                .col-sm-2
+                .col-xs-2
                     label Runde
-                .col-sm-6
+                .col-xs-6
                     .form-group
                         label(for='vr')
                             input(type='radio', name='runde', id='vr')
@@ -52,9 +51,9 @@ html
                             input(type='radio', name='runde', id='rr')
                             |  Rückrunde
             .row
-                .col-sm-2
+                .col-xs-2
                     label(for='spieltag') Spieltag
-                .col-sm-2
+                .col-xs-2
                     .form-group
                         select.form-control(id='spieltag')
                             option(value=1) 1
@@ -86,44 +85,45 @@ html
                             option(value=27) 27
                             option(value=28) 28
             .row
-                .col-sm-2
-                    label(for='datetimepicker1') Datum
-                .col-sm-3
+                .col-xs-2
+                    label(for='datepicker') Datum
+                .col-xs-3
                     .form-group
-                        .input-group.date(id='datetimepicker1')
-                            input.form-control(type='text')
-                            span.input-group-addon
-                                span.glyphicon.glyphicon-calendar
+                        input(type="text", placeholder="Klick für Kalender" id="datepicker")
             .row
-                .col-sm-2
+                .col-xs-2
                     label(for='heim') Heim
-                .col-sm-3
+                .col-xs-3
                     .form-group
                         input.typeahead(id='heim', type='text', data-provide='typeahead')
-                .col-sm-2
+                .col-xs-2
                     .form-group
                         label(for='spielfrei')
                             input(id='spielfrei', type='checkbox', onclick='removeGuestField()')
                             |  Spielfrei?
             .row
-                .col-sm-2
+                .col-xs-2
                     label(for='heim') Gast
-                .col-sm-3
+                .col-xs-3
                     .form-group
                         input.typeahead(id='gast', type='text', data-provide='typeahead')
             .row
-                .col-sm-2
+                .col-xs-2
                     nbsp
-                .col-sm-2
+                .col-xs-2
                     .form-group
                         input(id='save', type='button', value='Speichern', onclick='submit()')
+                .col-xs-2
+                    .form-group
+                        input(id='delete', type='button', value='Delete', onclick='deleteEntry()', style={'visibility':'hidden'})
+
 
     .container
         .row
-            .col-sm-12
+            .col-xs-12
                 div
                     b Spielplan
-                div(id='jstree_demo_div')
+                div(id='jstree_spielplan')
                     ul
                         each liga, i in spielplan
                             li(data-jstree='{"icon":"glyphicon glyphicon-globe"}')= liga.name
@@ -136,13 +136,17 @@ html
                                                         each spiel, i in spieltag
                                                             if (spiel.spielfrei)
                                                                 if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                        | #{spiel.datum}:
                                                                         | Spielfrei: #{teams[spiel.spielfrei].name}
+                                                                        | &nbsp;&nbsp;(#{spiel.id})
                                                                 else
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                        | #{spiel.datum}:
                                                                         | Spielfrei: #{spiel.spielfrei}
+                                                                        | &nbsp;&nbsp;(#{spiel.id})
                                                             else
-                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameId='#{spiel.id}')
+                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameDetails='#{gamesMap[spiel.id]}')
                                                                     | #{spiel.datum}:
                                                                     | <b>#{teams[spiel.heim].name}</b>
                                                                     | vs.
@@ -156,13 +160,17 @@ html
                                                         each spiel, i in spieltag
                                                             if (spiel.spielfrei)
                                                                 if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                        | #{spiel.datum}:
                                                                         | Spielfrei: #{teams[spiel.spielfrei].name}
+                                                                        | &nbsp;&nbsp;(#{spiel.id})
                                                                 else
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameId='#{spiel.id}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                        | #{spiel.datum}:
                                                                         | Spielfrei: #{spiel.spielfrei}
+                                                                        | &nbsp;&nbsp;(#{spiel.id})
                                                             else
-                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameId='#{spiel.id}')
+                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameDetails='#{gamesMap[spiel.id]}')
                                                                     | #{spiel.datum}:
                                                                     | <b>#{teams[spiel.heim].name}</b>
                                                                     | vs.
@@ -170,13 +178,16 @@ html
                                                                     | &nbsp;&nbsp;(#{spiel.id})
 
     script(type='text/javascript').
+
+        moment.locale('de');
+
         function submit() {
             var bVorrunde = $('#vr').prop('checked');
             var oData = {
                 'liga': $('#liga').val(),
                 'spieltag': $('#spieltag').val(),
                 'runde': (bVorrunde ? "vr" : "rr"),
-                'datum': $('#datetimepicker1').data().date,
+                'datum': $('#datepicker').val(),
                 'spielIndex': $('#gameIndex').val()
             };
             if($('#spielfrei').prop('checked')) {
@@ -204,6 +215,17 @@ html
                 }
             });
         };
+
+        function deleteEntry() {
+            $.ajax({
+                type: 'DELETE',
+                url: "/bedelos/spielplan/generator/spiel/" + $('#gameIndex').val(),
+                dataType: 'json',
+                success: function () {
+                    location.href = "/bedelos/spielplan/generator"
+                }
+            });
+        };
         function removeGuestField() {
             $('#gast').val("");
             $('#gast').prop('disabled', $('#spielfrei').prop('checked'))
@@ -213,7 +235,6 @@ html
             $('#gameIndex').val($('#nextGameIndex'+sLiga).val());
         };
 
-    script(type='text/javascript').
         var $input = $('.typeahead');
         var aTeams = JSON.parse("#{sTeams}".replace(/&quot;/g,'"'));
         $input.typeahead({
@@ -225,26 +246,56 @@ html
         var oData = (sCookie) ? JSON.parse(sCookie) : {
             liga: "oberliga",
             runde: "vr",
-            datum: moment().format('dd. DD.MM.YYYY')
+            datum: moment().format('DD.MM.YYYY')
         };
-        $(function () {
-            $('#datetimepicker1').datetimepicker({
-                format: 'dd. DD.MM.YYYY',
-                defaultDate: moment(oData.datum, 'dd. DD.MM.YYYY').toDate()
-            });
-        });
         $(document).ready(function () {
+            var that = this;
+            $('#datepicker').datepicker({
+                format: "D. dd.mm.yyyy",
+                todayBtn: "linked",
+                todayHighlight: true,
+                weekStart: 1,
+                language: 'de'
+            });
+
             $('#liga option[value=' + oData.liga + ']').prop('selected', true);
             $('#spieltag option[value=' + oData.spieltag + ']').prop('selected', true);
             $('#vr').prop('checked', (oData.runde === "vr"));
             $('#rr').prop('checked', (oData.runde === "rr"));
-            //$('#datetimepicker1').datetimepicker("setValue", oData.datum);
+            $('#datepicker').datepicker("update", oData.datum ).change();
             $('#heim').focus();
             updateGameIndex();
+
+            $('#jstree_spielplan').jstree().bind("select_node.jstree", function (NODE, REF_NODE) {
+                var oSelectedNode = $('#jstree_spielplan').jstree().get_json($('#jstree_spielplan').jstree().get_selected());
+                var oData = oSelectedNode.data.gamedetails;
+                $('#liga option[value=' + oData.liga + ']').prop('selected', true);
+                $('#gameIndex').val(oData.id);
+                var iSpieltag = oData.spieltag.split('_')[1];
+                $('#spieltag option[value=' + iSpieltag + ']').prop('selected', true);
+                $('#vr').prop('checked', (oData.runde === "vr"));
+                $('#rr').prop('checked', (oData.runde === "rr"));
+                $('#datepicker').datepicker("update", oData.datum ).change();
+                if (oData.spielfrei) {
+                    $('#heim').val(oData.spielfreiName);
+                    $('#spielfrei').prop('checked', 'checked');
+                    $('#gast').val("");
+                    $('#gast').prop('disabled', $('#spielfrei').prop('checked'))
+                } else {
+                    $('#heim').val(oData.heimName);
+                    $('#gast').val(oData.gastName);
+                }
+                $('#delete').css('visibility', 'visible');
+                $("#liga")[0].scrollIntoView();
+                $('#heim').focus();
+                $('#heim').select();
+            });
+            $('#jstree_spielplan').jstree("open_all");
         });
 
-        $(function () {
-            $('#jstree_demo_div').jstree();
-            $('#jstree_demo_div').jstree("open_all")
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27) { // escape key maps to keycode `27`
+                location.href = "/bedelos/spielplan/generator"
+            }
         });
 

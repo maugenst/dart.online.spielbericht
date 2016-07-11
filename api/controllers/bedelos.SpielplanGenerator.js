@@ -12,21 +12,30 @@ var _ = require('lodash');
 var logger = require('../helpers/Logger');
 var ligaHelper = require('../helpers/Liga');
 var session = require('../helpers/Session');
+var Spielplan = require('../helpers/Spielplan');
+
+function checkUserAuthentication(req, res) {
+    var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+    if (!oSessionData) {
+        res.cookie('BDL_SESSION_REDIRECT', req.url);
+        res.redirect("/bedelos/login");
+        return false;
+    }
+
+    if (oSessionData.username !== config.get("bedelos.adminuser")) {
+        res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+        return false;
+    }
+    return true;
+}
 
 function addToSpielplan (req, res) {
     try {
 
-        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
-
-        if (!oSessionData) {
-            res.redirect("/bedelos/login");
+        if (!checkUserAuthentication(req, res)) {
             return;
-        }
-
-        if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
-            return;
-        }
+        };
 
         var oGamePayload = req.swagger.params.spiel.originalValue;
 
@@ -38,24 +47,46 @@ function addToSpielplan (req, res) {
         }
 
         var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
 
-        var oSpiel = {
-            "id": oGamePayload.spielIndex,
-            "datum": oGamePayload.datum
-        };
-        if (oGamePayload.spielfrei) {
-            oSpiel.spielfrei = oGamePayload.spielfrei
-        } else {
-            oSpiel.heim = oGamePayload.heim;
-            oSpiel.gast = oGamePayload.gast;
-        }
-        oSpielplan[oGamePayload.liga][oGamePayload.runde]['spieltag_'+oGamePayload.spieltag].push(oSpiel);
-        oSpielplan[oGamePayload.liga].iCurrentGameIndex++;
-        oSpielplan[oGamePayload.liga].nextGameIndex = ligaHelper.getGameIndex(oGamePayload.liga, oSpielplan[oGamePayload.liga].iCurrentGameIndex);
+        var spielplanHelper = new Spielplan(oSpielplan, oTeams);
+        spielplanHelper.addGame(oGamePayload);
+        spielplanHelper.increaseGameIndex(oGamePayload.liga);
 
-        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', oSpielplan);
+        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
 
         res.status(200).json(oGamePayload);
+    } catch (error) {
+        res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
+    }
+}
+
+function deleteFromSpielplan (req, res) {
+    try {
+
+        if (!checkUserAuthentication(req, res)) {
+            return;
+        };
+
+        var sGameId = req.swagger.params.spielindex.originalValue;
+
+        var sPath = path.resolve(config.get("bedelos.datapath"));
+
+        if (!fs.existsSync(sPath + '/SpielplanNew.json')) {
+            throw new Error("No new Spielplan found to remove data...");
+        }
+
+        var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
+        
+        var spielplanHelper = new Spielplan(oSpielplan, oTeams);
+        spielplanHelper.removeGame(sGameId);
+
+        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
+
+        res.status(200).json("OK");
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
 
@@ -66,38 +97,27 @@ function addToSpielplan (req, res) {
 function getSpielplan (req, res) {
     try {
 
-        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
-
-        if (!oSessionData) {
-            res.redirect("/bedelos/login");
+        if (!checkUserAuthentication(req, res)) {
             return;
-        }
-
-        if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
-            return;
-        }
+        };
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
-
+        var spielplanHelper;
         if (!fs.existsSync(sPath + '/SpielplanNew.json')) {
             var oSpielplan = require(sPath + '/Spielplan.json');
-            for(var liga in oSpielplan) {
-                for (var spieltag in oSpielplan[liga].vr) {
-                    oSpielplan[liga].vr[spieltag] = [];
-                }
-                for (var spieltag in oSpielplan[liga].rr) {
-                    oSpielplan[liga].rr[spieltag] = [];
-                }
-                oSpielplan[liga].iCurrentGameIndex = 1;
-                oSpielplan[liga].nextGameIndex = ligaHelper.getGameIndex(liga, oSpielplan[liga].iCurrentGameIndex);
-            }
-            jsonfile.writeFileSync(sPath + '/SpielplanNew.json', oSpielplan);
+            spielplanHelper = new Spielplan(oSpielplan, oTeams);
+            spielplanHelper.initialize();            
+        } else {
+            var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+            spielplanHelper = new Spielplan(oSpielplan, oTeams);
         }
 
-        var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+        if (req.swagger.params && req.swagger.params.spielindex) {
+            var sRequestedIndex = req.swagger.params.spielindex.originalValue;
+        }
 
+        // aTeams is just needed for typeahead fields in form
         var aTeams = [];
         for(var team in oTeams) {
             aTeams.push({
@@ -111,7 +131,7 @@ function getSpielplan (req, res) {
             teams: oTeams,
             sTeams: JSON.stringify(aTeams),
             spielplan: oSpielplan,
-            saison: config.get("bedelos.saison")
+            gamesMap: spielplanHelper.getGamesMapStringified()
         });
 
         res.status(200).send(html);
@@ -125,5 +145,6 @@ function getSpielplan (req, res) {
 
 module.exports = {
     get: getSpielplan,
-    post: addToSpielplan
+    post: addToSpielplan,
+    delete: deleteFromSpielplan
 };
