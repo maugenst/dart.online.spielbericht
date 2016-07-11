@@ -10,6 +10,7 @@ var walker = require('walker');
 var tabelle = require('../helpers/Tabelle');
 var ligaHelper = require('../helpers/Liga');
 var logger = require('../helpers/Logger');
+var session = require('../helpers/Session');
 
 function rescanAllTables (req, res) {
     try {

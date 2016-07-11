@@ -7,6 +7,7 @@ var os = require('os');
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var logger = require('../helpers/Logger');
+var session = require('../helpers/Session');
 
 
 function checkUserAuthentication(req, res) {

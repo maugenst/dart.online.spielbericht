@@ -10,6 +10,7 @@ var walker = require('walker');
 var statistics = require('../helpers/Statistik');
 var ligaHelper = require('../helpers/Liga');
 var logger = require('../helpers/Logger');
+var session = require('../helpers/Session');
 
 function rescanAllStatistics (req, res) {
     try {
