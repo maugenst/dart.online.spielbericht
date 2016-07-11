@@ -32,7 +32,7 @@ function addToPlayers (req, res) {
         if (!checkUserAuthentication(req, res)) {
             return;
         };
-
+        var teamId = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
         oTeams[teamId].mitglieder.push({
             name: req.swagger.params.name.originalValue,
             vorname: req.swagger.params.vorname.originalValue,

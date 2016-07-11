@@ -36,6 +36,8 @@ function listPlayers (req, res) {
             return;
         };
 
+        var teamId = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
+        
         for (var i = 0; i<oTeams[teamId].mitglieder.length; i++) {
             if (oTeams[teamId].mitglieder[i].encName === req.swagger.params.encname.originalValue &&
                 oTeams[teamId].mitglieder[i].encVorname === req.swagger.params.encvorname.originalValue) {
