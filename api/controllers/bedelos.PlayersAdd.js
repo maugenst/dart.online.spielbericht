@@ -17,7 +17,7 @@ function checkUserAuthentication(req, res) {
         return false;
     }
 
-    if (oSessionData.username !== config.get("bedelos.adminuser")) {
+    if (oSessionData.username === config.get("bedelos.adminuser")) {
         res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
         return false;
     }
