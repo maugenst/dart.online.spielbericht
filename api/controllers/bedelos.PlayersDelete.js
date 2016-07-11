@@ -5,6 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var jsonfile = require('jsonfile');
+var jade = require('jade');
 jsonfile.spaces = 4;
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');

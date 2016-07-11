@@ -8,6 +8,7 @@ var jsonfile = require('jsonfile');
 var walker = require('walker');
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
+var jade = require('jade');
 
 function inboxDelete (req, res) {
     try {

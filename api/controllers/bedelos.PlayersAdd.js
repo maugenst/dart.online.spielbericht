@@ -6,6 +6,7 @@ var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
+var jade = require('jade');
 
 function checkUserAuthentication(req, res) {
     var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);

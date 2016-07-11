@@ -16,6 +16,7 @@ var logger = require('../helpers/Logger');
 var _ = require('lodash');
 var url = require('url');
 var session = require('../helpers/Session');
+var jade = require('jade');
 
 function gameDetails(gameId, oSpielplan, liga){
     for (var spieltag in oSpielplan[liga].vr) {
