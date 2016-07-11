@@ -40,6 +40,19 @@ function setResult(oCurrentResult, heim, gast) {
 
 function wertung (req, res) {
     try {
+
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+        if (!oSessionData) {
+            res.redirect("/bedelos/login");
+            return;
+        }
+
+        if (oSessionData.username !== config.get("bedelos.adminuser")) {
+            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            return;
+        }
+        
         var uniqueGameId = uid.generate();
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sTablesPath = path.resolve(sPath + '/tabellen/');

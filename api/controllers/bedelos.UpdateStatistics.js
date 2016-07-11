@@ -13,12 +13,10 @@ var logger = require('../helpers/Logger');
 
 function rescanAllStatistics (req, res) {
     try {
-        var username;
-        if (req.headers && req.headers.authorization) {
-            username = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString("ascii").split(':')[0];
-            if (username !== 'bdladmin') {
-                throw new Error("You are not allowed to call this function.");
-            }
+        var username = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
+
+        if (username !== config.get("bedelos.adminuser")) {
+            throw new Error("You are not allowed to call this function.");
         }
 
         var sPath = path.resolve(config.get("bedelos.datapath"));

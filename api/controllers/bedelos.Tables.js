@@ -16,7 +16,6 @@ function getTable (req, res) {
     try {
         var username = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
 
-
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
         var oTeams = require(sPath + '/Teams.json');
