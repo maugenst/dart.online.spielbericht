@@ -3,7 +3,7 @@
 var util = require('util');
 var path = require('path');
 var config = require('config');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var walker = require('walker');
@@ -23,7 +23,7 @@ function rescanAllStatistics (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
         var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
-        var liga = req.swagger.params.liga.originalValue;
+        var liga = req.swagger.params.liga.raw;
 
         // Reset Table(s) and Scan all necessary results
         if (liga === 'all') {
@@ -38,7 +38,7 @@ function rescanAllStatistics (req, res) {
         var aProcessedFiles = [];
 
         walker(sResultsPath).on('file', function(file, stat) {
-            if (ligaHelper.isUpdateNeeded(file, req.swagger.params.liga.originalValue)) {
+            if (ligaHelper.isUpdateNeeded(file, req.swagger.params.liga.raw)) {
                 statistics.update({
                     currentResults: jsonfile.readFileSync(file),
                     liga: ligaHelper.calcLigaFromFilename(file),
@@ -47,7 +47,7 @@ function rescanAllStatistics (req, res) {
                 aProcessedFiles.push(file);
             }
         }).on('end', function() {
-            var html = jade.renderFile("api/views/updates.jade", {
+            var html = pug.renderFile("api/views/updates.jade", {
                 processedFiles: aProcessedFiles
             });
 

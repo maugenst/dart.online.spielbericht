@@ -23,30 +23,30 @@ html
                     th.left(rowspan='2') Pl.
                     th.left(rowspan='2') Spieler
                     th.left(rowspan='2') Verein
-                    th.center 3:0<br>5
-                    th.center 3:1<br>4
-                    th.center 3:2<br>3
-                    th.center 2:3<br>2
-                    th.center 1:3<br>1
-                    th.center 0:3<br>0
-                    th.center HF<br>1
-                    th.center SL<br>1
-                    th.center Max<br>1
-                    th.center(rowspan='2') Pkt
+                    th.center.smaller 3:0<br>5
+                    th.center.smaller 3:1<br>4
+                    th.center.smaller 3:2<br>3
+                    th.center.smaller 2:3<br>2
+                    th.center.smaller 1:3<br>1
+                    th.center.smaller 0:3<br>0
+                    th.center.smaller HF<br>1
+                    th.center.smaller SL<br>1
+                    th.center.smaller Max<br>1
+                    th.center.smaller(rowspan='2') Pkt
             tbody
                 each player, i in ranking
                     - var place = i + 1;
-                    tr
+                    tr(class=(i % 2 == 0) ? 'tdodd' : 'tdeven')
                         td.left.smaller #{place}.
                         td.left.xsmall.bold= player.name
                         td.left.xsmall.bold= teams[player.team].name
-                        td.center.smaller= player['3:0']
-                        td.center.smaller= player['3:1']
-                        td.center.smaller= player['3:2']
-                        td.center.smaller= player['2:3']
-                        td.center.smaller= player['1:3']
-                        td.center.smaller= player['0:3']
-                        td.center.smaller= player.hf
-                        td.center.smaller= player.sl
-                        td.center.smaller= player.max
+                        td.center.smaller= (player['3:0']!==0) ? player['3:0'] : nbsp
+                        td.center.smaller= (player['3:1']!==0) ? player['3:1'] : nbsp
+                        td.center.smaller= (player['3:2']!==0) ? player['3:2'] : nbsp
+                        td.center.smaller= (player['2:3']!==0) ? player['2:3'] : nbsp
+                        td.center.smaller= (player['1:3']!==0) ? player['1:3'] : nbsp
+                        td.center.smaller= (player['0:3']!==0) ? player['0:3'] : nbsp
+                        td.center.smaller= (player.hf!==0) ? player.hf : nbsp
+                        td.center.smaller= (player.sl!==0) ? player.sl : nbsp
+                        td.center.smaller= (player.max!==0) ? player.max : nbsp
                         td.center.smaller= player.punkte

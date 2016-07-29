@@ -50,17 +50,17 @@ html
                                     td= spiel.gast
                                 if (results[spiel.id])
                                     td(align='center')
-                                        a(href='/bedelos/ergebnisse/#{spiel.id}') Details
+                                        a(href='/bedelos/ergebnisse/'+spiel.id) Details
                                         if (username === 'bdladmin')
                                             nbsp |
-                                            a(href='#', id="wertung_#{spiel.id}", data-type="select",
-                                                data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel werten:") Werten
+                                            a(href='#', id="wertung_"+spiel.id, data-type="select",
+                                                data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
                                 else
                                     td(align='center') Details
                                         if (username === 'bdladmin')
                                             nbsp |
-                                            a(href='#', id="wertung_#{spiel.id}", data-type="select",
-                                                data-url="/bedelos/wertung/#{spiel.id}", data-pk="#{spiel.id}", data-title="Spiel werten:") Werten
+                                            a(href='#', id="wertung_"+spiel.id, data-type="select",
+                                                data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
 
                 br
     script(type='text/javascript').

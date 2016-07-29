@@ -7,7 +7,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var request = bbPromise.promisifyAll(require('request'));
 var logger = require('../helpers/Logger');
@@ -50,7 +50,7 @@ function listInbox (req, res) {
 
         //jsonfile.writeFileSync(sTeamsFilename, oTeams);
 
-        var html = jade.renderFile("api/views/locationDetails.jade", {
+        var html = pug.renderFile("api/views/locationDetails.jade", {
             pretty: true,
             teams: oTeams
         });

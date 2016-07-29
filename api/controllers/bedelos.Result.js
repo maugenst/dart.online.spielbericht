@@ -5,7 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 var uid = require('../helpers/UID');
@@ -18,21 +18,21 @@ function uploadResults (req, res) {
         var uniqueGameId = uid.generate();
         var sPath = path.resolve(config.get("bedelos.datapath") + "/inbox/" + uniqueGameId + "_");
         var sPicturePath = path.resolve(config.get("bedelos.datapath") + "/pictures/" + uniqueGameId + "_");
-        var sSpielId = req.swagger.params.spielId.originalValue || new Date().getTime();
-        var picture = req.swagger.params.picture.originalValue;
+        var sSpielId = req.swagger.params.spielId.raw || new Date().getTime();
+        var picture = req.swagger.params.picture.raw;
         var sPictureFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
         fs.writeFileSync(sPictureFilename, picture.buffer);
-        var tcHeim = req.swagger.params.tcHeim.originalValue;
+        var tcHeim = req.swagger.params.tcHeim.raw;
 
-        var tcGast = req.swagger.params.tcGast.originalValue;
-        var sResult = req.swagger.params.res.originalValue;
+        var tcGast = req.swagger.params.tcGast.raw;
+        var sResult = req.swagger.params.res.raw;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
         oResult.picture = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
         var sJsonFilename = path.resolve(sPath + sSpielId + ".json");
         jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 2});
 
-        var html = jade.renderFile("api/views/mail.jade", {
+        var html = pug.renderFile("api/views/mail.jade", {
             pretty: true,
             message: "Der Spielberichtsbogen wurde an die BDL gesendet.",
             teams: oTeams,
@@ -45,14 +45,14 @@ function uploadResults (req, res) {
         logger.log.info("   --> Spielbericht Foto: " + sPictureFilename);
         if (os.type() === 'Linux') {
             logger.log.info("   --> Running on Linux. Trying to send Email.");
-            logger.log.info("   --> Email test mode is: " + req.swagger.params.test.originalValue);
+            logger.log.info("   --> Email test mode is: " + req.swagger.params.test.raw);
 
             var transporter = nodemailer.createTransport();
             logger.log.debug("Transporter created.");
             var aMailTo = [];
             var aMailCC = [];
 
-            if (req.swagger.params.test.originalValue === "on") {
+            if (req.swagger.params.test.raw === "on") {
                 aMailTo.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
                 aMailCC.push('Marius Augenstein <Marius.Augenstein@sap.com>');
             } else {

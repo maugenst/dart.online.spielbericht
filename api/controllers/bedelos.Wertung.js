@@ -16,7 +16,7 @@ var logger = require('../helpers/Logger');
 var _ = require('lodash');
 var url = require('url');
 var session = require('../helpers/Session');
-var jade = require('jade');
+var pug = require('pug');
 
 function gameDetails(gameId, oSpielplan, liga){
     for (var spieltag in oSpielplan[liga].vr) {
@@ -51,7 +51,7 @@ function wertung (req, res) {
         }
 
         if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
         }
         
@@ -60,7 +60,7 @@ function wertung (req, res) {
         var sTablesPath = path.resolve(sPath + '/tabellen/');
         var oTeams = require(sPath + '/Teams.json');
         var oSpielplan = require(sPath + '/Spielplan.json');
-        var sGameId = req.swagger.params.gameId.originalValue;
+        var sGameId = req.swagger.params.gameId.raw;
         var oCurrentResult = jsonfile.readFileSync(sPath + '/Wertung.json');
         var liga = ligaHelper.calcLigaFromString(sGameId);
 
@@ -68,7 +68,7 @@ function wertung (req, res) {
         oCurrentResult.heim = oGameDetails.heim;
         oCurrentResult.gast = oGameDetails.gast;
 
-        switch(req.swagger.params.wertung.originalValue.value) {
+        switch(req.swagger.params.value.raw) {
             case '0': setResult(oCurrentResult, 0, 0);
                 break;
             case '1': setResult(oCurrentResult, 0, 12);

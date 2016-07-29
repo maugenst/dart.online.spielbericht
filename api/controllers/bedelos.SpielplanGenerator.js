@@ -5,7 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var walker = require('walker');
 var _ = require('lodash');
@@ -24,7 +24,7 @@ function checkUserAuthentication(req, res) {
     }
 
     if (oSessionData.username !== config.get("bedelos.adminuser")) {
-        res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+        res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
         return false;
     }
     return true;
@@ -37,7 +37,7 @@ function addToSpielplan (req, res) {
             return;
         };
 
-        var oGamePayload = req.swagger.params.spiel.originalValue;
+        var oGamePayload = req.swagger.params.spiel.raw;
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
@@ -70,7 +70,7 @@ function deleteFromSpielplan (req, res) {
             return;
         };
 
-        var sGameId = req.swagger.params.spielindex.originalValue;
+        var sGameId = req.swagger.params.spielindex.raw;
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
 
@@ -114,7 +114,7 @@ function getSpielplan (req, res) {
         }
 
         if (req.swagger.params && req.swagger.params.spielindex) {
-            var sRequestedIndex = req.swagger.params.spielindex.originalValue;
+            var sRequestedIndex = req.swagger.params.spielindex.raw;
         }
 
         // aTeams is just needed for typeahead fields in form
@@ -126,7 +126,7 @@ function getSpielplan (req, res) {
             })
         }
 
-        var html = jade.renderFile("api/views/spielplanGenerator.jade", {
+        var html = pug.renderFile("api/views/spielplanGenerator.jade", {
             pretty: true,
             teams: oTeams,
             sTeams: JSON.stringify(aTeams),

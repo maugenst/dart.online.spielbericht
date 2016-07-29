@@ -7,7 +7,7 @@ var os = require('os');
 var fs = require('fs');
 var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
-var jade = require('jade');
+var pug = require('pug');
 jsonfile.spaces = 4;
 var logger = require("../helpers/Logger");
 var session = require("../helpers/Session");
@@ -24,7 +24,7 @@ function inboxReject (req, res) {
         }
 
         if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
         }
 
@@ -33,11 +33,11 @@ function inboxReject (req, res) {
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
         var oTeams = require(sPath + '/Teams.json');
 
-        var sGameId = req.swagger.params.gameId.originalValue;
+        var sGameId = req.swagger.params.gameId.raw;
 
-        var file = path.resolve(sPath + "/inbox/" + req.swagger.params.gameId.originalValue + ".json");
+        var file = path.resolve(sPath + "/inbox/" + req.swagger.params.gameId.raw + ".json");
         var oResult = require(file);
-        var html = jade.renderFile("api/views/mail.jade", {
+        var html = pug.renderFile("api/views/mail.jade", {
             pretty: true,
             teams: oTeams,
             message: "<b>FEHLER: Der unten angehängte Spielberichtsbogen wurde vom Spielleiter der BDL " +
@@ -55,7 +55,7 @@ function inboxReject (req, res) {
             var aMailTo = [];
             var aMailCC = [];
 
-            if (req.swagger.params.test.originalValue === "on") {
+            if (req.swagger.params.test.raw === "on") {
                 aMailTo.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
                 aMailCC.push('Marius Augenstein <Marius.Augenstein@sap.com>');
             } else {

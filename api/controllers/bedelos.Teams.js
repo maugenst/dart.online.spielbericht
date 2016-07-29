@@ -5,7 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var logger = require('../helpers/Logger');
 
@@ -15,7 +15,7 @@ function getTeams (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oSpielplan = require(sPath + '/Spielplan.json');
         var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
-        var liga = req.swagger.params.liga.originalValue;
+        var liga = req.swagger.params.liga.raw;
 
         var oResults = {};
 
@@ -33,7 +33,7 @@ function getTeams (req, res) {
 
         var aVereine = Object.keys(oVereine);
         aVereine.sort();
-        var html = jade.renderFile("api/views/teams.jade", {
+        var html = pug.renderFile("api/views/teams.jade", {
             pretty: true,
             vereine: aVereine,
             teams: oTeams

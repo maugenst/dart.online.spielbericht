@@ -4,7 +4,7 @@ var util = require('util');
 var path = require('path');
 var config = require('config');
 var os = require('os');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var walker = require('walker');
 var _ = require('lodash');
@@ -24,7 +24,7 @@ function listInbox (req, res) {
         }
 
         if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
         }
 
@@ -40,7 +40,7 @@ function listInbox (req, res) {
                 oResults[sKey] = require(file);
             }
         }).on('end', function(){
-            var html = jade.renderFile("api/views/inbox.jade", {
+            var html = pug.renderFile("api/views/inbox.jade", {
                 pretty: true,
                 teams: oTeams,
                 results: oResults

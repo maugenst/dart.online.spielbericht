@@ -38,3 +38,10 @@ td {
 .borderedTopBottom {
     border: solid 1px black;
 }
+
+.tdeven{
+    background-color: #ffffff;
+}
+.tdodd{
+    background-color: #e4faff;
+}

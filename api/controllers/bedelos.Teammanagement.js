@@ -5,7 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
@@ -39,7 +39,7 @@ function listPlayers (req, res) {
         }
 
         if (oSessionData.username === config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
         }
 
@@ -50,7 +50,7 @@ function listPlayers (req, res) {
 
         aMitglieder.sort(sortNames);
         
-        var html = jade.renderFile("api/views/teammanagement.jade", {
+        var html = pug.renderFile("api/views/teammanagement.jade", {
             pretty: true,
             players: aMitglieder,
             teams: oTeams,

@@ -8,7 +8,7 @@ var jsonfile = require('jsonfile');
 var walker = require('walker');
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
-var jade = require('jade');
+var pug = require('pug');
 
 function inboxDelete (req, res) {
     try {
@@ -21,7 +21,7 @@ function inboxDelete (req, res) {
         }
 
         if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
         }
 
@@ -29,7 +29,7 @@ function inboxDelete (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = require(sPath + '/Teams.json');
 
-        var sGameId = req.swagger.params.gameId.originalValue;
+        var sGameId = req.swagger.params.gameId.raw;
 
         walker(sPath + '/inbox').on('file', function(file, stat) {
             if (path.basename(file).indexOf(sGameId) === 0) {

@@ -23,8 +23,10 @@ prompt.get([{
     var sConfigFile = path.resolve(config.get("bedelos.configpath") + "/config.json");
     var oConfig = jsonfile.readFileSync(sConfigFile);
     crypt.setSecret(oConfig.secret);
-    oConfig[config.get("bedelos.adminuser")] = {
-        password: crypt.encrypt(result.secret)
+    oConfig[config.get("bedelos.adminuser")] = {};
+    oConfig[config.get("bedelos.adminuser")].password = {
+        value: crypt.encrypt(result.secret),
+        changeDate: Date.now()
     }
     jsonfile.writeFileSync(sConfigFile, oConfig);
     console.log("Successfully stored password for admin user.");

@@ -5,7 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var ranking = require('../helpers/Ranking');
 var ligaHelper = require('../helpers/Liga');
@@ -19,13 +19,13 @@ function getTable (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
         var oTeams = require(sPath + '/Teams.json');
-        var liga = req.swagger.params.liga.originalValue;
+        var liga = req.swagger.params.liga.raw;
         var sTableFile = path.resolve(sTablesPath + '/' + liga + '.json');
         var oTabelle = jsonfile.readFileSync(sTableFile);
 
         var aRanking = ranking.sortTableByRank(oTabelle);
 
-        var html = jade.renderFile("api/views/tables.jade", {
+        var html = pug.renderFile("api/views/tables.jade", {
             pretty: true,
             ranking: aRanking,
             teams: oTeams,

@@ -4,7 +4,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var logger = require('../helpers/Logger');
 
@@ -26,7 +26,7 @@ function listInbox (req, res) {
             aLocations.push(aTeam);
         }
 
-        var html = jade.renderFile("api/views/map.jade", {
+        var html = pug.renderFile("api/views/map.jade", {
             pretty: true,
             locations: aLocations
         });

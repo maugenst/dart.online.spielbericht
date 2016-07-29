@@ -4,7 +4,7 @@ var util = require('util');
 var path = require('path');
 var config = require('config');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var walker = require('walker');
@@ -25,7 +25,7 @@ function inboxRelease (req, res) {
         }
 
         if (oSessionData.username !== config.get("bedelos.adminuser")) {
-            res.status(200).send(jade.renderFile("api/views/authorizederror.jade"));
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
         }
 
@@ -34,7 +34,7 @@ function inboxRelease (req, res) {
         var sTablesPath = path.resolve(config.get("bedelos.datapath") + '/tabellen/');
         var oTeams = require(sPath + '/Teams.json');
 
-        var sGameId = req.swagger.params.gameId.originalValue;
+        var sGameId = req.swagger.params.gameId.raw;
 
         walker(sPath + '/inbox').on('file', function(file, stat) {
             if (path.basename(file).indexOf(sGameId) === 0) {

@@ -5,7 +5,7 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var walker = require('walker');
 var _ = require('lodash');
@@ -18,8 +18,8 @@ function getSpielplan (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oSpielplan = require(sPath + '/Spielplan.json');
         var oTeams = require(sPath + '/Teams.json');
-        var liga = req.swagger.params.liga.originalValue;
-        var runde = req.swagger.params.runde.originalValue;
+        var liga = req.swagger.params.liga.raw;
+        var runde = req.swagger.params.runde.raw;
 
         var oResults = {};
 
@@ -32,7 +32,7 @@ function getSpielplan (req, res) {
         }).on('end', function(){
             var oSelection = oSpielplan[liga][runde];
 
-            var html = jade.renderFile("api/views/spielplan.jade", {
+            var html = pug.renderFile("api/views/spielplan.jade", {
                 pretty: true,
                 runde: oSelection,
                 teams: oTeams,

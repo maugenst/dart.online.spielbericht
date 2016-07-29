@@ -19,11 +19,11 @@ html
                         td #{results[i].summary.heim.sets} : #{results[i].summary.gast.sets}
                         td= (results[i].gast) ? teams[results[i].gast].name : ""
                         td
-                            a(href='/bedelos/inbox/#{i}') Details
+                            a(href='/bedelos/inbox/'+i) Details
                             nbsp |
-                            a(href='/bedelos/inbox/#{i}/release') Freigeben
+                            a(href='/bedelos/inbox/'+i+'/release') Freigeben
                             nbsp |
-                            a(href='/bedelos/inbox/#{i}/reject') Ablehnen
+                            a(href='/bedelos/inbox/'+i+'/reject') Ablehnen
                             nbsp |
-                            a(href='/bedelos/inbox/#{i}/delete') Löschen
+                            a(href='/bedelos/inbox/'+i+'/delete') Löschen
 

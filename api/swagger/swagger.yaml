@@ -154,12 +154,21 @@ paths:
           description: Inbox Game Id
           in: path
           required: true
-        - name: wertung
-          in: body
-          description: Wertung
+        - name: name
+          in: formData
+          type: string
+          description: Name
           required: true
-          schema:
-            $ref: "#/definitions/TeamPayload"
+        - name: value
+          in: formData
+          type: string
+          description: Value
+          required: true
+        - name: pk
+          in: formData
+          type: string
+          description: PrivateKey
+          required: true
       responses:
         'default':
           description: Successful response
@@ -264,8 +273,6 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
     post:
-      consumes:
-        - application/json
       produces:
         - text/html
       description:
@@ -289,6 +296,67 @@ paths:
         - text/html
       description:
         Updates team relevant information
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /changePassword/user/{username}:
+    x-swagger-router-controller: bedelos.ChangePassword
+    get:
+      consumes:
+        - application/json
+      produces:
+        - text/html
+      parameters:
+        - name: username
+          type: string
+          description: Username
+          in: path
+          required: true
+      description:
+        Shows the change password form
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /changePassword:
+    x-swagger-router-controller: bedelos.ChangePassword
+    post:
+      produces:
+        - application/json
+      description:
+        Updates team password
+      parameters:
+      - name: credentials
+        in: body
+        description: Login Credentials
+        required: true
+        schema:
+          $ref: "#/definitions/OBJECT"
+      responses:
+        '200':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+        '480':
+          description: Old Password not matching
+          schema:
+            $ref: "#/definitions/HTML"
+        '481':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    delete:
+      consumes:
+        - application/json
+      produces:
+        - text/html
+      description:
+        Reset all passwords to default ones
       responses:
         'default':
           description: Successful response
@@ -566,9 +634,18 @@ definitions:
     type: array
     items:
       type: array
+      items:
+        type: string
   TeamPayload:
     type: object
     description: Parameters for updating team relevant information
   GameObject:
     type: object
     description: Parameters for adding game to spielplan
+  Credentials:
+    type: object
+    properties:
+      name:
+        type: string
+      locale:
+        type: string

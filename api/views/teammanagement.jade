@@ -19,14 +19,14 @@ html
                     'teamSpiellokalPositionLng': document.getElementById('teamSpiellokalPositionLng').innerText,
                     'teamTeamvertreterName': document.getElementById('teamTeamvertreterName').innerText,
                     'teamTeamvertreterTelefonnummer': document.getElementById('teamTeamvertreterTelefonnummer').innerText,
-                    'teamTeamvertreterEmail': document.getElementById('teamTeamvertreterEmail').innerText,
-                    'teamPassword': document.getElementById('teamPassword').innerText
+                    'teamTeamvertreterEmail': document.getElementById('teamTeamvertreterEmail').innerText
                 };
                 $.ajax({
                     type: 'POST',
                     url: "/bedelos/teammanagement/update",
-                    data: oData,
+                    data: JSON.stringify(oData),
                     dataType: 'json',
+                    contentType : 'application/json',
                     success: function(){
                         location.href = "/bedelos/teammanagement"
                     }
@@ -85,7 +85,7 @@ html
                 tr
                     td(align='left') Passwort:&nbsp;
                     td(align='left', style={"font-size": 'smaller'})
-                        a(href='#', id="teamPassword", data-type="text", data-pk="1", data-title="Team Passwort")= teams[teamId].password || '...'
+                        a(href='/bedelos/changePassword/user/' + teamId) Ändern
                 tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
                     td(colspan='2')
                         input(type='button', onclick='saveTeamChanges()', value='Speichern')

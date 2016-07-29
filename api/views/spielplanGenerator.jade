@@ -19,10 +19,10 @@ html
         title BDL Online Spielplan Generator
 
     body(style={"font-family": 'Calibri'})
-        input(id='nextGameIndexoberliga', type='hidden', value='#{spielplan.oberliga.nextGameIndex}')
-        input(id='nextGameIndexbzLiga', type='hidden', value='#{spielplan.bzLiga.nextGameIndex}')
-        input(id='nextGameIndexklnord', type='hidden', value='#{spielplan.klnord.nextGameIndex}')
-        input(id='nextGameIndexklsued', type='hidden', value='#{spielplan.klsued.nextGameIndex}')
+        input(id='nextGameIndexoberliga', type='hidden', value=spielplan.oberliga.nextGameIndex)
+        input(id='nextGameIndexbzLiga', type='hidden', value=spielplan.bzLiga.nextGameIndex)
+        input(id='nextGameIndexklnord', type='hidden', value=spielplan.klnord.nextGameIndex)
+        input(id='nextGameIndexklsued', type='hidden', value=spielplan.klsued.nextGameIndex)
 
         .container
             .row
@@ -137,17 +137,17 @@ html
                                                         each spiel, i in spieltag
                                                             if (spiel.spielfrei)
                                                                 if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails=gamesMap[spiel.id])
                                                                         | #{spiel.datum}:
                                                                         | Spielfrei: #{teams[spiel.spielfrei].name}
                                                                         | &nbsp;&nbsp;(#{spiel.id})
                                                                 else
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails=gamesMap[spiel.id])
                                                                         | #{spiel.datum}:
                                                                         | Spielfrei: #{spiel.spielfrei}
                                                                         | &nbsp;&nbsp;(#{spiel.id})
                                                             else
-                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameDetails=gamesMap[spiel.id])
                                                                     | #{spiel.datum}:
                                                                     | <b>#{teams[spiel.heim].name}</b>
                                                                     | vs.
@@ -161,17 +161,17 @@ html
                                                         each spiel, i in spieltag
                                                             if (spiel.spielfrei)
                                                                 if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails=gamesMap[spiel.id])
                                                                         | #{spiel.datum}:
                                                                         | Spielfrei: #{teams[spiel.spielfrei].name}
                                                                         | &nbsp;&nbsp;(#{spiel.id})
                                                                 else
-                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                    li(data-jstree='{"icon":"glyphicon glyphicon-remove"}', data-gameDetails=gamesMap[spiel.id])
                                                                         | #{spiel.datum}:
                                                                         | Spielfrei: #{spiel.spielfrei}
                                                                         | &nbsp;&nbsp;(#{spiel.id})
                                                             else
-                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameDetails='#{gamesMap[spiel.id]}')
+                                                                li(data-jstree='{"icon":"glyphicon glyphicon-knight"}', data-gameDetails=gamesMap[spiel.id])
                                                                     | #{spiel.datum}:
                                                                     | <b>#{teams[spiel.heim].name}</b>
                                                                     | vs.
@@ -209,8 +209,9 @@ html
             $.ajax({
                 type: 'POST',
                 url: "/bedelos/spielplan/generator",
-                data: oData,
+                data: JSON.stringify(oData),
                 dataType: 'json',
+                contentType : 'application/json',
                 success: function () {
                     location.href = "/bedelos/spielplan/generator"
                 }

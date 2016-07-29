@@ -9,15 +9,15 @@ var nodemailer = require("nodemailer");
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
 var logger = require('../helpers/Logger');
-var crypt = require('../helpers/Crypt');
 var session = require('../helpers/Session');
+var moment = require('moment');
 
 function updateTeam (req, res) {
     try {
         var sTeamsFile = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
         var oTeams = jsonfile.readFileSync(sTeamsFile);
         var teamId = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
-        var oChangedTeam = req.swagger.params.team.originalValue;
+        var oChangedTeam = req.swagger.params.team.raw;
 
         oTeams[teamId].name = oChangedTeam.teamName;
         oTeams[teamId].spiellokal.name = oChangedTeam.teamSpiellokalName;
@@ -28,7 +28,6 @@ function updateTeam (req, res) {
         oTeams[teamId].teamvertreter.name = oChangedTeam.teamTeamvertreterName;
         oTeams[teamId].teamvertreter.mail = oChangedTeam.teamTeamvertreterEmail;
         oTeams[teamId].teamvertreter.tel = oChangedTeam.teamTeamvertreterTelefonnummer;
-        oTeams[teamId].password = crypt.encrypt(crypt.decrypt(oChangedTeam.teamPassword));
 
         jsonfile.writeFileSync(sTeamsFile, oTeams);
 

@@ -3,7 +3,7 @@
 var util = require('util');
 var path = require('path');
 var config = require('config');
-var jade = require('jade');
+var pug = require('pug');
 var jsonfile = require('jsonfile');
 var logger = require("../helpers/Logger");
 
@@ -13,13 +13,13 @@ function details (req, res) {
         var oTeams = require(sPath + '/Teams.json');
 
         var oResults = {};
-        logger.log.debug("Displaying details on: " + req.swagger.params.gameId.originalValue);
-        var sResultFile = path.resolve(sPath + "/"+req.swagger.params.storage.originalValue + "/" + req.swagger.params.gameId.originalValue + ".json");
+        logger.log.debug("Displaying details on: " + req.swagger.params.gameId.raw);
+        var sResultFile = path.resolve(sPath + "/"+req.swagger.params.storage.raw + "/" + req.swagger.params.gameId.raw + ".json");
 
         logger.log.debug(" ResultFile: " + sResultFile);
         var oResult = require(sResultFile);
         logger.log.debug(oResult);
-        var html = jade.renderFile("api/views/mail.jade", {
+        var html = pug.renderFile("api/views/mail.jade", {
             pretty: true,
             teams: oTeams,
             res: oResult

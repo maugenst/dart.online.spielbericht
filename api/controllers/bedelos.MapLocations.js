@@ -4,7 +4,6 @@ var path = require('path');
 var config = require('config');
 var os = require('os');
 var fs = require('fs');
-var jade = require('jade');
 var jsonfile = require('jsonfile');
 var logger = require('../helpers/Logger');
 
