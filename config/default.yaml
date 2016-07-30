@@ -5,9 +5,9 @@ server:
     port: 3000
   # leave value empty if no https serving desired
   https:
-    #port: 3443
-    #keyFile: /etc/letsencrypt/live/bdl.mistone.de/privkey.pem
-    #certFile: /etc/letsencrypt/live/bdl.mistone.de/cert.pem
+    port: 3443
+    keyFile: /etc/letsencrypt/live/bdl.mistone.de/privkey.pem
+    certFile: /etc/letsencrypt/live/bdl.mistone.de/cert.pem
 log:
   dir: ./data/log
 
