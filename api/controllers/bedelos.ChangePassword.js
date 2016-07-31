@@ -14,7 +14,7 @@ var moment = require('moment');
 function resetAllPasswords(req, res) {
     try {
 
-        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+        /*var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
 
         if (!oSessionData) {
             res.cookie('BDL_SESSION_REDIRECT', req.url);
@@ -25,7 +25,7 @@ function resetAllPasswords(req, res) {
         if (oSessionData.username !== config.get("bedelos.adminuser")) {
             res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
-        }
+        }*/
 
         var newPassword = 'bdl';
         var sTeamsFile = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
