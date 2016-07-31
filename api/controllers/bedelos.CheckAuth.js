@@ -14,9 +14,8 @@ var moment = require('moment');
 
 function checkAuthentication (req, res) {
     try {
-        var sToken = req.swagger.params.token.raw.token;
+        var oSession = session.get(req.cookies.BDL_SESSION_TOKEN);
 
-        var oSession = session.get(sToken);
         if (oSession) {
             res.status(200).json("OK");
         } else {
@@ -30,5 +29,5 @@ function checkAuthentication (req, res) {
 }
 
 module.exports = {
-    post: checkAuthentication
+    get: checkAuthentication
 };

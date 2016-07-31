@@ -260,18 +260,11 @@ paths:
 
   /checkAuthStatus:
     x-swagger-router-controller: bedelos.CheckAuth
-    post:
+    get:
       produces:
         - application/json
       description:
         Checks if user has a valid and athenticated session
-      parameters:
-      - name: token
-        description: SessionToken
-        in: body
-        required: true
-        schema:
-          $ref: "#/definitions/OBJECT"
       responses:
         'default':
           description: Successful response
@@ -662,10 +655,3 @@ definitions:
   GameObject:
     type: object
     description: Parameters for adding game to spielplan
-  Credentials:
-    type: object
-    properties:
-      name:
-        type: string
-      locale:
-        type: string

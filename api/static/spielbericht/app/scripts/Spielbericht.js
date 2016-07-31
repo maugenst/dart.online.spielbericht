@@ -1057,13 +1057,9 @@ function escapeAll() {
 }
 
 function checkAuthStatus() {
-    var oData = {
-        token: Cookies.get('BDL_SESSION_TOKEN')
-    };
     $.ajax({
         url: '/bedelos/checkAuthStatus',
-        type: 'POST',
-        data: JSON.stringify(oData),
+        type: 'GET',
         dataType: 'json',
         contentType : 'application/json',
         statusCode: {
