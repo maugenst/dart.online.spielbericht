@@ -258,6 +258,26 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /checkAuthStatus:
+    x-swagger-router-controller: bedelos.CheckAuth
+    post:
+      produces:
+        - application/json
+      description:
+        Checks if user has a valid and athenticated session
+      parameters:
+      - name: token
+        description: SessionToken
+        in: body
+        required: true
+        schema:
+          $ref: "#/definitions/OBJECT"
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/OBJECT"
+
   /login:
     x-swagger-router-controller: bedelos.Authentication
     get:

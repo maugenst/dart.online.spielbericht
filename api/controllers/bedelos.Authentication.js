@@ -49,7 +49,7 @@ function login(req, res) {
                 return;
             } else {
                 if (oTeams[username].password.value === crypt.encrypt(password)) {
-                    res.cookie('BDL_SESSION_TOKEN', token, {httpOnly: true});
+                    res.cookie('BDL_SESSION_TOKEN', token);
                     session.add(token, {
                         username: username
                     });

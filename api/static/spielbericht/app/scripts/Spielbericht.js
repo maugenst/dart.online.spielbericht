@@ -1054,15 +1054,37 @@ function escapeAll() {
 
 	$('#myTabs li:eq(1) a').tab('show');
 
-};
+}
+
+function checkAuthStatus() {
+    var oData = {
+        token: Cookies.get('BDL_SESSION_TOKEN')
+    };
+    $.ajax({
+        url: '/bedelos/checkAuthStatus',
+        type: 'POST',
+        data: JSON.stringify(oData),
+        dataType: 'json',
+        contentType : 'application/json',
+        statusCode: {
+            200: function (result) {
+                console.log("User authenticated: " + result);
+            },
+            401: function(result) {
+                Cookies.set("BDL_SESSION_REDIRECT", "/bedelos");
+                location.href = "/bedelos/login";
+            }
+        }
+    })
+}
 
 function formatName(sName) {
 	return (sName && sName!="") ? sName + " (N)" : "";
-};
+}
 
 function displayBusyIndicator() {
 	$("#busyindicator").css("visibility","visible");
-};
+}
 
 function compare(a,b) {
     if (a.name < b.name)

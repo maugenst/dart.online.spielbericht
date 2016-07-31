@@ -100,6 +100,15 @@ body {
     height: 102px;
 }
 
+.logoLink {
+    font-family: 'Yanone Kaffeesatz', arial, helvetica, sans-serif;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px rgba(0,0,0, .4);
+    line-height: 75px;
+}
+
 .uploadContainer {
     visibility:hidden;
     position:absolute;
