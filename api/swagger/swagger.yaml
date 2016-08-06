@@ -30,6 +30,19 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /mailauth:
+    x-swagger-router-controller: bedelos.MailAuth
+    get:
+      produces:
+        - text/html
+      description:
+        Checks if a user is authenticated against local user store.
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /spielplan:
     x-swagger-router-controller: bedelos.Spielplan
     get:

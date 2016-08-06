@@ -47,6 +47,13 @@ function FNCheckConfig() {
     crypt.setSecret(oConfig.secret);
 }
 
+function FNCheckUserStore() {
+    var userStoreFile = path.resolve(this.target + this.file);
+    if (!fs.existsSync(userStoreFile)) {
+        jsonfile.writeFileSync(userStoreFile, {});
+    }
+}
+
 function _init(){
     var aItemsToResolve = [
         { bFile: false, target: __dirname + "/" + config.get("log.dir") },
@@ -55,6 +62,7 @@ function _init(){
 
         { bFile: false, target: __dirname + "/data/config/" },
         { bFile: true,  target: __dirname + "/data/config", file: "/config.json", after: FNCheckConfig },
+        { bFile: true,  target: __dirname + "/data/config", file: "/userStore.json", after: FNCheckUserStore },
 
         { bFile: false, target: __dirname + "/data/saison/" },
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") },
