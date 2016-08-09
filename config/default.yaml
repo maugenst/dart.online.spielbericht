@@ -18,7 +18,7 @@ temp:
 #
 bedelos:
   adminuser: bdladmin
-  saison: 1516
+  saison: 1617
   configpath: ./data/config
   datapath: ./data/saison/1516
 
