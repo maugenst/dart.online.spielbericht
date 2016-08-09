@@ -43,6 +43,29 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /count:
+    x-swagger-router-controller: bedelos.AccessCounter
+    get:
+      produces:
+        - application/json
+      description:
+        Reads the counter and returns it's data as JSON.
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    post:
+      produces:
+        - application/json
+      description:
+        Increases the counter by one.
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /spielplan:
     x-swagger-router-controller: bedelos.Spielplan
     get:

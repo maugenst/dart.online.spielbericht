@@ -54,6 +54,15 @@ function FNCheckUserStore() {
     }
 }
 
+function FNCheckAccessCounterStore() {
+    var accessCounterStoreFile = path.resolve(this.target + this.file);
+    if (!fs.existsSync(accessCounterStoreFile)) {
+        jsonfile.writeFileSync(accessCounterStoreFile, {
+            counter: 0
+        });
+    }
+}
+
 function _init(){
     var aItemsToResolve = [
         { bFile: false, target: __dirname + "/" + config.get("log.dir") },
@@ -63,6 +72,7 @@ function _init(){
         { bFile: false, target: __dirname + "/data/config/" },
         { bFile: true,  target: __dirname + "/data/config", file: "/config.json", after: FNCheckConfig },
         { bFile: true,  target: __dirname + "/data/config", file: "/userStore.json", after: FNCheckUserStore },
+        { bFile: true,  target: __dirname + "/data/config", file: "/counter.json", after: FNCheckAccessCounterStore },
 
         { bFile: false, target: __dirname + "/data/saison/" },
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") },
