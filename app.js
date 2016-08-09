@@ -8,6 +8,7 @@ var path = require('path');
 var fs = require('fs-extra');
 var config = require('config');
 var util = require('util');
+var moment = require('moment');
 var logDirectory = "";
 var jsonfile = require('jsonfile');
 jsonfile.spaces = 4;
@@ -58,7 +59,17 @@ function FNCheckAccessCounterStore() {
     var accessCounterStoreFile = path.resolve(this.target + this.file);
     if (!fs.existsSync(accessCounterStoreFile)) {
         jsonfile.writeFileSync(accessCounterStoreFile, {
-            counter: 0
+            today: {
+                accesses: 0,
+                date: moment().format("YYYYMMDD")
+            },
+            yesterday: {
+                accesses: 0,
+                date: moment().subtract(1, 'days').format("YYYYMMDD")
+            },
+            total: {
+                accesses: 0
+            }
         });
     }
 }
