@@ -16,8 +16,12 @@ function getSpielplan (req, res) {
     try {
         var username = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
         var sPath = path.resolve(config.get("bedelos.datapath"));
-        var oSpielplan = require(sPath + '/Spielplan.json');
-        var oTeams = require(sPath + '/Teams.json');
+        if (req.swagger.params.saison.raw) {
+            sPath = path.dirname(sPath);
+            sPath = path.resolve(sPath, req.swagger.params.saison.raw);
+        }
+        var oSpielplan = require(path.resolve(sPath,'Spielplan.json'));
+        var oTeams = require(path.resolve(sPath, 'Teams.json'));
         var liga = req.swagger.params.liga.raw;
         var runde = req.swagger.params.runde.raw;
 

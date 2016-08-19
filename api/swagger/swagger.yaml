@@ -84,6 +84,11 @@ paths:
           description: Vorrunde (vr) oder Rückrunde (rr)
           in: query
           required: true
+        - name: saison
+          type: string
+          description: Saison
+          in: query
+          required: false
       responses:
         'default':
           description: Successful response

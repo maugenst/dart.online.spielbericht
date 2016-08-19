@@ -37,6 +37,7 @@ function resetAllPasswords(req, res) {
                 changeDate: Date.now()
             };
             oTeams[teamId].needsChange = true;
+            oTeams[teamId].encTeam = new Buffer(oTeams[teamId].name).toString('base64');
         }
 
         jsonfile.writeFileSync(sTeamsFile, oTeams);
