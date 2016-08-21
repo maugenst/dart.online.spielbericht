@@ -107,7 +107,8 @@ function getSpielplan (req, res) {
         if (!fs.existsSync(sPath + '/SpielplanNew.json')) {
             var oSpielplan = require(sPath + '/Spielplan.json');
             spielplanHelper = new Spielplan(oSpielplan, oTeams);
-            spielplanHelper.initialize();            
+            spielplanHelper.initialize();
+            jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
         } else {
             var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
             spielplanHelper = new Spielplan(oSpielplan, oTeams);

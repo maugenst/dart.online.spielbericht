@@ -29,6 +29,14 @@ class Spielplan {
                             if (this.oGamesMap[spiel.id]) {
                                 logger.log.warn("WARN: Found double ID in spielplan: " + spiel.id);
                             }
+                            if (!this._oTeams[spiel.heim]) {
+                                logger.log.warn("WARN: No team found: " + spiel.heim);
+                                break;
+                            }
+                            if (!this._oTeams[spiel.gast]) {
+                                logger.log.warn("WARN: No team found: " + spiel.gast);
+                                break;
+                            }
                             this.oGamesMap[spiel.id] = spiel;
                             this.oGamesMap[spiel.id].liga = liga;
                             this.oGamesMap[spiel.id].spieltag = spieltag;

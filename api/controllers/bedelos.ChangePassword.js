@@ -90,7 +90,7 @@ function resetPassword(req, res) {
             filename = path.resolve(config.get("bedelos.configpath") + '/config.json');
             var oConfig = jsonfile.readFileSync(filename);
             if (oConfig[username] && oConfig[username].password && typeof oConfig[username].password === 'object') {
-                if (oConfig[username].password.value === crypt.encrypt(oldPassword)) {
+                if (oConfig[username].password.value === "" || oConfig[username].password.value === crypt.encrypt(oldPassword)) {
                     res.cookie('BDL_SESSION_TOKEN', token, {httpOnly: true});
                     session.add(token, {
                         username: username
@@ -109,7 +109,7 @@ function resetPassword(req, res) {
             filename = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
             var oTeams = jsonfile.readFileSync(filename);
             if (oTeams[username] && oTeams[username].password) {
-                if (oTeams[username].password.value === crypt.encrypt(oldPassword)) {
+                if (oConfig[username].password.value === "" || oTeams[username].password.value === crypt.encrypt(oldPassword)) {
                     res.cookie('BDL_SESSION_TOKEN', token, {httpOnly: true});
                     session.add(token, {
                         username: username
