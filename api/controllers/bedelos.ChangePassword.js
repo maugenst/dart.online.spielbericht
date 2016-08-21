@@ -109,7 +109,7 @@ function resetPassword(req, res) {
             filename = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
             var oTeams = jsonfile.readFileSync(filename);
             if (oTeams[username] && oTeams[username].password) {
-                if (oConfig[username].password.value === "" || oTeams[username].password.value === crypt.encrypt(oldPassword)) {
+                if (oTeams[username].password.value === "" || oTeams[username].password.value === crypt.encrypt(oldPassword)) {
                     res.cookie('BDL_SESSION_TOKEN', token, {httpOnly: true});
                     session.add(token, {
                         username: username

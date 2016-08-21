@@ -7,6 +7,7 @@ var os = require('os');
 var fs = require('fs');
 var pug = require('pug');
 var jsonfile = require('jsonfile');
+jsonfile.spaces = 4;
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
 
@@ -66,6 +67,45 @@ function listPlayers (req, res) {
     }
 }
 
+function patchTeams (req, res) {
+    try {
+        /*var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+        if (!oSessionData) {
+            res.cookie('BDL_SESSION_REDIRECT', req.url);
+            res.redirect("/bedelos/login");
+            return;
+        }
+
+        if (oSessionData.username === config.get("bedelos.adminuser")) {
+            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
+            return;
+        }*/
+
+        var sPath = path.resolve(config.get("bedelos.datapath"));
+        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
+        for(var team in oTeams) {
+            if (!oTeams[team].spiellokal.raucher) {
+                oTeams[team].spiellokal.raucher = false;
+            }
+            if (!oTeams[team].spiellokal.rauchenImSpielbereich) {
+                oTeams[team].spiellokal.rauchenImSpielbereich = false;
+            }
+            if (!oTeams[team].spiellokal.jugend) {
+                oTeams[team].spiellokal.jugend = false;
+            }
+        }
+        jsonfile.writeFileSync(sPath + '/Teams.json', oTeams);
+        res.status(200).send("OK");
+
+    } catch (error) {
+        res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
+
+        logger.log.debug(error.stack);
+    }
+}
+
 module.exports = {
-    get: listPlayers
+    get: listPlayers,
+    patch: patchTeams
 };

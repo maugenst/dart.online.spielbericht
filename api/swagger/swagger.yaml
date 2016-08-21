@@ -228,6 +228,16 @@ paths:
           description: Successful response
           schema:
             $ref: "#/definitions/HTML"
+    patch:
+      produces:
+        - text/html
+      description:
+        Checks and updates the team databases
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
 
   /teammanagement/add:
     x-swagger-router-controller: bedelos.PlayersAdd
