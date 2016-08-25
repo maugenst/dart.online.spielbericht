@@ -774,7 +774,7 @@ function switchSameSelectedOptionFor(sId1, sId2) {
 };
 
 function organizeSelectedOptionsForId(oStoredNames, sId, sSpiel, ergebnisse) {
-	var bSingle = (sSpiel.substring(0,1)==="e");
+	/*var bSingle = (sSpiel.substring(0,1)==="e");
 
 	var oOptions = document.getElementById(sId).options;
 	for (var i = 0; i<oOptions.length; i++) {
@@ -807,7 +807,7 @@ function organizeSelectedOptionsForId(oStoredNames, sId, sSpiel, ergebnisse) {
 				}
 			}
 		}
-	};
+	};*/
 
 	var mNames = {};
 	if (bSingle) {
