@@ -55,30 +55,16 @@ function getTeamSpielplan (req, res) {
         var alleSpiele = aSpiele.concat(bSpiele);
         alleSpiele.sort(sortBySpieltag);
 
-/*
-        var oResults = {};
+        var oSelection = oSpielplan[liga][runde];
 
-        walker(sPath + '/ergebnisse').on('file', function(file, stat) {
-            if (path.extname(file) === '.json') {
-                var sFilename = path.basename(file);
-                var sKey = _.replace(sFilename, path.extname(file), '');
-                oResults[sKey] = jsonfile.readFileSync(file);
-            }
-        }).on('end', function(){
-            var oSelection = oSpielplan[liga][runde];
-
-            var html = pug.renderFile("api/views/spielplan.jade", {
-                pretty: true,
-                runde: oSelection,
-                teams: oTeams,
-                username: username,
-                results: oResults
-            });
-
-            res.status(200).send(html);
+        var html = pug.renderFile("api/views/teamspielplan.jade", {
+            pretty: true,
+            alleSpiele: alleSpiele,
+            username: username,
+            results: oResults
         });
-*/
-        res.status(200).send(allSpiele);
+
+        res.status(200).send(html);
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));

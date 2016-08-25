@@ -8,9 +8,9 @@ html
         script(src='/bedelos/scripts/jquery-2.1.4.min.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
         script(src='/bedelos/scripts/bootstrap-editable.js')
-        title BDL Online Spielplan - Spielplan Anzeige
+        title BDL Online Spielplan - Spielplan für #{username}
     body(style={"font-family": 'Calibri'})
-        each spiele, spieltag in runde
+        each spiele, spieltag in alleSpiele
             - var sSpieltag = spieltag.split('_')[1];
             table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px', 'font-size': 'smaller'})
                 thead
