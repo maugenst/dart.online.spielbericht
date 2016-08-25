@@ -55,13 +55,11 @@ function getTeamSpielplan (req, res) {
         var alleSpiele = aSpiele.concat(bSpiele);
         alleSpiele.sort(sortBySpieltag);
 
-        var oSelection = oSpielplan[liga][runde];
-
         var html = pug.renderFile("api/views/teamspielplan.jade", {
             pretty: true,
             alleSpiele: alleSpiele,
-            username: username,
-            results: oResults
+            username: oSessionData.username,
+            teams: oTeams
         });
 
         res.status(200).send(html);

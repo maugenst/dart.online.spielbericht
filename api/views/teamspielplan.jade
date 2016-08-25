@@ -8,82 +8,35 @@ html
         script(src='/bedelos/scripts/jquery-2.1.4.min.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
         script(src='/bedelos/scripts/bootstrap-editable.js')
-        title BDL Online Spielplan - Spielplan für #{username}
+        title BDL Online Spielplan - TeamSpielplan
     body(style={"font-family": 'Calibri'})
-        each spiele, spieltag in alleSpiele
-            - var sSpieltag = spieltag.split('_')[1];
-            table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px', 'font-size': 'smaller'})
-                thead
+        table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px', 'font-size': 'smaller'})
+            thead
+                tr
+                    th.center(colspan='5') Übersicht-Spielplan für #{teams[username].name} (Spielbeginn jeweils 20.00 Uhr)
+                tr.borderedTopBottom.highlighted
+                    th.left Spieltag
+                    th.left Datum
+                    th.left Heim
+                    th.left Gast
+            tbody
+                each spiel, i in alleSpiele
+                    - var sSpieltag = spiel.spieltag.split('_')[1];
                     tr
-                        th.center(colspan='5') #{sSpieltag}. Spieltag (Spielbeginn jeweils 20.00 Uhr)
-                    tr.borderedTopBottom.highlighted
-                        //th Spiel
-                        th.left Datum
-                        th.left Heim
-                        th.center Ergebnis
-                        th.left Gast
-                        th.center Aktionen
-                tbody
-                    each spiel, i in spiele
-                        tr
-                            if (spiel.spielfrei)
-                                if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
-                                    td(colspan='5') Spielfrei: #{teams[spiel.spielfrei].name}
-                                else
-                                    td(colspan='5') Spielfrei: #{spiel.spielfrei}
+                        td= sSpieltag
+                        if (spiel.spielfrei)
+                            if (teams[spiel.spielfrei] && teams[spiel.spielfrei].name)
+                                td(colspan='3') Spielfrei: #{teams[spiel.spielfrei].name}
                             else
-                                //td= spiel.id
-                                td= spiel.datum
-                                if (teams[spiel.heim] && teams[spiel.heim].name)
-                                    td= teams[spiel.heim].name
-                                else
-                                    td= spiel.heim
-                                if (results[spiel.id])
-                                    - var resultHeim = results[spiel.id].summary.heim.sets || 0;
-                                    - var resultGast = results[spiel.id].summary.gast.sets || 0;
-                                    td(align='center') #{resultHeim} : #{resultGast}
-                                else
-                                    td(align='center') - : -
-                                if (teams[spiel.gast] && teams[spiel.gast].name)
-                                    td= teams[spiel.gast].name
-                                else
-                                    td= spiel.gast
-                                if (results[spiel.id])
-                                    td(align='center')
-                                        a(href='/bedelos/ergebnisse/'+spiel.id) Details
-                                        if (username === 'bdladmin')
-                                            nbsp |
-                                            a(href='#', id="wertung_"+spiel.id, data-type="select",
-                                                data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
-                                else
-                                    td(align='center') Details
-                                        if (username === 'bdladmin')
-                                            nbsp |
-                                            a(href='#', id="wertung_"+spiel.id, data-type="select",
-                                                data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
-
-                br
-    script(type='text/javascript').
-        $.fn.editable.defaults.mode = 'popup';
-        $(document).ready(function () {
-            $('[id^="wertung_"]').editable({
-                savenochange: true,
-                value: 0,
-                source: [
-                    {value: 0 ,  text: '0:0'  },
-                    {value: 1 ,  text: '0:12' },
-                    {value: 2 ,  text: '1:11' },
-                    {value: 3 ,  text: '2:10' },
-                    {value: 4 ,  text: '3:9'  },
-                    {value: 5 ,  text: '4:8'  },
-                    {value: 6 ,  text: '5:7'  },
-                    {value: 7 ,  text: '6:6'  },
-                    {value: 8 ,  text: '7:5'  },
-                    {value: 9 ,  text: '8:4'  },
-                    {value: 10,  text: '9:3'  },
-                    {value: 11,  text: '10:2' },
-                    {value: 12,  text: '11:1' },
-                    {value: 13,  text: '12:0' }
-                ]
-            });
-        });
+                                td(colspan='3') Spielfrei: #{spiel.spielfrei}
+                        else
+                            //td= spiel.id
+                            td= spiel.datum
+                            if (teams[spiel.heim] && teams[spiel.heim].name)
+                                td= teams[spiel.heim].name
+                            else
+                                td= spiel.heim
+                            if (teams[spiel.gast] && teams[spiel.gast].name)
+                                td= teams[spiel.gast].name
+                            else
+                                td= spiel.gast
