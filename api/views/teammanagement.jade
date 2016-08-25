@@ -107,8 +107,8 @@ html
                         td(align='left') #{player.name}&nbsp;
                         td(align='left') #{player.vorname}&nbsp;
                         td
-                            a(href='/bedelos/teammanagement/delete?encname=#{player.encName}&encvorname=#{player.encVorname}',
-                                onclick='return window.confirm(\'Spieler #{player.vorname} #{player.name} wirklich löschen?\');') Löschen
+                            a(href='/bedelos/teammanagement/delete?encname=' + player.encName +'&encvorname=' + player.encVorname,
+                                onclick='return window.confirm(\'Spieler ' + player.vorname + ' ' + player.name + ' wirklich löschen?\');') Löschen
                 tr
                     td(colspan='4') <br>Spieler hinzufügen:
                 form(name="addPlayer", action="/bedelos/teammanagement/add", method="get")

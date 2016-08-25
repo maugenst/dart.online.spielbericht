@@ -4,7 +4,7 @@
  * Created by D032233 on 27.06.2016.
  */
 
-var path = require('path');
+var _ = require('lodash');
 var ligaHelper = require('./Liga');
 var logger = require('./Logger');
 
@@ -154,6 +154,10 @@ class Spielplan {
 
     getGamesMap() {
         return this.oGamesMap;
+    }
+
+    getFilteredGamesMap(oFilter) {
+        return _.filter(this.oGamesMap, oFilter);
     }
 
     getGamesMapStringified() {

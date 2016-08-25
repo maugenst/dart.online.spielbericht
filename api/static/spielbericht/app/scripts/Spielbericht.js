@@ -1145,11 +1145,11 @@ $.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
 	window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
 });
 
-$.getJSON("/saison/1516/Spielplan.json", function(spielplan){
+$.getJSON("/saison/1617/Spielplan.json", function(spielplan){
     oSpielplan = spielplan;
 });
 
-$.getJSON("/saison/1516/Teams.json", function(teams){
+$.getJSON("/saison/1617/Teams.json", function(teams){
     oTeams = teams;
 });
 
