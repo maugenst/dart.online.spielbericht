@@ -60,7 +60,12 @@ function setUpSelections() {
 		}
 	};
 
-	var sFreilos = ">>Freilos<<";
+    var sFreilos = ">Freilos<";
+    $('#name1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#heimname1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#heimname2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+
+    var sFreilos = ">>Freilos<<";
     $('#name1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
     $('#heimname1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
     $('#heimname2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
@@ -89,7 +94,12 @@ function setUpSelections() {
 		}
 	}
 
+    var sFreilos = ">Freilos<";
 	$('#name2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#gastname1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#gastname2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    var sFreilos = ">>Freilos<<";
+    $('#name2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
     $('#gastname1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
     $('#gastname2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
 
