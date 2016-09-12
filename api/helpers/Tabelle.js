@@ -34,7 +34,7 @@ function update(oParameters){
         oTabelle[oCurrentResult.gast].verloren++;
         oTabelle[oCurrentResult.heim].punkte.own += 2;
         oTabelle[oCurrentResult.gast].punkte.other += 2;
-    } else if (oCurrentResult.summary.heim.sets = oCurrentResult.summary.gast.sets) {
+    } else if (oCurrentResult.summary.heim.sets === oCurrentResult.summary.gast.sets) {
         oTabelle[oCurrentResult.heim].unentschieden++;
         oTabelle[oCurrentResult.gast].unentschieden++;
         oTabelle[oCurrentResult.heim].punkte.own++;
@@ -49,8 +49,8 @@ function update(oParameters){
     }
     oTabelle[oCurrentResult.heim].sets.own += oCurrentResult.summary.heim.sets;
     oTabelle[oCurrentResult.heim].sets.other += oCurrentResult.summary.gast.sets;
-    oTabelle[oCurrentResult.gast].sets.own += oCurrentResult.summary.gast.sets;
 
+    oTabelle[oCurrentResult.gast].sets.own += oCurrentResult.summary.gast.sets;
     oTabelle[oCurrentResult.gast].sets.other += oCurrentResult.summary.heim.sets;
     jsonfile.writeFileSync(sTableFile, oTabelle);
 }
