@@ -60,6 +60,11 @@ function setUpSelections() {
 		}
 	};
 
+	var sFreilos = ">>Freilos<<";
+    $('#name1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#heimname1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#heimname2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+
 	for (var i = 0; i<vereine[ergebnisse.gast].mitglieder.length; i++) {
 		aSpielerGast.push(vereine[ergebnisse.gast].mitglieder[i].name + ", " + vereine[ergebnisse.gast].mitglieder[i].vorname);
 	}
@@ -83,6 +88,11 @@ function setUpSelections() {
 			$('#gastname2').append($("<option/>", {value: btoa(spieler), text: spieler}));
 		}
 	}
+
+	$('#name2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#gastname1').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+    $('#gastname2').append($("<option/>", {value: btoa(sFreilos), text: sFreilos}));
+
 	$('.selectpicker').selectpicker('refresh');
 }
 
