@@ -19,7 +19,7 @@ function calcLigaFromString(sLigaString) {
         return 'klsued';
     } else if (sLigaString.startsWith('kln')) {
         return 'klnord';
-    } else if (sLigaString.startsWith('bzLi')) {
+    } else if (sLigaString.startsWith('bzLi') || sLigaString.startsWith('bzli')) {
         return 'bzLiga';
     } else if (sLigaString.startsWith('ol')) {
         return 'oberliga';
@@ -29,7 +29,7 @@ function calcLigaFromString(sLigaString) {
 
 function getShort(sLiga) {
     var ret = "";
-    switch(sLiga) {
+    switch(sLiga.toLowerCase()) {
         case 'klsued': ret = "kls";
             break;
         case 'klnord': ret = "kln";
@@ -61,14 +61,14 @@ function calcLigaFromFilename(file) {
 }
 
 function getFullLigaName(liga) {
-    var sLiga = calcLigaFromString(liga);
+    var sLiga = calcLigaFromString(liga).toLowerCase();
     var sRet = "";
     switch(sLiga) {
         case ('klsued') : sRet = "Kreisliga Süd";
             break;
         case ('klnord') : sRet = "Kreisliga Nord";
             break;
-        case ('bzLiga') : sRet = "Bezirksliga";
+        case ('bzliga') : sRet = "Bezirksliga";
             break;
         case ('oberliga') : sRet = "Oberliga";
             break;
