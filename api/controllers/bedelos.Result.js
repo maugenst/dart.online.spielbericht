@@ -28,7 +28,11 @@ function uploadResults (req, res) {
         var sResult = req.swagger.params.res.raw;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
-        oResult.picture = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
+        if (!req.headers.origin) {
+            oResult.picture = url.resolve(req.headers.referer, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
+        } else {
+            oResult.picture = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
+        }
         var sJsonFilename = path.resolve(sPath + sSpielId + ".json");
         jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 2});
 
