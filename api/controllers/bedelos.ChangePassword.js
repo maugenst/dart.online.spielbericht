@@ -108,8 +108,10 @@ function resetPassword(req, res) {
         } else {
             filename = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
             var oTeams = jsonfile.readFileSync(filename);
+            var adminUser = config.get("bedelos.adminuser");
+            oTeams[adminUser] = jsonfile.readFileSync(path.resolve(config.get("bedelos.configpath") + '/config.json'))[adminUser];
             if (oTeams[username] && oTeams[username].password) {
-                if (oTeams[username].password.value === "" || oTeams[username].password.value === crypt.encrypt(oldPassword)) {
+                if (oTeams[username].password.value === "" || oTeams[username].password.value === crypt.encrypt(oldPassword)  || oTeams[adminUser].password.value === crypt.encrypt(oldPassword)) {
                     res.cookie('BDL_SESSION_TOKEN', token, {httpOnly: true});
                     session.add(token, {
                         username: username
