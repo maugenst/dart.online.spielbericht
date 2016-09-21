@@ -22,7 +22,6 @@ function listInbox (req, res) {
                 oTeams[teamId].spiellokal.ort + "</i>'");
             aTeam.push(oTeams[teamId].spiellokal.position.lat);
             aTeam.push(oTeams[teamId].spiellokal.position.lng);
-            aTeam.push(17);
             aLocations.push(aTeam);
         }
 

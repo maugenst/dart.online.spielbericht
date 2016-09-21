@@ -11,6 +11,8 @@ var ranking = require('../helpers/Ranking');
 var ligaHelper = require('../helpers/Liga');
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
+var pdfmake = require('pdfmake');
+var PdfPrinter = require('pdfmake/src/printer');
 
 function getTable (req, res) {
     try {
@@ -25,15 +27,36 @@ function getTable (req, res) {
 
         var aRanking = ranking.sortTableByRank(oTabelle);
 
-        var html = pug.renderFile("api/views/tables.jade", {
-            pretty: true,
-            ranking: aRanking,
-            teams: oTeams,
-            username: username,
-            liga: ligaHelper.getFullLigaName(liga)
-        });
+        if (req.swagger.params.pdf && req.swagger.params.pdf.raw === "true") {
 
-        res.status(200).send(html);
+            var fonts = {
+                Roboto: {
+                    normal: path.resolve(config.get("fonts.dir") + '/Roboto-Regular.ttf'),
+                    bold: path.resolve(config.get("fonts.dir") + '/Roboto-Medium.ttf'),
+                    italics: path.resolve(config.get("fonts.dir") + '/Roboto-Italic.ttf'),
+                    bolditalics: path.resolve(config.get("fonts.dir") + '/Roboto-Italic.ttf')
+                }
+            };
+
+            var printer = new PdfPrinter(fonts);
+            var pdfDoc = printer.createPdfKitDocument(dd);
+            res.setHeader('Content-disposition', 'inline; filename="Tabelle.pdf"');
+            res.setHeader('Content-type', 'application/pdf');
+
+            pdfDoc.pipe(res);
+            pdfDoc.end();
+
+        } else {
+            var html = pug.renderFile("api/views/tables.jade", {
+                pretty: true,
+                ranking: aRanking,
+                teams: oTeams,
+                username: username,
+                liga: ligaHelper.getFullLigaName(liga)
+            });
+
+            res.status(200).send(html);
+        }
 
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));
