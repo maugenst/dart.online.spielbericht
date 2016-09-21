@@ -29,7 +29,8 @@
     "fs-extra": "*",
     "cookie-parser": "*",
     "prompt": "*",
-    "moment": "*"
+    "moment": "*",
+    "pdfmake": "*"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

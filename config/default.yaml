@@ -10,6 +10,8 @@ server:
     certFile: /etc/letsencrypt/live/bdl.mistone.de/cert.pem
 log:
   dir: ./data/log
+fonts:
+  dir: ./api/static/spielbericht/app/fonts
 
 # temporary data
 temp:

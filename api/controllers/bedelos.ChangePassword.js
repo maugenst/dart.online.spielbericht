@@ -125,6 +125,7 @@ function resetPassword(req, res) {
                 value: crypt.encrypt(newPassword),
                 changeDate: moment().add(1, 'year').toDate().getTime()
             };
+            delete oTeams[adminUser];
             jsonfile.writeFileSync(filename, oTeams);
         }
         res.status(200).json("Passwordänderung war erfolgreich");

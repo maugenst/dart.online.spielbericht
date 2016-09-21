@@ -499,6 +499,11 @@ paths:
           in: path
           enum: ["oberliga", "bzLiga", "klnord", "klsued"]
           required: true
+        - name: pdf
+          type: boolean
+          description: Shall the table be printed as pdf
+          in: query
+          required: false
       responses:
         'default':
           description: Successful response
