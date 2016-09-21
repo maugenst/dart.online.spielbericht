@@ -11,6 +11,8 @@ var ranking = require('../helpers/Ranking');
 var ligaHelper = require('../helpers/Liga');
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
+var PdfPage = require('../helpers/PdfPage');
+var PdfTable = require('../helpers/PdfTable');
 var pdfmake = require('pdfmake');
 var PdfPrinter = require('pdfmake/src/printer');
 
@@ -39,7 +41,27 @@ function getTable (req, res) {
             };
 
             var printer = new PdfPrinter(fonts);
-            var pdfDoc = printer.createPdfKitDocument(dd);
+            var pdfPage = new PdfPage();
+            pdfPage.addHeadline("Tabelle " + ligaHelper.getFullLigaName(liga));
+
+            var pdfTable = new PdfTable();
+            pdfTable.setTableHeader(["Platz","Team","Spiele","G","U","V","Sets","Punkte"]);
+            for(var i in aRanking) {
+                var team = aRanking[i];
+                var iRank = parseInt(i)+1;
+                pdfTable.addRow([iRank + ".",
+                    oTeams[aRanking[i].name].name,
+                    team.spiele,
+                    team.gewonnen,
+                    team.unentschieden,
+                    team.verloren,
+                    team.sets.own + ":" + team.sets.other,
+                    team.punkte.own + ":" + team.punkte.other
+                ]);
+            }
+            pdfPage.addTable(pdfTable.getContent());
+
+            var pdfDoc = printer.createPdfKitDocument(pdfPage.getContent());
             res.setHeader('Content-disposition', 'inline; filename="Tabelle.pdf"');
             res.setHeader('Content-type', 'application/pdf');
 

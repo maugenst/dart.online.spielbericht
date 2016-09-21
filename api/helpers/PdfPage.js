@@ -1,23 +1,10 @@
 'use strict';
-/**
- * Created by d032233 on 24.03.2016.
- */
 
-class PdfContent {
+class PdfPage {
 
     constructor() {
-        var dd = {
-            content: [
-                { text: '', style: 'subheader' },
-                {
-                    style: 'table',
-                    table: {
-                        headerRows: 1,
-                        body: []
-                    },
-                    layout: 'lightHorizontalLines'
-                }
-            ],
+        this.dd = {
+            content: [],
             styles: {
                 header: {
                     fontSize: 18,
@@ -42,12 +29,21 @@ class PdfContent {
                     fontSize: 8,
                     color: 'black'
                 }
-            },
-            defaultStyle: {
-                // alignment: 'justify'
             }
-
         };
+    }
+
+    addHeadline(sHeadline) {
+        this.dd.content.push({ text: sHeadline, style: 'subheader' });
+    }
+
+    addTable(oTablecontent) {
+        this.dd.content.push(oTablecontent);
+    }
+
+    getContent() {
+        return this.dd;
     }
 }
 
+module.exports = PdfPage;
