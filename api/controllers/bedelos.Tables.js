@@ -13,8 +13,6 @@ var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
 var PdfPage = require('../helpers/PdfPage');
 var PdfTable = require('../helpers/PdfTable');
-var pdfmake = require('pdfmake');
-var PdfPrinter = require('pdfmake/src/printer');
 
 function getTable (req, res) {
     try {
@@ -31,16 +29,6 @@ function getTable (req, res) {
 
         if (req.swagger.params.pdf && req.swagger.params.pdf.raw === "true") {
 
-            var fonts = {
-                Roboto: {
-                    normal: path.resolve(config.get("fonts.dir") + '/Roboto-Regular.ttf'),
-                    bold: path.resolve(config.get("fonts.dir") + '/Roboto-Medium.ttf'),
-                    italics: path.resolve(config.get("fonts.dir") + '/Roboto-Italic.ttf'),
-                    bolditalics: path.resolve(config.get("fonts.dir") + '/Roboto-Italic.ttf')
-                }
-            };
-
-            var printer = new PdfPrinter(fonts);
             var pdfPage = new PdfPage();
             pdfPage.addHeadline("Tabelle " + ligaHelper.getFullLigaName(liga));
 
@@ -51,30 +39,30 @@ function getTable (req, res) {
                 var iRank = parseInt(i)+1;
                 pdfTable.addRow([iRank + ".",
                     oTeams[aRanking[i].name].name,
-                    team.spiele,
-                    team.gewonnen,
-                    team.unentschieden,
-                    team.verloren,
-                    team.sets.own + ":" + team.sets.other,
-                    team.punkte.own + ":" + team.punkte.other
+                    {text: ""+team.spiele, style:['cell','center']},
+                    {text: ""+team.gewonnen, style:['cell','center']},
+                    {text: ""+team.unentschieden, style:['cell','center']},
+                    {text: ""+team.verloren, style:['cell','center']},
+                    {text: ""+team.sets.own + ":" + team.sets.other, style:['cell','center']},
+                    {text: ""+team.punkte.own + ":" + team.punkte.other, style:['cell','center']}
                 ]);
             }
             pdfPage.addTable(pdfTable.getContent());
 
-            var pdfDoc = printer.createPdfKitDocument(pdfPage.getContent());
             res.setHeader('Content-disposition', 'inline; filename="Tabelle.pdf"');
             res.setHeader('Content-type', 'application/pdf');
 
+            var pdfDoc = pdfPage.generateDocument();
             pdfDoc.pipe(res);
             pdfDoc.end();
-
         } else {
             var html = pug.renderFile("api/views/tables.jade", {
                 pretty: true,
                 ranking: aRanking,
                 teams: oTeams,
                 username: username,
-                liga: ligaHelper.getFullLigaName(liga)
+                liga: ligaHelper.getFullLigaName(liga),
+                ligaShort: liga
             });
 
             res.status(200).send(html);

@@ -51,6 +51,10 @@ function calcPlayerScore(oPlayer) {
 function sortStatisticByScores(oStatistic, oTeams) {
     var aRanking = [];
     for (var player in oStatistic) {
+        if(oStatistic[player].name.indexOf(">Freilos<") !== -1) {
+            continue;
+        }
+
         var oTmp = oStatistic[player];
         oTmp.name = oStatistic[player].name;
         oTmp.punkte = calcPlayerScore(oTmp);

@@ -13,6 +13,9 @@ html
                 tr
                     th.center(colspan=7) Tabelle "#{liga}"
                     th.center
+                        a(href='/bedelos/tabelle/liga/' + ligaShort + '?pdf=true')
+                            img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
+                    th.center
                         if (username === 'bdladmin')
                             a(href='/bedelos/admin/tables/update/all',
                                 onclick='return window.confirm("Alle Tabellen neu einlesen? ACHTUNG: Erzeugt hohe Serverlast!!!");')

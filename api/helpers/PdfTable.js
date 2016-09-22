@@ -35,7 +35,12 @@ class PdfTable {
         }
         var aRow = [];
         for(var i in aCells) {
-            aRow.push({text:aCells[i]+"", style: 'tablebody'});
+            var cell = aCells[i];
+            if (typeof cell === "object") {
+                aRow.push(cell);
+            } else {
+                aRow.push({text:aCells[i]+"", style: 'cell'});
+            }
         }
         this.table.table.body.push(aRow);
     }

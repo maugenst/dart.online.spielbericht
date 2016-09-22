@@ -11,7 +11,10 @@ html
         table
             thead
                 tr
-                    th.center(colspan=12) Statistiken "#{liga}"
+                    th.center(colspan=11) Statistiken "#{liga}"
+                    th.center
+                        a(href='/bedelos/statistik/liga/' + ligaShort + '?pdf=true')
+                            img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
                     th.center
                         if (username === 'bdladmin')
                             a(href='/bedelos/admin/statistik/update/all',

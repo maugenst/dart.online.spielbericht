@@ -1,8 +1,22 @@
 'use strict';
+var config = require('config');
+var path = require('path');
+var PdfPrinter = require('pdfmake/src/printer');
 
 class PdfPage {
 
     constructor() {
+        var fonts = {
+            Roboto: {
+                normal: path.resolve(config.get("fonts.dir") + '/Roboto-Regular.ttf'),
+                bold: path.resolve(config.get("fonts.dir") + '/Roboto-Medium.ttf'),
+                italics: path.resolve(config.get("fonts.dir") + '/Roboto-Italic.ttf'),
+                bolditalics: path.resolve(config.get("fonts.dir") + '/Roboto-Italic.ttf')
+            }
+        };
+
+        this.printer = new PdfPrinter(fonts);
+
         this.dd = {
             content: [],
             styles: {
@@ -25,9 +39,18 @@ class PdfPage {
                     color: 'black',
                     fillColor: '#AFD3E0'
                 },
-                tablebody: {
+                cell: {
                     fontSize: 8,
                     color: 'black'
+                },
+                center: {
+                    alignment: 'center'
+                },
+                tdodd: {
+                    fillColor: '#e4faff'
+                },
+                tdeven: {
+                    fillColor: '#ffffff'
                 }
             }
         };
@@ -43,6 +66,10 @@ class PdfPage {
 
     getContent() {
         return this.dd;
+    }
+
+    generateDocument() {
+        return this.printer.createPdfKitDocument(this.getContent());
     }
 }
 
