@@ -13,7 +13,7 @@ html
                 tr
                     th.center(colspan=7) Tabelle "#{liga}"
                     th.center
-                        a(href='/bedelos/tabelle/liga/' + ligaShort + '?pdf=true')
+                        a(href='/bedelos/tabelle/liga/' + ligaShort + '?pdf=true', target='_top')
                             img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
                     th.center
                         if (username === 'bdladmin')
