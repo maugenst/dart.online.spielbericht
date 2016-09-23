@@ -11,10 +11,7 @@ html
         table
             thead
                 tr
-                    th.center(colspan=7) Tabelle "#{liga}"
-                    th.center
-                        a(href='/bedelos/tabelle/liga/' + ligaShort + '?pdf=true', target='_top')
-                            img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
+                    th.center(colspan=6) Tabelle "#{liga}"
                     th.center
                         if (username === 'bdladmin')
                             a(href='/bedelos/admin/tables/update/all',
@@ -22,6 +19,9 @@ html
                                 span.glyphicon.glyphicon-refresh(title='Alle Tabellen neu einlesen?\nACHTUNG: Erzeugt hohe Serverlast!!!')
                         else
                             nbsp
+                    th.center
+                        a(href='/bedelos/tabelle/liga/' + ligaShort + '?pdf=true', target='_top')
+                            img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
                 tr.borderedTopBottom.highlighted
                     th.left Platz
                     th.left(width='80%') Team

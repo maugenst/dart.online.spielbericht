@@ -13,10 +13,14 @@ class PdfTable {
         };
     }
 
+    setWidths(aWidths) {
+        this.table.table.widths = aWidths;
+    }
+
     setTableHeader(aHeaders) {
         var aHeadline = [];
         for(var i in aHeaders) {
-            aHeadline.push({ text: aHeaders[i], style: 'tableHeader', alignment: 'center' });
+            aHeadline.push({ text: aHeaders[i], style: 'tableHeader', alignment: 'center', noWrap: true});
         }
         if (this.table.table.body.length === 0) {
             this.table.table.body.push(aHeadline);

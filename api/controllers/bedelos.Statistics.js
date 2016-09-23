@@ -39,6 +39,7 @@ function getTable (req, res) {
 
             var pdfTable = new PdfTable();
             pdfTable.setTableHeader(["Pl.","Spieler","Verein","3:0\n5","3:1\n4","3:2\n3","2:3\n2","1:3\n1","0:3\n0","HF\n1","SL\n1","Max\n1","Pkt"]);
+            pdfTable.setWidths([10,'*','*',12,12,12,12,12,12,12,12,12,12]);
             for(var i in aRanking) {
                 var player = aRanking[i];
                 var iRank = parseInt(i)+1;

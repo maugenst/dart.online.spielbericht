@@ -114,6 +114,30 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /teamspielplan/team/{teamId}:
+    x-swagger-router-controller: bedelos.TeamSpielplan
+    post:
+      produces:
+        - text/html
+      description:
+        Displays the spielplan for a specific team
+      parameters:
+        - name: saison
+          type: string
+          description: Saison
+          in: query
+          required: false
+        - name: teamId
+          type: string
+          description: TeamId
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /spielplan/generator/spiel/{spielindex}:
     x-swagger-router-controller: bedelos.SpielplanGenerator
     get:
