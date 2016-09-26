@@ -682,6 +682,77 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /{storage}/{gameId}/addComment:
+    x-swagger-router-controller: bedelos.Kommentar
+    get:
+      produces:
+        - text/html
+      description:
+        Displays and inputfield to add a comment on a game
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+        - name: storage
+          type: string
+          description: can either be inbox or ergebnisse
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    post:
+      produces:
+        - text/html
+      description:
+        Displays and inputfield to add a comment on a game
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+        - name: storage
+          type: string
+          description: can either be inbox or ergebnisse
+          in: path
+          required: true
+        - name: comment
+          type: string
+          description: Kommentar
+          in: formData
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    delete:
+      produces:
+        - text/html
+      description:
+        removes a comment from a game
+      parameters:
+        - name: gameId
+          type: string
+          description: Inbox Game Id
+          in: path
+          required: true
+        - name: storage
+          type: string
+          description: can either be inbox or ergebnisse
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /inbox/{gameId}/release:
     x-swagger-router-controller: bedelos.InboxRelease
     get:

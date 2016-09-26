@@ -1,0 +1,50 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/moment-with-locales.js')
+        script(src='/bedelos/scripts/js.cookie.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        title BDL Spiel Kommentar
+
+        script(type='text/javascript').
+            function deleteComment() {
+                var storage = document.getElementById('storage').value;
+                var gameId = document.getElementById('gameId').value;
+                $.ajax({
+                    url: '/bedelos/' + storage + "/" + gameId + '/addComment',
+                    type: 'DELETE',
+                    success: function (result) {
+                        location.href = '/bedelos/' + storage + "/" + gameId;
+                    }
+                });
+            }
+
+    body(style={"font-family": 'Calibri'})
+        input(id='storage', type='hidden', value=storage)
+        input(id='gameId', type='hidden', value=gameId)
+
+        .container
+            form(action='/bedelos/' + storage + "/" + gameId + '/addComment', method='POST')
+                .row
+                    .col-xs-10
+                        h3 Spiel: '#{oTeams[oResult.heim].name}' vs. '#{oTeams[oResult.gast].name}'
+                .row
+                    .col-xs-2
+                        label(for='comment') Kommentar
+                    .col-xs-8
+                        .form-group
+                            textarea.form-control(id='comment', name='comment', rows='5')= comment
+                .row
+                    .col-xs-2
+                        nbsp
+                    .col-xs-3
+                        .form-group
+                            input(id='save', type='submit', value='Speichern')
+                    .col-xs-3
+                        .form-group
+                            input(id='del', type='button', value='Löschen', onClick='deleteComment();')
+

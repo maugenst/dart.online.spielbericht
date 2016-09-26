@@ -17,8 +17,7 @@ function details (req, res) {
         var sResultFile = path.resolve(sPath + "/"+req.swagger.params.storage.raw + "/" + req.swagger.params.gameId.raw + ".json");
 
         logger.log.debug(" ResultFile: " + sResultFile);
-        var oResult = require(sResultFile);
-        logger.log.debug(oResult);
+        var oResult = jsonfile.readFileSync(sResultFile);
         var html = pug.renderFile("api/views/mail.jade", {
             pretty: true,
             teams: oTeams,

@@ -54,7 +54,9 @@ html
                                         if (username === 'bdladmin')
                                             nbsp |
                                             a(href='#', id="wertung_"+spiel.id, data-type="select",
-                                            data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
+                                                data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
+                                            nbsp | 
+                                            a(href='/bedelos/ergebnisse/'+spiel.id+'/addComment') Kommentar
                                 else
                                     td(align='center') Details
                                         nbsp | #{spiel.id}
@@ -62,8 +64,9 @@ html
                                             nbsp |
                                             a(href='#', id="wertung_"+spiel.id, data-type="select",
                                                 data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
+                                            nbsp | Kommentar
 
-                br
+    br
     script(type='text/javascript').
         $.fn.editable.defaults.mode = 'popup';
         $(document).ready(function () {

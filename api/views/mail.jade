@@ -8,6 +8,11 @@ html
         title Service Enablement Request
     body(style={"font-family": 'Calibri'})
         h1 Online Spielberichtsbogen der BDL
+        if (res.comment && res.comment!== "")
+            - var sMessage = JSON.parse(res.comment)
+            .comment
+                h3 Kommentar des BDL Spielleiters:
+                div= sMessage
         p= message
         p Hier nochmals das Ergebnis der Partie:
         table.ergebnistabelle

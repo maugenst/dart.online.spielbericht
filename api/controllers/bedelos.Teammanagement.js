@@ -29,7 +29,7 @@ function sortNames(a, b) {
     return ret;
 }
 
-function listPlayers (req, res) {
+function selectTeam (req, res) {
     try {
         var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
 
@@ -106,6 +106,6 @@ function patchTeams (req, res) {
 }
 
 module.exports = {
-    get: listPlayers,
+    get: selectTeam,
     patch: patchTeams
 };
