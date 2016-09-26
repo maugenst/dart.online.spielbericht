@@ -45,8 +45,8 @@ html
         });
 
         $(document).keyup(function(e) {
-            if (e.keyCode == 13) { // escape key maps to keycode `27`
-                var heim = $('#heim').typeahead('getActive');
+            var heim = $('#heim').typeahead('getActive');
+            if (e.keyCode == 13 && heim && heim.id) { // escape key maps to keycode `27`
                 redirect("/bedelos/teamspielplan/team/" + heim.id, 'post');
             }
         });

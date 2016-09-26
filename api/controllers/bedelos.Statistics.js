@@ -38,20 +38,16 @@ function getTable (req, res) {
             pdfPage.addHeadline("Statistiken " + ligaHelper.getFullLigaName(liga));
 
             var pdfTable = new PdfTable();
-            pdfTable.setTableHeader(["Pl.","Spieler","Verein","3:0\n5","3:1\n4","3:2\n3","2:3\n2","1:3\n1","0:3\n0","HF\n1","SL\n1","Max\n1","Pkt"]);
-            pdfTable.setWidths([10,'*','*',12,12,12,12,12,12,12,12,12,12]);
+            pdfTable.setTableHeader(["Pl.","Spieler","Verein","Siege\n*2","HF\n*0,5","SL\n*0,5","Max\n*0,5","Pkt\n∑"]);
+            pdfTable.setWidths([10,'*','*',14,15,15,15,14]);
             for(var i in aRanking) {
                 var player = aRanking[i];
                 var iRank = parseInt(i)+1;
+                var sVictories = player['3:0'] + player['3:1'] + player['3:2'];
                 pdfTable.addRow([iRank + ".",
                     player.name,
                     oTeams[player.team].name,
-                    {text: getField(player['3:0']), style:['cell','center']},
-                    {text: getField(player['3:1']), style:['cell','center']},
-                    {text: getField(player['3:2']), style:['cell','center']},
-                    {text: getField(player['2:3']), style:['cell','center']},
-                    {text: getField(player['1:3']), style:['cell','center']},
-                    {text: getField(player['0:3']), style:['cell','center']},
+                    {text: getField(sVictories), style:['cell','center']},
                     {text: getField(player.hf), style:['cell','center']},
                     {text: getField(player.sl), style:['cell','center']},
                     {text: getField(player.max), style:['cell','center']},

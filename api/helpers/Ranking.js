@@ -37,14 +37,12 @@ function sortTableByRank(oTable) {
 
 function calcPlayerScore(oPlayer) {
     var iRet = 0;
-    iRet += oPlayer['3:0'] * 5;
-    iRet += oPlayer['3:1'] * 4;
-    iRet += oPlayer['3:2'] * 3;
-    iRet += oPlayer['2:3'] * 2;
-    iRet += oPlayer['1:3'] * 1;
-    iRet += oPlayer.hf * 1;
-    iRet += oPlayer.sl * 1;
-    iRet += oPlayer.max * 1;
+    iRet += oPlayer['3:0'] * 2;
+    iRet += oPlayer['3:1'] * 2;
+    iRet += oPlayer['3:2'] * 2;
+    iRet += oPlayer.hf * 0.5;
+    iRet += oPlayer.sl * 0.5;
+    iRet += oPlayer.max * 0.5;
     return iRet;
 }
 
