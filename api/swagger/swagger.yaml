@@ -96,12 +96,12 @@ paths:
             $ref: "#/definitions/HTML"
 
   /teamspielplan:
-    x-swagger-router-controller: bedelos.TeamSpielplan
+    x-swagger-router-controller: bedelos.TeamSpielplanSelection
     get:
       produces:
         - text/html
       description:
-        Displays the spielplan for a specific team
+        Displays a selection to get a spielplan for a specific team
       parameters:
         - name: saison
           type: string
@@ -116,6 +116,32 @@ paths:
 
   /teamspielplan/team/{teamId}:
     x-swagger-router-controller: bedelos.TeamSpielplan
+    get:
+      produces:
+        - text/html
+      description:
+        Displays the spielplan for a specific team
+      parameters:
+        - name: saison
+          type: string
+          description: Saison
+          in: query
+          required: false
+        - name: teamId
+          type: string
+          description: TeamId
+          in: path
+          required: true
+        - name: pdf
+          type: boolean
+          description: Shall the table be printed as pdf
+          in: query
+          required: false
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
     post:
       produces:
         - text/html
@@ -132,6 +158,11 @@ paths:
           description: TeamId
           in: path
           required: true
+        - name: pdf
+          type: boolean
+          description: Shall the table be printed as pdf
+          in: query
+          required: false
       responses:
         'default':
           description: Successful response

@@ -20,13 +20,18 @@ class PdfPage {
         this.dd = {
             content: [],
             styles: {
-                header: {
+                h1: {
                     fontSize: 18,
                     bold: true,
                     margin: [0, 0, 0, 10]
                 },
-                subheader: {
+                h2: {
                     fontSize: 16,
+                    bold: true,
+                    margin: [0, 10, 0, 5]
+                },
+                h3: {
+                    fontSize: 14,
                     bold: true,
                     margin: [0, 10, 0, 5]
                 },
@@ -56,8 +61,16 @@ class PdfPage {
         };
     }
 
-    addHeadline(sHeadline) {
-        this.dd.content.push({ text: sHeadline, style: 'subheader' });
+    addHeadlineH1(sHeadline) {
+        this.dd.content.push({ text: sHeadline, style: 'h1' });
+    }
+
+    addHeadlineH2(sHeadline) {
+        this.dd.content.push({ text: sHeadline, style: 'h2' });
+    }
+
+    addHeadlineH3(sHeadline) {
+        this.dd.content.push({ text: sHeadline, style: 'h3' });
     }
 
     addTable(oTablecontent) {

@@ -35,11 +35,11 @@ function getTable (req, res) {
 
         if (req.swagger.params.pdf && req.swagger.params.pdf.raw === "true") {
             var pdfPage = new PdfPage();
-            pdfPage.addHeadline("Statistiken " + ligaHelper.getFullLigaName(liga));
+            pdfPage.addHeadlineH1("Statistiken " + ligaHelper.getFullLigaName(liga));
 
             var pdfTable = new PdfTable();
             pdfTable.setTableHeader(["Pl.","Spieler","Verein","Siege\n*2","HF\n*0,5","SL\n*0,5","Max\n*0,5","Pkt\n∑"]);
-            pdfTable.setWidths([10,'*','*',14,15,15,15,14]);
+            pdfTable.setWidths([10,'*','*',14,15,15,15,18]);
             for(var i in aRanking) {
                 var player = aRanking[i];
                 var iRank = parseInt(i)+1;

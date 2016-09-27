@@ -30,7 +30,7 @@ function getTable (req, res) {
         if (req.swagger.params.pdf && req.swagger.params.pdf.raw === "true") {
 
             var pdfPage = new PdfPage();
-            pdfPage.addHeadline("Tabelle " + ligaHelper.getFullLigaName(liga));
+            pdfPage.addHeadlineH1("Tabelle " + ligaHelper.getFullLigaName(liga));
 
             var pdfTable = new PdfTable();
             pdfTable.setTableHeader(["Platz","Team","Spiele","G","U","V","Sets","Punkte"]);

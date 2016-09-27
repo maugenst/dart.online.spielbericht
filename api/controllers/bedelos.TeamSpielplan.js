@@ -13,6 +13,9 @@ var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
 var Spielplan = require('../helpers/Spielplan');
 var moment = require('moment');
+var PdfPage = require('../helpers/PdfPage');
+var PdfTable = require('../helpers/PdfTable');
+
 
 function sortBySpieltag(a, b) {
     var t1 = parseInt(a.spieltag.split('_')[1]);
@@ -27,42 +30,7 @@ function sortBySpieltag(a, b) {
 }
 
 function getTeamSpielplan (req, res) {
-
-    var sPath = path.resolve(config.get("bedelos.datapath"));
-    var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
-
-    // aTeams is just needed for typeahead fields in form
-    var aTeams = [];
-    for(var team in oTeams) {
-        aTeams.push({
-            id: team,
-            name: oTeams[team].name
-        })
-    }
-
-    var html = pug.renderFile("api/views/teamSpielplanSelection.jade", {
-        pretty: true,
-        sTeams: JSON.stringify(aTeams)
-    });
-
-    res.status(200).send(html);
-}
-
-function postTeamSpielplan (req, res) {
     try {
-        /*var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
-
-        if (!oSessionData) {
-            res.cookie('BDL_SESSION_REDIRECT', req.url);
-            res.redirect("/bedelos/login");
-            return;
-        }
-
-        if (oSessionData.username === config.get("bedelos.adminuser")) {
-            res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
-            return;
-        }*/
-
         var teamId = req.swagger.params.teamId.raw;
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
@@ -79,9 +47,51 @@ function postTeamSpielplan (req, res) {
         var alleSpiele = aSpiele.concat(bSpiele);
         alleSpiele.sort(sortBySpieltag);
 
+        var alleGegner = {};
+
+        for (var i = 0; i<alleSpiele.length; i++) {
+            var sFilename = path.resolve(sPath + "/ergebnisse/" + alleSpiele[i].id + ".json");
+            if (fs.existsSync(sFilename)) {
+                var oResult = jsonfile.readFileSync(sFilename);
+                alleSpiele[i]['summary'] = oResult.summary;
+            }
+        }
 
         if (req.swagger.params.pdf && req.swagger.params.pdf.raw === "true") {
+            var pdfPage = new PdfPage();
+            pdfPage.addHeadlineH1("Übersicht-Spielplan für " + oTeams[teamId].name + " (Spielbeginn jeweils 20.00 Uhr)");
 
+            var pdfTable = new PdfTable();
+            pdfTable.setTableHeader(["Spieltag", "Datum", "Heim", "Ergebnis", "Gast"]);
+            for(var i in alleSpiele) {
+                var iRank = parseInt(i)+1;
+                var sErgebnis = (alleSpiele[i].summary) ? alleSpiele[i].summary.heim.sets + ":" + alleSpiele[i].summary.gast.sets : "-:-";
+                pdfTable.addRow([iRank + ".",
+                    alleSpiele[i].datum,
+                    oTeams[alleSpiele[i].heim].name,
+                    {text: sErgebnis, style:['cell','center']},
+                    oTeams[alleSpiele[i].gast].name
+                ]);
+            }
+            pdfPage.addTable(pdfTable.getContent());
+
+            pdfPage.addHeadlineH1("Gegner Adressen & Ansprechpartner");
+
+            for (var i in aSpiele) {
+                pdfPage.addHeadlineH3(oTeams[aSpiele[i].gast].name);
+                var pdfTable = new PdfTable();
+                pdfTable.setTableHeader(["Spiellokal", "Teamvertreter + Captain"]);
+                pdfTable.addRow([oTeams[aSpiele[i].gast].spiellokal.name + "\n" + oTeams[aSpiele[i].gast].spiellokal.strasse + "\n" + oTeams[aSpiele[i].gast].spiellokal.ort,
+                    oTeams[aSpiele[i].gast].teamvertreter.name + "\n" + oTeams[aSpiele[i].gast].teamvertreter.tel + "\n" + oTeams[aSpiele[i].gast].teamvertreter.mail
+                ]);
+                pdfPage.addTable(pdfTable.getContent());
+            }
+            res.setHeader('Content-disposition', 'inline; filename="Tabelle.pdf"');
+            res.setHeader('Content-type', 'application/pdf');
+
+            var pdfDoc = pdfPage.generateDocument();
+            pdfDoc.pipe(res);
+            pdfDoc.end();
         } else {
             var html = pug.renderFile("api/views/teamspielplan.jade", {
                 pretty: true,
@@ -101,5 +111,5 @@ function postTeamSpielplan (req, res) {
 
 module.exports = {
     get: getTeamSpielplan,
-    post: postTeamSpielplan
+    post: getTeamSpielplan
 };

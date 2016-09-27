@@ -15,6 +15,11 @@ table {
     padding: 8px;
 }
 
+.right {
+    text-align: right;
+    padding: 8px;
+}
+
 .bold{
     font-weight: bold;
 }

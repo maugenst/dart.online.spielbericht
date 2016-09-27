@@ -13,11 +13,15 @@ html
         table(cellpadding='8', cellspacing='0', width='100%', style={'border': 'solid 1px', 'font-size': 'smaller'})
             thead
                 tr
-                    th.center(colspan='5') Übersicht-Spielplan für #{teams[username].name} (Spielbeginn jeweils 20.00 Uhr)
+                    th.center(colspan='4') Übersicht-Spielplan für #{teams[username].name} (Spielbeginn jeweils 20.00 Uhr)
+                    th.right
+                        a(href='/bedelos/teamspielplan/team/' + username + '?pdf=true', target='_top')
+                            img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
                 tr.borderedTopBottom.highlighted
                     th.left Spieltag
                     th.left Datum
                     th.left Heim
+                    th.center Ergebnis
                     th.left Gast
             tbody
                 each spiel, i in alleSpiele
@@ -36,6 +40,10 @@ html
                                 td= teams[spiel.heim].name
                             else
                                 td= spiel.heim
+                            if (spiel.summary)
+                                td.center #{spiel.summary.heim.sets} : #{spiel.summary.gast.sets}
+                            else
+                                td.center - : -
                             if (teams[spiel.gast] && teams[spiel.gast].name)
                                 td= teams[spiel.gast].name
                             else
