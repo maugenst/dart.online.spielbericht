@@ -24,8 +24,8 @@ var morgan = require('morgan');
 var cors = require('cors');
 var cookieParser = require('cookie-parser');
 module.exports = app; // for testing
-var serveIndex = require('serve-index');
 
+var serveIndex = require('serve-index');
 
 function logAll(message) {
     logger.console.info(message);
@@ -78,6 +78,7 @@ function _init(){
     var aItemsToResolve = [
         { bFile: false, target: __dirname + "/" + config.get("log.dir") },
         { bFile: false, target: __dirname + "/" + config.get("temp.dir") },
+        { bFile: false, target: __dirname + "/../backups" },
         { bFile: false, target: __dirname + "/data" },
 
         { bFile: false, target: __dirname + "/data/config/" },
