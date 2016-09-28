@@ -24,7 +24,7 @@ var morgan = require('morgan');
 var cors = require('cors');
 var cookieParser = require('cookie-parser');
 module.exports = app; // for testing
-
+var serveIndex = require('serve-index');
 
 
 function logAll(message) {
@@ -142,6 +142,8 @@ try {
     app.use(morgan('combined', {stream: fs.createWriteStream(logDirectory + '/access.log', {flags: 'a'})}));
     app.use('/bedelos', express.static('api/static/spielbericht/app'));
     app.use('/saison', express.static('data/saison'));
+    app.use('/backups', serveIndex('../backups', {'icons': true, view:'details'}));
+    app.use('/backups', express.static('../backups'));
 
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 

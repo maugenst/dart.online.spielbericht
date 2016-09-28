@@ -30,7 +30,8 @@
     "cookie-parser": "*",
     "prompt": "*",
     "moment": "*",
-    "pdfmake": "*"
+    "pdfmake": "*",
+    "serve-index": "*"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
