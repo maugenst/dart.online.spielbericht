@@ -42,13 +42,13 @@ html
         br
         br
         nbsp
+        form(id='submit', action='', method='post')
     script(type='text/javascript').
 
         function redirect(url, method) {
-            $('<form>', {
-                method: method,
-                action: url
-            }).submit();
+            $('#submit').attr('action', url);
+            $('#submit').attr('method', method);
+            $('#submit').submit();
         };
 
         var $input = $('.typeahead');
