@@ -22,8 +22,8 @@ function getTeamSpielplanSelectionScreen (req, res) {
     for(var team in oTeams) {
         aTeams.push({
             id: team,
-            name: oTeams[team].name
-        })
+            name: oTeams[team].name + " - " + team
+        });
     }
 
     var html = pug.renderFile("api/views/teamSpielplanSelection.jade", {
