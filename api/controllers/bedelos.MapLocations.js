@@ -13,7 +13,7 @@ function getLabelInfo (sLabel, bField) {
         return "<div style='color:#000000'><b>&#x2610;</b> - " + sLabel + "</div>";
     } else if (bField === true) {
         return "<div style='color:#007900'><b>&#x2611;</b> - " + sLabel + "</div>";
-    }  {
+    } else {
         return "<div style='color:#d20000'><b>&#x2612;</b> - " + sLabel + "</div>";
     }
 }

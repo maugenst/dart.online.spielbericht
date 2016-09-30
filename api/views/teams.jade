@@ -15,10 +15,34 @@ html
                         th.left(width='50%') Spiellokal
                         th.left(width='50%') Teamvertreter + Captain
                 tbody
-                    tr
+                    tr(style='vertical-align:top')
                         td #{teams[teamId].spiellokal.name}<br>
                             | #{teams[teamId].spiellokal.strasse}<br>
                             | #{teams[teamId].spiellokal.ort}
+                            if (teams[teamId].spiellokal.nichtraucher === undefined)
+                                div(style='color:#000000')
+                                    b &#x2610;&nbsp;
+                                    | - Nichtraucherlokal?
+                            else if (teams[teamId].spiellokal.nichtraucher === true)
+                                div(style='color:#007900')
+                                    b &#x2611;&nbsp;
+                                    | - Nichtraucherlokal?
+                            else
+                                div(style='color:#d20000')
+                                    b &#x2612;&nbsp;
+                                    | - Nichtraucherlokal?
+                            if (teams[teamId].spiellokal.jugend === undefined)
+                                div(style='color:#000000')
+                                    b &#x2610;&nbsp;
+                                    | - Jugend?
+                            else if (teams[teamId].spiellokal.jugend === true)
+                                div(style='color:#007900')
+                                    b &#x2611;&nbsp;
+                                    | - Jugend?
+                            else
+                                div(style='color:#d20000')
+                                    b &#x2612;&nbsp;
+                                    | - Jugend?
                             div(style={'font-size': 'smaller'})
                                 | <a href="http://www.google.com/maps/place/#{teams[teamId].spiellokal.position.lat},#{teams[teamId].spiellokal.position.lng}" target="_top">Google Maps</a>
                         td #{teams[teamId].teamvertreter.name}<br>
