@@ -15,6 +15,8 @@ html
                     'teamSpiellokalName': document.getElementById('teamSpiellokalName').innerText,
                     'teamSpiellokalStrasse': document.getElementById('teamSpiellokalStrasse').innerText,
                     'teamSpiellokalOrt': document.getElementById('teamSpiellokalOrt').innerText,
+                    'teamSpiellokalNichtraucher': document.getElementById('teamSpiellokalNichtraucher').checked,
+                    'teamSpiellokalJugend': document.getElementById('teamSpiellokalJugend').checked,
                     'teamSpiellokalPositionLat': document.getElementById('teamSpiellokalPositionLat').innerText,
                     'teamSpiellokalPositionLng': document.getElementById('teamSpiellokalPositionLng').innerText,
                     'teamTeamvertreterName': document.getElementById('teamTeamvertreterName').innerText,
@@ -52,10 +54,24 @@ html
                     td(align='left') Strasse:&nbsp;
                     td(align='left', style={"font-size": 'smaller'})
                         a(href='#', id="teamSpiellokalStrasse", data-type="text", data-pk="1", data-title="Spiellokal Strasse")= teams[teamId].spiellokal.strasse
-                tr(style={'border-bottom' : 'solid 1px'})
+                tr
                     td(align='left') Ort:&nbsp;
                     td(align='left', style={"font-size": 'smaller'})
                         a(href='#', id="teamSpiellokalOrt", data-type="text", data-pk="1", data-title="Spiellokal PLZ Ort")= teams[teamId].spiellokal.ort
+                tr
+                    td(align='left') Nichtraucherlokal?:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        if (teams[teamId].spiellokal.nichtraucher)
+                            input(id="teamSpiellokalNichtraucher", type='checkbox', checked)
+                        else
+                            input(id="teamSpiellokalNichtraucher", type='checkbox')
+                tr(style={'border-bottom': 'solid 1px'})
+                    td(align='left') Jugend erlaubt?:&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        if (teams[teamId].spiellokal.jugend)
+                            input(id="teamSpiellokalJugend", type='checkbox', checked)
+                        else
+                            input(id="teamSpiellokalJugend", type='checkbox')
                 tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
                     td(colspan='2') Google Maps Position der Spielstätte
                 tr

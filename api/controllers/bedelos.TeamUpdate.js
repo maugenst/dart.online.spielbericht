@@ -23,6 +23,8 @@ function updateTeam (req, res) {
         oTeams[teamId].spiellokal.name = oChangedTeam.teamSpiellokalName;
         oTeams[teamId].spiellokal.strasse = oChangedTeam.teamSpiellokalStrasse;
         oTeams[teamId].spiellokal.ort = oChangedTeam.teamSpiellokalOrt;
+        oTeams[teamId].spiellokal.nichtraucher = oChangedTeam.teamSpiellokalNichtraucher;
+        oTeams[teamId].spiellokal.jugend = oChangedTeam.teamSpiellokalJugend;
         oTeams[teamId].spiellokal.position.lat = oChangedTeam.teamSpiellokalPositionLat;
         oTeams[teamId].spiellokal.position.lng = oChangedTeam.teamSpiellokalPositionLng;
         oTeams[teamId].teamvertreter.name = oChangedTeam.teamTeamvertreterName;
