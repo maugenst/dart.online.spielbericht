@@ -46,6 +46,6 @@ html
                             div(style={'font-size': 'smaller'})
                                 | <a href="http://www.google.com/maps/place/#{teams[teamId].spiellokal.position.lat},#{teams[teamId].spiellokal.position.lng}" target="_top">Google Maps</a>
                         td #{teams[teamId].teamvertreter.name}<br>
-                            | #{teams[teamId].teamvertreter.tel}<br>
+                            | <a href="tel:#{teams[teamId].teamvertreter.tel}>#{teams[teamId].teamvertreter.tel}</a><br>
                             | <a href="mailto:#{teams[teamId].teamvertreter.mail}">Kontakt</a>
             br
