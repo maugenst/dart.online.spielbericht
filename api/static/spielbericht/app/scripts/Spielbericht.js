@@ -661,6 +661,9 @@ function internalStore() {
     document.getElementById("ergebnisRAW").innerHTML = JSON.stringify(ergRAW, null, 4);
 	window.localStorage.setItem("ergebnisRAW", JSON.stringify(ergRAW));
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
+
+    Cookies.set('ergebnisse', JSON.stringify(ergebnisse), { expires: 5 });
+
 	$("#playerForm")[0].reset();
 	mySlider.setValue(0);
 	$("#ergDisplay").text("3:0");
@@ -910,6 +913,10 @@ function getStoredNames(blockNumber, ergebnisse) {
 	return oRet;
 };
 
+function activaTab(tab){
+    $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+};
+
 function switchMore(sId, bShow, duration) {
 	if (bShow) {
 		if (duration == 0) {
@@ -1031,6 +1038,9 @@ function checkOnTeamSelection() {
 function escapeAll() {
 	ergebnisseFromFile = JSON.parse(window.localStorage.getItem("ergebnisseLeer"));
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisseFromFile));
+
+    Cookies.set('ergebnisse', JSON.stringify(ergebnisseFromFile), { expires: 5 });
+
 	ergebnisse = ergebnisseFromFile;
 
 	var dCookieDate = new Date;
@@ -1040,8 +1050,8 @@ function escapeAll() {
 	dCookieDate.setHours(dCookieDate.getHours( ) + 24);
 	document.cookie = 'emailGast=' + document.getElementById("emailGast").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
 
-	var heim = document.getElementById("teamheim").selectedOptions[0].value;
-	var gast = document.getElementById("teamgast").selectedOptions[0].value;
+	var heim = (ergebnisse.heim) ? ergebnisse.heim : document.getElementById("teamheim").selectedOptions[0].value;
+	var gast = (ergebnisse.gast) ? ergebnisse.gast : document.getElementById("teamgast").selectedOptions[0].value;
 
 	$("#nachmeldungenRowContent").appendTo("#hiddenInputFieldContainer");
 	nachmeldungen = {
@@ -1058,8 +1068,8 @@ function escapeAll() {
 	nachmeldungen.gast.push(btoa(formatName(document.getElementById("nachmeldung_fg4").value.trim())));
 	window.localStorage.setItem("nachmeldungen", JSON.stringify(nachmeldungen));
 
-	document.getElementById("heimFeldInTable").innerHTML = vereine[heim].name;
-	document.getElementById("gastFeldInTable").innerHTML = vereine[gast].name;
+	document.getElementById("heimFeldInTable").innerHTML = oTeams[heim].name;
+	document.getElementById("gastFeldInTable").innerHTML = oTeams[gast].name;
 
 	ergebnisse.heim = heim;
 	ergebnisse.gast = gast;
@@ -1067,6 +1077,7 @@ function escapeAll() {
 	setUpSelections();
 
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
+    Cookies.set('ergebnisse', JSON.stringify(ergebnisse), { expires: 5 });
 
 	emptyTable("summaryTable");
 	emptyTable("scoresTable");
@@ -1161,16 +1172,39 @@ var vereine = null;
 var oSpielplan = null;
 var oTeams = null;
 
-$.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
-	window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
-});
-
+var gameID = getUrlParameter('g');
 $.getJSON("/saison/1617/Spielplan.json", function(spielplan){
     oSpielplan = spielplan;
-});
+    $.getJSON("/saison/1617/Teams.json", function(teams){
+        oTeams = teams;
+        if (gameID !== "") {
+            $.getJSON(window.location.origin + '/saison/1617/ergebnisse/' + gameID + '.json', function(ergebnisseFromFile) {
+                window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
+                heim = ergebnisseFromFile.heim;
+                gast = ergebnisseFromFile.gast;
+                spiel = gameID;
 
-$.getJSON("/saison/1617/Teams.json", function(teams){
-    oTeams = teams;
+                $(document).ready(function(){
+                    initializeGameSelectionScreen(oTeams);
+
+                    $("#teamheim option[value=\"" + heim + "\"]").prop('selected', true);
+                    $("#teamgast option[value=\"" + gast + "\"]").prop('selected', true);
+                    checkOnTeamSelection();
+
+                    activaTab('eingabe');
+
+                    escapeAll();
+
+                    $('.selectpicker').selectpicker('render');
+                });
+
+            });
+        } else {
+            $.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
+                window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
+            });
+        }
+    });
 });
 
 switchMore("more1", false, 0);

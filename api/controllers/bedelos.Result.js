@@ -69,9 +69,6 @@ function uploadResults (req, res) {
                 if (tcGast!=="") {
                     aMailTo.push('Teamkapitän Gast <' + tcGast + '>');
                 }
-                aMailCC.push('Dominik Boss <odom3003@googlemail.com>');
-
-                aMailCC.push('Jochen Becker <jb@jankovsky.de>');
                 aMailCC.push('Marius Augenstein <Marius.Augenstein@gmail.com>');
             }
             logger.log.debug("Sending to: " + aMailTo);
