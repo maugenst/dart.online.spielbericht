@@ -662,8 +662,6 @@ function internalStore() {
 	window.localStorage.setItem("ergebnisRAW", JSON.stringify(ergRAW));
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
 
-    Cookies.set('ergebnisse', JSON.stringify(ergebnisse), { expires: 5 });
-
 	$("#playerForm")[0].reset();
 	mySlider.setValue(0);
 	$("#ergDisplay").text("3:0");
@@ -1033,13 +1031,27 @@ function checkOnTeamSelection() {
 	} else {
 		document.getElementById("gameOnButton").disabled = true;
 	}
-};
+}
+
+function reset(bReload) {
+    window.localStorage.removeItem("ergebnisse");
+    emptyTable("summaryTable");
+    emptyTable("scoresTable");
+    if(bReload) {
+        location.reload();
+    }
+}
+
+function gameOn() {
+    $.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {
+        reset();
+        escapeAll();
+    });
+}
 
 function escapeAll() {
 	ergebnisseFromFile = JSON.parse(window.localStorage.getItem("ergebnisseLeer"));
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisseFromFile));
-
-    Cookies.set('ergebnisse', JSON.stringify(ergebnisseFromFile), { expires: 5 });
 
 	ergebnisse = ergebnisseFromFile;
 
@@ -1050,14 +1062,14 @@ function escapeAll() {
 	dCookieDate.setHours(dCookieDate.getHours( ) + 24);
 	document.cookie = 'emailGast=' + document.getElementById("emailGast").value + '; expires=' + dCookieDate.toGMTString( ) + ';';
 
-	var heim = (ergebnisse.heim) ? ergebnisse.heim : document.getElementById("teamheim").selectedOptions[0].value;
-	var gast = (ergebnisse.gast) ? ergebnisse.gast : document.getElementById("teamgast").selectedOptions[0].value;
+	var heim = ergebnisse.heim || document.getElementById("teamheim").selectedOptions[0].value;
+	var gast = ergebnisse.gast || document.getElementById("teamgast").selectedOptions[0].value;
 
 	$("#nachmeldungenRowContent").appendTo("#hiddenInputFieldContainer");
 	nachmeldungen = {
 		heim : [],
 		gast : []
-	}
+	};
 	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh1").value.trim())));
 	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh2").value.trim())));
 	nachmeldungen.heim.push(btoa(formatName(document.getElementById("nachmeldung_fh3").value.trim())));
@@ -1073,11 +1085,11 @@ function escapeAll() {
 
 	ergebnisse.heim = heim;
 	ergebnisse.gast = gast;
+    ergebnisse.id = document.getElementById("spielId").value;
 
 	setUpSelections();
 
 	window.localStorage.setItem("ergebnisse", JSON.stringify(ergebnisse));
-    Cookies.set('ergebnisse', JSON.stringify(ergebnisse), { expires: 5 });
 
 	emptyTable("summaryTable");
 	emptyTable("scoresTable");
@@ -1140,13 +1152,13 @@ function initializeGameSelectionScreen(oVereine) {
 	for (var i = 0; i<aVereine.length; i++) {
 		$('#teamheim').append($("<option/>", {value: aVereine[i].id,text: aVereine[i].name}));
 		$('#teamgast').append($("<option/>", {value: aVereine[i].id,text: aVereine[i].name}));
-	};
+	}
 
     //document.getElementById("teamgast").disabled = true;
 
 	// Read out cookies for emails stored
 	// bear in mind this works only in desktop systems
-	var aCookies = document.cookie.split(';')
+	var aCookies = document.cookie.split(';');
 	for (var i = aCookies.length - 1; i >= 0; i--) {
 		if(aCookies[i] && aCookies[i] != "" && aCookies[i].indexOf("=") != -1) {
 			var aCookie = aCookies[i].trim().split('=');
@@ -1154,9 +1166,8 @@ function initializeGameSelectionScreen(oVereine) {
 				document.getElementById(aCookie[0].trim()).value = aCookie[1].trim();
 			}
 		}
-	};
-
-};
+	}
+}
 
 
 /*!
@@ -1167,22 +1178,26 @@ var heim = unescape(window.localStorage.getItem("heim"));
 var gast = unescape(window.localStorage.getItem("gast"));
 var spiel = window.localStorage.getItem("spiel");
 var nachmeldungen = JSON.parse(window.localStorage.getItem("nachmeldungen"));
-var ergebnisse = undefined;
+var sErg = window.localStorage.getItem('ergebnisse');
+var ergebnisse = null;
 var vereine = null;
 var oSpielplan = null;
 var oTeams = null;
 
 var gameID = getUrlParameter('g');
+var storage = getUrlParameter('s') || 'ergebnisse';
+
 $.getJSON("/saison/1617/Spielplan.json", function(spielplan){
     oSpielplan = spielplan;
     $.getJSON("/saison/1617/Teams.json", function(teams){
         oTeams = teams;
         if (gameID !== "") {
-            $.getJSON(window.location.origin + '/saison/1617/ergebnisse/' + gameID + '.json', function(ergebnisseFromFile) {
+            $.getJSON(window.location.origin + '/saison/1617/' + storage + '/' + gameID + '.json', function(ergebnisseFromFile) {
                 window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
+                window.localStorage.setItem("ergebnisRAW", JSON.stringify(ergebnisseFromFile));
                 heim = ergebnisseFromFile.heim;
                 gast = ergebnisseFromFile.gast;
-                spiel = gameID;
+                spiel = (storage === 'inbox') ? gameID.split('_')[1] : gameID;
 
                 $(document).ready(function(){
                     initializeGameSelectionScreen(oTeams);
@@ -1195,9 +1210,42 @@ $.getJSON("/saison/1617/Spielplan.json", function(spielplan){
 
                     escapeAll();
 
+                    if(ergebnisseFromFile.picture) {
+                        $('#picture').attr('src', ergebnisseFromFile.picture);
+                        $('#picture').css('visibility', 'visible');
+                        $('#pictureUpload').css('visibility', 'hidden');
+                        $('#sendMailSubmit').css('visibility', 'visible');
+                    }
+
                     $('.selectpicker').selectpicker('render');
                 });
 
+            });
+        } else if (sErg !== null && sErg !== "null") {
+            var oErg = JSON.parse(sErg);
+            window.localStorage.setItem("ergebnisseLeer", sErg);
+            window.localStorage.setItem("ergebnisRAW", sErg);
+            heim = oErg.heim;
+            gast = oErg.gast;
+            spiel = gameID;
+
+            $(document).ready(function(){
+                initializeGameSelectionScreen(oTeams);
+
+                $("#teamheim option[value=\"" + heim + "\"]").prop('selected', true);
+                $("#teamgast option[value=\"" + gast + "\"]").prop('selected', true);
+                checkOnTeamSelection();
+
+                activaTab('eingabe');
+
+                escapeAll();
+                if(ergebnisseFromFile.picture) {
+                    $('#picture').attr('src', ergebnisseFromFile.picture);
+                    $('#picture').css('visibility', 'visible');
+                    $('#pictureUpload').css('visibility', 'hidden');
+                    $('#sendMailSubmit').css('visibility', 'visible');
+                }
+                $('.selectpicker').selectpicker('render');
             });
         } else {
             $.getJSON("data/ergebnisse.json", function(ergebnisseFromFile) {

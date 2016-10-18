@@ -38,6 +38,7 @@ function listInbox (req, res) {
                 var sFilename = path.basename(file);
                 var sKey = _.replace(sFilename, path.extname(file), '');
                 oResults[sKey] = require(file);
+                oResults[sKey].filename = sFilename;
             }
         }).on('end', function(){
             var html = pug.renderFile("api/views/inbox.jade", {

@@ -5,7 +5,7 @@ html
     head
         style
             include ../static/spielbericht/app/styles/ergebnistabelle.css
-        title Service Enablement Request
+        title BDL - Spieldetails
     body(style={"font-family": 'Calibri'})
         h1 Online Spielberichtsbogen der BDL
         if (res.comment && res.comment!== "")
@@ -28,12 +28,12 @@ html
                     th
                         .thRotated HF
                     th
-                        .thRotated 180er
+                        .thRotated Max
                     th(style={width: '40%'}) Name
                     th &nbsp;
                     th(style={width: '40%'}) Name
                     th
-                        .thRotated 180er
+                        .thRotated Max
                     th
                         .thRotated HF
                     th
@@ -212,8 +212,11 @@ html
             b
                 a(href='mailto:marius.augenstein@gmail.com') Marius Augenstein (2015,2016)
             |(
-            a(href='http://bdl-online-spielplan.lima-city.de/impressum.html') Impressum
+            a(href='http://www.badischedartliga.de/impressum.html') Impressum
             |)<br>
             a(href='http://www.badischedartliga.de') Badische Dart Liga
             | |
-            a(href='http://bdl-online-spielplan.lima-city.de') BDL Online Spielbericht
+            a(href='http://www.badischedartliga.de/bedelos') BDL Online Spielbericht
+
+    script(type='text/javascript').
+        window.localStorage.removeItem('ergebnisse');

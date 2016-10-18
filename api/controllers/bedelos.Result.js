@@ -19,15 +19,21 @@ function uploadResults (req, res) {
         var sPath = path.resolve(config.get("bedelos.datapath") + "/inbox/" + uniqueGameId + "_");
         var sPicturePath = path.resolve(config.get("bedelos.datapath") + "/pictures/" + uniqueGameId + "_");
         var sSpielId = req.swagger.params.spielId.raw || new Date().getTime();
-        var picture = req.swagger.params.picture.raw;
-        var sPictureFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
-        fs.writeFileSync(sPictureFilename, picture.buffer);
-        var tcHeim = req.swagger.params.tcHeim.raw;
-
-        var tcGast = req.swagger.params.tcGast.raw;
         var sResult = req.swagger.params.res.raw;
         sResult = decodeURI(sResult);
         var oResult = JSON.parse(sResult);
+
+        var picture = req.swagger.params.picture.raw;
+        var sPictureFilename = "";
+        if (oResult.picture) {
+            sPictureFilename = oResult.picture;
+        } else {
+            sPictureFilename = path.resolve(sPicturePath + sSpielId + "_" + picture.originalname);
+            fs.writeFileSync(sPictureFilename, picture.buffer);
+        }
+        var tcHeim = req.swagger.params.tcHeim.raw;
+
+        var tcGast = req.swagger.params.tcGast.raw;
         if (!req.headers.origin) {
             oResult.picture = url.resolve(req.headers.referer, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
         } else {
@@ -93,7 +99,6 @@ function uploadResults (req, res) {
                 if(error){
                     throw new Error('Failed to send email: '  + error.stack);
                 }
-
                 res.status(200).send(html);
             });
         } else {
