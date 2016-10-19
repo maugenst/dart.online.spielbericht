@@ -1027,9 +1027,9 @@ function checkOnTeamSelection() {
 
     if (heim.selectedIndex != 0 && gast.selectedIndex != 0 && heim.selectedIndex != gast.selectedIndex
         && !document.getElementById("teamgast").item(gast.selectedIndex).disabled) {
-		document.getElementById("gameOnButton").disabled = false;
+        $('#gameOnButton').removeClass("disabled");
 	} else {
-		document.getElementById("gameOnButton").disabled = true;
+        $('#gameOnButton').addClass("disabled");
 	}
 }
 
@@ -1214,7 +1214,7 @@ $.getJSON("/saison/1617/Spielplan.json", function(spielplan){
                         $('#picture').attr('src', ergebnisseFromFile.picture);
                         $('#picture').css('visibility', 'visible');
                         $('#pictureUpload').css('visibility', 'hidden');
-                        $('#sendMailSubmit').css('visibility', 'visible');
+                        $('#sendMailSubmit').removeClass('disabled');
                     }
 
                     $('.selectpicker').selectpicker('render');
@@ -1243,7 +1243,7 @@ $.getJSON("/saison/1617/Spielplan.json", function(spielplan){
                     $('#picture').attr('src', ergebnisseFromFile.picture);
                     $('#picture').css('visibility', 'visible');
                     $('#pictureUpload').css('visibility', 'hidden');
-                    $('#sendMailSubmit').css('visibility', 'visible');
+                    $('#sendMailSubmit').removeClass('disabled');
                 }
                 $('.selectpicker').selectpicker('render');
             });

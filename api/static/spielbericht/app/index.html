@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles/bootstrap-select.css">
     <link rel="stylesheet" href="styles/bootstrap-slider.min.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
     <!-- HOMESCREEN ICONS -->
     <link rel="apple-touch-icon" sizes="57x57" href="images/icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="images/icon-72x72.png"/>
@@ -29,6 +31,7 @@
     <!-- HOMESCREEN ICONS -->
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/bootstrap-slider.min.js"></script>
+    <script src="scripts/bootstrap-toggle.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
 </head>
 
@@ -254,11 +257,15 @@
                     </div>
                     <div class="row">
                         <div class="col col-xs-4">
-                            <input id="gameOnButton" type="button" value="Game On..." disabled="disabled"
-                                   onclick="gameOn()">
+                            <button id="gameOnButton" type="button" class="btn btn-primary disabled"
+                                    onclick="gameOn()">Game On...
+                            </button>
+                            <!--input id="gameOnButton" type="button" value="Game On..." disabled="disabled"
+                                   onclick="gameOn()"-->
                         </div>
                         <div class="col col-xs-8">
-                            <input id="resetButton" type="button" value="Reset" onclick="reset(true)">
+                            <button id="resetButton" type="button" class="btn btn-primary" onclick="reset(true)">Reset</button>
+                            <!--input id="resetButton" type="button" value="Reset" onclick="reset(true)"-->
                         </div>
                     </div>
                     <div class="row">
@@ -352,13 +359,30 @@
                     <br>
                     <img id="picture" src="" style="width: 50%;visibility:hidden">
 
+                    <div class="checkbox">
+                        <label>
+                            <input id="captureFrom" type="checkbox" data-toggle="toggle"
+                                   data-on="<i class='fa fa-camera fa-lg'></i> Foto"
+                                   data-off="<i class='fa fa-folder-o fa-lg'></i> Media"
+                                   data-onstyle="primary" data-offstyle="info"
+                                   data-size="small" data-width="100px"
+                                   checked="checked"
+                                   onchange="togglePictureUpload()">
+                            Foto hochladen von?
+                        </label>
+                    </div>
+
+                    <br>
+                    
                     <input id="pictureUpload" type="file" name="picture" capture="camera" accept="image/*" id="takePictureField"
-                           onclick="document.getElementById('sendMailSubmit').style.visibility = 'visible'">
+                           onclick="$('#sendMailSubmit').removeClass('disabled')">
 
 
                     <br><br>
-                    <input type="button" value="Absenden" id="sendMailSubmit" onclick="fillHiddenFieldsAndSubmit()"
-                           style="visibility:hidden">
+                    <button id="sendMailSubmit" type="button" class="btn btn-primary disabled"
+                            onclick="fillHiddenFieldsAndSubmit()">Absenden</button>
+                    <!--input type="button" value="Absenden" id="sendMailSubmit" onclick="fillHiddenFieldsAndSubmit()"
+                           style="visibility:hidden"-->
                 </form>
             </div>
         </div>
@@ -386,6 +410,16 @@
         initializeGameSelectionScreen(oResponse);
         $('.selectpicker').selectpicker('refresh');
     });
+
+
+    function togglePictureUpload() {
+        if (document.getElementById("captureFrom").checked) {
+            $('#pictureUpload').attr('capture', 'camera');
+        } else {
+            $('#pictureUpload').removeAttr('capture');
+        }
+    }
+
 </script>
 
 </body>
