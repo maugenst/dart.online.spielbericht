@@ -86,14 +86,9 @@ function uploadResults (req, res) {
                 cc: '\'' + aMailCC.join(', ') + '\'',
 
                 subject: 'BDL Online Spielberichtsbogen',
-                html: html,
-                attachments:[
-                    {   // stream as an attachment
-                        filename: 'Spielberichtsfoto.png',
-                        content: fs.createReadStream(sPictureFilename)
-                    }
-                ]
+                html: html
             };
+
 
             transporter.sendMail(mailOptions, function(error, info){
                 if(error){
