@@ -16,14 +16,14 @@ function listInfo (req, res) {
             "           <tr style='vertical-align: top'><td colspan='2'><h2>Host</h2></td></tr>\n" +
             "           <tr style='vertical-align: top'><td>Hostname:</td><td>%s</td></tr>\n" +
             "           <tr style='vertical-align: top'><td>OS Type:</td><td>%s</td></tr>\n" +
+            "           <tr style='vertical-align: top'><td>NodeJS:</td><td>%s</td></tr>\n" +
                 // horizontal Ruler
-            "           <tr style='vertical-align: top'><td colspan='2'><hr></td></tr>\n" +
             "       </table>" +
             "   </body>\n" +
             "</html>\n";
 
 
-        sHtmlInfo = util.format(sHtmlInfo, os.hostname(), os.type());
+        sHtmlInfo = util.format(sHtmlInfo, os.hostname(), os.type(), process.version);
         res.status(200).send(sHtmlInfo);
     } catch (error) {
         res.send(500, "Error: " + error.stack.replace('/\n/g', '<br>'));
