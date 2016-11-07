@@ -241,8 +241,9 @@
                         </tr>
                         <tr>
                             <td colspan="4">
-                                <input id="nachmeldungenCheckbox" type="checkbox" value="nachmeldungen"
-                                       onclick="showNachmeldungen();"> Gibt es Nachmeldungen?
+                                <div>Nachmeldungen nur noch in:</div>
+                                <button type="button" class="btn btn-primary"
+                                        onclick="location.href='/bedelos/teammanagement'">Teammanagement</button>
                             </td>
                         </tr>
                         </tbody>
@@ -373,7 +374,7 @@
                     </div>
 
                     <br>
-                    
+
                     <input id="pictureUpload" type="file" name="picture" capture="camera" accept="image/*" id="takePictureField"
                            onclick="$('#sendMailSubmit').removeClass('disabled')">
 
