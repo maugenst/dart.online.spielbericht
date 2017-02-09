@@ -1,4 +1,4 @@
-'use strict';
+ 'use strict';
 
 var uid = require(__dirname + "/api/helpers/UID");
 var crypt = require(__dirname + "/api/helpers/Crypt");

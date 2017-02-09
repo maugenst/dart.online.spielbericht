@@ -81,7 +81,7 @@ function uploadResults (req, res) {
             logger.log.debug("Sending cc: " + aMailCC);
 
             var mailOptions = {
-                from: 'BDL Online Spielbericht <bdlonlinespielplan@gmail.com>',
+                from: 'BDL Online Spielbericht <spielbericht@badischedartliga.de>',
                 to: '\'' + aMailTo.join(', ') + '\'',
                 cc: '\'' + aMailCC.join(', ') + '\'',
 
