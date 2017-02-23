@@ -20,6 +20,7 @@ class Spielplan {
 
     update() {
         this.oGamesMap = {};
+        this.oTeamMap = {};
         for (var liga in this._oSpielplan) {
             for (var runde in this._oSpielplan[liga]) {
                 if (runde === 'rr' || runde === 'vr') {
@@ -47,6 +48,9 @@ class Spielplan {
                             } else {
                                 this.oGamesMap[spiel.id].heimName = this._oTeams[spiel.heim].name;
                                 this.oGamesMap[spiel.id].gastName = this._oTeams[spiel.gast].name;
+                            }
+                            if (!this.oTeamMap[spiel.heim]) {
+                                this.oTeamMap[spiel.heim] = liga;
                             }
                         }
                     }
@@ -154,6 +158,10 @@ class Spielplan {
 
     getGamesMap() {
         return this.oGamesMap;
+    }
+
+    getLigaFor(teamId) {
+        return this.oTeamMap[teamId];
     }
 
     getFilteredGamesMap(oFilter) {

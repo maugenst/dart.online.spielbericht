@@ -35,6 +35,13 @@ class PdfPage {
                     bold: true,
                     margin: [0, 10, 0, 5]
                 },
+                text: {
+                    fontSize: 11
+                },
+                bold: {
+                    fontSize: 11,
+                    bold: true
+                },
                 table: {
                     margin: [0, 5, 0, 15]
                 },
@@ -75,6 +82,14 @@ class PdfPage {
 
     addTable(oTablecontent) {
         this.dd.content.push(oTablecontent);
+    }
+
+    addImage(oImage) {
+        this.dd.content.push(oImage);
+    }
+
+    add(oContent) {
+        this.dd.content.push(oContent);
     }
 
     getContent() {

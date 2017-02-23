@@ -32,5 +32,9 @@ node_modules
 
 # Runtime configuration for swagger app
 config/runtime.yaml
+config/local.yaml
 
 data
+
+config/local.yaml
+config/local.yaml

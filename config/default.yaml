@@ -12,6 +12,8 @@ log:
   dir: ./data/log
 fonts:
   dir: ./api/static/spielbericht/app/fonts
+static:
+  dir: ./api/static
 
 # temporary data
 temp:
