@@ -15,7 +15,9 @@ function isUpdateNeeded(file, liga) {
 }
 
 function calcLigaFromString(sLigaString) {
-    if (sLigaString.startsWith('kls')) {
+    if (!sLigaString || sLigaString === '') {
+        return '';
+    } else if (sLigaString.startsWith('kls')) {
         return 'klsued';
     } else if (sLigaString.startsWith('kln')) {
         return 'klnord';
@@ -72,7 +74,7 @@ function getFullLigaName(liga) {
             break;
         case ('oberliga') : sRet = "Oberliga";
             break;
-        default: sRet = "liga";
+        default: sRet = "";
             break;
     }
     return sRet;

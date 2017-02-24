@@ -389,7 +389,36 @@ paths:
       produces:
         - text/html
       description:
+        Displays a selection for teams.
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    post:
+      produces:
+        - text/html
+      description:
         Generates a PDF for every team to be sent to Spielleiter once per year.
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /teammanagement/meldung/{teamId}:
+    x-swagger-router-controller: bedelos.TeamMeldung
+    post:
+      produces:
+        - text/html
+      description:
+        Generates a PDF for every team to be sent to Spielleiter once per year.
+      parameters:
+      - name: teamId
+        type: string
+        description: Team Id
+        in: path
+        required: true
       responses:
         'default':
           description: Successful response
