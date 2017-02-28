@@ -50,6 +50,7 @@ function generatePDF (req, res) {
         if (oSessionData.username === config.get("bedelos.adminuser")) {
             res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
+            
         }*/
         var sPath = path.resolve(config.get("bedelos.datapath"));
         var oTeams = require(sPath + '/Teams.json');
