@@ -26,28 +26,29 @@ var oSpielplan = require(path.resolve(sPath,'Spielplan.json'));
 
 function ask(req, res) {
     var sPath = path.resolve(config.get("bedelos.datapath"));
-    var oTeams = require(sPath + '/Teams.json');
-    var oVereine = require(sPath + '/Vereine.json');
+    jsonfile.readFile(sPath + '/Teams.json', (err, oTeams) => {
+        jsonfile.readFile(sPath + '/Vereine.json', (err, oVereine) => {
+            // aTeams is just needed for typeahead fields in form
+            var aTeams = _.flatMap(oTeams, (team, teamID) => {
+                return {
+                    id: teamID,
+                    name: `Team: ${team.name} (${teamID})`
+                };
+            }).concat(_.flatMap(oVereine, (verein, vereinsID) => {
+                return {
+                    id: vereinsID,
+                    name: `Verein: ${verein.name } (${vereinsID})`
+                };
+            }));
 
-    // aTeams is just needed for typeahead fields in form
-    var aTeams = _.flatMap(oTeams, (team, teamID) => {
-        return {
-            id: teamID,
-            name: `Team: ${team.name} (${teamID})`
-        };
-    }).concat(_.flatMap(oVereine, (verein, vereinsID) => {
-        return {
-            id: vereinsID,
-            name: `Verein: ${verein.name } (${vereinsID})`
-        };
-    }));
+            var html = pug.renderFile("api/views/teamMeldungSelection.jade", {
+                pretty: true,
+                sTeams: JSON.stringify(aTeams)
+            });
 
-    var html = pug.renderFile("api/views/teamMeldungSelection.jade", {
-        pretty: true,
-        sTeams: JSON.stringify(aTeams)
+            res.status(200).send(html);
+        });
     });
-
-    res.status(200).send(html);
 }
 
 function generatePDF (req, res) {

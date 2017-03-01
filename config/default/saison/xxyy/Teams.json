@@ -1,44 +1,29 @@
 {
     "bdl001": {
-        "name": "DC Black Knights Hördt 1",
+        "name": "DC Black Knights Karlsruhe",
+        "verein": "v019",
         "spiellokal": {
-            "name": "Bistro 7",
-            "strasse": "Schulzenstr. 24",
-            "ort": "76771 Hördt",
+            "name": "Vereinsheim DC Flatliners",
+            "strasse": "Hardtstr . 37 (Bau II)",
+            "ort": "76185 Karlsruhe",
             "position": {
-                "lat": 49.1667727,
-                "lng": 8.3270424
-            }
+                "lat": "49.1667727",
+                "lng": "8.3270424"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Sascha Magin",
-            "tel": "0176 - 31294785",
-            "mail": "smagin3@gmail.com"
+            "name": "Marcus Wolff",
+            "tel": "0176 - 80401685",
+            "mail": "wolffmarcus76@gmx.de"
         },
         "mitglieder": [
-            {
-                "name": "Klein",
-                "vorname": "Marco",
-                "encName": "S2xlaW4=",
-                "encVorname": "TWFyY28="
-            },
             {
                 "name": "Krzyzanowski",
                 "vorname": "Sven",
                 "encName": "S3J6eXphbm93c2tp",
                 "encVorname": "U3Zlbg=="
-            },
-            {
-                "name": "Magin",
-                "vorname": "Sascha (TC)",
-                "encName": "TWFnaW4=",
-                "encVorname": "U2FzY2hhIChUQyk="
-            },
-            {
-                "name": "Mathis",
-                "vorname": "Delbert",
-                "encName": "TWF0aGlz",
-                "encVorname": "RGVsYmVydA=="
             },
             {
                 "name": "Meisel",
@@ -57,12 +42,36 @@
                 "vorname": "Marcus",
                 "encName": "V29sZmY=",
                 "encVorname": "TWFyY3Vz"
+            },
+            {
+                "name": "Kühn",
+                "vorname": "Norbert",
+                "encName": "S8O8aG4=",
+                "encVorname": "Tm9yYmVydA=="
+            },
+            {
+                "name": "Celik",
+                "vorname": "Serkan",
+                "encName": "Q2VsaWs=",
+                "encVorname": "U2Vya2Fu"
+            },
+            {
+                "name": "Weis",
+                "vorname": "Georg",
+                "encName": "V2Vpcw==",
+                "encVorname": "R2Vvcmc="
             }
         ],
-        "encTeam": "REMgQmxhY2sgS25pZ2h0cyBI9nJkdCAx"
+        "encTeam": "REMgQmxhY2sgS25pZ2h0cyAx",
+        "password": {
+            "value": "Mhknn2Uvw6tq6KV9hwGirQ==",
+            "changeDate": 1505243282556
+        },
+        "needsChange": true
     },
     "bdl002": {
         "name": "DC El Diabolo",
+        "verein": "",
         "spiellokal": {
             "name": "Bistro Diamonds Lounge",
             "strasse": "Lessingstrasse 2",
@@ -139,49 +148,33 @@
                 "encVorname": "UGF0cmljaw=="
             }
         ],
-        "encTeam": "REMgRWwgRGlhYm9sbw=="
+        "encTeam": "REMgRWwgRGlhYm9sbw==",
+        "password": {
+            "value": "QEXB9b4enz7jLWv2J0rmaA==",
+            "changeDate": 1473657356056
+        },
+        "needsChange": true
     },
     "bdl003": {
         "name": "DC Flatliners Karlsruhe 1",
+        "verein": "v018",
         "spiellokal": {
             "name": "Vereinsheim DC Flatliners",
             "strasse": "Hardtstr. 37 (Bau II)",
             "ort": "76185 Karlsruhe",
             "position": {
-                "lat": 49.013928,
-                "lng": 8.3565938
-            }
+                "lat": "49.013928",
+                "lng": "8.3565938"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Markus Kellner",
-            "tel": "0172 - 1397366",
-            "mail": "mkellyboy@gmail.com"
+            "name": "Thomas Köhnlein",
+            "tel": "0174 9038610",
+            "mail": "thomas.koehnlein@gmx.de"
         },
         "mitglieder": [
-            {
-                "name": "Baumann",
-                "vorname": "John",
-                "encName": "QmF1bWFubg==",
-                "encVorname": "Sm9obg=="
-            },
-            {
-                "name": "Hoffmann",
-                "vorname": "Mika",
-                "encName": "SG9mZm1hbm4=",
-                "encVorname": "TWlrYQ=="
-            },
-            {
-                "name": "Hoffmann",
-                "vorname": "Markus",
-                "encName": "SG9mZm1hbm4=",
-                "encVorname": "TWFya3Vz"
-            },
-            {
-                "name": "Kellner",
-                "vorname": "Markus (TC)",
-                "encName": "S2VsbG5lcg==",
-                "encVorname": "TWFya3VzIChUQyk="
-            },
             {
                 "name": "Köhnlein",
                 "vorname": "Thomas",
@@ -195,60 +188,98 @@
                 "encVorname": "TWFyY2Vs"
             },
             {
-                "name": "Meyer",
-                "vorname": "Torsten",
-                "encName": "TWV5ZXI=",
-                "encVorname": "VG9yc3Rlbg=="
-            },
-            {
                 "name": "Mußgnug",
                 "vorname": "Thorsten",
                 "encName": "TXXfZ251Zw==",
                 "encVorname": "VGhvcnN0ZW4="
             },
             {
-                "name": "Nees",
-                "vorname": "Thomas",
-                "encName": "TmVlcw==",
-                "encVorname": "VGhvbWFz"
-            },
-            {
-                "name": "Roller",
-                "vorname": "Freddy",
-                "encName": "Um9sbGVy",
-                "encVorname": "RnJlZGR5"
-            },
-            {
-                "name": "Schober",
-                "vorname": "Timo",
-                "encName": "U2Nob2Jlcg==",
-                "encVorname": "VGltbw=="
-            },
-            {
-                "name": "Spathelf",
-                "vorname": "Stefan",
-                "encName": "U3BhdGhlbGY=",
-                "encVorname": "U3RlZmFu"
-            },
-            {
                 "name": "Stübs",
                 "vorname": "Michael",
                 "encName": "U3T8YnM=",
                 "encVorname": "TWljaGFlbA=="
+            },
+            {
+                "name": "Jürgen",
+                "vorname": "Stafan",
+                "encName": "SsO8cmdlbg==",
+                "encVorname": "U3RhZmFu"
+            },
+            {
+                "name": "König",
+                "vorname": "Timo",
+                "encName": "S8O2bmln",
+                "encVorname": "VGltbw=="
+            },
+            {
+                "name": "Gast",
+                "vorname": "Armin",
+                "encName": "R2FzdA==",
+                "encVorname": "QXJtaW4="
+            },
+            {
+                "name": "Bobrzik",
+                "vorname": "Benjamin",
+                "encName": "Qm9icnppaw==",
+                "encVorname": "QmVuamFtaW4="
+            },
+            {
+                "name": "Karacan",
+                "vorname": "Baris",
+                "encName": "S2FyYWNhbg==",
+                "encVorname": "QmFyaXM="
+            },
+            {
+                "name": "Waidmann",
+                "vorname": "Marco",
+                "encName": "V2FpZG1hbm4=",
+                "encVorname": "TWFyY28="
+            },
+            {
+                "name": "Kammerlander",
+                "vorname": "Tobias",
+                "encName": "S2FtbWVybGFuZGVy",
+                "encVorname": "VG9iaWFz"
+            },
+            {
+                "name": "Schuh",
+                "vorname": "Frank",
+                "encName": "U2NodWg=",
+                "encVorname": "RnJhbms="
+            },
+            {
+                "name": "Marijanovic",
+                "vorname": "Robert",
+                "encName": "TWFyaWphbm92aWM=",
+                "encVorname": "Um9iZXJ0"
+            },
+            {
+                "name": "Gerike",
+                "vorname": "Igor",
+                "encName": "R2VyaWtl",
+                "encVorname": "SWdvcg=="
             }
         ],
-        "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMQ=="
+        "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMQ==",
+        "password": {
+            "value": "hSqyh2YbhLHctHxN93rd0g==",
+            "changeDate": 1505246882565
+        },
+        "needsChange": true
     },
     "bdl004": {
         "name": "Dartspub Walldorf 2",
+        "verein": "v021",
         "spiellokal": {
             "name": "Gaststätte Zur alten Rose",
             "strasse": "Häusserstr. 22",
             "ort": "68789 St. Leon",
             "position": {
-                "lat": 21.1250077,
-                "lng": -101.6859605
-            }
+                "lat": "21.1250077",
+                "lng": "-101.6859605"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Köhler Sabine",
@@ -256,36 +287,6 @@
             "mail": "sabinekoehler@arcor.de"
         },
         "mitglieder": [
-            {
-                "name": "Ayllon",
-                "vorname": "John",
-                "encName": "QXlsbG9u",
-                "encVorname": "Sm9obg=="
-            },
-            {
-                "name": "Bonn",
-                "vorname": "Dominik",
-                "encName": "Qm9ubg==",
-                "encVorname": "RG9taW5paw=="
-            },
-            {
-                "name": "Bub",
-                "vorname": "Leif-Eric",
-                "encName": "QnVi",
-                "encVorname": "TGVpZi1Fcmlj"
-            },
-            {
-                "name": "Caroli",
-                "vorname": "Matthias",
-                "encName": "Q2Fyb2xp",
-                "encVorname": "TWF0dGhpYXM="
-            },
-            {
-                "name": "Elbs",
-                "vorname": "Benjamin",
-                "encName": "RWxicw==",
-                "encVorname": "QmVuamFtaW4="
-            },
             {
                 "name": "Große-Stoltenberg",
                 "vorname": "Mika",
@@ -297,12 +298,6 @@
                 "vorname": "Jan",
                 "encName": "SuRnZXI=",
                 "encVorname": "SmFu"
-            },
-            {
-                "name": "Katic",
-                "vorname": "Nikola",
-                "encName": "S2F0aWM=",
-                "encVorname": "Tmlrb2xh"
             },
             {
                 "name": "Kraft",
@@ -317,22 +312,46 @@
                 "encVorname": "U2FiaW5lIChUQyk="
             },
             {
-                "name": "Moh",
-                "vorname": "Benjamin",
-                "encName": "TW9o",
-                "encVorname": "QmVuamFtaW4="
+                "name": "Werle",
+                "vorname": "Sebastian",
+                "encName": "V2VybGU=",
+                "encVorname": "U2ViYXN0aWFu"
             },
             {
-                "name": "Pfaff",
-                "vorname": "Hans",
-                "encName": "UGZhZmY=",
-                "encVorname": "SGFucw=="
+                "name": "Fogt",
+                "vorname": "Kim",
+                "encName": "Rm9ndA==",
+                "encVorname": "S2lt"
             },
             {
-                "name": "Spörle",
-                "vorname": "Sabrina",
-                "encName": "U3D2cmxl",
-                "encVorname": "U2FicmluYQ=="
+                "name": "Dinkel",
+                "vorname": "Ralf",
+                "encName": "RGlua2Vs",
+                "encVorname": "UmFsZg=="
+            },
+            {
+                "name": "Eszlari",
+                "vorname": "Adam",
+                "encName": "RXN6bGFyaQ==",
+                "encVorname": "QWRhbQ=="
+            },
+            {
+                "name": "Rudolf",
+                "vorname": "Andreas",
+                "encName": "UnVkb2xm",
+                "encVorname": "QW5kcmVhcw=="
+            },
+            {
+                "name": "van der Raaij",
+                "vorname": "Henrik",
+                "encName": "dmFuIGRlciBSYWFpag==",
+                "encVorname": "SGVucmlr"
+            },
+            {
+                "name": "Bonn",
+                "vorname": "Dominik",
+                "encName": "Qm9ubg==",
+                "encVorname": "RG9taW5paw=="
             },
             {
                 "name": "Stangl",
@@ -341,40 +360,78 @@
                 "encVorname": "VGhvbWFz"
             },
             {
+                "name": "Wefers",
+                "vorname": "Thorsten ",
+                "encName": "V2VmZXJz",
+                "encVorname": "VGhvcnN0ZW4g"
+            },
+            {
+                "name": "Pfaff",
+                "vorname": "Hans",
+                "encName": "UGZhZmY=",
+                "encVorname": "SGFucw=="
+            },
+            {
+                "name": "Katic",
+                "vorname": "Nikola ",
+                "encName": "S2F0aWM=",
+                "encVorname": "Tmlrb2xhIA=="
+            },
+            {
+                "name": "Stangl",
+                "vorname": "Manuel",
+                "encName": "U3Rhbmds",
+                "encVorname": "TWFudWVs"
+            },
+            {
                 "name": "Stein",
                 "vorname": "Sascha",
                 "encName": "U3RlaW4=",
                 "encVorname": "U2FzY2hh"
             },
             {
-                "name": "Wefers",
-                "vorname": "Thorsten",
-                "encName": "V2VmZXJz",
-                "encVorname": "VGhvcnN0ZW4="
+                "name": "Wagner",
+                "vorname": "Micha",
+                "encName": "V2FnbmVy",
+                "encVorname": "TWljaGE="
             },
             {
-                "name": "Werle",
-                "vorname": "Sebastian",
-                "encName": "V2VybGU=",
-                "encVorname": "U2ViYXN0aWFu"
+                "name": "Antritter",
+                "vorname": "Nico",
+                "encName": "QW50cml0dGVy",
+                "encVorname": "Tmljbw=="
+            },
+            {
+                "name": "Vittadello",
+                "vorname": "Enrico",
+                "encName": "Vml0dGFkZWxsbw==",
+                "encVorname": "RW5yaWNv"
             }
         ],
-        "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMg=="
+        "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMg==",
+        "password": {
+            "value": "k89XjIAQ9ks3OotaceRqwA==",
+            "changeDate": 1505973818953
+        },
+        "needsChange": true
     },
     "bdl005": {
         "name": "Gegen die Drück 1",
+        "verein": "v006",
         "spiellokal": {
             "name": "Bistro J Dartkneipe",
             "strasse": "Rudolf-Diesel-Str. 2",
             "ort": "69207 Sandhausen",
             "position": {
-                "lat": 49.35123,
-                "lng": 8.655360000000002
-            }
+                "lat": "49,35123",
+                "lng": "8,655360000000002"
+            },
+            "nichtraucher": true,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Michael Häussler",
-            "tel": "0176 - 84883613",
+            "tel": "0176-84883613",
             "mail": "501rasti@gmail.com"
         },
         "mitglieder": [
@@ -389,12 +446,6 @@
                 "vorname": "Frank",
                 "encName": "RmFja2VsbWFubg==",
                 "encVorname": "RnJhbms="
-            },
-            {
-                "name": "Gund",
-                "vorname": "Thomas",
-                "encName": "R3VuZA==",
-                "encVorname": "VGhvbWFz"
             },
             {
                 "name": "Häusler",
@@ -415,85 +466,143 @@
                 "encVorname": "UmFsZg=="
             },
             {
-                "name": "Walther",
-                "vorname": "Kay",
-                "encName": "V2FsdGhlcg==",
-                "encVorname": "S2F5"
+                "name": "Muhn",
+                "vorname": "Andre ",
+                "encName": "TXVobg==",
+                "encVorname": "QW5kcmUg"
+            },
+            {
+                "name": "Gawlik",
+                "vorname": "Ralf",
+                "encName": "R2F3bGlr",
+                "encVorname": "UmFsZg=="
+            },
+            {
+                "name": "Hauck",
+                "vorname": "Rainer",
+                "encName": "SGF1Y2s=",
+                "encVorname": "UmFpbmVy"
+            },
+            {
+                "name": "Netzer",
+                "vorname": "Phillip",
+                "encName": "TmV0emVy",
+                "encVorname": "UGhpbGxpcA=="
+            },
+            {
+                "name": "Gutschalk",
+                "vorname": "Mario",
+                "encName": "R3V0c2NoYWxr",
+                "encVorname": "TWFyaW8="
             }
         ],
-        "encTeam": "R2VnZW4gZGllIERy/GNrIDE="
+        "encTeam": "R2VnZW4gZGllIERyw7xjayAx",
+        "password": {
+            "value": "nYTYF-1vwYWg6q-BqYt0iA==",
+            "changeDate": 1505218927546
+        },
+        "needsChange": true
     },
     "bdl006": {
         "name": "Gegen die Drück 2",
+        "verein": "v006",
         "spiellokal": {
             "name": "Bistro J Dartkneipe",
             "strasse": "Rudolf-Diesel-Str. 2",
             "ort": "69207 Sandhausen",
             "position": {
-                "lat": 49.35123,
-                "lng": 8.655360000000002
-            }
+                "lat": "49.35123",
+                "lng": "8.655360000000002"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Matthias Margraf",
-            "tel": "06221 - 737040",
-            "mail": "501rasti@gmail.com"
+            "name": "Bastian Durchholz",
+            "tel": "017670893048",
+            "mail": "bastian.durchholz@gmail.com"
         },
         "mitglieder": [
             {
-                "name": "Kloh",
-                "vorname": "Patrick",
-                "encName": "S2xvaA==",
-                "encVorname": "UGF0cmljaw=="
+                "name": "Durchholz",
+                "vorname": "Bastian",
+                "encName": "RHVyY2hob2x6",
+                "encVorname": "QmFzdGlhbg=="
             },
             {
-                "name": "Margraf",
-                "vorname": "Matthias (TC)",
-                "encName": "TWFyZ3JhZg==",
-                "encVorname": "TWF0dGhpYXMgKFRDKQ=="
+                "name": "Schied",
+                "vorname": "Andreas ",
+                "encName": "U2NoaWVk",
+                "encVorname": "QW5kcmVhcyA="
             },
             {
-                "name": "Muhn",
-                "vorname": "Andre",
-                "encName": "TXVobg==",
-                "encVorname": "QW5kcmU="
+                "name": "Anselmann",
+                "vorname": "Tim",
+                "encName": "QW5zZWxtYW5u",
+                "encVorname": "VGlt"
             },
             {
-                "name": "Muth",
-                "vorname": "Rüdiger",
-                "encName": "TXV0aA==",
-                "encVorname": "UvxkaWdlcg=="
+                "name": "Rauscher",
+                "vorname": "Michael",
+                "encName": "UmF1c2NoZXI=",
+                "encVorname": "TWljaGFlbA=="
             },
             {
-                "name": "Treiber",
-                "vorname": "Jan",
-                "encName": "VHJlaWJlcg==",
-                "encVorname": "SmFu"
+                "name": "Walther",
+                "vorname": "Kay",
+                "encName": "V2FsdGhlcg==",
+                "encVorname": "S2F5"
             },
             {
-                "name": "Wittmann",
-                "vorname": "Steffen",
-                "encName": "V2l0dG1hbm4=",
-                "encVorname": "U3RlZmZlbg=="
+                "name": "Gund",
+                "vorname": "Thomas",
+                "encName": "R3VuZA==",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Jany",
+                "vorname": "Christian",
+                "encName": "SmFueQ==",
+                "encVorname": "Q2hyaXN0aWFu"
+            },
+            {
+                "name": "Götz",
+                "vorname": "Martin",
+                "encName": "R8O2dHo=",
+                "encVorname": "TWFydGlu"
+            },
+            {
+                "name": "Fackelmann",
+                "vorname": "Frank",
+                "encName": "RmFja2VsbWFubg==",
+                "encVorname": "RnJhbms="
             }
         ],
-        "encTeam": "R2VnZW4gZGllIERy/GNrIDI="
+        "encTeam": "R2VnZW4gZGllIERyw7xjayAy",
+        "password": {
+            "value": "YAIvrbn9EsuTPD-sSB3eUw==",
+            "changeDate": 1505641613670
+        },
+        "needsChange": true
     },
     "bdl007": {
         "name": "Taraxacuma Bulls",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966579",
+                "lng": "8.4685538"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Michael Ebner",
             "tel": "0170 - 1867410",
-            "mail": "m_ebner@freenet.de"
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
             {
@@ -507,12 +616,6 @@
                 "vorname": "Jochen",
                 "encName": "QmVja2Vy",
                 "encVorname": "Sm9jaGVu"
-            },
-            {
-                "name": "Ebner",
-                "vorname": "Michael",
-                "encName": "RWJuZXI=",
-                "encVorname": "TWljaGFlbA=="
             },
             {
                 "name": "Gottwald",
@@ -533,47 +636,55 @@
                 "encVorname": "SvxyZ2Vu"
             },
             {
-                "name": "Steffen",
-                "vorname": "Cartsen",
-                "encName": "U3RlZmZlbg==",
-                "encVorname": "Q2FydHNlbg=="
+                "name": "Carsten",
+                "vorname": "Steffen",
+                "encName": "Q2Fyc3Rlbg==",
+                "encVorname": "U3RlZmZlbg=="
             },
             {
-                "name": "Waeldin",
-                "vorname": "Andreas",
-                "encName": "V2FlbGRpbg==",
-                "encVorname": "QW5kcmVhcw=="
-            },
-            {
-                "name": "Waeldin",
-                "vorname": "Stephanie",
-                "encName": "V2FlbGRpbg==",
-                "encVorname": "U3RlcGhhbmll"
+                "name": "Ebner",
+                "vorname": "Michael (TC)",
+                "encName": "RWJuZXI=",
+                "encVorname": "TWljaGFlbCAoVEMp"
             },
             {
                 "name": "Wiegering",
-                "vorname": "Stefan (TC)",
+                "vorname": "Stefan",
                 "encName": "V2llZ2VyaW5n",
-                "encVorname": "U3RlZmFuIChUQyk="
+                "encVorname": "U3RlZmFu"
+            },
+            {
+                "name": "Hotel",
+                "vorname": "Johann",
+                "encName": "SG90ZWw=",
+                "encVorname": "Sm9oYW5u"
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBCdWxscw=="
+        "encTeam": "VGFyYXhhY3VtYSBCdWxscw==",
+        "password": {
+            "value": "II08UFNtAPqz6aAs_LBeUA==",
+            "changeDate": 1505234978957
+        },
+        "needsChange": true
     },
     "bdl008": {
         "name": "Taraxacuma Eagles",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966339",
+                "lng": "8.4681868"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Tobias Seibert",
-            "tel": "0176 - 67039309",
-            "mail": "tobias.seibert@web.de"
+            "tel": "0151 - 10592161",
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
             {
@@ -581,12 +692,6 @@
                 "vorname": "Matthias",
                 "encName": "RWhsZXJz",
                 "encVorname": "TWF0dGhpYXM="
-            },
-            {
-                "name": "Hotel",
-                "vorname": "Johan",
-                "encName": "SG90ZWw=",
-                "encVorname": "Sm9oYW4="
             },
             {
                 "name": "Link",
@@ -607,12 +712,6 @@
                 "encVorname": "VG9iaWFzIChUQyk="
             },
             {
-                "name": "Specht",
-                "vorname": "Andreas",
-                "encName": "U3BlY2h0",
-                "encVorname": "QW5kcmVhcw=="
-            },
-            {
                 "name": "Wirth",
                 "vorname": "Alexander",
                 "encName": "V2lydGg=",
@@ -623,25 +722,45 @@
                 "vorname": "Berthold",
                 "encName": "V2l0dG1hbm4=",
                 "encVorname": "QmVydGhvbGQ="
+            },
+            {
+                "name": "Walter",
+                "vorname": "Florian",
+                "encName": "V2FsdGVy",
+                "encVorname": "Rmxvcmlhbg=="
+            },
+            {
+                "name": "Kloh",
+                "vorname": "Patrick",
+                "encName": "S2xvaA==",
+                "encVorname": "UGF0cmljaw=="
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBFYWdsZXM="
+        "encTeam": "VGFyYXhhY3VtYSBFYWdsZXM=",
+        "password": {
+            "value": "4hplsdb1cDkgHh_ev6YPSg==",
+            "changeDate": 1505234909449
+        },
+        "needsChange": true
     },
     "bdl009": {
         "name": "Taraxacuma Lions",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966319",
+                "lng": "8.4682428"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Daniel Hoffmann",
-            "tel": "0178 - 1590128",
-            "mail": ""
+            "name": "Andreas Frei",
+            "tel": "0173 - 8837181",
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
             {
@@ -649,18 +768,6 @@
                 "vorname": "Christian",
                 "encName": "QmVybmhhcmR0",
                 "encVorname": "Q2hyaXN0aWFu"
-            },
-            {
-                "name": "Frei",
-                "vorname": "Andreas",
-                "encName": "RnJlaQ==",
-                "encVorname": "QW5kcmVhcw=="
-            },
-            {
-                "name": "Hoffmann",
-                "vorname": "Daniel (TC)",
-                "encName": "SG9mZm1hbm4=",
-                "encVorname": "RGFuaWVsIChUQyk="
             },
             {
                 "name": "Janßen",
@@ -675,30 +782,62 @@
                 "encVorname": "S2F5"
             },
             {
-                "name": "Lüttjohann",
-                "vorname": "Stephan",
-                "encName": "TPx0dGpvaGFubg==",
-                "encVorname": "U3RlcGhhbg=="
-            },
-            {
                 "name": "Sterzing",
                 "vorname": "Frank",
                 "encName": "U3Rlcnppbmc=",
                 "encVorname": "RnJhbms="
+            },
+            {
+                "name": "Frei",
+                "vorname": "Andreas (TC)",
+                "encName": "RnJlaQ==",
+                "encVorname": "QW5kcmVhcyAoVEMp"
+            },
+            {
+                "name": "Heinz",
+                "vorname": "Dirk",
+                "encName": "SGVpbno=",
+                "encVorname": "RGlyaw=="
+            },
+            {
+                "name": "Fey",
+                "vorname": "Ralf",
+                "encName": "RmV5",
+                "encVorname": "UmFsZg=="
+            },
+            {
+                "name": "Sülzle",
+                "vorname": "Jürgen",
+                "encName": "U8O8bHpsZQ==",
+                "encVorname": "SsO8cmdlbg=="
+            },
+            {
+                "name": "Mathis",
+                "vorname": "Delbert",
+                "encName": "TWF0aGlz",
+                "encVorname": "RGVsYmVydA=="
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBMaW9ucw=="
+        "encTeam": "VGFyYXhhY3VtYSBMaW9ucw==",
+        "password": {
+            "value": "OzN6e1gdSNSnncVOfk3FyA==",
+            "changeDate": 1505235069531
+        },
+        "needsChange": true
     },
     "bdl010": {
         "name": "Alla Häeeeehr Pforzheim",
+        "verein": "v025",
         "spiellokal": {
             "name": "Vereinsheim Alla Häeeeehr",
             "strasse": "Blücherstr. 32",
             "ort": "75177 Pforzheim",
             "position": {
-                "lat": 48.8990545,
-                "lng": 8.717506199999999
-            }
+                "lat": "48.8990545",
+                "lng": "8.717506199999999"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Alexander Schmidt",
@@ -726,12 +865,6 @@
             },
             {
                 "name": "Korbmann",
-                "vorname": "Robin",
-                "encName": "S29yYm1hbm4=",
-                "encVorname": "Um9iaW4="
-            },
-            {
-                "name": "Korbmann",
                 "vorname": "Pascal",
                 "encName": "S29yYm1hbm4=",
                 "encVorname": "UGFzY2Fs"
@@ -753,20 +886,34 @@
                 "vorname": "Alexander (TC)",
                 "encName": "U2NobWlkdA==",
                 "encVorname": "QWxleGFuZGVyIChUQyk="
+            },
+            {
+                "name": "Becker",
+                "vorname": "Herbert",
+                "encName": "QmVja2Vy",
+                "encVorname": "SGVyYmVydA=="
             }
         ],
-        "encTeam": "QWxsYSBI5GVlZWVociBQZm9yemhlaW0="
+        "encTeam": "QWxsYSBIw6RlZWVlaHIgUGZvcnpoZWlt",
+        "password": {
+            "value": "ZceCM2_moeW-Sxf581i6Dw==",
+            "changeDate": 1505741444657
+        },
+        "needsChange": true
     },
     "bdl011": {
-        "name": "BDC Breakers",
+        "name": "DC Breakers 1",
+        "verein": "v017",
         "spiellokal": {
             "name": "Cafe Ricks",
             "strasse": "Melanchthonstr. 100",
             "ort": "75015 Bretten",
             "position": {
-                "lat": 49.03867,
-                "lng": 8.69895
-            }
+                "lat": "49.03867",
+                "lng": "8.69895"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Steffen Stiess",
@@ -774,12 +921,6 @@
             "mail": "steffenstiess@gmail.com"
         },
         "mitglieder": [
-            {
-                "name": "Fröhlich",
-                "vorname": "Sven",
-                "encName": "RnL2aGxpY2g=",
-                "encVorname": "U3Zlbg=="
-            },
             {
                 "name": "Lutz",
                 "vorname": "Harald",
@@ -809,31 +950,33 @@
                 "vorname": "Steffen (TC)",
                 "encName": "U3RpZXNz",
                 "encVorname": "U3RlZmZlbiAoVEMp"
-            },
-            {
-                "name": "Tretter",
-                "vorname": "Markus",
-                "encName": "VHJldHRlcg==",
-                "encVorname": "TWFya3Vz"
             }
         ],
-        "encTeam": "QkRDIEJyZWFrZXJz"
+        "encTeam": "QkRDIEJyZWFrZXJzIDE=",
+        "password": {
+            "value": "i1teL9evTmF13vwWXKaQfg==",
+            "changeDate": 1505552116135
+        },
+        "needsChange": true
     },
     "bdl012": {
         "name": "Dartspub Walldorf 3",
+        "verein": "v021",
         "spiellokal": {
             "name": "Gaststätte Zur alten Rose",
             "strasse": "Häusserstr. 22",
             "ort": "68789 St. Leon",
             "position": {
-                "lat": 21.1250077,
-                "lng": -101.6859605
-            }
+                "lat": "21.1250077",
+                "lng": "-101.6859605"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Dirk Hoffmann",
+            "name": "Dirk Hofmann",
             "tel": "0174 - 5287861",
-            "mail": "dirk.hoffmann65@web.de"
+            "mail": "dirk.hofmann65@web.de"
         },
         "mitglieder": [
             {
@@ -855,28 +998,10 @@
                 "encVorname": "Rmxvcmlhbg=="
             },
             {
-                "name": "Hoffmann",
-                "vorname": "Dirk (TC)",
-                "encName": "SG9mZm1hbm4=",
-                "encVorname": "RGlyayAoVEMp"
-            },
-            {
                 "name": "Hüther",
                 "vorname": "Stefan",
                 "encName": "SPx0aGVy",
                 "encVorname": "U3RlZmFu"
-            },
-            {
-                "name": "Kieser-Rot",
-                "vorname": "Rita",
-                "encName": "S2llc2VyLVJvdA==",
-                "encVorname": "Uml0YQ=="
-            },
-            {
-                "name": "Maschek",
-                "vorname": "Uwe",
-                "encName": "TWFzY2hlaw==",
-                "encVorname": "VXdl"
             },
             {
                 "name": "Stolze",
@@ -889,20 +1014,52 @@
                 "vorname": "Jürgen",
                 "encName": "WmltbWVybWFubg==",
                 "encVorname": "SvxyZ2Vu"
+            },
+            {
+                "name": "Hofmann",
+                "vorname": "Rita",
+                "encName": "SG9mbWFubg==",
+                "encVorname": "Uml0YQ=="
+            },
+            {
+                "name": "Hofmann(Tk)",
+                "vorname": "Dirk",
+                "encName": "SG9mbWFubihUayk=",
+                "encVorname": "RGlyaw=="
+            },
+            {
+                "name": "Ayllon",
+                "vorname": "John",
+                "encName": "QXlsbG9u",
+                "encVorname": "Sm9obg=="
+            },
+            {
+                "name": "Bub",
+                "vorname": "Leif-Eric",
+                "encName": "QnVi",
+                "encVorname": "TGVpZi1Fcmlj"
             }
         ],
-        "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMw=="
+        "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMw==",
+        "password": {
+            "value": "UvpowkxyM_uMOBjy_-AXhw==",
+            "changeDate": 1505230269586
+        },
+        "needsChange": true
     },
     "bdl013": {
         "name": "DC Black Knights Hördt 2",
+        "verein": "v019",
         "spiellokal": {
             "name": "Bistro 7",
             "strasse": "Schulzenstr. 24",
             "ort": "76771 Hördt",
             "position": {
-                "lat": 49.1667727,
-                "lng": 8.3270424
-            }
+                "lat": "49.1667727",
+                "lng": "8.3270424"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Christian Kochendörfer",
@@ -915,12 +1072,6 @@
                 "vorname": "Thorsten",
                 "encName": "RmlzY2hlcg==",
                 "encVorname": "VGhvcnN0ZW4="
-            },
-            {
-                "name": "Kasikci",
-                "vorname": "Senol",
-                "encName": "S2FzaWtjaQ==",
-                "encVorname": "U2Vub2w="
             },
             {
                 "name": "Kieser",
@@ -969,56 +1120,70 @@
                 "vorname": "Uwe",
                 "encName": "V2V0emVs",
                 "encVorname": "VXdl"
+            },
+            {
+                "name": "Deutsch",
+                "vorname": "Manuel",
+                "encName": "RGV1dHNjaA==",
+                "encVorname": "TWFudWVs"
+            },
+            {
+                "name": "Raum",
+                "vorname": "Dominik",
+                "encName": "UmF1bQ==",
+                "encVorname": "RG9taW5paw=="
+            },
+            {
+                "name": "Fleckenstein",
+                "vorname": "William",
+                "encName": "RmxlY2tlbnN0ZWlu",
+                "encVorname": "V2lsbGlhbQ=="
+            },
+            {
+                "name": "Rödel",
+                "vorname": "Sebastian",
+                "encName": "UsO2ZGVs",
+                "encVorname": "U2ViYXN0aWFu"
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
             }
         ],
-        "encTeam": "REMgQmxhY2sgS25pZ2h0cyBI9nJkdCAy"
+        "encTeam": "REMgQmxhY2sgS25pZ2h0cyBIw7ZyZHQgMg==",
+        "password": {
+            "value": "4V-iDuoOua619ogctR6f_A==",
+            "changeDate": 1506057781841
+        },
+        "needsChange": true
     },
     "bdl014": {
         "name": "DC Flatliners Karlsruhe 2",
+        "verein": "v018",
         "spiellokal": {
             "name": "Vereinsheim DC Flatliners",
             "strasse": "Hardtstr. 37 (Bau II)",
             "ort": "76185 Karlsruhe",
             "position": {
-                "lat": 49.0072171,
-                "lng": 8.352578099999999
-            }
+                "lat": "49.0072171",
+                "lng": "8.352578099999999"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Peter Krauss",
-            "tel": "0176 - 47273727",
-            "mail": "peter.krauss@gmx.de"
+            "name": "Markus Kellner",
+            "tel": "0172 - 1397366",
+            "mail": "mkellyboy@gmail.com"
         },
         "mitglieder": [
-            {
-                "name": "Ansel",
-                "vorname": "Jürgen",
-                "encName": "QW5zZWw=",
-                "encVorname": "SvxyZ2Vu"
-            },
             {
                 "name": "Heck",
                 "vorname": "Daniel",
                 "encName": "SGVjaw==",
                 "encVorname": "RGFuaWVs"
-            },
-            {
-                "name": "Ihli",
-                "vorname": "Nico",
-                "encName": "SWhsaQ==",
-                "encVorname": "Tmljbw=="
-            },
-            {
-                "name": "Kammerlander",
-                "vorname": "Tobias",
-                "encName": "S2FtbWVybGFuZGVy",
-                "encVorname": "VG9iaWFz"
-            },
-            {
-                "name": "Karacan",
-                "vorname": "Baris",
-                "encName": "S2FyYWNhbg==",
-                "encVorname": "QmFyaXM="
             },
             {
                 "name": "Kirchenbauer",
@@ -1027,96 +1192,128 @@
                 "encVorname": "Vm9sa2Vy"
             },
             {
-                "name": "Kovac",
-                "vorname": "Dujko",
-                "encName": "S292YWM=",
-                "encVorname": "RHVqa28="
-            },
-            {
-                "name": "Krauss",
-                "vorname": "Peter (TC)",
-                "encName": "S3JhdXNz",
-                "encVorname": "UGV0ZXIgKFRDKQ=="
-            },
-            {
-                "name": "Krüger",
-                "vorname": "Felix",
-                "encName": "S3L8Z2Vy",
-                "encVorname": "RmVsaXg="
-            },
-            {
-                "name": "Moog",
-                "vorname": "Ives",
-                "encName": "TW9vZw==",
-                "encVorname": "SXZlcw=="
-            },
-            {
                 "name": "Nüssle",
                 "vorname": "Michael",
                 "encName": "Tvxzc2xl",
                 "encVorname": "TWljaGFlbA=="
             },
             {
-                "name": "Postler",
-                "vorname": "Kevin",
-                "encName": "UG9zdGxlcg==",
-                "encVorname": "S2V2aW4="
+                "name": "Hoffmann",
+                "vorname": "Markus",
+                "encName": "SG9mZm1hbm4=",
+                "encVorname": "TWFya3Vz"
             },
             {
-                "name": "Schätzle",
-                "vorname": "Mirko",
-                "encName": "U2No5HR6bGU=",
-                "encVorname": "TWlya28="
+                "name": "Roller",
+                "vorname": "Freddy",
+                "encName": "Um9sbGVy",
+                "encVorname": "RnJlZGR5"
             },
             {
-                "name": "Schätzle",
+                "name": "Baumann",
+                "vorname": "John",
+                "encName": "QmF1bWFubg==",
+                "encVorname": "Sm9obg=="
+            },
+            {
+                "name": "Spathelf",
+                "vorname": "Stefan",
+                "encName": "U3BhdGhlbGY=",
+                "encVorname": "U3RlZmFu"
+            },
+            {
+                "name": "Schober",
                 "vorname": "Timo",
-                "encName": "U2No5HR6bGU=",
+                "encName": "U2Nob2Jlcg==",
                 "encVorname": "VGltbw=="
             },
             {
-                "name": "Weiss",
-                "vorname": "Michael",
-                "encName": "V2Vpc3M=",
-                "encVorname": "TWljaGFlbA=="
+                "name": "Nees",
+                "vorname": "Thomas",
+                "encName": "TmVlcw==",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Mager",
+                "vorname": "Fabian",
+                "encName": "TWFnZXI=",
+                "encVorname": "RmFiaWFu"
+            },
+            {
+                "name": "Kellner",
+                "vorname": "Markus",
+                "encName": "S2VsbG5lcg==",
+                "encVorname": "TWFya3Vz"
+            },
+            {
+                "name": "Meyer",
+                "vorname": "Torsten",
+                "encName": "TWV5ZXI=",
+                "encVorname": "VG9yc3Rlbg=="
+            },
+            {
+                "name": "Hoffmann",
+                "vorname": "Mika",
+                "encName": "SG9mZm1hbm4=",
+                "encVorname": "TWlrYQ=="
+            },
+            {
+                "name": "Schiller",
+                "vorname": "Nico",
+                "encName": "U2NoaWxsZXI=",
+                "encVorname": "Tmljbw=="
+            },
+            {
+                "name": "Christ",
+                "vorname": "Andreas",
+                "encName": "Q2hyaXN0",
+                "encVorname": "QW5kcmVhcw=="
+            },
+            {
+                "name": "Rönning",
+                "vorname": "Simone",
+                "encName": "UsO2bm5pbmc=",
+                "encVorname": "U2ltb25l"
+            },
+            {
+                "name": "Leclerc",
+                "vorname": "Markus",
+                "encName": "TGVjbGVyYw==",
+                "encVorname": "TWFya3Vz"
             }
         ],
-        "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMg=="
+        "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMg==",
+        "password": {
+            "value": "dJFwx4KIuEucG2dX9hSwUw==",
+            "changeDate": 1505843641054
+        },
+        "needsChange": true
     },
     "bdl015": {
         "name": "DC LaOla Weinheim",
+        "verein": "v022",
         "spiellokal": {
             "name": "LaOla",
             "strasse": "Ahornstr. 48",
             "ort": "69469 Weinheim",
             "position": {
-                "lat": 49.5456306,
-                "lng": 8.6423166
-            }
+                "lat": "49.5456306",
+                "lng": "8.6423166"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Simone Howe",
-            "tel": "0157 - 85605123",
+            "tel": "01523 - 3805337",
             "mail": "laolaweinheim@gmail.com"
         },
         "mitglieder": [
-            {
-                "name": "Baum",
-                "vorname": "Annika",
-                "encName": "QmF1bQ==",
-                "encVorname": "QW5uaWth"
-            },
             {
                 "name": "Demirel",
                 "vorname": "Ali",
                 "encName": "RGVtaXJlbA==",
                 "encVorname": "QWxp"
-            },
-            {
-                "name": "Hauck",
-                "vorname": "Rainer",
-                "encName": "SGF1Y2s=",
-                "encVorname": "UmFpbmVy"
             },
             {
                 "name": "Howe",
@@ -1131,22 +1328,10 @@
                 "encVorname": "RnJhbms="
             },
             {
-                "name": "Hämer",
-                "vorname": "Oliver",
-                "encName": "SORtZXI=",
-                "encVorname": "T2xpdmVy"
-            },
-            {
                 "name": "Krieger",
                 "vorname": "Stefan",
                 "encName": "S3JpZWdlcg==",
                 "encVorname": "U3RlZmFu"
-            },
-            {
-                "name": "Rauscher",
-                "vorname": "Michael",
-                "encName": "UmF1c2NoZXI=",
-                "encVorname": "TWljaGFlbA=="
             },
             {
                 "name": "Walther",
@@ -1155,29 +1340,55 @@
                 "encVorname": "RGFuaWVs"
             },
             {
-                "name": "Walther",
-                "vorname": "Sven",
-                "encName": "V2FsdGhlcg==",
-                "encVorname": "U3Zlbg=="
+                "name": "Meirino",
+                "vorname": "Martin",
+                "encName": "TWVpcmlubw==",
+                "encVorname": "TWFydGlu"
+            },
+            {
+                "name": "Hofmann ",
+                "vorname": "Florian ",
+                "encName": "SG9mbWFubiA=",
+                "encVorname": "RmxvcmlhbiA="
+            },
+            {
+                "name": "Schwöbel ",
+                "vorname": "Marius ",
+                "encName": "U2Nod8O2YmVsIA==",
+                "encVorname": "TWFyaXVzIA=="
+            },
+            {
+                "name": "Langer",
+                "vorname": "Matthias",
+                "encName": "TGFuZ2Vy",
+                "encVorname": "TWF0dGhpYXM="
             }
         ],
-        "encTeam": "REMgTGFPbGEgV2VpbmhlaW0="
+        "encTeam": "REMgTGFPbGEgV2VpbmhlaW0=",
+        "password": {
+            "value": "2hLhqdv4h104IOkTvSAxsQ==",
+            "changeDate": 1507121745078
+        },
+        "needsChange": true
     },
     "bdl016": {
         "name": "DC Letschebach",
+        "verein": "v020",
         "spiellokal": {
-            "name": "Florisimo",
-            "strasse": "Raiherwiesenstr. 13",
+            "name": "Endstation Gleis 8",
+            "strasse": "Hauptbahnstraße 1",
             "ort": "76227 Karlsruhe-Durlach",
             "position": {
-                "lat": 48.99862,
-                "lng": 8.45923
-            }
+                "lat": "49.001888",
+                "lng": "8.463002"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Michael Meier",
             "tel": "0173 - 7910197",
-            "mail": "MimiU@gmx.de"
+            "mail": "mikisyam@freenet.de"
         },
         "mitglieder": [
             {
@@ -1239,50 +1450,52 @@
                 "vorname": "Servet",
                 "encName": "1npjYW4=",
                 "encVorname": "U2VydmV0"
+            },
+            {
+                "name": "Schindler",
+                "vorname": "Armin",
+                "encName": "U2NoaW5kbGVy",
+                "encVorname": "QXJtaW4="
+            },
+            {
+                "name": "Zander",
+                "vorname": "Ramon",
+                "encName": "WmFuZGVy",
+                "encVorname": "UmFtb24="
             }
         ],
-        "encTeam": "REMgTGV0c2NoZWJhY2g="
+        "encTeam": "REMgTGV0c2NoZWJhY2g=",
+        "password": {
+            "value": "bIhs4XcIfJ_0rH44L_AS7A==",
+            "changeDate": 1516014168492
+        },
+        "needsChange": true
     },
     "bdl017": {
         "name": "DC Reiterstüble Eppingen 1",
+        "verein": "v007",
         "spiellokal": {
             "name": "Reiterstüble",
             "strasse": "Talstr. 25",
             "ort": "75031 Eppingen",
             "position": {
-                "lat": 49.1413,
-                "lng": 8.90522
-            }
+                "lat": "49.1413",
+                "lng": "8.90522"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
-            "name": " Philipp Allgeier",
-            "tel": "0176 - 32524254",
-            "mail": ""
+            "name": "Oliver Scheyhing",
+            "tel": "0176-94633773",
+            "mail": "Reiterstueble-sportsbar@web.de"
         },
         "mitglieder": [
-            {
-                "name": "Allgeier",
-                "vorname": "Philipp",
-                "encName": "QWxsZ2VpZXI=",
-                "encVorname": "UGhpbGlwcA=="
-            },
-            {
-                "name": "Fleischmann",
-                "vorname": "Norbert",
-                "encName": "RmxlaXNjaG1hbm4=",
-                "encVorname": "Tm9yYmVydA=="
-            },
             {
                 "name": "Gärtner",
                 "vorname": "Marcel",
                 "encName": "R+RydG5lcg==",
                 "encVorname": "TWFyY2Vs"
-            },
-            {
-                "name": "Kaltenmeier",
-                "vorname": "Siegfried",
-                "encName": "S2FsdGVubWVpZXI=",
-                "encVorname": "U2llZ2ZyaWVk"
             },
             {
                 "name": "Scheyhing",
@@ -1297,72 +1510,56 @@
                 "encVorname": "U3Zlbg=="
             },
             {
-                "name": "Unterhuber",
-                "vorname": "Kevin",
-                "encName": "VW50ZXJodWJlcg==",
-                "encVorname": "S2V2aW4="
-            },
-            {
                 "name": "Wabbel",
                 "vorname": "Thomas",
                 "encName": "V2FiYmVs",
                 "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Bauer",
+                "vorname": "Peter",
+                "encName": "QmF1ZXI=",
+                "encVorname": "UGV0ZXI="
+            },
+            {
+                "name": "Kunze",
+                "vorname": "Marius",
+                "encName": "S3VuemU=",
+                "encVorname": "TWFyaXVz"
             }
         ],
-        "encTeam": "REMgUmVpdGVyc3T8YmxlIEVwcGluZ2VuIDE="
+        "encTeam": "REMgUmVpdGVyc3TDvGJsZSBFcHBpbmdlbiAx",
+        "password": {
+            "value": "cjsMZv5rfvdomgWB-dFzpg==",
+            "changeDate": 1505730913915
+        },
+        "needsChange": true
     },
     "bdl018": {
-        "name": "DC Studenten Bellheim",
+        "name": "DC Studenten Bellheim 1",
+        "verein": "v016",
         "spiellokal": {
             "name": "Tom`s Cafè Bistro",
             "strasse": "Hauptstr. 106",
             "ort": "76756 Bellheim",
             "position": {
-                "lat": 49.19132949999999,
-                "lng": 8.280880699999999
-            }
+                "lat": "49.19132949999999",
+                "lng": "8.280880699999999"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Patrick Alexander",
-            "tel": "0160 - 96592470",
-            "mail": ""
+            "name": "Jens Ferner",
+            "tel": "0171 - 7017348",
+            "mail": "...jensferner@web.de"
         },
         "mitglieder": [
-            {
-                "name": "Alexander",
-                "vorname": "Patrick (TC)",
-                "encName": "QWxleGFuZGVy",
-                "encVorname": "UGF0cmljayAoVEMp"
-            },
             {
                 "name": "Greif",
                 "vorname": "Yannik",
                 "encName": "R3JlaWY=",
                 "encVorname": "WWFubmlr"
-            },
-            {
-                "name": "Heel",
-                "vorname": "Gerhard",
-                "encName": "SGVlbA==",
-                "encVorname": "R2VyaGFyZA=="
-            },
-            {
-                "name": "Hilzendegen",
-                "vorname": "Sina",
-                "encName": "SGlsemVuZGVnZW4=",
-                "encVorname": "U2luYQ=="
-            },
-            {
-                "name": "Knopfinger",
-                "vorname": "Jan",
-                "encName": "S25vcGZpbmdlcg==",
-                "encVorname": "SmFu"
-            },
-            {
-                "name": "Leisinger",
-                "vorname": "Benedikt",
-                "encName": "TGVpc2luZ2Vy",
-                "encVorname": "QmVuZWRpa3Q="
             },
             {
                 "name": "Müller",
@@ -1371,42 +1568,50 @@
                 "encVorname": "TWFya3Vz"
             },
             {
-                "name": "Niederer",
-                "vorname": "Jochen",
-                "encName": "TmllZGVyZXI=",
-                "encVorname": "Sm9jaGVu"
+                "name": "Utting",
+                "vorname": "Michael",
+                "encName": "VXR0aW5n",
+                "encVorname": "TWljaGFlbA=="
             },
             {
-                "name": "Schmidt",
-                "vorname": "Hartmut",
-                "encName": "U2NobWlkdA==",
-                "encVorname": "SGFydG11dA=="
-            },
-            {
-                "name": "Schweitzer",
+                "name": "Waeldin",
                 "vorname": "Andreas",
-                "encName": "U2Nod2VpdHplcg==",
+                "encName": "V2FlbGRpbg==",
                 "encVorname": "QW5kcmVhcw=="
             },
             {
-                "name": "Utting",
-                "vorname": "Nico",
-                "encName": "VXR0aW5n",
-                "encVorname": "Tmljbw=="
+                "name": "Ferner",
+                "vorname": "Jens",
+                "encName": "RmVybmVy",
+                "encVorname": "SmVucw=="
+            },
+            {
+                "name": "Waeldin",
+                "vorname": "Stephanie",
+                "encName": "V2FlbGRpbg==",
+                "encVorname": "U3RlcGhhbmll"
             }
         ],
-        "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWlt"
+        "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWltIDE=",
+        "password": {
+            "value": "GLTZVcIz1xqHUJ5_7uXpMg==",
+            "changeDate": 1507473245232
+        },
+        "needsChange": true
     },
     "bdl019": {
-        "name": "DC Underground Fool`s",
+        "name": "DC Underground Fools e.V",
+        "verein": "v026",
         "spiellokal": {
-            "name": "Vereinsheim Underground Fool`s",
+            "name": "Vereinsheim Underground Fools",
             "strasse": "Ispringer Str. 1-3",
             "ort": "75177 Pforzheim",
             "position": {
-                "lat": 48.89621469999999,
-                "lng": 8.6947185
-            }
+                "lat": "48.89621469999999",
+                "lng": "8.6947185"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Heiko Fruhner",
@@ -1414,12 +1619,6 @@
             "mail": "undergroundfools@yahoo.de"
         },
         "mitglieder": [
-            {
-                "name": "Besesek",
-                "vorname": "Christian",
-                "encName": "QmVzZXNlaw==",
-                "encVorname": "Q2hyaXN0aWFu"
-            },
             {
                 "name": "Cantanna",
                 "vorname": "Guiseppe",
@@ -1457,41 +1656,53 @@
                 "encVorname": "Vml0YWxp"
             },
             {
-                "name": "Kammerer",
-                "vorname": "Miguel",
-                "encName": "S2FtbWVyZXI=",
-                "encVorname": "TWlndWVs"
-            },
-            {
                 "name": "Roth",
                 "vorname": "Urban",
                 "encName": "Um90aA==",
                 "encVorname": "VXJiYW4="
             },
             {
-                "name": "Voggenreiter",
-                "vorname": "Ralf",
-                "encName": "Vm9nZ2VucmVpdGVy",
-                "encVorname": "UmFsZg=="
+                "name": "Titel",
+                "vorname": "Florian",
+                "encName": "VGl0ZWw=",
+                "encVorname": "Rmxvcmlhbg=="
+            },
+            {
+                "name": "Bock",
+                "vorname": "Andre",
+                "encName": "Qm9jaw==",
+                "encVorname": "QW5kcmU="
+            },
+            {
+                "name": "Noto",
+                "vorname": "Daniel",
+                "encName": "Tm90bw==",
+                "encVorname": "RGFuaWVs"
             }
         ],
-        "encTeam": "REMgVW5kZXJncm91bmQgRm9vbGBz"
+        "encTeam": "REMgVW5kZXJncm91bmQgRm9vbHMgZS5W",
+        "password": {
+            "value": "ENu8tTO-FwUL7C7bCAqMQw==",
+            "changeDate": 1505513693728
+        },
+        "needsChange": true
     },
     "bdl020": {
         "name": "Freygerber Fighters",
+        "verein": "v023",
         "spiellokal": {
-            "name": "Freygerber 7",
+            "name": "Zum Brauer",
             "strasse": "Hauptstr. 117",
             "ort": "76744 Wörth/Schaidt",
             "position": {
-                "lat": 49.0597466,
-                "lng": 8.0830658
+                "lat": "49.0597466",
+                "lng": "8.0830658"
             }
         },
         "teamvertreter": {
-            "name": "Bastie Thies",
-            "tel": "0157 - 74588193",
-            "mail": "info@freygerber7.de"
+            "name": "Basti Thies",
+            "tel": "06340 9256031",
+            "mail": "fg_fighters@web.de"
         },
         "mitglieder": [
             {
@@ -1507,40 +1718,10 @@
                 "encVorname": "THVjYXM="
             },
             {
-                "name": "Gaab",
-                "vorname": "Sascha",
-                "encName": "R2FhYg==",
-                "encVorname": "U2FzY2hh"
-            },
-            {
                 "name": "Groll",
                 "vorname": "Markus",
                 "encName": "R3JvbGw=",
                 "encVorname": "TWFya3Vz"
-            },
-            {
-                "name": "Jährling",
-                "vorname": "Hans",
-                "encName": "SuRocmxpbmc=",
-                "encVorname": "SGFucw=="
-            },
-            {
-                "name": "Knebel",
-                "vorname": "Kai",
-                "encName": "S25lYmVs",
-                "encVorname": "S2Fp"
-            },
-            {
-                "name": "Mastafaoni",
-                "vorname": "Bastian",
-                "encName": "TWFzdGFmYW9uaQ==",
-                "encVorname": "QmFzdGlhbg=="
-            },
-            {
-                "name": "Mastafaoni",
-                "vorname": "Karim",
-                "encName": "TWFzdGFmYW9uaQ==",
-                "encVorname": "S2FyaW0="
             },
             {
                 "name": "Renner",
@@ -1549,16 +1730,22 @@
                 "encVorname": "TWFya3Vz"
             },
             {
-                "name": "Schleppi",
-                "vorname": "Klaus",
-                "encName": "U2NobGVwcGk=",
-                "encVorname": "S2xhdXM="
-            },
-            {
                 "name": "Thies",
                 "vorname": "Basti (TC)",
                 "encName": "VGhpZXM=",
                 "encVorname": "QmFzdGkgKFRDKQ=="
+            },
+            {
+                "name": "Schmitt",
+                "vorname": "Andre",
+                "encName": "U2NobWl0dA==",
+                "encVorname": "QW5kcmU="
+            },
+            {
+                "name": "Hasselwander",
+                "vorname": "Steffen ",
+                "encName": "SGFzc2Vsd2FuZGVy",
+                "encVorname": "U3RlZmZlbiA="
             },
             {
                 "name": "Thies",
@@ -1567,22 +1754,30 @@
                 "encVorname": "U3RlZmFu"
             }
         ],
-        "encTeam": "RnJleWdlcmJlciBGaWdodGVycw=="
+        "encTeam": "RnJleWdlcmJlciBGaWdodGVycw==",
+        "password": {
+            "value": "hH4Njc60qWTN2gkVIzB00w==",
+            "changeDate": 1505588387931
+        },
+        "needsChange": true
     },
     "bdl021": {
         "name": "1. DC Jokers Hockenheim",
+        "verein": "v024",
         "spiellokal": {
-            "name": "Fortuna Kegelcenter",
-            "strasse": "Untere Hauptstr. 8",
+            "name": "Hundehäus'l",
+            "strasse": "Altwingertweg 2",
             "ort": "68766 Hockenheim",
             "position": {
-                "lat": 49.31948380000001,
-                "lng": 8.546995899999999
-            }
+                "lat": "49.321948",
+                "lng": "8.533907"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Martin Huber",
-            "tel": "06205 - 15187",
+            "tel": "01625747307",
             "mail": "huber1970@arcor.de"
         },
         "mitglieder": [
@@ -1617,12 +1812,6 @@
                 "encVorname": "RGlyaw=="
             },
             {
-                "name": "Hocker",
-                "vorname": "Patrick",
-                "encName": "SG9ja2Vy",
-                "encVorname": "UGF0cmljaw=="
-            },
-            {
                 "name": "Huber",
                 "vorname": "Martin (TC)",
                 "encName": "SHViZXI=",
@@ -1633,12 +1822,6 @@
                 "vorname": "Christian",
                 "encName": "U3RldHRlcg==",
                 "encVorname": "Q2hyaXN0aWFu"
-            },
-            {
-                "name": "Walter",
-                "vorname": "Florian",
-                "encName": "V2FsdGVy",
-                "encVorname": "Rmxvcmlhbg=="
             },
             {
                 "name": "Weimar",
@@ -1653,18 +1836,26 @@
                 "encVorname": "UGF0cmljaw=="
             }
         ],
-        "encTeam": "MS4gREMgSm9rZXJzIEhvY2tlbmhlaW0="
+        "encTeam": "MS4gREMgSm9rZXJzIEhvY2tlbmhlaW0=",
+        "password": {
+            "value": "0b6GIuHzVbq18wse82_WpA==",
+            "changeDate": 1505240131430
+        },
+        "needsChange": true
     },
     "bdl022": {
         "name": "DC Reiterstüble Eppingen 2",
+        "verein": "v007",
         "spiellokal": {
             "name": "Reiterstüble",
             "strasse": "Talstr. 25",
             "ort": "75031 Eppingen",
             "position": {
-                "lat": 49.1413,
-                "lng": 8.90522
-            }
+                "lat": "49.1413",
+                "lng": "8.90522"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Dirk Scholz",
@@ -1673,40 +1864,10 @@
         },
         "mitglieder": [
             {
-                "name": "Fischer",
-                "vorname": "Mario",
-                "encName": "RmlzY2hlcg==",
-                "encVorname": "TWFyaW8="
-            },
-            {
                 "name": "Gärtner",
                 "vorname": "Gabi",
                 "encName": "R+RydG5lcg==",
                 "encVorname": "R2FiaQ=="
-            },
-            {
-                "name": "Köster",
-                "vorname": "Nadja",
-                "encName": "S/ZzdGVy",
-                "encVorname": "TmFkamE="
-            },
-            {
-                "name": "Laukhuff",
-                "vorname": "Manuel",
-                "encName": "TGF1a2h1ZmY=",
-                "encVorname": "TWFudWVs"
-            },
-            {
-                "name": "Niehage",
-                "vorname": "Mike",
-                "encName": "TmllaGFnZQ==",
-                "encVorname": "TWlrZQ=="
-            },
-            {
-                "name": "Rösinger",
-                "vorname": "Ralf",
-                "encName": "UvZzaW5nZXI=",
-                "encVorname": "UmFsZg=="
             },
             {
                 "name": "Scholz",
@@ -1719,33 +1880,71 @@
                 "vorname": "Dieter",
                 "encName": "V29sZHQ=",
                 "encVorname": "RGlldGVy"
+            },
+            {
+                "name": "Hafner",
+                "vorname": "Ralf",
+                "encName": "SGFmbmVy",
+                "encVorname": "UmFsZg=="
+            },
+            {
+                "name": "Schönborn",
+                "vorname": "Timo",
+                "encName": "U2Now7ZuYm9ybg==",
+                "encVorname": "VGltbw=="
+            },
+            {
+                "name": "Aslantas",
+                "vorname": "Sahin",
+                "encName": "QXNsYW50YXM=",
+                "encVorname": "U2FoaW4="
+            },
+            {
+                "name": "Pasler",
+                "vorname": "Timo",
+                "encName": "UGFzbGVy",
+                "encVorname": "VGltbw=="
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
+            },
+            {
+                "name": "Brösche",
+                "vorname": "Klaus Dieter",
+                "encName": "QnLDtnNjaGU=",
+                "encVorname": "S2xhdXMgRGlldGVy"
             }
         ],
-        "encTeam": "REMgUmVpdGVyc3T8YmxlIEVwcGluZ2VuIDI="
+        "encTeam": "REMgUmVpdGVyc3TDvGJsZSBFcHBpbmdlbiAy",
+        "password": {
+            "value": "01pbTDoey74B5LfWvRYm_g==",
+            "changeDate": 1505727359767
+        },
+        "needsChange": true
     },
     "bdl023": {
         "name": "DC Undertaker reloaded 1",
+        "verein": "v001",
         "spiellokal": {
             "name": "Gaststätte Zur alten Rose",
             "strasse": "Häusserstr. 22",
             "ort": "68789 St. Leon",
             "position": {
-                "lat": 21.1250077,
-                "lng": -101.6859605
-            }
+                "lat": "49.2672",
+                "lng": "8.59647"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Uwe Mecklenburg",
+            "name": "Matthias Knebel",
             "tel": "0151 - 18707207",
-            "mail": "uwemecklenburg@t-online.de"
+            "mail": "darty1971@googlemail.com"
         },
         "mitglieder": [
-            {
-                "name": "Albert",
-                "vorname": "Vanessa",
-                "encName": "QWxiZXJ0",
-                "encVorname": "VmFuZXNzYQ=="
-            },
             {
                 "name": "Albrecht",
                 "vorname": "Robert",
@@ -1771,55 +1970,69 @@
                 "encVorname": "S29samE="
             },
             {
-                "name": "Hagmann",
-                "vorname": "Kim",
-                "encName": "SGFnbWFubg==",
-                "encVorname": "S2lt"
-            },
-            {
                 "name": "Knebel",
                 "vorname": "Matthias",
                 "encName": "S25lYmVs",
                 "encVorname": "TWF0dGhpYXM="
             },
             {
-                "name": "Mecklenburg",
-                "vorname": "Uwe (TC)",
-                "encName": "TWVja2xlbmJ1cmc=",
-                "encVorname": "VXdlIChUQyk="
+                "name": "Zaich",
+                "vorname": "Kevin",
+                "encName": "WmFpY2g=",
+                "encVorname": "S2V2aW4="
             },
             {
-                "name": "Steiner",
-                "vorname": "Thomas",
-                "encName": "U3RlaW5lcg==",
-                "encVorname": "VGhvbWFz"
+                "name": "Keilbach",
+                "vorname": "Sebastian",
+                "encName": "S2VpbGJhY2g=",
+                "encVorname": "U2ViYXN0aWFu"
+            },
+            {
+                "name": "Mecklenburg",
+                "vorname": "Uwe",
+                "encName": "TWVja2xlbmJ1cmc=",
+                "encVorname": "VXdl"
+            },
+            {
+                "name": "Stelle",
+                "vorname": "Mike",
+                "encName": "U3RlbGxl",
+                "encVorname": "TWlrZQ=="
+            },
+            {
+                "name": "Weingand",
+                "vorname": "Marcel",
+                "encName": "V2VpbmdhbmQ=",
+                "encVorname": "TWFyY2Vs"
             }
         ],
-        "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAx"
+        "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAx",
+        "password": {
+            "value": "jcjdFYwlSKqc06830KuFkA==",
+            "changeDate": 1505245260499
+        },
+        "needsChange": true
     },
     "bdl024": {
         "name": "DC Undertaker reloaded 2",
+        "verein": "v001",
         "spiellokal": {
             "name": "Gaststätte Zur alten Rose",
             "strasse": "Häusserstr. 22",
             "ort": "68789 St. Leon",
             "position": {
-                "lat": 21.1250077,
-                "lng": -101.6859605
-            }
+                "lat": "21.1250077",
+                "lng": "-101.6859605"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Dominik Boss",
-            "tel": "0157 - 85073806",
-            "mail": "webmaster@badischedartliga.de"
+            "name": "Patrick Kost",
+            "tel": "0171 3494759",
+            "mail": "Patrick-Kost@gmx.de"
         },
         "mitglieder": [
-            {
-                "name": "Boss",
-                "vorname": "Dominik (TC)",
-                "encName": "Qm9zcw==",
-                "encVorname": "RG9taW5payAoVEMp"
-            },
             {
                 "name": "Embach",
                 "vorname": "Martin",
@@ -1857,84 +2070,116 @@
                 "encVorname": "Tmlrb2xhb3M="
             },
             {
-                "name": "Stelle",
-                "vorname": "Mike",
-                "encName": "U3RlbGxl",
-                "encVorname": "TWlrZQ=="
-            },
-            {
                 "name": "Zang",
                 "vorname": "Lothar",
                 "encName": "WmFuZw==",
                 "encVorname": "TG90aGFy"
+            },
+            {
+                "name": "Boss",
+                "vorname": "Dominik",
+                "encName": "Qm9zcw==",
+                "encVorname": "RG9taW5paw=="
             }
         ],
-        "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAy"
+        "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAy",
+        "password": {
+            "value": "P6ueE6tDfNJzGVd0lYfNPQ==",
+            "changeDate": 1505246858501
+        },
+        "needsChange": true
     },
     "bdl025": {
         "name": "Gegen die Drück 3",
+        "verein": "v006",
         "spiellokal": {
             "name": "Bistro J Dartkneipe",
             "strasse": "Rudolf-Diesel-Str. 2",
             "ort": "69207 Sandhausen",
             "position": {
-                "lat": 49.35123,
-                "lng": 8.655360000000002
-            }
+                "lat": "49.35123",
+                "lng": "8.655360000000002"
+            },
+            "nichtraucher": true,
+            "jugend": false
         },
         "teamvertreter": {
-            "name": "Bastian Durchholz",
-            "tel": "0176 - 70893048",
-            "mail": "bastian.durchholz@gmail.com"
+            "name": "Steffen Wittmann",
+            "tel": "0176 - 21067145",
+            "mail": "wittmann.steffen@gmx.de"
         },
         "mitglieder": [
             {
-                "name": "Anselmann",
-                "vorname": "Tim",
-                "encName": "QW5zZWxtYW5u",
-                "encVorname": "VGlt"
+                "name": "Wittmann",
+                "vorname": "Steffen",
+                "encName": "V2l0dG1hbm4=",
+                "encVorname": "U3RlZmZlbg=="
             },
             {
-                "name": "Durchholz",
-                "vorname": "Bastian (TC)",
-                "encName": "RHVyY2hob2x6",
-                "encVorname": "QmFzdGlhbiAoVEMp"
+                "name": "Margraf",
+                "vorname": "Matthias ",
+                "encName": "TWFyZ3JhZg==",
+                "encVorname": "TWF0dGhpYXMg"
             },
             {
-                "name": "Gawlik",
-                "vorname": "Ralf",
-                "encName": "R2F3bGlr",
-                "encVorname": "UmFsZg=="
+                "name": "Muth",
+                "vorname": "Rüdiger",
+                "encName": "TXV0aA==",
+                "encVorname": "UsO8ZGlnZXI="
             },
             {
-                "name": "Jany",
-                "vorname": "Christian",
-                "encName": "SmFueQ==",
-                "encVorname": "Q2hyaXN0aWFu"
+                "name": "Schäfer",
+                "vorname": "Mathias",
+                "encName": "U2Now6RmZXI=",
+                "encVorname": "TWF0aGlhcw=="
             },
             {
-                "name": "Schied",
-                "vorname": "Andreas",
-                "encName": "U2NoaWVk",
-                "encVorname": "QW5kcmVhcw=="
+                "name": "Milisic",
+                "vorname": "Josef",
+                "encName": "TWlsaXNpYw==",
+                "encVorname": "Sm9zZWY="
             },
             {
-                "name": "Skrzypek",
-                "vorname": "Iwana",
-                "encName": "U2tyenlwZWs=",
-                "encVorname": "SXdhbmE="
+                "name": "Schrödersecker ",
+                "vorname": "Sabrina ",
+                "encName": "U2NocsO2ZGVyc2Vja2VyIA==",
+                "encVorname": "U2FicmluYSA="
             },
             {
-                "name": "Weber",
-                "vorname": "Holger",
-                "encName": "V2ViZXI=",
-                "encVorname": "SG9sZ2Vy"
+                "name": "Dworaczek ",
+                "vorname": "Annetta",
+                "encName": "RHdvcmFjemVrIA==",
+                "encVorname": "QW5uZXR0YQ=="
+            },
+            {
+                "name": "Winter",
+                "vorname": "Anna",
+                "encName": "V2ludGVy",
+                "encVorname": "QW5uYQ=="
+            },
+            {
+                "name": "Bültena",
+                "vorname": "Thomas",
+                "encName": "QsO8bHRlbmE=",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Götz",
+                "vorname": "Martin",
+                "encName": "R8O2dHo=",
+                "encVorname": "TWFydGlu"
             }
         ],
-        "encTeam": "R2VnZW4gZGllIERy/GNrIDM="
+        "encTeam": "R2VnZW4gZGllIERyw7xjayAz",
+        "password": {
+            "value": "fu9SF5Qm9Yqi_jkjwrO4ew==",
+            "changeDate": 1505643874198
+        },
+        "needsChange": true
     },
     "bdl026": {
         "name": "Gegen die Drück 4",
+        "verein": "v006",
         "spiellokal": {
             "name": "Bistro J Dartkneipe",
             "strasse": "Rudolf-Diesel-Str. 2",
@@ -1993,18 +2238,26 @@
                 "encVorname": "QW5uYQ=="
             }
         ],
-        "encTeam": "R2VnZW4gZGllIERy/GNrIDQ="
+        "encTeam": "R2VnZW4gZGllIERyw7xjayA0",
+        "password": {
+            "value": "QEXB9b4enz7jLWv2J0rmaA==",
+            "changeDate": 1473657356057
+        },
+        "needsChange": true
     },
     "bdl027": {
         "name": "Ideal Wild Tigers",
+        "verein": "v004",
         "spiellokal": {
             "name": "Bistro Ideal",
             "strasse": "Mannheimer Str. 44a",
             "ort": "68723 Oftersheim",
             "position": {
-                "lat": 49.3699593,
-                "lng": 8.5830065
-            }
+                "lat": "49.3699593",
+                "lng": "8.5830065"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Susanne Thoma",
@@ -2037,36 +2290,50 @@
                 "encVorname": "U3RlcGhhbmll"
             },
             {
-                "name": "Mack",
-                "vorname": "Paul Curtiss",
-                "encName": "TWFjaw==",
-                "encVorname": "UGF1bCBDdXJ0aXNz"
-            },
-            {
-                "name": "Schweitzer",
-                "vorname": "Ralf",
-                "encName": "U2Nod2VpdHplcg==",
-                "encVorname": "UmFsZg=="
-            },
-            {
                 "name": "Thoma",
                 "vorname": "Susanne (TC)",
                 "encName": "VGhvbWE=",
                 "encVorname": "U3VzYW5uZSAoVEMp"
+            },
+            {
+                "name": "Exner",
+                "vorname": "Lydia",
+                "encName": "RXhuZXI=",
+                "encVorname": "THlkaWE="
+            },
+            {
+                "name": "Wahl",
+                "vorname": "Christopher",
+                "encName": "V2FobA==",
+                "encVorname": "Q2hyaXN0b3BoZXI="
+            },
+            {
+                "name": "Ulrich",
+                "vorname": "Giuseppe",
+                "encName": "VWxyaWNo",
+                "encVorname": "R2l1c2VwcGU="
             }
         ],
-        "encTeam": "SWRlYWwgV2lsZCBUaWdlcnM="
+        "encTeam": "SWRlYWwgV2lsZCBUaWdlcnM=",
+        "password": {
+            "value": "PuNm5xOfqh4kebJ58pBuhQ==",
+            "changeDate": 1505485486825
+        },
+        "needsChange": true
     },
     "bdl028": {
         "name": "Iron Eagles",
+        "verein": "v005",
         "spiellokal": {
             "name": "Bistro Connect",
             "strasse": "Langgasse 32",
             "ort": "67459 Böhl-Iggelheim",
             "position": {
-                "lat": 49.36555,
-                "lng": 8.30574
-            }
+                "lat": "49.36555",
+                "lng": "8.30574"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Tobias Mohr",
@@ -2087,12 +2354,6 @@
                 "encVorname": "TGFycw=="
             },
             {
-                "name": "Lucas",
-                "vorname": "Jan",
-                "encName": "THVjYXM=",
-                "encVorname": "SmFu"
-            },
-            {
                 "name": "Mohr",
                 "vorname": "Markus",
                 "encName": "TW9ocg==",
@@ -2111,35 +2372,61 @@
                 "encVorname": "UmFsZg=="
             },
             {
-                "name": "Weber",
-                "vorname": "Florian",
-                "encName": "V2ViZXI=",
-                "encVorname": "Rmxvcmlhbg=="
+                "name": "Armbrust",
+                "vorname": "Markus",
+                "encName": "QXJtYnJ1c3Q=",
+                "encVorname": "TWFya3Vz"
             },
             {
-                "name": "Zuber",
-                "vorname": "Sven",
-                "encName": "WnViZXI=",
-                "encVorname": "U3Zlbg=="
+                "name": "Frei",
+                "vorname": "Stefanie",
+                "encName": "RnJlaQ==",
+                "encVorname": "U3RlZmFuaWU="
+            },
+            {
+                "name": "Mocker",
+                "vorname": "Yvonne",
+                "encName": "TW9ja2Vy",
+                "encVorname": "WXZvbm5l"
+            },
+            {
+                "name": "Eygelshoven",
+                "vorname": "Daniel",
+                "encName": "RXlnZWxzaG92ZW4=",
+                "encVorname": "RGFuaWVs"
+            },
+            {
+                "name": "Naujoks",
+                "vorname": "Marco",
+                "encName": "TmF1am9rcw==",
+                "encVorname": "TWFyY28="
             }
         ],
-        "encTeam": "SXJvbiBFYWdsZXM="
+        "encTeam": "SXJvbiBFYWdsZXM=",
+        "password": {
+            "value": "mGa0KMZDpMSY_--112MrIg==",
+            "changeDate": 1505210440083
+        },
+        "needsChange": true
     },
     "bdl029": {
         "name": "Taraxacuma Die Dritte",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966599",
+                "lng": "8.4686098"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Andrea Richard",
             "tel": "02756 - 944310 (ab 19 Uhr)",
-            "mail": "taraxacuma@aol.de"
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
             {
@@ -2159,18 +2446,6 @@
                 "vorname": "Sabrina",
                 "encName": "SmFuaW4=",
                 "encVorname": "U2FicmluYQ=="
-            },
-            {
-                "name": "Jewell",
-                "vorname": "David",
-                "encName": "SmV3ZWxs",
-                "encVorname": "RGF2aWQ="
-            },
-            {
-                "name": "Kübler",
-                "vorname": "Lukas",
-                "encName": "S/xibGVy",
-                "encVorname": "THVrYXM="
             },
             {
                 "name": "Mohr",
@@ -2203,29 +2478,79 @@
                 "encVorname": "SnV0dGE="
             },
             {
-                "name": "Ziege",
-                "vorname": "Dennis",
-                "encName": "WmllZ2U=",
-                "encVorname": "RGVubmlz"
+                "name": "Richard",
+                "vorname": "Dieter",
+                "encName": "UmljaGFyZA==",
+                "encVorname": "RGlldGVy"
+            },
+            {
+                "name": "Hoffmann",
+                "vorname": "Daniel",
+                "encName": "SG9mZm1hbm4=",
+                "encVorname": "RGFuaWVs"
+            },
+            {
+                "name": "Härtel",
+                "vorname": "Sandra",
+                "encName": "SMOkcnRlbA==",
+                "encVorname": "U2FuZHJh"
+            },
+            {
+                "name": "Bleich",
+                "vorname": "Alex",
+                "encName": "QmxlaWNo",
+                "encVorname": "QWxleA=="
+            },
+            {
+                "name": "Machauer",
+                "vorname": "Sebastian",
+                "encName": "TWFjaGF1ZXI=",
+                "encVorname": "U2ViYXN0aWFu"
+            },
+            {
+                "name": "Vogel",
+                "vorname": "Marius",
+                "encName": "Vm9nZWw=",
+                "encVorname": "TWFyaXVz"
+            },
+            {
+                "name": "Moock",
+                "vorname": "Carsten",
+                "encName": "TW9vY2s=",
+                "encVorname": "Q2Fyc3Rlbg=="
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBEaWUgRHJpdHRl"
+        "encTeam": "VGFyYXhhY3VtYSBEaWUgRHJpdHRl",
+        "password": {
+            "value": "WRk5nej14LKdFtjCld9shw==",
+            "changeDate": 1505234662965
+        },
+        "needsChange": true
     },
     "bdl030": {
         "name": "Taraxacuma TNT",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966539",
+                "lng": "8.4683658"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Ralf Stegmüller",
-            "tel": "07254 - 985210",
-            "mail": "tonko@web.de"
+            "tel": "0151-19674858",
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
             {
@@ -2239,12 +2564,6 @@
                 "vorname": "Christina",
                 "encName": "R3Jv3w==",
                 "encVorname": "Q2hyaXN0aW5h"
-            },
-            {
-                "name": "Resch",
-                "vorname": "Kimo",
-                "encName": "UmVzY2g=",
-                "encVorname": "S2ltbw=="
             },
             {
                 "name": "Riedle",
@@ -2287,20 +2606,40 @@
                 "vorname": "Stefan",
                 "encName": "U3RlaW5sZQ==",
                 "encVorname": "U3RlZmFu"
+            },
+            {
+                "name": "Zieger",
+                "vorname": "Sina",
+                "encName": "WmllZ2Vy",
+                "encVorname": "U2luYQ=="
+            },
+            {
+                "name": "Zieger",
+                "vorname": "Simon",
+                "encName": "WmllZ2Vy",
+                "encVorname": "U2ltb24="
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBUTlQ="
+        "encTeam": "VGFyYXhhY3VtYSBUTlQ=",
+        "password": {
+            "value": "1LqkAeCgTYcEkEkl_8BqNg==",
+            "changeDate": 1505234775694
+        },
+        "needsChange": true
     },
     "bdl031": {
         "name": "Team Wilder Mann",
+        "verein": "v004",
         "spiellokal": {
             "name": "Bistro Ideal",
             "strasse": "Mannheimer Str. 44a",
             "ort": "68723 Oftersheim",
             "position": {
-                "lat": 49.3699593,
-                "lng": 8.5830065
-            }
+                "lat": "49.3699593",
+                "lng": "8.5830065"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Jörg Bogumil",
@@ -2339,29 +2678,53 @@
                 "encVorname": "Um9sZg=="
             },
             {
-                "name": "Schell",
-                "vorname": "Thomas",
-                "encName": "U2NoZWxs",
-                "encVorname": "VGhvbWFz"
+                "name": "Mack",
+                "vorname": "Paul.C.",
+                "encName": "TWFjaw==",
+                "encVorname": "UGF1bC5DLg=="
+            },
+            {
+                "name": "Lausch",
+                "vorname": "Oliver-Falk",
+                "encName": "TGF1c2No",
+                "encVorname": "T2xpdmVyLUZhbGs="
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
+            },
+            {
+                "name": "Speiger",
+                "vorname": "Jan",
+                "encName": "U3BlaWdlcg==",
+                "encVorname": "SmFu"
             }
         ],
-        "encTeam": "VGVhbSBXaWxkZXIgTWFubg=="
+        "encTeam": "VGVhbSBXaWxkZXIgTWFubg==",
+        "password": {
+            "value": "6aKy0eUeMQHLJNy_a1NA2g==",
+            "changeDate": 1505594062743
+        },
+        "needsChange": true
     },
     "bdl032": {
         "name": "DC Blau-Weiß Karlsruhe",
+        "verein": "v014",
         "spiellokal": {
             "name": "Dart Schubbe",
             "strasse": "Steinkreuzstr. 14",
             "ort": "76228 Karlsruhe-Wolfartsweier",
             "position": {
-                "lat": 48.97813,
-                "lng": 8.45762
+                "lat": "48.97813",
+                "lng": "8.45762"
             }
         },
         "teamvertreter": {
             "name": "Tobias Götzelmann",
             "tel": "0178 - 4981045",
-            "mail": ""
+            "mail": "dcblauweisska@yahoo.de"
         },
         "mitglieder": [
             {
@@ -2423,12 +2786,30 @@
                 "vorname": "Sebastian",
                 "encName": "UGxvdGg=",
                 "encVorname": "U2ViYXN0aWFu"
+            },
+            {
+                "name": "Cramer",
+                "vorname": "Uwe",
+                "encName": "Q3JhbWVy",
+                "encVorname": "VXdl"
+            },
+            {
+                "name": "Mendel",
+                "vorname": "Timo",
+                "encName": "TWVuZGVs",
+                "encVorname": "VGltbw=="
             }
         ],
-        "encTeam": "REMgQmxhdS1XZWnfIEthcmxzcnVoZQ=="
+        "encTeam": "REMgQmxhdS1XZWnDnyBLYXJsc3J1aGU=",
+        "password": {
+            "value": "7e7GglZ0h64OPBzS-CgFZA==",
+            "changeDate": 1505314599156
+        },
+        "needsChange": true
     },
     "bdl033": {
         "name": "D.A.R.T. Plumbata e.V.",
+        "verein": "v013",
         "spiellokal": {
             "name": "Church Chill Sportsbar",
             "strasse": "Karlstrasse 115",
@@ -2436,7 +2817,9 @@
             "position": {
                 "lat": "48.9967137",
                 "lng": "8.3938916"
-            }
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Melanie Klomann",
@@ -2517,24 +2900,6 @@
                 "encVorname": "TWVsYW5pZSAoVEMp"
             },
             {
-                "name": "König",
-                "vorname": "Kevin",
-                "encName": "S/ZuaWc=",
-                "encVorname": "S2V2aW4="
-            },
-            {
-                "name": "Muntz",
-                "vorname": "Hans Peter",
-                "encName": "TXVudHo=",
-                "encVorname": "SGFucyBQZXRlcg=="
-            },
-            {
-                "name": "Poppeck",
-                "vorname": "Tobias",
-                "encName": "UG9wcGVjaw==",
-                "encVorname": "VG9iaWFz"
-            },
-            {
                 "name": "Rohde",
                 "vorname": "Thomas",
                 "encName": "Um9oZGU=",
@@ -2547,24 +2912,32 @@
                 "encVorname": "VG9uaQ=="
             },
             {
-                "name": "Weber",
-                "vorname": "Alexander",
-                "encName": "V2ViZXI=",
-                "encVorname": "QWxleGFuZGVy"
+                "name": "Poppek",
+                "vorname": "Tobias",
+                "encName": "UG9wcGVr",
+                "encVorname": "VG9iaWFz"
             }
         ],
-        "encTeam": "RC5BLlIuVC4gUGx1bWJhdGE="
+        "encTeam": "RC5BLlIuVC4gUGx1bWJhdGEgZS5WLg==",
+        "password": {
+            "value": "ZL7b9eHC8-xbmr4bgabd-Q==",
+            "changeDate": 1505576053051
+        },
+        "needsChange": true
     },
     "bdl034": {
         "name": "Dart Train Rastatt",
+        "verein": "v015",
         "spiellokal": {
             "name": "Zur Fohlenweide",
             "strasse": "Ötigheimer Weg 92",
             "ort": "76437 Rastatt",
             "position": {
-                "lat": 48.87378,
-                "lng": 8.220329999999999
-            }
+                "lat": "48.87378",
+                "lng": "8.220329999999999"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Dieter Philipp",
@@ -2625,20 +2998,46 @@
                 "vorname": "Klaus",
                 "encName": "UmVkd2Fueg==",
                 "encVorname": "S2xhdXM="
+            },
+            {
+                "name": "Raum",
+                "vorname": "Karl-Heinz",
+                "encName": "UmF1bQ==",
+                "encVorname": "S2FybC1IZWlueg=="
+            },
+            {
+                "name": "Reuter",
+                "vorname": "Stefanie",
+                "encName": "UmV1dGVy",
+                "encVorname": "U3RlZmFuaWU="
+            },
+            {
+                "name": "Mack",
+                "vorname": "Uwe",
+                "encName": "TWFjaw==",
+                "encVorname": "VXdl"
             }
         ],
-        "encTeam": "RGFydCBUcmFpbiBSYXN0YXR0"
+        "encTeam": "RGFydCBUcmFpbiBSYXN0YXR0",
+        "password": {
+            "value": "GZYiFXIBTtW8mRmE-t6IVg==",
+            "changeDate": 1505575928484
+        },
+        "needsChange": true
     },
     "bdl035": {
         "name": "DC 81 Karlsruhe",
+        "verein": "v010",
         "spiellokal": {
             "name": "Der Hexenkessel",
             "strasse": "Hardtstr. 45a",
             "ort": "76185 Karlsruhe",
             "position": {
-                "lat": 49.0148934,
-                "lng": 8.360271299999999
-            }
+                "lat": "49.0148934",
+                "lng": "8.360271299999999"
+            },
+            "nichtraucher": false,
+            "jugend": false
         },
         "teamvertreter": {
             "name": "Marco Müller",
@@ -2651,12 +3050,6 @@
                 "vorname": "Iris",
                 "encName": "QW5kZXJ0",
                 "encVorname": "SXJpcw=="
-            },
-            {
-                "name": "Araci",
-                "vorname": "Cihan",
-                "encName": "QXJhY2k=",
-                "encVorname": "Q2loYW4="
             },
             {
                 "name": "Daum",
@@ -2689,30 +3082,50 @@
                 "encVorname": "TWFyY28gKFRDKQ=="
             },
             {
-                "name": "Müller",
-                "vorname": "Bodo",
-                "encName": "TfxsbGVy",
-                "encVorname": "Qm9kbw=="
+                "name": "Bauer",
+                "vorname": "Thomas ",
+                "encName": "QmF1ZXI=",
+                "encVorname": "VGhvbWFzIA=="
             },
             {
-                "name": "Neuhaus",
-                "vorname": "Mario",
-                "encName": "TmV1aGF1cw==",
-                "encVorname": "TWFyaW8="
+                "name": "Ehinger",
+                "vorname": "Thomas",
+                "encName": "RWhpbmdlcg==",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
+            },
+            {
+                "name": "Gillardon",
+                "vorname": "Kevin",
+                "encName": "R2lsbGFyZG9u",
+                "encVorname": "S2V2aW4="
             }
         ],
-        "encTeam": "REMgODEgS2FybHNydWhl"
+        "encTeam": "REMgODEgS2FybHNydWhl",
+        "password": {
+            "value": "8txyBRgcRA-kE7pHLEYhng==",
+            "changeDate": 1506710928039
+        },
+        "needsChange": true
     },
     "bdl036": {
         "name": "DC Shamrock",
+        "verein": "v027",
         "spiellokal": {
             "name": "Matzes Pub",
             "strasse": "Heidelberger Str. 1",
             "ort": "76669 Bad Schönborn",
             "position": {
-                "lat": 49.22023,
-                "lng": 8.65308
-            }
+                "lat": "49.22023",
+                "lng": "8.65308"
+            },
+            "nichtraucher": false,
+            "jugend": true
         },
         "teamvertreter": {
             "name": "Benjamin Bischoff",
@@ -2739,18 +3152,6 @@
                 "encVorname": "VG9uaQ=="
             },
             {
-                "name": "Hoffmann",
-                "vorname": "Yasmin",
-                "encName": "SG9mZm1hbm4=",
-                "encVorname": "WWFzbWlu"
-            },
-            {
-                "name": "Kimling",
-                "vorname": "Jens",
-                "encName": "S2ltbGluZw==",
-                "encVorname": "SmVucw=="
-            },
-            {
                 "name": "Kuhn",
                 "vorname": "Alexander",
                 "encName": "S3Vobg==",
@@ -2769,35 +3170,137 @@
                 "encVorname": "V2VybmVy"
             },
             {
-                "name": "Stansch",
-                "vorname": "Tobias",
-                "encName": "U3RhbnNjaA==",
-                "encVorname": "VG9iaWFz"
-            },
-            {
                 "name": "Wagner",
                 "vorname": "Micha",
                 "encName": "V2FnbmVy",
                 "encVorname": "TWljaGE="
+            },
+            {
+                "name": "Frecke",
+                "vorname": "Norman",
+                "encName": "RnJlY2tl",
+                "encVorname": "Tm9ybWFu"
             }
         ],
-        "encTeam": "REMgU2hhbXJvY2s="
+        "encTeam": "REMgU2hhbXJvY2s=",
+        "password": {
+            "value": "so9tZetbHf8EPSsRn-QvxqT8u9R7TFYgA1fxg6mYF10=",
+            "changeDate": 1505300793028
+        },
+        "needsChange": true
     },
     "bdl037": {
         "name": "Gaggenauer Dartmoskitos 1",
+        "verein": "v011",
         "spiellokal": {
-            "name": "Am Traischbachstadion",
+            "name": "Jedermann'Spoga",
             "strasse": "Waldstr. 38",
             "ort": "76571 Gaggenau",
             "position": {
-                "lat": 48.801221,
-                "lng": 8.307147
-            }
+                "lat": "48.801221",
+                "lng": "8.307147"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Christian Schorpp",
-            "tel": "01590 - 5059535",
-            "mail": "christian-schorpp@t-online.de"
+            "name": "Joachim Pflueger",
+            "tel": "0157-73562848",
+            "mail": "joachim.pflueger@daimler.com"
+        },
+        "mitglieder": [
+            {
+                "name": "Krzyzanowski",
+                "vorname": "Lukas",
+                "encName": "S3J6eXphbm93c2tp",
+                "encVorname": "THVrYXM="
+            },
+            {
+                "name": "Walz",
+                "vorname": "David",
+                "encName": "V2Fseg==",
+                "encVorname": "RGF2aWQ="
+            },
+            {
+                "name": "Kraft",
+                "vorname": "Thomas",
+                "encName": "S3JhZnQ=",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Gleisle",
+                "vorname": "Michael",
+                "encName": "R2xlaXNsZQ==",
+                "encVorname": "TWljaGFlbA=="
+            },
+            {
+                "name": "Pflueger",
+                "vorname": "Joachim (TC)",
+                "encName": "UGZsdWVnZXI=",
+                "encVorname": "Sm9hY2hpbSAoVEMp"
+            },
+            {
+                "name": "Schorpp",
+                "vorname": "Christian",
+                "encName": "U2Nob3JwcA==",
+                "encVorname": "Q2hyaXN0aWFu"
+            },
+            {
+                "name": "Wezel",
+                "vorname": "Peter",
+                "encName": "V2V6ZWw=",
+                "encVorname": "UGV0ZXI="
+            },
+            {
+                "name": "Saulich",
+                "vorname": "Dominik",
+                "encName": "U2F1bGljaA==",
+                "encVorname": "RG9taW5paw=="
+            },
+            {
+                "name": "Bertsch",
+                "vorname": "Stephan",
+                "encName": "QmVydHNjaA==",
+                "encVorname": "U3RlcGhhbg=="
+            },
+            {
+                "name": "Holweck",
+                "vorname": "Jürgen",
+                "encName": "SG9sd2Vjaw==",
+                "encVorname": "SsO8cmdlbg=="
+            },
+            {
+                "name": "Klein",
+                "vorname": "Marco",
+                "encName": "S2xlaW4=",
+                "encVorname": "TWFyY28="
+            }
+        ],
+        "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMQ==",
+        "password": {
+            "value": "4ViDFVO61TvkEB20U4iojw==",
+            "changeDate": 1505455110544
+        },
+        "needsChange": true
+    },
+    "bdl038": {
+        "name": "Gaggenauer Dartmoskitos 2",
+        "verein": "v011",
+        "spiellokal": {
+            "name": "Jedermann'Spoga",
+            "strasse": "Waldstr. 38",
+            "ort": "76571 Gaggenau",
+            "position": {
+                "lat": "48.801221",
+                "lng": "8.307147"
+            },
+            "nichtraucher": true,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Florian Kohrt",
+            "tel": "0176 - 34471275",
+            "mail": "floko88@t-online.de"
         },
         "mitglieder": [
             {
@@ -2807,22 +3310,16 @@
                 "encVorname": "Rmxvcmlhbg=="
             },
             {
-                "name": "Krzyzanowski",
-                "vorname": "Lukas",
-                "encName": "S3J6eXphbm93c2tp",
-                "encVorname": "THVrYXM="
-            },
-            {
                 "name": "Nowak",
                 "vorname": "Lukas",
                 "encName": "Tm93YWs=",
                 "encVorname": "THVrYXM="
             },
             {
-                "name": "Nowak",
-                "vorname": "Martin",
-                "encName": "Tm93YWs=",
-                "encVorname": "TWFydGlu"
+                "name": "Bache",
+                "vorname": "John",
+                "encName": "QmFjaGU=",
+                "encVorname": "Sm9obg=="
             },
             {
                 "name": "Schier",
@@ -2831,10 +3328,10 @@
                 "encVorname": "TWFyaw=="
             },
             {
-                "name": "Schorpp",
-                "vorname": "Christian (TC)",
-                "encName": "U2Nob3JwcA==",
-                "encVorname": "Q2hyaXN0aWFuIChUQyk="
+                "name": "Nowak",
+                "vorname": "Martin",
+                "encName": "Tm93YWs=",
+                "encVorname": "TWFydGlu"
             },
             {
                 "name": "Schubert",
@@ -2843,60 +3340,10 @@
                 "encVorname": "QmFzdGlhbg=="
             },
             {
-                "name": "Walz",
-                "vorname": "David",
-                "encName": "V2Fseg==",
-                "encVorname": "RGF2aWQ="
-            }
-        ],
-        "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMQ=="
-    },
-    "bdl038": {
-        "name": "Gaggenauer Dartmoskitos 2",
-        "spiellokal": {
-            "name": "Am Traischbachstadion",
-            "strasse": "Waldstr. 38",
-            "ort": "76571 Gaggenau",
-            "position": {
-                "lat": 48.801221,
-                "lng": 8.307147
-            }
-        },
-        "teamvertreter": {
-            "name": "Joachim Pflüger",
-            "tel": "0170 - 6059950",
-            "mail": "joachim.pflueger@daimler.com"
-        },
-        "mitglieder": [
-            {
-                "name": "Bache",
-                "vorname": "John",
-                "encName": "QmFjaGU=",
-                "encVorname": "Sm9obg=="
-            },
-            {
-                "name": "Gleisle",
-                "vorname": "Michael",
-                "encName": "R2xlaXNsZQ==",
-                "encVorname": "TWljaGFlbA=="
-            },
-            {
-                "name": "Heidecke",
-                "vorname": "Steffen",
-                "encName": "SGVpZGVja2U=",
-                "encVorname": "U3RlZmZlbg=="
-            },
-            {
-                "name": "Kraft",
-                "vorname": "Thomas",
-                "encName": "S3JhZnQ=",
-                "encVorname": "VGhvbWFz"
-            },
-            {
-                "name": "Pflüger",
-                "vorname": "Joachim (TC)",
-                "encName": "UGZs/Gdlcg==",
-                "encVorname": "Sm9hY2hpbSAoVEMp"
+                "name": "Plutta",
+                "vorname": "Ryszard",
+                "encName": "UGx1dHRh",
+                "encVorname": "UnlzemFyZA=="
             },
             {
                 "name": "Plutta",
@@ -2905,28 +3352,46 @@
                 "encVorname": "TWF0ZXVzeg=="
             },
             {
-                "name": "Plutta",
-                "vorname": "Ryszard",
-                "encName": "UGx1dHRh",
-                "encVorname": "UnlzemFyZA=="
+                "name": "Axhami",
+                "vorname": "Mejdi",
+                "encName": "QXhoYW1p",
+                "encVorname": "TWVqZGk="
             },
             {
-                "name": "Raum",
-                "vorname": "Dominik",
-                "encName": "UmF1bQ==",
-                "encVorname": "RG9taW5paw=="
+                "name": "Berisha",
+                "vorname": "Hasip",
+                "encName": "QmVyaXNoYQ==",
+                "encVorname": "SGFzaXA="
             },
             {
-                "name": "Weis",
-                "vorname": "Frank",
-                "encName": "V2Vpcw==",
-                "encVorname": "RnJhbms="
+                "name": "Dasting",
+                "vorname": "Dirk",
+                "encName": "RGFzdGluZw==",
+                "encVorname": "RGlyaw=="
+            },
+            {
+                "name": "Knoblauch",
+                "vorname": "Florian",
+                "encName": "S25vYmxhdWNo",
+                "encVorname": "Rmxvcmlhbg=="
+            },
+            {
+                "name": "Ockert",
+                "vorname": "Christian",
+                "encName": "T2NrZXJ0",
+                "encVorname": "Q2hyaXN0aWFu"
             }
         ],
-        "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMg=="
+        "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMg==",
+        "password": {
+            "value": "tB6qb803pxaseIOS4nXFAw==",
+            "changeDate": 1505577343920
+        },
+        "needsChange": true
     },
     "bdl039": {
         "name": "Karlsruher Dart Freunde (KDF)",
+        "verein": "",
         "spiellokal": {
             "name": "Dart-Trainingszentrum",
             "strasse": "Hauptstrasse 87",
@@ -3009,23 +3474,31 @@
                 "encVorname": "TWFudWVsYQ=="
             }
         ],
-        "encTeam": "S2FybHNydWhlciBEYXJ0IEZyZXVuZGUgKEtERik="
+        "encTeam": "S2FybHNydWhlciBEYXJ0IEZyZXVuZGUgKEtERik=",
+        "password": {
+            "value": "QEXB9b4enz7jLWv2J0rmaA==",
+            "changeDate": 1473657356058
+        },
+        "needsChange": true
     },
     "bdl040": {
         "name": "Taraxacuma Tornados",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966449",
+                "lng": "8.4682968"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Dieter Richard",
-            "tel": "07256 - 944310 (ab 19 Uhr)",
-            "mail": "taraxacuma@aol.de"
+            "name": "José Cochon",
+            "tel": "0157-58318735",
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
             {
@@ -3033,18 +3506,6 @@
                 "vorname": "Thorsten",
                 "encName": "QmlsbG1hbm4=",
                 "encVorname": "VGhvcnN0ZW4="
-            },
-            {
-                "name": "Cochon",
-                "vorname": "Jose",
-                "encName": "Q29jaG9u",
-                "encVorname": "Sm9zZQ=="
-            },
-            {
-                "name": "Hecker",
-                "vorname": "Jörg",
-                "encName": "SGVja2Vy",
-                "encVorname": "SvZyZw=="
             },
             {
                 "name": "Hurst",
@@ -3059,84 +3520,80 @@
                 "encVorname": "Um9ubnk="
             },
             {
-                "name": "Richard",
-                "vorname": "Dieter (TC)",
-                "encName": "UmljaGFyZA==",
-                "encVorname": "RGlldGVyIChUQyk="
-            },
-            {
                 "name": "Scherer",
                 "vorname": "Andre",
                 "encName": "U2NoZXJlcg==",
                 "encVorname": "QW5kcmU="
             },
             {
-                "name": "Vogler",
-                "vorname": "Markus",
-                "encName": "Vm9nbGVy",
-                "encVorname": "TWFya3Vz"
+                "name": "Cochon",
+                "vorname": "José(TC)",
+                "encName": "Q29jaG9u",
+                "encVorname": "Sm9zw6koVEMp"
+            },
+            {
+                "name": "König",
+                "vorname": "Kevin",
+                "encName": "S8O2bmln",
+                "encVorname": "S2V2aW4="
+            },
+            {
+                "name": "Staffeldt",
+                "vorname": "Oliver",
+                "encName": "U3RhZmZlbGR0",
+                "encVorname": "T2xpdmVy"
+            },
+            {
+                "name": "Lüttjohann",
+                "vorname": "Stephan",
+                "encName": "TMO8dHRqb2hhbm4=",
+                "encVorname": "U3RlcGhhbg=="
+            },
+            {
+                "name": "Scheurer",
+                "vorname": "Frank",
+                "encName": "U2NoZXVyZXI=",
+                "encVorname": "RnJhbms="
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBUb3JuYWRvcw=="
+        "encTeam": "VGFyYXhhY3VtYSBUb3JuYWRvcw==",
+        "password": {
+            "value": "aLwj-ipzzMCS7jD3WShG7A==",
+            "changeDate": 1505234726091
+        },
+        "needsChange": true
     },
     "bdl041": {
         "name": "Taraxacuma Wölfe",
+        "verein": "v008",
         "spiellokal": {
             "name": "Holzwurm",
             "strasse": "Rheinstr. 60",
             "ort": "76661 Philippsburg-Huttenheim",
             "position": {
-                "lat": 49.19647,
-                "lng": 8.46879
-            }
+                "lat": "49.1966629",
+                "lng": "8.4684438"
+            },
+            "nichtraucher": true,
+            "jugend": true
         },
         "teamvertreter": {
-            "name": "Diana Damsons",
-            "tel": "0176 - 57623854",
-            "mail": "taraxacuma@aol.de"
+            "name": "Steffen Becker",
+            "tel": "0179-4885836",
+            "mail": "taraxacuma@t-online.de"
         },
         "mitglieder": [
-            {
-                "name": "Becker",
-                "vorname": "Steffen",
-                "encName": "QmVja2Vy",
-                "encVorname": "U3RlZmZlbg=="
-            },
-            {
-                "name": "Becker",
-                "vorname": "Christine",
-                "encName": "QmVja2Vy",
-                "encVorname": "Q2hyaXN0aW5l"
-            },
-            {
-                "name": "Damsons",
-                "vorname": "Diana (TC)",
-                "encName": "RGFtc29ucw==",
-                "encVorname": "RGlhbmEgKFRDKQ=="
-            },
-            {
-                "name": "Deeg",
-                "vorname": "Carlo",
-                "encName": "RGVlZw==",
-                "encVorname": "Q2FybG8="
-            },
-            {
-                "name": "Gutting",
-                "vorname": "Ralf",
-                "encName": "R3V0dGluZw==",
-                "encVorname": "UmFsZg=="
-            },
             {
                 "name": "Kartach",
                 "vorname": "Jörg",
                 "encName": "S2FydGFjaA==",
                 "encVorname": "SvZyZw=="
-            },
-            {
-                "name": "Keilhauer",
-                "vorname": "Armin",
-                "encName": "S2VpbGhhdWVy",
-                "encVorname": "QXJtaW4="
             },
             {
                 "name": "Knobloch",
@@ -3145,12 +3602,633 @@
                 "encVorname": "QW5kcmVhcw=="
             },
             {
-                "name": "Schlicht",
-                "vorname": "Daniel",
-                "encName": "U2NobGljaHQ=",
-                "encVorname": "RGFuaWVs"
+                "name": "Schmid",
+                "vorname": "Timon",
+                "encName": "U2NobWlk",
+                "encVorname": "VGltb24="
+            },
+            {
+                "name": "Schmid",
+                "vorname": "Harald",
+                "encName": "U2NobWlk",
+                "encVorname": "SGFyYWxk"
+            },
+            {
+                "name": "Becker",
+                "vorname": "Steffen (TC)",
+                "encName": "QmVja2Vy",
+                "encVorname": "U3RlZmZlbiAoVEMp"
+            },
+            {
+                "name": "Damsons",
+                "vorname": "Diana",
+                "encName": "RGFtc29ucw==",
+                "encVorname": "RGlhbmE="
+            },
+            {
+                "name": "Albert",
+                "vorname": "Vanessa",
+                "encName": "QWxiZXJ0",
+                "encVorname": "VmFuZXNzYQ=="
+            },
+            {
+                "name": "Steiner",
+                "vorname": "Thomas",
+                "encName": "U3RlaW5lcg==",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Hertel",
+                "vorname": "Dirk",
+                "encName": "SGVydGVs",
+                "encVorname": "RGlyaw=="
+            },
+            {
+                "name": "Steiner",
+                "vorname": "Melanie",
+                "encName": "U3RlaW5lcg==",
+                "encVorname": "TWVsYW5pZQ=="
             }
         ],
-        "encTeam": "VGFyYXhhY3VtYSBX9mxmZQ=="
+        "encTeam": "VGFyYXhhY3VtYSBXw7ZsZmU=",
+        "password": {
+            "value": "5N0v-Uj9QhILYtJUXraPiA==",
+            "changeDate": 1505234849086
+        },
+        "needsChange": true
+    },
+    "bdl042": {
+        "name": "Stingrays",
+        "verein": "v002",
+        "spiellokal": {
+            "name": "Bullfinish das Trainingszentrum",
+            "strasse": "Hauptstrasse 87",
+            "ort": "76344 Eggenstein-Leopoldshafen",
+            "position": {
+                "lat": "49.0760959",
+                "lng": "8.3868037"
+            },
+            "nichtraucher": true,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Marco Rometsch",
+            "tel": "0170/9241413",
+            "mail": "marco.rometsch@web.de"
+        },
+        "mitglieder": [
+            {
+                "name": "Rometsch",
+                "vorname": "Marco (TC)",
+                "encName": "Um9tZXRzY2g=",
+                "encVorname": "TWFyY28gKFRDKQ=="
+            },
+            {
+                "name": "Müller",
+                "vorname": "Maurice",
+                "encName": "TcO8bGxlcg==",
+                "encVorname": "TWF1cmljZQ=="
+            },
+            {
+                "name": "Gabel",
+                "vorname": "Sebastian ",
+                "encName": "R2FiZWw=",
+                "encVorname": "U2ViYXN0aWFuIA=="
+            },
+            {
+                "name": "Müller",
+                "vorname": "Pit",
+                "encName": "TcO8bGxlcg==",
+                "encVorname": "UGl0"
+            },
+            {
+                "name": "Roller",
+                "vorname": "Patrick",
+                "encName": "Um9sbGVy",
+                "encVorname": "UGF0cmljaw=="
+            },
+            {
+                "name": "Resch",
+                "vorname": "Uwe",
+                "encName": "UmVzY2g=",
+                "encVorname": "VXdl"
+            },
+            {
+                "name": "Resch",
+                "vorname": "Kimo",
+                "encName": "UmVzY2g=",
+                "encVorname": "S2ltbw=="
+            },
+            {
+                "name": "Hoffmann",
+                "vorname": "Kevin",
+                "encName": "SG9mZm1hbm4=",
+                "encVorname": "S2V2aW4="
+            },
+            {
+                "name": "Schumacher",
+                "vorname": "Raphael",
+                "encName": "U2NodW1hY2hlcg==",
+                "encVorname": "UmFwaGFlbA=="
+            },
+            {
+                "name": "Schneiders",
+                "vorname": "Pascal",
+                "encName": "U2NobmVpZGVycw==",
+                "encVorname": "UGFzY2Fs"
+            }
+        ],
+        "encTeam": "U3RpbmdyYXlz",
+        "password": {
+            "value": "XBIp1COL5bkwDDcsx-0QjQ==",
+            "changeDate": 1505259724686
+        },
+        "needsChange": true
+    },
+    "bdl043": {
+        "name": "501 Jacky Dart`s",
+        "verein": "v003",
+        "spiellokal": {
+            "name": "Bistro 7",
+            "strasse": "Schulzenstrasse 24",
+            "ort": "76771 Hördt",
+            "position": {
+                "lat": "49.1667762",
+                "lng": "8.3248537"
+            },
+            "nichtraucher": true,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Gerhard Heel",
+            "tel": "0177/9723133",
+            "mail": "G.Heel@gmx.de"
+        },
+        "mitglieder": [
+            {
+                "name": "Schweitzer",
+                "vorname": "Andreas",
+                "encName": "U2Nod2VpdHplcg==",
+                "encVorname": "QW5kcmVhcw=="
+            },
+            {
+                "name": "Leisinger",
+                "vorname": "Benedikt",
+                "encName": "TGVpc2luZ2Vy",
+                "encVorname": "QmVuZWRpa3Q="
+            },
+            {
+                "name": "Heel",
+                "vorname": "Gerhard",
+                "encName": "SGVlbA==",
+                "encVorname": "R2VyaGFyZA=="
+            },
+            {
+                "name": "Maaß",
+                "vorname": "Marcel",
+                "encName": "TWFhw58=",
+                "encVorname": "TWFyY2Vs"
+            },
+            {
+                "name": "Utting",
+                "vorname": "Nico",
+                "encName": "VXR0aW5n",
+                "encVorname": "Tmljbw=="
+            },
+            {
+                "name": "Pitz",
+                "vorname": "Stephanie",
+                "encName": "UGl0eg==",
+                "encVorname": "U3RlcGhhbmll"
+            },
+            {
+                "name": "Steinbeißer ",
+                "vorname": "Steffen",
+                "encName": "U3RlaW5iZWnDn2VyIA==",
+                "encVorname": "U3RlZmZlbg=="
+            },
+            {
+                "name": "Steinbeißer",
+                "vorname": "Stefanie ",
+                "encName": "U3RlaW5iZWnDn2Vy",
+                "encVorname": "U3RlZmFuaWUg"
+            },
+            {
+                "name": "Lindemayer",
+                "vorname": "Joe",
+                "encName": "TGluZGVtYXllcg==",
+                "encVorname": "Sm9l"
+            }
+        ],
+        "encTeam": "NTAxIEphY2t5IERhcnRgcw==",
+        "password": {
+            "value": "Htt_QmFaPlJRvuA8uAQEfQ==",
+            "changeDate": 1516466721693
+        },
+        "needsChange": true
+    },
+    "bdl044": {
+        "name": "DC Un'BE'lievable",
+        "verein": "v009",
+        "spiellokal": {
+            "name": "Zum Kreuzeck - Bei de Be",
+            "strasse": "Obere Hauptstrasse 104",
+            "ort": "76863 Herxheim",
+            "position": {
+                "lat": "49.1463535",
+                "lng": "8.2045113"
+            },
+            "nichtraucher": true,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Philipp Gregor",
+            "tel": "0176/22387119",
+            "mail": "koenig2712pg@gmail.com"
+        },
+        "mitglieder": [
+            {
+                "name": "Rötterer ",
+                "vorname": "Christian",
+                "encName": "UsO2dHRlcmVyIA==",
+                "encVorname": "Q2hyaXN0aWFu"
+            },
+            {
+                "name": "Vialon",
+                "vorname": "Sascha",
+                "encName": "VmlhbG9u",
+                "encVorname": "U2FzY2hh"
+            },
+            {
+                "name": "Gregor ",
+                "vorname": "Melanie ",
+                "encName": "R3JlZ29yIA==",
+                "encVorname": "TWVsYW5pZSA="
+            },
+            {
+                "name": "Theobald",
+                "vorname": "Christof",
+                "encName": "VGhlb2JhbGQ=",
+                "encVorname": "Q2hyaXN0b2Y="
+            },
+            {
+                "name": "Gaab ",
+                "vorname": "Sascha",
+                "encName": "R2FhYiA=",
+                "encVorname": "U2FzY2hh"
+            },
+            {
+                "name": "Reisinger ",
+                "vorname": "Tim",
+                "encName": "UmVpc2luZ2VyIA==",
+                "encVorname": "VGlt"
+            },
+            {
+                "name": "Bidell",
+                "vorname": "Benjamin ",
+                "encName": "QmlkZWxs",
+                "encVorname": "QmVuamFtaW4g"
+            },
+            {
+                "name": "Gregor ",
+                "vorname": "Philipp ",
+                "encName": "R3JlZ29yIA==",
+                "encVorname": "UGhpbGlwcCA="
+            },
+            {
+                "name": "Völker ",
+                "vorname": "Michael ",
+                "encName": "VsO2bGtlciA=",
+                "encVorname": "TWljaGFlbCA="
+            },
+            {
+                "name": "Wambsganß",
+                "vorname": "Markus",
+                "encName": "V2FtYnNnYW7Dnw==",
+                "encVorname": "TWFya3Vz"
+            },
+            {
+                "name": "Hatzenbühler ",
+                "vorname": "Stefan ",
+                "encName": "SGF0emVuYsO8aGxlciA=",
+                "encVorname": "U3RlZmFuIA=="
+            },
+            {
+                "name": "Lehmann ",
+                "vorname": "Benjamin ",
+                "encName": "TGVobWFubiA=",
+                "encVorname": "QmVuamFtaW4g"
+            },
+            {
+                "name": "Heintz",
+                "vorname": "Anna-Lena",
+                "encName": "SGVpbnR6",
+                "encVorname": "QW5uYS1MZW5h"
+            }
+        ],
+        "encTeam": "REMgVW4nQkUnbGlldmFibGU=",
+        "password": {
+            "value": "DHIZm2eOxWwohQyK89GtAQ==",
+            "changeDate": 1506254619682
+        },
+        "needsChange": true
+    },
+    "bdl045": {
+        "name": "DA Underdogs",
+        "verein": "v012",
+        "spiellokal": {
+            "name": "Bullfinish das Trainingszentrum",
+            "strasse": "Hauptstrasse 87",
+            "ort": "76344 Eggenstein-Leopoldshafen",
+            "position": {
+                "lat": "49.0760959",
+                "lng": "8.3868037"
+            },
+            "nichtraucher": true,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Dominik Kaufmann",
+            "tel": "0171/3211690",
+            "mail": "d.d.kaufmann@web.de"
+        },
+        "mitglieder": [
+            {
+                "name": "Kaufmann",
+                "vorname": "Dominik ",
+                "encName": "S2F1Zm1hbm4=",
+                "encVorname": "RG9taW5payA="
+            },
+            {
+                "name": "Krüger",
+                "vorname": "Felix ",
+                "encName": "S3LDvGdlcg==",
+                "encVorname": "RmVsaXgg"
+            },
+            {
+                "name": "Gabriel",
+                "vorname": "Marvin",
+                "encName": "R2FicmllbA==",
+                "encVorname": "TWFydmlu"
+            },
+            {
+                "name": "Erbrecht",
+                "vorname": "Sven",
+                "encName": "RXJicmVjaHQ=",
+                "encVorname": "U3Zlbg=="
+            },
+            {
+                "name": "Kacksch",
+                "vorname": "Christian ",
+                "encName": "S2Fja3NjaA==",
+                "encVorname": "Q2hyaXN0aWFuIA=="
+            },
+            {
+                "name": "Flickinger",
+                "vorname": "Florian",
+                "encName": "RmxpY2tpbmdlcg==",
+                "encVorname": "Rmxvcmlhbg=="
+            },
+            {
+                "name": "Korbmann",
+                "vorname": "Robin",
+                "encName": "S29yYm1hbm4=",
+                "encVorname": "Um9iaW4="
+            }
+        ],
+        "encTeam": "REEgVW5kZXJkb2dz",
+        "password": {
+            "value": "9YAdfcozKPR_y0jeqODIKA==",
+            "changeDate": 1505200066249
+        },
+        "needsChange": true
+    },
+    "bdl046": {
+        "name": "DC Studenten Bellheim 2",
+        "verein": "v016",
+        "spiellokal": {
+            "name": "Tom's Bistro",
+            "strasse": "Hauptstrasse 106",
+            "ort": "76756 Bellheim",
+            "position": {
+                "lat": "49.1913295",
+                "lng": "8.278692"
+            },
+            "nichtraucher": false,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Hartmut Schmidt",
+            "tel": "0171/4851609",
+            "mail": "ha-thor-sch@web.de"
+        },
+        "mitglieder": [
+            {
+                "name": "Weigel",
+                "vorname": "Andreas",
+                "encName": "V2VpZ2Vs",
+                "encVorname": "QW5kcmVhcw=="
+            },
+            {
+                "name": "Krübel",
+                "vorname": "Mario",
+                "encName": "S3LDvGJlbA==",
+                "encVorname": "TWFyaW8="
+            },
+            {
+                "name": "Malinowski",
+                "vorname": "Thorsten",
+                "encName": "TWFsaW5vd3NraQ==",
+                "encVorname": "VGhvcnN0ZW4="
+            },
+            {
+                "name": "Schmidt",
+                "vorname": "Hartmut",
+                "encName": "U2NobWlkdA==",
+                "encVorname": "SGFydG11dA=="
+            },
+            {
+                "name": "Stein",
+                "vorname": "Volker",
+                "encName": "U3RlaW4=",
+                "encVorname": "Vm9sa2Vy"
+            },
+            {
+                "name": "Eichner",
+                "vorname": "Andreas",
+                "encName": "RWljaG5lcg==",
+                "encVorname": "QW5kcmVhcw=="
+            }
+        ],
+        "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWltIDI=",
+        "password": {
+            "value": "0KWOUs5HrNTlFm1wpdhgvw==",
+            "changeDate": 1507215975450
+        },
+        "needsChange": true
+    },
+    "bdl047": {
+        "name": "DC Breakers 2",
+        "verein": "v017",
+        "spiellokal": {
+            "name": "Cafe Ricks",
+            "strasse": "Melanchtonstrasse 100",
+            "ort": "75015 Bretten",
+            "position": {
+                "lat": "49.0385021",
+                "lng": "8.6965018"
+            },
+            "nichtraucher": false,
+            "jugend": false
+        },
+        "teamvertreter": {
+            "name": "Gabriele Dittus",
+            "tel": "0171/6800086",
+            "mail": "gabriele-dittus@t-online.de"
+        },
+        "mitglieder": [
+            {
+                "name": "Simon",
+                "vorname": "Kim - Kevin",
+                "encName": "U2ltb24=",
+                "encVorname": "S2ltIC0gS2V2aW4="
+            },
+            {
+                "name": "Zipperle",
+                "vorname": "Christopher",
+                "encName": "WmlwcGVybGU=",
+                "encVorname": "Q2hyaXN0b3BoZXI="
+            },
+            {
+                "name": "Güclü",
+                "vorname": "Illhan",
+                "encName": "R8O8Y2zDvA==",
+                "encVorname": "SWxsaGFu"
+            },
+            {
+                "name": "Dittus",
+                "vorname": "Gabriele",
+                "encName": "RGl0dHVz",
+                "encVorname": "R2FicmllbGU="
+            },
+            {
+                "name": "Zipperle",
+                "vorname": "Nicole",
+                "encName": "WmlwcGVybGU=",
+                "encVorname": "Tmljb2xl"
+            },
+            {
+                "name": "Frenzel",
+                "vorname": "Andreas",
+                "encName": "RnJlbnplbA==",
+                "encVorname": "QW5kcmVhcw=="
+            },
+            {
+                "name": "Tretter",
+                "vorname": "Markus",
+                "encName": "VHJldHRlcg==",
+                "encVorname": "TWFya3Vz"
+            },
+            {
+                "name": "Fröhlich",
+                "vorname": "Sven",
+                "encName": "RnLDtmhsaWNo",
+                "encVorname": "U3Zlbg=="
+            },
+            {
+                "name": "",
+                "vorname": "",
+                "encName": "",
+                "encVorname": ""
+            }
+        ],
+        "encTeam": "QkRDIEJyZWFrZXJzIDI=",
+        "password": {
+            "value": "1hxGpPrdbGo-iajIGhvXUw==",
+            "changeDate": 1505597569635
+        },
+        "needsChange": true
+    },
+    "bdl048": {
+        "name": "One 80`s",
+        "verein": "v002",
+        "spiellokal": {
+            "name": "Bullfinish das Trainingszentrum",
+            "strasse": "Hauptstrasse 87",
+            "ort": "76344 Eggenstein-Leopoldshafen",
+            "position": {
+                "lat": "49.0760959",
+                "lng": "8.3868037"
+            },
+            "nichtraucher": true,
+            "jugend": true
+        },
+        "teamvertreter": {
+            "name": "Jörg Hecker",
+            "tel": "0174/7556894",
+            "mail": "jrg.hecker@t-online.de"
+        },
+        "mitglieder": [
+            {
+                "name": "Hecker",
+                "vorname": "Jörg",
+                "encName": "SGVja2Vy",
+                "encVorname": "SsO2cmc="
+            },
+            {
+                "name": "Hentschel-Hoffmann",
+                "vorname": "Holger",
+                "encName": "SGVudHNjaGVsLUhvZmZtYW5u",
+                "encVorname": "SG9sZ2Vy"
+            },
+            {
+                "name": "Opp",
+                "vorname": "Thomas",
+                "encName": "T3Bw",
+                "encVorname": "VGhvbWFz"
+            },
+            {
+                "name": "Rasch",
+                "vorname": "Niklas",
+                "encName": "UmFzY2g=",
+                "encVorname": "TmlrbGFz"
+            },
+            {
+                "name": "Pilgrim",
+                "vorname": "Jerry ",
+                "encName": "UGlsZ3JpbQ==",
+                "encVorname": "SmVycnkg"
+            },
+            {
+                "name": "Beier",
+                "vorname": "Nora ",
+                "encName": "QmVpZXI=",
+                "encVorname": "Tm9yYSA="
+            },
+            {
+                "name": "Baier",
+                "vorname": "Christian",
+                "encName": "QmFpZXI=",
+                "encVorname": "Q2hyaXN0aWFu"
+            },
+            {
+                "name": "Rometsch",
+                "vorname": "Manuela",
+                "encName": "Um9tZXRzY2g=",
+                "encVorname": "TWFudWVsYQ=="
+            },
+            {
+                "name": "Fetscher",
+                "vorname": "Deniz",
+                "encName": "RmV0c2NoZXI=",
+                "encVorname": "RGVuaXo="
+            }
+        ],
+        "encTeam": "T25lIDgwYHM=",
+        "password": {
+            "value": "lSQZkLQ8aG5JtfTKZoTVTA==",
+            "changeDate": 1505322749878
+        },
+        "needsChange": true
     }
 }
