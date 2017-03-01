@@ -1,0 +1,218 @@
+{
+  "v001": {
+    "name": "Undertaker Reloaded",
+    "kontakt": {
+      "name": "Mike Boss",
+      "strasse": "Hauptstr. 47",
+      "ort": "76709 Kronau"
+    }
+  },
+  "v002": {
+    "name": "1.Eggensteiner Dartclub",
+    "kontakt": {
+      "name": "Bullfinish-Das Dart Trainingszentrum",
+      "strasse": "Hauptstr. 87",
+      "ort": "76344 Eggenstein-Leopoldshafen"
+    }
+  },
+  "v003": {
+    "name": "501 Jacky Darter",
+    "kontakt": {
+      "name": "Gerhard Heel",
+      "strasse": "Schulzenstr. 28",
+      "ort": "76771 Hördt"
+    }
+  },
+  "v004": {
+    "name": "DC Ideal",
+    "kontakt": {
+      "name": "Bistro Ideal",
+      "strasse": "Mannheimer Str. 44a",
+      "ort": "68723 Oftersheim"
+    }
+  },
+  "v005": {
+    "name": "Iron Eagles",
+    "kontakt": {
+      "name": "Bistro Connect",
+      "strasse": "Langgasse 32",
+      "ort": "67459 Böhl-Iggelheim"
+    }
+  },
+  "v006": {
+    "name": "Gegen die Drück",
+    "kontakt": {
+      "name": "Bistro J",
+      "strasse": "Rudolf-Diesel-Str. 2",
+      "ort": "69207 Sandhausen"
+    }
+  },
+  "v007": {
+    "name": "Reiterstüble Eppingen",
+    "kontakt": {
+      "name": "Oliver Scheyhing",
+      "strasse": "Sternenfelser Str. 36",
+      "ort": "74374 Zaberfeld"
+    }
+  },
+  "v008": {
+    "name": "Taraxacuma",
+    "kontakt": {
+      "name": "Dieter Richard",
+      "strasse": "Rheinstrasse 60",
+      "ort": "76661 Philippsburg-Huttenheim"
+    }
+  },
+  "v009": {
+    "name": "DC Un'BE'liveable",
+    "kontakt": {
+      "name": "Philipp Gregor",
+      "strasse": "Untere Hauptstr. 57",
+      "ort": "76774 Leimersheim"
+    }
+  },
+  "v010": {
+    "name": "DC 81 Karlsruhe",
+    "kontakt": {
+      "name": "Marco Müller",
+      "strasse": "Bismarckstr. 45",
+      "ort": "76133 Karlsruhe"
+    }
+  },
+  "v011": {
+    "name": "SG Stern Gaggenau",
+    "kontakt": {
+      "name": "Saskia Ball",
+      "strasse": "Hauptstr. 107",
+      "ort": "76568 Gaggenau"
+    }
+  },
+  "v012": {
+    "name": "DA Underdogs",
+    "kontakt": {
+      "name": "Frank Sterzing",
+      "strasse": "Hauptstr. 87",
+      "ort": "76344 Eggenstein-Leopoldshafen"
+    }
+  },
+  "v013": {
+    "name": "D.A.R.T. Plumbata",
+    "kontakt": {
+      "name": "Marius Augenstein",
+      "strasse": "Rhode-Island-Allee 1",
+      "ort": "76149 Karlsruhe"
+    }
+  },
+  "v014": {
+    "name": "DC Blau-Weiss Karlsruhe",
+    "kontakt": {
+      "name": "Petra Süß",
+      "strasse": "Elisabeth von Thadden Str. 16",
+      "ort": "76189 Karlsruhe"
+    }
+  },
+  "v015": {
+    "name": "DartTrain Raststatt",
+    "kontakt": {
+      "name": "Klaus Redwanz",
+      "strasse": "Rheinauer Ring 80/1",
+      "ort": "76437 Rastatt"
+    }
+  },
+  "v016": {
+    "name": "DC Studenten Bellheim",
+    "kontakt": {
+      "name": "Volker Stein",
+      "strasse": "Hauptstr. 117",
+      "ort": "76756 Bellheim"
+    }
+  },
+  "v017": {
+    "name": "BDC Breakers",
+    "kontakt": {
+      "name": "Steffen Stiess",
+      "strasse": "Manfred Bohr Str. 43",
+      "ort": "75428 Illingen"
+    }
+  },
+  "v018": {
+    "name": "DC Flatliners",
+    "kontakt": {
+      "name": "Freddy Roller",
+      "strasse": "Waldstr. 59",
+      "ort": "76297 Stutensee"
+    }
+  },
+  "v019": {
+    "name": "DC Black Knights Hördt",
+    "kontakt": {
+      "name": "Christian Kochendörfer",
+      "strasse": "Schillerstr. 14",
+      "ort": "76771 Hördt"
+    }
+  },
+  "v020": {
+    "name": "DC Letschenbach",
+    "kontakt": {
+      "name": "Endstation Gleis 8",
+      "strasse": "Hauptbahnstr. 1",
+      "ort": "76227 Durlach"
+    }
+  },
+  "v021": {
+    "name": "Dartspub Walldorf",
+    "kontakt": {
+      "name": "Sabine Köhler",
+      "strasse": "Riegeler Weg 14",
+      "ort": "68239 Mannheim"
+    }
+  },
+  "v022": {
+    "name": "DC Laola Weinheim",
+    "kontakt": {
+      "name": "Frank Hundshammer",
+      "strasse": "Ahornstr. 48",
+      "ort": "69469 Weinheim"
+    }
+  },
+  "v023": {
+    "name": "Freygerber Fighters",
+    "kontakt": {
+      "name": "Zum Brauer",
+      "strasse": "Hauptstrasse 117",
+      "ort": "76744 Schaidt"
+    }
+  },
+  "v024": {
+    "name": "1.DC Jockers Hockenheim",
+    "kontakt": {
+      "name": "Dirk Fütterer",
+      "strasse": "Buchenweg 22",
+      "ort": "68766 Hockenheim"
+    }
+  },
+  "v025": {
+    "name": "Alla Häeeeeer Pforzheim",
+    "kontakt": {
+      "name": "Alexander Schmidt",
+      "strasse": "Hessestr. 23",
+      "ort": "75217 Birkenfeld"
+    }
+  },
+  "v026": {
+    "name": "DC Underground Fools",
+    "kontakt": {
+      "name": "Vereinsheim",
+      "strasse": "Ispinger Str. 1-3",
+      "ort": "75179 Pforzheim"
+    }
+  },
+  "v027": {
+    "name": "DC Shamrock",
+    "kontakt": {
+      "name": "Benjamin Bischoff",
+      "strasse": "St.-Leoner-Str. 6",
+      "ort": "76709 Kronau"
+    }
+  }
+}
