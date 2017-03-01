@@ -33,12 +33,12 @@ function ask(req, res) {
     var aTeams = _.flatMap(oTeams, (team, teamID) => {
         return {
             id: teamID,
-            name: team.name + " - " + teamID
+            name: `Team: ${team.name} (${teamID})`
         };
     }).concat(_.flatMap(oVereine, (verein, vereinsID) => {
         return {
             id: vereinsID,
-            name: verein.name + " - " + vereinsID
+            name: `Verein: ${verein.name } (${vereinsID})`
         };
     }));
 
