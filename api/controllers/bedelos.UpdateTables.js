@@ -27,10 +27,10 @@ function rescanAllTables (req, res) {
 
         // Reset Table(s) and Scan all necessary results
         if (liga === 'all') {
-            jsonfile.writeFileSync(path.resolve(sTablesPath + '/bzLiga.json'), {});
-            jsonfile.writeFileSync(path.resolve(sTablesPath + '/klnord.json'), {});
-            jsonfile.writeFileSync(path.resolve(sTablesPath + '/klsued.json'), {});
-            jsonfile.writeFileSync(path.resolve(sTablesPath + '/oberliga.json'), {});
+            let aLigen = Object.keys(config.get('bedelos.ligen'));
+            aLigen.forEach(sLiga => {
+                jsonfile.writeFileSync(path.resolve(sTablesPath + `/${sLiga}.json`), {});
+            });
         } else {
             jsonfile.writeFileSync(path.resolve(sTablesPath + '/' + liga + '.json'), {});
         }

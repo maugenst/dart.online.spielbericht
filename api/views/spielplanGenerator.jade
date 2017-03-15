@@ -19,10 +19,8 @@ html
         title BDL Online Spielplan Generator
 
     body(style={"font-family": 'Calibri'})
-        input(id='nextGameIndexoberliga', type='hidden', value=spielplan.oberliga.nextGameIndex)
-        input(id='nextGameIndexbzLiga', type='hidden', value=spielplan.bzLiga.nextGameIndex)
-        input(id='nextGameIndexklnord', type='hidden', value=spielplan.klnord.nextGameIndex)
-        input(id='nextGameIndexklsued', type='hidden', value=spielplan.klsued.nextGameIndex)
+        each liga, i in oLigen
+            input(id='nextGameIndex' + i, type='hidden', value=spielplan[i].nextGameIndex)
 
         .container
             .row
@@ -31,10 +29,8 @@ html
                 .col-xs-4
                     .form-group
                         select.form-control(id='liga', onchange='updateGameIndex()')
-                            option(value='oberliga') Oberliga
-                            option(value='bzLiga') Bezirksliga
-                            option(value='klnord') Kreisliga Nord
-                            option(value='klsued') Kreisliga Süd
+                            each liga, i in oLigen
+                                option(value=i) #{liga.name}
             .row
                 .col-xs-2
                     label(for='liga') Spiel-Index

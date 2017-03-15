@@ -4,9 +4,10 @@
  * Created by D032233 on 27.06.2016.
  */
 
-var _ = require('lodash');
-var ligaHelper = require('./Liga');
-var logger = require('./Logger');
+let _ = require('lodash');
+let config = require('config');
+let ligaHelper = require('./Liga');
+let logger = require('./Logger');
 
 class Spielplan {
     constructor (oSpielplan, oTeams){
@@ -21,12 +22,12 @@ class Spielplan {
     update() {
         this.oGamesMap = {};
         this.oTeamMap = {};
-        for (var liga in this._oSpielplan) {
-            for (var runde in this._oSpielplan[liga]) {
+        for (let liga in this._oSpielplan) {
+            for (let runde in this._oSpielplan[liga]) {
                 if (runde === 'rr' || runde === 'vr') {
-                    for (var spieltag in this._oSpielplan[liga][runde]) {
-                        for (var i = 0; i<this._oSpielplan[liga][runde][spieltag].length; i++) {
-                            var spiel = this._oSpielplan[liga][runde][spieltag][i];
+                    for (let spieltag in this._oSpielplan[liga][runde]) {
+                        for (let i = 0; i<this._oSpielplan[liga][runde][spieltag].length; i++) {
+                            let spiel = this._oSpielplan[liga][runde][spieltag][i];
                             if (this.oGamesMap[spiel.id]) {
                                 logger.log.warn("WARN: Found double ID in spielplan: " + spiel.id);
                             }
@@ -60,11 +61,11 @@ class Spielplan {
     }
 
     getFullGameInfo(sGameID) {
-        var ret = {};
-        var liga = ligaHelper.calcLigaFromString(sGameID);
-        for (var spieltag in this._oSpielplan[liga].vr) {
-            for (var i = 0; this._oSpielplan[liga].vr[spieltag].length; i++) {
-                var spiel = this._oSpielplan[liga].vr[spieltag][i];
+        let ret = {};
+        let liga = ligaHelper.calcLigaFromString(sGameID);
+        for (let spieltag in this._oSpielplan[liga].vr) {
+            for (let i = 0; this._oSpielplan[liga].vr[spieltag].length; i++) {
+                let spiel = this._oSpielplan[liga].vr[spieltag][i];
                 if (spiel.id === sGameID) {
                     ret = spiel;
                     ret.liga = liga;
@@ -74,9 +75,9 @@ class Spielplan {
                 }
             }
         }
-        for (var spieltag in this._oSpielplan[liga].rr) {
-            for (var i = 0; this._oSpielplan[liga].rr[spieltag].length; i++) {
-                var spiel = this._oSpielplan[liga].rr[spieltag][i];
+        for (let spieltag in this._oSpielplan[liga].rr) {
+            for (let i = 0; this._oSpielplan[liga].rr[spieltag].length; i++) {
+                let spiel = this._oSpielplan[liga].rr[spieltag][i];
                 if (spiel.id === sGameID) {
                     ret = spiel;
                     ret.liga = liga;
@@ -90,18 +91,18 @@ class Spielplan {
     }
 
     removeGame(sGameID) {
-        var liga = ligaHelper.calcLigaFromString(sGameID);
-        for (var spieltag in this._oSpielplan[liga].vr) {
-            for (var i = 0; i<this._oSpielplan[liga].vr[spieltag].length; i++) {
-                var spiel = this._oSpielplan[liga].vr[spieltag][i];
+        let liga = ligaHelper.calcLigaFromString(sGameID);
+        for (let spieltag in this._oSpielplan[liga].vr) {
+            for (let i = 0; i<this._oSpielplan[liga].vr[spieltag].length; i++) {
+                let spiel = this._oSpielplan[liga].vr[spieltag][i];
                 if (spiel.id === sGameID) {
                     this._oSpielplan[liga].vr[spieltag].splice(i, 1);
                 }
             }
         }
-        for (var spieltag in this._oSpielplan[liga].rr) {
-            for (var i = 0; i<this._oSpielplan[liga].rr[spieltag].length; i++) {
-                var spiel = this._oSpielplan[liga].rr[spieltag][i];
+        for (let spieltag in this._oSpielplan[liga].rr) {
+            for (let i = 0; i<this._oSpielplan[liga].rr[spieltag].length; i++) {
+                let spiel = this._oSpielplan[liga].rr[spieltag][i];
                 if (spiel.id === sGameID) {
                     this._oSpielplan[liga].vr[spieltag].splice(i, 1);
                 }
@@ -117,7 +118,7 @@ class Spielplan {
             logger.log.warn("WARN: Auto-incrementing id to: " + oGamePayload.spielIndex);
         }
 
-        var oSpiel = {
+        let oSpiel = {
             "id": oGamePayload.spielIndex,
             "datum": oGamePayload.datum
         };
@@ -140,15 +141,24 @@ class Spielplan {
     }
 
     initialize() {
-        for(var liga in this._oSpielplan) {
-            for (var spieltag in this._oSpielplan[liga].vr) {
-                this._oSpielplan[liga].vr[spieltag] = [];
+        let oLigen = config.get('bedelos.ligen');
+        this._oSpielplan = {};
+
+        for (let liga in oLigen) {
+            this._oSpielplan[liga] = {
+                name: oLigen[liga].name,
+                vr: {},
+                rr: {},
+                iCurrentGameIndex: 1,
+                nextGameIndex: `${oLigen[liga].prefix}001`
+            };
+            let i = 1;
+            for (i; i<=oLigen[liga].spieltage/2; i++) {
+                this._oSpielplan[liga].vr[`spieltag_${i}`] = []
             }
-            for (var spieltag in this._oSpielplan[liga].rr) {
-                this._oSpielplan[liga].rr[spieltag] = [];
+            for (i; i<=oLigen[liga].spieltage; i++) {
+                this._oSpielplan[liga].rr[`spieltag_${i}`] = []
             }
-            this._oSpielplan[liga].iCurrentGameIndex = 1;
-            this._oSpielplan[liga].nextGameIndex = ligaHelper.getGameIndex(liga, this._oSpielplan[liga].iCurrentGameIndex);
         }
     }
 
@@ -169,8 +179,8 @@ class Spielplan {
     }
 
     getGamesMapStringified() {
-        var ret = {};
-        for (var game in this.oGamesMap) {
+        let ret = {};
+        for (let game in this.oGamesMap) {
             ret[game] = JSON.stringify(this.oGamesMap[game]);
         }
         return ret;

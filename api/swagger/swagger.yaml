@@ -594,7 +594,6 @@ paths:
           type: string
           description: Liga ID
           in: path
-          enum: ["oberliga", "bzLiga", "klnord", "klsued"]
           required: true
         - name: pdf
           type: boolean
@@ -619,7 +618,6 @@ paths:
           type: string
           description: Liga ID
           in: path
-          enum: ["oberliga", "bzLiga", "klnord", "klsued"]
           required: true
         - name: pdf
           type: boolean
@@ -644,7 +642,6 @@ paths:
           type: string
           description: Liga ID
           in: path
-          enum: ["all", "oberliga", "bzLiga", "klnord", "klsued"]
           required: true
       responses:
         'default':
@@ -664,7 +661,6 @@ paths:
           type: string
           description: Liga ID
           in: path
-          enum: ["all", "oberliga", "bzLiga", "klnord", "klsued"]
           required: true
       responses:
         'default':

@@ -5,6 +5,10 @@
  */
 
 var path = require('path');
+var config = require('config');
+var _ = require('lodash');
+
+let oLigen = config.get('bedelos.ligen');
 
 function isUpdateNeeded(file, liga) {
     if (liga === 'all') {
@@ -15,33 +19,15 @@ function isUpdateNeeded(file, liga) {
 }
 
 function calcLigaFromString(sLigaString) {
-    if (!sLigaString || sLigaString === '') {
-        return '';
-    } else if (sLigaString.startsWith('kls')) {
-        return 'klsued';
-    } else if (sLigaString.startsWith('kln')) {
-        return 'klnord';
-    } else if (sLigaString.startsWith('bzLi') || sLigaString.startsWith('bzli')) {
-        return 'bzLiga';
-    } else if (sLigaString.startsWith('ol')) {
-        return 'oberliga';
-    }
-    return sLigaString;
+    let liga = _.findKey(oLigen, liga => {
+        return (sLigaString.toLowerCase().startsWith(liga.prefix.toLowerCase()));
+    });
+
+    return liga || sLigaString;
 }
 
 function getShort(sLiga) {
-    var ret = "";
-    switch(sLiga.toLowerCase()) {
-        case 'klsued': ret = "kls";
-            break;
-        case 'klnord': ret = "kln";
-            break;
-        case 'bzLiga': ret = "bzli";
-            break;
-        case 'oberliga': ret = "ol";
-            break;
-    }
-    return ret;
+    return (_.has(oLigen, sLiga)) ? oLigen[sLiga].prefix : "";
 }
 
 function pad(num, size) {
@@ -64,20 +50,7 @@ function calcLigaFromFilename(file) {
 
 function getFullLigaName(liga) {
     var sLiga = calcLigaFromString(liga).toLowerCase();
-    var sRet = "";
-    switch(sLiga) {
-        case ('klsued') : sRet = "Kreisliga Süd";
-            break;
-        case ('klnord') : sRet = "Kreisliga Nord";
-            break;
-        case ('bzliga') : sRet = "Bezirksliga";
-            break;
-        case ('oberliga') : sRet = "Oberliga";
-            break;
-        default: sRet = "";
-            break;
-    }
-    return sRet;
+    return (_.has(oLigen, sLiga)) ? oLigen[sLiga].name : "";
 }
 
 module.exports = {

@@ -1,21 +1,21 @@
 'use strict';
 
-var util = require('util');
-var path = require('path');
-var config = require('config');
-var os = require('os');
-var fs = require('fs');
-var pug = require('pug');
-var jsonfile = require('jsonfile');
-var walker = require('walker');
-var _ = require('lodash');
-var logger = require('../helpers/Logger');
-var ligaHelper = require('../helpers/Liga');
-var session = require('../helpers/Session');
-var Spielplan = require('../helpers/Spielplan');
+let util = require('util');
+let path = require('path');
+let config = require('config');
+let os = require('os');
+let fs = require('fs');
+let pug = require('pug');
+let jsonfile = require('jsonfile');
+let walker = require('walker');
+let _ = require('lodash');
+let logger = require('../helpers/Logger');
+let ligaHelper = require('../helpers/Liga');
+let session = require('../helpers/Session');
+let Spielplan = require('../helpers/Spielplan');
 
 function checkUserAuthentication(req, res) {
-    var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+    let oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
 
     if (!oSessionData) {
         res.cookie('BDL_SESSION_REDIRECT', req.url);
@@ -37,19 +37,19 @@ function addToSpielplan (req, res) {
             return;
         };
 
-        var oGamePayload = req.swagger.params.spiel.raw;
+        let oGamePayload = req.swagger.params.spiel.raw;
 
-        var sPath = path.resolve(config.get("bedelos.datapath"));
-        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
+        let sPath = path.resolve(config.get("bedelos.datapath"));
+        let oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
 
         if (!fs.existsSync(sPath + '/SpielplanNew.json')) {
             throw new Error("No new Spielplan found to add data...");
         }
 
-        var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
-        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
+        let oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+        oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
 
-        var spielplanHelper = new Spielplan(oSpielplan, oTeams);
+        let spielplanHelper = new Spielplan(oSpielplan, oTeams);
         spielplanHelper.addGame(oGamePayload);
         spielplanHelper.increaseGameIndex(oGamePayload.liga);
 
@@ -70,18 +70,18 @@ function deleteFromSpielplan (req, res) {
             return;
         };
 
-        var sGameId = req.swagger.params.spielindex.raw;
+        let sGameId = req.swagger.params.spielindex.raw;
 
-        var sPath = path.resolve(config.get("bedelos.datapath"));
+        let sPath = path.resolve(config.get("bedelos.datapath"));
 
         if (!fs.existsSync(sPath + '/SpielplanNew.json')) {
             throw new Error("No new Spielplan found to remove data...");
         }
 
-        var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
-        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
+        let oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+        let oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
         
-        var spielplanHelper = new Spielplan(oSpielplan, oTeams);
+        let spielplanHelper = new Spielplan(oSpielplan, oTeams);
         spielplanHelper.removeGame(sGameId);
 
         jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
@@ -101,36 +101,40 @@ function getSpielplan (req, res) {
             return;
         };
 
-        var sPath = path.resolve(config.get("bedelos.datapath"));
-        var oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
-        var spielplanHelper;
+        let sPath = path.resolve(config.get("bedelos.datapath"));
+        let oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
+        let spielplanHelper;
+        let oSpielplan = null;
         if (!fs.existsSync(sPath + '/SpielplanNew.json')) {
-            var oSpielplan = require(sPath + '/Spielplan.json');
-            spielplanHelper = new Spielplan(oSpielplan, oTeams);
+            spielplanHelper = new Spielplan({}, oTeams);
             spielplanHelper.initialize();
-            jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
+            oSpielplan = spielplanHelper.getSpielplan();
+            jsonfile.writeFileSync(sPath + '/SpielplanNew.json', oSpielplan);
         } else {
-            var oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
+            oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
             spielplanHelper = new Spielplan(oSpielplan, oTeams);
         }
 
         if (req.swagger.params && req.swagger.params.spielindex) {
-            var sRequestedIndex = req.swagger.params.spielindex.raw;
+            let sRequestedIndex = req.swagger.params.spielindex.raw;
         }
 
         // aTeams is just needed for typeahead fields in form
-        var aTeams = [];
-        for(var team in oTeams) {
+        let aTeams = [];
+        for(let team in oTeams) {
             aTeams.push({
                 id: team,
                 name: oTeams[team].name
             })
         }
 
-        var html = pug.renderFile("api/views/spielplanGenerator.jade", {
+        let oLigen = config.get('bedelos.ligen');
+
+        let html = pug.renderFile("api/views/spielplanGenerator.jade", {
             pretty: true,
             teams: oTeams,
             sTeams: JSON.stringify(aTeams),
+            oLigen: oLigen,
             spielplan: oSpielplan,
             gamesMap: spielplanHelper.getGamesMapStringified()
         });
