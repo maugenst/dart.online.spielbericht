@@ -49,7 +49,7 @@ function calcLigaFromFilename(file) {
 }
 
 function getFullLigaName(liga) {
-    var sLiga = calcLigaFromString(liga).toLowerCase();
+    var sLiga = calcLigaFromString(liga);
     return (_.has(oLigen, sLiga)) ? oLigen[sLiga].name : "";
 }
 

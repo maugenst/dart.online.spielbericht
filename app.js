@@ -80,15 +80,15 @@ function _init(){
     let aItemsToResolve = [
         { bFile: false, target: `${__dirname}/${config.get("log.dir")}` },
         { bFile: false, target: `${__dirname}/${config.get("temp.dir")}` },
-        { bFile: false, target: `${__dirname}/../backups}` },
-        { bFile: false, target: `${__dirname}/data}` },
+        { bFile: false, target: `${__dirname}/../backups` },
+        { bFile: false, target: `${__dirname}/data` },
 
-        { bFile: false, target: `${__dirname}/data/config/}` },
+        { bFile: false, target: `${__dirname}/data/config` },
         { bFile: true,  target: `${__dirname}/data/config`, file: "/config.json", after: FNCheckConfig },
         { bFile: true,  target: `${__dirname}/data/config`, file: "/userStore.json", after: FNCheckUserStore },
         { bFile: true,  target: `${__dirname}/data/config`, file: "/counter.json", after: FNCheckAccessCounterStore },
 
-        { bFile: false, target: `${__dirname}/data/saison/}` },
+        { bFile: false, target: `${__dirname}/data/saison` },
         { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}` },
         { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/ergebnisse` },
         { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/statistiken` },
