@@ -256,6 +256,25 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /team/{teamId}:
+    x-swagger-router-controller: bedelos.Team
+    get:
+      produces:
+        - text/html
+      description:
+        Displays an information on one team
+      parameters:
+        - name: teamId
+          type: string
+          description: team ID
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /wertung/{gameId}:
     x-swagger-router-controller: bedelos.Wertung
     post:
