@@ -1,0 +1,28 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title Tournament - Random view
+        link(href='/bedelos/styles/bootstrap-editable.css', rel='stylesheet')
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/js.cookie.js')
+        script(src='/bedelos/scripts/bootstrap-editable.min.js')
+    body(style={"font-family": 'Calibri'})
+        - var n = 1;
+        - var x = 0;
+            while n < boards+1
+                hr
+                table(cellpadding='8px', cellspacing='0', style={'border': 'solid 0px'})
+                    tr.borderedTopBottom.highlighted
+                        th.center(colspan='3') Board #{n++}
+                    tr
+                        td(width='40%') #{players[x++]}
+                        td.center(width='20%')(rowspan=2) ___ : ___
+                        td(width='40%').right #{players[x++]}
+                    tr
+                        td #{players[x++]}
+                        td.right #{players[x++]}
+

@@ -1,0 +1,76 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title Tournament - Players Input
+        link(href='/bedelos/styles/bootstrap-editable.css', rel='stylesheet')
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        script(src='/bedelos/scripts/js.cookie.js')
+        script(src='/bedelos/scripts/bootstrap-editable.min.js')
+        script(type='text/javascript').
+            function submit() {
+                var oData = {
+                    'vorname': document.getElementById('vorname').value,
+                    'nachname': document.getElementById('nachname').value
+                };
+                $.ajax({
+                    url: '/bedelos/turnier/spieler',
+                    type: 'POST',
+                    data: JSON.stringify(oData),
+                    dataType: 'json',
+                    crossDomain: true,
+                    contentType: 'application/json',
+                    statusCode: {
+                        200: function (result) {
+                            location.href = "/bedelos/turnier/spieler";
+                        }
+                    }
+                });
+            }
+            function deleteID(id) {
+                if (confirm('Soll Spieler wirklich gelöscht werden?')) {
+                    $.ajax({
+                        url: '/bedelos/turnier/spieler/' + id,
+                        type: 'DELETE',
+                        contentType: 'application/json',
+                        statusCode: {
+                            200: function (result) {
+                                location.href = "/bedelos/turnier/spieler";
+                            }
+                        }
+                    });
+                }
+            }
+    body(style={"font-family": 'Calibri'})
+        table(cellpadding='8px', cellspacing='0', width='100%', style={'border': 'solid 0px'})
+            form(id='playersform', name="player", action="/bedelos/turnier/spieler", method="post")
+            tr
+                th.center(colspan='2') Spieler
+            tr
+                td(width='10%')
+                    .form-group
+                        label.control-label(for='vorname') Vorname:
+                td
+                    .form-group
+                        input.form-control(type='text', id='vorname' aria-describedby='vorname', placeholder='Max', autofocus)
+            tr
+                td
+                    .form-group
+                        label.control-label(for='nachname') Nachname
+                td
+                    input.form-control(type='text', id='nachname' aria-describedby='nachname', placeholder='Mustermann')
+
+        div
+            ol
+                each player, i in players
+                    li(id=i, onclick='deleteID(this.id)') #{player.vorname} #{player.nachname}
+
+    script(type='text/javascript').
+        $(document).keypress(function (e) {
+            if (e.which == 13) {
+                submit();
+            }
+        });

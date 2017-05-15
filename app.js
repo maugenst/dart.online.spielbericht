@@ -75,6 +75,7 @@ function FNCheckAccessCounterStore() {
 }
 
 function _init(){
+<<<<<<< HEAD
     let aLigen = Object.keys(config.get('bedelos.ligen'));
 
     let aItemsToResolve = [
@@ -100,6 +101,39 @@ function _init(){
         { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Teams.json" },
         { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Vereine.json" },
         { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Wertung.json" }
+=======
+    var aItemsToResolve = [
+        { bFile: false, target: __dirname + "/" + config.get("log.dir") },
+        { bFile: false, target: __dirname + "/" + config.get("temp.dir") },
+        { bFile: false, target: __dirname + "/../backups" },
+        { bFile: false, target: __dirname + "/data" },
+
+        { bFile: false, target: __dirname + "/data/config/" },
+        { bFile: true,  target: __dirname + "/data/config", file: "/config.json", after: FNCheckConfig },
+        { bFile: true,  target: __dirname + "/data/config", file: "/userStore.json", after: FNCheckUserStore },
+        { bFile: true,  target: __dirname + "/data/config", file: "/counter.json", after: FNCheckAccessCounterStore },
+
+        { bFile: false, target: __dirname + "/data/saison/" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/ergebnisse" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/statistiken" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/tabellen" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/pictures" },
+        { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/inbox" },
+
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/klnord.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/klsued.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/bzLiga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/oberliga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klnord.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klsued.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/bzLiga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/oberliga.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Spielplan.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Teams.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/TurnierSpieler.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Wertung.json" }
+>>>>>>> bind to localhost and tournament mode first glimpse
     ];
 
     aLigen.forEach(liga => {
@@ -164,8 +198,8 @@ try {
         swaggerExpress.register(app);
 
         if (config.get("server.http")) {
-            let httpPort = config.get("server.http.port");
-            http.createServer(app).listen(httpPort);
+            var httpPort = config.get("server.http.port");
+            http.createServer(app).listen(httpPort, "localhost");
             logAll(util.format("HTTP server running and listening on port=%d", httpPort));
         }
         // HTTPS service
@@ -176,7 +210,7 @@ try {
             https.createServer({
                 key: fs.readFileSync(httpsKeyFile),
                 cert: fs.readFileSync(httpsCertFile)
-            }, app).listen(httpsPort);
+            }, app).listen(httpsPort, "localhost");
             logAll(util.format("HTTPS server running and listening on port=%d (key file=%s, certificate file=%s)",
                 httpsPort, httpsKeyFile, httpsCertFile));
         }

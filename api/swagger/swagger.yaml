@@ -457,6 +457,69 @@ paths:
           schema:
             $ref: "#/definitions/OBJECT"
 
+  /turnier:
+    x-swagger-router-controller: bedelos.tournament.RandomView
+    get:
+      produces:
+        - text/html
+      description:
+        Views tournament
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /turnier/spieler:
+    x-swagger-router-controller: bedelos.tournament.Players
+    get:
+      produces:
+        - text/html
+      description:
+        Input Form for players in tournament
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+    post:
+      produces:
+        - text/html
+      description:
+        Processes players in tournament
+      parameters:
+        - name: credentials
+          in: body
+          description: Player Name
+          required: true
+          schema:
+            $ref: "#/definitions/OBJECT"
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /turnier/spieler/{id}:
+    x-swagger-router-controller: bedelos.tournament.Players
+    delete:
+      produces:
+        - text/html
+      description:
+        Input Form for players in tournament
+      parameters:
+        - name: id
+          in: path
+          description: Player ID
+          required: true
+          type: string
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+
   /login:
     x-swagger-router-controller: bedelos.Authentication
     get:
