@@ -19,9 +19,12 @@ function isUpdateNeeded(file, liga) {
 }
 
 function calcLigaFromString(sLigaString) {
-    let liga = _.findKey(oLigen, liga => {
-        return (sLigaString.toLowerCase().startsWith(liga.prefix.toLowerCase()));
-    });
+    let liga;
+    if (sLigaString) {
+        liga = _.findKey(oLigen, liga => {
+            return (sLigaString.toLowerCase().startsWith(liga.prefix.toLowerCase()));
+        });
+    }
 
     return liga || sLigaString;
 }

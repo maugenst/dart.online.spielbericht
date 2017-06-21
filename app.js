@@ -75,33 +75,6 @@ function FNCheckAccessCounterStore() {
 }
 
 function _init(){
-<<<<<<< HEAD
-    let aLigen = Object.keys(config.get('bedelos.ligen'));
-
-    let aItemsToResolve = [
-        { bFile: false, target: `${__dirname}/${config.get("log.dir")}` },
-        { bFile: false, target: `${__dirname}/${config.get("temp.dir")}` },
-        { bFile: false, target: `${__dirname}/../backups` },
-        { bFile: false, target: `${__dirname}/data` },
-
-        { bFile: false, target: `${__dirname}/data/config` },
-        { bFile: true,  target: `${__dirname}/data/config`, file: "/config.json", after: FNCheckConfig },
-        { bFile: true,  target: `${__dirname}/data/config`, file: "/userStore.json", after: FNCheckUserStore },
-        { bFile: true,  target: `${__dirname}/data/config`, file: "/counter.json", after: FNCheckAccessCounterStore },
-
-        { bFile: false, target: `${__dirname}/data/saison` },
-        { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}` },
-        { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/ergebnisse` },
-        { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/statistiken` },
-        { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/tabellen` },
-        { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/pictures` },
-        { bFile: false, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}/inbox` },
-
-        { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Spielplan.json" },
-        { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Teams.json" },
-        { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Vereine.json" },
-        { bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: "/Wertung.json" }
-=======
     var aItemsToResolve = [
         { bFile: false, target: __dirname + "/" + config.get("log.dir") },
         { bFile: false, target: __dirname + "/" + config.get("temp.dir") },
@@ -121,33 +94,26 @@ function _init(){
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/pictures" },
         { bFile: false, target: __dirname + "/data/saison/" + config.get("bedelos.saison") + "/inbox" },
 
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/klnord.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/klsued.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/bzLiga.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/statistiken/oberliga.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klnord.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/klsued.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/bzLiga.json" },
-        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/tabellen/oberliga.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Spielplan.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Teams.json" },
+        { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Vereine.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/TurnierSpieler.json" },
         { bFile: true, target: __dirname + "/data/saison/" + config.get("bedelos.saison"), file: "/Wertung.json" }
->>>>>>> bind to localhost and tournament mode first glimpse
     ];
 
+    let oLigen = config.get("bedelos.ligen");
+    let aLigen = Object.keys(oLigen);
     aLigen.forEach(liga => {
         aItemsToResolve.push({ bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: `/statistiken/${liga}.json` });
         aItemsToResolve.push({ bFile: true, target: `${__dirname}/data/saison/${config.get("bedelos.saison")}`, file: `/tabellen/${liga}.json` });
     });
 
     let defaultPath = path.resolve(`${__dirname}/config/default/saison/xxyy`);
-
-    for(let i = 0; i<aItemsToResolve.length; i++) {
-        if (aItemsToResolve[i].bFile) {
-            let sTargetFile = path.resolve(aItemsToResolve[i].target + aItemsToResolve[i].file);
+    aItemsToResolve.forEach(resolvableItem => {
+        if (resolvableItem.bFile) {
+            let sTargetFile = path.resolve(resolvableItem.target + resolvableItem.file);
             if (!fs.existsSync(sTargetFile)) {
-                let sSourceFile = path.resolve(defaultPath + aItemsToResolve[i].file);
+                let sSourceFile = path.resolve(defaultPath + resolvableItem.file);
                 if (!fs.existsSync(sSourceFile)) {
                     jsonfile.writeFileSync(sTargetFile, {});
                 } else {
@@ -155,17 +121,17 @@ function _init(){
                 }
             }
         } else {
-            let sTargetDir = path.resolve(aItemsToResolve[i].target);
+            let sTargetDir = path.resolve(resolvableItem.target);
             if (!fs.existsSync(sTargetDir)) {
                 mkdirp.sync(sTargetDir);
             }
         }
-        if (aItemsToResolve[i].after && typeof aItemsToResolve[i].after === 'function') {
-            aItemsToResolve[i].after();
+        if (resolvableItem.after && typeof resolvableItem.after === 'function') {
+            resolvableItem.after();
         }
-    }
+    });
 
-    logDirectory = path.resolve(aItemsToResolve[0].target);
+    logDirectory = path.resolve(__dirname + "/" + config.get("log.dir"));
 }
 
 try {
