@@ -22,9 +22,9 @@ temp:
 #
 bedelos:
   adminuser: bdladmin
-  saison: 1617
+  saison: 1718
   configpath: ./data/config
-  datapath: ./data/saison/1617
+  datapath: ./data/saison/1718
   ligen:
     oberliga:
       name: Oberliga
@@ -33,15 +33,19 @@ bedelos:
     bzLiga:
       name: Bezirksliga
       prefix: bzli
-      spieltage: 22
+      spieltage: 18
     klnord:
       name: Kreisliga Nord
       prefix: kln
-      spieltage: 22
+      spieltage: 18
+    klmitte:
+      name: Kreisliga Mitte
+      prefix: klm
+      spieltage: 18
     klsued:
       name: Kreisiga Süd
       prefix: kls
-      spieltage: 22
+      spieltage: 18
 
 # values in the swagger hash are system configuration for swagger-node
 swagger:
