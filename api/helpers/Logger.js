@@ -5,7 +5,34 @@ var fs = require('fs');
 var path = require('path');
 var config = require('config');
 
-log4js.configure( "./config/log4js.json" );
+log4js.configure({
+    appenders: {
+        console: {
+            type: "console",
+            layout: {
+                type: "pattern",
+                pattern: "%m"
+            },
+        },
+        bedelos: {
+            type: "file",
+            filename: "data/log/bedelos.out",
+            maxLogSize: 10000000,
+            backups: 3
+        }
+    },
+    categories: {
+        default: {
+            appenders: ['console'],
+            level: 'info'
+        },
+        bedelos: {
+            appenders: ['bedelos'],
+            level: 'info'
+        }
+    }
+});
+
 var _logDirectory = config.get("log.dir");
 
 var _defaultLogFile = path.resolve(_logDirectory, "bedelos.out");

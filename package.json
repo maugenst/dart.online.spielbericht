@@ -34,21 +34,8 @@
     "walker": "*"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-compress": "1.0.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-mocha-istanbul": "^5.0.1",
-    "grunt-mocha-test": "^0.12.7",
-    "istanbul": "^0.4.3",
-    "mocha": "2.4.5",
-    "mocha-junit-reporter": "^1.11.1",
-    "nock": "^7.2.1",
-    "should": "^7.1.0",
-    "sinon": "1.17.3",
-    "supertest": "^1.0.0"
   },
   "scripts": {
-    "start": "node app.js",
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "start": "node app.js"
   }
 }

@@ -34,17 +34,21 @@ function getSpielplan (req, res) {
                 oResults[sKey] = jsonfile.readFileSync(file);
             }
         }).on('end', function(){
-            var oSelection = oSpielplan[liga][runde];
+            if (oSpielplan[liga]) {
+                var oSelection = oSpielplan[liga][runde];
 
-            var html = pug.renderFile("api/views/spielplan.jade", {
-                pretty: true,
-                runde: oSelection,
-                teams: oTeams,
-                username: username,
-                results: oResults
-            });
+                var html = pug.renderFile("api/views/spielplan.jade", {
+                    pretty: true,
+                    runde: oSelection,
+                    teams: oTeams,
+                    username: username,
+                    results: oResults
+                });
 
-            res.status(200).send(html);
+                res.status(200).send(html);
+            } else {
+                res.send('NOT FOUND').status(404);
+            }
         });
 
     } catch (error) {
