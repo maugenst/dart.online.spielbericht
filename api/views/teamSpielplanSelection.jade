@@ -27,6 +27,7 @@ html
                 .col-xs-3
                     .form-group
                         input.typeahead(id='heim', type='text', data-provide='typeahead')
+                        input.typeahead(id='send', type='button', onclick='redirect();', value='Suchen')
         br
         br
         br
@@ -45,10 +46,13 @@ html
         form(id='submit', action='', method='post')
     script(type='text/javascript').
 
-        function redirect(url, method) {
-            $('#submit').attr('action', url);
-            $('#submit').attr('method', method);
-            $('#submit').submit();
+        function redirect() {
+            var heim = $('#heim').typeahead('getActive');
+            if (heim && heim.id) {
+                $('#submit').attr('action', '/bedelos/teamspielplan/team/' + heim.id);
+                $('#submit').attr('method', 'post');
+                $('#submit').submit();
+            }
         };
 
         var $input = $('.typeahead');
@@ -59,9 +63,8 @@ html
         });
 
         $(document).keyup(function(e) {
-            var heim = $('#heim').typeahead('getActive');
-            if (e.keyCode == 13 && heim && heim.id) { // escape key maps to keycode `27`
-                redirect("/bedelos/teamspielplan/team/" + heim.id, 'post');
+            if (e.keyCode == 13) { // escape key maps to keycode `27`
+                redirect();
             }
         });
 

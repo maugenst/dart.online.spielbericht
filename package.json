@@ -33,8 +33,7 @@
     "swagger-node-runner": "*",
     "walker": "*"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "node app.js"
   }

@@ -1187,12 +1187,12 @@ var oTeams = null;
 var gameID = getUrlParameter('g');
 var storage = getUrlParameter('s') || 'ergebnisse';
 
-$.getJSON("/saison/1617/Spielplan.json", function(spielplan){
+$.getJSON("/saison/1718/Spielplan.json", function(spielplan){
     oSpielplan = spielplan;
-    $.getJSON("/saison/1617/Teams.json", function(teams){
+    $.getJSON("/saison/1718/Teams.json", function(teams){
         oTeams = teams;
         if (gameID !== "") {
-            $.getJSON(window.location.origin + '/saison/1617/' + storage + '/' + gameID + '.json', function(ergebnisseFromFile) {
+            $.getJSON(window.location.origin + '/saison/1718/' + storage + '/' + gameID + '.json', function(ergebnisseFromFile) {
                 window.localStorage.setItem("ergebnisseLeer", JSON.stringify(ergebnisseFromFile));
                 window.localStorage.setItem("ergebnisRAW", JSON.stringify(ergebnisseFromFile));
                 heim = ergebnisseFromFile.heim;
