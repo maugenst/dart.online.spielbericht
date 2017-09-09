@@ -19,7 +19,7 @@ html
         title BDL Online Team Spielplan Selection
 
     body(style={"font-family": 'Calibri'})
-
+        input(id='teams', type='hidden', value=sTeams)
         .container
             .row
                 .col-xs-2
@@ -56,7 +56,7 @@ html
         };
 
         var $input = $('.typeahead');
-        var aTeams = JSON.parse("#{sTeams}".replace(/&quot;/g,'"'));
+        var aTeams = JSON.parse($('#teams').val());
         $input.typeahead({
             source: aTeams,
             autoSelect: true
