@@ -15,6 +15,7 @@
     "cors": "*",
     "express": "",
     "fs-extra": "*",
+    "ical-generator": "^0.2.10",
     "jade-bootstrap": "*",
     "js-yaml": "*",
     "jsonfile": "*",

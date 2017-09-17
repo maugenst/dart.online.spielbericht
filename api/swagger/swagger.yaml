@@ -114,6 +114,25 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /teamcal/team/{teamId}:
+    x-swagger-router-controller: bedelos.TeamCalendars
+    get:
+      produces:
+        - application/json
+      description:
+        Displays a selection to get a spielplan for a specific team
+      parameters:
+        - name: teamId
+          type: string
+          description: TeamId
+          in: path
+          required: true
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /teamspielplan/team/{teamId}:
     x-swagger-router-controller: bedelos.TeamSpielplan
     get:

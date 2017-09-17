@@ -17,3 +17,10 @@ for (var team in teams) {
 }
 
 fs.writeFileSync('emails.txt', out2.join('; '));
+
+let out3 = [];
+for (var team in teams) {
+    out3.push(`${teams[team].teamvertreter.tel}`);
+}
+
+fs.writeFileSync('tel.txt', out3.join('\n'));

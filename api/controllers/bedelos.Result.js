@@ -57,7 +57,11 @@ function uploadResults (req, res) {
             logger.log.info("   --> Running on Linux. Trying to send Email.");
             logger.log.info("   --> Email test mode is: " + req.swagger.params.test.raw);
 
-            var transporter = nodemailer.createTransport();
+            var transporter = nodemailer.createTransport({
+                sendmail: true,
+                newline: 'unix',
+                path: '/usr/sbin/sendmail'
+            }‚);
             logger.log.debug("Transporter created.");
             var aMailTo = [];
             var aMailCC = [];
