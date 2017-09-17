@@ -61,7 +61,7 @@ function uploadResults (req, res) {
                 sendmail: true,
                 newline: 'unix',
                 path: '/usr/sbin/sendmail'
-            }‚);
+            });
             logger.log.debug("Transporter created.");
             var aMailTo = [];
             var aMailCC = [];
