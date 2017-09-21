@@ -100,7 +100,7 @@ class Spielplan {
         for (let spieltag in this._oSpielplan[liga].vr) {
             for (let i = 0; this._oSpielplan[liga].vr[spieltag].length; i++) {
                 let spiel = this._oSpielplan[liga].vr[spieltag][i];
-                if (spiel.id === sGameID) {
+                if (spiel && spiel.heim && spiel.heimName && spiel.gast && spiel.gastName && spiel.id && spiel.id === sGameID) {
                     const tmp = spiel.heim;
                     const tmpName = spiel.heimName;
                     spiel.heim = spiel.gast;
@@ -115,7 +115,7 @@ class Spielplan {
         for (let spieltag in this._oSpielplan[liga].rr) {
             for (let i = 0; this._oSpielplan[liga].rr[spieltag].length; i++) {
                 let spiel = this._oSpielplan[liga].rr[spieltag][i];
-                if (spiel.id === sGameID) {
+                if (spiel && spiel.heim && spiel.heimName && spiel.gast && spiel.gastName && spiel.id && spiel && spiel.id === sGameID) {
                     const tmp = spiel.heim;
                     const tmpName = spiel.heimName;
                     spiel.heim = spiel.gast;
