@@ -36,7 +36,7 @@ function switchGame(req, res) {
 
         jsonfile.writeFileSync(sPath + '/Spielplan.json', spielplanHelper.getSpielplan());
 
-        res.redirect(`/bedelos/spielplan?liga=${oRet.liga}&runde=${oRet.runde}&reload=1`);
+        res.redirect(`/bedelos/spielplan?liga=${oRet.liga}&runde=${oRet.runde}`);
     } catch (error) {
         res.status(500).send('Error: ' + error.stack.replace('/\n/g', '<br>'));
 
