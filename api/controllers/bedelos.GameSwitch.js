@@ -32,6 +32,8 @@ function switchGame(req, res) {
         let spielplanHelper = new Spielplan(oSpielplan, oTeams);
         const oRet = spielplanHelper.switchTeams(sGameId);
 
+        logger.log.debug(`Switched teams in game ${sGameId}, liga ${oRet.liga}, runde ${oRet.runde}`);
+
         jsonfile.writeFileSync(sPath + '/Spielplan.json', spielplanHelper.getSpielplan());
 
         res.redirect(`/bedelos/spielplan?liga=${oRet.liga}&runde=${oRet.runde}&reload=1`);
