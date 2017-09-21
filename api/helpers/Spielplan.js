@@ -90,6 +90,46 @@ class Spielplan {
         return ret;
     }
 
+    switchTeams(sGameID) {
+        let oRet = {
+            liga:'',
+            runde:''
+        };
+        let liga = ligaHelper.calcLigaFromString(sGameID);
+        oRet.liga = liga;
+        for (let spieltag in this._oSpielplan[liga].vr) {
+            for (let i = 0; this._oSpielplan[liga].vr[spieltag].length; i++) {
+                let spiel = this._oSpielplan[liga].vr[spieltag][i];
+                if (spiel.id === sGameID) {
+                    const tmp = spiel.heim;
+                    const tmpName = spiel.heimName;
+                    spiel.heim = spiel.gast;
+                    spiel.heimName = spiel.gastName;
+                    spiel.gast = tmp;
+                    spiel.gastName = tmpName;
+                    oRet.runde = 'vr';
+                    return oRet;
+                }
+            }
+        }
+        for (let spieltag in this._oSpielplan[liga].rr) {
+            for (let i = 0; this._oSpielplan[liga].rr[spieltag].length; i++) {
+                let spiel = this._oSpielplan[liga].rr[spieltag][i];
+                if (spiel.id === sGameID) {
+                    const tmp = spiel.heim;
+                    const tmpName = spiel.heimName;
+                    spiel.heim = spiel.gast;
+                    spiel.heimName = spiel.gastName;
+                    spiel.gast = tmp;
+                    spiel.gastName = tmpName;
+                    oRet.runde = 'rr';
+                    return oRet;
+                }
+            }
+        }
+        return oRet;
+    }
+
     removeGame(sGameID) {
         let liga = ligaHelper.calcLigaFromString(sGameID);
         for (let spieltag in this._oSpielplan[liga].vr) {

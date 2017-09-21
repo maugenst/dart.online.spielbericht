@@ -53,18 +53,26 @@ html
                                         nbsp | #{spiel.id}
                                         if (username === 'bdladmin')
                                             nbsp |
+                                            nbsp
                                             a(href='#', id="wertung_"+spiel.id, data-type="select",
                                                 data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
                                             nbsp |
                                             a(href='/bedelos/ergebnisse/'+spiel.id+'/addComment') Kommentar
+                                            nbsp |
+                                            nbsp
+                                            a(href='/bedelos/spiel/' + spiel.id + '/tauschen') Tauschen
                                 else
                                     td(align='center') Details
                                         nbsp | #{spiel.id}
                                         if (username === 'bdladmin')
                                             nbsp |
+                                            nbsp
                                             a(href='#', id="wertung_"+spiel.id, data-type="select",
                                                 data-url="/bedelos/wertung/"+spiel.id, data-pk=spiel.id, data-title="Spiel werten:") Werten
                                             nbsp | Kommentar
+                                            nbsp |
+                                            nbsp
+                                            a(href='/bedelos/spiel/' + spiel.id + '/tauschen') Tauschen
 
     br
     script(type='text/javascript').

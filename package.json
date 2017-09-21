@@ -13,6 +13,7 @@
     "config": "*",
     "cookie-parser": "*",
     "cors": "*",
+    "decache": "^4.1.0",
     "express": "",
     "fs-extra": "*",
     "ical-generator": "^0.2.10",

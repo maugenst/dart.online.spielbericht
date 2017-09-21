@@ -11,6 +11,7 @@ var walker = require('walker');
 var _ = require('lodash');
 var logger = require('../helpers/Logger');
 var session = require('../helpers/Session');
+var decache = require('decache');
 
 function getSpielplan (req, res) {
     try {
@@ -19,6 +20,9 @@ function getSpielplan (req, res) {
         if (req.swagger.params.saison.raw) {
             sPath = path.dirname(sPath);
             sPath = path.resolve(sPath, req.swagger.params.saison.raw);
+        }
+        if (req.swagger.params.reload.raw === '1') {
+            decache(path.resolve(sPath,'Spielplan.json'));
         }
         var oSpielplan = require(path.resolve(sPath,'Spielplan.json'));
         var oTeams = require(path.resolve(sPath, 'Teams.json'));
