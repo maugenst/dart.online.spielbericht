@@ -97,36 +97,46 @@ class Spielplan {
         };
         let liga = ligaHelper.calcLigaFromString(sGameID);
         oRet.liga = liga;
-        for (let spieltag in this._oSpielplan[liga].vr) {
-            for (let i = 0; this._oSpielplan[liga].vr[spieltag].length; i++) {
-                let spiel = this._oSpielplan[liga].vr[spieltag][i];
+        _.forEach(this._oSpielplan[liga].vr, spieltag => {
+            _.forEach(spieltag, (spiel, i) => {
                 if (spiel && spiel.heim && spiel.heimName && spiel.gast && spiel.gastName && spiel.id && spiel.id === sGameID) {
-                    const tmp = spiel.heim;
-                    const tmpName = spiel.heimName;
-                    spiel.heim = spiel.gast;
-                    spiel.heimName = spiel.gastName;
-                    spiel.gast = tmp;
-                    spiel.gastName = tmpName;
-                    oRet.runde = 'vr';
+                    const newGame = {
+                        "id": sGameID,
+                        "datum": spiel.datum,
+                        "heim": spiel.gast,
+                        "gast": spiel.heim,
+                        "liga": spiel.liga,
+                        "spieltag": spiel.spieltag,
+                        "runde": spiel.runde,
+                        "heimName": spiel.gastName,
+                        "gastName": spiel.heimName
+                    };
+                    _.set(this._oSpielplan, `${liga}.vr[${spiel.spieltag}][${i}]`, newGame);
+                    oRet.runde = spiel.runde;
                     return oRet;
                 }
-            }
-        }
-        for (let spieltag in this._oSpielplan[liga].rr) {
-            for (let i = 0; this._oSpielplan[liga].rr[spieltag].length; i++) {
-                let spiel = this._oSpielplan[liga].rr[spieltag][i];
-                if (spiel && spiel.heim && spiel.heimName && spiel.gast && spiel.gastName && spiel.id && spiel && spiel.id === sGameID) {
-                    const tmp = spiel.heim;
-                    const tmpName = spiel.heimName;
-                    spiel.heim = spiel.gast;
-                    spiel.heimName = spiel.gastName;
-                    spiel.gast = tmp;
-                    spiel.gastName = tmpName;
-                    oRet.runde = 'rr';
+            });
+        });
+        _.forEach(this._oSpielplan[liga].rr, spieltag => {
+            _.forEach(spieltag, (spiel, i) => {
+                if (spiel && spiel.heim && spiel.heimName && spiel.gast && spiel.gastName && spiel.id && spiel.id === sGameID) {
+                    const newGame = {
+                        "id": sGameID,
+                        "datum": spiel.datum,
+                        "heim": spiel.gast,
+                        "gast": spiel.heim,
+                        "liga": spiel.liga,
+                        "spieltag": spiel.spieltag,
+                        "runde": spiel.runde,
+                        "heimName": spiel.gastName,
+                        "gastName": spiel.heimName
+                    };
+                    _.set(this._oSpielplan, `${liga}.rr[${spiel.spieltag}][${i}]`, newGame);
+                    oRet.runde = spiel.runde;
                     return oRet;
                 }
-            }
-        }
+            });
+        });
         return oRet;
     }
 

@@ -46,7 +46,7 @@ function switchGame(req, res) {
 
             logger.log.info(`Switched teams in game ${sGameId}, liga ${oRet.liga}, runde ${oRet.runde}`);
 
-            fse.writeJson(sPath + '/Spielplan.json', spielplanHelper.getSpielplan()).then(() => {
+            fse.writeJson(sPath + '/Spielplan.json', spielplanHelper.getSpielplan(), {spaces: 2}).then(() => {
 
                 res.redirect(`/bedelos/spielplan?liga=${oRet.liga}&runde=${oRet.runde}`);
 
