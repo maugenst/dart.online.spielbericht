@@ -10,24 +10,25 @@ const Spielplan = require('../helpers/Spielplan');
 
 function switchGame(req, res) {
     try {
-        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+        var sGameId = req.swagger.params.gameId.raw;
+        logger.log.info(`Switching teams in game: ${sGameId}`);
 
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
         if (!oSessionData) {
-            res.cookie('BDL_SESSION_REDIRECT', req.url);
+            //res.cookie('BDL_SESSION_REDIRECT', req.url);
             res.redirect('/bedelos/login');
             return;
-        }
 
+        }
         if (oSessionData.username !== config.get('bedelos.adminuser')) {
             res.status(200).send(pug.renderFile('api/views/authorizederror.jade'));
             return;
-        }
 
+        }
         var sPath = path.resolve(config.get('bedelos.datapath'));
         let oSpielplan = jsonfile.readFileSync(sPath + '/Spielplan.json');
-        var oTeams = require(sPath + '/Teams.json');
 
-        var sGameId = req.swagger.params.gameId.raw;
+        var oTeams = require(sPath + '/Teams.json');
 
         let spielplanHelper = new Spielplan(oSpielplan, oTeams);
         const oRet = spielplanHelper.switchTeams(sGameId);
