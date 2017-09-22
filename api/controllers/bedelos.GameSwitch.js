@@ -2,7 +2,7 @@
 
 const path = require('path');
 const config = require('config');
-const jsonfile = require('jsonfile');
+const fse = require('fs-extra');
 const logger = require('../helpers/Logger');
 const session = require('../helpers/Session');
 const pug = require('pug');
@@ -25,19 +25,33 @@ function switchGame(req, res) {
             return;
 
         }
+
+        logger.log.info('Start reading Spielplan.json');
         var sPath = path.resolve(config.get('bedelos.datapath'));
-        let oSpielplan = jsonfile.readFileSync(sPath + '/Spielplan.json');
 
-        var oTeams = require(sPath + '/Teams.json');
+        const pSpielplan = fse.readJson(sPath + '/Spielplan.json');
+        const pTeams = fse.readJson(sPath + '/Teams.json');
 
-        let spielplanHelper = new Spielplan(oSpielplan, oTeams);
-        const oRet = spielplanHelper.switchTeams(sGameId);
+        Promise.all([pSpielplan, pTeams]).then(values => {
 
-        logger.log.debug(`Switched teams in game ${sGameId}, liga ${oRet.liga}, runde ${oRet.runde}`);
+            const oSpielplan = values[0];
+            const oTeams = values[1];
 
-        jsonfile.writeFileSync(sPath + '/Spielplan.json', spielplanHelper.getSpielplan());
+            logger.log.info('Finished Spielplan.json');
 
-        res.redirect(`/bedelos/spielplan?liga=${oRet.liga}&runde=${oRet.runde}`);
+            logger.log.info('Processing Spielplan');
+            let spielplanHelper = new Spielplan(oSpielplan, oTeams);
+            logger.log.info('Switching teams');
+            const oRet = spielplanHelper.switchTeams(sGameId);
+
+            logger.log.info(`Switched teams in game ${sGameId}, liga ${oRet.liga}, runde ${oRet.runde}`);
+
+            fse.writeJson(sPath + '/Spielplan.json', spielplanHelper.getSpielplan()).then(() => {
+
+                res.redirect(`/bedelos/spielplan?liga=${oRet.liga}&runde=${oRet.runde}`);
+
+            });
+        });
     } catch (error) {
         res.status(500).send('Error: ' + error.stack.replace('/\n/g', '<br>'));
 
