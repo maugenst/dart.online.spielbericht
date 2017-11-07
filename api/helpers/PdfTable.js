@@ -1,9 +1,9 @@
 'use strict';
+const _ = require('lodash');
 
 class PdfTable {
-
-    constructor() {
-        this.table = {
+    constructor(oConfig) {
+        this.table = oConfig || {
             style: 'table',
             table: {
                 headerRows: 1,
@@ -17,33 +17,46 @@ class PdfTable {
         this.table.table.widths = aWidths;
     }
 
-    setTableHeader(aHeaders) {
+    _getHeadlineArr(aLine) {
         var aHeadline = [];
-        for(var i in aHeaders) {
-            aHeadline.push({ text: aHeaders[i], style: 'tableHeader', alignment: 'center', noWrap: true});
-        }
-        if (this.table.table.body.length === 0) {
-            this.table.table.body.push(aHeadline);
+        aLine.forEach(cell => {
+            if (_.isObject(cell)) {
+                aHeadline.push(_.assign({text: '...', style: 'tableHeader', alignment: 'center', noWrap: true}, cell));
+            } else {
+                aHeadline.push({text: cell, style: 'tableHeader', alignment: 'center', noWrap: true});
+            }
+        });
+        return aHeadline;
+    }
+
+    setTableHeader(aHeaders) {
+        if (_.isArray(aHeaders[0])) {
+            // first adapt the header Rows parameter
+            this.table.table.headerRows = aHeaders.length;
+            // Iterate on all headerLines
+            _.eachRight(aHeaders, aHeaderLine => {
+                this.setTableHeader(aHeaderLine);
+            });
         } else {
-            this.table.table.body[0] = aHeadline;
+            this.table.table.body.unshift(this._getHeadlineArr(aHeaders));
         }
     }
 
     addRow(aCells) {
         if (this.table.table.body.length === 0) {
             var aHdr = [];
-            for (var i = 0; i<aCells.length; i++) {
-                aHdr.push("");
+            for (var i = 0; i < aCells.length; i++) {
+                aHdr.push('');
             }
             this.setTableHeader(aHdr);
         }
         var aRow = [];
-        for(var i in aCells) {
+        for (var i in aCells) {
             var cell = aCells[i];
-            if (typeof cell === "object") {
+            if (typeof cell === 'object') {
                 aRow.push(cell);
             } else {
-                aRow.push({text:aCells[i]+"", style: 'cell'});
+                aRow.push({text: aCells[i] + '', style: 'cell'});
             }
         }
         this.table.table.body.push(aRow);

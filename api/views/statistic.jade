@@ -20,6 +20,9 @@ html
                         else
                             asfada
                     th.center
+                        a(onclick='window.location.assign(\'/bedelos/statistik/liga/' + ligaShort + '?xls=true\')')
+                            img(src='/bedelos/images/xls-icon.png', width='25px', title='Excel Export')
+                        nbsp
                         a(href='/bedelos/statistik/liga/' + ligaShort + '?pdf=true', target='_top')
                             img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
                 tr.borderedTopBottom.highlighted

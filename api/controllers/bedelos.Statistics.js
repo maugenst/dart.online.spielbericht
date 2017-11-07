@@ -26,8 +26,15 @@ function getTable (req, res) {
     try {
         var username = session.getUsername(req.cookies.BDL_SESSION_TOKEN);
         
-        var sPath = path.resolve(config.get("bedelos.datapath"));
-        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
+        var sPath = path.resolve(config.get('bedelos.datapath'));
+        const saison = req.swagger.params.saison.raw || config.get('bedelos.saison');
+
+        if (req.swagger.params.saison.raw) {
+            sPath = path.dirname(sPath);
+            sPath = path.resolve(sPath, saison);
+        }
+
+        var sStatisticsPath = path.resolve(sPath + '/statistiken/');
         var oTeams = require(sPath + '/Teams.json');
         var liga = req.swagger.params.liga.raw;
         var sStatisticsFile = path.resolve(sStatisticsPath + '/' + liga + '.json');
@@ -38,20 +45,20 @@ function getTable (req, res) {
             pdfPage.addHeadlineH1("Statistiken " + ligaHelper.getFullLigaName(liga));
 
             var pdfTable = new PdfTable();
-            pdfTable.setTableHeader(["Pl.","Spieler","Verein","Siege\n*2","HF\n*0,5","SL\n*0,5","Max\n*0,5","Pkt\n∑"]);
-            pdfTable.setWidths([10,'*','*',14,15,15,15,18]);
-            for(var i in aRanking) {
+            pdfTable.setTableHeader(["Pl.", "Spieler", "Verein", "Siege\n*2", "HF\n*0,5", "SL\n*0,5", "Max\n*0,5", "Pkt\n∑"]);
+            pdfTable.setWidths([10, '*', '*', 14, 15, 15, 15, 18]);
+            for (var i in aRanking) {
                 var player = aRanking[i];
-                var iRank = parseInt(i)+1;
+                var iRank = parseInt(i) + 1;
                 var sVictories = player['3:0'] + player['3:1'] + player['3:2'];
                 pdfTable.addRow([iRank + ".",
                     player.name,
                     oTeams[player.team].name,
-                    {text: getField(sVictories), style:['cell','center']},
-                    {text: getField(player.hf), style:['cell','center']},
-                    {text: getField(player.sl), style:['cell','center']},
-                    {text: getField(player.max), style:['cell','center']},
-                    {text: ""+player.punkte, style:['cell','center']}
+                    {text: getField(sVictories), style: ['cell', 'center']},
+                    {text: getField(player.hf), style: ['cell', 'center']},
+                    {text: getField(player.sl), style: ['cell', 'center']},
+                    {text: getField(player.max), style: ['cell', 'center']},
+                    {text: "" + player.punkte, style: ['cell', 'center']}
                 ]);
             }
 
@@ -64,6 +71,18 @@ function getTable (req, res) {
             pdfDoc.pipe(res);
             pdfDoc.end();
 
+        } else if (req.swagger.params.xls && req.swagger.params.xls.raw === "true") {
+            var html = pug.renderFile("api/views/statisticXlsRenderer.pug", {
+                pretty: true,
+                ranking: aRanking,
+                teams: oTeams,
+                username: username,
+                saison: saison,
+                liga: ligaHelper.getFullLigaName(liga),
+                ligaShort: liga
+            });
+
+            res.status(200).send(html);
         } else {
             var html = pug.renderFile("api/views/statistic.jade", {
                 pretty: true,

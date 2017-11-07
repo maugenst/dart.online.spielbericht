@@ -744,6 +744,35 @@ paths:
           description: Shall the table be printed as pdf
           in: query
           required: false
+        - name: xls
+          type: boolean
+          description: Shall the table be printed as xls
+          in: query
+          required: false
+        - name: saison
+          type: string
+          description: Saison
+          in: query
+          required: false
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
+  /statistik/ehrentafeln:
+    x-swagger-router-controller: bedelos.Ehrentafeln
+    get:
+      produces:
+        - text/html
+      description:
+        Produces a PDF document on all teams containing the teams statistic and it's rank in the league
+      parameters:
+        - name: saison
+          type: string
+          description: Saison
+          in: query
+          required: false
       responses:
         'default':
           description: Successful response

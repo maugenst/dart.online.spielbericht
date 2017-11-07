@@ -142,6 +142,7 @@ try {
 
     app.set('views', 'api/views');
     app.set('view engine', 'jade');
+    app.set('json spaces', 2);
     app.use(cors());
     app.use(cookieParser());
     app.use(morgan('combined', {stream: fs.createWriteStream(logDirectory + '/access.log', {flags: 'a'})}));
@@ -149,6 +150,7 @@ try {
     app.use('/saison', express.static('data/saison'));
     app.use('/backups', serveIndex('../backups', {'icons': true, view:'details'}));
     app.use('/backups', express.static('../backups'));
+    app.use('/bedelos/lib', express.static('node_modules'));
 
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 

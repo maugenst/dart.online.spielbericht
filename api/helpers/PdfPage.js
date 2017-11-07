@@ -5,7 +5,12 @@ var PdfPrinter = require('pdfmake/src/printer');
 
 class PdfPage {
 
-    constructor() {
+    constructor(oDefaults) {
+        let defaultFontSize = 11;
+
+        if (oDefaults){
+            defaultFontSize = oDefaults.fontsize;
+        }
         var fonts = {
             Roboto: {
                 normal: path.resolve(config.get("fonts.dir") + '/Roboto-Regular.ttf'),
@@ -21,38 +26,44 @@ class PdfPage {
             content: [],
             styles: {
                 h1: {
-                    fontSize: 18,
+                    fontSize: defaultFontSize+7,
                     bold: true,
                     margin: [0, 0, 0, 10]
                 },
                 h2: {
-                    fontSize: 16,
+                    fontSize: defaultFontSize+5,
                     bold: true,
                     margin: [0, 10, 0, 5]
                 },
                 h3: {
-                    fontSize: 14,
+                    fontSize: defaultFontSize+3,
                     bold: true,
                     margin: [0, 10, 0, 5]
                 },
                 text: {
-                    fontSize: 11
+                    fontSize: defaultFontSize
                 },
                 bold: {
-                    fontSize: 11,
+                    fontSize: defaultFontSize,
                     bold: true
+                },
+                underline: {
+                    decoration: 'underline'
+                },
+                blue: {
+                    color: 'blue'
                 },
                 table: {
                     margin: [0, 5, 0, 15]
                 },
                 tableHeader: {
                     bold: true,
-                    fontSize: 8,
+                    fontSize: defaultFontSize-3,
                     color: 'black',
                     fillColor: '#AFD3E0'
                 },
                 cell: {
-                    fontSize: 8,
+                    fontSize: defaultFontSize-3,
                     color: 'black'
                 },
                 center: {
