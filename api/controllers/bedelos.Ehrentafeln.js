@@ -62,7 +62,7 @@ function generateDocuments(req, res) {
                 const oLigen = config.get('bedelos.ligen');
                 aLigen.forEach(liga => {
                     let sStatisticsFile = path.resolve(sStatisticsPath + '/' + liga + '.json');
-                    allStatistics[liga] = ranking.sortStatisticByScores(jsonfile.readFileSync(sStatisticsFile));
+                    allStatistics[liga] = ranking.sortStatisticByNames(jsonfile.readFileSync(sStatisticsFile));
 
                     var sTableFile = path.resolve(sTablesPath + '/' + liga + '.json');
                     allTables[liga] = ranking.sortTableByRank(jsonfile.readFileSync(sTableFile));

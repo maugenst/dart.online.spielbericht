@@ -24,6 +24,12 @@ function sortStatisticsByResults(a, b) {
     return checkValue(a.punkte, b.punkte, false);
 }
 
+function sortStatisticsByName(a, b) {
+    if(a.name < b.name) return -1;
+    if(a.name > b.name) return 1;
+    return 0;
+}
+
 function sortTableByRank(oTable) {
     var aRanking = [];
     for (var team in oTable) {
@@ -46,7 +52,7 @@ function calcPlayerScore(oPlayer) {
     return iRet;
 }
 
-function sortStatisticByScores(oStatistic, oTeams) {
+function generateRankingArray(oStatistic, oTeams) {
     var aRanking = [];
     for (var player in oStatistic) {
         if(oStatistic[player].name.indexOf(">Freilos<") !== -1) {
@@ -58,11 +64,21 @@ function sortStatisticByScores(oStatistic, oTeams) {
         oTmp.punkte = calcPlayerScore(oTmp);
         aRanking.push(oTmp);
     }
-    aRanking.sort(sortStatisticsByResults);
     return aRanking;
+}
+
+function sortStatisticByScores(oStatistic, oTeams) {
+    var aRanking = generateRankingArray(oStatistic, oTeams);
+    return aRanking.sort(sortStatisticsByResults);
+}
+
+function sortStatisticByNames(oStatistic, oTeams) {
+    var aRanking = generateRankingArray(oStatistic, oTeams);
+    return aRanking.sort(sortStatisticsByName);
 }
 
 module.exports = {
     sortTableByRank : sortTableByRank,
-    sortStatisticByScores : sortStatisticByScores
+    sortStatisticByScores : sortStatisticByScores,
+    sortStatisticByNames : sortStatisticByNames
 };
