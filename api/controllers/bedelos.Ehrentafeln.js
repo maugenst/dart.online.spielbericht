@@ -28,6 +28,9 @@ function generateDocuments(req, res) {
     try {
         let sPath = path.resolve(config.get('bedelos.datapath'));
         const saison = req.swagger.params.saison.raw || config.get('bedelos.saison');
+        const saisonPart1 = saison.substring(0, 2);
+        const saisonPart2 = saison.substring(2, 4);
+
 
         if (req.swagger.params.saison.raw) {
             sPath = path.dirname(sPath);
@@ -79,7 +82,8 @@ function generateDocuments(req, res) {
                         pdfPage.add({text: 'Das Team\n', style: ['center']});
                         pdfPage.add({text: `${oTeams[team].name}\n`, style: ['center', 'h1', 'underline', 'blue']});
                         pdfPage.add({text: 'erreichte in der\n', style: ['center']});
-                        pdfPage.add({text: `BDL - ${ligaHelper.getFullLigaName(liga)} Saison: ${saison}\n`, style: ['center', 'h3']});
+                        pdfPage.add({text: `BDL - ${ligaHelper.getFullLigaName(liga)}\n`, style: ['center', 'h3']});
+                        pdfPage.add({text: `Saison: 20${saisonPart1}/20${saisonPart2}\n`, style: ['center', 'h3']});
                         pdfPage.add({text: 'den \n', style: ['center']});
                         pdfPage.add({text: `${platzierung}. Platz.`, style: ['center', 'h1', 'underline']});
                         pdfPage.add({text: '\n\nEingesetzte Spieler:'});
@@ -108,7 +112,7 @@ function generateDocuments(req, res) {
                             ]
                         ]);
                         allStatistics[liga].forEach(platz => {
-                            if (platz.team === team) {
+                            if (platz.team === team && platz.name.trim().length > 1 && !platz.name.endsWith('(N)')) {
                                 const siege = platz['3:0'] +platz['3:1'] + platz['3:2'];
                                 pdfTable.addRow([
                                     `${platz.name}`,
