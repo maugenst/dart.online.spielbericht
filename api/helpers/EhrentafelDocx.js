@@ -26,7 +26,7 @@ class EhrentafelDocx {
         //Load the docx file as a binary
         this.doc = new Docxtemplater();
         this.doc.loadZip(
-            new JSZip(fs.readFileSync(path.resolve(__dirname, '../../data/docx/ehrentafeln.docx'), 'binary'))
+            new JSZip(fs.readFileSync(path.resolve(__dirname, '../templates/docx/ehrentafeln.docx'), 'binary'))
         );
         this.data = oData || {
             Teamname: '',
