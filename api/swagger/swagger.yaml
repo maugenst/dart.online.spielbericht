@@ -779,6 +779,25 @@ paths:
           schema:
             $ref: "#/definitions/HTML"
 
+  /statistik/ehrentafeln/docx:
+    x-swagger-router-controller: bedelos.EhrentafelnDocx
+    get:
+      produces:
+        - text/html
+      description:
+        Produces a PDF document on all teams containing the teams statistic and it's rank in the league
+      parameters:
+        - name: saison
+          type: string
+          description: Saison
+          in: query
+          required: false
+      responses:
+        'default':
+          description: Successful response
+          schema:
+            $ref: "#/definitions/HTML"
+
   /admin/tables/update/{liga}:
     x-swagger-router-controller: bedelos.UpdateTables
     get:

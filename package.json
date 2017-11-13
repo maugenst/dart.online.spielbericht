@@ -9,11 +9,13 @@
   "main": "app.js",
   "dependencies": {
     "Blob": "^0.10.0",
+    "archiver": "^2.1.0",
     "asyncawait": "*",
     "bluebird": "*",
     "config": "*",
     "cookie-parser": "*",
     "cors": "*",
+    "docxtemplater": "^3.1.12",
     "express": "",
     "file-saver": "^1.3.3",
     "fs-extra": "*",
@@ -21,6 +23,7 @@
     "jade-bootstrap": "*",
     "js-yaml": "*",
     "jsonfile": "*",
+    "jszip": "^2.6.1",
     "lodash": "*",
     "log4js": "",
     "mkdirp": "*",
@@ -35,7 +38,8 @@
     "swagger-express-mw": "*",
     "swagger-node-runner": "*",
     "walker": "*",
-    "xlsx": "^0.11.8"
+    "xlsx": "^0.11.8",
+    "zip-folder": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {

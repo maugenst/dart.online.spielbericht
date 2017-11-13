@@ -43,7 +43,7 @@ class PdfTable {
     }
 
     addRow(aCells) {
-        if (this.table.table.body.length === 0) {
+        if (this.table.table.body.length === 0 && this.table.table.headerRows && this.table.table.headerRows !== 0) {
             var aHdr = [];
             for (var i = 0; i < aCells.length; i++) {
                 aHdr.push('');
