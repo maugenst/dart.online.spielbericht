@@ -29,6 +29,19 @@ class EhrentafelnDocx {
 
     static get(req, res) {
         try {
+            var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+
+            if (!oSessionData) {
+                res.cookie('BDL_SESSION_REDIRECT', req.url);
+                res.redirect("/bedelos/login");
+                return;
+            }
+
+            if (oSessionData.username !== config.get("bedelos.adminuser")) {
+                res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
+                return;
+            }
+
             let sPath = path.resolve(config.get('bedelos.datapath'));
             const saison = req.swagger.params.saison.raw || config.get('bedelos.saison');
             const saisonPart1 = saison.substring(0, 2);
