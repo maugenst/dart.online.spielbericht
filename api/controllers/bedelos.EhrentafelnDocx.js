@@ -11,6 +11,7 @@ const ligaHelper = require('../helpers/Liga');
 const Spielplan = require('../helpers/Spielplan');
 const logger = require('../helpers/Logger');
 const walker = require('walker');
+const session = require('../helpers/Session');
 const zipFolder = require('zip-folder');
 
 /**

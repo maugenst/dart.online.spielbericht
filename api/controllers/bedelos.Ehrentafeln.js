@@ -1,25 +1,19 @@
 'use strict';
 
-let util = require('util');
 let path = require('path');
 let config = require('config');
-let os = require('os');
-let fs = require('fs');
 let _ = require('lodash');
 let jsonfile = require('jsonfile');
 let ranking = require('../helpers/Ranking.js');
 let ligaHelper = require('../helpers/Liga');
 let Spielplan = require('../helpers/Spielplan');
 let logger = require('../helpers/Logger');
-let session = require('../helpers/Session');
 let PdfPage = require('../helpers/PdfPage');
 let PdfTable = require('../helpers/PdfTable');
 let Logo = require('../helpers/BDLLogo');
+var session = require('../helpers/Session');
 let BDLLogo = new Logo();
 let walker = require('walker');
-let content = fs.readFileSync(path.resolve(__dirname, '../../data/docx/ehrentafeln.docx'), 'binary');
-let zip = new JSZip(content);
-let doc = new Docxtemplater();
 
 function getField(oField) {
     if (oField !== 0) {
