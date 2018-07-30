@@ -1,2792 +1,4600 @@
 {
-  "klnord": {
-    "name": "Kreisliga Nord",
-    "vr": {
-      "spieltag_1": [
-        {
-          "id": "kln001",
-          "datum": "Fr. 11.09.2015",
-          "heim": "bdl030",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln002",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl024",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln003",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl021",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln004",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl026",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln005",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl031",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln006",
-          "datum": "Fr. 18.09.2015",
-          "spielfrei": "bdl028"
-        }
-      ],
-      "spieltag_2": [
-        {
-          "id": "kln007",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl022",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln008",
-          "datum": "Fr. 09.10.2015",
-          "heim": "bdl027",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln009",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl028",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln010",
-          "datum": "Fr. 25.09.2015",
-          "spielfrei": "bdl025"
-        },
-        {
-          "id": "kln017",
-          "datum": "Fr. 09.10.2015",
-          "heim": "bdl029",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln018",
-          "datum": "Fr. 09.10.2015",
-          "heim": "bdl023",
-          "gast": "bdl021"
-        }
-      ],
-      "spieltag_3": [
-        {
-          "id": "kln011",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl024",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln012",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl025",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln013",
-          "datum": "Fr. 23.10.2015",
-          "heim": "bdl021",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln014",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl026",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln015",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl031",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln016",
-          "datum": "Fr. 02.10.2015",
-          "spielfrei": "bdl030"
-        }
-      ],
-      "spieltag_4": [
-        {
-          "id": "kln019",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl022",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln020",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl027",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln021",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl023",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln022",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl028",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln023",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl030",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln024",
-          "datum": "Fr. 16.10.2015",
-          "spielfrei": "bdl029"
-        }
-      ],
-      "spieltag_5": [
-        {
-          "id": "kln025",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl024",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln026",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl025",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln027",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl029",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln028",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl026",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln029",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl031",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln030",
-          "datum": "Fr. 30.10.2015",
-          "spielfrei": "bdl021"
-        }
-      ],
-      "spieltag_6": [
-        {
-          "id": "kln031",
-          "datum": "Fr. 06.11.2015",
-          "heim": "bdl030",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln032",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl027",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln033",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl023",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln034",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl028",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln035",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl021",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln036",
-          "datum": "Fr. 13.11.2015",
-          "spielfrei": "bdl022"
-        }
-      ],
-      "spieltag_7": [
-        {
-          "id": "kln037",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl024",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln038",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl025",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln039",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl029",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln040",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl031",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln041",
-          "datum": "Fr. 20.11.2015",
-          "spielfrei": "bdl026"
-        },
-        {
-          "id": "kln042",
-          "datum": "Fr. 27.11.2015",
-          "heim": "bdl022",
-          "gast": "bdl027"
-        }
-      ],
-      "spieltag_8": [
-        {
-          "id": "kln043",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl023",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln044",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl028",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln045",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl030",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln046",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl021",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln047",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl026",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln048",
-          "datum": "Fr. 04.12.2015",
-          "spielfrei": "bdl027"
-        }
-      ],
-      "spieltag_9": [
-        {
-          "id": "kln049",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl024",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln050",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl021",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln051",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl029",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln052",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl022",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln053",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl027",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln054",
-          "datum": "Fr. 08.01.2016",
-          "spielfrei": "bdl031"
-        }
-      ],
-      "spieltag_10": [
-        {
-          "id": "kln055",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl028",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln056",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl030",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln057",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl021",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln058",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl026",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln059",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl031",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln060",
-          "datum": "Fr. 22.01.2016",
-          "spielfrei": "bdl023"
-        }
-      ],
-      "spieltag_11": [
-        {
-          "id": "kln061",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl025",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln062",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl029",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln063",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl022",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln064",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl027",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln065",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl023",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln066",
-          "datum": "Fr. 12.02.2016",
-          "spielfrei": "bdl024"
-        }
-      ]
+  "bdl003": {
+    "name": "DC Flatliners Karlsruhe 1",
+    "verein": "v018",
+    "spiellokal": {
+      "name": "Vereinsheim DC Flatliners",
+      "strasse": "Hardtstr. 37 (Bau II)",
+      "ort": "76185 Karlsruhe",
+      "position": {
+        "lat": "49.013928",
+        "lng": "8.3565938"
+      },
+      "nichtraucher": true,
+      "jugend": true
     },
-    "rr": {
-      "spieltag_12": [
-        {
-          "id": "kln067",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl025",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln068",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl023",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln069",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl027",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln070",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl022",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln071",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl029",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln072",
-          "datum": "Fr. 19.02.2016",
-          "spielfrei": "bdl028"
-        }
-      ],
-      "spieltag_13": [
-        {
-          "id": "kln073",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl024",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln074",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl031",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln075",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl026",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln076",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl021",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln077",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl030",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln078",
-          "datum": "Fr. 04.03.2016",
-          "spielfrei": "bdl025"
-        }
-      ],
-      "spieltag_14": [
-        {
-          "id": "kln079",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl022",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln080",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl028",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln081",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl023",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln082",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl027",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln083",
-          "datum": "Fr. 11.03.2016",
-          "spielfrei": "bdl030"
-        },
-        {
-          "id": "kln084",
-          "datum": "Do. 24.03.2016",
-          "heim": "bdl029",
-          "gast": "bdl025"
-        }
-      ],
-      "spieltag_15": [
-        {
-          "id": "kln085",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl025",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln086",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl024",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln087",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl031",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln088",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl026",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln089",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl021",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln090",
-          "datum": "Fr. 01.04.2016",
-          "spielfrei": "bdl029"
-        }
-      ],
-      "spieltag_16": [
-        {
-          "id": "kln091",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl023",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln092",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl027",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln093",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl022",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln094",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl030",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln095",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl028",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln096",
-          "datum": "Fr. 08.04.2016",
-          "spielfrei": "bdl021"
-        }
-      ],
-      "spieltag_17": [
-        {
-          "id": "kln097",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl029",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln098",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl025",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln099",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl024",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln100",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl031",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln101",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl026",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln102",
-          "datum": "Fr. 22.04.2016",
-          "spielfrei": "bdl022"
-        }
-      ],
-      "spieltag_18": [
-        {
-          "id": "kln103",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl030",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln104",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl028",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln105",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl023",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln106",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl027",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln107",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl021",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln108",
-          "datum": "Fr. 29.04.2016",
-          "spielfrei": "bdl026"
-        }
-      ],
-      "spieltag_19": [
-        {
-          "id": "kln109",
-          "datum": "Fr. 06.05.2016",
-          "heim": "bdl022",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln111",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl029",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln112",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl025",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln113",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl024",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln114",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl031",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln115",
-          "datum": "Fr. 13.05.2016",
-          "spielfrei": "bdl027"
-        }
-      ],
-      "spieltag_21": [
-        {
-          "id": "kln110",
-          "datum": "Fr. 06.05.2016",
-          "heim": "bdl025",
-          "gast": "bdl026"
-        },
-        {
-          "id": "kln122",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl027",
-          "gast": "bdl028"
-        },
-        {
-          "id": "kln123",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl022",
-          "gast": "bdl030"
-        },
-        {
-          "id": "kln124",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl029",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln125",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl024",
-          "gast": "bdl031"
-        },
-        {
-          "id": "kln126",
-          "datum": "Fr. 10.06.2016",
-          "spielfrei": "bdl023"
-        }
-      ],
-      "spieltag_20": [
-        {
-          "id": "kln116",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl026",
-          "gast": "bdl024"
-        },
-        {
-          "id": "kln117",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl025",
-          "gast": "bdl021"
-        },
-        {
-          "id": "kln118",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl030",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln119",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl028",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln120",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl023",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln121",
-          "datum": "Fr. 27.05.2016",
-          "spielfrei": "bdl031"
-        }
-      ],
-      "spieltag_22": [
-        {
-          "id": "kln127",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl031",
-          "gast": "bdl025"
-        },
-        {
-          "id": "kln128",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl026",
-          "gast": "bdl029"
-        },
-        {
-          "id": "kln129",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl021",
-          "gast": "bdl022"
-        },
-        {
-          "id": "kln130",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl030",
-          "gast": "bdl027"
-        },
-        {
-          "id": "kln131",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl028",
-          "gast": "bdl023"
-        },
-        {
-          "id": "kln132",
-          "datum": "Fr. 24.06.2016",
-          "spielfrei": "bdl024"
-        }
-      ]
-    }
+    "teamvertreter": {
+      "name": "Baris Karacan",
+      "tel": "01792440153",
+      "mail": "FreddyRoller@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Köhnlein",
+        "vorname": "Thomas",
+        "encName": "S/ZobmxlaW4=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Mußgnug",
+        "vorname": "Thorsten",
+        "encName": "TXXfZ251Zw==",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Stübs",
+        "vorname": "Michael",
+        "encName": "U3T8YnM=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Gast",
+        "vorname": "Armin",
+        "encName": "R2FzdA==",
+        "encVorname": "QXJtaW4="
+      },
+      {
+        "name": "Bobrzik",
+        "vorname": "Benjamin",
+        "encName": "Qm9icnppaw==",
+        "encVorname": "QmVuamFtaW4="
+      },
+      {
+        "name": "Karacan",
+        "vorname": "Baris",
+        "encName": "S2FyYWNhbg==",
+        "encVorname": "QmFyaXM="
+      },
+      {
+        "name": "Waidmann",
+        "vorname": "Marco",
+        "encName": "V2FpZG1hbm4=",
+        "encVorname": "TWFyY28="
+      },
+      {
+        "name": "Kammerlander",
+        "vorname": "Tobias",
+        "encName": "S2FtbWVybGFuZGVy",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Schuh",
+        "vorname": "Frank",
+        "encName": "U2NodWg=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Gerike",
+        "vorname": "Igor",
+        "encName": "R2VyaWtl",
+        "encVorname": "SWdvcg=="
+      },
+      {
+        "name": "Wolf",
+        "vorname": "Markus",
+        "encName": "V29sZg==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Delbert",
+        "vorname": "Mathis",
+        "encName": "RGVsYmVydA==",
+        "encVorname": "TWF0aGlz"
+      },
+      {
+        "name": "Kochendörfer",
+        "vorname": "Christian ",
+        "encName": "S29jaGVuZMO2cmZlcg==",
+        "encVorname": "Q2hyaXN0aWFuIA=="
+      },
+      {
+        "name": "Loy",
+        "vorname": "Marcel",
+        "encName": "TG95",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Warth",
+        "vorname": "Andreas",
+        "encName": "V2FydGg=",
+        "encVorname": "QW5kcmVhcw=="
+      }
+    ],
+    "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMQ==",
+    "password": {
+      "value": "VHIqAyTAjm6ONWtViB18Ew==",
+      "changeDate": 1535288752041
+    },
+    "needsChange": true
   },
-  "klsued": {
-    "name": "Kreisliga Sued",
-    "vr": {
-      "spieltag_1": [
-        {
-          "id": "kls001",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl037",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls002",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl033",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls003",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl036",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls004",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl034",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls005",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl040",
-          "gast": "bdl038"
-        }
-      ],
-      "spieltag_2": [
-        {
-          "id": "kls006",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl041",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls007",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl032",
-          "gast": "bdl034"
-        },
-        {
-          "id": "kls008",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl035",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls009",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl038",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls010",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl039",
-          "gast": "bdl040"
-        }
-      ],
-      "spieltag_3": [
-        {
-          "id": "kls011",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl037",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls012",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl039",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls013",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl040",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls014",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl036",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls015",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl034",
-          "gast": "bdl035"
-        }
-      ],
-      "spieltag_4": [
-        {
-          "id": "kls016",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl041",
-          "gast": "bdl040"
-        },
-        {
-          "id": "kls017",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl032",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls018",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl035",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls019",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl038",
-          "gast": "bdl034"
-        },
-        {
-          "id": "kls020",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl033",
-          "gast": "bdl036"
-        }
-      ],
-      "spieltag_5": [
-        {
-          "id": "kls021",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl037",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls022",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl039",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls023",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl032",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls024",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl034",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls025",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl040",
-          "gast": "bdl036"
-        }
-      ],
-      "spieltag_6": [
-        {
-          "id": "kls026",
-          "datum": "Fr. 27.11.2015",
-          "heim": "bdl040",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls027",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl035",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls028",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl038",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls029",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl033",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls030",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl036",
-          "gast": "bdl034"
-        }
-      ],
-      "spieltag_7": [
-        {
-          "id": "kls031",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl037",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls032",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl039",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls033",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl041",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls034",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl032",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls035",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl034",
-          "gast": "bdl040"
-        }
-      ],
-      "spieltag_8": [
-        {
-          "id": "kls036",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl040",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls037",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl038",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls038",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl033",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls039",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl036",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls040",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl034",
-          "gast": "bdl037"
-        }
-      ],
-      "spieltag_9": [
-        {
-          "id": "kls041",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl037",
-          "gast": "bdl040"
-        },
-        {
-          "id": "kls042",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl039",
-          "gast": "bdl034"
-        },
-        {
-          "id": "kls043",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl041",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls044",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl032",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls045",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl035",
-          "gast": "bdl038"
-        }
-      ]
+  "bdl004": {
+    "name": "Dartspub Walldorf 2",
+    "verein": "v021",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häuserstr. 22",
+      "ort": "68789 St. Leon",
+      "position": {
+        "lat": "21.1250077",
+        "lng": "-101.6859605"
+      },
+      "nichtraucher": false,
+      "jugend": true
     },
-    "rr": {
-      "spieltag_10": [
-        {
-          "id": "kls046",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl039",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls047",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl035",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls048",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl032",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls049",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl041",
-          "gast": "bdl034"
-        },
-        {
-          "id": "kls050",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl038",
-          "gast": "bdl040"
-        }
-      ],
-      "spieltag_11": [
-        {
-          "id": "kls051",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl037",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls052",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl034",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls053",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl036",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls054",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl033",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls055",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl040",
-          "gast": "bdl039"
-        }
-      ],
-      "spieltag_12": [
-        {
-          "id": "kls056",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl032",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls057",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl041",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls058",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl033",
-          "gast": "bdl040"
-        },
-        {
-          "id": "kls059",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl038",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls060",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl035",
-          "gast": "bdl034"
-        }
-      ],
-      "spieltag_13": [
-        {
-          "id": "kls061",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl040",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls062",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl039",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls063",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl037",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls064",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl034",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls065",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl036",
-          "gast": "bdl033"
-        }
-      ],
-      "spieltag_14": [
-        {
-          "id": "kls066",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl038",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls067",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl035",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls068",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl041",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls069",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl033",
-          "gast": "bdl034"
-        },
-        {
-          "id": "kls070",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl036",
-          "gast": "bdl040"
-        }
-      ],
-      "spieltag_15": [
-        {
-          "id": "kls071",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl041",
-          "gast": "bdl035"
-        },
-        {
-          "id": "kls072",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl039",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls073",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl037",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls074",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl034",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls075",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl032",
-          "gast": "bdl040"
-        }
-      ],
-      "spieltag_16": [
-        {
-          "id": "kls076",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl036",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls077",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl033",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls078",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl038",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls079",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl035",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls080",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl040",
-          "gast": "bdl034"
-        }
-      ],
-      "spieltag_17": [
-        {
-          "id": "kls081",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl035",
-          "gast": "bdl040"
-        },
-        {
-          "id": "kls082",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl032",
-          "gast": "bdl038"
-        },
-        {
-          "id": "kls083",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl041",
-          "gast": "bdl033"
-        },
-        {
-          "id": "kls084",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl039",
-          "gast": "bdl036"
-        },
-        {
-          "id": "kls085",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl037",
-          "gast": "bdl034"
-        }
-      ],
-      "spieltag_18": [
-        {
-          "id": "kls086",
-          "datum": "Fr. 17.06.2016",
-          "heim": "bdl040",
-          "gast": "bdl037"
-        },
-        {
-          "id": "kls087",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl034",
-          "gast": "bdl039"
-        },
-        {
-          "id": "kls088",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl036",
-          "gast": "bdl041"
-        },
-        {
-          "id": "kls089",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl033",
-          "gast": "bdl032"
-        },
-        {
-          "id": "kls090",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl038",
-          "gast": "bdl035"
-        }
-      ]
-    }
+    "teamvertreter": {
+      "name": "Köhler Sabine",
+      "tel": "0160 - 1830520",
+      "mail": "sabinekoehler@arcor.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Große-Stoltenberg",
+        "vorname": "Mika",
+        "encName": "R3Jv32UtU3RvbHRlbmJlcmc=",
+        "encVorname": "TWlrYQ=="
+      },
+      {
+        "name": "Köhler",
+        "vorname": "Sabine (TC)",
+        "encName": "S/ZobGVy",
+        "encVorname": "U2FiaW5lIChUQyk="
+      },
+      {
+        "name": "Werle",
+        "vorname": "Sebastian",
+        "encName": "V2VybGU=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Fogt",
+        "vorname": "Kim",
+        "encName": "Rm9ndA==",
+        "encVorname": "S2lt"
+      },
+      {
+        "name": "Dinkel",
+        "vorname": "Ralf",
+        "encName": "RGlua2Vs",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Bonn",
+        "vorname": "Dominik",
+        "encName": "Qm9ubg==",
+        "encVorname": "RG9taW5paw=="
+      },
+      {
+        "name": "Stangl",
+        "vorname": "Thomas",
+        "encName": "U3Rhbmds",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Wefers",
+        "vorname": "Thorsten ",
+        "encName": "V2VmZXJz",
+        "encVorname": "VGhvcnN0ZW4g"
+      },
+      {
+        "name": "Pfaff",
+        "vorname": "Hans",
+        "encName": "UGZhZmY=",
+        "encVorname": "SGFucw=="
+      },
+      {
+        "name": "Katic",
+        "vorname": "Nikola ",
+        "encName": "S2F0aWM=",
+        "encVorname": "Tmlrb2xhIA=="
+      },
+      {
+        "name": "Stangl",
+        "vorname": "Manuel",
+        "encName": "U3Rhbmds",
+        "encVorname": "TWFudWVs"
+      },
+      {
+        "name": "Stein",
+        "vorname": "Sascha",
+        "encName": "U3RlaW4=",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Wagner",
+        "vorname": "Micha",
+        "encName": "V2FnbmVy",
+        "encVorname": "TWljaGE="
+      },
+      {
+        "name": "Antritter",
+        "vorname": "Nico",
+        "encName": "QW50cml0dGVy",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Vittadello",
+        "vorname": "Enrico",
+        "encName": "Vml0dGFkZWxsbw==",
+        "encVorname": "RW5yaWNv"
+      },
+      {
+        "name": "Ponick",
+        "vorname": "Frank",
+        "encName": "UG9uaWNr",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Wilms",
+        "vorname": "Roger",
+        "encName": "V2lsbXM=",
+        "encVorname": "Um9nZXI="
+      },
+      {
+        "name": "Kowol",
+        "vorname": "Benjamin ",
+        "encName": "S293b2w=",
+        "encVorname": "QmVuamFtaW4g"
+      },
+      {
+        "name": "Antz",
+        "vorname": "Kevin",
+        "encName": "QW50eg==",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Simon",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "U2ltb24="
+      }
+    ],
+    "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMg==",
+    "password": {
+      "value": "k89XjIAQ9ks3OotaceRqwA==",
+      "changeDate": 1537688986490
+    },
+    "needsChange": true
   },
-  "bzLiga": {
-    "name": "Bezirksliga",
-    "vr": {
-      "spieltag_1": [
-        {
-          "id": "bzli001",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl010",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli002",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl020",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli003",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl015",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli004",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl019",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli005",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl017",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli006",
-          "datum": "Fr. 18.09.2015",
-          "spielfrei": "bdl012"
-        }
-      ],
-      "spieltag_2": [
-        {
-          "id": "bzli007",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl013",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli008",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl014",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli009",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl011",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli010",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl018",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli011",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl012",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli012",
-          "datum": "Fr. 25.09.2015",
-          "spielfrei": "bdl016"
-        }
-      ],
-      "spieltag_3": [
-        {
-          "id": "bzli013",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl010",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli014",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl016",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli015",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl015",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli016",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl019",
-          "gast": "bdl018?"
-        },
-        {
-          "id": "bzli017",
-          "datum": "Fr. 25.09.2015",
-          "heim": "bdl017",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli018",
-          "datum": "Fr. 25.09.2015",
-          "spielfrei": "bdl020"
-        }
-      ],
-      "spieltag_4": [
-        {
-          "id": "bzli019",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl014",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli020",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl011",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli021",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl018",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli022",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl012",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli023",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl020",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli024",
-          "datum": "Fr. 16.10.2015",
-          "spielfrei": "bdl013"
-        }
-      ],
-      "spieltag_5": [
-        {
-          "id": "bzli025",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl010",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli026",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl016",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli027",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl013",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli028",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl019",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli029",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl017",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli030",
-          "datum": "Fr. 30.10.2015",
-          "spielfrei": "bdl015"
-        }
-      ],
-      "spieltag_6": [
-        {
-          "id": "bzli031",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl011",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli032",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl018",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli033",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl012",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli034",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl020",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli035",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl015",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli036",
-          "datum": "Fr. 13.11.2015",
-          "spielfrei": "bdl014"
-        }
-      ],
-      "spieltag_7": [
-        {
-          "id": "bzli037",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl010",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli038",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl012",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli039",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl013",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli040",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl014",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli041",
-          "datum": "Fr. 20.11.2015",
-          "heim": "bdl017",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli042",
-          "datum": "Fr. 20.11.2015",
-          "spielfrei": "bdl019"
-        }
-      ],
-      "spieltag_8": [
-        {
-          "id": "bzli043",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl018?",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli044",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl013",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli045",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl020",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli046",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl015",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli047",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl019",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli048",
-          "datum": "Fr. 04.12.2015",
-          "spielfrei": "bdl011"
-        }
-      ],
-      "spieltag_9": [
-        {
-          "id": "bzli049",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl010",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli050",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl016",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli051",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl013",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli052",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl012",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli053",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl011",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli054",
-          "datum": "Fr. 08.01.2016",
-          "spielfrei": "bdl017"
-        }
-      ],
-      "spieltag_10": [
-        {
-          "id": "bzli055",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl011",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli056",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl014",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli057",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl015",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli058",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl019",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli059",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl017",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli060",
-          "datum": "Fr. 22.01.2016",
-          "spielfrei": "bdl018"
-        }
-      ],
-      "spieltag_11": [
-        {
-          "id": "bzli061",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl016",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli062",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl019",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli063",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl015",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli064",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl020",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli065",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl012",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli066",
-          "datum": "Fr. 12.02.2016",
-          "spielfrei": "bdl010"
-        }
-      ]
+  "bdl005": {
+    "name": "Gegen die Drück 1",
+    "verein": "v006",
+    "spiellokal": {
+      "name": "Café Kranich",
+      "strasse": "Kranichweg 37",
+      "ort": "69123 Heidelberg",
+      "position": {
+        "lat": "49,35123",
+        "lng": "8,655360000000002"
+      },
+      "nichtraucher": true,
+      "jugend": true
     },
-    "rr": {
-      "spieltag_12": [
-        {
-          "id": "bzli067",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl016",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli068",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl018",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli069",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl011",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli070",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl014",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli071",
-          "datum": "Fr. 19.02.2016",
-          "heim": "bdl013",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli072",
-          "datum": "Fr. 19.02.2016",
-          "spielfrei": "bdl012"
-        }
-      ],
-      "spieltag_13": [
-        {
-          "id": "bzli073",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl010",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli074",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl017",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli075",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl019",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli076",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl015",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli077",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl020",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli078",
-          "datum": "Fr. 04.03.2016",
-          "spielfrei": "bdl016"
-        }
-      ],
-      "spieltag_14": [
-        {
-          "id": "bzli079",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl014",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli080",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl013",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli081",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl012",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli082",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl018",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli083",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl011",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli084",
-          "datum": "Fr. 11.03.2016",
-          "spielfrei": "bdl020"
-        }
-      ],
-      "spieltag_15": [
-        {
-          "id": "bzli085",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl016",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli086",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl010",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli087",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl017",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli088",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl019",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli089",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl015",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli090",
-          "datum": "Fr. 01.04.2016",
-          "spielfrei": "bdl013"
-        }
-      ],
-      "spieltag_16": [
-        {
-          "id": "bzli091",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl018",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli092",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl011",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli093",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl014",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli094",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl020",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli095",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl012",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli096",
-          "datum": "Fr. 08.04.2016",
-          "spielfrei": "bdl015"
-        }
-      ],
-      "spieltag_17": [
-        {
-          "id": "bzli097",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl013",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli098",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl016",
-          "gast": "bdl018"
-        },
-        {
-          "id": "bzli099",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl010",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli100",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl017",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli101",
-          "datum": "Fr. 22.04.2016",
-          "heim": "bdl019",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli102",
-          "datum": "Fr. 22.04.2016",
-          "spielfrei": "bdl014"
-        }
-      ],
-      "spieltag_18": [
-        {
-          "id": "bzli103",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl020",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli104",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl016",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli105",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl018",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli106",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl011",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli107",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl015",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli108",
-          "datum": "Fr. 29.04.2016",
-          "spielfrei": "bdl019"
-        }
-      ],
-      "spieltag_19": [
-        {
-          "id": "bzli109",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl014",
-          "gast": "bdl018?"
-        },
-        {
-          "id": "bzli110",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl012",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli111",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl016",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli112",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl010",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli113",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl017",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli114",
-          "datum": "Fr. 13.05.2016",
-          "spielfrei": "bdl011"
-        }
-      ],
-      "spieltag_20": [
-        {
-          "id": "bzli115",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl019",
-          "gast": "bdl010"
-        },
-        {
-          "id": "bzli116",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl015",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli117",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl020",
-          "gast": "bdl013"
-        },
-        {
-          "id": "bzli118",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl014",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli119",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl018",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli120",
-          "datum": "Fr. 27.05.2016",
-          "spielfrei": "bdl017"
-        }
-      ],
-      "spieltag_21": [
-        {
-          "id": "bzli121",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl012",
-          "gast": "bdl011"
-        },
-        {
-          "id": "bzli122",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl020",
-          "gast": "bdl014"
-        },
-        {
-          "id": "bzli123",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl013",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli124",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl016",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli125",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl010",
-          "gast": "bdl017"
-        },
-        {
-          "id": "bzli126",
-          "datum": "Fr. 10.06.2016",
-          "spielfrei": "bdl018"
-        }
-      ],
-      "spieltag_22": [
-        {
-          "id": "bzli127",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl017",
-          "gast": "bdl016"
-        },
-        {
-          "id": "bzli128",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl013",
-          "gast": "bdl019"
-        },
-        {
-          "id": "bzli129",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl014",
-          "gast": "bdl015"
-        },
-        {
-          "id": "bzli130",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl011",
-          "gast": "bdl020"
-        },
-        {
-          "id": "bzli131",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl018",
-          "gast": "bdl012"
-        },
-        {
-          "id": "bzli132",
-          "datum": "Fr. 24.06.2016",
-          "spielfrei": "bdl010"
-        }
-      ]
-    }
+    "teamvertreter": {
+      "name": "Ralf Gawlik",
+      "tel": "0176-31463222",
+      "mail": "wittmann.steffen@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Oberacker",
+        "vorname": "Christian",
+        "encName": "T2JlcmFja2Vy",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Orlowski",
+        "vorname": "Ralf",
+        "encName": "T3Jsb3dza2k=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Netzer",
+        "vorname": "Phillip",
+        "encName": "TmV0emVy",
+        "encVorname": "UGhpbGxpcA=="
+      },
+      {
+        "name": "Petersen",
+        "vorname": "Andreas ",
+        "encName": "UGV0ZXJzZW4=",
+        "encVorname": "QW5kcmVhcyA="
+      },
+      {
+        "name": "Gawlik",
+        "vorname": "Ralf",
+        "encName": "R2F3bGlr",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Jürgen",
+        "vorname": "Stefan",
+        "encName": "SsO8cmdlbg==",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Häusler",
+        "vorname": "Michael",
+        "encName": "SMOkdXNsZXI=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Durchholz",
+        "vorname": "Bastian ",
+        "encName": "RHVyY2hob2x6",
+        "encVorname": "QmFzdGlhbiA="
+      },
+      {
+        "name": "Walther",
+        "vorname": "Kay",
+        "encName": "V2FsdGhlcg==",
+        "encVorname": "S2F5"
+      },
+      {
+        "name": "Walther",
+        "vorname": "Daniel ",
+        "encName": "V2FsdGhlcg==",
+        "encVorname": "RGFuaWVsIA=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Florian",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Jentschke",
+        "vorname": "Christian",
+        "encName": "SmVudHNjaGtl",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Ritter",
+        "vorname": "Dominik",
+        "encName": "Uml0dGVy",
+        "encVorname": "RG9taW5paw=="
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERyw7xjayAx",
+    "password": {
+      "value": "2E4siE16ybqu2FS0HfxDgQ==",
+      "changeDate": 1537690991854
+    },
+    "needsChange": true
   },
-  "oberliga": {
-    "name": "Oberliga",
-    "vr": {
-      "spieltag_1": [
-        {
-          "id": "ol001",
-          "datum": "Fr. 11.09.2015",
-          "heim": "bdl007",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol002",
-          "datum": "Fr. 11.09.2015",
-          "heim": "bdl009",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol003",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl005",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol004",
-          "datum": "Fr. 18.09.2015",
-          "heim": "bdl003",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol005",
-          "datum": "Fr. 18.09.2015",
-          "spielfrei": "bdl004"
-        }
-      ],
-      "spieltag_2": [
-        {
-          "id": "ol006",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl007",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol007",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl004",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol008",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl002",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol009",
-          "datum": "Fr. 02.10.2015",
-          "heim": "bdl001",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol010",
-          "datum": "Fr. 02.10.2015",
-          "spielfrei": "bdl003"
-        }
-      ],
-      "spieltag_3": [
-        {
-          "id": "ol011",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl005",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol012",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl006",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol013",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl001",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol014",
-          "datum": "Fr. 16.10.2015",
-          "heim": "bdl009",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol015",
-          "datum": "Fr. 16.10.2015",
-          "spielfrei": "bdl002"
-        }
-      ],
-      "spieltag_4": [
-        {
-          "id": "ol016",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl003",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol017",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl007",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol018",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl004",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol019",
-          "datum": "Fr. 30.10.2015",
-          "heim": "bdl002",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol020",
-          "datum": "Fr. 30.10.2015",
-          "spielfrei": "bdl008"
-        }
-      ],
-      "spieltag_5": [
-        {
-          "id": "ol021",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl005",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol022",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl006",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol023",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl008",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol024",
-          "datum": "Fr. 13.11.2015",
-          "heim": "bdl009",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol025",
-          "datum": "Fr. 13.11.2015",
-          "spielfrei": "bdl001"
-        }
-      ],
-      "spieltag_6": [
-        {
-          "id": "ol026",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl008",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol027",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl003",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol028",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl007",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol029",
-          "datum": "Fr. 04.12.2015",
-          "heim": "bdl004",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol030",
-          "datum": "Fr. 04.12.2015",
-          "spielfrei": "bdl006"
-        }
-      ],
-      "spieltag_7": [
-        {
-          "id": "ol031",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl005",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol032",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl006",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol033",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl008",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol034",
-          "datum": "Fr. 08.01.2016",
-          "heim": "bdl003",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol035",
-          "datum": "Fr. 08.01.2016",
-          "spielfrei": "bdl009"
-        }
-      ],
-      "spieltag_8": [
-        {
-          "id": "ol036",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl004",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol037",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl002",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol038",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl001",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol039",
-          "datum": "Fr. 22.01.2016",
-          "heim": "bdl009",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol040",
-          "datum": "Fr. 22.01.2016",
-          "spielfrei": "bdl007"
-        }
-      ],
-      "spieltag_9": [
-        {
-          "id": "ol041",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl006",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol042",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl001",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol043",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl003",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol044",
-          "datum": "Fr. 12.02.2016",
-          "heim": "bdl007",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol045",
-          "datum": "Fr. 12.02.2016",
-          "spielfrei": "bdl005"
-        }
-      ]
+  "bdl006": {
+    "name": "Gegen die Drück 2",
+    "verein": "v006",
+    "spiellokal": {
+      "name": "Café Kranich",
+      "strasse": "Kranichweg 37",
+      "ort": "69123 Heidelberg",
+      "position": {
+        "lat": "49.39616000",
+        "lng": "8.64303900"
+      },
+      "nichtraucher": true,
+      "jugend": true
     },
-    "rr": {
-      "spieltag_10": [
-        {
-          "id": "ol046",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl006",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol047",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl002",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol048",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl001",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol049",
-          "datum": "Fr. 04.03.2016",
-          "heim": "bdl008",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol050",
-          "datum": "Fr. 04.03.2016",
-          "spielfrei": "bdl004"
-        }
-      ],
-      "spieltag_11": [
-        {
-          "id": "ol051",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl008",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol052",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl006",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol053",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl005",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol054",
-          "datum": "Fr. 11.03.2016",
-          "heim": "bdl009",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol055",
-          "datum": "Fr. 11.03.2016",
-          "spielfrei": "bdl003"
-        }
-      ],
-      "spieltag_12": [
-        {
-          "id": "ol056",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl003",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol057",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl008",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol058",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl004",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol059",
-          "datum": "Fr. 01.04.2016",
-          "heim": "bdl007",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol060",
-          "datum": "Fr. 01.04.2016",
-          "spielfrei": "bdl002"
-        }
-      ],
-      "spieltag_13": [
-        {
-          "id": "ol061",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl006",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol062",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl005",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol063",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl009",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol064",
-          "datum": "Fr. 08.04.2016",
-          "heim": "bdl001",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol065",
-          "datum": "Fr. 08.04.2016",
-          "spielfrei": "bdl008"
-        }
-      ],
-      "spieltag_14": [
-        {
-          "id": "ol066",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl004",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol067",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl007",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol068",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl003",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol069",
-          "datum": "Fr. 29.04.2016",
-          "heim": "bdl002",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol070",
-          "datum": "Fr. 29.04.2016",
-          "spielfrei": "bdl001"
-        }
-      ],
-      "spieltag_15": [
-        {
-          "id": "ol071",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl005",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol072",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl009",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol073",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl001",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol074",
-          "datum": "Fr. 13.05.2016",
-          "heim": "bdl002",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol075",
-          "datum": "Fr. 13.05.2016",
-          "spielfrei": "bdl006"
-        }
-      ],
-      "spieltag_16": [
-        {
-          "id": "ol076",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl001",
-          "gast": "bdl005"
-        },
-        {
-          "id": "ol077",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl002",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol078",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl004",
-          "gast": "bdl008"
-        },
-        {
-          "id": "ol079",
-          "datum": "Fr. 27.05.2016",
-          "heim": "bdl007",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol080",
-          "datum": "Fr. 27.05.2016",
-          "spielfrei": "bdl009"
-        }
-      ],
-      "spieltag_17": [
-        {
-          "id": "ol081",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl003",
-          "gast": "bdl004"
-        },
-        {
-          "id": "ol082",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl008",
-          "gast": "bdl002"
-        },
-        {
-          "id": "ol083",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl006",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol084",
-          "datum": "Fr. 10.06.2016",
-          "heim": "bdl005",
-          "gast": "bdl009"
-        },
-        {
-          "id": "ol085",
-          "datum": "Fr. 10.06.2016",
-          "spielfrei": "bdl007"
-        }
-      ],
-      "spieltag_18": [
-        {
-          "id": "ol086",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl009",
-          "gast": "bdl006"
-        },
-        {
-          "id": "ol087",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl008",
-          "gast": "bdl001"
-        },
-        {
-          "id": "ol088",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl002",
-          "gast": "bdl003"
-        },
-        {
-          "id": "ol089",
-          "datum": "Fr. 24.06.2016",
-          "heim": "bdl004",
-          "gast": "bdl007"
-        },
-        {
-          "id": "ol090",
-          "datum": "Fr. 24.06.2016",
-          "spielfrei": "bdl005"
-        }
-      ]
-    }
+    "teamvertreter": {
+      "name": "Michael Rauscher",
+      "tel": "0173 7209403",
+      "mail": "wittmann.steffen@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Anselmann",
+        "vorname": "Tim",
+        "encName": "QW5zZWxtYW5u",
+        "encVorname": "VGlt"
+      },
+      {
+        "name": "Rauscher",
+        "vorname": "Michael",
+        "encName": "UmF1c2NoZXI=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Gund",
+        "vorname": "Thomas",
+        "encName": "R3VuZA==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Jany",
+        "vorname": "Christian",
+        "encName": "SmFueQ==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Fackelmann",
+        "vorname": "Frank",
+        "encName": "RmFja2VsbWFubg==",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Guttschalk",
+        "vorname": "Mario",
+        "encName": "R3V0dHNjaGFsaw==",
+        "encVorname": "TWFyaW8="
+      },
+      {
+        "name": "Muhn",
+        "vorname": "Andre",
+        "encName": "TXVobg==",
+        "encVorname": "QW5kcmU="
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERyw7xjayAy",
+    "password": {
+      "value": "buRWvyZIKvzwTUYhlSgXLQ==",
+      "changeDate": 1537691336021
+    },
+    "needsChange": true
+  },
+  "bdl007": {
+    "name": "Taraxacuma Bulls",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim",
+      "position": {
+        "lat": "49.1966579",
+        "lng": "8.4685538"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Ritchy",
+      "tel": "0172-6925620",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Bernhardt",
+        "vorname": "Christian",
+        "encName": "QmVybmhhcmR0",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Fey",
+        "vorname": "Ralf",
+        "encName": "RmV5",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Jester",
+        "vorname": "Heiko",
+        "encName": "SmVzdGVy",
+        "encVorname": "SGVpa28="
+      },
+      {
+        "name": "",
+        "vorname": "Ritchy",
+        "encName": "",
+        "encVorname": "Uml0Y2h5"
+      },
+      {
+        "name": "D´Onofrio",
+        "vorname": "Guiseppe",
+        "encName": "RMK0T25vZnJpbw==",
+        "encVorname": "R3Vpc2VwcGU="
+      },
+      {
+        "name": "Selinga",
+        "vorname": "Sven",
+        "encName": "U2VsaW5nYQ==",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Friedrich",
+        "vorname": "Ralf",
+        "encName": "RnJpZWRyaWNo",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Zusann",
+        "vorname": "Chris",
+        "encName": "WnVzYW5u",
+        "encVorname": "Q2hyaXM="
+      },
+      {
+        "name": "Weick",
+        "vorname": "Holger ",
+        "encName": "V2VpY2s=",
+        "encVorname": "SG9sZ2VyIA=="
+      },
+      {
+        "name": "Billmaier",
+        "vorname": "Frank",
+        "encName": "QmlsbG1haWVy",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Ebner",
+        "vorname": "Michael",
+        "encName": "RWJuZXI=",
+        "encVorname": "TWljaGFlbA=="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBCdWxscw==",
+    "password": {
+      "value": "GTPXLX7LhF2hR3E_qwr30Q==",
+      "changeDate": 1535588472963
+    },
+    "needsChange": true
+  },
+  "bdl009": {
+    "name": "Taraxacuma Lions",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim",
+      "position": {
+        "lat": "49.1966319",
+        "lng": "8.4682428"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Frank Sterzing",
+      "tel": "0721 85143831",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Janßen",
+        "vorname": "Holger",
+        "encName": "SmFu32Vu",
+        "encVorname": "SG9sZ2Vy"
+      },
+      {
+        "name": "Sterzing",
+        "vorname": "Frank",
+        "encName": "U3Rlcnppbmc=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Sülzle",
+        "vorname": "Jürgen",
+        "encName": "U8O8bHpsZQ==",
+        "encVorname": "SsO8cmdlbg=="
+      },
+      {
+        "name": "Knecht",
+        "vorname": "Dirk",
+        "encName": "S25lY2h0",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Scherer",
+        "vorname": "Andre",
+        "encName": "U2NoZXJlcg==",
+        "encVorname": "QW5kcmU="
+      },
+      {
+        "name": "Timon",
+        "vorname": "Schmid",
+        "encName": "VGltb24=",
+        "encVorname": "U2NobWlk"
+      },
+      {
+        "name": "Lüttjohann",
+        "vorname": "Stephan",
+        "encName": "TMO8dHRqb2hhbm4=",
+        "encVorname": "U3RlcGhhbg=="
+      },
+      {
+        "name": "Haller",
+        "vorname": "Manuel ",
+        "encName": "SGFsbGVy",
+        "encVorname": "TWFudWVsIA=="
+      },
+      {
+        "name": "Janosi",
+        "vorname": "Sascha",
+        "encName": "SmFub3Np",
+        "encVorname": "U2FzY2hh"
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBMaW9ucw==",
+    "password": {
+      "value": "iIMqsGnnC2lN9WKRPMLS3w==",
+      "changeDate": 1535587402827
+    },
+    "needsChange": true
+  },
+  "bdl011": {
+    "name": "DC Breakers 1",
+    "verein": "v017",
+    "spiellokal": {
+      "name": "Cafe Ricks",
+      "strasse": "Melanchthonstr. 100",
+      "ort": "75015 Bretten",
+      "position": {
+        "lat": "49.03867",
+        "lng": "8.69895"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Steffen Stiess",
+      "tel": "0176 - 80563652",
+      "mail": "steffenstiess@gmail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Lutz",
+        "vorname": "Harald",
+        "encName": "THV0eg==",
+        "encVorname": "SGFyYWxk"
+      },
+      {
+        "name": "Mergel",
+        "vorname": "Michael",
+        "encName": "TWVyZ2Vs",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Sauter",
+        "vorname": "Axel",
+        "encName": "U2F1dGVy",
+        "encVorname": "QXhlbA=="
+      },
+      {
+        "name": "Stiess",
+        "vorname": "Steffen (TC)",
+        "encName": "U3RpZXNz",
+        "encVorname": "U3RlZmZlbiAoVEMp"
+      },
+      {
+        "name": "Dittus",
+        "vorname": "Gabriele",
+        "encName": "RGl0dHVz",
+        "encVorname": "R2FicmllbGU="
+      },
+      {
+        "name": "Fröhlich",
+        "vorname": "Sven",
+        "encName": "RnLDtmhsaWNo",
+        "encVorname": "U3Zlbg=="
+      }
+    ],
+    "encTeam": "QkRDIEJyZWFrZXJzIDE=",
+    "password": {
+      "value": "i1teL9evTmF13vwWXKaQfg==",
+      "changeDate": 1537112386985
+    },
+    "needsChange": true
+  },
+  "bdl012": {
+    "name": "Dartspub Walldorf 3",
+    "verein": "v021",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon",
+      "position": {
+        "lat": "21.1250077",
+        "lng": "-101.6859605"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Dirk Hofmann",
+      "tel": "0174 - 5287861",
+      "mail": "dirk.hofmann65@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Becker",
+        "vorname": "Jens-Dieter",
+        "encName": "QmVja2Vy",
+        "encVorname": "SmVucy1EaWV0ZXI="
+      },
+      {
+        "name": "Besrutsch",
+        "vorname": "Rainer",
+        "encName": "QmVzcnV0c2No",
+        "encVorname": "UmFpbmVy"
+      },
+      {
+        "name": "Bopp",
+        "vorname": "Florian",
+        "encName": "Qm9wcA==",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Hüther",
+        "vorname": "Stefan",
+        "encName": "SPx0aGVy",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Zimmermann",
+        "vorname": "Jürgen",
+        "encName": "WmltbWVybWFubg==",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Hofmann",
+        "vorname": "Rita",
+        "encName": "SG9mbWFubg==",
+        "encVorname": "Uml0YQ=="
+      },
+      {
+        "name": "Hofmann(Tk)",
+        "vorname": "Dirk",
+        "encName": "SG9mbWFubihUayk=",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Ayllon",
+        "vorname": "John",
+        "encName": "QXlsbG9u",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Bub",
+        "vorname": "Leif-Eric",
+        "encName": "QnVi",
+        "encVorname": "TGVpZi1Fcmlj"
+      },
+      {
+        "name": "Mascheck ",
+        "vorname": "Uwe",
+        "encName": "TWFzY2hlY2sg",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Göbel ",
+        "vorname": "Kai",
+        "encName": "R8O2YmVsIA==",
+        "encVorname": "S2Fp"
+      },
+      {
+        "name": "Heck",
+        "vorname": "Julian ",
+        "encName": "SGVjaw==",
+        "encVorname": "SnVsaWFuIA=="
+      }
+    ],
+    "encTeam": "RGFydHNwdWIgV2FsbGRvcmYgMw==",
+    "password": {
+      "value": "UvpowkxyM_uMOBjy_-AXhw==",
+      "changeDate": 1537015751938
+    },
+    "needsChange": true
+  },
+  "bdl014": {
+    "name": "DC Flatliners Karlsruhe 2",
+    "verein": "v018",
+    "spiellokal": {
+      "name": "Vereinsheim DC Flatliners",
+      "strasse": "Hardtstr. 37 (Bau II)",
+      "ort": "76185 Karlsruhe",
+      "position": {
+        "lat": "49.0072171",
+        "lng": "8.352578099999999"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Markus Kellner",
+      "tel": "0172 - 1397366",
+      "mail": "mkellyboy@gmail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Hoffmann",
+        "vorname": "Markus",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Roller",
+        "vorname": "Freddy",
+        "encName": "Um9sbGVy",
+        "encVorname": "RnJlZGR5"
+      },
+      {
+        "name": "Baumann",
+        "vorname": "John",
+        "encName": "QmF1bWFubg==",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Spathelf",
+        "vorname": "Stefan",
+        "encName": "U3BhdGhlbGY=",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Schober",
+        "vorname": "Timo",
+        "encName": "U2Nob2Jlcg==",
+        "encVorname": "VGltbw=="
+      },
+      {
+        "name": "Nees",
+        "vorname": "Thomas",
+        "encName": "TmVlcw==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Mager",
+        "vorname": "Fabian",
+        "encName": "TWFnZXI=",
+        "encVorname": "RmFiaWFu"
+      },
+      {
+        "name": "Kellner",
+        "vorname": "Markus",
+        "encName": "S2VsbG5lcg==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Meyer",
+        "vorname": "Torsten",
+        "encName": "TWV5ZXI=",
+        "encVorname": "VG9yc3Rlbg=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Mika",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "TWlrYQ=="
+      },
+      {
+        "name": "Schiller",
+        "vorname": "Nico",
+        "encName": "U2NoaWxsZXI=",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Christ",
+        "vorname": "Andreas",
+        "encName": "Q2hyaXN0",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Leclerc",
+        "vorname": "Markus",
+        "encName": "TGVjbGVyYw==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Meisel",
+        "vorname": "Andy",
+        "encName": "TWVpc2Vs",
+        "encVorname": "QW5keQ=="
+      },
+      {
+        "name": "Raum",
+        "vorname": "Dominik",
+        "encName": "UmF1bQ==",
+        "encVorname": "RG9taW5paw=="
+      },
+      {
+        "name": "Fleckenstein",
+        "vorname": "Will",
+        "encName": "RmxlY2tlbnN0ZWlu",
+        "encVorname": "V2lsbA=="
+      }
+    ],
+    "encTeam": "REMgRmxhdGxpbmVycyBLYXJsc3J1aGUgMg==",
+    "password": {
+      "value": "dJFwx4KIuEucG2dX9hSwUw==",
+      "changeDate": 1538238163589
+    },
+    "needsChange": true
+  },
+  "bdl016": {
+    "name": "DC Letschebach",
+    "verein": "v020",
+    "spiellokal": {
+      "name": "Endstation Gleis 8",
+      "strasse": "Hauptbahnstraße 1",
+      "ort": "76227 Karlsruhe-Durlach",
+      "position": {
+        "lat": "49.001888",
+        "lng": "8.463002"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Ramón Zander",
+      "tel": "0160-5609606",
+      "mail": "r.zander04@gmail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Brömser",
+        "vorname": "Uwe",
+        "encName": "QnL2bXNlcg==",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Gebhard",
+        "vorname": "Michael",
+        "encName": "R2ViaGFyZA==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Haack",
+        "vorname": "Günther",
+        "encName": "SGFhY2s=",
+        "encVorname": "R/xudGhlcg=="
+      },
+      {
+        "name": "Heck",
+        "vorname": "Michael",
+        "encName": "SGVjaw==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Kunzenbacher",
+        "vorname": "Claus",
+        "encName": "S3VuemVuYmFjaGVy",
+        "encVorname": "Q2xhdXM="
+      },
+      {
+        "name": "Meier",
+        "vorname": "Michael",
+        "encName": "TWVpZXI=",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Roa",
+        "vorname": "Markus",
+        "encName": "Um9h",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Zander",
+        "vorname": "Ramon",
+        "encName": "WmFuZGVy",
+        "encVorname": "UmFtb24="
+      }
+    ],
+    "encTeam": "REMgTGV0c2NoZWJhY2g=",
+    "password": {
+      "value": "bIhs4XcIfJ_0rH44L_AS7A==",
+      "changeDate": 1549184030293
+    },
+    "needsChange": true
+  },
+  "bdl017": {
+    "name": "DC Reiterstüble Eppingen 1",
+    "verein": "v007",
+    "spiellokal": {
+      "name": "Reiterstüble",
+      "strasse": "Talstr. 25",
+      "ort": "75031 Eppingen",
+      "position": {
+        "lat": "49.1413",
+        "lng": "8.90522"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Thomas Wabbel",
+      "tel": "0171-5547648",
+      "mail": "thomas@wabbel.eu"
+    },
+    "mitglieder": [
+      {
+        "name": "Gärtner",
+        "vorname": "Marcel",
+        "encName": "R+RydG5lcg==",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Stross",
+        "vorname": "Sven",
+        "encName": "U3Ryb3Nz",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Wabbel",
+        "vorname": "Thomas",
+        "encName": "V2FiYmVs",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Kunze",
+        "vorname": "Marius",
+        "encName": "S3VuemU=",
+        "encVorname": "TWFyaXVz"
+      },
+      {
+        "name": "Aslantas",
+        "vorname": "Sahin",
+        "encName": "QXNsYW50YXM=",
+        "encVorname": "U2FoaW4="
+      },
+      {
+        "name": "Swiniarski",
+        "vorname": "Olaf",
+        "encName": "U3dpbmlhcnNraQ==",
+        "encVorname": "T2xhZg=="
+      },
+      {
+        "name": "Hautzinger",
+        "vorname": "Daniel",
+        "encName": "SGF1dHppbmdlcg==",
+        "encVorname": "RGFuaWVs"
+      },
+      {
+        "name": "Schlenker",
+        "vorname": "Stefan",
+        "encName": "U2NobGVua2Vy",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Wirth",
+        "vorname": "Christian",
+        "encName": "V2lydGg=",
+        "encVorname": "Q2hyaXN0aWFu"
+      }
+    ],
+    "encTeam": "REMgUmVpdGVyc3TDvGJsZSBFcHBpbmdlbiAx",
+    "password": {
+      "value": "v4mcd2KQeKyI-nvooi_OKQ==",
+      "changeDate": 1537702335924
+    },
+    "needsChange": true
+  },
+  "bdl018": {
+    "name": "DC Studenten Bellheim 1",
+    "verein": "v016",
+    "spiellokal": {
+      "name": "Tom`s Cafè Bistro",
+      "strasse": "Hauptstr. 106",
+      "ort": "76756 Bellheim",
+      "position": {
+        "lat": "49.19132949999999",
+        "lng": "8.280880699999999"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Andreas Waeldin",
+      "tel": "01775007739",
+      "mail": "Empty"
+    },
+    "mitglieder": [
+      {
+        "name": "Greif",
+        "vorname": "Yannik",
+        "encName": "R3JlaWY=",
+        "encVorname": "WWFubmlr"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Markus",
+        "encName": "TfxsbGVy",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Utting",
+        "vorname": "Michael",
+        "encName": "VXR0aW5n",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Waeldin",
+        "vorname": "Andreas",
+        "encName": "V2FlbGRpbg==",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Waeldin",
+        "vorname": "Stephanie",
+        "encName": "V2FlbGRpbg==",
+        "encVorname": "U3RlcGhhbmll"
+      },
+      {
+        "name": "Reichling",
+        "vorname": "Gerhard ",
+        "encName": "UmVpY2hsaW5n",
+        "encVorname": "R2VyaGFyZCA="
+      },
+      {
+        "name": "Gläßgen",
+        "vorname": "Alexander",
+        "encName": "R2zDpMOfZ2Vu",
+        "encVorname": "QWxleGFuZGVy"
+      },
+      {
+        "name": "Krebs",
+        "vorname": "Ulrich",
+        "encName": "S3JlYnM=",
+        "encVorname": "VWxyaWNo"
+      }
+    ],
+    "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWltIDE=",
+    "password": {
+      "value": "GLTZVcIz1xqHUJ5_7uXpMg==",
+      "changeDate": 1540221877438
+    },
+    "needsChange": true
+  },
+  "bdl019": {
+    "name": "DC Underground Fools e.V",
+    "verein": "v026",
+    "spiellokal": {
+      "name": "Vereinsheim Underground Fools",
+      "strasse": "Weiherstr.30, Hinterhaus",
+      "ort": "75173 Pforzheim",
+      "position": {
+        "lat": "48.8890939",
+        "lng": "8.695718700000043"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Heiko Fruhner",
+      "tel": "0173 - 9983799",
+      "mail": "undergroundfools@yahoo.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Cantanna",
+        "vorname": "Guiseppe",
+        "encName": "Q2FudGFubmE=",
+        "encVorname": "R3Vpc2VwcGU="
+      },
+      {
+        "name": "Dürr",
+        "vorname": "Tarek",
+        "encName": "RPxycg==",
+        "encVorname": "VGFyZWs="
+      },
+      {
+        "name": "Fiedler",
+        "vorname": "Sven",
+        "encName": "RmllZGxlcg==",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Fruhner",
+        "vorname": "Heiko (TC)",
+        "encName": "RnJ1aG5lcg==",
+        "encVorname": "SGVpa28gKFRDKQ=="
+      },
+      {
+        "name": "Gottmann",
+        "vorname": "Kay",
+        "encName": "R290dG1hbm4=",
+        "encVorname": "S2F5"
+      },
+      {
+        "name": "Herz",
+        "vorname": "Vitali",
+        "encName": "SGVyeg==",
+        "encVorname": "Vml0YWxp"
+      },
+      {
+        "name": "Roth",
+        "vorname": "Urban",
+        "encName": "Um90aA==",
+        "encVorname": "VXJiYW4="
+      },
+      {
+        "name": "Titel",
+        "vorname": "Florian",
+        "encName": "VGl0ZWw=",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Bock",
+        "vorname": "Andre",
+        "encName": "Qm9jaw==",
+        "encVorname": "QW5kcmU="
+      },
+      {
+        "name": "Polte",
+        "vorname": "Frank",
+        "encName": "UG9sdGU=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Voggenreiter",
+        "vorname": "Ralf",
+        "encName": "Vm9nZ2VucmVpdGVy",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Schneider",
+        "vorname": "Sascha",
+        "encName": "U2NobmVpZGVy",
+        "encVorname": "U2FzY2hh"
+      }
+    ],
+    "encTeam": "REMgVW5kZXJncm91bmQgRm9vbHMgZS5W",
+    "password": {
+      "value": "ENu8tTO-FwUL7C7bCAqMQw==",
+      "changeDate": 1537743025139
+    },
+    "needsChange": true
+  },
+  "bdl021": {
+    "name": "1. DC Jokers Hockenheim",
+    "verein": "v024",
+    "spiellokal": {
+      "name": "Bistro Ideal",
+      "strasse": "Mannheimer Str.44a",
+      "ort": "68723 Oftersheim",
+      "position": {
+        "lat": "49.3699593",
+        "lng": "8.5830065"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Martin Huber",
+      "tel": "01625747307",
+      "mail": "huber1970@arcor.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Becker",
+        "vorname": "Marcel",
+        "encName": "QmVja2Vy",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Fütterer",
+        "vorname": "Dirk",
+        "encName": "Rvx0dGVyZXI=",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Fütterer",
+        "vorname": "Markus",
+        "encName": "Rvx0dGVyZXI=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Hansky",
+        "vorname": "Christian",
+        "encName": "SGFuc2t5",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Havenstein",
+        "vorname": "Dirk",
+        "encName": "SGF2ZW5zdGVpbg==",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Huber",
+        "vorname": "Martin (TC)",
+        "encName": "SHViZXI=",
+        "encVorname": "TWFydGluIChUQyk="
+      },
+      {
+        "name": "Stetter",
+        "vorname": "Christian",
+        "encName": "U3RldHRlcg==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Weimar",
+        "vorname": "Stefan",
+        "encName": "V2VpbWFy",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Werner",
+        "vorname": "Patrick",
+        "encName": "V2VybmVy",
+        "encVorname": "UGF0cmljaw=="
+      }
+    ],
+    "encTeam": "MS4gREMgSm9rZXJzIEhvY2tlbmhlaW0=",
+    "password": {
+      "value": "rK4g7fzAy1cLDZ9GISywYw==",
+      "changeDate": 1537049051903
+    },
+    "needsChange": true
+  },
+  "bdl022": {
+    "name": "DC Reiterstüble Eppingen 2",
+    "verein": "v007",
+    "spiellokal": {
+      "name": "Reiterstüble",
+      "strasse": "Talstr. 25",
+      "ort": "75031 Eppingen",
+      "position": {
+        "lat": "49.1413",
+        "lng": "8.90522"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Dirk Scholz",
+      "tel": "0172 - 9555312",
+      "mail": "reiterstueble-eppingen@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Gärtner",
+        "vorname": "Gabi",
+        "encName": "R+RydG5lcg==",
+        "encVorname": "R2FiaQ=="
+      },
+      {
+        "name": "Scholz",
+        "vorname": "Dirk (TC)",
+        "encName": "U2Nob2x6",
+        "encVorname": "RGlyayAoVEMp"
+      },
+      {
+        "name": "Woldt",
+        "vorname": "Dieter",
+        "encName": "V29sZHQ=",
+        "encVorname": "RGlldGVy"
+      },
+      {
+        "name": "Schönborn",
+        "vorname": "Timo",
+        "encName": "U2Now7ZuYm9ybg==",
+        "encVorname": "VGltbw=="
+      },
+      {
+        "name": "Brösche",
+        "vorname": "Klaus Dieter",
+        "encName": "QnLDtnNjaGU=",
+        "encVorname": "S2xhdXMgRGlldGVy"
+      },
+      {
+        "name": "Hilpert",
+        "vorname": "Bastian",
+        "encName": "SGlscGVydA==",
+        "encVorname": "QmFzdGlhbg=="
+      },
+      {
+        "name": "Christ",
+        "vorname": "Benny",
+        "encName": "Q2hyaXN0",
+        "encVorname": "QmVubnk="
+      },
+      {
+        "name": "Hermann",
+        "vorname": "Samuel",
+        "encName": "SGVybWFubg==",
+        "encVorname": "U2FtdWVs"
+      },
+      {
+        "name": "Strecker",
+        "vorname": "Tim",
+        "encName": "U3RyZWNrZXI=",
+        "encVorname": "VGlt"
+      },
+      {
+        "name": "Heinzmann",
+        "vorname": "Denis",
+        "encName": "SGVpbnptYW5u",
+        "encVorname": "RGVuaXM="
+      }
+    ],
+    "encTeam": "REMgUmVpdGVyc3TDvGJsZSBFcHBpbmdlbiAy",
+    "password": {
+      "value": "01pbTDoey74B5LfWvRYm_g==",
+      "changeDate": 1538385531337
+    },
+    "needsChange": true
+  },
+  "bdl023": {
+    "name": "DC Undertaker reloaded 1",
+    "verein": "v001",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon",
+      "position": {
+        "lat": "49.2672",
+        "lng": "8.59647"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Matthias Knebel",
+      "tel": "0151 - 18707207",
+      "mail": "darty1971@googlemail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Boss",
+        "vorname": "Mike",
+        "encName": "Qm9zcw==",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Freiseis",
+        "vorname": "Heinz",
+        "encName": "RnJlaXNlaXM=",
+        "encVorname": "SGVpbno="
+      },
+      {
+        "name": "Knebel",
+        "vorname": "Matthias",
+        "encName": "S25lYmVs",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Keilbach",
+        "vorname": "Sebastian",
+        "encName": "S2VpbGJhY2g=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Mecklenburg",
+        "vorname": "Uwe",
+        "encName": "TWVja2xlbmJ1cmc=",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Stelle",
+        "vorname": "Mike",
+        "encName": "U3RlbGxl",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Boss",
+        "vorname": "Dominik",
+        "encName": "Qm9zcw==",
+        "encVorname": "RG9taW5paw=="
+      }
+    ],
+    "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAx",
+    "password": {
+      "value": "jcjdFYwlSKqc06830KuFkA==",
+      "changeDate": 1537049765734
+    },
+    "needsChange": true
+  },
+  "bdl024": {
+    "name": "DC Undertaker reloaded 2",
+    "verein": "v001",
+    "spiellokal": {
+      "name": "Gaststätte Zur alten Rose",
+      "strasse": "Häusserstr. 22",
+      "ort": "68789 St. Leon",
+      "position": {
+        "lat": "21.1250077",
+        "lng": "-101.6859605"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Martin Embach",
+      "tel": "0152 33509858",
+      "mail": "martin_embach80@yahoo.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Embach",
+        "vorname": "Martin",
+        "encName": "RW1iYWNo",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Freiseis",
+        "vorname": "Frank",
+        "encName": "RnJlaXNlaXM=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Fuchs",
+        "vorname": "Karl-Heinz",
+        "encName": "RnVjaHM=",
+        "encVorname": "S2FybC1IZWlueg=="
+      },
+      {
+        "name": "Kost",
+        "vorname": "Patrick",
+        "encName": "S29zdA==",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Raptis",
+        "vorname": "Nikolaos",
+        "encName": "UmFwdGlz",
+        "encVorname": "Tmlrb2xhb3M="
+      },
+      {
+        "name": "Zang",
+        "vorname": "Lothar",
+        "encName": "WmFuZw==",
+        "encVorname": "TG90aGFy"
+      },
+      {
+        "name": "Dammert",
+        "vorname": "Sascha",
+        "encName": "RGFtbWVydA==",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Neickert",
+        "vorname": "Benni",
+        "encName": "TmVpY2tlcnQ=",
+        "encVorname": "QmVubmk="
+      }
+    ],
+    "encTeam": "REMgVW5kZXJ0YWtlciByZWxvYWRlZCAy",
+    "password": {
+      "value": "7GyB2hN1uCFQADu48RR6fw==",
+      "changeDate": 1537700819466
+    },
+    "needsChange": true
+  },
+  "bdl025": {
+    "name": "Gegen die Drück 3",
+    "verein": "v006",
+    "spiellokal": {
+      "name": "Café Kranich",
+      "strasse": "Kranichweg 37",
+      "ort": "69123 Heidelberg",
+      "position": {
+        "lat": "49.39616000",
+        "lng": "8.64303900"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Matthias Margraf",
+      "tel": "0176 - 72629857",
+      "mail": "wittmann.steffen@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Wittmann",
+        "vorname": "Steffen",
+        "encName": "V2l0dG1hbm4=",
+        "encVorname": "U3RlZmZlbg=="
+      },
+      {
+        "name": "Margraf",
+        "vorname": "Matthias ",
+        "encName": "TWFyZ3JhZg==",
+        "encVorname": "TWF0dGhpYXMg"
+      },
+      {
+        "name": "Schäfer",
+        "vorname": "Mathias",
+        "encName": "U2Now6RmZXI=",
+        "encVorname": "TWF0aGlhcw=="
+      },
+      {
+        "name": "Schaffner",
+        "vorname": "Boris",
+        "encName": "U2NoYWZmbmVy",
+        "encVorname": "Qm9yaXM="
+      },
+      {
+        "name": "Rimmler",
+        "vorname": "Jens",
+        "encName": "UmltbWxlcg==",
+        "encVorname": "SmVucw=="
+      },
+      {
+        "name": "Büger",
+        "vorname": "Zafer",
+        "encName": "QsO8Z2Vy",
+        "encVorname": "WmFmZXI="
+      },
+      {
+        "name": "Ritter",
+        "vorname": "Dominik",
+        "encName": "Uml0dGVy",
+        "encVorname": "RG9taW5paw=="
+      },
+      {
+        "name": "Muth",
+        "vorname": "Rüdiger",
+        "encName": "TXV0aA==",
+        "encVorname": "UsO8ZGlnZXI="
+      },
+      {
+        "name": "Adler",
+        "vorname": "Werner",
+        "encName": "QWRsZXI=",
+        "encVorname": "V2VybmVy"
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERyw7xjayAz",
+    "password": {
+      "value": "UBBGwTuDCavywMMQwrbQUg==",
+      "changeDate": 1537692227275
+    },
+    "needsChange": true
+  },
+  "bdl026": {
+    "name": "Gegen die Drück 4",
+    "verein": "v006",
+    "spiellokal": {
+      "name": "Café Kranich",
+      "strasse": "Kranichweg 37",
+      "ort": "69123 Heidelberg",
+      "position": {
+        "lat": "49.39616000",
+        "lng": "8.64303900"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Thomas Bültena",
+      "tel": "0172 - 1752436",
+      "mail": "wittmann.steffen@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Winter",
+        "vorname": "Anna",
+        "encName": "V2ludGVy",
+        "encVorname": "QW5uYQ=="
+      },
+      {
+        "name": "Bültena",
+        "vorname": "Thomas",
+        "encName": "QsO8bHRlbmE=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Christian",
+        "encName": "TcO8bGxlcg==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Dworaczek",
+        "vorname": "Annetta",
+        "encName": "RHdvcmFjemVr",
+        "encVorname": "QW5uZXR0YQ=="
+      },
+      {
+        "name": "Schrödersecker ",
+        "vorname": "Sabrina",
+        "encName": "U2NocsO2ZGVyc2Vja2VyIA==",
+        "encVorname": "U2FicmluYQ=="
+      },
+      {
+        "name": "Exner",
+        "vorname": "Lydia",
+        "encName": "RXhuZXI=",
+        "encVorname": "THlkaWE="
+      },
+      {
+        "name": "Köllner",
+        "vorname": "Sven",
+        "encName": "S8O2bGxuZXI=",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Götz",
+        "vorname": "Martin",
+        "encName": "R8O2dHo=",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Hain",
+        "vorname": "Tobias",
+        "encName": "SGFpbg==",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Wegner",
+        "vorname": "Robin ",
+        "encName": "V2VnbmVy",
+        "encVorname": "Um9iaW4g"
+      }
+    ],
+    "encTeam": "R2VnZW4gZGllIERyw7xjayA0",
+    "password": {
+      "value": "UiqxQYmNTPeDcGpG6RKlmA==",
+      "changeDate": 1537692170403
+    },
+    "needsChange": true
+  },
+  "bdl028": {
+    "name": "Iron Eagles",
+    "verein": "v005",
+    "spiellokal": {
+      "name": "Bistro Connect",
+      "strasse": "Langgasse 32",
+      "ort": "67459 Böhl-Iggelheim",
+      "position": {
+        "lat": "49.36555",
+        "lng": "8.30574"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Tobias Mohr",
+      "tel": "0176 - 30454995",
+      "mail": "Tm1986@freenet.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Lochbaum",
+        "vorname": "Lars",
+        "encName": "TG9jaGJhdW0=",
+        "encVorname": "TGFycw=="
+      },
+      {
+        "name": "Mohr",
+        "vorname": "Markus",
+        "encName": "TW9ocg==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Mohr",
+        "vorname": "Tobias (TC)",
+        "encName": "TW9ocg==",
+        "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Armbrust",
+        "vorname": "Markus",
+        "encName": "QXJtYnJ1c3Q=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Mocker",
+        "vorname": "Yvonne",
+        "encName": "TW9ja2Vy",
+        "encVorname": "WXZvbm5l"
+      },
+      {
+        "name": "Eygelshoven",
+        "vorname": "Daniel",
+        "encName": "RXlnZWxzaG92ZW4=",
+        "encVorname": "RGFuaWVs"
+      },
+      {
+        "name": "Naujoks",
+        "vorname": "Marco",
+        "encName": "TmF1am9rcw==",
+        "encVorname": "TWFyY28="
+      },
+      {
+        "name": "Sold",
+        "vorname": "Carmen",
+        "encName": "U29sZA==",
+        "encVorname": "Q2FybWVu"
+      },
+      {
+        "name": "Semmelbeck",
+        "vorname": "Cedric",
+        "encName": "U2VtbWVsYmVjaw==",
+        "encVorname": "Q2Vkcmlj"
+      },
+      {
+        "name": "Erhardt",
+        "vorname": "Sven",
+        "encName": "RXJoYXJkdA==",
+        "encVorname": "U3Zlbg=="
+      }
+    ],
+    "encTeam": "SXJvbiBFYWdsZXM=",
+    "password": {
+      "value": "pEnA49aZNxuCV5LGDoB7Lg==",
+      "changeDate": 1539015935622
+    },
+    "needsChange": true
+  },
+  "bdl029": {
+    "name": "Taraxacuma Die Dritte",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim",
+      "position": {
+        "lat": "49.1966599",
+        "lng": "8.4686098"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Andrea Richard",
+      "tel": "02756 - 944310 (ab 19 Uhr)",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Hahn",
+        "vorname": "Thomas",
+        "encName": "SGFobg==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Hodorff",
+        "vorname": "Tanja",
+        "encName": "SG9kb3JmZg==",
+        "encVorname": "VGFuamE="
+      },
+      {
+        "name": "Janin",
+        "vorname": "Sabrina",
+        "encName": "SmFuaW4=",
+        "encVorname": "U2FicmluYQ=="
+      },
+      {
+        "name": "Richard",
+        "vorname": "Andrea (TC)",
+        "encName": "UmljaGFyZA==",
+        "encVorname": "QW5kcmVhIChUQyk="
+      },
+      {
+        "name": "Werner",
+        "vorname": "Armin",
+        "encName": "V2VybmVy",
+        "encVorname": "QXJtaW4="
+      },
+      {
+        "name": "Bleich",
+        "vorname": "Alex",
+        "encName": "QmxlaWNo",
+        "encVorname": "QWxleA=="
+      },
+      {
+        "name": "Machauer",
+        "vorname": "Sebastian",
+        "encName": "TWFjaGF1ZXI=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Moock",
+        "vorname": "Carsten",
+        "encName": "TW9vY2s=",
+        "encVorname": "Q2Fyc3Rlbg=="
+      },
+      {
+        "name": "Link",
+        "vorname": "Markus",
+        "encName": "TGluaw==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Bachert",
+        "vorname": "Max",
+        "encName": "QmFjaGVydA==",
+        "encVorname": "TWF4"
+      },
+      {
+        "name": "König",
+        "vorname": "Kevin",
+        "encName": "S8O2bmln",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "Scheer",
+        "vorname": "Gary",
+        "encName": "U2NoZWVy",
+        "encVorname": "R2FyeQ=="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBEaWUgRHJpdHRl",
+    "password": {
+      "value": "WRk5nej14LKdFtjCld9shw==",
+      "changeDate": 1537659843816
+    },
+    "needsChange": true
+  },
+  "bdl030": {
+    "name": "Taraxacuma TNT",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim",
+      "position": {
+        "lat": "49.1966539",
+        "lng": "8.4683658"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Tobias Schmidt",
+      "tel": "0176-31411847",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Barth",
+        "vorname": "Holger",
+        "encName": "QmFydGg=",
+        "encVorname": "SG9sZ2Vy"
+      },
+      {
+        "name": "Groß",
+        "vorname": "Christina",
+        "encName": "R3Jv3w==",
+        "encVorname": "Q2hyaXN0aW5h"
+      },
+      {
+        "name": "Riedle",
+        "vorname": "Heinz",
+        "encName": "UmllZGxl",
+        "encVorname": "SGVpbno="
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Jochen",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "Schmitteckert",
+        "vorname": "Bernd",
+        "encName": "U2NobWl0dGVja2VydA==",
+        "encVorname": "QmVybmQ="
+      },
+      {
+        "name": "Schmitteckert",
+        "vorname": "Sascha",
+        "encName": "U2NobWl0dGVja2VydA==",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Steinle",
+        "vorname": "Stefan",
+        "encName": "U3RlaW5sZQ==",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Zieger",
+        "vorname": "Sina",
+        "encName": "WmllZ2Vy",
+        "encVorname": "U2luYQ=="
+      },
+      {
+        "name": "Zieger",
+        "vorname": "Simon",
+        "encName": "WmllZ2Vy",
+        "encVorname": "U2ltb24="
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Tobias (TC)",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Stegmüller",
+        "vorname": "Ralf",
+        "encName": "U3RlZ23DvGxsZXI=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Vetter",
+        "vorname": "Patrick",
+        "encName": "VmV0dGVy",
+        "encVorname": "UGF0cmljaw=="
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBUTlQ=",
+    "password": {
+      "value": "v9z57PTDp5t4v3DQ3clrDA==",
+      "changeDate": 1535634382950
+    },
+    "needsChange": true
+  },
+  "bdl031": {
+    "name": "Team Wilder Mann",
+    "verein": "v004",
+    "spiellokal": {
+      "name": "Bistro Ideal",
+      "strasse": "Mannheimer Str. 44a",
+      "ort": "68723 Oftersheim",
+      "position": {
+        "lat": "49.3699593",
+        "lng": "8.5830065"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Jörg Bogumil",
+      "tel": "0173 - 6887503",
+      "mail": "Joergbogumil@hotmail.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Bogumil",
+        "vorname": "Jörg (TC)",
+        "encName": "Qm9ndW1pbA==",
+        "encVorname": "SvZyZyAoVEMp"
+      },
+      {
+        "name": "Da Silvanovo",
+        "vorname": "Antonio",
+        "encName": "RGEgU2lsdmFub3Zv",
+        "encVorname": "QW50b25pbw=="
+      },
+      {
+        "name": "Lamoth",
+        "vorname": "Uwe",
+        "encName": "TGFtb3Ro",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Michl",
+        "vorname": "Rolf",
+        "encName": "TWljaGw=",
+        "encVorname": "Um9sZg=="
+      },
+      {
+        "name": "Lausch",
+        "vorname": "Oliver-Falk",
+        "encName": "TGF1c2No",
+        "encVorname": "T2xpdmVyLUZhbGs="
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "wolf",
+        "vorname": "dennis",
+        "encName": "d29sZg==",
+        "encVorname": "ZGVubmlz"
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Andreas",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "QW5kcmVhcw=="
+      }
+    ],
+    "encTeam": "VGVhbSBXaWxkZXIgTWFubg==",
+    "password": {
+      "value": "b1fXCYntpKje7NPDBxHAPw==",
+      "changeDate": 1530715726820
+    },
+    "needsChange": true
+  },
+  "bdl032": {
+    "name": "DC Blau-Weiß Karlsruhe",
+    "verein": "v014",
+    "spiellokal": {
+      "name": "Dart Schubbe",
+      "strasse": "Steinkreuzstr. 14",
+      "ort": "76228 Karlsruhe-Wolfartsweier",
+      "position": {
+        "lat": "48.97813",
+        "lng": "8.45762"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "De Bortoli Udo",
+      "tel": "0171 - 8352039",
+      "mail": "dcblauweisska@yahoo.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Barnstedt",
+        "vorname": "Wolfram",
+        "encName": "QmFybnN0ZWR0",
+        "encVorname": "V29sZnJhbQ=="
+      },
+      {
+        "name": "Biernatzki",
+        "vorname": "Christian",
+        "encName": "Qmllcm5hdHpraQ==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Coogan",
+        "vorname": "Ferghal",
+        "encName": "Q29vZ2Fu",
+        "encVorname": "RmVyZ2hhbA=="
+      },
+      {
+        "name": "De Bortoli",
+        "vorname": "Udo",
+        "encName": "RGUgQm9ydG9saQ==",
+        "encVorname": "VWRv"
+      },
+      {
+        "name": "Götzelmann",
+        "vorname": "Tobias (TC)",
+        "encName": "R/Z0emVsbWFubg==",
+        "encVorname": "VG9iaWFzIChUQyk="
+      },
+      {
+        "name": "Jock",
+        "vorname": "Bernt",
+        "encName": "Sm9jaw==",
+        "encVorname": "QmVybnQ="
+      },
+      {
+        "name": "Oheim",
+        "vorname": "Horst",
+        "encName": "T2hlaW0=",
+        "encVorname": "SG9yc3Q="
+      },
+      {
+        "name": "Ploth",
+        "vorname": "Sebastian",
+        "encName": "UGxvdGg=",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Cramer",
+        "vorname": "Uwe",
+        "encName": "Q3JhbWVy",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Mendel",
+        "vorname": "Timo",
+        "encName": "TWVuZGVs",
+        "encVorname": "VGltbw=="
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "Jock",
+        "vorname": "Kevin",
+        "encName": "Sm9jaw==",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Nußbaumer",
+        "vorname": "Michel",
+        "encName": "TnXDn2JhdW1lcg==",
+        "encVorname": "TWljaGVs"
+      },
+      {
+        "name": "Lösch",
+        "vorname": "Patrick",
+        "encName": "TMO2c2No",
+        "encVorname": "UGF0cmljaw=="
+      }
+    ],
+    "encTeam": "REMgQmxhdS1XZWnDnyBLYXJsc3J1aGU=",
+    "password": {
+      "value": "7e7GglZ0h64OPBzS-CgFZA==",
+      "changeDate": 1537654088120
+    },
+    "needsChange": true
+  },
+  "bdl033": {
+    "name": "D.A.R.T. Plumbata Remus",
+    "verein": "v013",
+    "spiellokal": {
+      "name": "Church Chill Sportsbar",
+      "strasse": "Karlstrasse 115",
+      "ort": "76137 Karlsruhe",
+      "position": {
+        "lat": "48.9967137",
+        "lng": "8.3938916"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Melanie Klomann",
+      "tel": "+49 176 - 60831333",
+      "mail": "LuckyMelKA@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Augenstein",
+        "vorname": "Norbert",
+        "encName": "QXVnZW5zdGVpbg==",
+        "encVorname": "Tm9yYmVydA=="
+      },
+      {
+        "name": "Augenstein",
+        "vorname": "Marius",
+        "encName": "QXVnZW5zdGVpbg==",
+        "encVorname": "TWFyaXVz"
+      },
+      {
+        "name": "Braun",
+        "vorname": "Rene",
+        "encName": "QnJhdW4=",
+        "encVorname": "UmVuZQ=="
+      },
+      {
+        "name": "Höger",
+        "vorname": "Jörg",
+        "encName": "SPZnZXI=",
+        "encVorname": "SvZyZw=="
+      },
+      {
+        "name": "Klomann",
+        "vorname": "Melanie (TC)",
+        "encName": "S2xvbWFubg==",
+        "encVorname": "TWVsYW5pZSAoVEMp"
+      },
+      {
+        "name": "Rohde",
+        "vorname": "Thomas",
+        "encName": "Um9oZGU=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Schulz",
+        "vorname": "Toni",
+        "encName": "U2NodWx6",
+        "encVorname": "VG9uaQ=="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Daniela",
+        "encName": "QmVja2Vy",
+        "encVorname": "RGFuaWVsYQ=="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Jochen",
+        "encName": "QmVja2Vy",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "Trautmann",
+        "vorname": "Marius",
+        "encName": "VHJhdXRtYW5u",
+        "encVorname": "TWFyaXVz"
+      },
+      {
+        "name": "Pelzl",
+        "vorname": "Patrick",
+        "encName": "UGVsemw=",
+        "encVorname": "UGF0cmljaw=="
+      }
+    ],
+    "encTeam": "RC5BLlIuVC4gUGx1bWJhdGEgZS5WLg==",
+    "password": {
+      "value": "ZL7b9eHC8-xbmr4bgabd-Q==",
+      "changeDate": 1538860402412
+    },
+    "needsChange": true
+  },
+  "bdl035": {
+    "name": "DC 81 Karlsruhe",
+    "verein": "v010",
+    "spiellokal": {
+      "name": "Der Hexenkessel",
+      "strasse": "Hardtstr. 45a",
+      "ort": "76185 Karlsruhe",
+      "position": {
+        "lat": "49.0148934",
+        "lng": "8.360271299999999"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Jürgen Daum",
+      "tel": "0170-4877599",
+      "mail": "daumjuergen@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Andert",
+        "vorname": "Iris",
+        "encName": "QW5kZXJ0",
+        "encVorname": "SXJpcw=="
+      },
+      {
+        "name": "Daum",
+        "vorname": "Jürgen",
+        "encName": "RGF1bQ==",
+        "encVorname": "SvxyZ2Vu"
+      },
+      {
+        "name": "Gegenheimer",
+        "vorname": "Matthias",
+        "encName": "R2VnZW5oZWltZXI=",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Göbel",
+        "vorname": "Ralf",
+        "encName": "R/ZiZWw=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Ilchmann",
+        "vorname": "Horst",
+        "encName": "SWxjaG1hbm4=",
+        "encVorname": "SG9yc3Q="
+      },
+      {
+        "name": "Bauer",
+        "vorname": "Thomas ",
+        "encName": "QmF1ZXI=",
+        "encVorname": "VGhvbWFzIA=="
+      },
+      {
+        "name": "Ehinger",
+        "vorname": "Thomas",
+        "encName": "RWhpbmdlcg==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "Wienöbst",
+        "vorname": "Mark",
+        "encName": "V2llbsO2YnN0",
+        "encVorname": "TWFyaw=="
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "Gillardon",
+        "vorname": "Kevin",
+        "encName": "R2lsbGFyZG9u",
+        "encVorname": "S2V2aW4="
+      }
+    ],
+    "encTeam": "REMgODEgS2FybHNydWhl",
+    "password": {
+      "value": "4VT0GkKnhPAZOTCjMi2cTA==",
+      "changeDate": 1538844950954
+    },
+    "needsChange": true
+  },
+  "bdl036": {
+    "name": "DC Shamrock",
+    "verein": "v027",
+    "spiellokal": {
+      "name": "Matzes Pub",
+      "strasse": "Heidelberger Str. 1",
+      "ort": "76669 Bad Schönborn",
+      "position": {
+        "lat": "49.22023",
+        "lng": "8.65308"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Benjamin Bischoff",
+      "tel": "0170 - 5493211",
+      "mail": "bbenny2212@aol.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Bischoff",
+        "vorname": "Benjamin (TC)",
+        "encName": "QmlzY2hvZmY=",
+        "encVorname": "QmVuamFtaW4gKFRDKQ=="
+      },
+      {
+        "name": "During",
+        "vorname": "Andreas",
+        "encName": "RHVyaW5n",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Espig",
+        "vorname": "Toni",
+        "encName": "RXNwaWc=",
+        "encVorname": "VG9uaQ=="
+      },
+      {
+        "name": "Kuhn",
+        "vorname": "Alexander",
+        "encName": "S3Vobg==",
+        "encVorname": "QWxleGFuZGVy"
+      },
+      {
+        "name": "Pujic",
+        "vorname": "Matthias",
+        "encName": "UHVqaWM=",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Schlicht",
+        "vorname": "Werner",
+        "encName": "U2NobGljaHQ=",
+        "encVorname": "V2VybmVy"
+      },
+      {
+        "name": "Frecke",
+        "vorname": "Norman",
+        "encName": "RnJlY2tl",
+        "encVorname": "Tm9ybWFu"
+      },
+      {
+        "name": "Kiefer",
+        "vorname": "Josh",
+        "encName": "S2llZmVy",
+        "encVorname": "Sm9zaA=="
+      },
+      {
+        "name": "Zimmermann",
+        "vorname": "Mario",
+        "encName": "WmltbWVybWFubg==",
+        "encVorname": "TWFyaW8="
+      }
+    ],
+    "encTeam": "REMgU2hhbXJvY2s=",
+    "password": {
+      "value": "UYNIDzAqsOSR0w7eXclbzXHZL_LEu2ar7XESvm3dHqk=",
+      "changeDate": 1536933720648
+    },
+    "needsChange": true
+  },
+  "bdl037": {
+    "name": "Gaggenauer Dartmoskitos 1",
+    "verein": "v011",
+    "spiellokal": {
+      "name": "Schützenhaus \"An der hohlen Eiche\"",
+      "strasse": "Waldstraße 30",
+      "ort": "76532 Baden-Baden / Haueneberstein",
+      "position": {
+        "lat": "48.805878",
+        "lng": "8.230890"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Joachim Pflueger",
+      "tel": "0157-73562848",
+      "mail": "joachim.pflueger@daimler.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Walz",
+        "vorname": "David",
+        "encName": "V2Fseg==",
+        "encVorname": "RGF2aWQ="
+      },
+      {
+        "name": "Kraft",
+        "vorname": "Thomas",
+        "encName": "S3JhZnQ=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Pflueger",
+        "vorname": "Joachim (TC)",
+        "encName": "UGZsdWVnZXI=",
+        "encVorname": "Sm9hY2hpbSAoVEMp"
+      },
+      {
+        "name": "Wezel",
+        "vorname": "Peter",
+        "encName": "V2V6ZWw=",
+        "encVorname": "UGV0ZXI="
+      },
+      {
+        "name": "Saulich",
+        "vorname": "Dominik",
+        "encName": "U2F1bGljaA==",
+        "encVorname": "RG9taW5paw=="
+      },
+      {
+        "name": "Klein",
+        "vorname": "Marco",
+        "encName": "S2xlaW4=",
+        "encVorname": "TWFyY28="
+      },
+      {
+        "name": "Schulz",
+        "vorname": "Sven",
+        "encName": "U2NodWx6",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Berisha",
+        "vorname": "Hasip",
+        "encName": "QmVyaXNoYQ==",
+        "encVorname": "SGFzaXA="
+      },
+      {
+        "name": "Dasting",
+        "vorname": "Dirk",
+        "encName": "RGFzdGluZw==",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Ockert",
+        "vorname": "Christian",
+        "encName": "T2NrZXJ0",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Hoeb",
+        "vorname": "Peter",
+        "encName": "SG9lYg==",
+        "encVorname": "UGV0ZXI="
+      },
+      {
+        "name": "Koch",
+        "vorname": "Sebastian ",
+        "encName": "S29jaA==",
+        "encVorname": "U2ViYXN0aWFuIA=="
+      },
+      {
+        "name": "Hohensee",
+        "vorname": "Jan",
+        "encName": "SG9oZW5zZWU=",
+        "encVorname": "SmFu"
+      }
+    ],
+    "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMQ==",
+    "password": {
+      "value": "hKri_ClReKxGVGN4Zs0yPA==",
+      "changeDate": 1537702341919
+    },
+    "needsChange": true
+  },
+  "bdl038": {
+    "name": "Gaggenauer Dartmoskitos 2",
+    "verein": "v011",
+    "spiellokal": {
+      "name": "Schützenhaus \"An der hohlen Eiche\"",
+      "strasse": "Waldstr. 30",
+      "ort": "76532 Baden-Baden / Haueneberstein",
+      "position": {
+        "lat": "48.805878",
+        "lng": "8.230890"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Florian Kohrt",
+      "tel": "0176 - 34471275",
+      "mail": "floko88@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Kohrt",
+        "vorname": "Florian",
+        "encName": "S29ocnQ=",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Nowak",
+        "vorname": "Lukas",
+        "encName": "Tm93YWs=",
+        "encVorname": "THVrYXM="
+      },
+      {
+        "name": "Bache",
+        "vorname": "John",
+        "encName": "QmFjaGU=",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Schier",
+        "vorname": "Mark",
+        "encName": "U2NoaWVy",
+        "encVorname": "TWFyaw=="
+      },
+      {
+        "name": "Nowak",
+        "vorname": "Martin",
+        "encName": "Tm93YWs=",
+        "encVorname": "TWFydGlu"
+      },
+      {
+        "name": "Schubert",
+        "vorname": "Bastian",
+        "encName": "U2NodWJlcnQ=",
+        "encVorname": "QmFzdGlhbg=="
+      },
+      {
+        "name": "Plutta",
+        "vorname": "Mateusz",
+        "encName": "UGx1dHRh",
+        "encVorname": "TWF0ZXVzeg=="
+      },
+      {
+        "name": "Axhami",
+        "vorname": "Mejdi",
+        "encName": "QXhoYW1p",
+        "encVorname": "TWVqZGk="
+      },
+      {
+        "name": "Knoblauch",
+        "vorname": "Florian",
+        "encName": "S25vYmxhdWNo",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Schorpp",
+        "vorname": "Christian ",
+        "encName": "U2Nob3JwcA==",
+        "encVorname": "Q2hyaXN0aWFuIA=="
+      },
+      {
+        "name": "Wieland",
+        "vorname": "Maximilian ",
+        "encName": "V2llbGFuZA==",
+        "encVorname": "TWF4aW1pbGlhbiA="
+      },
+      {
+        "name": "Mayer ",
+        "vorname": "Joel",
+        "encName": "TWF5ZXIg",
+        "encVorname": "Sm9lbA=="
+      },
+      {
+        "name": "Plutta",
+        "vorname": "Ryszard",
+        "encName": "UGx1dHRh",
+        "encVorname": "UnlzemFyZA=="
+      },
+      {
+        "name": "Hirth",
+        "vorname": "Johannes ",
+        "encName": "SGlydGg=",
+        "encVorname": "Sm9oYW5uZXMg"
+      }
+    ],
+    "encTeam": "R2FnZ2VuYXVlciBEYXJ0bW9za2l0b3MgMg==",
+    "password": {
+      "value": "Kmu5RtLM34fVyGbhmmdFpA==",
+      "changeDate": 1535969557147
+    },
+    "needsChange": true
+  },
+  "bdl040": {
+    "name": "Taraxacuma Tornados",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim",
+      "position": {
+        "lat": "49.1966449",
+        "lng": "8.4682968"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "José Cochon",
+      "tel": "0157-58318735",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Billmann",
+        "vorname": "Thorsten",
+        "encName": "QmlsbG1hbm4=",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Oberacker",
+        "vorname": "Ronny",
+        "encName": "T2JlcmFja2Vy",
+        "encVorname": "Um9ubnk="
+      },
+      {
+        "name": "Cochon",
+        "vorname": "José(TC)",
+        "encName": "Q29jaG9u",
+        "encVorname": "Sm9zw6koVEMp"
+      },
+      {
+        "name": "Staffeldt",
+        "vorname": "Oliver",
+        "encName": "U3RhZmZlbGR0",
+        "encVorname": "T2xpdmVy"
+      },
+      {
+        "name": "Scheurer",
+        "vorname": "Frank",
+        "encName": "U2NoZXVyZXI=",
+        "encVorname": "RnJhbms="
+      },
+      {
+        "name": "Mischon",
+        "vorname": "Klaus",
+        "encName": "TWlzY2hvbg==",
+        "encVorname": "S2xhdXM="
+      },
+      {
+        "name": "Härtel",
+        "vorname": "Sandra",
+        "encName": "SMOkcnRlbA==",
+        "encVorname": "U2FuZHJh"
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Daniel",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "RGFuaWVs"
+      },
+      {
+        "name": "Gottwald",
+        "vorname": "Manuela ",
+        "encName": "R290dHdhbGQ=",
+        "encVorname": "TWFudWVsYSA="
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "Beier",
+        "vorname": "Christian",
+        "encName": "QmVpZXI=",
+        "encVorname": "Q2hyaXN0aWFu"
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBUb3JuYWRvcw==",
+    "password": {
+      "value": "aLwj-ipzzMCS7jD3WShG7A==",
+      "changeDate": 1540742326937
+    },
+    "needsChange": true
+  },
+  "bdl041": {
+    "name": "Taraxacuma Wölfe",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstr. 60",
+      "ort": "76661 Philippsburg-Huttenheim",
+      "position": {
+        "lat": "49.1966629",
+        "lng": "8.4684438"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Diana Damsons",
+      "tel": "0176-57770544",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Kartach",
+        "vorname": "Jörg",
+        "encName": "S2FydGFjaA==",
+        "encVorname": "SvZyZw=="
+      },
+      {
+        "name": "Knobloch",
+        "vorname": "Andreas",
+        "encName": "S25vYmxvY2g=",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Schmid",
+        "vorname": "Harald",
+        "encName": "U2NobWlk",
+        "encVorname": "SGFyYWxk"
+      },
+      {
+        "name": "Damsons",
+        "vorname": "Diana",
+        "encName": "RGFtc29ucw==",
+        "encVorname": "RGlhbmE="
+      },
+      {
+        "name": "Steiner",
+        "vorname": "Thomas",
+        "encName": "U3RlaW5lcg==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Hurst",
+        "vorname": "Mike",
+        "encName": "SHVyc3Q=",
+        "encVorname": "TWlrZQ=="
+      },
+      {
+        "name": "Schmid",
+        "vorname": "Colin",
+        "encName": "U2NobWlk",
+        "encVorname": "Q29saW4="
+      },
+      {
+        "name": "Mohr",
+        "vorname": "Jürgen",
+        "encName": "TW9ocg==",
+        "encVorname": "SsO8cmdlbg=="
+      },
+      {
+        "name": "Kammerer",
+        "vorname": "Silvia",
+        "encName": "S2FtbWVyZXI=",
+        "encVorname": "U2lsdmlh"
+      }
+    ],
+    "encTeam": "VGFyYXhhY3VtYSBXw7ZsZmU=",
+    "password": {
+      "value": "Sh-Q0c4CuB-eONx5s2d81Q==",
+      "changeDate": 1535031036888
+    },
+    "needsChange": true
+  },
+  "bdl042": {
+    "name": "1. Eggensteiner Dart Club \"Stingrays\"",
+    "verein": "v002",
+    "spiellokal": {
+      "name": "Bullfinish das Trainingszentrum",
+      "strasse": "Hauptstrasse 87",
+      "ort": "76344 Eggenstein-Leopoldshafen",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Marco Rometsch",
+      "tel": "0170/9241413",
+      "mail": "marco.rometsch@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Rometsch",
+        "vorname": "Marco (TC)",
+        "encName": "Um9tZXRzY2g=",
+        "encVorname": "TWFyY28gKFRDKQ=="
+      },
+      {
+        "name": "Müller",
+        "vorname": "Maurice",
+        "encName": "TcO8bGxlcg==",
+        "encVorname": "TWF1cmljZQ=="
+      },
+      {
+        "name": "Gabel",
+        "vorname": "Sebastian ",
+        "encName": "R2FiZWw=",
+        "encVorname": "U2ViYXN0aWFuIA=="
+      },
+      {
+        "name": "Roller",
+        "vorname": "Patrick",
+        "encName": "Um9sbGVy",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Resch",
+        "vorname": "Uwe",
+        "encName": "UmVzY2g=",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Resch",
+        "vorname": "Kimo",
+        "encName": "UmVzY2g=",
+        "encVorname": "S2ltbw=="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Kevin",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Schumacher",
+        "vorname": "Raphael",
+        "encName": "U2NodW1hY2hlcg==",
+        "encVorname": "UmFwaGFlbA=="
+      },
+      {
+        "name": "Bengel",
+        "vorname": "Sascha",
+        "encName": "QmVuZ2Vs",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Benjamin",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "QmVuamFtaW4="
+      },
+      {
+        "name": "Fromme",
+        "vorname": "Jan",
+        "encName": "RnJvbW1l",
+        "encVorname": "SmFu"
+      }
+    ],
+    "encTeam": "U3RpbmdyYXlz",
+    "password": {
+      "value": "XBIp1COL5bkwDDcsx-0QjQ==",
+      "changeDate": 1536877670530
+    },
+    "needsChange": true
+  },
+  "bdl043": {
+    "name": "501 Jacky Dart`s",
+    "verein": "v003",
+    "spiellokal": {
+      "name": "Bistro 7",
+      "strasse": "Schulzenstrasse 24",
+      "ort": "76771 Hördt",
+      "position": {
+        "lat": "49.1667762",
+        "lng": "8.3248537"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Gerhard Heel",
+      "tel": "0177/9723133",
+      "mail": "G.Heel@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Leisinger",
+        "vorname": "Benedikt",
+        "encName": "TGVpc2luZ2Vy",
+        "encVorname": "QmVuZWRpa3Q="
+      },
+      {
+        "name": "Heel",
+        "vorname": "Gerhard",
+        "encName": "SGVlbA==",
+        "encVorname": "R2VyaGFyZA=="
+      },
+      {
+        "name": "Maaß",
+        "vorname": "Marcel",
+        "encName": "TWFhw58=",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Utting",
+        "vorname": "Nico",
+        "encName": "VXR0aW5n",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Pitz",
+        "vorname": "Stephanie",
+        "encName": "UGl0eg==",
+        "encVorname": "U3RlcGhhbmll"
+      },
+      {
+        "name": "Steinbeißer",
+        "vorname": "Stefanie ",
+        "encName": "U3RlaW5iZWnDn2Vy",
+        "encVorname": "U3RlZmFuaWUg"
+      },
+      {
+        "name": "Muhl",
+        "vorname": "Jens",
+        "encName": "TXVobA==",
+        "encVorname": "SmVucw=="
+      },
+      {
+        "name": "Magin",
+        "vorname": "Sascha",
+        "encName": "TWFnaW4=",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Deutsch",
+        "vorname": "Manuel",
+        "encName": "RGV1dHNjaA==",
+        "encVorname": "TWFudWVs"
+      },
+      {
+        "name": "Steinbeißer",
+        "vorname": "Steffen",
+        "encName": "U3RlaW5iZWnDn2Vy",
+        "encVorname": "U3RlZmZlbg=="
+      },
+      {
+        "name": "Tag",
+        "vorname": "Thomas",
+        "encName": "VGFn",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Lindemeier",
+        "vorname": "Joe",
+        "encName": "TGluZGVtZWllcg==",
+        "encVorname": "Sm9l"
+      }
+    ],
+    "encTeam": "NTAxIEphY2t5IERhcnRgcw==",
+    "password": {
+      "value": "THR__vzmoRWOV02BbK2kKw==",
+      "changeDate": 1537021162271
+    },
+    "needsChange": true
+  },
+  "bdl044": {
+    "name": "DC Un'BE'lievable",
+    "verein": "v009",
+    "spiellokal": {
+      "name": "Zum Kreuzeck - Bei de Be",
+      "strasse": "Obere Hauptstrasse 104",
+      "ort": "76863 Herxheim",
+      "position": {
+        "lat": "49.1463535",
+        "lng": "8.2045113"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Philipp Gregor",
+      "tel": "0176/22387119",
+      "mail": "koenig2712pg@gmail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Rötterer ",
+        "vorname": "Christian",
+        "encName": "UsO2dHRlcmVyIA==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Bidell",
+        "vorname": "Benjamin ",
+        "encName": "QmlkZWxs",
+        "encVorname": "QmVuamFtaW4g"
+      },
+      {
+        "name": "Gregor ",
+        "vorname": "Philipp ",
+        "encName": "R3JlZ29yIA==",
+        "encVorname": "UGhpbGlwcCA="
+      },
+      {
+        "name": "Völker ",
+        "vorname": "Michael ",
+        "encName": "VsO2bGtlciA=",
+        "encVorname": "TWljaGFlbCA="
+      },
+      {
+        "name": "Hatzenbühler ",
+        "vorname": "Stefan ",
+        "encName": "SGF0emVuYsO8aGxlciA=",
+        "encVorname": "U3RlZmFuIA=="
+      },
+      {
+        "name": "Lehmann ",
+        "vorname": "Benjamin ",
+        "encName": "TGVobWFubiA=",
+        "encVorname": "QmVuamFtaW4g"
+      },
+      {
+        "name": "Busch",
+        "vorname": "Lucas",
+        "encName": "QnVzY2g=",
+        "encVorname": "THVjYXM="
+      },
+      {
+        "name": "Kießer ",
+        "vorname": "Pascal",
+        "encName": "S2llw59lciA=",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Schneider",
+        "vorname": "Tobias",
+        "encName": "U2NobmVpZGVy",
+        "encVorname": "VG9iaWFz"
+      }
+    ],
+    "encTeam": "REMgVW4nQkUnbGlldmFibGU=",
+    "password": {
+      "value": "_q8Rdrg1RB96JBVwbl_AoQ==",
+      "changeDate": 1538262300905
+    },
+    "needsChange": true
+  },
+  "bdl045": {
+    "name": "Karlsruher SC 1",
+    "verein": "v012",
+    "spiellokal": {
+      "name": "Karlsruher Sport-Club e.V.",
+      "strasse": "Am Mühlburger Bahnhof 16",
+      "ort": "76189 Karlsruhe , SV Schwarz-Weiß 1952 Mühlburg e.V.",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Flickinger,Florian",
+      "tel": "0162 4501097",
+      "mail": "dart@ksc.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Krüger",
+        "vorname": "Felix ",
+        "encName": "S3LDvGdlcg==",
+        "encVorname": "RmVsaXgg"
+      },
+      {
+        "name": "Gabriel",
+        "vorname": "Marvin",
+        "encName": "R2FicmllbA==",
+        "encVorname": "TWFydmlu"
+      },
+      {
+        "name": "Flickinger",
+        "vorname": "Florian",
+        "encName": "RmxpY2tpbmdlcg==",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Wingerter",
+        "vorname": "Tino",
+        "encName": "V2luZ2VydGVy",
+        "encVorname": "VGlubw=="
+      },
+      {
+        "name": "Schanz",
+        "vorname": "Albert",
+        "encName": "U2NoYW56",
+        "encVorname": "QWxiZXJ0"
+      },
+      {
+        "name": "Gaudenz",
+        "vorname": "Jochen",
+        "encName": "R2F1ZGVueg==",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "Kallinger",
+        "vorname": "Christian ",
+        "encName": "S2FsbGluZ2Vy",
+        "encVorname": "Q2hyaXN0aWFuIA=="
+      },
+      {
+        "name": "Marijanovic",
+        "vorname": "Robert ",
+        "encName": "TWFyaWphbm92aWM=",
+        "encVorname": "Um9iZXJ0IA=="
+      },
+      {
+        "name": "Ehlers",
+        "vorname": "Matthias",
+        "encName": "RWhsZXJz",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Roith",
+        "vorname": "Bernd",
+        "encName": "Um9pdGg=",
+        "encVorname": "QmVybmQ="
+      },
+      {
+        "name": "Ilzhöfer",
+        "vorname": "Lutz",
+        "encName": "SWx6aMO2ZmVy",
+        "encVorname": "THV0eg=="
+      },
+      {
+        "name": "Behnke",
+        "vorname": "Benjamin",
+        "encName": "QmVobmtl",
+        "encVorname": "QmVuamFtaW4="
+      }
+    ],
+    "encTeam": "REEgVW5kZXJkb2dz",
+    "password": {
+      "value": "i8uLJ18zstJYD1HozsJ9Pw==",
+      "changeDate": 1535275165540
+    },
+    "needsChange": true
+  },
+  "bdl046": {
+    "name": "DC Studenten Bellheim 2",
+    "verein": "v016",
+    "spiellokal": {
+      "name": "Tom's Bistro",
+      "strasse": "Hauptstrasse 106",
+      "ort": "76756 Bellheim",
+      "position": {
+        "lat": "49.1913295",
+        "lng": "8.278692"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Hartmut Schmidt",
+      "tel": "0171/4851609",
+      "mail": "ha-thor-sch@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Weigel",
+        "vorname": "Andreas",
+        "encName": "V2VpZ2Vs",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Krübel",
+        "vorname": "Mario",
+        "encName": "S3LDvGJlbA==",
+        "encVorname": "TWFyaW8="
+      },
+      {
+        "name": "Malinowski",
+        "vorname": "Thorsten",
+        "encName": "TWFsaW5vd3NraQ==",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Schmidt",
+        "vorname": "Hartmut",
+        "encName": "U2NobWlkdA==",
+        "encVorname": "SGFydG11dA=="
+      },
+      {
+        "name": "Stein",
+        "vorname": "Volker",
+        "encName": "U3RlaW4=",
+        "encVorname": "Vm9sa2Vy"
+      },
+      {
+        "name": "Eichner",
+        "vorname": "Andreas",
+        "encName": "RWljaG5lcg==",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Diehl",
+        "vorname": "Rico",
+        "encName": "RGllaGw=",
+        "encVorname": "Umljbw=="
+      }
+    ],
+    "encTeam": "REMgU3R1ZGVudGVuIEJlbGxoZWltIDI=",
+    "password": {
+      "value": "77TjxIZMbLRzdpuJmO2vzw==",
+      "changeDate": 1539542044157
+    },
+    "needsChange": true
+  },
+  "bdl047": {
+    "name": "DC Breakers 2",
+    "verein": "v017",
+    "spiellokal": {
+      "name": "Cafe Ricks",
+      "strasse": "Melanchtonstrasse 100",
+      "ort": "75015 Bretten",
+      "position": {
+        "lat": "49.0385021",
+        "lng": "8.6965018"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Zipperle, Nicole",
+      "tel": "017631083460",
+      "mail": "N.zipperle@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Simon",
+        "vorname": "Kim - Kevin",
+        "encName": "U2ltb24=",
+        "encVorname": "S2ltIC0gS2V2aW4="
+      },
+      {
+        "name": "Zipperle",
+        "vorname": "Christopher",
+        "encName": "WmlwcGVybGU=",
+        "encVorname": "Q2hyaXN0b3BoZXI="
+      },
+      {
+        "name": "Güclü",
+        "vorname": "Illhan",
+        "encName": "R8O8Y2zDvA==",
+        "encVorname": "SWxsaGFu"
+      },
+      {
+        "name": "Zipperle",
+        "vorname": "Nicole",
+        "encName": "WmlwcGVybGU=",
+        "encVorname": "Tmljb2xl"
+      },
+      {
+        "name": "Tretter",
+        "vorname": "Markus",
+        "encName": "VHJldHRlcg==",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Oliver",
+        "encName": "TcO8bGxlcg==",
+        "encVorname": "T2xpdmVy"
+      }
+    ],
+    "encTeam": "QkRDIEJyZWFrZXJzIDI=",
+    "password": {
+      "value": "GM6IlEpRpd8-Ri588lpGPQ==",
+      "changeDate": 1537643056535
+    },
+    "needsChange": true
+  },
+  "bdl048": {
+    "name": "1. Eggensteiner Dart Club \"One 80`s\"",
+    "verein": "v002",
+    "spiellokal": {
+      "name": "Bullfinish das Trainingszentrum",
+      "strasse": "Hauptstrasse 87",
+      "ort": "76344 Eggenstein-Leopoldshafen",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Jörg Hecker",
+      "tel": "0174/7556894",
+      "mail": "jrg.hecker@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Hentschel-Hoffmann",
+        "vorname": "Holger",
+        "encName": "SGVudHNjaGVsLUhvZmZtYW5u",
+        "encVorname": "SG9sZ2Vy"
+      },
+      {
+        "name": "Opp",
+        "vorname": "Thomas",
+        "encName": "T3Bw",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Rasch",
+        "vorname": "Niklas",
+        "encName": "UmFzY2g=",
+        "encVorname": "TmlrbGFz"
+      },
+      {
+        "name": "Baier",
+        "vorname": "Christian",
+        "encName": "QmFpZXI=",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Fetscher",
+        "vorname": "Deniz",
+        "encName": "RmV0c2NoZXI=",
+        "encVorname": "RGVuaXo="
+      },
+      {
+        "name": "Rasch",
+        "vorname": "Thorsten",
+        "encName": "UmFzY2g=",
+        "encVorname": "VGhvcnN0ZW4="
+      },
+      {
+        "name": "Keilhauer",
+        "vorname": "Armin ",
+        "encName": "S2VpbGhhdWVy",
+        "encVorname": "QXJtaW4g"
+      },
+      {
+        "name": "Hecker (TC)",
+        "vorname": "Jörg",
+        "encName": "SGVja2VyIChUQyk=",
+        "encVorname": "SsO2cmc="
+      },
+      {
+        "name": "Interdonato",
+        "vorname": "Giovanni",
+        "encName": "SW50ZXJkb25hdG8=",
+        "encVorname": "R2lvdmFubmk="
+      },
+      {
+        "name": "Schulz",
+        "vorname": "Andreas",
+        "encName": "U2NodWx6",
+        "encVorname": "QW5kcmVhcw=="
+      }
+    ],
+    "encTeam": "T25lIDgwYHM=",
+    "password": {
+      "value": "lSQZkLQ8aG5JtfTKZoTVTA==",
+      "changeDate": 1538859426737
+    },
+    "needsChange": true
+  },
+  "bdl049": {
+    "name": "20 seventeen",
+    "verein": "v030",
+    "spiellokal": {
+      "name": "Zum Schraubstöckl",
+      "strasse": "Johann-Nikolaus-Kolb Str. 25",
+      "ort": "69207 Sandhausen",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Ralf Stolze",
+      "tel": "015772072654",
+      "mail": "ralf.slk2@freenet.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Strunz",
+        "vorname": "Rainer",
+        "encName": "U3RydW56",
+        "encVorname": "UmFpbmVy"
+      },
+      {
+        "name": "Hambrecht",
+        "vorname": "Dennis",
+        "encName": "SGFtYnJlY2h0",
+        "encVorname": "RGVubmlz"
+      },
+      {
+        "name": "Stolze",
+        "vorname": "Ralf",
+        "encName": "U3RvbHpl",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Pommer",
+        "vorname": "Christiane",
+        "encName": "UG9tbWVy",
+        "encVorname": "Q2hyaXN0aWFuZQ=="
+      },
+      {
+        "name": "Grahem",
+        "vorname": "Derek ",
+        "encName": "R3JhaGVt",
+        "encVorname": "RGVyZWsg"
+      },
+      {
+        "name": "Wacker",
+        "vorname": "Sven",
+        "encName": "V2Fja2Vy",
+        "encVorname": "U3Zlbg=="
+      },
+      {
+        "name": "Zimmermann",
+        "vorname": " Peter",
+        "encName": "WmltbWVybWFubg==",
+        "encVorname": "IFBldGVy"
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "RMlv0wZEOG5kSTVBR-MPfg==",
+      "changeDate": 1537850128555
+    },
+    "needsChange": true
+  },
+  "bdl050": {
+    "name": "Dartspub Walldorf 4",
+    "verein": "v021",
+    "spiellokal": {
+      "name": "Zur Alten Rose",
+      "strasse": "Häuserstrasse 22",
+      "ort": "68789 St. Leon-Rot",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Jan Jäger",
+      "tel": "0171 1272165",
+      "mail": "janxjaeger@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Jäger",
+        "vorname": "Jan",
+        "encName": "SsOkZ2Vy",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Kraft",
+        "vorname": "Claudia",
+        "encName": "S3JhZnQ=",
+        "encVorname": "Q2xhdWRpYQ=="
+      },
+      {
+        "name": "Darr",
+        "vorname": "Thomas",
+        "encName": "RGFycg==",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Kirstein",
+        "vorname": "Jannis",
+        "encName": "S2lyc3RlaW4=",
+        "encVorname": "SmFubmlz"
+      },
+      {
+        "name": "Eszalari",
+        "vorname": "Adam",
+        "encName": "RXN6YWxhcmk=",
+        "encVorname": "QWRhbQ=="
+      },
+      {
+        "name": "Rudolf",
+        "vorname": "Andreas",
+        "encName": "UnVkb2xm",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Liebscher",
+        "vorname": "Sebastian",
+        "encName": "TGllYnNjaGVy",
+        "encVorname": "U2ViYXN0aWFu"
+      },
+      {
+        "name": "Winter",
+        "vorname": "Dennis",
+        "encName": "V2ludGVy",
+        "encVorname": "RGVubmlz"
+      },
+      {
+        "name": "Große-Stoltenberg",
+        "vorname": "Stefanie",
+        "encName": "R3Jvw59lLVN0b2x0ZW5iZXJn",
+        "encVorname": "U3RlZmFuaWU="
+      },
+      {
+        "name": "Koch",
+        "vorname": "Leo",
+        "encName": "S29jaA==",
+        "encVorname": "TGVv"
+      },
+      {
+        "name": "Müller",
+        "vorname": "Nico",
+        "encName": "TcO8bGxlcg==",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Mertsch",
+        "vorname": "Dennis",
+        "encName": "TWVydHNjaA==",
+        "encVorname": "RGVubmlz"
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "Fg6fySQhpbZiGnR0Lo6jZA==",
+      "changeDate": 1536349721794
+    },
+    "needsChange": true
+  },
+  "bdl051": {
+    "name": "DC Undertaker reloaded 3",
+    "verein": "v001",
+    "spiellokal": {
+      "name": "Zur Alten Rose",
+      "strasse": "Häuserstrasse 22",
+      "ort": "68789 St. Leon-Rot",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Kolja Greulich",
+      "tel": "0151 40448354",
+      "mail": "locke44@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Greulich",
+        "vorname": "Kolja",
+        "encName": "R3JldWxpY2g=",
+        "encVorname": "S29samE="
+      },
+      {
+        "name": "Albrecht",
+        "vorname": "Robert",
+        "encName": "QWxicmVjaHQ=",
+        "encVorname": "Um9iZXJ0"
+      },
+      {
+        "name": "Weingand",
+        "vorname": "Marcel",
+        "encName": "V2VpbmdhbmQ=",
+        "encVorname": "TWFyY2Vs"
+      },
+      {
+        "name": "Weingand",
+        "vorname": "Carsten",
+        "encName": "V2VpbmdhbmQ=",
+        "encVorname": "Q2Fyc3Rlbg=="
+      },
+      {
+        "name": "Albrecht",
+        "vorname": "Mario",
+        "encName": "QWxicmVjaHQ=",
+        "encVorname": "TWFyaW8="
+      },
+      {
+        "name": "Weis",
+        "vorname": "Rainer",
+        "encName": "V2Vpcw==",
+        "encVorname": "UmFpbmVy"
+      },
+      {
+        "name": "Zaich",
+        "vorname": "Ralf",
+        "encName": "WmFpY2g=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Zaich",
+        "vorname": "Kevin",
+        "encName": "WmFpY2g=",
+        "encVorname": "S2V2aW4="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "wsMszPG86__GjoDxQUupFw==",
+      "changeDate": 1535118274364
+    },
+    "needsChange": true
+  },
+  "bdl052": {
+    "name": "Taraxacuma Odin",
+    "verein": "v008",
+    "spiellokal": {
+      "name": "Holzwurm",
+      "strasse": "Rheinstrasse 60",
+      "ort": "76661 Huttenheim",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Steffen Becker",
+      "tel": "01794885836",
+      "mail": "taraxacuma@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Hertel",
+        "vorname": "Dirk",
+        "encName": "SGVydGVs",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Steiner",
+        "vorname": "Melanie",
+        "encName": "U3RlaW5lcg==",
+        "encVorname": "TWVsYW5pZQ=="
+      },
+      {
+        "name": "Peller",
+        "vorname": "Manuel",
+        "encName": "UGVsbGVy",
+        "encVorname": "TWFudWVs"
+      },
+      {
+        "name": "Schwarz",
+        "vorname": "Volker",
+        "encName": "U2Nod2Fyeg==",
+        "encVorname": "Vm9sa2Vy"
+      },
+      {
+        "name": "Alzner",
+        "vorname": "Peter",
+        "encName": "QWx6bmVy",
+        "encVorname": "UGV0ZXI="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Steffen (TC)",
+        "encName": "QmVja2Vy",
+        "encVorname": "U3RlZmZlbiAoVEMp"
+      },
+      {
+        "name": "Dietrich",
+        "vorname": "Steffen",
+        "encName": "RGlldHJpY2g=",
+        "encVorname": "U3RlZmZlbg=="
+      },
+      {
+        "name": "Fischer",
+        "vorname": "Christopher",
+        "encName": "RmlzY2hlcg==",
+        "encVorname": "Q2hyaXN0b3BoZXI="
+      },
+      {
+        "name": "Hoffmann",
+        "vorname": "Jochen",
+        "encName": "SG9mZm1hbm4=",
+        "encVorname": "Sm9jaGVu"
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      },
+      {
+        "name": "Vogel",
+        "vorname": "Marius",
+        "encName": "Vm9nZWw=",
+        "encVorname": "TWFyaXVz"
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "zDsycI1Y9GSptqSyujWWXA==",
+      "changeDate": 1535635039698
+    },
+    "needsChange": true
+  },
+  "bdl053": {
+    "name": "Baden Bulls Bühl",
+    "verein": "v032",
+    "spiellokal": {
+      "name": "Momo's Bistro",
+      "strasse": "Bühlertal Str. 30",
+      "ort": "77815 Bühl",
+      "position": {
+        "lat": "48.6941060",
+        "lng": "8.1389590"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Stefan Schilbach",
+      "tel": "0179 9471204",
+      "mail": "a.s.schilbach@arcor.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Schilbach",
+        "vorname": "Stefan",
+        "encName": "U2NoaWxiYWNo",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Urlu",
+        "vorname": "Hüseyin",
+        "encName": "VXJsdQ==",
+        "encVorname": "SMO8c2V5aW4="
+      },
+      {
+        "name": "Schilbach",
+        "vorname": "Domenic ",
+        "encName": "U2NoaWxiYWNo",
+        "encVorname": "RG9tZW5pYyA="
+      },
+      {
+        "name": "Fuust",
+        "vorname": "Kerstin ",
+        "encName": "RnV1c3Q=",
+        "encVorname": "S2Vyc3RpbiA="
+      },
+      {
+        "name": "Kimmig",
+        "vorname": "Florian ",
+        "encName": "S2ltbWln",
+        "encVorname": "RmxvcmlhbiA="
+      },
+      {
+        "name": "Muscatello",
+        "vorname": "Antonio",
+        "encName": "TXVzY2F0ZWxsbw==",
+        "encVorname": "QW50b25pbw=="
+      },
+      {
+        "name": "Spengler",
+        "vorname": "Harald ",
+        "encName": "U3BlbmdsZXI=",
+        "encVorname": "SGFyYWxkIA=="
+      },
+      {
+        "name": "Schmitt",
+        "vorname": "Mathias",
+        "encName": "U2NobWl0dA==",
+        "encVorname": "TWF0aGlhcw=="
+      },
+      {
+        "name": "Moritz",
+        "vorname": "John",
+        "encName": "TW9yaXR6",
+        "encVorname": "Sm9obg=="
+      },
+      {
+        "name": "Muscatello",
+        "vorname": "Massimiliano",
+        "encName": "TXVzY2F0ZWxsbw==",
+        "encVorname": "TWFzc2ltaWxpYW5v"
+      },
+      {
+        "name": "Metz",
+        "vorname": "Pascal",
+        "encName": "TWV0eg==",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Metz",
+        "vorname": "Lucas",
+        "encName": "TWV0eg==",
+        "encVorname": "THVjYXM="
+      },
+      {
+        "name": "Wolf",
+        "vorname": "Benjamin",
+        "encName": "V29sZg==",
+        "encVorname": "QmVuamFtaW4="
+      },
+      {
+        "name": "Garcia",
+        "vorname": "Antonio",
+        "encName": "R2FyY2lh",
+        "encVorname": "QW50b25pbw=="
+      },
+      {
+        "name": "Fröhlich",
+        "vorname": "Tobias",
+        "encName": "RnLDtmhsaWNo",
+        "encVorname": "VG9iaWFz"
+      },
+      {
+        "name": "Fröhlich",
+        "vorname": "Jörg",
+        "encName": "RnLDtmhsaWNo",
+        "encVorname": "SsO2cmc="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "IWG42RbEL8B_DJGi4yQIdQ==",
+      "changeDate": 1537184451228
+    },
+    "needsChange": true
+  },
+  "bdl054": {
+    "name": "DC Lucky Hands",
+    "verein": "v031",
+    "spiellokal": {
+      "name": "Linde",
+      "strasse": "Großweierer Str. 92",
+      "ort": "77855 Achern",
+      "position": {
+        "lat": "48.654472",
+        "lng": "8.047004"
+      },
+      "nichtraucher": false,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Stefan Seifermann",
+      "tel": "0152 53965445",
+      "mail": "stefzeseifermann@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Seifermann",
+        "vorname": "Stefan",
+        "encName": "U2VpZmVybWFubg==",
+        "encVorname": "U3RlZmFu"
+      },
+      {
+        "name": "Weis",
+        "vorname": "Uwe",
+        "encName": "V2Vpcw==",
+        "encVorname": "VXdl"
+      },
+      {
+        "name": "Spengler",
+        "vorname": "Reinhard",
+        "encName": "U3BlbmdsZXI=",
+        "encVorname": "UmVpbmhhcmQ="
+      },
+      {
+        "name": "Zink",
+        "vorname": "Roland",
+        "encName": "Wmluaw==",
+        "encVorname": "Um9sYW5k"
+      },
+      {
+        "name": "Zink",
+        "vorname": "Tanja",
+        "encName": "Wmluaw==",
+        "encVorname": "VGFuamE="
+      },
+      {
+        "name": "Niedick",
+        "vorname": "Christian",
+        "encName": "TmllZGljaw==",
+        "encVorname": "Q2hyaXN0aWFu"
+      },
+      {
+        "name": "Huber",
+        "vorname": "Michael ",
+        "encName": "SHViZXI=",
+        "encVorname": "TWljaGFlbCA="
+      },
+      {
+        "name": "König",
+        "vorname": "Timo",
+        "encName": "S8O2bmln",
+        "encVorname": "VGltbw=="
+      },
+      {
+        "name": "Doll",
+        "vorname": "Pascal",
+        "encName": "RG9sbA==",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Ellwanger",
+        "vorname": "Björn",
+        "encName": "RWxsd2FuZ2Vy",
+        "encVorname": "QmrDtnJu"
+      },
+      {
+        "name": "Kramosch",
+        "vorname": "Sarah",
+        "encName": "S3JhbW9zY2g=",
+        "encVorname": "U2FyYWg="
+      },
+      {
+        "name": "Feurer",
+        "vorname": "Klaus",
+        "encName": "RmV1cmVy",
+        "encVorname": "S2xhdXM="
+      },
+      {
+        "name": "Große",
+        "vorname": "Jan Peter",
+        "encName": "R3Jvw59l",
+        "encVorname": "SmFuIFBldGVy"
+      },
+      {
+        "name": "Wölk",
+        "vorname": "Mario",
+        "encName": "V8O2bGs=",
+        "encVorname": "TWFyaW8="
+      },
+      {
+        "name": "Özdemir",
+        "vorname": "Baran",
+        "encName": "w5Z6ZGVtaXI=",
+        "encVorname": "QmFyYW4="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "mYj29fDQu0BppK0JwlQCjw==",
+      "changeDate": 1536240684729
+    },
+    "needsChange": true
+  },
+  "bdl055": {
+    "name": "Karlsruher SC 2",
+    "verein": "v029",
+    "spiellokal": {
+      "name": "Karlsruher Sport-Club e.V.",
+      "strasse": "Am Mühlburger Bahnhof 16",
+      "ort": "76189 Karlsruhe, Clubhaus SV Mühlburg",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Tom Hübner",
+      "tel": "017640015148",
+      "mail": "xxx_lets_rock@yahoo.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Hübner",
+        "vorname": "Tom ",
+        "encName": "SMO8Ym5lcg==",
+        "encVorname": "VG9tIA=="
+      },
+      {
+        "name": "Korbmann ",
+        "vorname": "Robin",
+        "encName": "S29yYm1hbm4g",
+        "encVorname": "Um9iaW4="
+      },
+      {
+        "name": "Hauenstein",
+        "vorname": "Michael",
+        "encName": "SGF1ZW5zdGVpbg==",
+        "encVorname": "TWljaGFlbA=="
+      },
+      {
+        "name": "Lohner",
+        "vorname": "Markus",
+        "encName": "TG9obmVy",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Selinga",
+        "vorname": "Kim",
+        "encName": "U2VsaW5nYQ==",
+        "encVorname": "S2lt"
+      },
+      {
+        "name": "Pihi",
+        "vorname": "Deniel",
+        "encName": "UGloaQ==",
+        "encVorname": "RGVuaWVs"
+      },
+      {
+        "name": "Birke",
+        "vorname": "Thomas",
+        "encName": "Qmlya2U=",
+        "encVorname": "VGhvbWFz"
+      },
+      {
+        "name": "Mergl ",
+        "vorname": "Marco ",
+        "encName": "TWVyZ2wg",
+        "encVorname": "TWFyY28g"
+      },
+      {
+        "name": "Bohlender",
+        "vorname": "Steffen ",
+        "encName": "Qm9obGVuZGVy",
+        "encVorname": "U3RlZmZlbiA="
+      },
+      {
+        "name": "Ehlers",
+        "vorname": "Stefan",
+        "encName": "RWhsZXJz",
+        "encVorname": "U3RlZmFu"
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "13Dv5q3YuJeR8BSq6h5t-Q==",
+      "changeDate": 1538310251266
+    },
+    "needsChange": true
+  },
+  "bdl056": {
+    "name": "Black Vikings",
+    "verein": "v028",
+    "spiellokal": {
+      "name": "Sinop57",
+      "strasse": "Bahnhofstr. 1",
+      "ort": "76316 Malsch",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": false,
+      "jugend": false
+    },
+    "teamvertreter": {
+      "name": "Serkan Celik",
+      "tel": "01722391800",
+      "mail": "serkancelik91@gmail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Celik",
+        "vorname": "Serkan ",
+        "encName": "Q2VsaWs=",
+        "encVorname": "U2Vya2FuIA=="
+      },
+      {
+        "name": "Straube",
+        "vorname": "Felix",
+        "encName": "U3RyYXViZQ==",
+        "encVorname": "RmVsaXg="
+      },
+      {
+        "name": "Durm",
+        "vorname": "Nico",
+        "encName": "RHVybQ==",
+        "encVorname": "Tmljbw=="
+      },
+      {
+        "name": "Kull",
+        "vorname": "Patrick",
+        "encName": "S3VsbA==",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Sprino",
+        "vorname": "Michelangelo",
+        "encName": "U3ByaW5v",
+        "encVorname": "TWljaGVsYW5nZWxv"
+      },
+      {
+        "name": "Öztas",
+        "vorname": "Pascal",
+        "encName": "w5Z6dGFz",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Hennig ",
+        "vorname": "Yannick ",
+        "encName": "SGVubmlnIA==",
+        "encVorname": "WWFubmljayA="
+      },
+      {
+        "name": "Weinert",
+        "vorname": "Leon",
+        "encName": "V2VpbmVydA==",
+        "encVorname": "TGVvbg=="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "9vH8qfdcAcwNi764FSV2_w==",
+      "changeDate": 1541414250067
+    },
+    "needsChange": true
+  },
+  "bdl057": {
+    "name": "1. Eggensteiner Dart Club \"Indians\"",
+    "verein": "v002",
+    "spiellokal": {
+      "name": "Bullfinish-Das Dart Trainingszentrum",
+      "strasse": "Hauptstr. 87",
+      "ort": "76344 Eggenstein-Leopoldshafen",
+      "position": {
+        "lat": "49.076070",
+        "lng": "8.389217"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "David Jewell",
+      "tel": "01523 2061631",
+      "mail": "d-jewell@t-online.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Waibel",
+        "vorname": "Fabian",
+        "encName": "V2FpYmVs",
+        "encVorname": "RmFiaWFu"
+      },
+      {
+        "name": "Sigg",
+        "vorname": "Mario",
+        "encName": "U2lnZw==",
+        "encVorname": "TWFyaW8="
+      },
+      {
+        "name": "Fichtinger",
+        "vorname": "Patrick",
+        "encName": "RmljaHRpbmdlcg==",
+        "encVorname": "UGF0cmljaw=="
+      },
+      {
+        "name": "Pilgrim",
+        "vorname": "Jerry",
+        "encName": "UGlsZ3JpbQ==",
+        "encVorname": "SmVycnk="
+      },
+      {
+        "name": "Jewell",
+        "vorname": "David (TC)",
+        "encName": "SmV3ZWxs",
+        "encVorname": "RGF2aWQgKFRDKQ=="
+      },
+      {
+        "name": "Knebel",
+        "vorname": "Pascal",
+        "encName": "S25lYmVs",
+        "encVorname": "UGFzY2Fs"
+      },
+      {
+        "name": "Rothley",
+        "vorname": "Marco",
+        "encName": "Um90aGxleQ==",
+        "encVorname": "TWFyY28="
+      },
+      {
+        "name": "Banse",
+        "vorname": "Yannick",
+        "encName": "QmFuc2U=",
+        "encVorname": "WWFubmljaw=="
+      },
+      {
+        "name": "Taubert",
+        "vorname": "Florian",
+        "encName": "VGF1YmVydA==",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Christopher Kästel",
+        "vorname": "",
+        "encName": "Q2hyaXN0b3BoZXIgS8Okc3RlbA==",
+        "encVorname": ""
+      },
+      {
+        "name": "Marotta",
+        "vorname": "Fabio",
+        "encName": "TWFyb3R0YQ==",
+        "encVorname": "RmFiaW8="
+      },
+      {
+        "name": "",
+        "vorname": "",
+        "encName": "",
+        "encVorname": ""
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "FMl7BIoTIY6XJ6ceNdgecA==",
+      "changeDate": 1535196483103
+    },
+    "needsChange": true
+  },
+  "bdl058": {
+    "name": "D.A.R.T. Plumbata Romulus",
+    "verein": "v013",
+    "spiellokal": {
+      "name": "Chuch Chill Sportsbar",
+      "strasse": "Karlstr. 115",
+      "ort": "76137 Karlsruhe",
+      "position": {
+        "lat": "48.996865",
+        "lng": "8.3941511"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Jan Hofmann",
+      "tel": "015112808048",
+      "mail": "Jan.Hofmann92@gmx.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Hofmann (TC)",
+        "vorname": "Jan",
+        "encName": "SG9mbWFubiAoVEMp",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Poppek",
+        "vorname": "Tobias ",
+        "encName": "UG9wcGVr",
+        "encVorname": "VG9iaWFzIA=="
+      },
+      {
+        "name": "Berninger",
+        "vorname": "Hans",
+        "encName": "QmVybmluZ2Vy",
+        "encVorname": "SGFucw=="
+      },
+      {
+        "name": "Alpino",
+        "vorname": "Fabio ",
+        "encName": "QWxwaW5v",
+        "encVorname": "RmFiaW8g"
+      },
+      {
+        "name": "Joudi",
+        "vorname": "Josef",
+        "encName": "Sm91ZGk=",
+        "encVorname": "Sm9zZWY="
+      },
+      {
+        "name": "Abt",
+        "vorname": "Gabriel ",
+        "encName": "QWJ0",
+        "encVorname": "R2FicmllbCA="
+      },
+      {
+        "name": "Berninger",
+        "vorname": "Martin ",
+        "encName": "QmVybmluZ2Vy",
+        "encVorname": "TWFydGluIA=="
+      },
+      {
+        "name": "Klein",
+        "vorname": "Ralf ",
+        "encName": "S2xlaW4=",
+        "encVorname": "UmFsZiA="
+      },
+      {
+        "name": "Falscher",
+        "vorname": "Daniel",
+        "encName": "RmFsc2NoZXI=",
+        "encVorname": "RGFuaWVs"
+      },
+      {
+        "name": "Renz ",
+        "vorname": "Matthias",
+        "encName": "UmVueiA=",
+        "encVorname": "TWF0dGhpYXM="
+      },
+      {
+        "name": "Ernst",
+        "vorname": "Sarah",
+        "encName": "RXJuc3Q=",
+        "encVorname": "U2FyYWg="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "oFdtoVNXJYMuXXZBAvI7uA==",
+      "changeDate": 1543339887141
+    },
+    "needsChange": true
+  },
+  "bdl059": {
+    "name": "Diamonds Speyer",
+    "verein": "v034",
+    "spiellokal": {
+      "name": "Diamonds Speyer",
+      "strasse": "Lessingstr. 2",
+      "ort": "76346 Speyer",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Florian Weber",
+      "tel": "06232 6911976",
+      "mail": "sabrinalucas14.01.1983@gmail.com"
+    },
+    "mitglieder": [
+      {
+        "name": "Lucas",
+        "vorname": "Jan",
+        "encName": "THVjYXM=",
+        "encVorname": "SmFu"
+      },
+      {
+        "name": "Heinz",
+        "vorname": "Dirk",
+        "encName": "SGVpbno=",
+        "encVorname": "RGlyaw=="
+      },
+      {
+        "name": "Weber",
+        "vorname": "Florian",
+        "encName": "V2ViZXI=",
+        "encVorname": "Rmxvcmlhbg=="
+      },
+      {
+        "name": "Rohr",
+        "vorname": "Kevin ",
+        "encName": "Um9ocg==",
+        "encVorname": "S2V2aW4g"
+      },
+      {
+        "name": "Betzer",
+        "vorname": "Jean",
+        "encName": "QmV0emVy",
+        "encVorname": "SmVhbg=="
+      },
+      {
+        "name": "Franger",
+        "vorname": "Steffen",
+        "encName": "RnJhbmdlcg==",
+        "encVorname": "U3RlZmZlbg=="
+      },
+      {
+        "name": "Reber",
+        "vorname": "Uwe ",
+        "encName": "UmViZXI=",
+        "encVorname": "VXdlIA=="
+      },
+      {
+        "name": "Lehr",
+        "vorname": "Klaus",
+        "encName": "TGVocg==",
+        "encVorname": "S2xhdXM="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "egwwUrR8t3aD85oqUIv-yQ==",
+      "changeDate": 1536861088154
+    },
+    "needsChange": true
+  },
+  "bdl060": {
+    "name": "DC Zorniggel",
+    "verein": "v033",
+    "spiellokal": {
+      "name": "Dartcafe Zorniggel",
+      "strasse": "Eselsdamm 34",
+      "ort": "67346 Speyer",
+      "position": {
+        "lat": "49.0760959",
+        "lng": "8.3868037"
+      },
+      "nichtraucher": true,
+      "jugend": true
+    },
+    "teamvertreter": {
+      "name": "Jan Grüger",
+      "tel": "0171 5394277",
+      "mail": "jan_grueger@web.de"
+    },
+    "mitglieder": [
+      {
+        "name": "Grüger",
+        "vorname": "Jan ",
+        "encName": "R3LDvGdlcg==",
+        "encVorname": "SmFuIA=="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Manfred",
+        "encName": "QmVja2Vy",
+        "encVorname": "TWFuZnJlZA=="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Ralf",
+        "encName": "QmVja2Vy",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Beutelsbacher",
+        "vorname": "Daniela",
+        "encName": "QmV1dGVsc2JhY2hlcg==",
+        "encVorname": "RGFuaWVsYQ=="
+      },
+      {
+        "name": "Flory",
+        "vorname": "Andreas",
+        "encName": "Rmxvcnk=",
+        "encVorname": "QW5kcmVhcw=="
+      },
+      {
+        "name": "Groll",
+        "vorname": "Markus",
+        "encName": "R3JvbGw=",
+        "encVorname": "TWFya3Vz"
+      },
+      {
+        "name": "Knebel",
+        "vorname": "Kai",
+        "encName": "S25lYmVs",
+        "encVorname": "S2Fp"
+      },
+      {
+        "name": "König",
+        "vorname": "Fabian",
+        "encName": "S8O2bmln",
+        "encVorname": "RmFiaWFu"
+      },
+      {
+        "name": "Liesy",
+        "vorname": "Ralf",
+        "encName": "TGllc3k=",
+        "encVorname": "UmFsZg=="
+      },
+      {
+        "name": "Renye",
+        "vorname": "Joachim",
+        "encName": "UmVueWU=",
+        "encVorname": "Sm9hY2hpbQ=="
+      },
+      {
+        "name": "Hosch",
+        "vorname": "Sascha",
+        "encName": "SG9zY2g=",
+        "encVorname": "U2FzY2hh"
+      },
+      {
+        "name": "Buchmann",
+        "vorname": "Julian Marvin",
+        "encName": "QnVjaG1hbm4=",
+        "encVorname": "SnVsaWFuIE1hcnZpbg=="
+      },
+      {
+        "name": "Fuchs",
+        "vorname": "Kevin",
+        "encName": "RnVjaHM=",
+        "encVorname": "S2V2aW4="
+      },
+      {
+        "name": "Becker",
+        "vorname": "Maiko",
+        "encName": "QmVja2Vy",
+        "encVorname": "TWFpa28="
+      }
+    ],
+    "encTeam": "",
+    "password": {
+      "value": "d1BUNLb2F5fX53b9VZMc1A==",
+      "changeDate": 1536004574442
+    },
+    "needsChange": true
   }
 }

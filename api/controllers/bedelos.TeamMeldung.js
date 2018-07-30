@@ -6,6 +6,7 @@ var config = require('config');
 var os = require('os');
 var _ = require('lodash');
 var fs = require('fs');
+var qs = require('querystring');
 var pug = require('pug');
 var jsonfile = require('jsonfile');
 var moment = require('moment');
@@ -32,12 +33,12 @@ function ask(req, res) {
             var aTeams = _.flatMap(oTeams, (team, teamID) => {
                 return {
                     id: teamID,
-                    name: `Team: ${team.name} (${teamID})`
+                    name: Buffer.from(`Team: ${qs.escape(team.name)} (${teamID})`).toString('base64')
                 };
             }).concat(_.flatMap(oVereine, (verein, vereinsID) => {
                 return {
                     id: vereinsID,
-                    name: `Verein: ${verein.name } (${vereinsID})`
+                    name: Buffer.from(`Verein: ${qs.escape(verein.name)} (${vereinsID})`).toString('base64')
                 };
             }));
 

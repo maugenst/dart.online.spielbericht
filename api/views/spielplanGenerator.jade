@@ -13,12 +13,12 @@ html
         script(src='/bedelos/scripts/bootstrap.min.js')
         script(src='/bedelos/scripts/bootstrap-datepicker.js')
         script(src='/bedelos/locales/bootstrap-datepicker.de.min.js')
-        script(src='/bedelos/scripts/bootstrap-typeahead.js')
+        script(src='/bedelos/scripts/bootstrap3-typeahead.js')
         link(href='/bedelos/styles/jstree.style.css', rel='stylesheet')
         link(href='/bedelos/styles/bootstrap-datepicker3.min.css', rel='stylesheet')
         title BDL Online Spielplan Generator
 
-    body(style={"font-family": 'Calibri'})
+    body(style={"font-family": 'Arial, Helvetica'})
         each liga, i in oLigen
             input(id='nextGameIndex' + i, type='hidden', value=spielplan[i].nextGameIndex)
 
@@ -228,6 +228,7 @@ html
             $('#gast').val("");
             $('#gast').prop('disabled', $('#spielfrei').prop('checked'))
         };
+
         function updateGameIndex() {
             var sLiga = $('#liga option:selected').val();
             $('#gameIndex').val($('#nextGameIndex'+sLiga).val());
@@ -235,6 +236,7 @@ html
 
         var $input = $('.typeahead');
         var aTeams = JSON.parse("#{sTeams}".replace(/&quot;/g,'"'));
+        //aTeams.forEach(team => team.name = atob(team.name).replace(/"/g, ''));
         $input.typeahead({
             source: aTeams,
             autoSelect: true

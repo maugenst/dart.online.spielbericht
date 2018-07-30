@@ -1,3 +1,4 @@
 #!/bin/bash
 echo Calling prettier on $1
-prettier --write $1 --print-width 120 --tab-width 4 --single-quote --no-bracket-spacing --parser flow
+node node_modules/prettier/bin-prettier.js --version
+node node_modules/prettier/bin-prettier.js --print-width 560 --tab-width 4 --single-quote --no-bracket-spacing --parser flow --write $1

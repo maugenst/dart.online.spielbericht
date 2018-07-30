@@ -53,6 +53,7 @@ html
 
         var $input = $('.typeahead');
         var aTeams = JSON.parse("#{sTeams}".replace(/&quot;/g,'"'));
+        aTeams.forEach(team => team.name = decodeURI(atob(team.name)));
         $input.typeahead({
             source: aTeams,
             autoSelect: true

@@ -124,7 +124,7 @@ function getSpielplan (req, res) {
         for(let team in oTeams) {
             aTeams.push({
                 id: team,
-                name: oTeams[team].name
+                name: oTeams[team].name.replace(/"/g, '')
             })
         }
 
