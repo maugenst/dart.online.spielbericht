@@ -1,4 +1,5 @@
 'use strict';
+const _ = require('lodash');
 /**
  * Created by d032233 on 24.03.2016.
  */
@@ -52,6 +53,41 @@ function calcPlayerScore(oPlayer) {
     return iRet;
 }
 
+function calcPlayerScoreNew(oPlayer) {
+    var iRet = 0;
+    iRet += oPlayer.single['3:0'] * 2;
+    iRet += oPlayer.single['3:1'] * 2;
+    iRet += oPlayer.single['3:2'] * 2;
+    iRet += oPlayer.double['3:0'];
+    iRet += oPlayer.double['3:1'];
+    iRet += oPlayer.double['3:2'];
+    return iRet;
+}
+
+function calcHighFinishes(oPlayer) {
+    var iRet = 0;
+    for(var hfs in oPlayer.hf) {
+        iRet += oPlayer.hf[hfs];
+    }
+    return iRet;
+}
+
+function calcShortLegs(oPlayer) {
+    var iRet = 0;
+    for(var sls in oPlayer.sl) {
+        iRet += oPlayer.sl[sls];
+    }
+    return iRet;
+}
+
+function calcMaxima(oPlayer) {
+    var iRet = 0;
+    for(var maximas in oPlayer.max) {
+        iRet += oPlayer.max[maximas];
+    }
+    return iRet;
+}
+
 function generateRankingArray(oStatistic, oTeams) {
     var aRanking = [];
     for (var player in oStatistic) {
@@ -61,7 +97,16 @@ function generateRankingArray(oStatistic, oTeams) {
 
         var oTmp = oStatistic[player];
         oTmp.name = oStatistic[player].name;
-        oTmp.punkte = calcPlayerScore(oTmp);
+        if (_.isObject(oTmp.hf)) {
+            oTmp.punkte = calcPlayerScoreNew(oTmp);
+            oTmp.sums = {
+                hf: calcHighFinishes(oTmp),
+                sl: calcShortLegs(oTmp),
+                max: calcMaxima(oTmp)
+            };
+        } else {
+            oTmp.punkte = calcPlayerScore(oTmp);
+        }
         aRanking.push(oTmp);
     }
     return aRanking;

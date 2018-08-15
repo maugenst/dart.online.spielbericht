@@ -21,8 +21,13 @@ function rescanAllStatistics (req, res) {
         }
 
         var sPath = path.resolve(config.get("bedelos.datapath"));
-        var sResultsPath = path.resolve(config.get("bedelos.datapath") + '/ergebnisse/');
-        var sStatisticsPath = path.resolve(config.get("bedelos.datapath") + '/statistiken/');
+        if (req.swagger.params.saison.raw) {
+            sPath = path.dirname(sPath);
+            sPath = path.resolve(sPath, req.swagger.params.saison.raw);
+        }
+
+        var sResultsPath = path.resolve(sPath + '/ergebnisse/');
+        var sStatisticsPath = path.resolve(sPath + '/statistiken/');
         var liga = req.swagger.params.liga.raw;
 
         // Reset Table(s) and Scan all necessary results

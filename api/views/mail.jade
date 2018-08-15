@@ -6,7 +6,7 @@ html
         style
             include ../static/spielbericht/app/styles/ergebnistabelle.css
         title BDL - Spieldetails
-    body(style={"font-family": 'Calibri'})
+    body(style={"font-family": 'Arial, Helvetica'})
         h1 Online Spielberichtsbogen der BDL
         if (res.comment && res.comment!== "")
             - var sMessage = JSON.parse(res.comment)

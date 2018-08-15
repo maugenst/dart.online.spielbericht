@@ -7,24 +7,19 @@ html
         link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
         script(src='/bedelos/scripts/jquery-2.1.4.min.js')
         script(src='/bedelos/scripts/bootstrap.min.js')
-    body(style={"font-family": 'Calibri', 'font-size': 'smaller'})
+    body(style={"font-family": 'Arial, Helvetica', 'font-size': 'smaller'})
         table
             thead
                 tr
-                    th.center(colspan=6) Statistiken "#{liga}"
-                    th.center
-                        if (username === 'bdladmin')
-                            a(href='/bedelos/admin/statistik/update/all',
-                            onclick='return window.confirm("Alle Statistiken neu einlesen? ACHTUNG: Erzeugt hohe Serverlast!!!");')
-                                span.glyphicon.glyphicon-refresh(title='Alle Statistiken neu einlesen?\nACHTUNG: Erzeugt hohe Serverlast!!!')
-                        else
-                            asfada
-                    th.center
-                        a(onclick='window.location.assign(\'/bedelos/statistik/liga/' + ligaShort + '?xls=true\')')
-                            img(src='/bedelos/images/xls-icon.png', width='25px', title='Excel Export')
+                    th.center(colspan=8) Statistiken "#{liga}"
+                tr
+                    th.center(colspan=9) Saison:
                         nbsp
-                        a(href='/bedelos/statistik/liga/' + ligaShort + '?pdf=true', target='_top')
-                            img(src='/bedelos/images/pdf-icon.jpg', width='25px', title='PDF Export')
+                        each season, i in allSeasons
+                            span
+                                a(href='/bedelos/statistik/liga/' + ligaShort + '?saison=' + season)= season
+                                nbsp
+                                nbsp
                 tr.borderedTopBottom.highlighted
                     th.left(rowspan='2') Pl.
                     th.left(rowspan='2') Spieler
