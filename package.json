@@ -39,7 +39,7 @@
     "swagger-node-runner": "*",
     "walker": "*",
     "xlsx": "^0.11.19",
-    "zip-folder": "^1.0.0"
+    "zip-a-folder": "0.0.5"
   },
   "devDependencies": {
     "prettier": "^1.13.7"
