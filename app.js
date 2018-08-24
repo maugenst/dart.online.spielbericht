@@ -170,7 +170,7 @@ try {
             http.createServer(app).listen(httpPort, "localhost");
             logAll(util.format("HTTP server running and listening on port=%d", httpPort));
         }
-        /*// HTTPS service
+        // HTTPS service
         if (config.get("server.https")) {
             let httpsPort = config.get("server.https.port");
             let httpsKeyFile = config.get("server.https.keyFile");
@@ -181,7 +181,7 @@ try {
             }, app).listen(httpsPort, "localhost");
             logAll(util.format("HTTPS server running and listening on port=%d (key file=%s, certificate file=%s)",
                 httpsPort, httpsKeyFile, httpsCertFile));
-        }*/
+        }
         let took = (new Date()).getTime() - start;
         logAll(util.format("Startup took %s milliseconds.", took));
 
