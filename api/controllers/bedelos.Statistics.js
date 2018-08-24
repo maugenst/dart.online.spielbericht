@@ -48,7 +48,7 @@ async function get(req, res) {
         var aRanking = ranking.sortStatisticByScores(jsonfile.readFileSync(sStatisticsFile));
 
         var html = '';
-        if (_.toInteger(saison) < 1718) {
+        if (_.toInteger(saison) < 1819) {
             html = pug.renderFile('api/views/statistic.jade', {
                 pretty: true,
                 ranking: aRanking,
