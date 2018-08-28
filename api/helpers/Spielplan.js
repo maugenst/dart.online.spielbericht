@@ -31,11 +31,11 @@ class Spielplan {
                             if (this.oGamesMap[spiel.id]) {
                                 logger.log.warn("WARN: Found double ID in spielplan: " + spiel.id);
                             }
-                            if (!this._oTeams[spiel.heim]) {
+                            if (!this._oTeams[spiel.heim] && !spiel.spielfrei) {
                                 logger.log.warn("WARN: No team found: " + spiel.heim);
                                 break;
                             }
-                            if (!this._oTeams[spiel.gast]) {
+                            if (!this._oTeams[spiel.gast] && !spiel.spielfrei) {
                                 logger.log.warn("WARN: No team found: " + spiel.gast);
                                 break;
                             }
