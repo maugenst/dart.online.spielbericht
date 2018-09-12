@@ -22,6 +22,7 @@ temp:
 #
 bedelos:
   adminuser: bdladmin
+  superuser: admin
   saison: 1819
   configpath: ./data/config
   datapath: ./data/saison/1819

@@ -14,7 +14,7 @@ var moment = require('moment');
 function resetAllPasswords(req, res) {
     try {
 
-        /*var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+        var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
 
         if (!oSessionData) {
             res.cookie('BDL_SESSION_REDIRECT', req.url);
@@ -22,10 +22,10 @@ function resetAllPasswords(req, res) {
             return;
         }
 
-        if (oSessionData.username !== config.get("bedelos.adminuser")) {
+        if (oSessionData.username !== config.get("bedelos.adminuser") || username !== config.get("bedelos.superuser")) {
             res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
             return;
-        }*/
+        }
 
         var newPassword = 'bdl';
         var sTeamsFile = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
@@ -86,7 +86,7 @@ function resetPassword(req, res) {
         }
         var filename = "";
 
-        if (username === config.get("bedelos.adminuser")) {
+        if (username === config.get("bedelos.adminuser") || username === config.get("bedelos.superuser")) {
             filename = path.resolve(config.get("bedelos.configpath") + '/config.json');
             var oConfig = jsonfile.readFileSync(filename);
             if (oConfig[username] && oConfig[username].password && typeof oConfig[username].password === 'object') {
@@ -109,7 +109,12 @@ function resetPassword(req, res) {
             filename = path.resolve(config.get("bedelos.datapath") + '/Teams.json');
             var oTeams = jsonfile.readFileSync(filename);
             var adminUser = config.get("bedelos.adminuser");
-            oTeams[adminUser] = jsonfile.readFileSync(path.resolve(config.get("bedelos.configpath") + '/config.json'))[adminUser];
+            var superUser = config.get("bedelos.superuser");
+            const oConfig = jsonfile.readFileSync(path.resolve(config.get("bedelos.configpath") + '/config.json'));
+            oTeams[adminUser] = oConfig[adminUser];
+            oTeams[superUser] = oConfig[superUser];
+
+//            oTeams[adminUser] = jsonfile.readFileSync(path.resolve(config.get("bedelos.configpath") + '/config.json'))[adminUser];
             if (oTeams[username] && oTeams[username].password) {
                 if (oTeams[username].password.value === "" || oTeams[username].password.value === crypt.encrypt(oldPassword)  || oTeams[adminUser].password.value === crypt.encrypt(oldPassword)) {
                     res.cookie('BDL_SESSION_TOKEN', token, {httpOnly: true});

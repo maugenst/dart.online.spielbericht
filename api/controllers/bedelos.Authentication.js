@@ -35,10 +35,13 @@ function login(req, res) {
         var username = req.swagger.params.credentials.raw.username;
         var password = req.swagger.params.credentials.raw.password;
         var adminUser = config.get("bedelos.adminuser");
+        var superUser = config.get("bedelos.superuser");
         var oTeams = {};
 
         oTeams = jsonfile.readFileSync(path.resolve(config.get("bedelos.datapath") + '/Teams.json'));
-        oTeams[adminUser] = jsonfile.readFileSync(path.resolve(config.get("bedelos.configpath") + '/config.json'))[adminUser];
+        const oConfig = jsonfile.readFileSync(path.resolve(config.get("bedelos.configpath") + '/config.json'));
+        oTeams[adminUser] = oConfig[adminUser];
+        oTeams[superUser] = oConfig[superUser];
 
         if (oTeams[username] && oTeams[username].password) {
             if (!oTeams[username].password.changeDate || (oTeams[username].password.changeDate - Date.now()) < 0) {
@@ -47,7 +50,9 @@ function login(req, res) {
                 return;
             } else {
                 var encPwd = crypt.encrypt(password);
-                if (oTeams[username].password.value === encPwd || oTeams[adminUser].password.value === encPwd) {
+                if (oTeams[username].password.value === encPwd
+                    || oTeams[adminUser].password.value === encPwd
+                    || oTeams[superUser].password.value === encPwd) {
                     res.cookie('BDL_SESSION_TOKEN', token);
                     session.add(token, {
                         username: username
