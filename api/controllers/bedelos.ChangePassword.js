@@ -131,7 +131,8 @@ function resetPassword(req, res) {
                 changeDate: moment().add(1, 'year').toDate().getTime()
             };
             delete oTeams[adminUser];
-            jsonfile.writeFileSync(filename, oTeams);
+            delete oTeams[superUser];
+            jsonfile.writeFileSync(filename, oTeams, {spaces: 4});
         }
         res.status(200).json("Passwordänderung war erfolgreich");
     } catch (error) {
