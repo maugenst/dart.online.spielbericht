@@ -40,7 +40,7 @@ function uploadResults (req, res) {
             oResult.picture = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
         }
         var sJsonFilename = path.resolve(sPath + sSpielId + ".json");
-        jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 2});
+        jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 4});
 
         var html = pug.renderFile("api/views/mail.jade", {
             pretty: true,

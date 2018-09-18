@@ -79,7 +79,7 @@ function removeComment (req, res) {
 
         var oResult = jsonfile.readFileSync(sResultFile);
         delete oResult.comment;
-        var oResult = jsonfile.writeFileSync(sResultFile, oResult);
+        var oResult = jsonfile.writeFileSync(sResultFile, oResult, {spaces: 4});
 
         res.status(200).send("OK");
 
@@ -111,7 +111,7 @@ function addComment (req, res) {
 
         var oResult = jsonfile.readFileSync(sResultFile);
         oResult['comment'] = JSON.stringify(req.swagger.params.comment.raw);
-        var oResult = jsonfile.writeFileSync(sResultFile, oResult);
+        var oResult = jsonfile.writeFileSync(sResultFile, oResult, {spaces: 4});
 
         res.redirect("/bedelos/"+req.swagger.params.storage.raw + "/" + req.swagger.params.gameId.raw);
 

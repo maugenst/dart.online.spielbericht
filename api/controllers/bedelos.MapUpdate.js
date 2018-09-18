@@ -48,7 +48,7 @@ function listInbox (req, res) {
             await(bbPromise.delay(200).then(function(){return null;}));
         }
 
-        //jsonfile.writeFileSync(sTeamsFilename, oTeams);
+        //jsonfile.writeFileSync(sTeamsFilename, oTeams, {spaces: 4});
 
         var html = pug.renderFile("api/views/locationDetails.jade", {
             pretty: true,

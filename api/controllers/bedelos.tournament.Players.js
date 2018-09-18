@@ -43,7 +43,7 @@ function save(req, res) {
             vorname: vorname,
             nachname: nachname
         };
-        jsonfile.writeFileSync(sFile, oPlayers);
+        jsonfile.writeFileSync(sFile, oPlayers, {spaces: 4});
         var html = pug.renderFile("api/views/tournament.inputform.pug", {
             pretty: true,
             players: oPlayers
@@ -65,7 +65,7 @@ function delEntry(req, res) {
         let oPlayers = jsonfile.readFileSync(sFile);
 
         delete oPlayers[id];
-        jsonfile.writeFileSync(sFile, oPlayers);
+        jsonfile.writeFileSync(sFile, oPlayers, {spaces: 4});
         var html = pug.renderFile("api/views/tournament.inputform.pug", {
             pretty: true,
             players: oPlayers

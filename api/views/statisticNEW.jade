@@ -99,12 +99,12 @@ html
                         td.left.smaller #{place}.
                         td.left.xsmall.bold= player.name
                         td.left.xsmall.bold= teams[player.team].name
-                        td.center.smaller(title='3:0 -> '+ player['3:0'] + '\n' +
-                        '3:1 -> '+ player['3:1'] + '\n' +
-                        '3:2 -> '+ player['3:2'] + '\n' )= singleGames
-                        td.center.smaller(title='3:0 -> '+ player['3:0'] + '\n' +
-                        '3:1 -> '+ player['3:1'] + '\n' +
-                        '3:2 -> '+ player['3:2'] + '\n' )= doubleGames
+                        td.center.smaller(title='3:0 -> '+ player.single['3:0'] + '\n' +
+                        '3:1 -> '+ player.single['3:1'] + '\n' +
+                        '3:2 -> '+ player.single['3:2'] + '\n' )= singleGames
+                        td.center.smaller(title='3:0 -> '+ player.double['3:0'] + '\n' +
+                        '3:1 -> '+ player.double['3:1'] + '\n' +
+                        '3:2 -> '+ player.double['3:2'] + '\n' )= doubleGames
                         td.center.smaller= (player.sums.hf!==0) ? player.sums.hf : nbsp
                         td.center.smaller= (player.sums.sl!==0) ? player.sums.sl : nbsp
                         td.center.smaller= (player.sums.max!==0) ? player.sums.max : nbsp

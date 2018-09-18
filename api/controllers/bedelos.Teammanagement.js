@@ -95,7 +95,7 @@ function patchTeams (req, res) {
                 oTeams[team].spiellokal.jugend = false;
             }
         }
-        jsonfile.writeFileSync(sPath + '/Teams.json', oTeams);
+        jsonfile.writeFileSync(sPath + '/Teams.json', oTeams, {spaces: 4});
         res.status(200).send("OK");
 
     } catch (error) {

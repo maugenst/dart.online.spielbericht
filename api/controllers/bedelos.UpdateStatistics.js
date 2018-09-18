@@ -34,10 +34,10 @@ function rescanAllStatistics (req, res) {
         if (liga === 'all') {
             let aLigen = Object.keys(config.get('bedelos.ligen'));
             aLigen.forEach(sLiga => {
-                jsonfile.writeFileSync(path.resolve(sStatisticsPath + `/${sLiga}.json`), {});
+                jsonfile.writeFileSync(path.resolve(sStatisticsPath + `/${sLiga}.json`), {}, {spaces: 4});
             });
         } else {
-            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/' + liga + '.json'), {});
+            jsonfile.writeFileSync(path.resolve(sStatisticsPath + '/' + liga + '.json'), {}, {spaces: 4});
         }
 
         var aProcessedFiles = [];

@@ -40,7 +40,7 @@ function addToPlayers (req, res) {
             encVorname: new Buffer(req.swagger.params.vorname.raw).toString('base64')
         });
 
-        jsonfile.writeFileSync(sTeamsFile, oTeams);
+        jsonfile.writeFileSync(sTeamsFile, oTeams, {spaces: 4});
 
         res.redirect('/bedelos/teammanagement');
 

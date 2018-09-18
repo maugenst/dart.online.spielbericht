@@ -46,7 +46,7 @@ function listPlayers (req, res) {
             }
         }
 
-        jsonfile.writeFileSync(sTeamsFile, oTeams);
+        jsonfile.writeFileSync(sTeamsFile, oTeams, {spaces: 4});
 
         res.redirect('/bedelos/teammanagement');
 

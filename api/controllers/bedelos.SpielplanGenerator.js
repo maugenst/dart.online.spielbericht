@@ -53,7 +53,7 @@ function addToSpielplan (req, res) {
         spielplanHelper.addGame(oGamePayload);
         spielplanHelper.increaseGameIndex(oGamePayload.liga);
 
-        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
+        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan(), {spaces: 4});
 
         res.status(200).json(oGamePayload);
     } catch (error) {
@@ -84,7 +84,7 @@ function deleteFromSpielplan (req, res) {
         let spielplanHelper = new Spielplan(oSpielplan, oTeams);
         spielplanHelper.removeGame(sGameId);
 
-        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan());
+        jsonfile.writeFileSync(sPath + '/SpielplanNew.json', spielplanHelper.getSpielplan(), {spaces: 4});
 
         res.status(200).json("OK");
     } catch (error) {
@@ -109,7 +109,7 @@ function getSpielplan (req, res) {
             spielplanHelper = new Spielplan({}, oTeams);
             spielplanHelper.initialize();
             oSpielplan = spielplanHelper.getSpielplan();
-            jsonfile.writeFileSync(sPath + '/SpielplanNew.json', oSpielplan);
+            jsonfile.writeFileSync(sPath + '/SpielplanNew.json', oSpielplan, {spaces: 4});
         } else {
             oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
             spielplanHelper = new Spielplan(oSpielplan, oTeams);

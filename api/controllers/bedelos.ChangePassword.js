@@ -40,7 +40,7 @@ function resetAllPasswords(req, res) {
             oTeams[teamId].encTeam = new Buffer(oTeams[teamId].name).toString('base64');
         }
 
-        jsonfile.writeFileSync(sTeamsFile, oTeams);
+        jsonfile.writeFileSync(sTeamsFile, oTeams, {spaces: 4});
 
         res.status(200).send("OK");
 
@@ -103,7 +103,7 @@ function resetPassword(req, res) {
                     value: crypt.encrypt(newPassword),
                     changeDate: moment().add(1, 'year').toDate().getTime()
                 };
-                jsonfile.writeFileSync(filename, oConfig);
+                jsonfile.writeFileSync(filename, oConfig, {spaces: 4});
             }
         } else {
             filename = path.resolve(config.get("bedelos.datapath") + '/Teams.json');

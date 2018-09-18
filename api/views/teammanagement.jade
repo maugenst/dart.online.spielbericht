@@ -126,20 +126,20 @@ html
                             a(href='/bedelos/teammanagement/delete?encname=' + player.encName +'&encvorname=' + player.encVorname,
                                 onclick='return window.confirm(\'Spieler ' + player.vorname + ' ' + player.name + ' wirklich löschen?\');') Löschen
                 tr
-                    td(colspan='4') <br>Spieler hinzufügen:
+                    td(colspan='4') <br>Spieler hinzufügen (KEINE SONDERZEICHEN BENUTZEN!):
                 form(name="addPlayer", action="/bedelos/teammanagement/add", method="get")
                     tr
                         td &nbsp;
                         td
                             label Vorname
                         td(colspan='2')
-                            input(type='text', name="vorname")
+                            input(type='text', name="vorname", required, pattern="[A-ZÜÖÄüöäßa-z -].+")
                     tr
                         td &nbsp;
                         td
                             label Name
                         td(colspan='2')
-                            input(type='text', name="name")
+                            input(type='text', name="name", required, pattern="[A-ZÜÖÄüöäßa-z -].+")
                             input(type='submit')
 
     b(style={'color': 'red'}) Achtung! Das Ändern (Löschen/Neu anlegen) des Namens eines Spielers hat zur Folge, das alle Statistiken für diesen Spieler verloren gehen!

@@ -100,7 +100,7 @@ function wertung (req, res) {
         }
 
         var newName = path.resolve(sPath + '/inbox/' + uniqueGameId + "_" + sGameId + ".json");
-        jsonfile.writeFileSync(newName, oCurrentResult);
+        jsonfile.writeFileSync(newName, oCurrentResult, {spaces: 2});
         tabelle.update({
             currentResults: oCurrentResult,
             liga: liga,

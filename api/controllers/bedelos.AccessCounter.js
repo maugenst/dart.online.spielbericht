@@ -38,7 +38,7 @@ function increaseCount (req, res) {
         }
         oCounter.today.accesses++;
         oCounter.total.accesses++;
-        jsonfile.writeFileSync(sCounterFile, oCounter);
+        jsonfile.writeFileSync(sCounterFile, oCounter, {spaces: 4});
         res.status(200).json(oCounter);
     } catch (error) {
         res.status(500).send("Error: " + error.stack.replace('/\n/g', '<br>'));

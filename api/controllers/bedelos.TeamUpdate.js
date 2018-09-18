@@ -31,7 +31,7 @@ function updateTeam (req, res) {
         oTeams[teamId].teamvertreter.mail = oChangedTeam.teamTeamvertreterEmail;
         oTeams[teamId].teamvertreter.tel = oChangedTeam.teamTeamvertreterTelefonnummer;
 
-        jsonfile.writeFileSync(sTeamsFile, oTeams);
+        jsonfile.writeFileSync(sTeamsFile, oTeams, {spaces: 4});
 
         res.json("OK");
 

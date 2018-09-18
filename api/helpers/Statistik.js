@@ -99,7 +99,9 @@ function initPlayerStatistics(name, team) {
             name: name,
             team: team
         };
-
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -113,14 +115,15 @@ function addPlayerStatisticsForSingles(gameIndex) {
     let statName1 = getStatName(oDetailsPlayer1.name, heim);
     let statName2 = getStatName(oDetailsPlayer2.name, gast);
 
-    initPlayerStatistics(oDetailsPlayer1.name, heim);
-    initPlayerStatistics(oDetailsPlayer2.name, gast);
+    if (initPlayerStatistics(oDetailsPlayer1.name, heim)) {
+        currentResults.playerStats[statName1].single[oDetailsPlayer1.legs + ':' + oDetailsPlayer2.legs]++;
+        addSpecialsPerPlayer(statName1, oDetailsPlayer1);
+    }
 
-    currentResults.playerStats[statName1].single[oDetailsPlayer1.legs + ':' + oDetailsPlayer2.legs]++;
-    currentResults.playerStats[statName2].single[oDetailsPlayer2.legs + ':' + oDetailsPlayer1.legs]++;
-
-    addSpecialsPerPlayer(statName1, oDetailsPlayer1);
-    addSpecialsPerPlayer(statName2, oDetailsPlayer2);
+    if (initPlayerStatistics(oDetailsPlayer2.name, gast)) {
+        currentResults.playerStats[statName2].single[oDetailsPlayer2.legs + ':' + oDetailsPlayer1.legs]++;
+        addSpecialsPerPlayer(statName2, oDetailsPlayer2);
+    }
 }
 
 function addPlayerStatisticsForDoubles(gameIndex) {
@@ -139,20 +142,23 @@ function addPlayerStatisticsForDoubles(gameIndex) {
     let statTeam2Name1 = getStatName(oDetailsTeam2Player1.name, gast);
     let statTeam2Name2 = getStatName(oDetailsTeam2Player2.name, gast);
 
-    initPlayerStatistics(oDetailsTeam1Player1.name, heim);
-    initPlayerStatistics(oDetailsTeam1Player2.name, heim);
-    initPlayerStatistics(oDetailsTeam2Player1.name, gast);
-    initPlayerStatistics(oDetailsTeam2Player2.name, gast);
+    if (initPlayerStatistics(oDetailsTeam1Player1.name, heim)) {
+        currentResults.playerStats[statTeam1Name1].double[oDetailsTeam1.legs + ':' + oDetailsTeam2.legs]++;
+        addSpecialsPerPlayer(statTeam1Name1, oDetailsTeam1Player1);
+    }
+    if (initPlayerStatistics(oDetailsTeam1Player2.name, heim)) {
+        currentResults.playerStats[statTeam1Name2].double[oDetailsTeam1.legs + ':' + oDetailsTeam2.legs]++;
+        addSpecialsPerPlayer(statTeam1Name2, oDetailsTeam1Player2);
+    }
+    if (initPlayerStatistics(oDetailsTeam2Player1.name, gast)) {
+        currentResults.playerStats[statTeam2Name1].double[oDetailsTeam2.legs + ':' + oDetailsTeam1.legs]++;
+        addSpecialsPerPlayer(statTeam2Name1, oDetailsTeam2Player1);
+    }
+    if (initPlayerStatistics(oDetailsTeam2Player2.name, gast)) {
+        currentResults.playerStats[statTeam2Name2].double[oDetailsTeam2.legs + ':' + oDetailsTeam1.legs]++;
+        addSpecialsPerPlayer(statTeam2Name2, oDetailsTeam2Player2);
+    }
 
-    currentResults.playerStats[statTeam1Name1].double[oDetailsTeam1.legs + ':' + oDetailsTeam2.legs]++;
-    currentResults.playerStats[statTeam1Name2].double[oDetailsTeam1.legs + ':' + oDetailsTeam2.legs]++;
-    currentResults.playerStats[statTeam2Name1].double[oDetailsTeam2.legs + ':' + oDetailsTeam1.legs]++;
-    currentResults.playerStats[statTeam2Name2].double[oDetailsTeam2.legs + ':' + oDetailsTeam1.legs]++;
-
-    addSpecialsPerPlayer(statTeam1Name1, oDetailsTeam1Player1);
-    addSpecialsPerPlayer(statTeam1Name2, oDetailsTeam1Player2);
-    addSpecialsPerPlayer(statTeam2Name1, oDetailsTeam2Player1);
-    addSpecialsPerPlayer(statTeam2Name2, oDetailsTeam2Player2);
 }
 
 function update(oParameters) {

@@ -52,7 +52,7 @@ function update(oParameters){
 
     oTabelle[oCurrentResult.gast].sets.own += oCurrentResult.summary.gast.sets;
     oTabelle[oCurrentResult.gast].sets.other += oCurrentResult.summary.heim.sets;
-    jsonfile.writeFileSync(sTableFile, oTabelle);
+    jsonfile.writeFileSync(sTableFile, oTabelle, {spaces: 4});
 }
 
 module.exports = {
