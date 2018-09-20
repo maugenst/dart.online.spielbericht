@@ -40,6 +40,19 @@ function uploadResults (req, res) {
             oResult.picture = url.resolve(req.headers.origin, sPictureFilename.replace(path.resolve(config.get("bedelos.datapath")), '/saison/' + config.get("bedelos.saison")).replace(/\\/g, '/'));
         }
         var sJsonFilename = path.resolve(sPath + sSpielId + ".json");
+
+        for (let player in oResult.playerStats) {
+            if (oResult.playerStats[player].hf[""]) {
+                delete player.hf[""];
+            }
+            if (oResult.playerStats[player].sl[""]) {
+                delete oResult.playerStats[player].sl[""];
+            }
+            if (oResult.playerStats[player].max[""]) {
+                delete oResult.playerStats[player].max[""];
+            }
+        }
+
         jsonfile.writeFileSync(sJsonFilename, oResult, {spaces: 4});
 
         var html = pug.renderFile("api/views/mail.jade", {

@@ -43,9 +43,23 @@ function rescanAllStatistics (req, res) {
         var aProcessedFiles = [];
 
         walker(sResultsPath).on('file', function(file, stat) {
+            const result = jsonfile.readFileSync(file);
+
+            for (let player in result.playerStats) {
+                if (result.playerStats[player].hf[""]) {
+                    delete player.hf[""];
+                }
+                if (result.playerStats[player].sl[""]) {
+                    delete result.playerStats[player].sl[""];
+                }
+                if (result.playerStats[player].max[""]) {
+                    delete result.playerStats[player].max[""];
+                }
+            }
+
             if (ligaHelper.isUpdateNeeded(file, req.swagger.params.liga.raw)) {
                 statistics.update({
-                    currentResults: jsonfile.readFileSync(file),
+                    currentResults: result,
                     liga: ligaHelper.calcLigaFromFilename(file),
                     pathToStatisticsFiles: sStatisticsPath
                 });
