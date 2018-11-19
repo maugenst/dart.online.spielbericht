@@ -1277,6 +1277,11 @@ async function main() {
 
     oSpielplan = await getAsyncJson(`/saison/${config.bedelos.saison}/Spielplan.json`);
     oTeams = await getAsyncJson(`/saison/${config.bedelos.saison}/Teams.json`);
+
+    $('#pokalSelection').modal({
+        show: true
+    });
+
     if (gameID !== '') {
         const ergebnisseFromFile = await getAsyncJson(`${window.location.origin}/saison/${config.bedelos.saison}/${storage}/${gameID}.json`);
         window.localStorage.setItem('ergebnisseLeer', JSON.stringify(ergebnisseFromFile));
