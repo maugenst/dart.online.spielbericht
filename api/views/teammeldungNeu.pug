@@ -38,6 +38,12 @@ html
                 br
                 .row
                     .col-sm-6
+                        label(for='Nichtraucher') Nichtraucher-Lokal?:
+                    .col-sm-6
+                        input(id='Nichtraucher', type='checkbox')
+                br
+                .row
+                    .col-sm-6
                         label(for='Teamkapitaen') Teamkapitän:
                     .col-sm-6
                         input(id='Teamkapitaen', size=40, value=team.teamvertreter.name)
@@ -109,6 +115,7 @@ html
                   Teamname: document.getElementById('Teamname').value,
                   Liga: document.getElementById('Liga').value,
                   Spiellokal: document.getElementById('Spiellokal').value,
+                  Nichtraucher: document.getElementById('Nichtraucher').value ? 'Ja' : 'Nein',
                   Teamkapitaen: document.getElementById('Teamkapitaen').value,
                   TeamkapitaenEmail: document.getElementById('TeamkapitaenEmail').value,
                   boards: document.getElementById('boards').value,

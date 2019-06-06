@@ -25,7 +25,8 @@ function get(req, res) {
       spiellokal: {
         name: '',
         strasse: '',
-        ort: ''
+        ort: '',
+        nichtraucher: true
       },
       teamvertreter: {
         name: '',

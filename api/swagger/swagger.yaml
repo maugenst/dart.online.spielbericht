@@ -477,6 +477,8 @@ paths:
               type: string
             Spiellokal:
               type: string
+            Nichtraucher:
+              type: string
             Teamkapitaen:
               type: string
             TeamkapitaenEmail:
