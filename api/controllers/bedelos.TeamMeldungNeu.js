@@ -19,21 +19,29 @@ function get(req, res) {
 
   try {
     var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
+    let teamId = '';
+    let team = {
+      name: '',
+      spiellokal: {
+        name: '',
+        strasse: '',
+        ort: ''
+      },
+      teamvertreter: {
+        name: '',
+        mail: ''
+      }
+    };
+    let verein = {
+      name: ''
+    };
 
-    if (!oSessionData) {
-      res.cookie('BDL_SESSION_REDIRECT', req.url);
-      res.redirect("/bedelos/login");
-      return;
+
+    if (oSessionData) {
+      teamId = oSessionData.username;
+      team = oTeams[teamId];
+      verein = oVereine[team.verein];
     }
-
-    if (oSessionData.username === config.get("bedelos.adminuser")) {
-      res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
-      return;
-    }
-
-    const teamId = oSessionData.username;
-    const team = oTeams[teamId];
-    const verein = oVereine[team.verein];
 
     var html = pug.renderFile("api/views/teammeldungNeu.pug", {
       pretty: true,
@@ -55,19 +63,6 @@ function get(req, res) {
 function post(req, res) {
 
   try {
-    var oSessionData = session.get(req.cookies.BDL_SESSION_TOKEN);
-
-    if (!oSessionData) {
-      res.cookie('BDL_SESSION_REDIRECT', req.url);
-      res.redirect("/bedelos/login");
-      return;
-    }
-
-    if (oSessionData.username === config.get("bedelos.adminuser")) {
-      res.status(200).send(pug.renderFile("api/views/authorizederror.jade"));
-      return;
-    }
-
     var body = pug.renderFile("api/views/teammeldungNeuBody.pug", {
       pretty: true,
       data: req.body
