@@ -1,0 +1,63 @@
+.container
+    h3 Online Team Meldung
+    p Liebe(r) #{data.Teamkapitaen}.
+    p Vielen Dank für Deine Meldung. Eine Email mit unten stehendem Inhalt wurde soeben an den Spielleiter verschickt.
+    hr
+    p Sehr geehrter BDL Spielleiter.
+    p Hiermit möchte ich folgendes Team für die nächste Saison melden:
+    .row
+        .col-sm-6
+            label(for='Verein') Verein:
+        .col-sm-6
+            p(id='Verein')= data.Verein
+    br
+    .row
+        .col-sm-6
+            label(for='Teamname') Teamname:
+        .col-sm-6
+            p(id='Teamname')= data.Teamname
+    br
+    .row
+        .col-sm-6
+            label(for='Liga') Liga (bisher):
+        .col-sm-6
+            p(id='Liga')= data.liga
+    br
+    .row
+        .col-sm-6
+            label(for='Spiellokal') Spiellokal:
+        .col-sm-6
+            p(id='Spiellokal')= data.Spiellokal
+    br
+    .row
+        .col-sm-6
+            label(for='Teamkapitaen') Teamkapitän:
+        .col-sm-6
+            p(id='Teamkapitaen')= data.Teamkapitaen
+    br
+    .row
+        .col-sm-6
+            label(for='TeamkapitaenEmail') Teamkapitän Email:
+        .col-sm-6
+            p(id='TeamkapitaenEmail')= data.TeamkapitaenEmail
+    br
+    .row
+        .col-sm-6
+            label(for='boards') Anzahl Boards
+        .col-sm-6
+            p(id='boards')= data.boards
+    br
+    .row
+        .col-sm-6
+            label(for='teams') Anzahl Teams, die diese nutzen:
+        .col-sm-6
+            p(id='teams')= data.teams
+    br
+    .row
+        .col-sm-6
+            label(for='Anmerkungen') Anmerkungen / Wünsche:
+        .col-sm-6
+            p(id='Anmerkungen')= data.Anmerkungen
+
+    p Sportliche Grüße,
+    p #{data.Teamkapitaen}

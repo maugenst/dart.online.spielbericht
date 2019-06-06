@@ -1,0 +1,124 @@
+html
+    head
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/js.cookie.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+        title BDL Online Team Meldung
+    body(id='body')
+        form(id='meldungsform')
+            .container
+                h3 Online Team Meldung
+                .row
+                    .col-sm-6
+                        label(for='Verein') Verein:
+                    .col-sm-6
+                        input(id='Verein', size=40, value=verein.name)
+                br
+                .row
+                    .col-sm-6
+                        label(for='Teamname') Teamname:
+                    .col-sm-6
+                        input(id='Teamname', size=40, value=team.name)
+                br
+                .row
+                    .col-sm-6
+                        label(for='Liga') Liga (bisher):
+                    .col-sm-6
+                        input(id='Liga', size=40)
+                br
+                .row
+                    .col-sm-6
+                        label(for='Spiellokal') Spiellokal:
+                    .col-sm-6
+                        textarea(id='Spiellokal', rows='3', cols='40').
+                            #{team.spiellokal.name}
+                            #{team.spiellokal.strasse}
+                            #{team.spiellokal.ort}
+                br
+                .row
+                    .col-sm-6
+                        label(for='Teamkapitaen') Teamkapitän:
+                    .col-sm-6
+                        input(id='Teamkapitaen', size=40, value=team.teamvertreter.name)
+                br
+                .row
+                    .col-sm-6
+                        label(for='TeamkapitaenEmail') Teamkapitän Email:
+                    .col-sm-6
+                        input(id='TeamkapitaenEmail', size=40, value=team.teamvertreter.mail)
+                br
+                .row
+                    .col-sm-6
+                        label(for='boards') Anzahl Boards
+                    .col-sm-6
+                        select(id='boards')
+                            option(value=1) 1
+                            option(value=2) 2
+                            option(value=3) 3
+                            option(value=4) 4
+                            option(value=5) 5
+                            option(value=6) 6
+                            option(value=7) 7
+                            option(value=8) 8
+                            option(value=9) 9
+                            option(value=10) 10
+                            option(value='>10') >10
+                br
+                .row
+                    .col-sm-6
+                        label(for='teams') Anzahl Teams, die diese nutzen:
+                    .col-sm-6
+                        select(id='teams')
+                            option(value=1) 1
+                            option(value=2) 2
+                            option(value=3) 3
+                            option(value=4) 4
+                            option(value=5) 5
+                            option(value=6) 6
+                            option(value=7) 7
+                            option(value=8) 8
+                            option(value=9) 9
+                            option(value=10) 10
+                br
+                .row
+                    .col-sm-6
+                        label(for='Anmerkungen') Anmerkungen / Wünsche:
+                    .col-sm-6
+                        textarea(id='Anmerkungen', rows='4', cols='40')
+                br
+                .row
+                    .col-sm-6
+                        nbsp
+                    .col-sm-6
+                        button(type='submit') Abschicken
+
+    script(type='text/javascript').
+
+        $('#meldungsform').on('submit', async (event) => {
+            event.preventDefault();
+
+            const rawResponse = await fetch('/bedelos/teammanagement/meldungsmail', {
+                method: 'POST',
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  Verein: document.getElementById('Verein').value,
+                  Teamname: document.getElementById('Teamname').value,
+                  Liga: document.getElementById('Liga').value,
+                  Spiellokal: document.getElementById('Spiellokal').value,
+                  Teamkapitaen: document.getElementById('Teamkapitaen').value,
+                  TeamkapitaenEmail: document.getElementById('TeamkapitaenEmail').value,
+                  boards: document.getElementById('boards').value,
+                  teams: document.getElementById('teams').value,
+                  Anmerkungen: document.getElementById('Anmerkungen').value
+                })
+            });
+            const content = await rawResponse.text();
+
+            console.log(content);
+
+            document.getElementById('body').innerHTML = content;
+        });

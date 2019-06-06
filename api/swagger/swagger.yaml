@@ -441,22 +441,52 @@ paths:
             $ref: "#/definitions/HTML"
 
   /teammanagement/meldung:
-    x-swagger-router-controller: bedelos.TeamMeldung
+    x-swagger-router-controller: bedelos.TeamMeldungNeu
     get:
       produces:
         - text/html
       description:
-        Displays a selection for teams.
+        Displays an input form for a specific team.
       responses:
         'default':
           description: Successful response
           schema:
             $ref: "#/definitions/HTML"
+
+  /teammanagement/meldungsmail:
+    x-swagger-router-controller: bedelos.TeamMeldungNeu
     post:
       produces:
         - text/html
       description:
-        Generates a PDF for every team to be sent to Spielleiter once per year.
+        Generates an Email for the Spielleiter once per year.
+      parameters:
+      - name: body
+        in: body
+        description: scenarios parameters
+        required: true
+        schema:
+          type: object
+          description: Parameter for generating the email
+          properties:
+            Verein:
+              type: string
+            Teamname:
+              type: string
+            Liga:
+              type: string
+            Spiellokal:
+              type: string
+            Teamkapitaen:
+              type: string
+            TeamkapitaenEmail:
+              type: string
+            boards:
+              type: string
+            teams:
+              type: string
+            Anmerkungen:
+              type: string
       responses:
         'default':
           description: Successful response
