@@ -1,6 +1,6 @@
 'use strict';
-var vereine = require('./data/saison/1617/Vereine.json');
-var teams = require('./data/saison/1617/Teams.json');
+var vereine = require('./data/saison/1819/Vereine.json');
+var teams = require('./data/saison/1819/Teams.json');
 var fs = require('fs');
 
 let out = [];
