@@ -46,10 +46,10 @@ class EhrentafelnDocx {
                 return;
             }
 
-            if (oSessionData.username !== config.get('bedelos.adminuser')) {
+            /*if (oSessionData.username !== config.get('bedelos.adminuser')) {
                 res.status(200).send(pug.renderFile('api/views/authorizederror.jade'));
                 return;
-            }
+            }*/
 
             let sPath = path.resolve(config.get('bedelos.datapath'));
             const saison = req.swagger.params.saison.raw || config.get('bedelos.saison');
