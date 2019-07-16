@@ -1,0 +1,263 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//badischedartliga.de//ical-generator//DE
+BEGIN:VEVENT
+UID:pjxt@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20180914T180000Z
+DTEND:20180914T220000Z
+SUMMARY:Auswärts-Spieltag (#1)
+LOCATION:Eventhaus Nightlife Malsch\, Daimlerstr 1\, 76316 Malsch
+DESCRIPTION:Nightlife Hornets vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:kf1s@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20180921T180000Z
+DTEND:20180921T220000Z
+SUMMARY:Heim-Spieltag (#2)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. DC Underground Fools e.V 2
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:xfy7@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20181012T180000Z
+DTEND:20181012T220000Z
+SUMMARY:Auswärts-Spieltag (#3)
+LOCATION:Schützenhaus \"An der hohlen Eiche\"\, Waldstr. 30\, 76532 Baden-
+ Baden / Haueneberstein
+DESCRIPTION:Gaggenauer Dartmoskitos Predators vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:d896@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20181026T180000Z
+DTEND:20181026T220000Z
+SUMMARY:Auswärts-Spieltag (#4)
+LOCATION:Schützenhaus \"An der hohlen Eiche\"\, Waldstraße 30\, 76532 Bade
+ n-Baden / Haueneberstein
+DESCRIPTION:Gaggenauer Dartmoskitos 1 vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:zliu@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20181102T190000Z
+DTEND:20181102T230000Z
+SUMMARY:Auswärts-Spieltag (#5)
+LOCATION:Linde\, Großweierer Str. 92\, 77855 Achern
+DESCRIPTION:DC Lucky Hands 2 vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:pjf1@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20181123T190000Z
+DTEND:20181123T230000Z
+SUMMARY:Heim-Spieltag (#6)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Gaggenauer Dartmoskitos Bouncers
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:4kfu@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20181207T190000Z
+DTEND:20181207T230000Z
+SUMMARY:Auswärts-Spieltag (#7)
+LOCATION:Bistro Gleis 2\, Schlößlestr.9\, 75305 Neuenbürg
+DESCRIPTION:DC CW Gleis 2 vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:480b@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190104T190000Z
+DTEND:20190104T230000Z
+SUMMARY:Heim-Spieltag (#8)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Baden Bulls Bühl
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:93v5@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190111T190000Z
+DTEND:20190111T230000Z
+SUMMARY:Auswärts-Spieltag (#9)
+LOCATION:Sinop57\, Bahnhofstr. 1\, 76316 Malsch
+DESCRIPTION:Black Vikings vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:oeik@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190118T190000Z
+DTEND:20190118T230000Z
+SUMMARY:Auswärts-Spieltag (#10)
+LOCATION:VH - DC Destroyers e.V.\, Zehnthofstraße 5-7\, 2.OG\, 75175 Pforz
+ heim
+DESCRIPTION:DC Destroyers e.V. vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:pdg1@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190201T190000Z
+DTEND:20190201T230000Z
+SUMMARY:Heim-Spieltag (#11)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Karlsruher SC 2
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:pk9h@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190215T190000Z
+DTEND:20190215T230000Z
+SUMMARY:Heim-Spieltag (#12)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Nightlife Hornets
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:nglf@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190301T190000Z
+DTEND:20190301T230000Z
+SUMMARY:Auswärts-Spieltag (#13)
+LOCATION:Vereinsheim Underground Fools\, Weiherstr.30\, Hinterhaus\, 75173
+  Pforzheim
+DESCRIPTION:DC Underground Fools e.V 2 vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:t5ur@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190315T190000Z
+DTEND:20190315T230000Z
+SUMMARY:Heim-Spieltag (#14)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Gaggenauer Dartmoskitos Predators
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:6uho@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190329T190000Z
+DTEND:20190329T230000Z
+SUMMARY:Heim-Spieltag (#15)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Gaggenauer Dartmoskitos 1
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:ljkl@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190412T180000Z
+DTEND:20190412T220000Z
+SUMMARY:Heim-Spieltag (#16)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. DC Lucky Hands 2
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:pv4e@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190426T180000Z
+DTEND:20190426T220000Z
+SUMMARY:Auswärts-Spieltag (#17)
+LOCATION:Schützenhaus \"An der hohlen Eiche\"\, Waldstr. 30\, 76532 Baden-
+ Baden / Haueneberstein
+DESCRIPTION:Gaggenauer Dartmoskitos Bouncers vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:rzbs@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190517T180000Z
+DTEND:20190517T220000Z
+SUMMARY:Heim-Spieltag (#18)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. DC CW Gleis 2
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:m8lm@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190531T180000Z
+DTEND:20190531T220000Z
+SUMMARY:Auswärts-Spieltag (#19)
+LOCATION:Momo's Bistro\, Bühlertal Str. 30\, 77815 Bühl
+DESCRIPTION:Baden Bulls Bühl vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:hfnp@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190607T180000Z
+DTEND:20190607T220000Z
+SUMMARY:Heim-Spieltag (#20)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. Black Vikings
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:60it@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190621T180000Z
+DTEND:20190621T220000Z
+SUMMARY:Heim-Spieltag (#21)
+LOCATION:Vereinsheim DC Flatliners\, Hardtstraße 37 (Bau II)\, 76185 Karls
+ ruhe
+DESCRIPTION:D.A.R.T. Plumbata Remus vs. DC Destroyers e.V.
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+BEGIN:VEVENT
+UID:pg78@badischedartliga.de
+SEQUENCE:0
+DTSTAMP:20190328T173300Z
+DTSTART:20190628T180000Z
+DTEND:20190628T220000Z
+SUMMARY:Auswärts-Spieltag (#22)
+LOCATION:Karlsruher Sport-Club e.V.\, Am Mühlburger Bahnhof 16\, 76189 Kar
+ lsruhe\, Clubhaus SV Mühlburg
+DESCRIPTION:Karlsruher SC 2 vs. D.A.R.T. Plumbata Remus
+ORGANIZER;CN="Melanie Klomann":mailto:LuckyMelKA@web.de
+END:VEVENT
+END:VCALENDAR
