@@ -44,7 +44,7 @@ function get(req, res) {
       verein = oVereine[team.verein];
     }
 
-    var html = pug.renderFile("api/views/teammeldungNeu.pug", {
+    var html = pug.renderFile("api/views/teammeldungClosed.pug", {
       pretty: true,
       verein: verein,
       team: team
