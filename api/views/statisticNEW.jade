@@ -67,14 +67,6 @@ html
                             onclick='return window.confirm("Alle Statistiken neu einlesen? ACHTUNG: Erzeugt hohe Serverlast!!!");')
                                 nbsp
                                 span.glyphicon.glyphicon-refresh(title='Alle Statistiken neu einlesen?\nACHTUNG: Erzeugt hohe Serverlast!!!')
-                tr
-                    th.center(colspan=9) Saison:
-                        nbsp
-                        each season, i in allSeasons
-                            span
-                                a(href='/bedelos/statistik/liga/'+ligaShort+'?saison='+season)= season
-                                nbsp
-                                nbsp
 
                 tr.borderedTopBottom.highlighted
                     th.left(rowspan='2') Pl.

@@ -12,14 +12,6 @@ html
             thead
                 tr
                     th.center(colspan=8) Statistiken "#{liga}"
-                tr
-                    th.center(colspan=9) Saison:
-                        nbsp
-                        each season, i in allSeasons
-                            span
-                                a(href='/bedelos/statistik/liga/' + ligaShort + '?saison=' + season)= season
-                                nbsp
-                                nbsp
                 tr.borderedTopBottom.highlighted
                     th.left(rowspan='2') Pl.
                     th.left(rowspan='2') Spieler
