@@ -1,0 +1,142 @@
+//
+   Created by d032233 on 27.04.2016.
+html
+    head
+        title BDL Online Spielplan - Tables
+        link(href='/bedelos/styles/bootstrap.min.css', rel='stylesheet')
+        link(href='/bedelos/styles/bedelos.css', rel='stylesheet')
+        script(src='/bedelos/scripts/jquery-2.1.4.min.js')
+        script(src='/bedelos/scripts/bootstrap.min.js')
+    body(style={"font-family": 'Arial, Helvetica', 'font-size': 'smaller'})
+
+        input(id='ranking', type='hidden', value=ranking)
+        input(id='teams', type='hidden', value=teams)
+
+        #detailsModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog(role='document')
+                .modal-content
+                    .modal-header
+                        h2#detailsModalLabel.modal-title Statistik Details
+                        button.close(type='button' data-dismiss='modal' aria-label='Close')
+                            span(aria-hidden='true') &times;
+                    .modal-body
+                        h4#modalPlayerName
+                        h4#modalPlayerTeam
+                        table
+                            tr
+                                th.left.bold Spiele
+                                th.center.smaller 3:0
+                                th.center.smaller 3:1
+                                th.center.smaller 3:2
+                                th.center.smaller 2:3
+                                th.center.smaller 1:3
+                                th.center.smaller 0:3
+                            tr
+                                td.left.smaller Singles:
+                                td#modalPlayer30Single.center.smaller
+                                td#modalPlayer31Single.center.smaller
+                                td#modalPlayer32Single.center.smaller
+                                td#modalPlayer23Single.center.smaller
+                                td#modalPlayer13Single.center.smaller
+                                td#modalPlayer03Single.center.smaller
+                            tr
+                                td.left.smaller Doubles:
+                                td#modalPlayer30Double.center.smaller
+                                td#modalPlayer31Double.center.smaller
+                                td#modalPlayer32Double.center.smaller
+                                td#modalPlayer23Double.center.smaller
+                                td#modalPlayer13Double.center.smaller
+                                td#modalPlayer03Double.center.smaller
+                        table
+                            tr
+                                th.center.smaller ShortLegs
+                                th.center.smaller HighFinishes
+                                th.center.smaller Maxima
+                            tr
+                                td#modalPlayerShortLegs.center.smaller
+                                td#modalPlayerHighFinishes.center.smaller
+                                td#modalPlayerMaxima.center.smaller
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+        table
+            thead
+                tr
+                    th.center(colspan=9) Statistiken "#{liga}"
+                        if (username === 'bdladmin')
+                            a(href='/bedelos/admin/statistik/update/all',
+                            onclick='return window.confirm("Alle Statistiken neu einlesen? ACHTUNG: Erzeugt hohe Serverlast!!!");')
+                                nbsp
+                                span.glyphicon.glyphicon-refresh(title='Alle Statistiken neu einlesen?\nACHTUNG: Erzeugt hohe Serverlast!!!')
+
+                tr.borderedTopBottom.highlighted
+                    th.left(rowspan='2') Pl.
+                    th.left(rowspan='2') Spieler
+                    th.left(rowspan='2') Verein
+                    th.center.smaller Einzel Siege<br>*2
+                    th.center.smaller Doppel Siege<br>*1
+                    th.center.smaller HF<br>&nbsp;
+                    th.center.smaller SL<br>&nbsp;
+                    th.center.smaller Max<br>&nbsp;
+            tbody
+                each player, i in ranking
+                    - var place = i + 1;
+                    - var singleGames = player.single['3:0'] + player.single['3:1'] + player.single['3:2'];
+                    - var doubleGames = player.double['3:0'] + player.double['3:1'] + player.double['3:2'];
+                    - var hf = 0;
+                    - var sl = 0;
+                    - var max = 0;
+                    - var sGameScore = '(' + player['3:0'] + '|' + player['3:1'] + '|' + player['3:2'] + ')';
+                    tr(class=(i % 2 == 0) ? 'tdodd clickable-row':'tdeven clickable-row', onclick='displayModal('+i+')')
+                        td.left.smaller #{place}.
+                        td.left.xsmall.bold= player.name
+                        td.left.xsmall.bold= teams[player.team].name
+                        td.center.smaller(title='3:0 -> '+ player.single['3:0'] + '\n' +
+                        '3:1 -> '+ player.single['3:1'] + '\n' +
+                        '3:2 -> '+ player.single['3:2'] + '\n' )= singleGames
+                        td.center.smaller(title='3:0 -> '+ player.double['3:0'] + '\n' +
+                        '3:1 -> '+ player.double['3:1'] + '\n' +
+                        '3:2 -> '+ player.double['3:2'] + '\n' )= doubleGames
+                        td.center.smaller= (player.sums.hf!==0) ? player.sums.hf : nbsp
+                        td.center.smaller= (player.sums.sl!==0) ? player.sums.sl : nbsp
+                        td.center.smaller= (player.sums.max!==0) ? player.sums.max : nbsp
+
+    script(type='text/javascript').
+
+        const ranking = JSON.parse(document.getElementById('ranking').value);
+        const teams = JSON.parse(document.getElementById('teams').value);
+
+        function displayModal(player) {
+            document.getElementById('modalPlayerName').innerText = 'Name: ' + ranking[player].name
+            document.getElementById('modalPlayerTeam').innerText = 'Team: ' + teams[ranking[player].team].name
+            document.getElementById('modalPlayer30Single').innerText = ranking[player].single['3:0']
+            document.getElementById('modalPlayer31Single').innerText = ranking[player].single['3:1']
+            document.getElementById('modalPlayer32Single').innerText = ranking[player].single['3:2']
+            document.getElementById('modalPlayer23Single').innerText = ranking[player].single['2:3']
+            document.getElementById('modalPlayer13Single').innerText = ranking[player].single['1:3']
+            document.getElementById('modalPlayer03Single').innerText = ranking[player].single['0:3']
+            document.getElementById('modalPlayer30Double').innerText = ranking[player].double['3:0']
+            document.getElementById('modalPlayer31Double').innerText = ranking[player].double['3:1']
+            document.getElementById('modalPlayer32Double').innerText = ranking[player].double['3:2']
+            document.getElementById('modalPlayer23Double').innerText = ranking[player].double['2:3']
+            document.getElementById('modalPlayer13Double').innerText = ranking[player].double['1:3']
+            document.getElementById('modalPlayer03Double').innerText = ranking[player].double['0:3']
+            let sl = '';
+            let hf = '';
+            let max = '';
+
+            for (let sls in ranking[player].sl) {
+                sl += `${sls}: ${ranking[player].sl[sls]}<br>`;
+            }
+            document.getElementById('modalPlayerShortLegs').innerHTML = sl;
+
+            for (let hfs in ranking[player].hf) {
+                hf += `${hfs}: ${ranking[player].hf[hfs]}<br>`;
+            }
+            document.getElementById('modalPlayerHighFinishes').innerHTML = hf;
+
+            for (let maxima in ranking[player].max) {
+                max += `${maxima}: ${ranking[player].max[maxima]}<br>`;
+            }
+            document.getElementById('modalPlayerMaxima').innerHTML = max;
+            $('#detailsModal').modal('toggle')
+        }

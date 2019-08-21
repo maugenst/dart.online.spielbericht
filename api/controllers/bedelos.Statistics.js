@@ -46,6 +46,7 @@ async function get(req, res) {
         var liga = req.swagger.params.liga.raw;
         var sStatisticsFile = path.resolve(sStatisticsPath + '/' + liga + '.json');
         var aRanking = ranking.sortStatisticByScores(jsonfile.readFileSync(sStatisticsFile));
+        var aUnsortedRanking = ranking.sortStatisticByTeamAndNames(jsonfile.readFileSync(sStatisticsFile));
 
         var html = '';
         if (_.toInteger(saison) < 1819) {
@@ -58,10 +59,20 @@ async function get(req, res) {
                 liga: ligaHelper.getFullLigaName(liga),
                 ligaShort: liga
             });
-        } else {
+        } else if (_.toInteger(saison) === 1819) {
             html = pug.renderFile('api/views/statisticNEW.jade', {
                 pretty: true,
                 ranking: aRanking,
+                teams: oTeams,
+                username: username,
+                allSeasons: allSeasons,
+                liga: ligaHelper.getFullLigaName(liga),
+                ligaShort: liga
+            });
+        } else {
+            html = pug.renderFile('api/views/statisticUnsorted.jade', {
+                pretty: true,
+                ranking: aUnsortedRanking,
                 teams: oTeams,
                 username: username,
                 allSeasons: allSeasons,

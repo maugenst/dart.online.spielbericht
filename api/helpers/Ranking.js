@@ -122,8 +122,26 @@ function sortStatisticByNames(oStatistic, oTeams) {
     return aRanking.sort(sortStatisticsByName);
 }
 
+function sortStatisticByTeamAndNames(oStatistic, oTeams) {
+    var aRanking = generateRankingArray(oStatistic, oTeams);
+    const obj = {};
+    aRanking.forEach(stat => {
+        if (!obj[stat.team]) {
+          obj[stat.team] = [];
+        }
+        obj[stat.team].push(stat);
+        obj[stat.team].sort(sortStatisticsByName);
+    });
+    let aRet = [];
+    for (const key in obj) {
+        aRet = aRet.concat(obj[key]);
+    }
+    return aRet;
+}
+
 module.exports = {
     sortTableByRank : sortTableByRank,
     sortStatisticByScores : sortStatisticByScores,
-    sortStatisticByNames : sortStatisticByNames
+    sortStatisticByNames : sortStatisticByNames,
+    sortStatisticByTeamAndNames : sortStatisticByTeamAndNames
 };
