@@ -23,17 +23,21 @@ temp:
 bedelos:
   adminuser: bdladmin
   superuser: admin
-  saison: 1819
+  saison: 1920
   configpath: ./data/config
-  datapath: ./data/saison/1819
+  datapath: ./data/saison/1920
   ligen:
     oberliga:
       name: Oberliga
       prefix: ol
       spieltage: 18
-    bzLiga:
-      name: Bezirksliga
-      prefix: bzli
+    blnord:
+      name: Bezirksliga Nord
+      prefix: bln
+      spieltage: 18
+    blsued:
+      name: Bezirksliga Süd
+      prefix: bls
       spieltage: 18
     klnord:
       name: Kreisliga Nord
@@ -42,7 +46,7 @@ bedelos:
     klmitte:
       name: Kreisliga Mitte
       prefix: klm
-      spieltage: 18
+      spieltage: 22
     klsued:
       name: Kreisliga Süd
       prefix: kls
@@ -50,7 +54,7 @@ bedelos:
     klwest:
       name: Kreisliga West
       prefix: klw
-      spieltage: 18
+      spieltage: 22
 
 # values in the swagger hash are system configuration for swagger-node
 swagger:

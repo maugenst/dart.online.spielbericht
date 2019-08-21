@@ -33,9 +33,11 @@ function checkUserAuthentication(req, res) {
 function addToSpielplan (req, res) {
     try {
 
+/*
         if (!checkUserAuthentication(req, res)) {
             return;
         };
+*/
 
         let oGamePayload = req.swagger.params.spiel.raw;
 
@@ -66,9 +68,11 @@ function addToSpielplan (req, res) {
 function deleteFromSpielplan (req, res) {
     try {
 
+/*
         if (!checkUserAuthentication(req, res)) {
             return;
         };
+*/
 
         let sGameId = req.swagger.params.spielindex.raw;
 
@@ -80,7 +84,7 @@ function deleteFromSpielplan (req, res) {
 
         let oSpielplan = jsonfile.readFileSync(sPath + '/SpielplanNew.json');
         let oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
-        
+
         let spielplanHelper = new Spielplan(oSpielplan, oTeams);
         spielplanHelper.removeGame(sGameId);
 
@@ -97,9 +101,11 @@ function deleteFromSpielplan (req, res) {
 function getSpielplan (req, res) {
     try {
 
+/*
         if (!checkUserAuthentication(req, res)) {
             return;
         };
+*/
 
         let sPath = path.resolve(config.get("bedelos.datapath"));
         let oTeams = jsonfile.readFileSync(sPath + '/Teams.json');
