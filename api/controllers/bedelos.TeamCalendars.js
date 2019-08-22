@@ -57,9 +57,10 @@ function getTeamSpielplan(req, res) {
                 alleSpiele[i].summary = oResult.summary;
             }
             const summaryPrefix = alleSpiele[i].heim === teamId ? 'Heim-' : 'Auswärts-';
+            const myDate = alleSpiele[i].datum.substring(5);
             aEvents.push({
-                start: moment(alleSpiele[i].datum + ', 20:00', 'ddd. DD.MM.YYYY, HH:mm').toDate(),
-                end: moment(alleSpiele[i].datum + ', 20:00', 'ddd. DD.MM.YYYY, HH:mm').add(4, 'h').toDate(),
+                start: moment(myDate + ', 20:00', 'DD.MM.YYYY, HH:mm').toDate(),
+                end: moment(myDate + ', 20:00', 'DD.MM.YYYY, HH:mm').add(4, 'h').toDate(),
                 timestamp: new Date(),
                 summary: `${summaryPrefix}Spieltag (#${i + 1})`,
                 description: `${alleSpiele[i].heimName} vs. ${alleSpiele[i].gastName}`,
