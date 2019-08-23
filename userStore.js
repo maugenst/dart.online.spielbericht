@@ -33,7 +33,7 @@ prompt.get([{
         oUserstore[sUsername].password.value = crypt.encrypt(result.secret);
         oUserstore[sUsername].password.changeDate = 0;
         //console.log(oUserstore[sUsername]);
-        jsonfile.writeFileSync(sUserStoreFile, oUserstore);
+        jsonfile.writeFileSync(sUserStoreFile, oUserstore, { spaces: 4 });
     } else {
         var sUserStoreFile = path.resolve("data/config/userStore.json");
         var oUserstore = jsonfile.readFileSync(sUserStoreFile);
