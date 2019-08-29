@@ -17,6 +17,7 @@ html
                     'teamSpiellokalOrt': document.getElementById('teamSpiellokalOrt').innerText,
                     'teamSpiellokalNichtraucher': document.getElementById('teamSpiellokalNichtraucher').checked,
                     'teamSpiellokalJugend': document.getElementById('teamSpiellokalJugend').checked,
+                    'teamSaisontafel': document.getElementById('teamSaisontafel').checked,
                     'teamSpiellokalPositionLat': document.getElementById('teamSpiellokalPositionLat').innerText,
                     'teamSpiellokalPositionLng': document.getElementById('teamSpiellokalPositionLng').innerText,
                     'teamTeamvertreterName': document.getElementById('teamTeamvertreterName').innerText,
@@ -102,6 +103,13 @@ html
                     td(align='left') Passwort:&nbsp;
                     td(align='left', style={"font-size": 'smaller'})
                         a(href='/bedelos/changePassword/user/' + teamId) Ändern
+                tr
+                    td(align='left') Saison-Team-Tafel gewünscht?&nbsp;
+                    td(align='left', style={"font-size": 'smaller'})
+                        if (teams[teamId].saisontafel)
+                            input(id="teamSaisontafel", type='checkbox', checked)
+                        else
+                            input(id="teamSaisontafel", type='checkbox')
                 tr(style={'border-bottom': 'solid 1px', 'background-color': '#AFD3E0'})
                     td(colspan='2')
                         input(type='button', onclick='saveTeamChanges()', value='Speichern')

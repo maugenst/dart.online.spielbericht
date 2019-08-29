@@ -20,6 +20,7 @@ function updateTeam (req, res) {
         var oChangedTeam = req.swagger.params.team.raw;
 
         oTeams[teamId].name = oChangedTeam.teamName;
+        oTeams[teamId].saisontafel = oChangedTeam.teamSaisontafel;
         oTeams[teamId].spiellokal.name = oChangedTeam.teamSpiellokalName;
         oTeams[teamId].spiellokal.strasse = oChangedTeam.teamSpiellokalStrasse;
         oTeams[teamId].spiellokal.ort = oChangedTeam.teamSpiellokalOrt;
