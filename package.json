@@ -29,7 +29,7 @@
     "mkdirp": "*",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^6.4.16",
     "pdfmake": "^0.1.36",
     "prompt": "*",
     "pug": "2.0.0-beta3",
