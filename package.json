@@ -23,7 +23,7 @@
     "jade-bootstrap": "*",
     "js-yaml": "^3.11.0",
     "jsonfile": "^4.0.0",
-    "jszip": "^2.6.1",
+    "jszip": "^2.7.0",
     "lodash": "^4.17.11",
     "log4js": "^3.0.5",
     "mkdirp": "*",
